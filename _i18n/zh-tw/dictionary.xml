@@ -883,7 +883,6 @@
   <block id="2b6411ec708c0a6b6901665ecd561906" category="list-text">在按鈕列中、按一下*移動*。</block>
   <block id="298d8e5bc86c1519b540e84e997c2325" category="inline-image-macro">顯示「移動檔案」對話方塊的螢幕快照、可讓您指定所有選取檔案要移動的NFS共用區名稱。</block>
   <block id="82d99b9b7230edf33a8c8b355ea71e98" category="paragraph"><block ref="82d99b9b7230edf33a8c8b355ea71e98" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e69431e5fa3d603583a708416843df99" category="list-text">在「_Move Files_」（移動檔案_）對話方塊中、輸入NFS共用的名稱、所有選取的檔案將以「&lt;host_name&gt;//&lt;share_path&gt;'的格式移動、然後按一下「* Move Files*」。</block>
   <block id="b46806dad0d4346d50ec215cb81c8e7e" category="paragraph">請注意、您也可以在檢視檔案的中繼資料詳細資料時、移動個別檔案。只要按一下*移動檔案*即可。</block>
   <block id="652c33068cfd81ee8751b1f84d12e4a0" category="inline-image-macro">顯示「資料調查」頁面中檔案中繼資料詳細資料中「移動檔案」按鈕選項的快照。</block>
   <block id="aea50b39bf674599cf913ca73fc8eeb2" category="paragraph"><block ref="aea50b39bf674599cf913ca73fc8eeb2" category="inline-image-macro-rx" type="image"></block></block>
@@ -936,7 +935,6 @@
   <block id="cb947e43fc5b51270600556c1bdc9a6e" category="paragraph">您也可以從「資料調查」頁面篩選結果、並將結果報告下載為 CSV 檔案。請參閱 <block ref="d866de3580f3d4e6c76a60eb4ffbd9e6" category="inline-xref-macro-rx"></block> 以取得詳細資料。</block>
   <block id="4dd66ca96fb96e8e0b7ea1d39b21b6d2" category="section-title">檢視包含個人資料的檔案</block>
   <block id="99c411b30c0d86f95c6416318f98106b" category="inline-link-macro">請參閱完整清單</block>
-  <block id="81235bb8dbca2b584e21b3ca23730b54" category="paragraph">Cloud Data Sense會自動識別資料內部的特定字詞、字串和模式（Regex）。例如、個人識別資訊（PII）、信用卡號碼、社會安全號碼、銀行帳戶號碼、密碼、 以及更多資訊。 <block ref="3a25cef7ea1e79696c3eac86ef0a5a72" category="inline-link-macro-rx"></block>。</block>
   <block id="c39a62af3ed5ce08e86086b818d3d335" category="paragraph">此外、如果您已新增要掃描的資料庫伺服器、則「 _Data Fusion SUR__ 」功能可讓您掃描檔案、以識別資料庫中的唯一識別碼是否存在於這些檔案或其他資料庫中。請參閱 <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">個人資料表格</block>
   <block id="0b89e2aeea46e7ca57ab15ff5bbc7f74" category="paragraph">對於某些類型的個人資料、Data Sense會使用_特殊 警示驗證來驗證其發現結果。驗證的方式是在找到的個人資料附近尋找一或多個預先定義的關鍵字。例如、Data Sense可識別美國社會安全號碼（ SSN ）若在 SSN 旁看到鄰近的詞彙、例如 _SSN_ 或 _Social SECURITY 。 <block ref="62bae47b4917c28b4ad589ca12fe7ebd" category="inline-link-macro-rx"></block> 顯示Data Sense何時使用接近驗證。</block>
@@ -947,10 +945,8 @@
   <block id="8c17e3b1b4e627d4a92973aec9ef4ce0" category="inline-image-macro">個人檔案對話方塊的快照、您可以在其中按一下個人資料類型旁的調查結果圖示。</block>
   <block id="a08520118359e571f24b420e7729b107" category="paragraph"><block ref="a08520118359e571f24b420e7729b107" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bec06ffefcc7ab6b7882b310c3c7790a" category="list-text">搜尋、排序、展開特定檔案的詳細資料、按一下 * 調查結果 * 查看遮罩資訊、或下載檔案清單、即可調查資料。</block>
-  <block id="7cdf7364a52ab6af797f1b1dcae76247" category="inline-image-macro">按一下「調查結果」後的詳細資訊快照。</block>
   <block id="14e7cee2f25241a9d6084f5ac31f54b0" category="section-title">檢視含有敏感個人資料的檔案</block>
   <block id="8677494d8f5c3e6a2c69e93e5254639f" category="inline-link">GDPR 第 9 和第 10 條</block>
-  <block id="9c0bd6a9f0ddda0f88659e943db1d4cd" category="paragraph">Cloud Data Sense會自動識別特殊類型的敏感個人資訊、如隱私權法規所定義<block ref="413dcff8641b851bffd5ca7e45c359a4" category="inline-link-rx"></block>。例如、關於個人健康、族群或性取向的資訊。 <block ref="6507e706b290d038d0deb8cb0d263511" category="inline-link-macro-rx"></block>。</block>
   <block id="0bf6d005e569afb6ee5ee230348f89c1" category="paragraph">Cloud Data Sense使用人工智慧（AI）、自然語言處理（NLP）、機器學習（ML）和認知運算（CC）來瞭解其掃描內容的意義、以便擷取實體並據此分類。</block>
   <block id="a99f79bee091a240f28dc9e017d5efd7" category="paragraph">例如、一個敏感的 GDPR 資料類別是「族群」。由於其NLP能力、Data Sense可區分「George is墨西哥」（表示GDPR第9條所述的敏感資料）與「George is墨西哥食品」（George正在吃墨西哥食品）這兩個句子之間的差異。</block>
   <block id="a8dc04f8b2b452296a4b47a8a5006a86" category="admonition">掃描敏感的個人資料時、僅支援英文。稍後將新增更多語言支援。</block>
@@ -1037,7 +1033,6 @@
   <block id="dad25b649a281b9705d7fbdfc91bb96c" category="inline-link-macro">類別類型</block>
   <block id="0e44b2b774524434cca65d00db4db5b6" category="cell">選取 <block ref="d4eabbd4fb9268c1389fccae66300714" category="inline-link-macro-rx"></block></block>
   <block id="86171ac828a961155f1ccf4dfa1eb93f" category="cell">敏感度等級</block>
-  <block id="8745a2887b8fcb877ada09dffce47ece" category="cell">選取敏感度等級</block>
   <block id="d0902d27bce16ddeb2cb9c788db8ddcd" category="cell">個人資料</block>
   <block id="7a3dcbf3ed229470d34578d4f4f6fc43" category="inline-link-macro">個人資料類型</block>
   <block id="4fcae143243cf4e0c0e7aacf6294e13a" category="cell">選取 <block ref="1b5fb6ede432593c04dc0306b78c1e56" category="inline-link-macro-rx"></block></block>
@@ -1641,7 +1636,6 @@
   <block id="dc647eb65e6711e155375218212b3964" category="cell">密碼</block>
   <block id="89212175aaa6a47307131ef3a6bbaa3c" category="cell">國家識別碼</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">澳洲（TFN）（稅務檔案編號）</block>
-  <block id="e1ae59ed032376d2ab05147c6442f610" category="cell">澳洲駕駛人授權號碼</block>
   <block id="67863eec6ed398cda366fe555c1746bd" category="cell">澳洲醫療保險號碼</block>
   <block id="bba082dd43baad5296b00863b2fd871e" category="cell">澳洲護照號碼</block>
   <block id="a5ac06cc7292326b3b7f482e54b446be" category="cell">奧地利SSN</block>
@@ -2361,7 +2355,6 @@
   <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">從Data Sense刪除整個SharePoint帳戶</block>
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">請注意、您可以 <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> 如果您不想再從SharePoint帳戶掃描任何使用者資料。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive、SharePoint和Google雲端硬碟帳戶、檔案大小上限為4 MB。</block>
-  <block id="ccff7c05ce1ff2ff0bafe406c61338f6" category="paragraph"><block ref="ccff7c05ce1ff2ff0bafe406c61338f6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。</block>
   <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">選取原則。行動 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看現有策略列表並創建您自己的自定義策略。</block>
   <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">選取一或多個使用者名稱和/或群組名稱、或輸入部分名稱</block>
@@ -2439,7 +2432,6 @@
   <block id="61e409921fe798c5667689af4656a112" category="inline-link">瞭解如何編輯原則</block>
   <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
   <block id="1f50cc006f0a9aa5fa08f3f58b10bf1d" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <block ref="8c0c83431a0c54e3e158fb0a6b366a6d" category="inline-link-macro-rx"></block></block>
-  <block id="a26fd963c8509a271edf19a08fc0d3ae" category="list-text">作業系統：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版</block>
   <block id="fbbd4044d95d7d79fb98ebd8d7daf546" category="summary">如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。</block>
   <block id="a80767bb4322f81d8b7bd0b15673f6ab" category="summary">您可以解除安裝Data Sense軟體來疑難排解問題、或是從主機上永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟、所有已掃描的資訊「Data Sense」（資料感測）都會永久刪除。</block>
   <block id="9cd2794f7afcdacb42a1ab6334e60324" category="doc">解除安裝Cloud Data Sense</block>
@@ -2458,7 +2450,6 @@
   <block id="0dde885c45d0ef5ba59d628be1651196" category="inline-link-macro">如需資料調查報告的詳細資訊、請前往此處</block>
   <block id="d0db8780768b860617a4252d66600fdb" category="paragraph">如果您想要在調整頁面內容之後、將其下載為報告、請按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按鈕。您可以將報告本機儲存為.CSV檔案（最多可包含5、000列資料）、或儲存為匯出至NFS共用的.Json檔案（可包含不限數量的列）。 <block ref="94b4ac215f06d804e337d419fce0c8e4" category="inline-link-macro-rx"></block>。</block>
   <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">識別碼數目</block>
-  <block id="5eea9611e0978b939581b9bb18ff1a29" category="cell">選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。</block>
   <block id="9774801e5b642078494706b6a4b33bd0" category="paragraph">您可以在中檢視複製作業的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
   <block id="a0f66640fa5131ddb32f4ddcbd1d9281" category="paragraph">您可以在中檢視複製作業的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
   <block id="1fdb52ff740ba099a079361368705733" category="paragraph">您可以在中檢視刪除作業的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
@@ -2537,26 +2528,20 @@
   <block id="a6e2475f148e034250ac7cb66419f3f3" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝版本1.11.x、則只能升級至1.12.x如果您落後幾個主要版本、就必須多次升級軟體。</block>
   <block id="fae289ef9204f7c3119e084615a6d53f" category="list-text">如果您已在政府區域或內部部署Data Sense、但該位置無法存取網際網路（也稱為暗站）、則AIP標籤功能將無法使用。</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">若為Sfor Same、則必須將其部署在您要掃描的磁碟區所在的相同區域。Azure NetApp Files</block>
-  <block id="87ebc84b19af9756bbc43a1c3850a080" category="list-text">可以使用版本7.8或7.9、但Linux核心版本必須為4.14或更新版本</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府區域支援</block>
   <block id="1c8dc4f89ff17cff9b19b208d74ea4a3" category="paragraph">當連接器部署於政府區域（AWS GovCloud、Azure Gov或Azure DoD）時、即可支援Cloud Data Sense。以這種方式部署時、Data Sense會有下列限制：</block>
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。</block>
   <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Microsoft Azure資訊保護（AIP）標籤功能無法整合。</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">在政府區域部署時、是否有任何限制？</block>
   <block id="3f1d923e5a351dcc541f10e98f5da114" category="summary">您可以管理每個工作環境和資料來源中所掃描的資料。您可以在「儲存庫」基礎上進行變更、也就是說、您可以針對每個磁碟區、儲存區、共用區、架構、使用者、 等等、視您要掃描的資料來源類型而定。</block>
-  <block id="cb73c564126960ae6ca282e79abf7c40" category="doc">變更儲存庫的掃描設定</block>
   <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">對應掃描或對應&amp;amp;分類掃描</block>
   <block id="4645b000842c59ed1aaeb9e534c34e85" category="paragraph">您可以變更的部分內容包括是否掃描儲存庫、以及Data Sense是否執行 <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。例如、如果您需要停止掃描某個Volume一段時間、也可以暫停和繼續掃描。</block>
-  <block id="1c4489a47397251870bd0d51f8701063" category="section-title">檢視正在掃描的儲存庫</block>
-  <block id="bdedbcd07e14573fe6ff9e61fa471628" category="paragraph">您可以檢視Data Sense針對每個工作環境和資料來源所掃描的個別儲存庫。</block>
   <block id="86cfaa233cd6203ca98aec701f702508" category="list-text">在「組態」索引標籤中、按一下工作環境的*組態*按鈕。</block>
   <block id="c220e333c84311a5247ea56021c7f9af" category="inline-image-macro">顯示如何按一下工作環境的「組態」按鈕的快照。</block>
   <block id="42b33a03e844c37998934099293f35e3" category="paragraph"><block ref="42b33a03e844c37998934099293f35e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d572e0d4b826c4aedc53e9ebf7b16a8f" category="list-text">在「掃描組態」頁面中、您可以檢視所有儲存庫的掃描設定。</block>
-  <block id="2767187e50c5d0cd06a373007090d513" category="paragraph"><block ref="2767187e50c5d0cd06a373007090d513" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dbb0dfda8b378050531f81450c4bc33e" category="section-title">變更儲存庫的掃描類型</block>
   <block id="80442a9b9f6c43539008be8521ce5283" category="paragraph">您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。</block>
-  <block id="d2ec03a8c1a8422301c71b6c3e6e8b4c" category="admonition">資料庫無法設定為僅對應掃描。資料庫掃描可以是關閉或開啟、相當於地圖和分類。</block>
   <block id="e2fd7fccc8e37c687bd3d80bafb4e9fd" category="list-text">在「掃描組態」頁面中、您可以變更任何儲存庫（本範例中的儲存庫）以執行*地圖*或*地圖與分類*掃描、或選取*關閉*以停止掃描特定儲存庫。</block>
   <block id="d2c070afb22765e227addc428b9bb43d" category="inline-image-macro">螢幕快照顯示如何選取儲存區的掃描類型。</block>
   <block id="8d501a2dffff147be5f9997f70b34348" category="paragraph"><block ref="8d501a2dffff147be5f9997f70b34348" category="inline-image-macro-rx" type="image"></block></block>
@@ -2614,4 +2599,46 @@
   <block id="fb575acbb63d1898a1021e2856b18b6e" category="inline-image-macro">顯示如何在SharePoint網站上暫停及繼續掃描的螢幕快照。</block>
   <block id="9e9d3c723f9f4d6ab1b9e783f2239e62" category="paragraph"><block ref="9e9d3c723f9f4d6ab1b9e783f2239e62" category="inline-image-macro-rx" type="image"></block></block>
   <block id="faa8551af182d75e7a3f5d7e7a6dc071" category="sidebar">變更掃描設定</block>
+  <block id="dd85b6e90159d1cdbde0d5badd022af0" category="paragraph">Cloud Data Sense會自動識別資料內部的特定字詞、字串和模式（Regex）。例如、個人識別資訊（PII）、信用卡號碼、社會安全號碼、銀行帳戶號碼、密碼、 以及更多資訊。 <block ref="3a25cef7ea1e79696c3eac86ef0a5a72" category="inline-link-macro-rx"></block>。Data Sense可在個別檔案、目錄內的檔案（共享區和資料夾）和資料庫表格中識別這類資訊。</block>
+  <block id="f4f50af532754b5670ea58ed6b969ba0" category="paragraph">以下2個螢幕擷取畫面顯示個別檔案中的個人資料、並可在目錄（共享區和資料夾）內的檔案中找到。您也可以選取*結構化*索引標籤來檢視在資料庫中找到的個人資料。</block>
+  <block id="bfe1194df41f0cc26cfdf2f75931ac0d" category="inline-image-macro">按一下「調查結果」後、檔案中的詳細資訊快照。</block>
+  <block id="67524a6d2ea2d542c817bd783e914070" category="paragraph"><block ref="67524a6d2ea2d542c817bd783e914070" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5529cbafb2e0562120cf639c1f822fa6" category="inline-image-macro">按一下「調查結果」之後、可在目錄中找到詳細資訊的快照。</block>
+  <block id="886eca0ba693f7fa50ef2d9fe4c0887f" category="paragraph"><block ref="886eca0ba693f7fa50ef2d9fe4c0887f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf5b7f26c8f48a1eb758b47185081250" category="paragraph">Cloud Data Sense會自動識別特殊類型的敏感個人資訊、如隱私權法規所定義<block ref="413dcff8641b851bffd5ca7e45c359a4" category="inline-link-rx"></block>。例如、關於個人健康、族群或性取向的資訊。 <block ref="6507e706b290d038d0deb8cb0d263511" category="inline-link-macro-rx"></block>。Data Sense可在個別檔案、目錄內的檔案（共享區和資料夾）和資料庫表格中識別這類資訊。</block>
+  <block id="a3e2b4b381ddb4550a30923ee80c5bd7" category="cell">選取敏感度等級：個人、敏感個人或不敏感</block>
+  <block id="2c967160785c40cca46a7d4cade36507" category="cell">選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。在目錄中篩選時、Data Sense會將每個資料夾（及子資料夾）中所有檔案的相符項目總計一次。</block>
+  <block id="c82ffa722bb30ecf26aa93c8c1f6491b" category="paragraph">或者、您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在來源位置建立一個名為「&lt;fileName（檔案名稱）&gt;-breadcrumb-&lt;date（日期）&gt;.txt'的階層連結檔案。您可以在對話方塊中新增要新增至階層連結檔案的文字、以指出檔案的移動位置和移動檔案的使用者。</block>
+  <block id="e947d88fc82f247e554cf80e35ff0831" category="list-text">在「_Move Files_」（移動檔案_）對話方塊中、輸入NFS共用的名稱、所有選取的檔案將以「&lt;host_name&gt;//&lt;share_path&gt;'的格式移動。</block>
+  <block id="9bf85e569c6ef93411e4ce74471413a0" category="list-text">如果您要保留階層連結檔案、請核取「保留階層連結」方塊。您可以在對話方塊中輸入文字、以指出檔案的移動位置、移動檔案的使用者、以及任何其他資訊、例如檔案移動的原因。</block>
+  <block id="b91992584de04476d486c6819d26aaf3" category="list-text">按一下*移動檔案*。</block>
+  <block id="e023ca0db491fe9b0e7722609710e69b" category="doc">變更儲存庫的掃描設定</block>
+  <block id="cc044854b72a7b1c98c22253b0aaedcd" category="section-title">檢視儲存庫的掃描狀態</block>
+  <block id="3b9cf0dce36d878eb8c76ab1d9a8dd16" category="paragraph">您可以檢視Data Sense針對每個工作環境和資料來源所掃描的個別儲存庫（磁碟區、儲存區等）。此外、您也可以查看「對應」的數量、以及「分類」的數量。在所有資料上執行完整AI識別時、分類需要較長的時間。</block>
+  <block id="bf3aeefcdd65b55f2612004f45b7257f" category="inline-image-macro">螢幕快照顯示您的儲存區是否正在掃描、以及目前的掃描狀態。</block>
+  <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ecc7450cf52e0d0d89139603b07ea706" category="paragraph">您可以將游標停留在_掃描狀態_欄中的圖表上、查看每個儲存庫中仍要對應或分類的檔案數目（本範例中為儲存庫）。</block>
+  <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">資料庫無法設定為僅對應掃描。資料庫掃描功能可以是關閉或開啟、其中ON等同於Map &amp;分類。</block>
+  <block id="9db1ab99c3f7640c000fdc19054af26c" category="list-text">作業系統：Red Hat Enterprise Linux或CentOS 8.0至8.4版</block>
+  <block id="ce12cca419124f32a01c6fec5a3be62f" category="list-text">可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本</block>
+  <block id="9308bcab83008e639f95b088d89b11c4" category="cell">澳洲駕駛人授權</block>
+  <block id="1ce92447664cc42f3e2c04aaf8570862" category="cell">紐西蘭銀行帳戶</block>
+  <block id="fd9022553098e5fa6a8b25ae3a2dc65d" category="cell">紐西蘭駕駛證</block>
+  <block id="2be885677b02540592a1f44b87ee5fb9" category="cell">紐西蘭IRD編號（稅金ID）</block>
+  <block id="52c2b4f82109d0afee40fe69db9a8cbe" category="cell">紐西蘭NHI（國家健康指數）編號 </block>
+  <block id="3c266b4db1bf588305e19eddcef36116" category="cell">紐西蘭護照號碼</block>
+  <block id="6006377785b7aa3dfed8795e05fbc569" category="section-title">2022年8月7日（1.15版）</block>
+  <block id="afae08b9f3014d73a3bf7e0c201b2b36" category="section-title">來自紐西蘭的五種新型個人資料是由Data Sense所識別</block>
+  <block id="3b4b0faa54186ef002c6026e97e51a10" category="paragraph">Data Sense可識別及分類包含下列資料類型的檔案：</block>
+  <block id="c189819be34e41f0ac712261c4bb10b0" category="list-text">紐西蘭銀行帳戶號碼</block>
+  <block id="57d4e061073cf52ee992a5523c0e31cb" category="list-text">紐西蘭駕駛證號碼</block>
+  <block id="c8c8337bd5f0527c7ba4b08117f3d96f" category="paragraph"><block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="8d3dd83a131924f6dd08fdea2d8e7828" category="section-title">能夠新增階層連結檔案、以指出檔案移動的原因</block>
+  <block id="e92169a6172fd2cba6d57bfe01aea45a" category="paragraph">當您使用「資料感應」功能將來源檔案移至NFS共用時、現在您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在來源位置建立一個名為「&lt;fileName（檔案名稱）&gt;-breadcrumbsum-&lt;date（日期）&gt;.txt'的階層連結檔案、以顯示檔案的移動位置和移動檔案的使用者。<block ref="c1eac1298d336c56373b10262d37ad96" category="inline-link-rx"></block>。</block>
+  <block id="13cd21aa095db4c5e2c5cd12303ecc97" category="section-title">您目錄中的個人資料和敏感個人資料會顯示在調查結果中</block>
+  <block id="6b473faf5fc253b69b173e6b8b87f726" category="inline-link">請參閱此處的範例</block>
+  <block id="e8886543955f7a165a88e44f53559443" category="paragraph">「資料調查」頁面現在會顯示您目錄（資料夾和共用）內的個人資料和敏感個人資料結果。<block ref="37ae8b694ca9dace0885ec3ddd4e8904" category="inline-link-rx"></block>。</block>
+  <block id="76013a8e1044d1903752927bac2c2799" category="section-title">檢視已成功分類的磁碟區、儲存區等數量狀態</block>
+  <block id="046e94b126bcddc4303664d7f72819a5" category="inline-link">請參閱如何檢視此資訊</block>
+  <block id="7e79533726de53720d91f0e491df7b7f" category="paragraph">檢視Data Sense正在掃描的個別儲存庫（Volume、儲存區等）時、您現在可以看到「對應」的儲存庫數量、以及「分類」的儲存庫數量。在所有資料上執行完整AI識別時、分類所需時間會更長。<block ref="0871135af547cfbd7267d7772f52c15b" category="inline-link-rx"></block>。</block>
 </blocks>

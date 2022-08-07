@@ -81,9 +81,9 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。NetApp�
 
 資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
 
-* 作業系統：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版
+* 作業系統：Red Hat Enterprise Linux或CentOS 8.0至8.4版
 +
-** 可以使用版本7.8或7.9、但Linux核心版本必須為4.14或更新版本
+** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
 ** 作業系統必須能夠安裝Docker Engine（例如、視需要停用_firewalld_服務）
 
 
@@ -174,7 +174,7 @@ Data Sense執行個體使用私有IP位址、確保其他人無法存取索引�
 +
 [source, cli]
 ----
-tar -xzf DataSense-offline-bundle-v1.13.1.tar.gz
+tar -xzf DataSense-offline-bundle-v1.14.0.tar.gz
 ----
 +
 這會擷取所需的軟體和實際安裝檔案* cc_OnPrem_installer_。.tar.gz*。
@@ -196,7 +196,7 @@ image:screenshot_cloud_compliance_deploy_darksite.png["選取按鈕以在內部�
 +
 [source, cli]
 ----
-tar -xzf cc_onprem_installer_1.13.1.tar.gz
+tar -xzf cc_onprem_installer_1.14.0.tar.gz
 ----
 . 當安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式：
 +
@@ -322,7 +322,7 @@ Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可�
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.13.1.tar.gz
+tar -xvf DataSense-offline-bundle-v1.14.0.tar.gz
 ----
 +
 這會擷取安裝檔案* cc_OnPrem_installer_.tar.gz*。
@@ -331,7 +331,7 @@ tar -xvf DataSense-offline-bundle-v1.13.1.tar.gz
 +
 [source, cli]
 ----
-tar -xzf cc_onprem_installer_1.13.1.tar.gz
+tar -xzf cc_onprem_installer_1.14.0.tar.gz
 ----
 +
 這會擷取升級指令碼* start_dimite_upgrade.sh*和任何必要的協力廠商軟體。

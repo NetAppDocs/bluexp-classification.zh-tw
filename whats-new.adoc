@@ -18,6 +18,43 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
+== 2022年8月7日（1.15版）
+
+
+
+=== 來自紐西蘭的五種新型個人資料是由Data Sense所識別
+
+Data Sense可識別及分類包含下列資料類型的檔案：
+
+* 紐西蘭銀行帳戶號碼
+* 紐西蘭駕駛證號碼
+* 紐西蘭IRD編號（稅金ID）
+* 紐西蘭NHI（國家健康指數）編號 
+* 紐西蘭護照號碼
+
+
+link:reference-private-data-categories.html#types-of-personal-data["查看Data Sense可在您的資料中識別的所有個人資料類型"]。
+
+
+
+=== 能夠新增階層連結檔案、以指出檔案移動的原因
+
+當您使用「資料感應」功能將來源檔案移至NFS共用時、現在您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在來源位置建立一個名為「<fileName（檔案名稱）>-breadcrumbsum-<date（日期）>.txt'的階層連結檔案、以顯示檔案的移動位置和移動檔案的使用者。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["深入瞭解"^]。
+
+
+
+=== 您目錄中的個人資料和敏感個人資料會顯示在調查結果中
+
+「資料調查」頁面現在會顯示您目錄（資料夾和共用）內的個人資料和敏感個人資料結果。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-files-that-contain-personal-data["請參閱此處的範例"^]。
+
+
+
+=== 檢視已成功分類的磁碟區、儲存區等數量狀態
+
+檢視Data Sense正在掃描的個別儲存庫（Volume、儲存區等）時、您現在可以看到「對應」的儲存庫數量、以及「分類」的儲存庫數量。在所有資料上執行完整AI識別時、分類所需時間會更長。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#viewing-the-scan-status-for-your-repositories["請參閱如何檢視此資訊"^]。
+
+
+
 == 2022年7月6日（1.14版）
 
 

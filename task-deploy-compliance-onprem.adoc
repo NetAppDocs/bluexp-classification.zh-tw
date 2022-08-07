@@ -73,9 +73,9 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必�
 
 資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
 
-* 作業系統：Red Hat Enterprise Linux或CentOS 8.0、8.1或8.4版
+* 作業系統：Red Hat Enterprise Linux或CentOS 8.0至8.4版
 +
-** 可以使用版本7.8或7.9、但Linux核心版本必須為4.14或更新版本
+** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
 ** 作業系統必須能夠安裝 Docker 引擎（例如、視需要停用 _firewalld_ 服務）
 
 
@@ -196,7 +196,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在內部部
 +
 [source, cli]
 ----
-tar -xzf cc_onprem_installer_1.13.1.tar.gz
+tar -xzf cc_onprem_installer_1.14.0.tar.gz
 ----
 . 當安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式：
 +
