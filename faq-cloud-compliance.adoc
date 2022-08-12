@@ -44,6 +44,14 @@ Cloud Data Sense可協助您運用資料、協助您：
 
 
 
+=== 雲端資料感測如何運作？
+
+Cloud Data Sense可在Cloud Manager系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。Data Sense運用人工智慧和自然語言處理、而非以一般運算式和模式比對為基礎的替代解決方案。Cloud Data Sense使用AI來提供資料的關聯式瞭解、以利準確偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。
+
+link:concept-cloud-compliance.html["深入瞭解Cloud Data Sense的運作方式"^]。
+
+
+
 === Cloud Data Sense的常見使用案例為何？
 
 * 識別個人識別資訊（ PII ）。
@@ -55,11 +63,35 @@ https://cloud.netapp.com/cloud-compliance["深入瞭解Cloud Data Sense的使用
 
 
 
-=== 雲端資料感測如何運作？
+=== 雲端資料感的架構如何？
 
-Cloud Data Sense可在Cloud Manager系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。Data Sense運用人工智慧和自然語言處理、而非以一般運算式和模式比對為基礎的替代解決方案。Cloud Data Sense使用AI來提供資料的關聯式瞭解、以利準確偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。
+Cloud Data Sense可在使用者選擇的任何位置（無論是雲端或內部部署）部署單一伺服器或叢集。伺服器透過標準傳輸協定連線至資料來源、並在Elasticsearch叢集中建立結果索引、該叢集也部署在相同的伺服器上。這可支援多雲端、跨雲端、私有雲及內部部署環境。
 
-link:concept-cloud-compliance.html["深入瞭解Cloud Data Sense的運作方式"^]。
+
+
+=== 支援哪些雲端供應商？
+
+Cloud Data Sense是Cloud Manager的一部分、可支援AWS、Azure和GCP。如此一來、您的組織便能在不同的雲端供應商之間統一化隱私權可見度。
+
+
+
+=== Cloud Data Sense是否有REST API、是否能搭配協力廠商工具使用？
+
+Cloud Manager支援其服務的REST API功能。如果Cloud Manager不是首選的管理點、也可以透過REST API來使用Cloud Data Sense等服務。每個使用者動作都有REST API、可與協力廠商系統整合。
+
+
+
+=== 雲端資料感應是否可透過市場取得？
+
+Cloud Manager的實作功能可在所有主要大型超大規模伺服器中作為第一方服務（AWS FSX for NetApp ONTAP 支援AWS；Azure NetApp Files 支援Azure；Cloud Volumes Service 在Google Cloud中支援FSX）。所有這些實作均運用Cloud Manager服務、例如Cloud Data Sense、並可透過Cloud Manager的單一窗口介面、以點選方式啟用功能來進行管理。Cloud Data Sense等服務可由任何使用大型超大規模伺服器的第一方產品之一的授權Cloud Manager使用者無縫啟用。此外、所有的市場都有提供這些服務、而且這些服務是授權與超大規模供應商共同銷售產品、也就是說、如果客戶啟用這些服務、超大規模銷售團隊就能獲得補償。所有這些因素都將Cloud Manager服務分散在整個生態系統中、並擴大我們的服務範圍。
+
+這些第一方產品可讓我們優先存取超大規模市場中數百萬位使用者、這些使用者需要世界級的資料服務、例如NetApp Cloud Data Sense、Cloud Backup、Cloud Tiering、Cloud Sync 物件庫、Global File Cache、 以及更多資訊。使用者在所有市場中、都能以前所未有的輕鬆方式交易及部署服務、以補充及完成其雲端產品組合。
+
+
+
+== 雲端資料感應掃描與分析
+
+下列問題與Cloud Data Sense掃描效能和使用者可用的分析有關。
 
 
 
@@ -73,15 +105,17 @@ link:concept-cloud-compliance.html#how-scans-work["瞭解掃描的運作方式"]
 
 
 
-=== Cloud Data Sense支援哪些部署模式？
+=== 我可以使用Cloud Data Sense搜尋資料嗎？
 
-Cloud Data Sense通常是使用SaaS模式來部署、在這種模式中、服務是透過Cloud Manager介面來啟用。Cloud Data Sense可部署在幾乎任何位置的系統上進行掃描和報告、包括內部部署、雲端和混合式環境。對於安全的安裝、Cloud Manager和Cloud Data Sense可部署在「暗站」模式中、此模式是以套件形式安裝在內部部署環境中、不需要外部網路連線。
+Cloud Data Sense服務提供廣泛的搜尋功能、可讓您輕鬆搜尋所有連線來源的特定檔案或資料。Cloud Data Sense讓使用者能夠更深入地搜尋、而不只是中繼資料的反映。這項不受語言限制的服務也能讀取檔案、分析各種敏感資料類型、例如名稱和ID。例如、使用者可以搜尋結構化和非結構化的資料儲存區、找出可能從資料庫洩漏到使用者檔案的資料、違反企業原則。搜尋可儲存以供日後使用、並可建立原則以設定頻率搜尋結果並採取行動。
+
+找到感興趣的檔案後、即可列出特性、包括標記、工作環境帳戶、儲存庫、檔案路徑、 類別（從分類）、檔案大小、上次修改、權限狀態、重複項目、 敏感度層級、個人資料、檔案內的敏感資料類型、擁有者、檔案類型、檔案大小、建立時間、 檔案雜湊、是否將資料指派給尋求注意的人員等。篩選條件可用於篩選出不相關的特性。Cloud Data Sense也具有RBAC控制項、可在有適當權限時、允許移動或刪除檔案。如果沒有適當的權限存在、則可將工作指派給組織中擁有適當權限的人員。
 
 
 
-=== 是否有人能存取在我的瀏覽器和Data Sense之間傳送的私有資料？
+=== Cloud Data合理提供何種分析？
 
-不可以在瀏覽器與Data Sense執行個體之間傳送的私有資料、會以端點對端點加密加以保護、這表示NetApp與第三方無法讀取。除非您申請並核准存取、否則Data Sense不會與NetApp分享任何資料或結果。
+資料來源可以視覺化呈現、並以圖形方式定義和描繪關係。例如、管理員可以查看整個企業內所有資料來源（內部部署系統、資料庫、雲端檔案共用、S3儲存區、OneDrive、 等）。然後、他們可以移動、刪除及管理資料、以最佳化儲存成本並降低風險。使用者可以查看哪些敏感資料可能會外洩、藉此降低風險、並建立工作來管理強大資料保護的權限。Cloud Data Sense服務也會將所有不同類型的資料進行分類、讓管理員可以根據類型來調查資料、查看對資料採取的行動、以及採取的時間。
 
 
 
@@ -107,6 +141,12 @@ HIPAA 報告:: 協助您識別檔案之間的健全狀況資訊發佈。 link:ta
 
 
 
+== 雲端資料感測管理與隱私權
+
+下列問題提供如何管理Cloud Data Sense和隱私權設定的相關資訊。
+
+
+
 === 如何啟用雲端資料感測？
 
 首先、您需要在Cloud Manager中部署Cloud Data Sense執行個體。執行個體之後、您可以從* Data Sense *標籤或選取特定工作環境、在現有的工作環境、資料庫及其他資料來源上啟用服務。
@@ -129,6 +169,32 @@ NOTE: 若要完全移除Cloud Data Sense執行個體、您可以從雲端供應�
 
 
 
+=== 我可以根據組織的需求自訂服務嗎？
+
+Cloud Data Sense可為您的資料提供隨裝即用的洞見。您可以擷取這些洞見、並將其用於貴組織的需求。
+
+此外、您也可以使用* Data Fusion Seri*功能、根據您正在掃描之資料庫中特定欄位的條件、讓Data Sense掃描您的所有資料、基本上讓您自行建立自訂的個人資料類型。
+
+link:task-managing-data-fusion.html#creating-custom-personal-data-identifiers-from-your-databases["深入瞭解"^]。
+
+
+
+=== 我可以將Cloud Data Sense資訊限制在特定使用者身上嗎？
+
+是的、Cloud Data Sense與Cloud Manager完全整合。Cloud Manager 使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。
+
+此外、如果您想讓特定使用者在不管理「資料感應」設定的情況下、只檢視「資料感應」掃描結果、您可以將「Cloud Compliance Viewer」角色指派給這些使用者。
+
+link:concept-cloud-compliance.html#user-access-to-compliance-information["深入瞭解"^]。
+
+
+
+=== 是否有人能存取在我的瀏覽器和Data Sense之間傳送的私有資料？
+
+不可以在瀏覽器與Data Sense執行個體之間傳送的私有資料、會以端點對端點加密加以保護、這表示NetApp與第三方無法讀取。除非您申請並核准存取、否則Data Sense不會與NetApp分享任何資料或結果。
+
+
+
 === 如果在您的功能區上啟用資料分層、會發生什麼情況ONTAP ？
 
 您可能想要在ONTAP 將冷資料分層儲存至物件儲存的功能區系統上啟用Cloud Data Sense。如果啟用資料分層、Data Sense會掃描磁碟上的所有資料、並將冷資料階層化至物件儲存設備。
@@ -145,37 +211,11 @@ NOTE: 若要完全移除Cloud Data Sense執行個體、您可以從雲端供應�
 
 
 
-=== 我可以根據組織的需求自訂服務嗎？
-
-Cloud Data Sense可為您的資料提供隨裝即用的洞見。您可以擷取這些洞見、並將其用於貴組織的需求。
-
-此外、您也可以使用* Data Fusion Seri*功能、根據您正在掃描之資料庫中特定欄位的條件、讓Data Sense掃描您的所有資料、基本上讓您自行建立自訂的個人資料類型。
-
-link:task-managing-data-fusion.html#creating-custom-personal-data-identifiers-from-your-databases["深入瞭解"^]。
-
-
-
 === Cloud Data Sense是否能搭配我檔案內嵌的AIP標籤運作？
 
 是的。您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） link:https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。
 
 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["深入瞭解"^]。
-
-
-
-=== 我可以將Cloud Data Sense資訊限制在特定使用者身上嗎？
-
-是的、Cloud Data Sense與Cloud Manager完全整合。Cloud Manager 使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。
-
-此外、如果您想要讓特定使用者在不管理「資料感應」設定的情況下、只檢視「資料感應」掃描結果、您可以將「_Cloud Compliance Viewer_」角色指派給這些使用者。
-
-link:concept-cloud-compliance.html#user-access-to-compliance-information["深入瞭解"^]。
-
-
-
-=== 支援哪些雲端供應商？
-
-Cloud Data Sense是Cloud Manager的一部分、可支援AWS、Azure和GCP。如此一來、您的組織便能在不同的雲端供應商之間統一化隱私權可見度。
 
 
 
@@ -187,7 +227,7 @@ Cloud Data Sense是Cloud Manager的一部分、可支援AWS、Azure和GCP。如�
 
 === 哪些資料來源可以透過Data Sense進行掃描？
 
-Cloud Data Sense可掃描已新增至Cloud Manager畫版的工作環境中的資料、以及Data Sense可透過網路存取的多種資料來源。
+Cloud Data Sense可掃描已新增至Cloud Manager畫版的工作環境中的資料、以及Data Sense可透過網路存取的多種結構化和非結構化資料來源。
 
 *工作環境：*
 
@@ -329,6 +369,16 @@ Connector是在雲端帳戶內或內部部署的運算執行個體上執行的�
 == 資料感測部署
 
 下列問題與個別的Data Sense執行個體有關。
+
+
+
+=== Cloud Data Sense支援哪些部署模式？
+
+Cloud Manager可讓使用者在幾乎任何位置掃描及報告系統、包括內部部署、雲端和混合式環境。Cloud Data Sense通常是使用SaaS模式來部署、透過Cloud Manager介面來啟用服務、不需要安裝硬體或軟體。即使在這種點選執行部署模式下、資料管理（包括同步、分層、備份與還原）、 無論資料儲存區是內部部署或公有雲、都能實現安全性、控管及法規遵循。
+
+對於安全的安裝、Cloud Manager和Cloud Data Sense可部署在「暗站」模式中、此模式是以套件形式安裝在內部部署環境中、不需要外部網路連線。
+
+無論部署方法為何（內部部署或SaaS交付的雲端模式）、使用者都能完全掌控安裝組態。不會傳送任何資訊給NetApp；完整處理會封裝在伺服器中。
 
 
 
