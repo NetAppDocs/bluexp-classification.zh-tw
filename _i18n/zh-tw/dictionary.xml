@@ -1212,20 +1212,8 @@
   <block id="204c243905d5df7c4c3d0da1c22a5f3f" category="inline-link">瞭解Cloud Data Sense的使用案例</block>
   <block id="6deb5c6e27820e725efcd4150fe731f3" category="paragraph"><block ref="980ee729f7602ada6becedc64d110fdb" category="inline-link-rx"></block>。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
-  <block id="06a51c52ef02a569af2a9307dacc091c" category="paragraph">Cloud Data Sense提供多種工具、可協助您達成法規遵循目標。您可以使用Data Sense：</block>
-  <block id="82d27ffcdb71ca4bd44b98e1e42ab5a6" category="list-text">識別個人識別資訊（ PII ）</block>
-  <block id="c5b63840c4310d7cf96b0e5da6044540" category="list-text">根據 GDPR 、 CCPA 、 PCI 及 HIPAA 隱私權法規的要求、識別廣泛的敏感資訊</block>
-  <block id="29b69a85db4b6122e7a36a94b50bb233" category="list-text">回應資料主體存取要求（ DSAR ）</block>
-  <block id="ce6e3eb342a6b567c6f1b1fe0e3cd172" category="list-text">當檔案包含特定PII時、透過電子郵件通知Cloud Manager使用者（您使用定義此條件 <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>）</block>
   <block id="30085eb68cdb8a51af49b0a08058bacd" category="inline-link-macro">Azure資訊保護（AIP）標籤</block>
-  <block id="797c9546d4f366091861852dfe4c83fb" category="list-text">檢視及修改 <block ref="d0f9730625a218e637a0d6df3df12f2b" category="inline-link-macro-rx"></block> 在您的檔案中</block>
-  <block id="c61ee35290295caccba51215e5d066f3" category="list-text">將自訂標記新增至檔案（例如「需要搬移」）、並指派Cloud Manager使用者、讓該人員擁有檔案的更新</block>
-  <block id="c581144b8663a130929f00041ab0d805" category="list-text">複製、移動及刪除檔案</block>
-  <block id="4daf20d23efab7d2dd169161e78b8602" category="paragraph">Cloud Data Sense也提供各種工具、協助您善用治理方式。您可以使用Cloud Data Sense：</block>
-  <block id="9322818c5eb3ebdb89d9db4eb2bbd10b" category="list-text">識別系統中過時的資料、非商業資料、重複的檔案、具有開放權限的檔案、以及非常大的檔案。</block>
-  <block id="7e47a492771472738db538f441f118ce" category="paragraph">您可以使用此資訊來決定是否要將某些檔案移至較便宜的物件儲存設備、刪除或分層處理。</block>
   <block id="802346cffb7edd26cc64835acbf1e825" category="list-text">在移動資料之前、請先檢視資料大小、以及是否有任何資料包含敏感資訊。</block>
-  <block id="8a4d466108313af1af7ba9b0b81c1e14" category="paragraph">如果您打算將資料從內部部署位置移轉至雲端、這項功能就很實用。</block>
   <block id="53fa8df095671f897c8cbcd13ce182b1" category="section-title">支援的工作環境和資料來源</block>
   <block id="d8700a28a2c66588bb3d2a9477ebd5c5" category="paragraph">Cloud Data Sense可掃描下列工作環境和資料來源類型的資料：</block>
   <block id="335e4bf959c1a6bf79337e11e91e4b41" category="paragraph">*工作環境：*</block>
@@ -1898,14 +1886,11 @@
   <block id="eab720ff04548794ffc2cbbd9f06daf4" category="doc">有關Cloud Data Sense的常見問題集</block>
   <block id="64a21279fa6b558777872e8b5865a2ab" category="section-title">什麼是雲端資料意義？</block>
   <block id="71f9b1308ab675e9dd6df174e1a60f18" category="paragraph">Cloud Data Sense提供預先定義的參數（例如敏感資訊類型和類別）、以因應資料隱私和敏感度的新資料法規遵循要求、例如GDPR、CCPA、HIPAA等。</block>
-  <block id="d6a75f271c34ca45be980272b9847d51" category="section-title">為什麼我應該使用Cloud Data Sense？</block>
-  <block id="f8ae17057d50237f6762d4039f49a6e3" category="paragraph">Cloud Data Sense可協助您運用資料、協助您：</block>
   <block id="3cba68afa7ab7242fd51494aeb5d8d7b" category="list-text">遵守資料法規遵循與隱私權法規。</block>
   <block id="29c9ae62d38a9d393cc687207b213fa5" category="list-text">遵守資料保留政策。</block>
   <block id="22e218023aca4f3c1af5339aa10fd3f1" category="list-text">根據 GDPR 、 CCPA 、 HIPAA 及其他資料隱私法規的要求、輕鬆找出特定資料並進行報告、以因應資料主題。</block>
   <block id="941d93d741b2550833570d67f7262c4c" category="section-title">Cloud Data Sense的常見使用案例為何？</block>
   <block id="6858b5f69ec006bf6e2de7960deffea9" category="list-text">識別個人識別資訊（ PII ）。</block>
-  <block id="db70b17c5b8b057347bca6710f75a657" category="list-text">根據 GDPR 和 CCPA 隱私權法規的要求、識別廣泛的敏感資訊。</block>
   <block id="75561c13a7f1550c1d376b995ed2e83f" category="list-text">遵守新的及即將推出的資料隱私權法規。</block>
   <block id="f352cd4e6c6b4737822722679f9fb9eb" category="inline-link">深入瞭解Cloud Data Sense的使用案例</block>
   <block id="d824a36535436f47cdb45562372579a9" category="paragraph"><block ref="a3797b949ad4ca122a2891cd0995ed6e" category="inline-link-rx"></block>。</block>
@@ -1943,9 +1928,6 @@
   <block id="67ac5f32af21c3fe8a472d38846e6f3e" category="list-text">報告中包含有關已識別檔案的詳細資料、這些檔案包含個人資料和敏感個人資料。您也可以查看依類別和檔案類型分類的檔案。 <block ref="d26e3d99d92944a7a05ba133462080b2" category="inline-link-macro-rx"></block>。</block>
   <block id="c50a6cbc569afa1deaa247aaeb038787" category="section-title">掃描效能是否有所差異？</block>
   <block id="477cc4915054f9673449fba3eb8237f7" category="inline-link-macro">部署Cloud Data Sense</block>
-  <block id="2631e546efa2924027835ebc5ce3f2a0" category="paragraph">掃描效能可能會因網路頻寬和環境中的平均檔案大小而有所不同。也可能取決於主機系統的大小特性（無論是雲端或內部部署）。請參閱 <block ref="54cc658f11f9a5e47a4489ab8d81a58c" category="inline-link-macro-rx"></block> 和 <block ref="172bdded39d96cf7508fb42f154d1871" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
-  <block id="8c1896ebd0bea05ef3c8e18467a9ca07" category="inline-link-macro">瞭解對應與分類掃描之間的差異。</block>
-  <block id="fa07ec52541c98901015394277e86a73" category="paragraph">一開始新增資料來源時、您也可以選擇只執行「對應」掃描、而非完整的「分類」掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。 <block ref="7dda8a42e8b908f8c520b46d25b02f04" category="inline-link-macro-rx"></block></block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">支援哪些檔案類型？</block>
   <block id="a3b503a46334e3fb2ab7ae78049e483b" category="section-title">如何啟用雲端資料感測？</block>
   <block id="7d782479a41a3941b57cc7c2b60d318a" category="inline-link-macro">瞭解如何開始使用</block>
@@ -2275,7 +2257,6 @@
   <block id="c0f907bdf9a6cc93e97081efb1ad0ba0" category="section-title">是否有人能存取在我的瀏覽器和Data Sense之間傳送的私有資料？</block>
   <block id="90ecb8f144bb75027d2645db76b9c80e" category="paragraph">不可以在瀏覽器與Data Sense執行個體之間傳送的私有資料、會以端點對端點加密加以保護、這表示NetApp與第三方無法讀取。除非您申請並核准存取、否則Data Sense不會與NetApp分享任何資料或結果。</block>
   <block id="9184420bd7268b81521fe2c0fb829c50" category="paragraph">是的。Cloud Data Sense所提供的資訊可能與貴組織中的其他利害關係人有關、因此我們可讓您產生報告、以分享這些見解。下列報告適用於Data Sense：</block>
-  <block id="a39a4df8314a27ad3dd4677975511322" category="paragraph">首先、您需要在Cloud Manager中部署Cloud Data Sense執行個體。執行個體之後、您可以從* Data Sense *標籤或選取特定工作環境、在現有的工作環境、資料庫及其他資料來源上啟用服務。</block>
   <block id="d998d7b40ffedd2d0b6c4e2cd0e738fb" category="admonition">在資料來源上啟動Cloud Data Sense會立即進行初始掃描。掃描結果會在不久後顯示。</block>
   <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">來源系統和資料類型的類型</block>
   <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">下列問題與可掃描的儲存設備類型及掃描的資料類型有關。</block>
@@ -2292,7 +2273,6 @@
   <block id="f115a278ea0212572398753377dc2287" category="paragraph">Data Sense只會掃描中繼資料。這對整體資料管理與治理、快速專案範圍規劃、大型產業和優先順序都很有幫助。資料對應是以中繼資料為基礎、視為*快速*掃描。</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">快速掃描之後、您可以產生資料對應報告。本報告概述儲存在企業資料來源中的資料、協助您做出有關資源使用率、移轉、備份、安全性及法規遵循程序的決策。</block>
   <block id="201f7350fba7bb40edd7973d2df21f7d" category="list-text">資料分類（深度）掃描。</block>
-  <block id="c9e62ad150311eaae555d82e1b8e2076" category="paragraph">在客戶的整個環境中、使用標準傳輸協定和唯讀權限進行資料感應掃描。針對敏感的業務相關資料、私有資訊及勒索軟體相關問題、會開啟並掃描選取的檔案。</block>
   <block id="e6955249e6953613536ae08a88475a81" category="paragraph">完整掃描之後、您可以將許多其他Data Sense功能套用至資料、例如在「Data Investigation」（資料調查）頁面中檢視及精簡資料、在檔案中搜尋名稱、複製、移動及刪除來源檔案等。</block>
   <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">授權與成本</block>
   <block id="efd4a405d0fc94dd44dd46314145b533" category="paragraph">下列問題與使用Cloud Data Sense的授權和成本有關。</block>
@@ -2313,12 +2293,10 @@
   <block id="45c9d2d43a741ab63e518aa05e11fa70" category="paragraph">是的。您可以<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在網路或雲端的Linux主機上。如果您打算在內部部署Data Sense、則可能也想在內部部署安裝Connector、但這不是必要的。</block>
   <block id="729ba1cfab33ecb7cda6d642c21b247d" category="section-title">沒有網際網路存取的安全網站又如何？</block>
   <block id="7521d190d3b7edc316bb592221196fcf" category="inline-link">在無法存取網際網路的內部部署Linux主機上部署Connector</block>
-  <block id="7b0dda74db6ec7e3e5eb3ca096c115c2" category="paragraph">是的、這也受到支援。您可以<block ref="4fae73c4748f58a56669baba6ceab594" category="inline-link-rx"></block>。然後您可以探索內部部署ONTAP 的叢集和其他本機資料來源、並使用Data Sense掃描資料。</block>
   <block id="20ddf180d77766369cf9eb26a7165489" category="section-title">資料感測部署</block>
   <block id="5bab44a31f81eef054e5895c9d068607" category="paragraph">下列問題與個別的Data Sense執行個體有關。</block>
   <block id="794e12ef176fc9da8e4f9c105c9930df" category="section-title">我可以在自己的主機上部署Data Sense嗎？</block>
   <block id="3e9b0b67019f2d0b48a4828209573441" category="paragraph">是的。您可以將Data Sense軟體安裝在可在網路或雲端存取網際網路的Linux主機上。一切都一樣運作、您也可以透過 Cloud Manager 繼續管理掃描組態和結果。請參閱 <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> 以取得系統需求和安裝詳細資料。</block>
-  <block id="64f5cbf64bda7d75632e3c56632689f8" category="paragraph">是的、這也受到支援。您可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
   <block id="24ef8c726486795460d31edd12ab8ed9" category="paragraph">根據預設、Cloud Data Sense儀表板會顯示所有工作環境、資料庫和資料來源的法規遵循與治理資料。如果您只想檢視某些工作環境中含有資料的報告、 <block ref="68584290e1051ffc6ccba308e6db06b0" category="inline-xref-macro-rx"></block>。</block>
   <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">資料調查報告</block>
   <block id="f6ba29512f0eaabde0c49365c8ab9bd2" category="inline-link-macro">深入瞭解資料調查頁面</block>
@@ -2639,24 +2617,52 @@
   <block id="046e94b126bcddc4303664d7f72819a5" category="inline-link">請參閱如何檢視此資訊</block>
   <block id="7e79533726de53720d91f0e491df7b7f" category="paragraph">檢視Data Sense正在掃描的個別儲存庫（Volume、儲存區等）時、您現在可以看到「對應」的儲存庫數量、以及「分類」的儲存庫數量。在所有資料上執行完整AI識別時、分類所需時間會更長。<block ref="0871135af547cfbd7267d7772f52c15b" category="inline-link-rx"></block>。</block>
   <block id="6bd775ee8beb1e5f4357351f2c9f1cb9" category="section-title">雲端資料感的架構如何？</block>
-  <block id="22f5473ccc0fe2ca21d83a977c643189" category="paragraph">Cloud Data Sense可在使用者選擇的任何位置（無論是雲端或內部部署）部署單一伺服器或叢集。伺服器透過標準傳輸協定連線至資料來源、並在Elasticsearch叢集中建立結果索引、該叢集也部署在相同的伺服器上。這可支援多雲端、跨雲端、私有雲及內部部署環境。</block>
   <block id="4d07f115b06861679eb4ddd208912bc0" category="section-title">Cloud Data Sense是否有REST API、是否能搭配協力廠商工具使用？</block>
   <block id="08f6917d656313f303c462e694349fad" category="paragraph">Cloud Manager支援其服務的REST API功能。如果Cloud Manager不是首選的管理點、也可以透過REST API來使用Cloud Data Sense等服務。每個使用者動作都有REST API、可與協力廠商系統整合。</block>
   <block id="af8ec8dd6f763f0113145ba362c3524c" category="section-title">雲端資料感應是否可透過市場取得？</block>
-  <block id="298a5adbd264d29cc2ae375eb03bb4b8" category="paragraph">Cloud Manager的實作功能可在所有主要大型超大規模伺服器中作為第一方服務（AWS FSX for NetApp ONTAP 支援AWS；Azure NetApp Files 支援Azure；Cloud Volumes Service 在Google Cloud中支援FSX）。所有這些實作均運用Cloud Manager服務、例如Cloud Data Sense、並可透過Cloud Manager的單一窗口介面、以點選方式啟用功能來進行管理。Cloud Data Sense等服務可由任何使用大型超大規模伺服器的第一方產品之一的授權Cloud Manager使用者無縫啟用。此外、所有的市場都有提供這些服務、而且這些服務是授權與超大規模供應商共同銷售產品、也就是說、如果客戶啟用這些服務、超大規模銷售團隊就能獲得補償。所有這些因素都將Cloud Manager服務分散在整個生態系統中、並擴大我們的服務範圍。</block>
-  <block id="bc41d4c1da3b7cbf27dde44eccf58ae0" category="paragraph">這些第一方產品可讓我們優先存取超大規模市場中數百萬位使用者、這些使用者需要世界級的資料服務、例如NetApp Cloud Data Sense、Cloud Backup、Cloud Tiering、Cloud Sync 物件庫、Global File Cache、 以及更多資訊。使用者在所有市場中、都能以前所未有的輕鬆方式交易及部署服務、以補充及完成其雲端產品組合。</block>
   <block id="a91599b8b9c2521748fc37816cb91748" category="section-title">雲端資料感應掃描與分析</block>
   <block id="dbbe3cdd356f7995b0954547b7f8a6a6" category="paragraph">下列問題與Cloud Data Sense掃描效能和使用者可用的分析有關。</block>
-  <block id="5e91cc59958451bd9fd5c42d09fcff38" category="section-title">我可以使用Cloud Data Sense搜尋資料嗎？</block>
-  <block id="11dffc624b27cac7baae53814f8508fb" category="paragraph">Cloud Data Sense服務提供廣泛的搜尋功能、可讓您輕鬆搜尋所有連線來源的特定檔案或資料。Cloud Data Sense讓使用者能夠更深入地搜尋、而不只是中繼資料的反映。這項不受語言限制的服務也能讀取檔案、分析各種敏感資料類型、例如名稱和ID。例如、使用者可以搜尋結構化和非結構化的資料儲存區、找出可能從資料庫洩漏到使用者檔案的資料、違反企業原則。搜尋可儲存以供日後使用、並可建立原則以設定頻率搜尋結果並採取行動。</block>
-  <block id="92979877e63ad07334e79a27044c0f2e" category="paragraph">找到感興趣的檔案後、即可列出特性、包括標記、工作環境帳戶、儲存庫、檔案路徑、 類別（從分類）、檔案大小、上次修改、權限狀態、重複項目、 敏感度層級、個人資料、檔案內的敏感資料類型、擁有者、檔案類型、檔案大小、建立時間、 檔案雜湊、是否將資料指派給尋求注意的人員等。篩選條件可用於篩選出不相關的特性。Cloud Data Sense也具有RBAC控制項、可在有適當權限時、允許移動或刪除檔案。如果沒有適當的權限存在、則可將工作指派給組織中擁有適當權限的人員。</block>
   <block id="a620bbcc75be31bcbeacaf64aa44f0d9" category="section-title">Cloud Data合理提供何種分析？</block>
-  <block id="cdaf867a4c5ffa14e476eb7e7bb0831c" category="paragraph">資料來源可以視覺化呈現、並以圖形方式定義和描繪關係。例如、管理員可以查看整個企業內所有資料來源（內部部署系統、資料庫、雲端檔案共用、S3儲存區、OneDrive、 等）。然後、他們可以移動、刪除及管理資料、以最佳化儲存成本並降低風險。使用者可以查看哪些敏感資料可能會外洩、藉此降低風險、並建立工作來管理強大資料保護的權限。Cloud Data Sense服務也會將所有不同類型的資料進行分類、讓管理員可以根據類型來調查資料、查看對資料採取的行動、以及採取的時間。</block>
   <block id="2ff213cf58060ebbba92ce3d8cb5f2fe" category="section-title">雲端資料感測管理與隱私權</block>
   <block id="98cbc012ffb904cb276a1e79d6cda97a" category="paragraph">下列問題提供如何管理Cloud Data Sense和隱私權設定的相關資訊。</block>
   <block id="b1f65700494451606ff0a8c99ec0733d" category="paragraph">此外、如果您想讓特定使用者在不管理「資料感應」設定的情況下、只檢視「資料感應」掃描結果、您可以將「Cloud Compliance Viewer」角色指派給這些使用者。</block>
   <block id="429cc98b9dab48feedbd99a04157659f" category="paragraph">Cloud Data Sense可掃描已新增至Cloud Manager畫版的工作環境中的資料、以及Data Sense可透過網路存取的多種結構化和非結構化資料來源。</block>
-  <block id="cf99941ff561faca0c0212ca46e7a3fc" category="paragraph">Cloud Manager可讓使用者在幾乎任何位置掃描及報告系統、包括內部部署、雲端和混合式環境。Cloud Data Sense通常是使用SaaS模式來部署、透過Cloud Manager介面來啟用服務、不需要安裝硬體或軟體。即使在這種點選執行部署模式下、資料管理（包括同步、分層、備份與還原）、 無論資料儲存區是內部部署或公有雲、都能實現安全性、控管及法規遵循。</block>
-  <block id="3a4d237826f192247ddd80ff000856e8" category="paragraph">對於安全的安裝、Cloud Manager和Cloud Data Sense可部署在「暗站」模式中、此模式是以套件形式安裝在內部部署環境中、不需要外部網路連線。</block>
-  <block id="6ba16caafcf4be6931257967930a3921" category="paragraph">無論部署方法為何（內部部署或SaaS交付的雲端模式）、使用者都能完全掌控安裝組態。不會傳送任何資訊給NetApp；完整處理會封裝在伺服器中。</block>
+  <block id="204587d47b4c54d160f439fadfe18fc5" category="paragraph">無論您選擇在雲端或內部部署、Cloud Data Sense都能部署單一伺服器或叢集。伺服器透過標準傳輸協定連線至資料來源、並在Elasticsearch叢集中建立結果索引、該叢集也部署在相同的伺服器上。這可支援多個雲端、跨雲端、私有雲和內部部署環境。</block>
+  <block id="9c158aa39e93da1129bb153a9fda2f3f" category="paragraph">是的、AWS、Azure和GCP市場均提供Cloud Manager和Cloud Data Sense。</block>
+  <block id="adccc4d2cca8d8234f516afeec155d17" category="section-title">我可以使用Cloud Data Sense搜尋資料嗎？</block>
+  <block id="c5a4c30302bcf6c00f47a3aa96512f69" category="paragraph">Cloud Data Sense提供廣泛的搜尋功能、可讓您輕鬆搜尋所有連線來源的特定檔案或資料。Data Sense可讓使用者進行更深入的搜尋、而不只是中繼資料所反映的內容。這項不受語言限制的服務也能讀取檔案、分析各種敏感資料類型、例如名稱和ID。例如、使用者可以搜尋結構化和非結構化的資料儲存區、找出可能從資料庫洩漏到使用者檔案的資料、違反企業原則。搜尋可儲存以供日後使用、並可建立原則以設定頻率搜尋結果並採取行動。</block>
+  <block id="079d7156babd96f6ffb88d74b81e0293" category="paragraph">找到感興趣的檔案後、即可列出特性、包括標記、工作環境帳戶、儲存庫、檔案路徑、 類別（從分類）、檔案大小、上次修改、權限狀態、重複項目、 敏感度層級、個人資料、檔案內的敏感資料類型、擁有者、檔案類型、檔案大小、建立時間、 檔案雜湊、是否將資料指派給尋求注意的人員等。篩選條件可用於篩選出不相關的特性。Data Sense也具有RBAC控制項、可在有適當權限時、允許移動或刪除檔案。如果沒有適當的權限存在、則可將工作指派給組織中擁有適當權限的人員。</block>
+  <block id="3a88ff6fa01735721c31c271559e1eba" category="paragraph">資料來源可以視覺化呈現、並以圖形方式定義和描繪關係。例如、管理員可以查看整個企業內所有資料來源（內部部署系統、資料庫、檔案共用、S3儲存區、OneDrive、 等）。然後、他們可以複製、移動、刪除及管理資料、以最佳化儲存成本並降低風險。使用者可以查看哪些敏感資料可能會外洩、藉此降低風險、並建立工作來管理強大資料保護的權限。Data Sense也會將所有不同類型的資料進行分類、讓管理員可以根據類型來調查資料、查看對資料採取的行動、以及採取的時間。</block>
+  <block id="38f627c4b21375a40c92925baf7924e3" category="paragraph">掃描效能可能會因網路頻寬和環境中的平均檔案大小而有所不同。也可能取決於主機系統的大小特性（無論是雲端或內部部署）。請參閱 <block ref="ba79215ce103197616664775b93ba86f" category="inline-link-macro-rx"></block> 和 <block ref="1cff0a801d1de3ceb2e474846f005821" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="992e3ca84c2944a0dbcaf7e99231a50e" category="inline-link-macro">瞭解對應與分類掃描之間的差異</block>
+  <block id="def0998b91888f6c8913daf5857514fe" category="paragraph">一開始新增資料來源時、您也可以選擇只執行「對應」掃描、而非完整的「分類」掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。 <block ref="51b8d4ed20a0bce6d8202eb3e674faa5" category="inline-link-macro-rx"></block>。</block>
+  <block id="5eae291eed2e16546f5fc58b2458fe67" category="paragraph">首先、您需要在Cloud Manager或內部部署系統上部署Cloud Data Sense執行個體。執行個體之後、您可以從* Data Sense *標籤或選取特定工作環境、在現有的工作環境、資料庫及其他資料來源上啟用服務。</block>
+  <block id="30cedf267127066ad1ae6900fcd4efd6" category="paragraph">在整個環境中使用標準傳輸協定和唯讀權限進行資料感應掃描。針對敏感的業務相關資料、私有資訊及勒索軟體相關問題、會開啟並掃描選取的檔案。</block>
+  <block id="726caa59a84bb2953cc18c8dfd2aa4ea" category="paragraph">是的、這也受到支援。您可以<block ref="4fae73c4748f58a56669baba6ceab594" category="inline-link-rx"></block>。然後您可以探索內部部署ONTAP 的叢集和其他本機資料來源、並使用Data Sense掃描資料。</block>
+  <block id="702d88f8e519980a560ae9f3170df5f5" category="paragraph">Cloud Manager可讓使用者在幾乎任何位置掃描及報告系統、包括內部部署、雲端和混合式環境。Cloud Data Sense通常是使用SaaS模式來部署、透過Cloud Manager介面來啟用服務、不需要安裝硬體或軟體。即使是在這種點選即用部署模式下、資料管理也能完成、無論資料存放區是在內部部署或公有雲中。</block>
+  <block id="6d221b0532f183c43399fe3cf826487d" category="paragraph">是的、這也受到支援。您可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
+  <block id="861f912bdc60a9b71f6f643f31234fb5" category="paragraph">Cloud Data Sense使用人工智慧（AI）、自然語言處理（NLP）和機器學習（ML）來瞭解其掃描的內容、以便擷取實體並據此分類內容。這可讓Data Sense提供下列功能領域。</block>
+  <block id="5e27c5cc9f66f543d963585b42d1709d" category="section-title">維持法規遵循</block>
+  <block id="9d759fbb4cbb51dc4cf6d20ce4d7d9a9" category="paragraph">Data Sense提供多種工具、可協助您達成法規遵循目標。您可以使用Data Sense：</block>
+  <block id="3a1ce1b3df0ddd54818235c5f83820d9" category="list-text">根據GDPR、CCPA、PCI及HIPAA隱私權法規的要求、識別範圍廣泛的敏感個人資訊。</block>
+  <block id="aa1b21b925a987e64de4f7ff816313c0" category="list-text">根據名稱或電子郵件地址回應資料主旨存取要求（DSAR）。</block>
+  <block id="b0eb7209de1c7007992716e29fe58da5" category="list-text">識別資料庫的唯一識別碼是否存在於其他儲存庫中的檔案中、基本上是建立您自己的「個人資料」清單、以在「資料感應」掃描中加以識別。</block>
+  <block id="a328deb96ac07e550c18f0a9152bcebb" category="list-text">當檔案包含特定PII時、透過電子郵件通知Cloud Manager使用者（您使用定義此條件 <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>）以便決定行動計畫。</block>
+  <block id="947194b810ea64bcea87e2425aed8a89" category="section-title">強化安全性</block>
+  <block id="d3359a9aa3e07091cc3b695ce623afb6" category="paragraph">Data Sense可識別出可能有犯罪目的存取風險的資料。您可以使用Data Sense：</block>
+  <block id="7aa9c47f42013735e3c5573eb7004a9d" category="list-text">識別所有具有開放權限的檔案和目錄（共享區和資料夾）、這些檔案和目錄都會公開給整個組織或大眾使用。</block>
+  <block id="5e27afd1e1e5a71e7aff888767d3214a" category="list-text">識別位於初始專屬位置之外的敏感資料。</block>
+  <block id="2f548b9a1e6e69aa1914a6a893db7f50" category="list-text">使用_policies自動通知安全員工新的安全問題、以便他們立即採取行動。</block>
+  <block id="30259a2551381a28757271a99c3bf856" category="list-text">將自訂標記新增至檔案（例如「需要搬移」）、並指派Cloud Manager使用者、讓該人員擁有檔案的更新。</block>
+  <block id="1d6cf8f9413aa74ccb67dc25a0cd30f6" category="list-text">檢視及修改 <block ref="d0f9730625a218e637a0d6df3df12f2b" category="inline-link-macro-rx"></block> 在您的檔案中。</block>
+  <block id="c5f92f73b9ea92063c2fc24f82a835d2" category="section-title">最佳化儲存使用量</block>
+  <block id="5df73f30ee77990aa89c16d3484cbec4" category="paragraph">Data Sense提供的工具可協助您降低儲存設備的總體擁有成本（TCO）。您可以使用Data Sense：</block>
+  <block id="17e4f6fc55d9d61a5481011f4bc71a46" category="list-text">識別重複或非業務相關的資料、以提高儲存效率。您可以使用此資訊來決定要移動或刪除特定檔案。</block>
+  <block id="1dd59d53f98a1d164f58cb70191c512b" category="list-text">刪除看起來不安全或風險太高、無法留在儲存系統中、或是您已識別為重複的檔案。您可以使用_policies自動刪除符合特定條件的檔案。</block>
+  <block id="4adf15614982e126334e7fcb5609beb6" category="inline-link">深入瞭解分層</block>
+  <block id="2ec592d707b81ee084ad77b364a2f19b" category="list-text">識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。<block ref="1c87834aa441e9ddec7d154f9ed3550f" category="inline-link-rx"></block>。</block>
+  <block id="0539321f76da9af4cf373049cff32281" category="section-title">加速資料移轉</block>
+  <block id="031851f09928a9ba770d9a60621692bb" category="paragraph">Data Sense可用於在將內部部署資料移轉至公有雲或私有雲之前、先掃描內部部署資料。您可以使用Data Sense：</block>
+  <block id="3b53e0b18b32eb9915a9cbf82593a1a1" category="list-text">篩選來源資料（根據超過25種準則）、以便只將所需檔案移至目的地、不必要的資料不會移動。</block>
+  <block id="eb1c9efb95b9cc5e1cf4c8f6b05d88a1" category="list-text">自動且持續地將所需的資料移動、複製或同步至雲端儲存庫。</block>
 </blocks>

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, azure netapp files, amazon fsx for ontap, fsx, cloud volumes ontap, Amazon S3, database, onedrive, sharepoint, google drive, on-prem ontap, file shares, object storage, aip labels, governance, data sense 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization 
 summary: Cloud Data Sense是適用於Cloud Manager的資料治理服務、可掃描企業內部部署與雲端資料來源及工作環境、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。 
 ---
 = 深入瞭解Cloud Data Sense
@@ -22,27 +22,55 @@ https://cloud.netapp.com/netapp-cloud-data-sense["瞭解Cloud Data Sense的使�
 
 == 功能
 
-Cloud Data Sense提供多種工具、可協助您達成法規遵循目標。您可以使用Data Sense：
-
-* 識別個人識別資訊（ PII ）
-* 根據 GDPR 、 CCPA 、 PCI 及 HIPAA 隱私權法規的要求、識別廣泛的敏感資訊
-* 回應資料主體存取要求（ DSAR ）
-* 當檔案包含特定PII時、透過電子郵件通知Cloud Manager使用者（您使用定義此條件 link:task-org-private-data.html#controlling-your-data-using-policies["原則"^]）
-* 檢視及修改 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）標籤"^] 在您的檔案中
-* 將自訂標記新增至檔案（例如「需要搬移」）、並指派Cloud Manager使用者、讓該人員擁有檔案的更新
-* 複製、移動及刪除檔案
+Cloud Data Sense使用人工智慧（AI）、自然語言處理（NLP）和機器學習（ML）來瞭解其掃描的內容、以便擷取實體並據此分類內容。這可讓Data Sense提供下列功能領域。
 
 
-Cloud Data Sense也提供各種工具、協助您善用治理方式。您可以使用Cloud Data Sense：
 
-* 識別系統中過時的資料、非商業資料、重複的檔案、具有開放權限的檔案、以及非常大的檔案。
-+
-您可以使用此資訊來決定是否要將某些檔案移至較便宜的物件儲存設備、刪除或分層處理。
+=== 維持法規遵循
+
+Data Sense提供多種工具、可協助您達成法規遵循目標。您可以使用Data Sense：
+
+* 識別個人識別資訊（ PII ）。
+* 根據GDPR、CCPA、PCI及HIPAA隱私權法規的要求、識別範圍廣泛的敏感個人資訊。
+* 根據名稱或電子郵件地址回應資料主旨存取要求（DSAR）。
+* 識別資料庫的唯一識別碼是否存在於其他儲存庫中的檔案中、基本上是建立您自己的「個人資料」清單、以在「資料感應」掃描中加以識別。
+* 當檔案包含特定PII時、透過電子郵件通知Cloud Manager使用者（您使用定義此條件 link:task-org-private-data.html#controlling-your-data-using-policies["原則"^]）以便決定行動計畫。
+
+
+
+
+=== 強化安全性
+
+Data Sense可識別出可能有犯罪目的存取風險的資料。您可以使用Data Sense：
+
+* 識別所有具有開放權限的檔案和目錄（共享區和資料夾）、這些檔案和目錄都會公開給整個組織或大眾使用。
+* 識別位於初始專屬位置之外的敏感資料。
+* 遵守資料保留政策。
+* 使用_policies自動通知安全員工新的安全問題、以便他們立即採取行動。
+* 將自訂標記新增至檔案（例如「需要搬移」）、並指派Cloud Manager使用者、讓該人員擁有檔案的更新。
+* 檢視及修改 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）標籤"^] 在您的檔案中。
+
+
+
+
+=== 最佳化儲存使用量
+
+Data Sense提供的工具可協助您降低儲存設備的總體擁有成本（TCO）。您可以使用Data Sense：
+
+* 識別重複或非業務相關的資料、以提高儲存效率。您可以使用此資訊來決定要移動或刪除特定檔案。
+* 刪除看起來不安全或風險太高、無法留在儲存系統中、或是您已識別為重複的檔案。您可以使用_policies自動刪除符合特定條件的檔案。
+* 識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["深入瞭解分層"^]。
+
+
+
+
+=== 加速資料移轉
+
+Data Sense可用於在將內部部署資料移轉至公有雲或私有雲之前、先掃描內部部署資料。您可以使用Data Sense：
 
 * 在移動資料之前、請先檢視資料大小、以及是否有任何資料包含敏感資訊。
-+
-如果您打算將資料從內部部署位置移轉至雲端、這項功能就很實用。
-
+* 篩選來源資料（根據超過25種準則）、以便只將所需檔案移至目的地、不必要的資料不會移動。
+* 自動且持續地將所需的資料移動、複製或同步至雲端儲存庫。
 
 
 
