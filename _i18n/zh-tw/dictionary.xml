@@ -88,8 +88,6 @@
   <block id="2473b4a68e8fb944fa5afe552e508d00" category="paragraph">Cloud Data Sense支援下列檔案類型中的AIP標籤：.DOC、.DOCX、.PDF、.PPTX、.XLS、 XLSX：</block>
   <block id="80b4732b42c9c04d16bcddade3a9f773" category="list-text">如果檔案有AIP不再存在的標籤、Cloud Data Sense會將其視為沒有標籤的檔案。</block>
   <block id="96238d4f93a120c69c563c428e826a69" category="section-title">將AIP標籤整合到工作區中</block>
-  <block id="1cf1610064af8e4e2f1e19dd3c88e17e" category="inline-link-macro">工作環境與資料來源</block>
-  <block id="88ba72e4480ca144a6e0a862060d4009" category="paragraph">在您管理AIP標籤之前、您必須先登入現有的Azure帳戶、將AIP標籤功能整合至Cloud Data Sense。一旦啟用、您就能在檔案中管理所有人的AIP標籤 <block ref="64b3b5ab9e2ec3786a437d32b22f89c6" category="inline-link-macro-rx"></block> 在Cloud Manager工作區中。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">需求</block>
   <block id="134b8f00ffb7e15169d315180cdd63ef" category="list-text">您必須擁有帳戶和Azure資訊保護授權。</block>
   <block id="adcc63024cda5a3b0a7e68f1bbd11d61" category="list-text">您必須擁有Azure帳戶的登入認證資料。</block>
@@ -1207,15 +1205,12 @@
   <block id="ad9cef07905145ee0024cb8f905da6ee" category="paragraph">根據預設、不會掃描資料保護（DP）磁碟區、因為這些磁碟區並未對外公開、而且Cloud Data Sense無法存取它們。這些都是從內部部署 ONTAP 的 SnapMirror 系統或 Cloud Volumes ONTAP 從某個系統進行 SnapMirror 作業的目的地 Volume 。</block>
   <block id="f13aece6b768921832b7bb943cab9f19" category="list-text">原始 ONTAP 資料來源系統中最初建立為 NFS Volume 的磁碟區將會啟用。</block>
   <block id="70397bc1b30df5af8cc61673df2f897d" category="list-text">最初在來源 ONTAP 系統中建立為 CIFS Volume 的磁碟區、需要輸入 CIFS 認證資料才能掃描這些 DP 磁碟區。如果您已經輸入Active Directory認證資料、以便Cloud Data Sense能夠掃描CIFS磁碟區、您可以使用這些認證資料、也可以指定不同的管理認證資料集。</block>
-  <block id="78c9db74003389abce5c88a2d5a79350" category="summary">Cloud Data Sense是適用於Cloud Manager的資料治理服務、可掃描企業內部部署與雲端資料來源及工作環境、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
   <block id="8bfe6344cf4da234d6389ef571fd8648" category="doc">深入瞭解Cloud Data Sense</block>
   <block id="204c243905d5df7c4c3d0da1c22a5f3f" category="inline-link">瞭解Cloud Data Sense的使用案例</block>
   <block id="6deb5c6e27820e725efcd4150fe731f3" category="paragraph"><block ref="980ee729f7602ada6becedc64d110fdb" category="inline-link-rx"></block>。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="30085eb68cdb8a51af49b0a08058bacd" category="inline-link-macro">Azure資訊保護（AIP）標籤</block>
   <block id="802346cffb7edd26cc64835acbf1e825" category="list-text">在移動資料之前、請先檢視資料大小、以及是否有任何資料包含敏感資訊。</block>
-  <block id="53fa8df095671f897c8cbcd13ce182b1" category="section-title">支援的工作環境和資料來源</block>
-  <block id="d8700a28a2c66588bb3d2a9477ebd5c5" category="paragraph">Cloud Data Sense可掃描下列工作環境和資料來源類型的資料：</block>
   <block id="335e4bf959c1a6bf79337e11e91e4b41" category="paragraph">*工作環境：*</block>
   <block id="434b441a61769bba5eecb3dd327a4342" category="list-text">（部署於AWS、Azure或GCP）Cloud Volumes ONTAP</block>
   <block id="6c253a8aff5dfa835a77545b3006abc8" category="list-text">內部部署 ONTAP 的叢集</block>
@@ -1225,7 +1220,6 @@
   <block id="69324e9ada23ef5bcac1bc763ac5938e" category="paragraph">*資料來源：*</block>
   <block id="34a23f91ee1733d5151d67d6f922e573" category="list-text">非NetApp檔案共用</block>
   <block id="c58c082d5caf77a57bf200c63dfeaeb9" category="list-text">物件儲存（使用S3傳輸協定）</block>
-  <block id="ea2ef9b0d095bf991f4973633b485340" category="list-text">資料庫</block>
   <block id="807a3c50d901b21b3f3b8e077bc903f8" category="list-text">OneDrive 帳戶</block>
   <block id="5348a3d9617693ca4a8cd2a4df0789c7" category="list-text">SharePoint帳戶</block>
   <block id="930973924cefd6cec2bb93552550ca0a" category="paragraph">Data Sense支援NFS 3.x、4.0及4.1版、以及CIFS 1.x、2.0、2.1及3.0版。</block>
@@ -1282,7 +1276,6 @@
   <block id="8aa646444b52d32991c2599985610fda" category="section-title">Cloud Data Sense的運作方式</block>
   <block id="f2e9b9e6e80191061cb53d43527fddfb" category="paragraph">在高層級、Cloud Data Sense的運作方式如下：</block>
   <block id="9b5b11c867089720b01e26d06ac62954" category="list-text">您可以在Cloud Manager中部署Data Sense執行個體。</block>
-  <block id="695c97b3f29fca636b2577a46f674b32" category="list-text">您可以在一或多個工作環境或資料來源上啟用高層對應或深度層級掃描。</block>
   <block id="17f3f7cf721d889dc9d26009fd1570c1" category="list-text">Data Sense會使用AI學習程序掃描資料。</block>
   <block id="fc9e95a58725aa4fd51268d90c52f9e1" category="list-text">您可以使用所提供的儀表板和報告工具、協助您達成法規遵循與治理目標。</block>
   <block id="ea2c817c93e9afe80e6a8d8f74c1692d" category="section-title">掃描的運作方式</block>
@@ -1293,7 +1286,6 @@
   <block id="041dc474a2214d6c773db6f804ec65c7" category="paragraph">在初始掃描之後、Data Sense會持續掃描您的資料、以偵測遞增變更（這也是為何務必保持執行個體的重要性）。</block>
   <block id="3a7d96d307a8facb682992a53315a953" category="paragraph">您可以在磁碟區層級、儲存庫層級、資料庫架構層級、OneDrive使用者層級和SharePoint網站層級啟用和停用掃描。</block>
   <block id="07319052a199a3efec9e35f531ee2368" category="section-title">對應掃描與分類掃描之間有何差異</block>
-  <block id="983e489afa45ba4e28274c8e167697df" category="paragraph">Cloud Data Sense可讓您在選定的工作環境和資料來源上執行一般的「對應」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。</block>
   <block id="a6555d8888ac95f7925f179ea7e8d4a8" category="paragraph">下表顯示部分差異：</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">功能</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="cell">分類</block>
@@ -2665,4 +2657,25 @@
   <block id="031851f09928a9ba770d9a60621692bb" category="paragraph">Data Sense可用於在將內部部署資料移轉至公有雲或私有雲之前、先掃描內部部署資料。您可以使用Data Sense：</block>
   <block id="3b53e0b18b32eb9915a9cbf82593a1a1" category="list-text">篩選來源資料（根據超過25種準則）、以便只將所需檔案移至目的地、不必要的資料不會移動。</block>
   <block id="eb1c9efb95b9cc5e1cf4c8f6b05d88a1" category="list-text">自動且持續地將所需的資料移動、複製或同步至雲端儲存庫。</block>
+  <block id="66419de72b8ef9b668dec88e9b2fdc45" category="inline-link-macro">資料來源</block>
+  <block id="cf05765a83d52eed0270e381fdeb4f2f" category="paragraph">在您管理AIP標籤之前、您必須先登入現有的Azure帳戶、將AIP標籤功能整合至Cloud Data Sense。一旦啟用、您就能在檔案中管理所有人的AIP標籤 <block ref="590012ab10bd1b63820c3ad5e15aed82" category="inline-link-macro-rx"></block> 在Cloud Manager工作區中。</block>
+  <block id="0fbfffdc65fdbac7e3b47c0fea2a22b4" category="summary">Cloud Data Sense是適用於Cloud Manager的資料治理服務、可掃描企業內部部署與雲端資料來源、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
+  <block id="4b2dc6d561abc6c9c760cf49cfbbc7a8" category="paragraph">Cloud Data Sense可掃描及分析下列資料來源類型的結構化和非結構化資料：</block>
+  <block id="698e930183c8796e92136cb95f09c240" category="paragraph">* NetApp：*</block>
+  <block id="392d70ca39f31f10bd637936769788df" category="list-text">StorageGRID</block>
+  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="list-text">適用於 Google Cloud Cloud Volumes Service</block>
+  <block id="8a76361fdfc56da1af2d97f8b52c092d" category="paragraph">*非NetApp：*</block>
+  <block id="610504e5130f3a2d2e36b4a7bee6e9ca" category="list-text">Dell EMC Isilon</block>
+  <block id="104945387221e3875362d8abb621da7d" category="list-text">Pure Storage</block>
+  <block id="bb88c75c573c51be16c7d85804e7a9fe" category="list-text">Nutanix</block>
+  <block id="15fca3b27e46d9a8a2810d30feb9b434" category="list-text">任何其他儲存設備廠商</block>
+  <block id="30899efa777e04d2606dffe90717c0b4" category="paragraph">*雲端：*</block>
+  <block id="52745271323ee9ea30e3a37d0338d118" category="list-text">Azure Blob</block>
+  <block id="833c2c211a541e50ad94433664e4b5c1" category="list-text">Google Cloud Storage</block>
+  <block id="f79cd76b16e526d536ec5f9e3a3dbe9d" category="list-text">OneDrive</block>
+  <block id="27bafb3855ae4ca3df676518f2aaad5a" category="list-text">SharePoint Online</block>
+  <block id="e0daf39823ec1a1a7878c9718f063d5f" category="list-text">Google雲端硬碟</block>
+  <block id="9bde88aed1efa84fb1b1fb5319a7e561" category="paragraph">*資料庫：*</block>
+  <block id="93527746a0aabc74aefe0ff55c837bc7" category="list-text">您可以在一或多個資料來源上啟用高層對應或深度層級掃描。</block>
+  <block id="c62db9834fbc6b314856a0fe8ff0acfc" category="paragraph">Cloud Data Sense可讓您在選定的資料來源上執行一般的「對應」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。</block>
 </blocks>

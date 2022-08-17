@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
 keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization 
-summary: Cloud Data Sense是適用於Cloud Manager的資料治理服務、可掃描企業內部部署與雲端資料來源及工作環境、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。 
+summary: Cloud Data Sense是適用於Cloud Manager的資料治理服務、可掃描企業內部部署與雲端資料來源、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。 
 ---
 = 深入瞭解Cloud Data Sense
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Sense是適用於Cloud Manager的資料治理服務、可掃
 
 
 [role="lead"]
-Cloud Data Sense是適用於Cloud Manager的資料治理服務、可掃描企業內部部署與雲端資料來源及工作環境、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。
+Cloud Data Sense是適用於Cloud Manager的資料治理服務、可掃描企業內部部署與雲端資料來源、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。
 
 https://cloud.netapp.com/netapp-cloud-data-sense["瞭解Cloud Data Sense的使用案例"^]。
 
@@ -75,27 +75,47 @@ Data Sense可用於在將內部部署資料移轉至公有雲或私有雲之前�
 
 
 
-== 支援的工作環境和資料來源
+== 支援的資料來源
 
-Cloud Data Sense可掃描下列工作環境和資料來源類型的資料：
+Cloud Data Sense可掃描及分析下列資料來源類型的結構化和非結構化資料：
 
-*工作環境：*
+* NetApp：*
 
 * （部署於AWS、Azure或GCP）Cloud Volumes ONTAP
 * 內部部署 ONTAP 的叢集
+* StorageGRID
 * Azure NetApp Files
 * Amazon FSX for ONTAP Sf
+* 適用於 Google Cloud Cloud Volumes Service
+
+
+*非NetApp：*
+
+* Dell EMC Isilon
+* Pure Storage
+* Nutanix
+* 任何其他儲存設備廠商
+
+
+*雲端：*
+
 * Amazon S3
+* Azure Blob
+* Google Cloud Storage
+* OneDrive
+* SharePoint Online
+* Google雲端硬碟
 
 
-*資料來源：*
+*資料庫：*
 
-* 非NetApp檔案共用
-* 物件儲存（使用S3傳輸協定）
-* 資料庫
-* OneDrive 帳戶
-* SharePoint帳戶
-* Google雲端硬碟帳戶
+* Amazon關係資料庫服務（Amazon RDS）
+* MongoDB
+* MySQL
+* Oracle
+* PostgreSQL
+* SAP HANA
+* SQL Server （ MSSQL ）
 
 
 Data Sense支援NFS 3.x、4.0及4.1版、以及CIFS 1.x、2.0、2.1及3.0版。
@@ -183,7 +203,7 @@ TIP: 由於Cloud Data Sense會持續掃描資料、因此執行個體應隨時�
 在高層級、Cloud Data Sense的運作方式如下：
 
 . 您可以在Cloud Manager中部署Data Sense執行個體。
-. 您可以在一或多個工作環境或資料來源上啟用高層對應或深度層級掃描。
+. 您可以在一或多個資料來源上啟用高層對應或深度層級掃描。
 . Data Sense會使用AI學習程序掃描資料。
 . 您可以使用所提供的儀表板和報告工具、協助您達成法規遵循與治理目標。
 
@@ -206,7 +226,7 @@ image:diagram_cloud_compliance_scan.png["顯示Cloud Manager執行個體和雲�
 
 === 對應掃描與分類掃描之間有何差異
 
-Cloud Data Sense可讓您在選定的工作環境和資料來源上執行一般的「對應」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。
+Cloud Data Sense可讓您在選定的資料來源上執行一般的「對應」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。
 
 許多使用者之所以喜歡這項功能、是因為他們想要快速掃描資料、找出需要更多研究的資料來源、然後只能針對需要的資料來源或磁碟區進行分類掃描。
 

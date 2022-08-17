@@ -71,7 +71,7 @@ Cloud Data Sense支援下列檔案類型中的AIP標籤：.DOC、.DOCX、.PDF、
 
 === 將AIP標籤整合到工作區中
 
-在您管理AIP標籤之前、您必須先登入現有的Azure帳戶、將AIP標籤功能整合至Cloud Data Sense。一旦啟用、您就能在檔案中管理所有人的AIP標籤 link:concept-cloud-compliance.html#supported-working-environments-and-data-sources["工作環境與資料來源"^] 在Cloud Manager工作區中。
+在您管理AIP標籤之前、您必須先登入現有的Azure帳戶、將AIP標籤功能整合至Cloud Data Sense。一旦啟用、您就能在檔案中管理所有人的AIP標籤 link:concept-cloud-compliance.html#supported-data-sources["資料來源"^] 在Cloud Manager工作區中。
 
 .需求
 * 您必須擁有帳戶和Azure資訊保護授權。
