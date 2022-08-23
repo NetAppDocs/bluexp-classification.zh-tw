@@ -55,6 +55,12 @@ link:reference-private-data-categories.html#types-of-personal-data["查看Data S
 
 
 
+=== 現在、您可以在資料中新增Data Sense將識別的自訂模式
+
+您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#creating-custom-personal-data-identifiers-using-a-regex["深入瞭解"^]。
+
+
+
 == 2022年7月6日（1.14版）
 
 

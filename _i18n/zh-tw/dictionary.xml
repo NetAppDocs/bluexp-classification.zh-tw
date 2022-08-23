@@ -736,12 +736,8 @@
   <block id="75a66e55dacbe2cf6f99b2cf3ad2eecc" category="paragraph">一旦啟用、Cloud Data Sense便會從每個啟用掃描的DP磁碟區建立NFS共用區。共用匯出原則僅允許從Data Sense執行個體存取。</block>
   <block id="abcdab0f1cbbe968798a52245b476c30" category="paragraph">*附註：*如果您在一開始啟用DP磁碟區存取時沒有CIFS資料保護磁碟區、之後再新增部分資料、則「組態」頁面頂端會出現*「啟用CIFS DP*存取」按鈕。按一下此按鈕並新增 CIFS 認證、以啟用對這些 CIFS DP 磁碟區的存取。</block>
   <block id="21118277527dde4297826bff350dbf36" category="admonition">Active Directory認證資料只會在第一個CIFS DP Volume的儲存VM中註冊、因此會掃描該SVM上的所有DP磁碟區。任何位於其他SVM上的磁碟區都不會登錄Active Directory認證、因此不會掃描這些DP磁碟區。</block>
-  <block id="d8eb0b3538e3c04fec9444db605a1d26" category="summary">我們稱為「Data Fusion Efor」的一項功能、可讓您掃描組織的資料、找出資料庫中的唯一識別碼是否存在於檔案或其他資料庫中、基本上您可以自行列出Cloud Data Sense掃描中所識別的「個人資料」清單。這可讓您完整瞭解所有檔案中可能敏感的資料所在位置。</block>
   <block id="8060d07e3adbf13c278991613997a8b6" category="doc">使用 Data Fusion 功能新增個人資料識別碼</block>
-  <block id="9857567b0be4660f8a2364bd9b8e8f23" category="paragraph">我們稱為「Data Fusion SURE__」的功能可讓您掃描貴組織的資料、找出資料庫中的唯一識別碼是否存在於檔案或其他資料庫中、基本上您自己的「個人資料」清單是在Cloud Data Sense掃描中識別出來的。這可讓您完整瞭解可能敏感的資料在 _all_ 檔案中的位置。</block>
-  <block id="c4b40afb354202d35dd6ab3d515cfd1b" category="paragraph">由於您正在掃描自己的資料庫、因此無論資料儲存在何種語言中、都會在未來的Cloud Data Sense掃描中用來識別資料。</block>
   <block id="244003d4d8e2dcd15f9ddca59dc7ae12" category="section-title">從資料庫建立自訂的個人資料識別碼</block>
-  <block id="f790934348c58046623c85a36917a7ab" category="paragraph">您可以在資料庫表格中選取特定欄或欄、以選擇Cloud Data Sense在掃描中尋找的其他識別碼。例如、下圖顯示 Fusion 如何使用資料功能來掃描您的磁碟區、儲存庫和資料庫、找出 Oracle 資料庫中所有客戶 ID 的出現情形。</block>
   <block id="dac05618fc69864a6bb4607d758eba4b" category="inline-image-macro">圖表顯示如何使用資料庫的內容做為來源、以識別包含相同資料的檔案。</block>
   <block id="272d016d013ea6f34fea95eb2490c955" category="paragraph"><block ref="272d016d013ea6f34fea95eb2490c955" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9e069456015ebd506621d5c53645d136" category="paragraph">如您所見、在兩個磁碟區和一個 S3 儲存區中找到兩個獨特的客戶 ID 。也會識別資料庫表格中的任何相符項目。</block>
@@ -762,7 +758,6 @@
   <block id="4a9b54285d12a82c7bff15db48a6a8ce" category="paragraph">「資料Fusion 不整清單」頁面會顯示您已設定要掃描Cloud Data Sense的資料庫來源欄。</block>
   <block id="939d952696a5f27e3fc9052eb844e683" category="inline-image-macro">您已設定資料 Fusion 功能的所有資料來源參考資料的快照。</block>
   <block id="4faff730b8cd795afc52204e2d0ebab0" category="paragraph"><block ref="4faff730b8cd795afc52204e2d0ebab0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="21811400a46cca32193d19bc314df7ec" category="paragraph">下次掃描後、結果會將此新資訊納入儀表板的「個人」結果區段、以及「個人資料」篩選器的「調查」頁面。您新增的每個來源欄都會顯示在篩選清單中、例如「 Customer.Customer ID 」。</block>
   <block id="18a5501aea8a20fe6f4f9c4f2d605cc6" category="section-title">刪除資料 Fusion 來源</block>
   <block id="7da8f2d897e75578043e0f01e245c1a7" category="paragraph">如果您在某個時候決定不使用特定的資料 Fusion 來源來掃描檔案、您可以從「資料 Fusion 」清單頁面中選取來源列、然後按一下「 * 刪除資料 Fusion 來源 * 」。</block>
   <block id="9008a71f5aaebece0844ad9fc3bb64a7" category="inline-image-macro">顯示如何移除資料 Fusion 的快照來源。</block>
@@ -2454,14 +2449,10 @@
   <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">例如、記錄檔中的下列行顯示複製作業成功、複製作業失敗。</block>
   <block id="4892afff6c12a31702739804f9402dd2" category="section-title">存取記錄檔</block>
   <block id="d59821cfb2e317baf0245fb19951e0ab" category="paragraph">稽核日誌位於Data Sense機器上的：「/opt/netapp/nap_logs/&lt;date/DataSense_nap_log_&lt;dat&gt;_&lt;procedure_name&gt;.log」</block>
-  <block id="e5eca4fc7ad5570fad3191bed0884198" category="paragraph">對於內部部署、您可以直接瀏覽至記錄檔。</block>
-  <block id="98f328f96d0161df06aca21d942ebe0f" category="paragraph">當在雲端部署Data Sense時、您可以使用SSH來執行Data Sense執行個體。您可以輸入使用者和密碼、或使用Cloud Manager Connector安裝期間提供的SSH金鑰、對系統進行SSH。SSH命令是：</block>
   <block id="68949c94f1832ab05cf85f6b69ec229e" category="list-text">= ssh驗證金鑰的位置</block>
   <block id="6201afe97e09ec3e016aaa1892aba5f8" category="list-text">&lt;機器使用者&gt;：</block>
-  <block id="00652c6d951c09819e4a6a53b108211b" category="list-text">對於AWS =使用&lt;EC2-user&gt;</block>
   <block id="cb993b12f83c5591a219738eee794717" category="list-text">Azure：使用為Cloud Manager執行個體建立的使用者</block>
   <block id="d2086bc9ec16fb03f22bf35d5eba0661" category="list-text">GCP：使用為Cloud Manager執行個體建立的使用者</block>
-  <block id="e472530054de00e342edd7e4c55b3cbb" category="list-text">=虛擬機器執行個體的IP位址</block>
   <block id="3ca10cbf1786d683696248daeef7a67c" category="inline-link">連接埠和安全性群組</block>
   <block id="ee12d73176832fa8b8e8c95cacc10226" category="paragraph">請注意、您必須修改安全性群組傳入規則、才能存取系統。請參閱<block ref="5475739789a5b3429571b56a0421c3e8" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「行動狀態」窗格中監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。</block>
@@ -2678,4 +2669,41 @@
   <block id="9bde88aed1efa84fb1b1fb5319a7e561" category="paragraph">*資料庫：*</block>
   <block id="93527746a0aabc74aefe0ff55c837bc7" category="list-text">您可以在一或多個資料來源上啟用高層對應或深度層級掃描。</block>
   <block id="c62db9834fbc6b314856a0fe8ff0acfc" category="paragraph">Cloud Data Sense可讓您在選定的資料來源上執行一般的「對應」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。</block>
+  <block id="0828cc8e3ba101d02a7cc044ad32527c" category="summary">Data Sense提供兩種方法、讓您新增Data Sense在未來掃描中識別的自訂「個人資料」清單、讓您完整瞭解所有組織檔案中可能敏感的資料所在位置。</block>
+  <block id="e2deda6096556446feb95e28efdf93c1" category="doc">將個人資料識別碼新增至「資料感應」掃描</block>
+  <block id="4b04c6153c3b89c90e2e102a04fb7087" category="paragraph">Data Sense提供兩種方法、讓您新增Data Sense在未來掃描中所識別的自訂「個人資料」清單、讓您完整瞭解可能敏感的資料在_all_貴組織檔案中的位置。</block>
+  <block id="c442f433b878bcb44759d46bd9921901" category="list-text">您可以根據所掃描的資料庫中的特定欄位來新增唯一識別碼。</block>
+  <block id="68bd9fa0417b646f5dcd316727b11be1" category="list-text">您可以使用規則運算式（regex）新增個人模式、將regex新增至現有的預先定義模式。</block>
+  <block id="4cacfa4cf6eddb7a5248c05308700dfa" category="paragraph">我們稱為「Data Fusion SURE__」的一項功能、可讓您掃描組織的資料、找出檔案或其他資料庫中是否有資料庫的唯一識別碼。您可以在資料庫表格中選取特定欄或欄、以選擇Cloud Data Sense在掃描中尋找的其他識別碼。例如、下圖顯示 Fusion 如何使用資料功能來掃描您的磁碟區、儲存庫和資料庫、找出 Oracle 資料庫中所有客戶 ID 的出現情形。</block>
+  <block id="85471b66f915c85383697af665def62b" category="paragraph">請注意、由於您正在掃描自己的資料庫、因此無論您的資料儲存在何種語言中、都會在未來的Cloud Data Sense掃描中用來識別資料。</block>
+  <block id="7a4f785c9bf1b41e9eb899da0e988d27" category="paragraph">下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。您新增的每個來源欄都會以「Table.column」格式顯示在篩選清單中、例如「Customer.CustomerID」。</block>
+  <block id="86776d2aca02c16f7beb228e9112d324" category="inline-image-macro">「Fusion 調查結果」窗格中顯示資料實例的快照。</block>
+  <block id="4275c0ed3233cbea8a2f0bc0d2c33395" category="paragraph"><block ref="4275c0ed3233cbea8a2f0bc0d2c33395" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a5080acb08990b0179f7eb9dd96ab1f0" category="section-title">使用regex建立自訂的個人資料識別碼</block>
+  <block id="b43de279c258dd5031c6bdedf5d1ae80" category="paragraph">您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。</block>
+  <block id="8765349da42fc731215c94441efae48f" category="paragraph">例如、您可能想要查看所有檔案中提及內部產品ID的位置。例如、如果產品ID的結構清楚明確、12位數的編號從201開始、您可以使用自訂的regex功能在檔案中搜尋。</block>
+  <block id="a947d2f1730c470833c4544effbb7bc1" category="section-title">存取命令列</block>
+  <block id="803d83ea746be3fe4b4b6e473104c84d" category="paragraph">您需要存取Data Sense系統、才能啟動命令來新增regex。</block>
+  <block id="936f32b71b96ea5785d6a11d0da86d15" category="paragraph">當您的內部部署安裝Data Sense時、您可以直接存取命令列。</block>
+  <block id="2012e548c0d3da2ebba30bf10395af2e" category="paragraph">當在雲端部署Data Sense時、您可以使用SSH來執行Data Sense執行個體。您可以輸入使用者和密碼、或是使用Cloud Manager Connector安裝期間提供的SSH金鑰來SSH到系統。SSH命令是：</block>
+  <block id="0bac9ec0256a9fd2858c7836245c9025" category="list-text">對於AWS：使用&lt;EC2-user&gt;</block>
+  <block id="0ea3b9210848690cf51475dbc0b23bea" category="list-text">=虛擬機器執行個體的IP位址</block>
+  <block id="2ca1f3bad4fcb2aea6222d64aeb6ee20" category="section-title">命令語法以新增regex</block>
+  <block id="0b674f6afef562ef0fec5869730d7efe" category="paragraph">新增自訂regex的命令語法如下：</block>
+  <block id="3642b1a1448d1d503a8c583265c1f7fd" category="list-text">=此名稱將出現在Data Sense UI中。請確定名稱可識別regex的設計用途。名稱必須至少包含一個字母、且長度最多可達70個字元。</block>
+  <block id="c8cfff713fc98611eeae3f621ae6ce24" category="list-text">=這可以是任何合法的規則運算式。</block>
+  <block id="c0860cd77b783ac8ccb3c6de19266e83" category="paragraph">請注意、我們會測試每個新的regex、以驗證其範圍是否太廣、而且會傳回太多相符項目。如果是這種情況、則會顯示下列記錄訊息：</block>
+  <block id="bed821e4983e85758274701f4830fdce" category="paragraph">如果您想要將regex強制新增至Data Sense、可以在命令列結尾使用*至f*。</block>
+  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">範例</block>
+  <block id="1c247fabef1a02cfb25e0c5a09f1ce81" category="paragraph">產品ID是以201開頭的12位數號碼、因此規則運算式是*\b201\d｛9｝\b*。您想要在Data Sense UI中輸入文字、將此模式識別為*內部產品ID*。</block>
+  <block id="ce52796a17167ca6f97268ee7baaa0de" category="paragraph">若要查看所有檔案中提及的內部產品ID、請輸入下列命令。</block>
+  <block id="1e4b16d4f3c8faa8b0a90ebbeae0a0f7" category="paragraph">下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。</block>
+  <block id="5e0b61460f50f9b62d95b060b2f3f8d2" category="inline-image-macro">在「調查結果」窗格中顯示自訂regex結果範例的快照。</block>
+  <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="568187b2e469a8406245645d5e1be158" category="section-title">停用自訂regex</block>
+  <block id="94deabbbc24df00a97f5113a004850a1" category="paragraph">如果您稍後決定不需要使用Data Sense來識別輸入為regex的自訂模式、請使用下列命令來移除每個regex。</block>
+  <block id="f1619aa0c5343971dffa315bb9524cc9" category="paragraph">例如、若要移除*內部產品ID* regex：</block>
+  <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">現在、您可以在資料中新增Data Sense將識別的自訂模式</block>
+  <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
+  <block id="f11466d242ef66f0b539b785de1f046b" category="paragraph">當您的內部部署安裝Data Sense時、您可以直接瀏覽至記錄檔。</block>
 </blocks>
