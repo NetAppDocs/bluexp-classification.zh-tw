@@ -108,6 +108,9 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。NetApp�
 
 
 
+NOTE: 安裝後、無法變更Data Sense主機系統的IP位址。
+
+
 
 == 驗證Cloud Manager和Data Sense必要條件
 
