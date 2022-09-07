@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-sharepoint.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, data sense 
-summary: 請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint帳戶中的檔案。 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, sharepoint online, sharepoint on-premises, data sense 
+summary: 請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint Online帳戶中的檔案。 
 ---
 = 掃描SharePoint帳戶
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint帳戶
 
 
 [role="lead"]
-請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint帳戶中的檔案。
+請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint Online帳戶中的檔案。
 
 
 
@@ -38,7 +38,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 == 檢閱SharePoint需求
 
-請檢閱下列先決條件、確定您已準備好在SharePoint帳戶上啟用Cloud Data Sense。
+請檢閱下列必要條件、確定您已準備好在SharePoint帳戶上啟動Cloud Data Sense。
 
 * 您必須擁有SharePoint帳戶的管理員登入認證、才能提供對所有SharePoint網站的讀取存取權。
 * 您需要SharePoint網站URL的行分隔清單、以供掃描所有資料。
@@ -50,28 +50,32 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 如果尚未部署執行個體、請部署Cloud Data Sense。
 
-資料感測可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
+* 對於SharePoint Online而言、Data Sense可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["安裝在可存取網際網路的內部部署位置"^]。
++
+資料感測也可以是 link:task-deploy-compliance-dark-site.html["部署在沒有網際網路存取的內部部署位置"^]。不過、您必須提供網際網路存取功能、才能存取少數幾個選定的端點、以掃描SharePoint Online檔案。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["請參閱此處的必要端點清單"]。
+
+
+
+如果在沒有網際網路存取的站台上安裝Data Sense、則Cloud Manager Connector也必須安裝在同一個站台上、而且無法存取網際網路。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["深入瞭解"^]。
 
 只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
 
-資料感測也可以是 link:task-deploy-compliance-dark-site.html["部署在沒有網際網路存取的內部部署位置"^]。不過、您必須提供網際網路存取功能、才能存取數個選定的端點、以掃描您的本機SharePoint檔案。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["請參閱此處的必要端點清單"]。
 
 
+== 新增SharePoint Online帳戶
 
-== 新增SharePoint帳戶
-
-新增使用者檔案所在的SharePoint帳戶。
+新增使用者檔案所在的SharePoint Online帳戶。
 
 .步驟
 . 在「工作環境組態」頁面中、按一下「*新增資料來源*」>「*新增SharePoint Online帳戶*」。
 +
-image:screenshot_compliance_add_sharepoint_button.png["「掃描組態」頁面的快照、您可以按一下「新增SharePoint」按鈕。"]
+image:screenshot_compliance_add_sharepoint_button.png["「組態」頁面的快照、您可以在其中按一下「新增SharePoint Online」按鈕。"]
 
 . 在「新增SharePoint Online帳戶」對話方塊中、按一下*「登入SharePoint」*。
 . 在顯示的Microsoft頁面中、選取SharePoint帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*、以允許Cloud Data Sense從此帳戶讀取資料。
 
 
-SharePoint帳戶會新增至工作環境清單。
+SharePoint Online帳戶會新增至工作環境清單。
 
 
 

@@ -405,13 +405,11 @@
   <block id="e2115e429619cedeaf6aeedfb1d4d0d7" category="inline-link-macro">將Data Sense部署在可存取網際網路的內部部署站台</block>
   <block id="1c038c580523f9a3d7126408c53a8288" category="paragraph">請注意、您也可以 <block ref="1079604978fa03138d29a36dc3d0bf3f" category="inline-link-macro-rx"></block>。</block>
   <block id="70d7362b35a6ff039264c78f2d35ab2c" category="section-title">支援的資料來源</block>
-  <block id="77b1f6686417067688ea9a1806e7a438" category="paragraph">以這種方式安裝（有時稱為「離線」或「暗」站台）時、Data Sense只能掃描內部部署站台上本機資料來源的資料。此時、Data Sense可掃描下列本機資料來源：</block>
   <block id="d0a39c85bb5fdaacac18ed6c4e5b511f" category="list-text">內部部署ONTAP 的作業系統</block>
   <block id="ae9d17dd7732dafc7b97f62ac9094cf7" category="list-text">資料庫架構</block>
   <block id="ec1fb1662782ed20e20c07aa72cea943" category="list-text">非NetApp NFS或CIFS檔案共用</block>
   <block id="c6b920b524033c55e0dbc0115eae5c7e" category="list-text">使用簡易儲存服務（S3）傳輸協定的物件儲存設備</block>
   <block id="143cbb5198b43152fc02c7822c0a4df1" category="inline-xref">SharePoint和OneDrive的特殊需求</block>
-  <block id="26c2bd17725502dd41a7ea99643a8a29" category="paragraph">如果您需要非常安全的Cloud Manager安裝、但又想要從OneDrive帳戶或SharePoint帳戶掃描本機資料、則可以使用Data Sense離線安裝程式、並提供網際網路存取功能給少數幾個選定的端點。請參閱 <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> 以取得詳細資料。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="5ba5b8eb3222cd77297eb876e3219895" category="paragraph">大多數的Data Sense功能都能在部署於無法存取網際網路的站台上運作。不過、某些需要網際網路存取的功能則不受支援、例如：</block>
   <block id="1d7a14d61308aecb5be9316e1481f947" category="list-text">管理Microsoft Azure資訊保護（AIP）標籤</block>
@@ -456,7 +454,6 @@
   <block id="75913c473742502800ae1c0a9a5a93df" category="list-text">確保雲端資料認證能夠持續運作。Cloud Data Sense執行個體必須持續運作、才能持續掃描資料。</block>
   <block id="4aba7f90868b90b603949256a41d341e" category="list-text">確保網頁瀏覽器連線至Cloud Data Sense。啟用Cloud Data Sense之後、請確保使用者從連線至Data Sense執行個體的主機存取Cloud Manager介面。</block>
   <block id="f782bd66a6cb879744380792574779e5" category="paragraph">Data Sense執行個體使用私有IP位址、確保其他人無法存取索引資料。因此、您用來存取 Cloud Manager 的網頁瀏覽器必須連線至該私有 IP 位址。該連線可能來自與Data Sense執行個體位於同一個網路內的主機。</block>
-  <block id="d988b54f3b64e974362e6cbf74785f60" category="paragraph">當Cloud Manager和Data Sense部署於無法存取網際網路的網站時、您可以透過網際網路存取部分選定端點、來掃描SharePoint和OneDrive帳戶中的本機檔案。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
   <block id="ca31f5af8410452f51d81153fffb5c54" category="cell">\login.microsoft.com \graph.microsoft.com</block>
@@ -1823,28 +1820,20 @@
   <block id="9b305ee4bd352f956f4cb24478769e42" category="paragraph">您可以從「組態」頁面選取要掃描的資料來源。</block>
   <block id="90fcbce9bfec3d7a472c7ee2962c602f" category="inline-link-macro">設定Cloud Data Sense授權</block>
   <block id="9f2c63e53415cfb87166b66765887e4c" category="paragraph">您也可以 <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 目前。在資料量超過 1 TB 之前、您將不會付費。</block>
-  <block id="2aec26a935db620d45a2b36968d20c71" category="summary">請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint帳戶中的檔案。</block>
   <block id="2ef77a3845de73c82db787233e991d0c" category="doc">掃描SharePoint帳戶</block>
   <block id="040e5e5b0b4e3b56e337960cee1ba171" category="paragraph">請確定您擁有登入SharePoint帳戶的管理認證、而且您有要掃描之SharePoint網站的URL。</block>
   <block id="0fd354f4598b432146c03a6c1b496e25" category="paragraph">使用管理使用者認證、登入您要存取的SharePoint帳戶、將其新增為新的資料來源/工作環境。</block>
   <block id="a8c0024f4de7eafbcc79573f90579f5f" category="paragraph">在SharePoint帳戶中新增您要掃描的SharePoint網站URL清單、然後選取掃描類型。您一次最多可以新增100個URL。</block>
   <block id="2b4e0126afcd89267252cefaf503c414" category="section-title">檢閱SharePoint需求</block>
-  <block id="a32be683d63a4b0f5bebaf59aa3ae393" category="paragraph">請檢閱下列先決條件、確定您已準備好在SharePoint帳戶上啟用Cloud Data Sense。</block>
   <block id="e1f7c840b56984612690abc476c04c51" category="list-text">您必須擁有SharePoint帳戶的管理員登入認證、才能提供對所有SharePoint網站的讀取存取權。</block>
   <block id="f86df9b5b428fe5b37c14bd1162bc107" category="list-text">您需要SharePoint網站URL的行分隔清單、以供掃描所有資料。</block>
   <block id="21470a3e6a3feaf105174d0e14c5f537" category="inline-link-macro">部署於雲端</block>
   <block id="cb4787e4f5b2886c42c46c918daec655" category="paragraph">資料感測可以是 <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> 或 <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block>。</block>
   <block id="1b602d3afff4393bd19938efb7312da3" category="inline-link-macro">部署在沒有網際網路存取的內部部署位置</block>
   <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">請參閱此處的必要端點清單</block>
-  <block id="99428c3925d465acb3903496e22efe4c" category="paragraph">資料感測也可以是 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。不過、您必須提供網際網路存取功能、才能存取數個選定的端點、以掃描您的本機SharePoint檔案。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
-  <block id="2d625acbf82ccc24e4827ee53e0193d4" category="section-title">新增SharePoint帳戶</block>
-  <block id="7ab591f864cfe0a16aa275b9434fcde7" category="paragraph">新增使用者檔案所在的SharePoint帳戶。</block>
   <block id="cb49e9afef4bc3127fbf2d354d00fd54" category="list-text">在「工作環境組態」頁面中、按一下「*新增資料來源*」&gt;「*新增SharePoint Online帳戶*」。</block>
-  <block id="9055101ac50b789e701a27583a1d468d" category="inline-image-macro">「掃描組態」頁面的快照、您可以按一下「新增SharePoint」按鈕。</block>
-  <block id="8b093e17a55171454a6c2e03e23f0b0f" category="paragraph"><block ref="8b093e17a55171454a6c2e03e23f0b0f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ea56ecd454d4962a21bd35be41237229" category="list-text">在「新增SharePoint Online帳戶」對話方塊中、按一下*「登入SharePoint」*。</block>
   <block id="e61b097ecbac4c8e2db9675d4c9f64cb" category="list-text">在顯示的Microsoft頁面中、選取SharePoint帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*、以允許Cloud Data Sense從此帳戶讀取資料。</block>
-  <block id="85733eb33599ec713f72376aae6df768" category="paragraph">SharePoint帳戶會新增至工作環境清單。</block>
   <block id="88f6018b4c4004a32e426fcb13381212" category="section-title">將SharePoint網站新增至法規遵循掃描</block>
   <block id="01ad50a8c51cb7caa81313f1655cae00" category="paragraph">您可以新增個別SharePoint網站或帳戶中的所有SharePoint網站、以便Cloud Data Sense掃描相關檔案。</block>
   <block id="32d4436877412c0a858739daddb125a4" category="list-text">在「_Configuration」頁面中、按一下SharePoint帳戶的*組態*按鈕。</block>
@@ -2321,7 +2310,6 @@
   <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">選取原則。行動 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看現有策略列表並創建您自己的自定義策略。</block>
   <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">選取一或多個使用者名稱和/或群組名稱、或輸入部分名稱</block>
   <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">選取 <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> 指派給您的檔案</block>
-  <block id="910acb975ea7aecd9808b83a0cb3e7eb" category="cell">選取工作環境類型。OneDrive、SharePoint和Google雲端磁碟的分類為「Cloud Apps」。</block>
   <block id="c3a9830be43f6515257f3979e66816fd" category="cell">目錄類型</block>
   <block id="9091f9c1f743dae16df2f0455ff3be56" category="cell">選取目錄類型：「Share（共用）」或「Folder（資料夾）」</block>
   <block id="f8a85ed4966ec4306b4e58f3bd439410" category="inline-link-macro">標記</block>
@@ -2483,7 +2471,6 @@
   <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（1.12.1版）</block>
   <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（版本1.11.1）</block>
   <block id="2d2a847fccc748834cee74d3441a948b" category="section-title">2022年3月15日（版本1.10.0）</block>
-  <block id="a6e2475f148e034250ac7cb66419f3f3" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝版本1.11.x、則只能升級至1.12.x如果您落後幾個主要版本、就必須多次升級軟體。</block>
   <block id="fae289ef9204f7c3119e084615a6d53f" category="list-text">如果您已在政府區域或內部部署Data Sense、但該位置無法存取網際網路（也稱為暗站）、則AIP標籤功能將無法使用。</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">若為Sfor Same、則必須將其部署在您要掃描的磁碟區所在的相同區域。Azure NetApp Files</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府區域支援</block>
@@ -2508,7 +2495,6 @@
   <block id="b0d05a288f1ee1691adac4ca34c54fca" category="inline-image-macro">螢幕快照顯示如何為工作環境中的所有Volume設定相同的掃描設定。</block>
   <block id="12a2ab51f6d8555b1efcc9582dee655b" category="paragraph"><block ref="12a2ab51f6d8555b1efcc9582dee655b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c47f43803aeca87b8119b45040e033c" category="section-title">暫停及繼續掃描儲存庫</block>
-  <block id="73344c9ec25564b49b1fcd623ff60d92" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。這與「關閉」掃描不同。關閉掃描時、系統會移除該磁碟區的所有索引和相關資訊。暫停掃描表示「Data Sense」（資料感測）不會在未來掃描儲存庫的任何變更或新增項目、但系統仍會顯示所有目前的結果。</block>
   <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">您可以隨時「恢復」掃描。</block>
   <block id="8b072c4e238b04c04c81cef3ed309703" category="list-text">在「Scan Configuration（掃描組態）」頁面中、按一下「Pause（暫停）」按鈕暫停掃描某個Volume、或按「恢復」按鈕繼續掃描先前暫停的Volume。</block>
   <block id="bc9b17eea5246a704bb26be367a3b35f" category="inline-image-macro">螢幕快照顯示如何暫停及繼續在Volume上掃描。</block>
@@ -2556,7 +2542,6 @@
   <block id="04843fa750ddea2d46823d2d06cf3063" category="paragraph">請注意、有些資料來源會在功能表中提供暫停與恢復功能、如下所示、適用於SharePoint網站。</block>
   <block id="fb575acbb63d1898a1021e2856b18b6e" category="inline-image-macro">顯示如何在SharePoint網站上暫停及繼續掃描的螢幕快照。</block>
   <block id="9e9d3c723f9f4d6ab1b9e783f2239e62" category="paragraph"><block ref="9e9d3c723f9f4d6ab1b9e783f2239e62" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="faa8551af182d75e7a3f5d7e7a6dc071" category="sidebar">變更掃描設定</block>
   <block id="dd85b6e90159d1cdbde0d5badd022af0" category="paragraph">Cloud Data Sense會自動識別資料內部的特定字詞、字串和模式（Regex）。例如、個人識別資訊（PII）、信用卡號碼、社會安全號碼、銀行帳戶號碼、密碼、 以及更多資訊。 <block ref="3a25cef7ea1e79696c3eac86ef0a5a72" category="inline-link-macro-rx"></block>。Data Sense可在個別檔案、目錄內的檔案（共享區和資料夾）和資料庫表格中識別這類資訊。</block>
   <block id="f4f50af532754b5670ea58ed6b969ba0" category="paragraph">以下2個螢幕擷取畫面顯示個別檔案中的個人資料、並可在目錄（共享區和資料夾）內的檔案中找到。您也可以選取*結構化*索引標籤來檢視在資料庫中找到的個人資料。</block>
   <block id="bfe1194df41f0cc26cfdf2f75931ac0d" category="inline-image-macro">按一下「調查結果」後、檔案中的詳細資訊快照。</block>
@@ -2693,18 +2678,67 @@
   <block id="3642b1a1448d1d503a8c583265c1f7fd" category="list-text">=此名稱將出現在Data Sense UI中。請確定名稱可識別regex的設計用途。名稱必須至少包含一個字母、且長度最多可達70個字元。</block>
   <block id="c8cfff713fc98611eeae3f621ae6ce24" category="list-text">=這可以是任何合法的規則運算式。</block>
   <block id="c0860cd77b783ac8ccb3c6de19266e83" category="paragraph">請注意、我們會測試每個新的regex、以驗證其範圍是否太廣、而且會傳回太多相符項目。如果是這種情況、則會顯示下列記錄訊息：</block>
-  <block id="bed821e4983e85758274701f4830fdce" category="paragraph">如果您想要將regex強制新增至Data Sense、可以在命令列結尾使用*至f*。</block>
   <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">範例</block>
   <block id="1c247fabef1a02cfb25e0c5a09f1ce81" category="paragraph">產品ID是以201開頭的12位數號碼、因此規則運算式是*\b201\d｛9｝\b*。您想要在Data Sense UI中輸入文字、將此模式識別為*內部產品ID*。</block>
   <block id="ce52796a17167ca6f97268ee7baaa0de" category="paragraph">若要查看所有檔案中提及的內部產品ID、請輸入下列命令。</block>
   <block id="1e4b16d4f3c8faa8b0a90ebbeae0a0f7" category="paragraph">下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。</block>
   <block id="5e0b61460f50f9b62d95b060b2f3f8d2" category="inline-image-macro">在「調查結果」窗格中顯示自訂regex結果範例的快照。</block>
   <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="568187b2e469a8406245645d5e1be158" category="section-title">停用自訂regex</block>
-  <block id="94deabbbc24df00a97f5113a004850a1" category="paragraph">如果您稍後決定不需要使用Data Sense來識別輸入為regex的自訂模式、請使用下列命令來移除每個regex。</block>
   <block id="f1619aa0c5343971dffa315bb9524cc9" category="paragraph">例如、若要移除*內部產品ID* regex：</block>
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">現在、您可以在資料中新增Data Sense將識別的自訂模式</block>
   <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
   <block id="f11466d242ef66f0b539b785de1f046b" category="paragraph">當您的內部部署安裝Data Sense時、您可以直接瀏覽至記錄檔。</block>
   <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">安裝後、無法變更Data Sense主機系統的IP位址。</block>
+  <block id="766f0d81be7879628bc30bd7367309c3" category="paragraph">您可以從路徑*/ opt / NetApp /資料中心/*執行命令。</block>
+  <block id="4767339e389eb1fa075ecdec5d1ec320" category="paragraph">如果您想要將regex強制新增至Data Sense（資料感測）、您可以使用命令列結尾的*-f*選項、即使我們認為該選項太寬。</block>
+  <block id="48532ffc6016c24d1207f39fecfcbbda" category="section-title">停用自訂regex</block>
+  <block id="19f9f2c4f009c255e214b21dae526160" category="paragraph">如果您稍後決定不需要使用Data Sense來識別您輸入為regex的自訂模式、請使用命令中的* deacter*選項來移除每個regex。</block>
+  <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（1.16版）</block>
+  <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">能夠立即重新掃描儲存庫、以反映檔案中的變更</block>
+  <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">請參閱如何重新掃描目錄</block>
+  <block id="45b58068004d744461935c2aae409c04" category="paragraph">如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
+  <block id="24a7d06e1fe90aca0c0301d12fadc686" category="section-title">在「資料調查」頁面中、新篩選「資料偵測掃描」狀態</block>
+  <block id="e2e0734ca474deb38b2c13f526832e06" category="paragraph">「分析狀態」篩選器可讓您列出處於「資料感應」掃描特定階段的檔案。您可以選取一個選項來顯示*擱置第一次掃描*、*完成*正在掃描、*擱置重新掃描*或*失敗*要掃描的檔案清單。</block>
+  <block id="82f05abce805aa872acec563bbca9a1f" category="paragraph"><block ref="b263790debd0f3d5e5a31296d99293db" category="inline-link-rx"></block>。</block>
+  <block id="9d771bf7f3ed0f2d7cd7bbf827bab0a2" category="section-title">資料主體現在被視為掃描中「個人資料」的一部分</block>
+  <block id="76eab5fecba3164354032ddcdc0feb3d" category="paragraph">Data Sense現已將資料主體視為「法規遵循儀表板」中所顯示之「個人結果」的一部分。此外、在「調查」頁面中執行搜尋時、您可以選取「個人資料」下方的「資料主旨」、以僅檢視包含資料主旨的檔案。</block>
+  <block id="6d3ab1cb3139d4416e111272db779d6d" category="section-title">資料感測階層連結檔案現在被視為掃描中「類別」的一部分</block>
+  <block id="d6933caaf62074fc0c3e63f604181712" category="inline-link">深入瞭解如何建立階層連結檔案</block>
+  <block id="368538217a4a98d2d78bf94a224b8eb6" category="paragraph">Data Sense現在將階層連結檔案視為「符合性儀表板」中顯示的類別的一部分。將檔案從來源位置移至NFS共用時、會建立這些檔案Data Sense。<block ref="fd6931884959497f6c1600e29f97b838" category="inline-link-rx"></block>。</block>
+  <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">此外、在「調查」頁面中執行搜尋時、您可以選取「類別」下的「資料感測Breadcrumbs」、以僅檢視「資料感測階層連結」檔案。</block>
+  <block id="23e2985b503ea96a8cdf22916427a97d" category="summary">請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint Online帳戶中的檔案。</block>
+  <block id="758462d66cb32533f49360d3b98e28c4" category="paragraph">請檢閱下列必要條件、確定您已準備好在SharePoint帳戶上啟動Cloud Data Sense。</block>
+  <block id="19814c236f94ff3af850cb182f35add5" category="inline-link-macro">安裝在可存取網際網路的內部部署位置</block>
+  <block id="1834f32ba8d3eab040f5ce5755a6ad8a" category="list-text">對於SharePoint Online而言、Data Sense可以是 <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> 或 <block ref="1303820445af3a7c87be9fbd1bbc30ad" category="inline-link-macro-rx"></block>。</block>
+  <block id="8985dbaa7cbdc09c9a769e35fc86d4ad" category="paragraph">資料感測也可以是 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。不過、您必須提供網際網路存取功能、才能存取少數幾個選定的端點、以掃描SharePoint Online檔案。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
+  <block id="bb0d7568763639a86425eb506af0b273" category="paragraph">如果在沒有網際網路存取的站台上安裝Data Sense、則Cloud Manager Connector也必須安裝在同一個站台上、而且無法存取網際網路。<block ref="879ebf9ca74e8f08bfff336454f4ade3" category="inline-link-rx"></block>。</block>
+  <block id="88ce972549d8b67ad56bc9e681818ca2" category="section-title">新增SharePoint Online帳戶</block>
+  <block id="8b7071c98b3d8a3e43ecfa77bab75857" category="paragraph">新增使用者檔案所在的SharePoint Online帳戶。</block>
+  <block id="c5545572ea4069cfaa50e205fd80e522" category="inline-image-macro">「組態」頁面的快照、您可以在其中按一下「新增SharePoint Online」按鈕。</block>
+  <block id="500f464a497c67b1e8f3311a5a3f32dc" category="paragraph"><block ref="500f464a497c67b1e8f3311a5a3f32dc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c078bb07b1ad7af1cc0f5b29159fb618" category="paragraph">SharePoint Online帳戶會新增至工作環境清單。</block>
+  <block id="ea790b7cfc239ef4ea62089738c6fcba" category="list-text">SharePoint Online帳戶</block>
+  <block id="7e48ad5341563470bfb17d87eb4abfc2" category="paragraph">以這種方式安裝（有時稱為「離線」或「暗」站台）時、Data Sense只能掃描內部部署站台上本機資料來源的資料。此時、Data Sense可掃描下列*本機*資料來源：</block>
+  <block id="194dae59202982a0d0f86245341e5d21" category="paragraph">如果您需要非常安全的Cloud Manager安裝、但又想要從OneDrive帳戶或SharePoint Online帳戶掃描本機資料、則可以使用Data Sense離線安裝程式、並提供網際網路存取功能、存取少數幾個選定的端點。請參閱 <block ref="4422d2d61ce862ef7035c7cbbfd3b606" category="inline-xref-macro-rx"></block> 以取得詳細資料。</block>
+  <block id="6b5e137e04da5c1898139a8a7f549614" category="paragraph">當Cloud Manager和Data Sense部署於無法存取網際網路的網站時、您可以透過網際網路存取部分選定端點、來掃描SharePoint Online和OneDrive帳戶中的檔案。</block>
+  <block id="6ac5fc2b8fd7793f54ecc4e08500a270" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您安裝1.14.x版、則只能升級至1.5.x如果您落後幾個主要版本、就必須多次升級軟體。</block>
+  <block id="c6f85ba2c850ce9e6a70c3b08a6a69ce" category="cell">資料主題</block>
+  <block id="3b2d0e0dc31143e6f51b137fffa0f7a2" category="list-text">資料感應Breadcrumbs</block>
+  <block id="638bc83a47f3636cf5b909804535902e" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。這與「關閉」掃描不同。關閉掃描時、系統會移除該磁碟區的所有索引和相關資訊。暫停掃描表示「Data Sense」（資料感測）不會在未來掃描儲存庫的變更或新增項目、但系統仍會顯示所有目前的結果。</block>
+  <block id="f976bf2eff4504fae0fc49c0115018dc" category="section-title">重新掃描現有儲存庫的資料</block>
+  <block id="31708d59045759b74bc21fc59af3a403" category="paragraph">Data Sense會持續掃描您的資料、以偵測您新增儲存庫中的遞增變更。不過、系統掃描所有環境需要時間、而且沒有方法可以控制掃描儲存庫的順序。因此、如果您需要立即重新掃描特定儲存庫、以便在系統中反映變更、您可以選取儲存庫並重新掃描。這可讓您優先掃描特定資料、然後再掃描其他資料。執行重新掃描動作之後、所選儲存庫會回到正常的Data Sense排程下進行掃描。</block>
+  <block id="3f4d6d8bcb45a73e9e3df2c012ea6aac" category="admonition">目前我們支援重新掃描單一目錄（資料夾或共享區）。未來支援將包括重新掃描其他儲存庫類型（檔案、資料庫等）。</block>
+  <block id="62796d34bcb4d2217e01776ba00d5ea0" category="list-text">重新掃描目錄時、會重新掃描目錄中的所有檔案、但不會重新掃描目錄中的子資料夾。</block>
+  <block id="4e67a9dec79298e79d1abf05ea540fbc" category="list-text">重新掃描共用時、只會重新掃描共用的中繼資料。</block>
+  <block id="d489d7f150167fe801b5b652633601a6" category="list-text">在「資料調查結果」窗格中、選取您要重新掃描的資料夾或共用區、然後按一下*重新掃描*。</block>
+  <block id="b8f66688483b508da89754659d7ca8fa" category="inline-image-macro">顯示如何選取及重新掃描目錄的快照。</block>
+  <block id="47ee282369061686a925d31dfbc358ad" category="paragraph"><block ref="47ee282369061686a925d31dfbc358ad" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="df296aafcd928770ac9559dc3f65f303" category="list-text">在「重新掃描目錄_」對話方塊中、按一下「*重新掃描*」。</block>
+  <block id="c2becc0894f125fd5331aafa1ee47cf8" category="paragraph">請注意、您也可以在檢視中繼資料詳細資料時重新掃描個別目錄。只要按一下*重新掃描*即可。</block>
+  <block id="64305177aa881c77aecfabbcc7100f17" category="inline-image-macro">顯示如何重新掃描單一資料夾或共用區的快照。</block>
+  <block id="4f70b74049fac9e8f382a26a4f516f44" category="paragraph"><block ref="4f70b74049fac9e8f382a26a4f516f44" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d55969f99169fb1ccecedd45e530342d" category="cell">分析狀態</block>
+  <block id="133617814b053dc465cdc57c432b1756" category="cell">選取選項以顯示「擱置第一次掃描」、「已完成掃描」、「擱置重新掃描」或「無法掃描」的檔案清單。</block>
+  <block id="78ed85a2b36b215d69761df3caf130df" category="cell">選取工作環境類型。OneDrive、SharePoint和Google雲端硬碟的分類為「應用程式」。</block>
+  <block id="6195c7a1534de8abb0c4706e15d24a3c" category="sidebar">變更掃描設定</block>
 </blocks>

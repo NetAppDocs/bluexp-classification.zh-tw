@@ -119,10 +119,12 @@ image:screenshot_compliance_delete_data_fusion.png["顯示如何移除資料 Fus
 * =這可以是任何合法的規則運算式。
 
 
+您可以從路徑*/ opt / NetApp /資料中心/*執行命令。
+
 請注意、我們會測試每個新的regex、以驗證其範圍是否太廣、而且會傳回太多相符項目。如果是這種情況、則會顯示下列記錄訊息：
 
  log v1.0 | 2022-08-17 07:24:19,585 | ERROR | ds_logger | custom_regex | 119 | 1 | None | custom_regex_119 | The regex has high risk to identify false positives. Please narrow the regular expression and try again. To add it anyway, use the force flag (-f) at the end
-如果您想要將regex強制新增至Data Sense、可以在命令列結尾使用*至f*。
+如果您想要將regex強制新增至Data Sense（資料感測）、您可以使用命令列結尾的*-f*選項、即使我們認為該選項太寬。
 
 
 
@@ -149,13 +151,14 @@ image:screenshot_add_regex_result.png["在「調查結果」窗格中顯示自�
 
 === 停用自訂regex
 
-如果您稍後決定不需要使用Data Sense來識別輸入為regex的自訂模式、請使用下列命令來移除每個regex。
+如果您稍後決定不需要使用Data Sense來識別您輸入為regex的自訂模式、請使用命令中的* deacter*選項來移除每個regex。
 
  sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "<pattern name>"
 例如、若要移除*內部產品ID* regex：
 
 [source, cli]
 ----
+[user ~]$ cd /opt/netapp/Datasense/
 [user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "Internal Product ID"
 ----
  log v1.0 | 2022-08-17 09:13:15,431 | INFO | ds_logger | custom_regex | 31 | 1 | None | custom_regex_31 | A pattern named 'Internal Product ID' was deactivated successfully

@@ -18,6 +18,38 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
+== 2022年9月6日（1.16版）
+
+
+
+=== 能夠立即重新掃描儲存庫、以反映檔案中的變更
+
+如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先重新掃描特定資料、然後再處理其他資料。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["請參閱如何重新掃描目錄"^]。
+
+
+
+=== 在「資料調查」頁面中、新篩選「資料偵測掃描」狀態
+
+「分析狀態」篩選器可讓您列出處於「資料感應」掃描特定階段的檔案。您可以選取一個選項來顯示*擱置第一次掃描*、*完成*正在掃描、*擱置重新掃描*或*失敗*要掃描的檔案清單。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"^]。
+
+
+
+=== 資料主體現在被視為掃描中「個人資料」的一部分
+
+Data Sense現已將資料主體視為「法規遵循儀表板」中所顯示之「個人結果」的一部分。此外、在「調查」頁面中執行搜尋時、您可以選取「個人資料」下方的「資料主旨」、以僅檢視包含資料主旨的檔案。
+
+
+
+=== 資料感測階層連結檔案現在被視為掃描中「類別」的一部分
+
+Data Sense現在將階層連結檔案視為「符合性儀表板」中顯示的類別的一部分。將檔案從來源位置移至NFS共用時、會建立這些檔案Data Sense。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["深入瞭解如何建立階層連結檔案"^]。
+
+此外、在「調查」頁面中執行搜尋時、您可以選取「類別」下的「資料感測Breadcrumbs」、以僅檢視「資料感測階層連結」檔案。
+
+
+
 == 2022年8月7日（1.15版）
 
 

@@ -22,7 +22,7 @@ summary: 請完成幾個步驟、在內部部署站台的主機上部署Cloud Da
 
 == 支援的資料來源
 
-以這種方式安裝（有時稱為「離線」或「暗」站台）時、Data Sense只能掃描內部部署站台上本機資料來源的資料。此時、Data Sense可掃描下列本機資料來源：
+以這種方式安裝（有時稱為「離線」或「暗」站台）時、Data Sense只能掃描內部部署站台上本機資料來源的資料。此時、Data Sense可掃描下列*本機*資料來源：
 
 * 內部部署ONTAP 的作業系統
 * 資料庫架構
@@ -30,7 +30,7 @@ summary: 請完成幾個步驟、在內部部署站台的主機上部署Cloud Da
 * 使用簡易儲存服務（S3）傳輸協定的物件儲存設備
 
 
-如果您需要非常安全的Cloud Manager安裝、但又想要從OneDrive帳戶或SharePoint帳戶掃描本機資料、則可以使用Data Sense離線安裝程式、並提供網際網路存取功能給少數幾個選定的端點。請參閱 <<SharePoint and OneDrive special requirements,SharePoint和OneDrive的特殊需求>> 以取得詳細資料。
+如果您需要非常安全的Cloud Manager安裝、但又想要從OneDrive帳戶或SharePoint Online帳戶掃描本機資料、則可以使用Data Sense離線安裝程式、並提供網際網路存取功能、存取少數幾個選定的端點。請參閱 <<SharePoint and OneDrive special requirements,SharePoint和OneDrive的特殊需求>> 以取得詳細資料。
 
 當Data Sense部署在黑暗的站台時、目前不支援掃描Cloud Volumes ONTAP 功能的支援功能包括：適用於Azure NetApp Files 下列項目的功能：適用於ONTAP 支援功能的功能：
 
@@ -135,7 +135,7 @@ Data Sense執行個體使用私有IP位址、確保其他人無法存取索引�
 
 == SharePoint和OneDrive的特殊需求
 
-當Cloud Manager和Data Sense部署於無法存取網際網路的網站時、您可以透過網際網路存取部分選定端點、來掃描SharePoint和OneDrive帳戶中的本機檔案。
+當Cloud Manager和Data Sense部署於無法存取網際網路的網站時、您可以透過網際網路存取部分選定端點、來掃描SharePoint Online和OneDrive帳戶中的檔案。
 
 [cols="50,50"]
 |===
@@ -314,7 +314,7 @@ Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可�
 由於Data Sense軟體會定期更新新功能、因此您應該定期檢查新版本、以確保使用最新的軟體和功能。您需要手動升級Data Sense軟體、因為沒有網際網路連線功能可自動執行升級。
 
 .開始之前
-* Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝版本1.11.x、則只能升級至1.12.x如果您落後幾個主要版本、就必須多次升級軟體。
+* Data Sense軟體一次可升級一個主要版本。例如、如果您安裝1.14.x版、則只能升級至1.5.x如果您落後幾個主要版本、就必須多次升級軟體。
 * 確認您的內部部署Connector軟體已升級至最新版本。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["請參閱連接器升級步驟"^]。
 
 

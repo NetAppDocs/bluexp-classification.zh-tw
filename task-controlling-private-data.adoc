@@ -225,6 +225,9 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 原則 | 選取原則。行動 link:task-org-private-data.html#controlling-your-data-using-policies["請按這裡"^] 可查看現有策略列表並創建您自己的自定義策略。 
 
 
+| 分析狀態 | 選取選項以顯示「擱置第一次掃描」、「已完成掃描」、「擱置重新掃描」或「無法掃描」的檔案清單。 
+
+
 | 開啟權限 | 選取資料內及資料夾/共用內的權限類型 
 
 
@@ -237,7 +240,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 標籤 | 選取 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP標籤"] 指派給您的檔案 
 
 
-| 工作環境類型 | 選取工作環境類型。OneDrive、SharePoint和Google雲端磁碟的分類為「Cloud Apps」。 
+| 工作環境類型 | 選取工作環境類型。OneDrive、SharePoint和Google雲端硬碟的分類為「應用程式」。 
 
 
 | 工作環境名稱 | 選擇特定的工作環境 
