@@ -16,7 +16,7 @@ summary: 您可以管理每個工作環境和資料來源中所掃描的資料�
 [role="lead"]
 您可以管理每個工作環境和資料來源中所掃描的資料。您可以在「儲存庫」基礎上進行變更、也就是說、您可以針對每個磁碟區、儲存區、共用區、架構、使用者、 等等、視您要掃描的資料來源類型而定。
 
-您可以變更的部分內容包括是否掃描儲存庫、以及Data Sense是否執行 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["對應掃描或對應&分類掃描"]。例如、如果您需要停止掃描某個Volume一段時間、也可以暫停和繼續掃描。
+您可以變更的部分內容包括是否掃描儲存庫、以及Data Sense是否執行 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["對應掃描或對應"]。例如、如果您需要停止掃描某個Volume一段時間、也可以暫停和繼續掃描。
 
 
 

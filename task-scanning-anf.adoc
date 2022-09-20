@@ -87,7 +87,7 @@ image:screenshot_cloud_compliance_anf_scan_config.png["部署Cloud Data Sense執
 ** 若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。
 ** 若要自訂每個Volume的掃描、請按一下*或選取每個Volume *的掃描類型、然後選擇您要對應和/或分類的Volume。
 +
-請參閱 <<Enabling and disabling compliance scans on volumes,啟用及停用磁碟區的法規遵循掃描>> 以取得詳細資料。
+請參閱  and disabling compliance scans on volumes,啟用及停用磁碟區的法規遵循掃描 以取得詳細資料。
 
 
 

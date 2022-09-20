@@ -352,7 +352,7 @@ image:screenshot_compliance_select_user_multi.png["顯示如何在「資料調�
 
 原則提供下列功能：
 
-* <<List of predefined Policies,預先定義的原則>> 根據使用者要求從NetApp取得
+*  of predefined Policies,預先定義的原則 根據使用者要求從NetApp取得
 * 能夠建立您自己的自訂原則
 * 只要按一下、就能啟動「調查」頁面、並取得原則的結果
 * 當特定重要原則傳回結果時、請傳送電子郵件警示給Cloud Manager使用者、以便取得通知來保護資料

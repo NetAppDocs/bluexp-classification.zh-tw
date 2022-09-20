@@ -158,7 +158,7 @@ image:screenshot_services_license_expire_cc2.png["顯示「Digital Wallet」頁�
 
 . 如果Cloud Manager無法自動更新授權（例如、安裝在暗點）、則您需要手動上傳授權檔案。
 +
-.. 您可以 <<Obtain your Cloud Data Sense license file,從NetApp支援網站取得授權檔案>>。
+.. 您可以  your Cloud Data Sense license file,從NetApp支援網站取得授權檔案。
 .. 在「_資料服務授權_」索引標籤的「數位錢包」頁面上、按一下 image:screenshot_horizontal_more_button.gif["更多圖示"] 如需您要更新的服務序號、請按一下*更新授權*。
 +
 image:screenshot_services_license_update.png["選取特定服務的「更新授權」按鈕的快照。"]
@@ -184,7 +184,7 @@ Cloud Manager會更新授權、讓您的Cloud Data Sense服務持續運作。
 
 如果授權過期、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何掃描資料的相關資訊。如果您想減少所掃描的磁碟區數量、使容量使用量可能低於授權限制、則只有「_Configuration」頁面可用。
 
-續約BYOL授權之後、Cloud Manager會自動更新Digital Wallet中的授權、並提供所有儀表板的完整存取權限。如果Cloud Manager無法透過安全的網際網路連線存取授權檔案（例如、安裝在暗點）、您可以自行取得該檔案、然後手動將其上傳至Cloud Manager。如需相關指示、請參閱 <<Update a Cloud Data Sense BYOL license,如何更新Cloud Data Sense授權>>。
+續約BYOL授權之後、Cloud Manager會自動更新Digital Wallet中的授權、並提供所有儀表板的完整存取權限。如果Cloud Manager無法透過安全的網際網路連線存取授權檔案（例如、安裝在暗點）、您可以自行取得該檔案、然後手動將其上傳至Cloud Manager。如需相關指示、請參閱  a Cloud Data Sense BYOL license,如何更新Cloud Data Sense授權。
 
 
 TIP: 如果您使用的帳戶同時擁有BYOL授權和PAYGO訂閱、則當BYOL授權到期時、Data Sense _will不會移轉至PAYGO訂閱。您必須續約BYOL授權。

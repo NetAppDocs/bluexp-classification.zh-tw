@@ -23,7 +23,7 @@ Cloud Data Sense可掃描您的Amazon S3儲存區、以識別位於S3物件儲�
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
 [role="quick-margin-para"]
-確保您的雲端環境符合Cloud Data Sense的要求、包括準備IAM角色、以及設定從Data Sense到S3的連線能力。 <<Reviewing S3 prerequisites,請參閱完整清單>>。
+確保您的雲端環境符合Cloud Data Sense的要求、包括準備IAM角色、以及設定從Data Sense到S3的連線能力。  S3 prerequisites,請參閱完整清單。
 
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
@@ -117,7 +117,7 @@ image:screenshot_s3_we.gif["Amazon S3 工作環境圖示的快照"]
 +
 image:screenshot_s3_enable_compliance.gif["從「服務」面板啟用Cloud Data Sense服務的快照"]
 
-. 出現提示時、請將IAM角色指派給具有的Cloud Data Sense執行個體 <<Reviewing S3 prerequisites,必要的權限>>。
+. 出現提示時、請將IAM角色指派給具有的Cloud Data Sense執行個體  S3 prerequisites,必要的權限。
 +
 image:screenshot_s3_compliance_iam_role.gif["輸入AWS IAM角色for Cloud Data Sense的快照"]
 
@@ -137,7 +137,7 @@ Cloud Manager在Amazon S3上啟用Cloud Data Sense之後、下一步是設定您
 
 當 Cloud Manager 在 AWS 帳戶中執行時、若該帳戶中有您要掃描的 S3 儲存區、則會探索這些儲存區、並在 Amazon S3 工作環境中顯示這些儲存區。
 
-雲端資料感應也能實現 <<Scanning buckets from additional AWS accounts,掃描位於不同 AWS 帳戶中的 S3 儲存區>>。
+雲端資料感應也能實現  buckets from additional AWS accounts,掃描位於不同 AWS 帳戶中的 S3 儲存區。
 
 .步驟
 . 選取 Amazon S3 工作環境。

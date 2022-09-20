@@ -26,7 +26,7 @@ summary: 如果您只是想要快速回答問題、這個常見問題集就能�
 
 === 什麼是雲端資料意義？
 
-Cloud Data Sense是一款雲端產品、採用人工智慧（AI）導向技術、可協助您瞭解資料內容、並識別儲存系統中的敏感資料。這些系統可以是您新增至Cloud Manager畫版的工作環境、以及Data Sense可透過網路存取的許多類型資料來源。 <<What sources of data can be scanned with Data Sense,請參閱下列完整清單>>。
+Cloud Data Sense是一款雲端產品、採用人工智慧（AI）導向技術、可協助您瞭解資料內容、並識別儲存系統中的敏感資料。這些系統可以是您新增至Cloud Manager畫版的工作環境、以及Data Sense可透過網路存取的許多類型資料來源。  sources of data can be scanned with Data Sense,請參閱下列完整清單。
 
 Cloud Data Sense提供預先定義的參數（例如敏感資訊類型和類別）、以因應資料隱私和敏感度的新資料法規遵循要求、例如GDPR、CCPA、HIPAA等。
 

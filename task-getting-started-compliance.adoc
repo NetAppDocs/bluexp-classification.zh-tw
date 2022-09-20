@@ -92,7 +92,7 @@ image:screenshot_cloud_compliance_we_scan_config.png["部署Cloud Data Sense執�
 ** 若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。
 ** 若要自訂每個Volume的掃描、請按一下*或選取每個Volume *的掃描類型、然後選擇您要對應和/或分類的Volume。
 +
-請參閱 <<Enabling and disabling compliance scans on volumes,啟用及停用磁碟區的法規遵循掃描>> 以取得詳細資料。
+請參閱  and disabling compliance scans on volumes,啟用及停用磁碟區的法規遵循掃描 以取得詳細資料。
 
 
 
@@ -209,7 +209,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["這是兩個啟用 CIFS 資料�
 
 
 
-. 啟動您要掃描的每個 DP Volume <<Enabling and disabling compliance scans on volumes,啟用其他磁碟區的方式相同>>。
+. 啟動您要掃描的每個 DP Volume  and disabling compliance scans on volumes,啟用其他磁碟區的方式相同。
 
 
 一旦啟用、Cloud Data Sense便會從每個啟用掃描的DP磁碟區建立NFS共用區。共用匯出原則僅允許從Data Sense執行個體存取。
