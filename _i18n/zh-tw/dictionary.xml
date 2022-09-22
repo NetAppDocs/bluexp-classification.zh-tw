@@ -1339,8 +1339,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9 注意事項</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="73f420c03909a74fdc36f2bebeb15d52" category="inline-link-macro">Cloud Data Sense注意事項</block>
   <block id="ef4a4eef354631d5e99b3e1ea91d46d7" category="list-text"><block ref="ef4a4eef354631d5e99b3e1ea91d46d7" category="inline-link-macro-rx"></block></block>
   <block id="9ef6e09ad71e21ce8a2bf770f33d9a48" category="summary">瞭解Cloud Data意義上的新功能。</block>
@@ -1794,9 +1792,7 @@
   <block id="d7a48de9510bd2b767d3d5fc0a2c7716" category="list-text">確保Cloud Manager Connector能夠存取Cloud Data Sense</block>
   <block id="eee50fc2c4ac06219bb486e05b8250f7" category="list-text">確保Connector與Cloud Data Sense執行個體之間的連線能力。連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。此連線可部署Data Sense執行個體、並可讓您在「Compliance and Governance（法規遵循與治理）」索引標籤中檢視資訊。AWS和Azure的政府區域均支援Cloud Data Sense。</block>
   <block id="fd1958e5e74317f89c6c16bbca7d1446" category="inline-link">AWS 中 Connector 的規則</block>
-  <block id="0b3c77caf569c338dc81a3ae8eb753d5" category="paragraph">AWS和AWS GovCloud部署需要額外的傳入和傳出規則。請參閱<block ref="174b2d5101f3b2591340f8b1c4108c15" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Azure 中的 Connector 規則</block>
-  <block id="e271f92bb6a2f886e00883b1a5f3fe51" category="paragraph">Azure和Azure政府部署需要額外的傳入和傳出規則。請參閱<block ref="c90240cb0e2cbfac2997cad831e58ce0" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="71a1162233b51bce893571d72cd943d1" category="list-text">確保雲端資料認證能夠持續運作</block>
   <block id="8412fae8dddba4e0747379264d31e177" category="list-text">Cloud Data Sense執行個體必須持續運作、才能持續掃描資料。</block>
   <block id="ed5df84ba8d573f10f9a94f52964d60b" category="list-text">確保網頁瀏覽器連線至Cloud Data Sense</block>
@@ -2770,4 +2766,8 @@
   <block id="f836b0a94f3f9f448c28b337ebd7f88d" category="inline-image-macro">圖表顯示當使用部署在內部部署且可存取網際網路的多個Data Sense執行個體時、您可以掃描的資料來源位置。</block>
   <block id="9a996c7f10537ef7b705b42e701d4b6e" category="paragraph"><block ref="9a996c7f10537ef7b705b42e701d4b6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有Cloud Manager文件</block>
+  <block id="56d39ecb5bf4d2ec753c12fbb0e00108" category="paragraph">AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。請參閱<block ref="74fb388667736bb2b34ea14720dd63e3" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="261826c213e3c9cbf53df120aaf0be3b" category="paragraph">Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。請參閱<block ref="e1893ebf6f9d2e927a13d052b78eec9f" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="d14a27b37d19411318313c75f11baf13" category="inline-link">Cloud Manager注意事項</block>
+  <block id="8f4eecef1c8abf547a153a1486d48ab2" category="list-text"><block ref="8f4eecef1c8abf547a153a1486d48ab2" category="inline-link-rx"></block></block>
 </blocks>

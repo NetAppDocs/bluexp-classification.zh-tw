@@ -144,9 +144,9 @@ Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必�
 確保Cloud Manager Connector能夠存取Cloud Data Sense:: 確保Connector與Cloud Data Sense執行個體之間的連線能力。連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。此連線可部署Data Sense執行個體、並可讓您在「Compliance and Governance（法規遵循與治理）」索引標籤中檢視資訊。AWS和Azure的政府區域均支援Cloud Data Sense。
 +
 --
-AWS和AWS GovCloud部署需要額外的傳入和傳出規則。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-aws["AWS 中 Connector 的規則"^] 以取得詳細資料。
+AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS 中 Connector 的規則"^] 以取得詳細資料。
 
-Azure和Azure政府部署需要額外的傳入和傳出規則。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#rules-for-the-connector-in-azure["Azure 中的 Connector 規則"^] 以取得詳細資料。
+Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure 中的 Connector 規則"^] 以取得詳細資料。
 
 --
 確保雲端資料認證能夠持續運作:: Cloud Data Sense執行個體必須持續運作、才能持續掃描資料。
