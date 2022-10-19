@@ -184,7 +184,7 @@ NOTE: 當Azure NetApp Files 軟體安裝在內部部署環境中時、Cloud Data
 
 
 .步驟
-. 從下載Cloud Data Sense軟體 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選取的檔案名稱為* cc_OnPrem_installer_.tar.gz*。
+. 從下載Cloud Data Sense軟體 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選取的檔案名稱為* datASENSE-installer-ze.tar.gz*<version> 。
 . 將安裝程式檔案複製到您打算使用的 Linux 主機（使用「 XCP 」或其他方法）。
 . 在Cloud Manager中、按一下* Data Sense *。
 . 按一下「*啟動資料感應*」。
@@ -203,7 +203,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在內部部
 +
 [source, cli]
 ----
-tar -xzf cc_onprem_installer_1.14.0.tar.gz
+tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 ----
 . 當安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式：
 +
@@ -302,7 +302,7 @@ Cloud Data Sense安裝程式會安裝套件、安裝泊塢視窗、註冊安裝�
 
 . 在*每個*掃描儀節點主機上：
 +
-.. 將Data Sense安裝程式檔案（* cc_OnPrem_installer_<版本>.tar.gz*）複製到主機（使用「scp」或其他方法）。
+.. 將Data Sense安裝程式檔案（* datASENSE-installer-ze.tar.gz*<version> ）複製到主機機器（使用「scp」或其他方法）。
 .. 解壓縮安裝程式檔案。
 .. 貼上並執行您在步驟3中複製的命令。
 +
