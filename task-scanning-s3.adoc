@@ -41,7 +41,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 下列需求僅適用於掃描 S3 儲存區。
 
 [[policy-requirements]]
-為Cloud Data Sense執行個體設定IAM角色:: Cloud Data Sense需要權限才能連線至帳戶中的S3儲存區、並加以掃描。設定包含下列權限的 IAM 角色。在Amazon S3工作環境中啟用Data Sense時、Cloud Manager會提示您選擇IAM角色。
+為Cloud Data Sense執行個體設定IAM角色:: Cloud Data Sense需要權限才能連線至帳戶中的S3儲存區、並加以掃描。設定包含下列權限的 IAM 角色。在Amazon S3工作環境中啟用Data Sense時、BlueXP會提示您選擇IAM角色。
 +
 --
 [source, json]
@@ -93,9 +93,9 @@ NOTE: 您無法使用 Proxy 透過網際網路連線至 S3 。
 
 == 部署Cloud Data Sense執行個體
 
-link:task-deploy-cloud-compliance.html["在Cloud Manager中部署Cloud Data"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["在BlueXP中部署Cloud Data Sense"^] 如果尚未部署執行個體、
 
-您必須使用部署在AWS中的Connector來部署執行個體、以便Cloud Manager自動探索此AWS帳戶中的S3儲存區、並在Amazon S3工作環境中顯示它們。
+您需要使用部署在AWS中的Connector來部署執行個體、以便BlueXP自動探索此AWS帳戶中的S3儲存區、並在Amazon S3工作環境中顯示它們。
 
 *附註：*掃描S3儲存區時、目前不支援在內部部署位置部署Cloud Data Sense。
 
@@ -108,7 +108,7 @@ link:task-deploy-cloud-compliance.html["在Cloud Manager中部署Cloud Data"^] �
 驗證先決條件之後、請在Amazon S3上啟用Cloud Data Sense。
 
 .步驟
-. 在Cloud Manager左側導覽功能表中、按一下* Canvas*。
+. 在BluXP左側導覽功能表中、按一下*儲存設備> Canvas*。
 . 選取 Amazon S3 工作環境。
 +
 image:screenshot_s3_we.gif["Amazon S3 工作環境圖示的快照"]
@@ -127,15 +127,15 @@ image:screenshot_s3_compliance_iam_role.gif["輸入AWS IAM角色for Cloud Data S
 
 TIP: 您也可以按一下「組態」頁面、針對工作環境啟用法規遵循掃描 image:screenshot_gallery_options.gif[""] 按鈕並選擇*啟動Data檢測*。
 
-Cloud Manager 會將 IAM 角色指派給執行個體。
+BlueXP會將IAM角色指派給執行個體。
 
 
 
 == 啟用和停用 S3 儲存區的法規遵循掃描
 
-Cloud Manager在Amazon S3上啟用Cloud Data Sense之後、下一步是設定您要掃描的儲存區。
+在Amazon S3上啟用Cloud Data Sense之後、下一步是設定您要掃描的儲存區。
 
-當 Cloud Manager 在 AWS 帳戶中執行時、若該帳戶中有您要掃描的 S3 儲存區、則會探索這些儲存區、並在 Amazon S3 工作環境中顯示這些儲存區。
+當在AWS帳戶中執行的BlueXP具有您要掃描的S3儲存區時、它會探索這些儲存區、並在Amazon S3工作環境中顯示它們。
 
 雲端資料感應也能實現  buckets from additional AWS accounts,掃描位於不同 AWS 帳戶中的 S3 儲存區。
 

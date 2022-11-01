@@ -43,7 +43,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS彈性網
 在掃描FSXfor ONTAP SfundVolume之前、 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["您必須設定一個FSX工作環境、並設定磁碟區"^]。
 
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["在Cloud Manager中部署Cloud Data"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["在BlueXP中部署Cloud Data Sense"^] 如果尚未部署執行個體、
 
 [role="quick-margin-para"]
 按一下「*資料感應*」、選取「*組態*」索引標籤、然後啟動特定工作環境中磁碟區的法規遵循掃描。
@@ -69,9 +69,9 @@ link:task-deploy-cloud-compliance.html["在Cloud Manager中部署Cloud Data"^] �
 
 == 探索您ONTAP 要掃描的FSXfor Sf2檔案系統
 
-如果ONTAP 您要掃描的FSXfor Sfelffile系統尚未在Cloud Manager中做為工作環境、您現在可以將其新增至繪圖。
+如果ONTAP 您想要掃描的FSXfor Sfelffile系統尚未在BlueXP中做為工作環境、您現在可以將其新增至繪圖。
 
-https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["瞭解如何在ONTAP Cloud Manager中探索或建立FSX for Sficity檔案系統"^]。
+https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-working-environment.html["瞭解如何在ONTAP BlueXP中探索或建立FSX for Sf更新 檔案系統"^]。
 
 
 
@@ -91,7 +91,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 您可以啟用ONTAP 適用於FSX的Cloud Data Sense for FSX for Sf6 Volume。
 
-. 在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
+. 在BlueXP左側導覽功能表中、按一下*管理>分類*、然後選取*組態*索引標籤。
 +
 image:screenshot_fsx_scanning_activate.png["部署Cloud Data Sense執行個體後、立即顯示「組態」索引標籤的快照。"]
 
@@ -129,7 +129,7 @@ image:screenshot_fsx_scanning_no_network_error.png["掃描組態中「檢視詳�
 . 請確定Cloud Data Sense執行個體與每個網路之間都有網路連線、其中包含FSXfor ONTAP EfSure的磁碟區。
 +
 
-NOTE: 若為FSXfor ONTAP Sfor Sf, Cloud Data Sense只能掃描與Cloud Manager相同區域的磁碟區。
+NOTE: 對於FSXfor ONTAP Sfor Sf, Cloud Data Sense只能掃描與BlueXP相同區域的磁碟區。
 
 . 請確定下列連接埠已開放給Data Sense執行個體。
 +
@@ -140,8 +140,7 @@ NOTE: 若為FSXfor ONTAP Sfor Sf, Cloud Data Sense只能掃描與Cloud Manager�
 . 確保NFS Volume匯出原則包含Data Sense執行個體的IP位址、以便存取每個Volume上的資料。
 . 如果您使用CIFS、請提供Data Sense搭配Active Directory認證、以便掃描CIFS磁碟區。
 +
-.. 在Cloud Manager頂端、按一下* Data Sense *。
-.. 單擊 * Configuration （配置） * 選項卡。
+.. 在BlueXP左側導覽功能表中、按一下*管理>分類*、然後選取*組態*索引標籤。
 .. 針對每個工作環境、按一下*編輯CIFS認證*、然後輸入Data Sense存取系統上CIFS磁碟區所需的使用者名稱和密碼。
 +
 認證資料可以是唯讀的、但提供管理認證可確保Data Sense能夠讀取任何需要提升權限的資料。認證資料儲存在Cloud Data Sense執行個體上。

@@ -83,7 +83,7 @@ CAUTION: 必須在資料庫中啟用 * 統計資料收集功能。
 
 如果您要掃描可透過網際網路存取的資料庫架構、您可以 link:task-deploy-cloud-compliance.html["在雲端部署Cloud Data Sense"^] 或 link:task-deploy-compliance-onprem.html["在內部部署位置部署Data Sense、並可存取網際網路"^]。
 
-如果您要掃描安裝在無法存取網際網路的暗點中的資料庫架構、則必須執行 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署Cloud Data Sense"^]。這也需要將Cloud Manager Connector部署在同一個內部部署位置。
+如果您要掃描安裝在無法存取網際網路的暗點中的資料庫架構、則必須執行 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署Cloud Data Sense"^]。這也需要在同一個內部部署位置部署BlueXP Connector。
 
 只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
 

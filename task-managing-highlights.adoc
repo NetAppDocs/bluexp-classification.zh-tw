@@ -181,7 +181,7 @@ image:screenshot_compliance_sync_files_dialog.png["顯示「複製檔案」對�
 
 . 如果確定要將選取的檔案同步到目的地位置、請按一下*確定*。
 +
-此功能可在Cloud Manager中開啟。Cloud Sync
+此功能可在BlueXP中開啟。Cloud Sync
 
 +
 系統會提示您定義同步關係。來源系統會根據您在Data有意義中選取的儲存庫和檔案預先填入資料。

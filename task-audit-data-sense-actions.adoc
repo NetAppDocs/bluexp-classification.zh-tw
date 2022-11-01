@@ -56,15 +56,15 @@ Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描
 
 當您的內部部署安裝Data Sense時、您可以直接瀏覽至記錄檔。
 
-當在雲端部署Data Sense時、您可以使用SSH來執行Data Sense執行個體。您可以輸入使用者和密碼、或是使用Cloud Manager Connector安裝期間提供的SSH金鑰來SSH到系統。SSH命令是：
+當在雲端部署Data Sense時、您可以使用SSH來執行Data Sense執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：
 
  ssh -i <path to the ssh key> <machine user>@<datasense ip>
 * = ssh驗證金鑰的位置
 * <機器使用者>：
 +
 ** 對於AWS：使用<EC2-user>
-** Azure：使用為Cloud Manager執行個體建立的使用者
-** GCP：使用為Cloud Manager執行個體建立的使用者
+** Azure：使用為BlueXP執行個體建立的使用者
+** GCP：使用為BlueXP執行個體建立的使用者
 
 
 * =虛擬機器執行個體的IP位址

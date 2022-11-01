@@ -18,9 +18,9 @@ Cloud Data Sense提供多種方法、讓您管理及組織私有資料。如此�
 
 * 如果您已訂閱 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^] 若要分類及保護檔案、您可以使用Cloud Data Sense來管理這些AIP標籤。
 * 您可以將標記新增至您要標記為組織或某種後續追蹤的檔案。
-* 您可以將Cloud Manager使用者指派給特定檔案或多個檔案、讓該人員負責管理檔案。
+* 您可以將BlueXP使用者指派給特定檔案或多個檔案、以便該人員負責管理檔案。
 * 使用「原則」功能、您可以建立自己的自訂搜尋查詢、只要按一下按鈕、就能輕鬆查看結果。
-* 當某些重要原則傳回結果時、您可以傳送電子郵件警示給Cloud Manager使用者。
+* 當某些關鍵原則傳回結果時、您可以傳送電子郵件警示給BlueXP使用者。
 
 
 
@@ -71,7 +71,7 @@ Cloud Data Sense支援下列檔案類型中的AIP標籤：.DOC、.DOCX、.PDF、
 
 === 將AIP標籤整合到工作區中
 
-在您管理AIP標籤之前、您必須先登入現有的Azure帳戶、將AIP標籤功能整合至Cloud Data Sense。一旦啟用、您就能在檔案中管理所有人的AIP標籤 link:concept-cloud-compliance.html#supported-data-sources["資料來源"^] 在Cloud Manager工作區中。
+在您管理AIP標籤之前、您必須先登入現有的Azure帳戶、將AIP標籤功能整合至Cloud Data Sense。一旦啟用、您就能在檔案中管理所有人的AIP標籤 link:concept-cloud-compliance.html#supported-data-sources["資料來源"^] 在您的BlueXP工作區中。
 
 .需求
 * 您必須擁有帳戶和Azure資訊保護授權。
@@ -215,7 +215,7 @@ image:screenshot_compliance_un_integrate_aip_labels.png["顯示如何移除AIP�
 
 Data Sense可讓您檢視指派給檔案的標記、新增或移除檔案的標記、以及變更名稱或刪除現有標記。
 
-請注意、標記不會以AIP標籤是檔案中繼資料一部分的方式新增至檔案。Cloud Manager使用者使用Cloud Data Sense時會看到這個標記、因此您可以查看是否需要刪除檔案、或是檢查某種類型的後續追蹤。
+請注意、標記不會以AIP標籤是檔案中繼資料一部分的方式新增至檔案。BlueXP使用者使用Cloud Data Sense時會看到這個標記、因此您可以查看檔案是否需要刪除或檢查某種類型的後續追蹤。
 
 
 TIP: 指派給Cloud Data感應檔案的標記與您可以新增至資源（例如磁碟區或虛擬機器執行個體）的標記無關。資料感應標記會套用至檔案層級。
@@ -302,11 +302,11 @@ image:button_delete_datasense_file_tag.png["請在本主題中新增此項目"]
 
 == 指派使用者管理特定檔案
 
-您可以將Cloud Manager使用者指派給特定檔案或多個檔案、以便該人員負責該檔案所需的任何後續行動。此功能通常與功能搭配使用、以將自訂狀態標記新增至檔案。
+您可以將BlueXP使用者指派給特定檔案或多個檔案、以便該人員負責該檔案所需的任何後續行動。此功能通常與功能搭配使用、以將自訂狀態標記新增至檔案。
 
 例如、您的檔案可能包含某些個人資料、允許太多使用者讀寫存取（開放權限）。您可以指派「狀態」標記「變更權限」、並將此檔案指派給使用者「Joan Smith」、讓他們決定如何修正問題。當他們修正問題時、他們可以將「Status（狀態）」標記變更為「completed（已完成）」。
 
-請注意、使用者名稱並未新增至檔案作為中繼資料的一部分、Cloud Manager使用者使用Cloud Data Sense時就會看到這個名稱。
+請注意、使用者名稱並未新增至檔案作為檔案中繼資料的一部分、而是在使用Cloud Data Sense時、由BlueXP使用者看到。
 
 「調查」頁面中的新篩選器可讓您在「指派給」欄位中輕鬆檢視擁有相同人員的所有檔案。
 
@@ -355,7 +355,7 @@ image:screenshot_compliance_select_user_multi.png["顯示如何在「資料調�
 *  of predefined Policies,預先定義的原則 根據使用者要求從NetApp取得
 * 能夠建立您自己的自訂原則
 * 只要按一下、就能啟動「調查」頁面、並取得原則的結果
-* 當特定重要原則傳回結果時、請傳送電子郵件警示給Cloud Manager使用者、以便取得通知來保護資料
+* 當某些關鍵原則傳回結果時、請傳送電子郵件警示給BlueXP使用者、以便您取得通知來保護資料
 * 自動將AIP（Azure資訊保護）標籤指派給符合原則中所定義條件的所有檔案
 * 當某些原則傳回結果時、自動刪除檔案（每天一次）、以便您自動保護資料
 
@@ -392,7 +392,7 @@ image:screenshot_compliance_save_as_highlight.png["顯示如何將篩選查詢�
 +
 .. 輸入唯一的名稱和說明。
 .. 您也可以勾選此方塊、自動刪除符合原則參數的檔案。深入瞭解 link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["使用原則刪除來源檔案"]。
-.. 或者、如果您想要將通知電子郵件傳送給Cloud Manager使用者、請勾選此方塊、然後選擇電子郵件傳送的時間間隔。深入瞭解 link:task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["根據原則結果傳送電子郵件警示"]。
+.. 或者、如果您想要將通知電子郵件傳送給BlueXP使用者、請勾選此方塊、然後選擇電子郵件傳送的時間間隔。深入瞭解 link:task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["根據原則結果傳送電子郵件警示"]。
 .. 您也可以勾選此方塊、自動將AIP標籤指派給符合原則參數的檔案、然後選取標籤。（只有在您已整合AIP標籤時才需要。深入瞭解 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP標籤"]）
 .. 按一下「*建立原則*」。
 +
@@ -408,7 +408,7 @@ image:screenshot_compliance_save_highlight.png["顯示如何設定原則並加�
 
 === 發現不符合法規的資料時傳送電子郵件警示
 
-Cloud Data Sense可在特定關鍵原則傳回結果時、傳送電子郵件警示給Cloud Manager使用者、讓您取得通知來保護資料。您可以選擇每天、每週或每月傳送電子郵件通知。
+當某些關鍵原則傳回結果時、Cloud Data Sense可傳送電子郵件警示給BlueXP使用者、讓您取得通知來保護資料。您可以選擇每天、每週或每月傳送電子郵件通知。
 
 您可以在建立原則或編輯任何原則時設定此設定。
 
@@ -419,7 +419,7 @@ Cloud Data Sense可在特定關鍵原則傳回結果時、傳送電子郵件警�
 +
 image:screenshot_compliance_add_email_alert_1.png["顯示如何編輯現有原則的快照。"]
 
-. 在「Edit Policy（編輯原則）」頁面中、如果您想要將通知電子郵件傳送給Cloud Manager使用者、請勾選此方塊、然後選擇電子郵件的傳送時間間隔（例如每*週*）。
+. 在「Edit Policy（編輯原則）」頁面中、如果您想要將通知電子郵件傳送給BlueXP使用者、請勾選此方塊、然後選擇電子郵件的傳送時間間隔（例如每*週*）。
 +
 image:screenshot_compliance_add_email_alert_2.png["螢幕快照顯示如何選擇要傳送給原則的電子郵件條件。"]
 

@@ -33,7 +33,7 @@ summary: 完成幾個步驟、即可在網路或雲端上可存取網際網路�
 您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在內部部署連接器"^] 在網路或雲端的Linux主機上。
 
 [role="quick-margin-para"]
-確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與Cloud Data Sense之間透過連接埠443的連線等。  Cloud Manager and Data Sense prerequisites,請參閱完整清單。
+確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與Cloud Data Sense之間透過連接埠443的連線等。  BlueXP and Data Sense prerequisites,請參閱完整清單。
 
 [role="quick-margin-para"]
 您也需要符合的Linux系統  the Linux host system,符合下列需求。
@@ -42,13 +42,13 @@ summary: 完成幾個步驟、即可在網路或雲端上可存取網際網路�
 從NetApp支援網站下載Cloud Data Sense軟體、並將安裝程式檔案複製到您打算使用的Linux主機。然後啟動安裝精靈、並依照提示部署Data Sense執行個體。
 
 [role="quick-margin-para"]
-Cloud Data Sense在Cloud Manager中掃描的前1 TB資料是免費的。您必須向雲端供應商Marketplace訂閱、或向NetApp訂購BYOL授權、才能在該時間點之後繼續掃描資料。
+在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。您必須向雲端供應商Marketplace訂閱、或向NetApp訂購BYOL授權、才能在該時間點之後繼續掃描資料。
 
 
 
 == 建立連接器
 
-如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中建立連接器"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在GCP中建立連接器"^]。在大多數情況下、您可能會先設定Connector、然後才嘗試啟動Cloud Data Sense、因為大多數情況都是如此 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["Cloud Manager 功能需要連接器"]但有些情況下您需要立即設定一個。
+如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中建立連接器"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在GCP中建立連接器"^]。在大多數情況下、您可能會先設定Connector、然後才嘗試啟動Cloud Data Sense、因為大多數情況都是如此 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXP功能需要連接器"]但有些情況下您需要立即設定一個。
 
 有些情況下、您必須使用部署在特定雲端供應商中的Connector：
 
@@ -105,7 +105,7 @@ NOTE: 安裝後、無法變更Data Sense主機系統的IP位址。
 
 
 
-== 驗證Cloud Manager和Data Sense必要條件
+== 驗證BlueXP和Data Sense必要條件
 
 在Linux系統上部署Cloud Data Sense之前、請先檢閱下列先決條件、確定您擁有支援的組態。
 
@@ -117,10 +117,10 @@ NOTE: 安裝後、無法變更Data Sense主機系統的IP位址。
 | 端點 | 目的 
 
 
-| \https://cloudmanager.cloud.netapp.com | 與Cloud Manager服務（包括NetApp帳戶）進行通訊。 
+| \https://cloudmanager.cloud.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
 
 
-| \https://netapp-cloud-account.auth0.com \https://auth0.com | 與 NetApp Cloud Central 通訊、以進行集中式使用者驗證。 
+| \https://netapp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
 
 
 | \https://support.compliance.cloudmanager.cloud.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
@@ -132,20 +132,20 @@ NOTE: 安裝後、無法變更Data Sense主機系統的IP位址。
 | \https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | 提供安裝所需的必要套件。 
 |===
 --
-確保 Cloud Manager 擁有所需的權限:: 確保Cloud Manager擁有部署資源的權限、並為Cloud Data Sense執行個體建立安全群組。您可以在中找到最新的 Cloud Manager 權限 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
-確保Cloud Manager Connector能夠存取Cloud Data Sense:: 確保Connector與Cloud Data Sense執行個體之間的連線能力。連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。
+確認BlueXP擁有必要的權限:: 確保BlueXP擁有部署資源的權限、並為Cloud Data Sense執行個體建立安全群組。您可以在中找到最新的BlueXP權限 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
+確保BlueXP Connector能夠存取Cloud Data Sense:: 確保Connector與Cloud Data Sense執行個體之間的連線能力。連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。
 +
 --
 此連線可部署Data Sense執行個體、並可讓您在「Compliance and Governance（法規遵循與治理）」索引標籤中檢視資訊。
 
-請確定連接埠 8080 已開啟、以便在 Cloud Manager 中查看安裝進度。
+請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。
 
 --
 確保雲端資料認證能夠持續運作:: Cloud Data Sense執行個體必須持續運作、才能持續掃描資料。
-確保網頁瀏覽器連線至Cloud Data Sense:: 啟用Cloud Data Sense之後、請確保使用者從連線至Data Sense執行個體的主機存取Cloud Manager介面。
+確保網頁瀏覽器連線至Cloud Data Sense:: 啟用Cloud Data Sense之後、請確保使用者從連線至Data Sense執行個體的主機存取BlueXP介面。
 +
 --
-Data Sense執行個體使用私有IP位址、確保索引資料無法存取網際網路。因此、您用來存取 Cloud Manager 的網頁瀏覽器必須連線至該私有 IP 位址。這種連線可能來自直接連線至雲端供應商（例如VPN）、或來自與Data Sense執行個體位於同一個網路內的主機。
+Data Sense執行個體使用私有IP位址、確保索引資料無法存取網際網路。因此、您用來存取BlueXP的網頁瀏覽器必須連線至該私有IP位址。這種連線可能來自直接連線至雲端供應商（例如VPN）、或來自與Data Sense執行個體位於同一個網路內的主機。
 
 --
 
@@ -162,7 +162,7 @@ image:diagram_deploy_onprem_single_host_internet.png["圖表顯示使用內部�
 
 image:diagram_deploy_onprem_multi_host_internet.png["圖表顯示當使用部署在內部部署且可存取網際網路的多個Data Sense執行個體時、您可以掃描的資料來源位置。"]
 
-請參閱  the Linux host system,準備Linux主機系統 和  Cloud Manager and Data Sense prerequisites,檢閱先決條件 以取得部署Cloud Data Sense之前的完整需求清單。
+請參閱  the Linux host system,準備Linux主機系統 和  BlueXP and Data Sense prerequisites,檢閱先決條件 以取得部署Cloud Data Sense之前的完整需求清單。
 
 只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
 
@@ -180,13 +180,13 @@ NOTE: 當Azure NetApp Files 軟體安裝在內部部署環境中時、Cloud Data
 * （選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果此軟體尚未安裝在系統上、安裝程式將會安裝此軟體。
 * 請確定您擁有Linux系統的root權限。
 * 如果您使用的是Proxy、而且它正在執行TLS攔截、則必須知道Data Sense Linux系統上儲存TLS CA憑證的路徑。
-* 確認您的離線環境符合所需  Cloud Manager and Data Sense prerequisites,權限與連線能力。
+* 確認您的離線環境符合所需  BlueXP and Data Sense prerequisites,權限與連線能力。
 
 
 .步驟
 . 從下載Cloud Data Sense軟體 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選取的檔案名稱為* datASENSE-installer-ze.tar.gz*<version> 。
 . 將安裝程式檔案複製到您打算使用的 Linux 主機（使用「 XCP 」或其他方法）。
-. 在Cloud Manager中、按一下* Data Sense *。
+. 在BlueXP中、選取*管理>分類*。
 . 按一下「*啟動資料感應*」。
 +
 image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動Cloud Data Sense的螢幕快照。"]
@@ -215,8 +215,8 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
  a| 
 .. 貼上您從步驟6複製的資訊：「Udo ./install.sh -a <account_id>-c <agent_id>-t <tokent>」
 .. 輸入Data Sense主機機器的IP位址或主機名稱、以便連接器執行個體存取。
-.. 輸入Cloud Manager Connector主機機器的IP位址或主機名稱、以便Data Sense執行個體存取。
-.. 根據提示輸入 Proxy 詳細資料。如果您的Cloud Manager已使用Proxy、則不需要在此輸入此資訊、因為Data Sense會自動使用Cloud Manager所使用的Proxy。
+.. 輸入BlueXP Connector主機的IP位址或主機名稱、以便Data Sense執行個體存取。
+.. 根據提示輸入 Proxy 詳細資料。如果您的BlueXP Connector已經使用Proxy、則不需要在此輸入此資訊、因為Data Sense將自動使用Connector所使用的Proxy。
 
 | 或者、您也可以事先建立整個命令、提供必要的主機和Proxy參數：「Udo ./install.sh -A <account_id>-c <agent_id>-t <tokent>-host <ds_host>-manager-host <cm_host>-proxy_host <proxy_host>--proxy-port <proxy_port>-cert-proxy_proxy_proxy_proxy><key><key_proxy_proxy_user-proxy_proxy>-tese> 
 |===
@@ -228,7 +228,7 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 ** _agent_id_ = 連接器 ID
 ** _tokon_ = JWT 使用者權杖
 ** _DS_host_= Data Sense Linux系統的IP位址或主機名稱。
-** _cm_host_= Cloud Manager Connector系統的IP位址或主機名稱。
+** _cm_host_= BlueXP Connector系統的IP位址或主機名稱。
 ** _proxy_host_ = 代理伺服器的 IP 或主機名稱（如果主機位於 Proxy 伺服器之後）。
 ** _proxy_port_ = 連接到 Proxy 伺服器的連接埠（預設值 80 ）。
 ** _proxy_schap_=連線配置：HTTPS或http（預設http）。
@@ -241,7 +241,7 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 
 Cloud Data Sense安裝程式會安裝套件、安裝泊塢視窗、註冊安裝、以及安裝Data Sense。安裝可能需要 10 到 20 分鐘。
 
-如果主機與連接器執行個體之間有連接埠8080的連線、您會在Cloud Manager的Data Sense（資料感測）索引標籤中看到安裝進度。
+如果主機與連接器執行個體之間有連接埠8080的連線、您會在BlueXP的「Data Sense（資料感測）」索引標籤中看到安裝進度。
 
 您可以從「組態」頁面選取要掃描的資料來源。
 
@@ -259,7 +259,7 @@ Cloud Data Sense安裝程式會安裝套件、安裝泊塢視窗、註冊安裝�
 * 確認Manager和掃描儀節點的所有Linux系統都符合  the Linux host system,主機需求。
 * （選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果系統上尚未安裝此軟體、安裝程式將會安裝此軟體。
 * 請確定您擁有Linux系統的root權限。
-* 確認您的環境符合所需  Cloud Manager and Data Sense prerequisites,權限與連線能力。
+* 確認您的環境符合所需  BlueXP and Data Sense prerequisites,權限與連線能力。
 * 您必須擁有要使用的掃描器節點主機的IP位址。
 * 必須在所有主機上啟用下列連接埠和傳輸協定：
 +

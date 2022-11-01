@@ -56,7 +56,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 
 
-如果在沒有網際網路存取的站台上安裝Data Sense、則Cloud Manager Connector也必須安裝在同一個站台上、而且無法存取網際網路。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["深入瞭解"^]。
+如果在沒有網際網路存取的網站上安裝Data Sense、則同樣也必須在沒有網際網路存取的同一個網站上安裝BlueXP Connector。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["深入瞭解"^]。
 
 只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
 

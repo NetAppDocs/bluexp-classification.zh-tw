@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-licensing-datasense.html 
 keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, data sense, cloud data sense 
-summary: Cloud Data Sense在Cloud Manager工作區中掃描的前1 TB資料是免費的。NetApp的BYOL授權或雲端供應商Marketplace的Cloud Manager訂閱、必須在該點之後繼續掃描資料。 
+summary: 在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費的。NetApp的BYOL授權或雲端供應商Marketplace的訂閱、必須在該點之後繼續掃描資料。 
 ---
 = 設定Cloud Data Sense授權
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Cloud Data Sense在Cloud Manager工作區中掃描的前1 TB資料是�
 
 
 [role="lead"]
-Cloud Data Sense在Cloud Manager工作區中掃描的前1 TB資料是免費的。NetApp的BYOL授權或雲端供應商市場的Cloud Manager訂閱、必須在該點之後繼續掃描資料。
+在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費的。NetApp的BYOL授權或雲端供應商的市場訂閱、必須在該點之後繼續掃描資料。
 
 在閱讀更多內容之前、請先提供幾個附註：
 
@@ -36,9 +36,9 @@ image:screenshot_compliance_subscribe.png["螢幕快照顯示正在掃描多少�
 
 這些步驟必須由擁有 _Account Admin_ 角色的使用者完成。
 
-. 在 Cloud Manager 主控台右上角、按一下「設定」圖示、然後選取 * 認證 * 。
+. 在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。
 +
-image:screenshot_settings_icon.gif["Cloud Manager 右上方橫幅的快照、您可在其中選取「設定」圖示。"]
+image:screenshot_settings_icon.gif["BlueXP右上方橫幅的快照、您可在其中選取「設定」圖示。"]
 
 . 尋找AWS執行個體設定檔、Azure託管服務身分識別或Google Project的認證資料。
 +
@@ -81,18 +81,18 @@ NetApp自帶授權、提供1年、2年或3年期限。BYOL * Cloud Data Sense *�
 如果您沒有Cloud Data Sense授權、請聯絡我們以購買：
 
 * mailto：ng-contact-data-sense@netapp.com？Subject =授權[傳送電子郵件以購買授權]。
-* 按一下Cloud Manager右下角的聊天圖示以申請授權。
+* 按一下BlueXP右下角的聊天圖示、申請授權。
 
 
 或者、如果Cloud Volumes ONTAP 您擁有不使用的未指派節點型支援、您可以將其轉換成具有相同金額等同和相同到期日的Cloud Data Sense授權。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["如需詳細資料、請前往此處"^]。
 
-您可以使用Cloud Manager中的「Digital Wallet」頁面來管理Cloud Data Sense BYOL授權。您可以新增授權並更新現有授權。
+您可以使用BlueXP中的「Digital Wallet」頁面來管理Cloud Data Sense BYOL授權。您可以新增授權並更新現有授權。
 
 
 
 === 取得Cloud Data Sense授權檔案
 
-購買Cloud Data Sense授權後、您可以在Cloud Manager中輸入Cloud Data Sense序號和nss/帳戶、或上傳NLF授權檔案、以啟動授權。下列步驟說明如果您打算使用NLF授權檔案、該如何取得該檔案。
+購買Cloud Data Sense授權之後、您可以在BlueXP中輸入Cloud Data Sense序號和nssa帳戶、或上傳NLF授權檔案、以啟動授權。下列步驟說明如果您打算使用NLF授權檔案、該如何取得該檔案。
 
 如果您已在內部部署站台的主機上部署Cloud Data Sense、但該站台無法存取網際網路、則必須從連線網際網路的系統取得授權檔案。無法使用序號和NSS帳戶啟動使用許可、進行暗色站台安裝。
 
@@ -103,12 +103,12 @@ NetApp自帶授權、提供1年、2年或3年期限。BYOL * Cloud Data Sense *�
 image:screenshot_cloud_tiering_license_step1.gif["顯示依序號搜尋後授權表格的快照。"]
 
 . 在*授權金鑰*下、按一下*取得NetApp授權檔案*。
-. 輸入您的Cloud Manager帳戶ID（在支援網站上稱為「租戶ID」）、然後按一下*提交*下載授權檔案。
+. 輸入您的BlueXP帳戶ID（在支援網站上稱為「租戶ID」）、然後按一下*提交*下載授權檔案。
 +
 image:screenshot_cloud_tiering_license_step2.gif["螢幕擷取畫面會顯示「Get license（取得授權）」對話方塊、您可在此輸入租戶ID、然後按一下「Submit（提交）」下載授權檔案。"]
 
 +
-您可以從Cloud Manager頂端選取* Account*下拉式清單、然後按一下帳戶旁的* Manage Account*、即可找到Cloud Manager帳戶ID。您的帳戶ID位於「總覽」索引標籤。
+您可以從BlueXP頂端選取「*帳戶*」下拉式清單、然後按一下帳戶旁的「*管理帳戶*」、即可找到您的BlueXP帳戶ID。您的帳戶ID位於「總覽」索引標籤。
 
 
 
@@ -116,16 +116,16 @@ image:screenshot_cloud_tiering_license_step2.gif["螢幕擷取畫面會顯示「
 
 === 將Cloud Data Sense BYOL授權新增至您的帳戶
 
-購買Cloud Manager帳戶的Cloud Data Sense授權後、您必須將授權新增至Cloud Manager、才能使用Data Sense服務。
+為您的BlueXP帳戶購買Cloud Data Sense授權後、您必須將授權新增至BlueXP、才能使用Data Sense服務。
 
 .步驟
-. 在Cloud Manager左側導覽功能表中、按一下* Digital Wallet *、然後選取* Data Services Licenses*索引標籤。
+. 在BlueXP左側導覽功能表中、按一下*管理>數位錢包*、然後選取*資料服務授權*索引標籤。
 . 按一下「 * 新增授權 * 」。
 . 在_新增授權_對話方塊中、輸入授權資訊、然後按一下*新增授權*：
 +
 ** 如果您擁有Data Sense授權序號並知道您的nss帳戶、請選取* Enter Serial Number*（輸入序號*）選項、然後輸入該資訊。
 +
-如果您的NetApp支援網站帳戶無法從下拉式清單取得、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["將新增至Cloud Manager的NSS帳戶"^]。
+如果下拉式清單中沒有您的 NetApp 支援網站帳戶， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["將新增至BlueXP的NSS帳戶"^]。
 
 ** 如果您有Data Sense授權檔案（安裝在暗處時需要）、請選取*上傳授權檔案*選項、然後依照提示附加檔案。
 +
@@ -135,7 +135,7 @@ image:screenshot_services_license_add.png["此快照顯示新增Cloud Data Sense
 
 
 
-Cloud Manager會新增授權、讓您的Cloud Data Sense服務處於作用中狀態。
+BlueXP會新增授權、讓您的Cloud Data Sense服務處於作用中狀態。
 
 
 
@@ -152,11 +152,11 @@ image:screenshot_services_license_expire_cc2.png["顯示「Digital Wallet」頁�
 您可以在Cloud Data Sense授權到期之前更新、以確保存取掃描資料的能力不會中斷。
 
 .步驟
-. 按一下Cloud Manager右下角的聊天圖示、即可針對特定序號、要求將您的術語或額外容量擴充至Cloud Data Sense授權。您也可以傳送電子郵件至mailto：ng-contact-data-sense@netapp.com®Subject=Licensing[寄送電子郵件要求更新授權]。
+. 按一下BlueXP右下角的聊天圖示、即可針對特定序號、要求延長您的術語或額外的Cloud Data Sense授權容量。您也可以傳送電子郵件至mailto：ng-contact-data-sense@netapp.com®Subject=Licensing[寄送電子郵件要求更新授權]。
 +
-在您支付授權費用並向NetApp支援網站註冊之後、Cloud Manager會自動更新Digital Wallet中的授權、而Data Services授權頁面將會在5到10分鐘內反映變更。
+在您支付授權費用並向NetApp 支援網站 《The》（《The》）註冊之後、BlueXP會自動更新「Digital Wallet」（數位錢包）中的授權、而「Data Services Licenses」（資料服務授權）頁面將會在5到10分鐘內反映變更。
 
-. 如果Cloud Manager無法自動更新授權（例如、安裝在暗點）、則您需要手動上傳授權檔案。
+. 如果BlueXP無法自動更新授權（例如、安裝在暗點）、則您需要手動上傳授權檔案。
 +
 .. 您可以  your Cloud Data Sense license file,從NetApp支援網站取得授權檔案。
 .. 在「_資料服務授權_」索引標籤的「數位錢包」頁面上、按一下 image:screenshot_horizontal_more_button.gif["更多圖示"] 如需您要更新的服務序號、請按一下*更新授權*。
@@ -168,23 +168,23 @@ image:screenshot_services_license_update.png["選取特定服務的「更新授�
 
 
 
-Cloud Manager會更新授權、讓您的Cloud Data Sense服務持續運作。
+BlueXP會更新授權、讓您的Cloud Data Sense服務持續運作。
 
 
 
 === BYOL 授權考量
 
-使用Cloud Data Sense BYOL授權時、當您掃描的所有資料大小接近容量限制或接近授權到期日時、Cloud Manager會在Data Sense UI和Digital Wallet UI中顯示警告。您會收到下列警告：
+使用Cloud Data Sense BYOL授權時、當您掃描的所有資料大小接近容量限制或接近授權到期日時、BlueXP會在Data Sense UI和Digital Wallet UI中顯示警告。您會收到下列警告：
 
 * 當您正在掃描的資料量達到授權容量的80%時、當您達到限制時、也會再次顯示
 * 授權到期前 30 天、授權到期後再一次
 
 
-當您看到這些警告時、請使用Cloud Manager介面右下角的聊天圖示來續約授權。
+當您看到這些警告時、請使用BlueXP介面右下角的聊天圖示來續約授權。
 
 如果授權過期、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何掃描資料的相關資訊。如果您想減少所掃描的磁碟區數量、使容量使用量可能低於授權限制、則只有「_Configuration」頁面可用。
 
-續約BYOL授權之後、Cloud Manager會自動更新Digital Wallet中的授權、並提供所有儀表板的完整存取權限。如果Cloud Manager無法透過安全的網際網路連線存取授權檔案（例如、安裝在暗點）、您可以自行取得該檔案、然後手動將其上傳至Cloud Manager。如需相關指示、請參閱  a Cloud Data Sense BYOL license,如何更新Cloud Data Sense授權。
+一旦您續約BYOL授權、BlueXP會自動更新Digital Wallet中的授權、並提供所有儀表板的完整存取權限。如果BlueXP無法透過安全的網際網路連線存取授權檔案（例如、安裝在暗點）、您可以自行取得該檔案、然後手動上傳至BlueXP。如需相關指示、請參閱  a Cloud Data Sense BYOL license,如何更新Cloud Data Sense授權。
 
 
 TIP: 如果您使用的帳戶同時擁有BYOL授權和PAYGO訂閱、則當BYOL授權到期時、Data Sense _will不會移轉至PAYGO訂閱。您必須續約BYOL授權。

@@ -23,10 +23,10 @@ summary: 完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp File
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
 [role="quick-margin-para"]
-在掃描Azure NetApp Files 完所有資料之前、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["必須設定 Cloud Manager 才能探索組態"^]。
+在掃描Azure NetApp Files 完所有資料之前、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["必須設定BlueXP以探索組態"^]。
 
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["在Cloud Manager中部署Cloud Data"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["在BlueXP中部署Cloud Data Sense"^] 如果尚未部署執行個體、
 
 [role="quick-margin-para"]
 按一下「 * Compliance * （ * 符合性 * ）」、選取「 * Configuration * （ * 組態 * ）」索引標籤、然後針對特定工作環境中的磁碟區啟動法規遵循掃描。
@@ -55,9 +55,9 @@ link:task-deploy-cloud-compliance.html["在Cloud Manager中部署Cloud Data"^] �
 
 == 探索Azure NetApp Files 您要掃描的整個系統
 
-如果Azure NetApp Files 您要掃描的這個系統尚未在Cloud Manager中做為工作環境、您現在可以將它新增到繪圖中。
+如果Azure NetApp Files 您要掃描的這個系統尚未在BlueXP中做為工作環境、您現在可以將它新增到繪圖中。
 
-https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["瞭解如何在Azure NetApp Files Cloud Manager中探索此功能"^]。
+https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["瞭解如何在Azure NetApp Files BlueXP中探索這個功能完善的系統"^]。
 
 
 
@@ -77,7 +77,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 您可以在Azure NetApp Files 您的功能區上啟用Cloud Data Sense。
 
-. 在Cloud Manager左側導覽功能表中、按一下* Data Sense *（資料感測）、然後選取* Configuration（組態）*索引標籤。
+. 在BlueXP左側導覽功能表中、按一下*管理>分類*、然後選取*組態*索引標籤。
 +
 image:screenshot_cloud_compliance_anf_scan_config.png["部署Cloud Data Sense執行個體後、立即顯示「組態」索引標籤的快照。"]
 
@@ -106,7 +106,7 @@ Cloud Data Sense會開始掃描您在工作環境中選取的磁碟區。一旦C
 . 請確定Cloud Data Sense執行個體與每個網路之間都有網路連線、其中包含Azure NetApp Files 供使用的Volume。
 +
 
-NOTE: 對本產品而言、Cloud Data Sense只能掃描與Cloud Manager位於同一區域的磁碟區。Azure NetApp Files
+NOTE: 對本產品而言、Cloud Data Sense只能掃描與BlueXP位於同一區域的磁碟區。Azure NetApp Files
 
 . 確認下列連接埠已開放給Data Sense執行個體：
 +
@@ -117,8 +117,7 @@ NOTE: 對本產品而言、Cloud Data Sense只能掃描與Cloud Manager位於同
 . 確保NFS Volume匯出原則包含Data Sense執行個體的IP位址、以便存取每個Volume上的資料。
 . 如果您使用CIFS、請提供Data Sense搭配Active Directory認證、以便掃描CIFS磁碟區。
 +
-.. 在Cloud Manager頂端、按一下* Data Sense *。
-.. 單擊 * Configuration （配置） * 選項卡。
+.. 在BlueXP左側導覽功能表中、按一下*管理>分類*、然後選取*組態*索引標籤。
 +
 image:screenshot_cifs_credentials.gif["「符合性」索引標籤的快照、顯示內容窗格右上角可用的「掃描狀態」按鈕。"]
 
