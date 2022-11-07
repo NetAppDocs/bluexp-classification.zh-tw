@@ -104,6 +104,7 @@ Cloud Data Sense可掃描及分析下列資料來源類型的結構化和非結�
 * Google Cloud Storage
 * OneDrive
 * SharePoint Online
+* SharePoint內部部署（SharePoint Server）
 * Google雲端硬碟
 
 

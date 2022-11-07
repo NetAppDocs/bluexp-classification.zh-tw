@@ -147,7 +147,7 @@ image:screenshot_compliance_file_details.png["快照顯示資料調查頁面中�
 
 == 檢視檔案和目錄的權限
 
-若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的資料。
+若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用、SharePoint Online、SharePoint內部部署及OneDrive中的資料。
 
 請注意、如果您看到的是SID（安全性識別碼）、而非使用者和群組名稱、則應該將Active Directory整合到Data Sense中。 link:task-add-active-directory-datasense.html["瞭解如何做到這一點"]。
 

@@ -18,6 +18,30 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
+== 2022年11月7日（1.17版）
+
+
+
+=== 支援掃描SharePoint內部部署帳戶
+
+Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["深入瞭解"^]。
+
+
+
+=== 能夠重新掃描多個目錄（資料夾或共用）
+
+現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["請參閱如何重新掃描目錄"^]。
+
+
+
+=== 能夠新增額外的內部部署「掃描器」節點、以掃描特定的資料來源
+
+如果您已在內部部署位置安裝Data Sense、而且發現需要更多掃描處理能力來掃描資料來源、則可以新增更多「掃描器」節點。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。例如、如果您發現某個資料來源的資料量在1年後增加了三倍、您可以新增一個掃描器節點來協助資料掃描。
+
+如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。
+
+
+
 == 2022年9月6日（1.16版）
 
 

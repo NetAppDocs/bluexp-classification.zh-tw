@@ -233,7 +233,7 @@ Cloud Data Sense可掃描已新增至BlueXP畫版的工作環境中的資料、�
 * 物件儲存（使用S3傳輸協定）
 * 資料庫（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Server）
 * OneDrive 帳戶
-* SharePoint Online帳戶
+* SharePoint Online和內部部署帳戶
 * Google雲端硬碟帳戶
 
 

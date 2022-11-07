@@ -822,8 +822,6 @@
   <block id="89e9a6544756c0accca2b5115f0e1fbb" category="paragraph">您可以從「調查」窗格手動刪除檔案、或使用原則自動刪除檔案。</block>
   <block id="59e754650981360e03b49e1eab4a76eb" category="admonition">您無法刪除位於資料庫中的檔案。</block>
   <block id="5415e45b4bcc0ac609070c6e72408406" category="paragraph">刪除檔案需要下列權限：</block>
-  <block id="19fe3b32fa84a43c2c4cfebef0942ebf" category="list-text">NFS資料：匯出原則必須以寫入權限定義。</block>
-  <block id="1383ae42dc4cdbe813b8892b576bc302" category="list-text">CIFS資料：CIFS認證需要具有寫入權限。</block>
   <block id="e9d85b8e3ea5257d3468eb6f787a1fcd" category="list-text">對於S3資料：IAM角色必須包含下列權限：「s 3：刪除物件」。</block>
   <block id="6a73b2e7e212b654de2a1932805f983e" category="section-title">手動刪除來源檔案</block>
   <block id="b625bf3592e2928981ee61c2a8d659a8" category="list-text">您必須具有「帳戶管理」或「工作區管理」角色、才能刪除檔案。</block>
@@ -1705,7 +1703,6 @@
   <block id="ea56ecd454d4962a21bd35be41237229" category="list-text">在「新增SharePoint Online帳戶」對話方塊中、按一下*「登入SharePoint」*。</block>
   <block id="e61b097ecbac4c8e2db9675d4c9f64cb" category="list-text">在顯示的Microsoft頁面中、選取SharePoint帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*、以允許Cloud Data Sense從此帳戶讀取資料。</block>
   <block id="88f6018b4c4004a32e426fcb13381212" category="section-title">將SharePoint網站新增至法規遵循掃描</block>
-  <block id="01ad50a8c51cb7caa81313f1655cae00" category="paragraph">您可以新增個別SharePoint網站或帳戶中的所有SharePoint網站、以便Cloud Data Sense掃描相關檔案。</block>
   <block id="32d4436877412c0a858739daddb125a4" category="list-text">在「_Configuration」頁面中、按一下SharePoint帳戶的*組態*按鈕。</block>
   <block id="bf65515a2a1389b2c93cbb10daab04e7" category="paragraph"><block ref="bf65515a2a1389b2c93cbb10daab04e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96a9afa518c688453cb14c0c9a77735a" category="list-text">如果這是第一次新增此SharePoint帳戶的網站、請按一下*「新增您的第一個SharePoint網站」*。</block>
@@ -2366,7 +2363,6 @@
   <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">您可以建立自己的自訂原則、針對組織專屬的搜尋結果提供結果。會傳回符合搜尋條件的所有檔案和目錄（共享區和資料夾）結果。</block>
   <block id="5587c065d5a62295455b157389cd71e5" category="paragraph">請注意、根據原則結果刪除資料及指派AIP標籤的動作僅對檔案有效。無法自動刪除符合搜尋條件的目錄、或指派AIP標籤。</block>
   <block id="90915c385560094095567649cbd732aa" category="section-title">檢視檔案和目錄的權限</block>
-  <block id="ef86e9a879fad347d62a184c49f26eb6" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用區、SharePoint和OneDrive中的資料。</block>
   <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">此外、 您可以按一下使用者或群組的名稱、「調查」頁面會顯示該使用者或群組的名稱、並填入「使用者/群組權限」篩選器中、以便查看使用者或群組可存取的所有檔案和目錄。</block>
   <block id="3e75ffa254c777c4ea8d93dfbb0b6eba" category="paragraph">+如果您想要確保「上次存取時間」的檔案在「資料感測」分類掃描中維持不變、建議使用者具有「寫入屬性」權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="8a45623b5a3c251ed21845e747d3e9fa" category="paragraph">對於CIFS磁碟區/檔案共用、如果您想要確保「上次存取時間」由「資料感測」分類掃描而維持不變、建議使用者具有「寫入屬性」權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
@@ -2527,7 +2523,6 @@
   <block id="d6933caaf62074fc0c3e63f604181712" category="inline-link">深入瞭解如何建立階層連結檔案</block>
   <block id="368538217a4a98d2d78bf94a224b8eb6" category="paragraph">Data Sense現在將階層連結檔案視為「符合性儀表板」中顯示的類別的一部分。將檔案從來源位置移至NFS共用時、會建立這些檔案Data Sense。<block ref="fd6931884959497f6c1600e29f97b838" category="inline-link-rx"></block>。</block>
   <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">此外、在「調查」頁面中執行搜尋時、您可以選取「類別」下的「資料感測Breadcrumbs」、以僅檢視「資料感測階層連結」檔案。</block>
-  <block id="23e2985b503ea96a8cdf22916427a97d" category="summary">請完成幾個步驟、以Cloud Data Sense開始掃描SharePoint Online帳戶中的檔案。</block>
   <block id="758462d66cb32533f49360d3b98e28c4" category="paragraph">請檢閱下列必要條件、確定您已準備好在SharePoint帳戶上啟動Cloud Data Sense。</block>
   <block id="19814c236f94ff3af850cb182f35add5" category="inline-link-macro">安裝在可存取網際網路的內部部署位置</block>
   <block id="1834f32ba8d3eab040f5ce5755a6ad8a" category="list-text">對於SharePoint Online而言、Data Sense可以是 <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> 或 <block ref="1303820445af3a7c87be9fbd1bbc30ad" category="inline-link-macro-rx"></block>。</block>
@@ -2537,17 +2532,13 @@
   <block id="c5545572ea4069cfaa50e205fd80e522" category="inline-image-macro">「組態」頁面的快照、您可以在其中按一下「新增SharePoint Online」按鈕。</block>
   <block id="500f464a497c67b1e8f3311a5a3f32dc" category="paragraph"><block ref="500f464a497c67b1e8f3311a5a3f32dc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c078bb07b1ad7af1cc0f5b29159fb618" category="paragraph">SharePoint Online帳戶會新增至工作環境清單。</block>
-  <block id="ea790b7cfc239ef4ea62089738c6fcba" category="list-text">SharePoint Online帳戶</block>
   <block id="7e48ad5341563470bfb17d87eb4abfc2" category="paragraph">以這種方式安裝（有時稱為「離線」或「暗」站台）時、Data Sense只能掃描內部部署站台上本機資料來源的資料。此時、Data Sense可掃描下列*本機*資料來源：</block>
   <block id="c6f85ba2c850ce9e6a70c3b08a6a69ce" category="cell">資料主題</block>
   <block id="3b2d0e0dc31143e6f51b137fffa0f7a2" category="list-text">資料感應Breadcrumbs</block>
   <block id="638bc83a47f3636cf5b909804535902e" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。這與「關閉」掃描不同。關閉掃描時、系統會移除該磁碟區的所有索引和相關資訊。暫停掃描表示「Data Sense」（資料感測）不會在未來掃描儲存庫的變更或新增項目、但系統仍會顯示所有目前的結果。</block>
   <block id="f976bf2eff4504fae0fc49c0115018dc" category="section-title">重新掃描現有儲存庫的資料</block>
-  <block id="31708d59045759b74bc21fc59af3a403" category="paragraph">Data Sense會持續掃描您的資料、以偵測您新增儲存庫中的遞增變更。不過、系統掃描所有環境需要時間、而且沒有方法可以控制掃描儲存庫的順序。因此、如果您需要立即重新掃描特定儲存庫、以便在系統中反映變更、您可以選取儲存庫並重新掃描。這可讓您優先掃描特定資料、然後再掃描其他資料。執行重新掃描動作之後、所選儲存庫會回到正常的Data Sense排程下進行掃描。</block>
-  <block id="3f4d6d8bcb45a73e9e3df2c012ea6aac" category="admonition">目前我們支援重新掃描單一目錄（資料夾或共享區）。未來支援將包括重新掃描其他儲存庫類型（檔案、資料庫等）。</block>
   <block id="62796d34bcb4d2217e01776ba00d5ea0" category="list-text">重新掃描目錄時、會重新掃描目錄中的所有檔案、但不會重新掃描目錄中的子資料夾。</block>
   <block id="4e67a9dec79298e79d1abf05ea540fbc" category="list-text">重新掃描共用時、只會重新掃描共用的中繼資料。</block>
-  <block id="d489d7f150167fe801b5b652633601a6" category="list-text">在「資料調查結果」窗格中、選取您要重新掃描的資料夾或共用區、然後按一下*重新掃描*。</block>
   <block id="b8f66688483b508da89754659d7ca8fa" category="inline-image-macro">顯示如何選取及重新掃描目錄的快照。</block>
   <block id="47ee282369061686a925d31dfbc358ad" category="paragraph"><block ref="47ee282369061686a925d31dfbc358ad" category="inline-image-macro-rx" type="image"></block></block>
   <block id="df296aafcd928770ac9559dc3f65f303" category="list-text">在「重新掃描目錄_」對話方塊中、按一下「*重新掃描*」。</block>
@@ -2774,7 +2765,6 @@
   <block id="f68bf28051d836364652b5a91d1bcd3a" category="list-text">輸入您的BlueXP帳戶ID（在支援網站上稱為「租戶ID」）、然後按一下*提交*下載授權檔案。</block>
   <block id="257ff1df6b80ed0bf9b3463d53be79f9" category="paragraph">您可以從BlueXP頂端選取「*帳戶*」下拉式清單、然後按一下帳戶旁的「*管理帳戶*」、即可找到您的BlueXP帳戶ID。您的帳戶ID位於「總覽」索引標籤。</block>
   <block id="6133ada86097c88db165589bae1ab6db" category="paragraph">為您的BlueXP帳戶購買Cloud Data Sense授權後、您必須將授權新增至BlueXP、才能使用Data Sense服務。</block>
-  <block id="66ed18a6f50ac9d36800c5e1615cd6d8" category="list-text">在BlueXP左側導覽功能表中、按一下*管理&gt;數位錢包*、然後選取*資料服務授權*索引標籤。</block>
   <block id="bae190eec3db4a0dd635ae72756acde8" category="inline-link">將新增至BlueXP的NSS帳戶</block>
   <block id="fc76651edf85f11e6b8f2a81226ab59d" category="paragraph">如果下拉式清單中沒有您的 NetApp 支援網站帳戶，<block ref="6d9745cd4f1d60b55f06aef4c5cb6ec4" category="inline-link-rx"></block>。</block>
   <block id="1694c3bbf6a8c4ec4d66bc57c582f5be" category="paragraph">BlueXP會新增授權、讓您的Cloud Data Sense服務處於作用中狀態。</block>
@@ -2813,4 +2803,105 @@
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXP使用案例</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
+  <block id="cd02721523de57441e385fc64cc693cc" category="list-text">SharePoint內部部署帳戶（SharePoint Server）</block>
+  <block id="4ce17fa0fb7143d2e32c031ba0514f14" category="paragraph">SharePoint內部部署帳戶無需提供任何網際網路存取、即可進行掃描。</block>
+  <block id="97f34c43cfd5abbd752382f17f44c9a2" category="list-text">在BlueXP功能表中、按一下*管理&gt;分類*。</block>
+  <block id="4bb7a83842b1271682b6be62080707cb" category="list-text">SharePoint Online和內部部署帳戶</block>
+  <block id="e83ddd1a0d6942fff435d08a6e6cf089" category="list-text">SharePoint內部部署（SharePoint Server）</block>
+  <block id="2eea36d0618e376db5de07c489ee5732" category="paragraph">Data Sense會持續掃描您的資料、以偵測您新增儲存庫中的遞增變更。不過、系統掃描所有環境需要時間、而且沒有方法可以控制掃描儲存庫的順序。如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先掃描特定資料、然後再掃描其他資料。執行重新掃描動作之後、所選儲存庫會回到正常的Data Sense排程下進行掃描。</block>
+  <block id="be8f7b71bcdd95248fbb596ccd26d0cd" category="paragraph">Data Sense支援掃描所有資料來源類型的目錄、但Amazon S3和資料庫除外。目前我們支援重新掃描單一目錄（資料夾或共用）或多個目錄。未來支援將包括重新掃描其他儲存庫類型（檔案、資料庫等）。</block>
+  <block id="1174d989c9d4a376553a67cf5fde5d2f" category="list-text">在「資料調查結果」窗格中、選取您要重新掃描的資料夾或共用、然後按一下*重新掃描*。</block>
+  <block id="63b5e3800169be764659ac4b2aaa975e" category="summary">請完成幾個步驟、開始使用Cloud Data Sense掃描SharePoint Online和SharePoint內部部署帳戶中的檔案。</block>
+  <block id="dd5ebefe18289742811faf4ca70e23a7" category="list-text">對於內部部署的SharePoint、您也需要SharePoint Server的URL。</block>
+  <block id="34de52267615715bf82d13113a412202" category="inline-link-macro">位於無法存取網際網路的內部部署位置</block>
+  <block id="15e640cc3ce1b71bc324c603c209cdb1" category="list-text">對於SharePoint內部部署、可以安裝Data Sense <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block> 或 <block ref="a9e45dedd045b23b06be5ebd4c9f12fb" category="inline-link-macro-rx"></block>。</block>
+  <block id="84de4ddab93b53bc52787739124b3f41" category="section-title">新增SharePoint內部部署帳戶</block>
+  <block id="b83dcf827f9dafc185d667a058c49163" category="paragraph">新增使用者檔案所在的SharePoint內部部署帳戶。</block>
+  <block id="081a5adff8a9580eefaf4092a2a99a0c" category="list-text">在「工作環境組態」頁面中、按一下「*新增資料來源*」&gt;「*新增SharePoint內部部署帳戶*」。</block>
+  <block id="7f891a59bb0760dc8992476caf7f462d" category="inline-image-macro">「組態」頁面的快照、您可以在其中按一下「新增SharePoint內部部署」按鈕。</block>
+  <block id="cc42c3dd2f91cfb3af8741f594aa93b4" category="paragraph"><block ref="cc42c3dd2f91cfb3af8741f594aa93b4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a0b39242ae25e175257f594645caa9c" category="list-text">在「登入SharePoint內部部署伺服器」對話方塊中、輸入下列資訊：</block>
+  <block id="2c20c09cb09dd6b89e62d46961d163f6" category="list-text">以「網域/使用者」或「使用者@網域」的格式管理使用者、以及管理密碼</block>
+  <block id="44d06baf36f8b3b94c521de9881b645a" category="list-text">SharePoint Server的URL</block>
+  <block id="705c95e52218937433dcff542ff87bc9" category="inline-image-macro">顯示SharePoint內部部署帳戶登入資訊的快照。</block>
+  <block id="f557d93a0c72d29eca2f649de7b27d3e" category="paragraph"><block ref="f557d93a0c72d29eca2f649de7b27d3e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9bccd838ddedeb361e65189136ac5c0f" category="list-text">按一下「*連線*」。</block>
+  <block id="bd0bbfcbb56b70d84742e38243f454e6" category="paragraph">SharePoint內部部署帳戶會新增至工作環境清單。</block>
+  <block id="c0748b269ad4c2f473312e824f1c1282" category="paragraph">您可以新增個別SharePoint網站或帳戶中的所有SharePoint網站、以便Cloud Data Sense掃描相關檔案。新增SharePoint Online或SharePoint內部部署網站的步驟相同。</block>
+  <block id="8d080a0104c2b8b29f5fc2be913926af" category="list-text">在BlueXP功能表中、按一下*管理&gt;數位錢包*、然後選取*資料服務授權*索引標籤。</block>
+  <block id="3aa95927284ca0cd4e7737dd41a53153" category="list-text">來源檔案可在下列資料來源中找到：內部部署ONTAP 的地方使用、Cloud Volumes ONTAP 使用、不只是供參考Azure NetApp Files 、使用、還可選擇供參考、使用、或是使用SharePoint Online。</block>
+  <block id="52cd2f737a295e43ee2f51fe52c772a4" category="list-text">對於NFS資料：匯出原則必須以寫入權限定義。</block>
+  <block id="2a500e3681b7e207d0d6c159ff2008ab" category="list-text">CIFS資料：CIFS認證需要具有寫入權限。</block>
+  <block id="2657135ace802974c1da59a8b1c975ae" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為Manager節點、而提供額外處理能力的其他系統則稱為掃描器節點。</block>
+  <block id="6668c5a05c34ac9059616c249cfb56c8" category="paragraph">安裝Data Sense時、您需要連接器系統的IP位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。</block>
+  <block id="054d10b91a2e5ce49cf12f8ebacd96f3" category="section-title">將掃描器節點新增至現有部署</block>
+  <block id="0a4316eaec4759a96358821b3d6d871e" category="paragraph">如果您發現需要更多掃描處理能力來掃描資料來源、可以新增更多掃描器節點。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。例如、如果您發現其中一個資料來源的資料量在6個月後增加了兩倍或三倍、您可以新增一個掃描器節點來協助資料掃描。</block>
+  <block id="f114439eeb05a82baaead56da0d70a54" category="paragraph">有兩種方法可以新增其他掃描器節點：</block>
+  <block id="5df28ba528c6160d29730e9d7fc50471" category="list-text">新增節點以協助掃描所有資料來源</block>
+  <block id="fa1e8da616696722350d1aa06d5a273e" category="list-text">新增節點以協助掃描特定資料來源或特定的資料來源群組</block>
+  <block id="0047b4042b118692c1d7c579abdeaefe" category="paragraph">根據預設、您新增的任何新掃描器節點都會新增至一般掃描資源池。這稱為「預設掃描器群組」。在下圖中、「預設」群組中有1個Manager節點和3個掃描儀節點、全部都是來自所有6個資料來源的掃描資料。</block>
+  <block id="d414af5a3d730e6b3c5c5e5fbf1791e5" category="inline-image-macro">資料感應掃描程式在預設掃描器群組中掃描資料來源的圖表。</block>
+  <block id="12c492323fc8337000638fc92adb63ed" category="paragraph"><block ref="12c492323fc8337000638fc92adb63ed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a3432599109f7df0141552646ecd8656" category="paragraph">如果您有特定的資料來源需要由實體靠近資料來源的掃描儀節點進行掃描、您可以定義掃描儀節點或掃描儀節點群組、以掃描特定的資料來源或資料來源群組。在下圖中、有一個Manager節點和3個掃描儀節點。</block>
+  <block id="96990c600d9debe09076ef4bcf06d1eb" category="list-text">Manager節點位於「預設」群組中、正在掃描1個資料來源</block>
+  <block id="042304bf8365f5eb21d79ca01b78d44d" category="list-text">掃描器節點1位於「United _States」群組中、正在掃描2個資料來源</block>
+  <block id="fce59aaa378d30cc0381e7eefc22f0ca" category="list-text">掃描儀節點2和3位於「Europe」群組中、它們共用3個資料來源的掃描工作</block>
+  <block id="9d7dc7639904ccb8e1db5fe8b66a053d" category="inline-image-macro">資料感應掃描程式在指派給不同掃描器群組時如何掃描資料來源的圖表。</block>
+  <block id="0aee369ca72252e15ae52eab49c490e5" category="paragraph"><block ref="0aee369ca72252e15ae52eab49c490e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="19d6201e87dae3fa4ec8ec44fbbdd5bc" category="paragraph">資料感應掃描器群組可定義為儲存資料的個別地理區域。您可以在全球部署多個Data Sense掃描器節點、並為每個節點選擇一個掃描器群組。如此一來、每個掃描儀節點都會掃描最靠近它的資料。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。</block>
+  <block id="86583308815327287cf1990b6a29a13d" category="paragraph">您可以選擇要新增至Data Sense的掃描器群組、也可以選擇其名稱。Data Sense並不會強制在歐洲部署對應至名為「Europe」的掃描器群組的節點。</block>
+  <block id="e40e38588328711920f39cabcf18dcd1" category="paragraph">您將依照下列步驟安裝其他Data Sense掃描器節點：</block>
+  <block id="f8655d78a4818956ec9919a65a7f089b" category="list-text">準備將做為掃描儀節點的Linux主機系統</block>
+  <block id="c9680eb28f36717df9004e52c8105d05" category="list-text">將Data Sense軟體下載到這些Linux系統</block>
+  <block id="c65de7b0c08505f3e13c93ead522765f" category="list-text">在Manager節點上執行命令、以識別掃描儀節點</block>
+  <block id="0f80e57c86ea1bf667a2898a564c0787" category="list-text">請依照步驟在掃描儀節點上部署軟體（並選擇性地為每個掃描儀節點定義「掃描儀群組」）。</block>
+  <block id="37151576493b3aebc74476f19e767278" category="list-text">如果您定義了掃描器群組、請在Manager節點上：</block>
+  <block id="5a838e350187be3ad79ae1b63fe95a2b" category="list-text">開啟檔案「jobing_for_banner_group_config.yml」、並定義每個掃描器群組要掃描的工作環境</block>
+  <block id="e2e3eb36b60cbca43e892318b81f3968" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：「update_we掃描儀_群組_from _config_file.sh」</block>
+  <block id="02d7e4f0f1520dae85025d3974fbed76" category="list-text">請確認適用於掃描儀節點的所有Linux系統均符合 <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b24a973a5aa3fefd5ec9cba471feff39" category="list-text">您必須擁有要新增的掃描儀節點主機的IP位址。</block>
+  <block id="381a200bbbe3c44cfbf711f7668b21fe" category="list-text">您必須擁有Data Sense Manager節點主機系統的IP位址</block>
+  <block id="9a32f4baaf4784969a37289509630325" category="list-text">您必須擁有連接器系統的IP位址或主機名稱、NetApp帳戶ID、連接器用戶端ID和使用者存取權杖。請參閱下方的_Prerequisite步驟_以取得此資訊。</block>
+  <block id="dc70c7be1ad69578d1109a6df390121c" category="list-text">您必須知道帳戶中每個資料來源的_工作環境ID_。如有您的要求、請聯絡NetApp：ng-contact-data-sense@netapp.com。</block>
+  <block id="e498e68245d2d68d5d4b94b2fd3a608f" category="paragraph">請依照下列步驟取得新增掃描器節點所需的NetApp帳戶ID、Connector用戶端ID、Connector伺服器名稱及使用者存取權杖。</block>
+  <block id="eabdc901feba22c87ee7a01af9e34801" category="list-text">在BlueXP功能表列中、按一下*帳戶&gt;管理帳戶*。</block>
+  <block id="f5ffeabde3d0f311232b751083215871" category="inline-image-macro">藍圖XP帳戶詳細資料的快照。</block>
+  <block id="fa64916819288af5c8c616d80ff8c824" category="paragraph"><block ref="fa64916819288af5c8c616d80ff8c824" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="146d19c418f2c6c81536f28aa8c7bf6c" category="list-text">複製_Account ID_。</block>
+  <block id="854bcb8a525626fd08f8d87ffe0c041a" category="list-text">在BlueXP功能表列中、按一下*「說明」&gt;「支援」&gt;「藍圖XP Connector*」。</block>
+  <block id="91b88d5bc6686e901520c8c6a109242f" category="inline-image-macro">BlueXP Connector組態設定的快照。</block>
+  <block id="1b2f697aae0e3b9b314fa04d847f3c19" category="paragraph"><block ref="1b2f697aae0e3b9b314fa04d847f3c19" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c65db7be59edaf2b09cc38b7c56763c6" category="list-text">複製連接器_Client ID_和_Server Name_。</block>
+  <block id="b082b3834881d0e39e85d933337fa35f" category="inline-link">API文件開發人員中樞</block>
+  <block id="e3aca1bee4b16554fd364b73482af4f3" category="list-text">前往<block ref="100b541e6046352c2cfaf3c9e6ddaf4d" category="inline-link-rx"></block> 然後按一下*瞭解如何驗證*。</block>
+  <block id="7ef314f37951a4ffae65aed3439a8da1" category="inline-image-macro">API說明文件頁面的快照、其中包含驗證指示的連結。</block>
+  <block id="e7897b39cbb592afc0430305aca32cc1" category="paragraph"><block ref="e7897b39cbb592afc0430305aca32cc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d059d805b5ca279d8574f2b15a932bed" category="list-text">遵循驗證指示、然後從回應複製_access tokon_。</block>
+  <block id="9cb50d789a41a5c166876e5a17ca1d7c" category="list-text">在Data Sense Manager節點上、執行指令碼「add_inber_node.sh」。例如、此命令會新增2個掃描儀節點：</block>
+  <block id="1480262c4a9656977a70cff8c21b5dc0" category="paragraph"><block ref="0d45fd4edeb386e475963435f8cc230a" prefix="" category="inline-code"></block></block>
+  <block id="0490466572986d52027e27d707b776a5" category="list-text">_client_id_=連接器用戶端ID</block>
+  <block id="5d0fd32ac4fe744d7966c459776a6b4c" category="list-text">_cm_host_=連接器系統的IP位址或主機名稱</block>
+  <block id="48e3dc371ee5116828a05b4a97621caa" category="list-text">_ds_manager_ip_= Data Sense Manager節點系統的私有IP位址</block>
+  <block id="f58e80ea5a832fe99f930893c4ae0376" category="list-text">_node_Private IP = Data Sense掃描儀節點系統的IP位址（多個掃描儀節點IP會以逗號分隔）</block>
+  <block id="33b07d0ffb66d0a6cd8a0162e20adca4" category="list-text">_user_tokon_= JWT使用者存取權杖</block>
+  <block id="285b492c7171f599200c3fe3d4f808d6" category="list-text">在ADD_SCIER_nodes指令碼完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令並將其儲存在文字檔中。例如：</block>
+  <block id="58e40c834f3acaaccc3823bbd917e6d7" category="paragraph"><block ref="7c95eda18e13e25941273928f0d149ba" prefix="" category="inline-code"></block></block>
+  <block id="b0c80b9aebe2393782fd3bb0680a791b" category="list-text">貼上並執行您在步驟2中複製的命令。</block>
+  <block id="c4c2f863fe691b5999cccd708af50078" category="list-text">如果您想要將掃描器節點新增至「掃描器群組」、請將參數「-r &lt;掃描 儀群組名稱&gt;」新增至命令。否則掃描儀節點會新增至「預設」群組。</block>
+  <block id="8dd42ed78b27180f93de7913ecab156f" category="paragraph">在所有掃描儀節點上完成安裝、並已加入管理器節點之後、「add_bers_node.sh」指令碼也會完成。安裝可能需要10到20分鐘。</block>
+  <block id="ced90f42fe9747f4578603471ea454a3" category="list-text">如果將任何掃描儀節點新增至掃描儀群組、請返回Manager節點並執行下列2項工作：</block>
+  <block id="946503e0cf13fd867381ff9b4e0a1fb1" category="list-text">開啟檔案「/opt/netapp/Datasense/siting_Environ_to _bANer_Group_config.yml」、然後輸入掃描程式群組掃描特定工作環境的對應。您必須取得NetApp每個資料來源的_工作環境ID_（電子郵件：ng-contact-data-sense@netapp.com）。例如、下列項目可將2個工作環境新增至2個掃描器群組：</block>
+  <block id="d03791acef2a6ece0eafaacbe505349c" category="paragraph">任何未新增至清單的工作環境都會由「預設」群組掃描、您必須在「預設」群組中至少有一個掃描器節點。</block>
+  <block id="b77072323352dd1724df6d20002eb9f2" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：<block ref="f484d7848213083a72fafef02f452b57" prefix=" " category="inline-code"></block></block>
+  <block id="a147b656a2355ffcebd357dcfbb4b53f" category="paragraph">Data Sense是透過Manager和掃描儀節點來設定、可掃描所有資料來源。</block>
+  <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。</block>
+  <block id="0fd7cab37419c3f9fdd225020324c7dc" category="section-title">2022年11月7日（1.17版）</block>
+  <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">支援掃描SharePoint內部部署帳戶</block>
+  <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
+  <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">能夠重新掃描多個目錄（資料夾或共用）</block>
+  <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
+  <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">能夠新增額外的內部部署「掃描器」節點、以掃描特定的資料來源</block>
+  <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現需要更多掃描處理能力來掃描資料來源、則可以新增更多「掃描器」節點。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。例如、如果您發現某個資料來源的資料量在1年後增加了三倍、您可以新增一個掃描器節點來協助資料掃描。</block>
+  <block id="920d0a192fcf42107e363c75e934277b" category="paragraph">如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。</block>
+  <block id="cbcceb43df0c94c9cc9e38ba4b9389c1" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用、SharePoint Online、SharePoint內部部署及OneDrive中的資料。</block>
 </blocks>

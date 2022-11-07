@@ -26,6 +26,7 @@ summary: 請完成幾個步驟、在內部部署站台的主機上部署Cloud Da
 
 * 內部部署ONTAP 的作業系統
 * 資料庫架構
+* SharePoint內部部署帳戶（SharePoint Server）
 * 非NetApp NFS或CIFS檔案共用
 * 使用簡易儲存服務（S3）傳輸協定的物件儲存設備
 
@@ -136,6 +137,8 @@ Data Sense執行個體使用私有IP位址、確保其他人無法存取索引�
 == SharePoint和OneDrive的特殊需求
 
 當在無法存取網際網路的網站上部署BlueXP和Data Sense時、您可以透過網際網路存取部分選定端點、來掃描SharePoint Online和OneDrive帳戶中的檔案。
+
+SharePoint內部部署帳戶無需提供任何網際網路存取、即可進行掃描。
 
 [cols="50,50"]
 |===
