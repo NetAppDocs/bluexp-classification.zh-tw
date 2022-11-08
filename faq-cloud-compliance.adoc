@@ -26,7 +26,7 @@ summary: 如果您只是想要快速回答問題、這個常見問題集就能�
 
 === 什麼是雲端資料意義？
 
-Cloud Data Sense是一款雲端產品、採用人工智慧（AI）導向技術、可協助您瞭解資料內容、並識別儲存系統中的敏感資料。這些系統可以是您新增至BlueXP畫版的工作環境、以及Data Sense可透過網路存取的許多類型資料來源。  sources of data can be scanned with Data Sense,請參閱下列完整清單。
+Cloud Data Sense是一款雲端產品、採用人工智慧（AI）導向技術、可協助您瞭解資料內容、並識別儲存系統中的敏感資料。這些系統可以是您新增至BlueXP畫版的工作環境、以及Data Sense可透過網路存取的許多類型資料來源。 link:faq-cloud-compliance.html#what-sources-of-data-can-be-scanned-with-data-sense["請參閱下列完整清單"]。
 
 Cloud Data Sense提供預先定義的參數（例如敏感資訊類型和類別）、以因應資料隱私和敏感度的新資料法規遵循要求、例如GDPR、CCPA、HIPAA等。
 
@@ -50,7 +50,7 @@ link:concept-cloud-compliance.html["深入瞭解Cloud Data Sense的運作方式"
 * 遵守資料保留政策。
 
 
-https://cloud.netapp.com/cloud-compliance["深入瞭解Cloud Data Sense的使用案例"^]。
+https://cloud.netapp.com/netapp-cloud-data-sense["深入瞭解Cloud Data Sense的使用案例"^]。
 
 
 
@@ -90,7 +90,7 @@ BlueXP支援其服務的REST API功能。如果BlueXP不是首選的管理點、
 
 link:concept-cloud-compliance.html#how-scans-work["瞭解掃描的運作方式"]。
 
-資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。 link:task-managing-compliance.html#reducing-the-data-sense-scan-speed["瞭解如何降低掃描速度"]。
+資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。 link:task-reduce-scan-speed.html["瞭解如何降低掃描速度"]。
 
 
 
@@ -162,9 +162,14 @@ NOTE: 若要完全移除Cloud Data Sense執行個體、您可以從雲端供應�
 
 Cloud Data Sense可為您的資料提供隨裝即用的洞見。您可以擷取這些洞見、並將其用於貴組織的需求。
 
-此外、您也可以使用* Data Fusion Seri*功能、根據您正在掃描之資料庫中特定欄位的條件、讓Data Sense掃描您的所有資料、基本上讓您自行建立自訂的個人資料類型。
+此外、Data Sense也提供許多方法、讓您新增資料感測在掃描中識別的自訂「個人資料」清單、讓您完整瞭解可能敏感資料在_all_貴組織檔案中的位置。
 
-link:task-managing-data-fusion.html#creating-custom-personal-data-identifiers-from-your-databases["深入瞭解"^]。
+* 您可以根據您正在掃描的資料庫中的特定欄位來新增獨特的識別碼、我們稱之為*資料Fusion S16*。
+* 您可以從文字檔新增自訂關鍵字。
+* 您可以使用規則運算式（regex）新增自訂模式。
+
+
+link:task-managing-data-fusion.html["深入瞭解"^]。
 
 
 
@@ -257,6 +262,7 @@ Data Sense只能掃描內部部署站台本機資料來源的資料。此時、D
 
 * 內部部署ONTAP 的作業系統
 * 資料庫架構
+* SharePoint內部部署帳戶（SharePoint Server）
 * 非NetApp NFS或CIFS檔案共用
 * 使用簡易儲存服務（S3）傳輸協定的物件儲存設備
 
@@ -351,7 +357,7 @@ Connector是在雲端帳戶內或內部部署的運算執行個體上執行的�
 
 === 沒有網際網路存取的安全網站又如何？
 
-是的、這也受到支援。您可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["在無法存取網際網路的內部部署Linux主機上部署Connector"]。然後您可以探索內部部署ONTAP 的叢集和其他本機資料來源、並使用Data Sense掃描資料。
+是的、這也受到支援。您可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["在無法存取網際網路的內部部署Linux主機上部署Connector"^]。然後您可以探索內部部署ONTAP 的叢集和其他本機資料來源、並使用Data Sense掃描資料。
 
 
 
