@@ -90,7 +90,7 @@ image:screenshot_compliance_delete_data_fusion.png["顯示如何移除資料 Fus
 您必須在Data Sense系統的下列位置新增或建立包含自訂關鍵字的文字檔：
 
  /opt/netapp/Datasense/tools/datascience/custom_keywords/keywords_sets
-您可以使用多個關鍵字建立單一檔案、或是新增多個檔案、每個檔案都包含特定關鍵字。檔案的格式為每行一個字、例如：
+您可以使用多個關鍵字建立單一檔案、或是新增多個檔案、每個檔案都包含特定關鍵字。檔案的格式為每行一字、例如、以下列出類型為貓頭鷹的內部產品名稱：
 
 _inters_product_names.txt_
 
@@ -102,6 +102,14 @@ snowy
 screech
 ....
 資料感應搜尋這些項目不區分大小寫。
+
+請注意下列需求：
+
+* 檔案名稱不應包含數字。
+* 每個檔案最多可包含100、000個字。如果有更多字詞、則只會新增前10、000個字。
+* 每個字詞長度必須至少3個字元。忽略較短的字詞。
+* 重複的字詞只會新增一次。
+
 
 
 
@@ -147,19 +155,9 @@ screech
 如果您已建立許多包含自訂關鍵字的檔案、您可以使用下列命令一次新增所有檔案的關鍵字：
 
  sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate
-請注意下列需求：
-
-* 檔案名稱不應包含數字。
-* 每個檔案最多可包含100、000個字。如果有更多字詞、則只會新增前10、000個字。
-* 每個字詞長度必須至少3個字元。忽略較短的字詞。
-* 重複的字詞只會新增一次。
-
-
 
 
 === 範例
-
-貴公司的內部產品名稱是根據貓頭鷹的類型、如上所示。
 
 若要查看所有檔案中提及的內部產品名稱、請輸入下列命令。
 
@@ -173,6 +171,8 @@ screech
 
 image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示自訂關鍵字範例的快照。"]
 
+如您所見、文字檔的名稱會用作「個人結果」面板中的名稱。如此一來、您就能從不同的文字檔啟動關鍵字、並查看每種關鍵字類型的結果。
+
 
 
 === 停用自訂關鍵字
@@ -180,12 +180,12 @@ image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示�
 如果您稍後決定不需要使用「資料感應」來識別之前新增的特定自訂關鍵字、請使用命令中的*停用*選項來移除文字檔中定義的關鍵字。
 
  sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f <file_name>.txt
-例如、若要移除在*內部產品名稱*檔案中定義的關鍵字模式：
+例如、若要移除在* inters_product_name.txt*檔案中定義的關鍵字：
 
 [source, cli]
 ----
 [user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names
+[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names.txt
 ----
  log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully
 

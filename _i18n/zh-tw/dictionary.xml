@@ -2263,11 +2263,6 @@
   <block id="a9092ee7bb29e06d9e8627660b37d08b" category="list-text">電子郵件警示：電子郵件地址/帳戶</block>
   <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">例如、記錄檔中的下列行顯示複製作業成功、複製作業失敗。</block>
   <block id="4892afff6c12a31702739804f9402dd2" category="section-title">存取記錄檔</block>
-  <block id="d59821cfb2e317baf0245fb19951e0ab" category="paragraph">稽核日誌位於Data Sense機器上的：「/opt/netapp/nap_logs/&lt;date/DataSense_nap_log_&lt;dat&gt;_&lt;procedure_name&gt;.log」</block>
-  <block id="68949c94f1832ab05cf85f6b69ec229e" category="list-text">= ssh驗證金鑰的位置</block>
-  <block id="6201afe97e09ec3e016aaa1892aba5f8" category="list-text">&lt;機器使用者&gt;：</block>
-  <block id="3ca10cbf1786d683696248daeef7a67c" category="inline-link">連接埠和安全性群組</block>
-  <block id="ee12d73176832fa8b8e8c95cacc10226" category="paragraph">請注意、您必須修改安全性群組傳入規則、才能存取系統。請參閱<block ref="5475739789a5b3429571b56a0421c3e8" category="inline-link-rx"></block> 以取得更多資訊。</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「行動狀態」窗格中監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。</block>
   <block id="70669aa10fb7138a5de7f7526f548131" category="paragraph">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「_Action Status」（動作狀態）窗格中監控這些非同步動作的狀態、以便得知何時已將其套用至所有檔案。</block>
   <block id="a5129dfbdf0dc4588d520f42de3004dd" category="paragraph">這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。</block>
@@ -2474,7 +2469,6 @@
   <block id="a947d2f1730c470833c4544effbb7bc1" category="section-title">存取命令列</block>
   <block id="936f32b71b96ea5785d6a11d0da86d15" category="paragraph">當您的內部部署安裝Data Sense時、您可以直接存取命令列。</block>
   <block id="0bac9ec0256a9fd2858c7836245c9025" category="list-text">對於AWS：使用&lt;EC2-user&gt;</block>
-  <block id="0ea3b9210848690cf51475dbc0b23bea" category="list-text">=虛擬機器執行個體的IP位址</block>
   <block id="2ca1f3bad4fcb2aea6222d64aeb6ee20" category="section-title">命令語法以新增regex</block>
   <block id="0b674f6afef562ef0fec5869730d7efe" category="paragraph">新增自訂regex的命令語法如下：</block>
   <block id="c0860cd77b783ac8ccb3c6de19266e83" category="paragraph">請注意、我們會測試每個新的regex、以驗證其範圍是否太廣、而且會傳回太多相符項目。如果是這種情況、則會顯示下列記錄訊息：</block>
@@ -2487,7 +2481,6 @@
   <block id="f1619aa0c5343971dffa315bb9524cc9" category="paragraph">例如、若要移除*內部產品ID* regex：</block>
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">現在、您可以在資料中新增Data Sense將識別的自訂模式</block>
   <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
-  <block id="f11466d242ef66f0b539b785de1f046b" category="paragraph">當您的內部部署安裝Data Sense時、您可以直接瀏覽至記錄檔。</block>
   <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">安裝後、無法變更Data Sense主機系統的IP位址。</block>
   <block id="766f0d81be7879628bc30bd7367309c3" category="paragraph">您可以從路徑*/ opt / NetApp /資料中心/*執行命令。</block>
   <block id="4767339e389eb1fa075ecdec5d1ec320" category="paragraph">如果您想要將regex強制新增至Data Sense（資料感測）、您可以使用命令列結尾的*-f*選項、即使我們認為該選項太寬。</block>
@@ -2823,7 +2816,6 @@
   <block id="0047b4042b118692c1d7c579abdeaefe" category="paragraph">根據預設、您新增的任何新掃描器節點都會新增至一般掃描資源池。這稱為「預設掃描器群組」。在下圖中、「預設」群組中有1個Manager節點和3個掃描儀節點、全部都是來自所有6個資料來源的掃描資料。</block>
   <block id="d414af5a3d730e6b3c5c5e5fbf1791e5" category="inline-image-macro">資料感應掃描程式在預設掃描器群組中掃描資料來源的圖表。</block>
   <block id="12c492323fc8337000638fc92adb63ed" category="paragraph"><block ref="12c492323fc8337000638fc92adb63ed" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a3432599109f7df0141552646ecd8656" category="paragraph">如果您有特定的資料來源需要由實體靠近資料來源的掃描儀節點進行掃描、您可以定義掃描儀節點或掃描儀節點群組、以掃描特定的資料來源或資料來源群組。在下圖中、有一個Manager節點和3個掃描儀節點。</block>
   <block id="96990c600d9debe09076ef4bcf06d1eb" category="list-text">Manager節點位於「預設」群組中、正在掃描1個資料來源</block>
   <block id="042304bf8365f5eb21d79ca01b78d44d" category="list-text">掃描器節點1位於「United _States」群組中、正在掃描2個資料來源</block>
   <block id="fce59aaa378d30cc0381e7eefc22f0ca" category="list-text">掃描儀節點2和3位於「Europe」群組中、它們共用3個資料來源的掃描工作</block>
@@ -2868,11 +2860,9 @@
   <block id="285b492c7171f599200c3fe3d4f808d6" category="list-text">在ADD_SCIER_nodes指令碼完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令並將其儲存在文字檔中。例如：</block>
   <block id="58e40c834f3acaaccc3823bbd917e6d7" category="paragraph"><block ref="7c95eda18e13e25941273928f0d149ba" prefix="" category="inline-code"></block></block>
   <block id="b0c80b9aebe2393782fd3bb0680a791b" category="list-text">貼上並執行您在步驟2中複製的命令。</block>
-  <block id="c4c2f863fe691b5999cccd708af50078" category="list-text">如果您想要將掃描器節點新增至「掃描器群組」、請將參數「-r &lt;掃描 儀群組名稱&gt;」新增至命令。否則掃描儀節點會新增至「預設」群組。</block>
   <block id="8dd42ed78b27180f93de7913ecab156f" category="paragraph">在所有掃描儀節點上完成安裝、並已加入管理器節點之後、「add_bers_node.sh」指令碼也會完成。安裝可能需要10到20分鐘。</block>
   <block id="ced90f42fe9747f4578603471ea454a3" category="list-text">如果將任何掃描儀節點新增至掃描儀群組、請返回Manager節點並執行下列2項工作：</block>
   <block id="946503e0cf13fd867381ff9b4e0a1fb1" category="list-text">開啟檔案「/opt/netapp/Datasense/siting_Environ_to _bANer_Group_config.yml」、然後輸入掃描程式群組掃描特定工作環境的對應。您必須取得NetApp每個資料來源的_工作環境ID_（電子郵件：ng-contact-data-sense@netapp.com）。例如、下列項目可將2個工作環境新增至2個掃描器群組：</block>
-  <block id="d03791acef2a6ece0eafaacbe505349c" category="paragraph">任何未新增至清單的工作環境都會由「預設」群組掃描、您必須在「預設」群組中至少有一個掃描器節點。</block>
   <block id="b77072323352dd1724df6d20002eb9f2" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：<block ref="f484d7848213083a72fafef02f452b57" prefix=" " category="inline-code"></block></block>
   <block id="a147b656a2355ffcebd357dcfbb4b53f" category="paragraph">Data Sense是透過Manager和掃描儀節點來設定、可掃描所有資料來源。</block>
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。</block>
@@ -2899,7 +2889,6 @@
   <block id="4db39af2f2c8dd1ae93885d357ea7d87" category="paragraph">例如、您可能想要查看所有檔案中提及內部產品名稱的位置、以確保這些名稱在不安全的位置無法存取。</block>
   <block id="e86b773e33290ca180bab4702f6221dc" category="paragraph">更新自訂關鍵字之後、Data Sense會重新開始掃描所有資料來源、掃描完成後、新結果會出現在Data Sense中。</block>
   <block id="a022f59f73d13dba25886111bbcbfbe7" category="paragraph">您必須在Data Sense系統的下列位置新增或建立包含自訂關鍵字的文字檔：</block>
-  <block id="3620f1bf4e7a238eac5d685f61925409" category="paragraph">您可以使用多個關鍵字建立單一檔案、或是新增多個檔案、每個檔案都包含特定關鍵字。檔案的格式為每行一個字、例如：</block>
   <block id="9e5355e710468619132238aa9a8b9c22" category="paragraph">_inters_product_names.txt_</block>
   <block id="3dc7d5f9e5fd1366a21d3d3a927df1f0" category="paragraph">資料感應搜尋這些項目不區分大小寫。</block>
   <block id="057d52aa1154035622f873117dc92349" category="paragraph">您需要存取Data Sense系統、才能啟動命令來新增自訂關鍵字。</block>
@@ -2922,13 +2911,11 @@
   <block id="c781b817668135b2a7800b19a53b3351" category="list-text">每個檔案最多可包含100、000個字。如果有更多字詞、則只會新增前10、000個字。</block>
   <block id="c84a723bb8343259efcc07b5d335a94d" category="list-text">每個字詞長度必須至少3個字元。忽略較短的字詞。</block>
   <block id="9b2456bacc9d094f1cd53f784d659a37" category="list-text">重複的字詞只會新增一次。</block>
-  <block id="cb2e6437be1870e1a8e326d4a56e424f" category="paragraph">貴公司的內部產品名稱是根據貓頭鷹的類型、如上所示。</block>
   <block id="a05f2f2af09092d7732c02cc3039dad9" category="paragraph">若要查看所有檔案中提及的內部產品名稱、請輸入下列命令。</block>
   <block id="d1cae4639086ce5de29473a5d53747c7" category="inline-image-macro">在「調查結果」窗格中顯示自訂關鍵字範例的快照。</block>
   <block id="7b739c51b4a511be3459afe942a8ef3c" category="paragraph"><block ref="7b739c51b4a511be3459afe942a8ef3c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="10e08b10c8ba5b9b6646011e823e86ed" category="section-title">停用自訂關鍵字</block>
   <block id="c67491a05b3eada8d8830f7e24dff0b6" category="paragraph">如果您稍後決定不需要使用「資料感應」來識別之前新增的特定自訂關鍵字、請使用命令中的*停用*選項來移除文字檔中定義的關鍵字。</block>
-  <block id="db39532b182f8c442eaf4ad879aa65cb" category="paragraph">例如、若要移除在*內部產品名稱*檔案中定義的關鍵字模式：</block>
   <block id="9c0bd48717ec950ad656ee0c5cbe1bd7" category="section-title">使用regex新增自訂的個人資料識別碼</block>
   <block id="ffbc9fd66cec345d48b984868ac86075" category="paragraph">新增regex之後、Data Sense會重新開始掃描所有資料來源、掃描完成後、新結果會出現在Data Sense中。</block>
   <block id="9db0ea676fac4ef1398c2560f02af1c0" category="inline-xref">瞭解如何存取命令列</block>
@@ -2945,4 +2932,13 @@
   <block id="d2e9b58709e185388c14e9b7f7c876b8" category="list-text">您可以使用規則運算式（regex）新增自訂模式。</block>
   <block id="6b0cdbce1552e1685f4b4095276b6078" category="paragraph"><block ref="4a5fd31f8eed80e720a59ea6d295b8eb" category="inline-link-macro-rx"></block>。</block>
   <block id="38e7bc8a7a291a40814b17be24e4bf0a" category="paragraph">是的、這也受到支援。您可以<block ref="a2148d757b5c89b9d02648070bc0f277" category="inline-link-rx"></block>。然後您可以探索內部部署ONTAP 的叢集和其他本機資料來源、並使用Data Sense掃描資料。</block>
+  <block id="6e356675279ce269e55ffefd9397769c" category="paragraph">您可以使用多個關鍵字建立單一檔案、或是新增多個檔案、每個檔案都包含特定關鍵字。檔案的格式為每行一字、例如、以下列出類型為貓頭鷹的內部產品名稱：</block>
+  <block id="8b78d80928f7b4e5ede92c922915ec73" category="paragraph">如您所見、文字檔的名稱會用作「個人結果」面板中的名稱。如此一來、您就能從不同的文字檔啟動關鍵字、並查看每種關鍵字類型的結果。</block>
+  <block id="6d09a2eb7ddd06e7afb4f4e0f4b6f0a8" category="paragraph">例如、若要移除在* inters_product_name.txt*檔案中定義的關鍵字：</block>
+  <block id="855f2bccb1380ed5e79ffd60f06d8209" category="paragraph">稽核日誌每天都會旋轉。</block>
+  <block id="e583d0bb2649633981a5bcb08138c87e" category="paragraph">稽核日誌位於Data Sense機器上的：<block ref="ffd8f753eb106227f8d629727e8f83b2" prefix=" " category="inline-code"></block></block>
+  <block id="162bd73d17dd13a664718503fff639fc" category="paragraph">在內部部署安裝Data Sense時、您可以直接瀏覽至記錄檔。</block>
+  <block id="69aeb258470eedf7afb44d66a993f4d8" category="paragraph">如果您有特定的資料來源需要由實體靠近資料來源的掃描儀節點進行掃描、您可以定義掃描儀節點或掃描儀節點群組、以掃描特定的資料來源或資料來源群組。在下圖中、有1個Manager節點和3個掃描儀節點。</block>
+  <block id="4ab1272ad311bec96f677d25b0901105" category="list-text">如果您想要將掃描器節點新增至「掃描器群組」、請將參數*- r &lt;掃描 儀群組名稱&gt;*新增至命令。否則、掃描儀節點會新增至「預設」群組。</block>
+  <block id="f76b6e3dc68f5a15976b3f64aae23646" category="paragraph">任何未新增至清單的工作環境都會由「預設」群組掃描、您必須在「預設」群組中至少有一個管理程式或掃描器節點。</block>
 </blocks>
