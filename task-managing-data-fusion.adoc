@@ -119,7 +119,7 @@ screech
 
 當您的內部部署安裝Data Sense時、您可以直接存取命令列。
 
-當在雲端部署Data Sense時、您可以使用SSH來執行Data Sense執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：
+在雲端部署Data Sense時、您需要SSH到Data Sense執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：
 
  ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
 * <path_to_the_ssh驗證金鑰>= ssh驗證金鑰的位置
@@ -133,7 +133,7 @@ screech
 * <datasense_ip>=虛擬機器執行個體的IP位址
 
 
-請注意、您必須修改安全性群組傳入規則、才能存取系統。如需詳細資料、請參閱：
+請注意、您需要修改安全群組傳入規則、才能存取雲端上的系統。如需詳細資料、請參閱：
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]

@@ -2250,17 +2250,12 @@
   <block id="f4d44f4e933c52507fc1f60eb487d44a" category="section-title">記錄檔內容</block>
   <block id="787cbeccb975d71260f61cb0fbe84553" category="paragraph">稽核記錄中的每一行都包含下列格式的資訊：</block>
   <block id="727fb114deba541b53a0b54311e03930" category="paragraph">「&lt;完整日期&gt;|&lt;STATUS&gt;| datasense_nit_logger |&lt;module&gt;| 0 | 0 |檔案&lt;完整檔案路徑&gt;已從裝置&lt;裝置路徑&gt;-&lt;result&gt;'中刪除</block>
-  <block id="5e6b85294dad6f04a041aa32199d996d" category="list-text">日期與時間–事件的完整時間戳記</block>
   <block id="79480e26f983c197c4338ae916966c93" category="list-text">狀態-資訊、警告</block>
   <block id="8c5560001ce7d874ad9b883caee72f9c" category="list-text">行動類型（刪除、複製、移動、建立原則、更新原則、 下載Json報告等）</block>
   <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">檔案名稱（如果動作與檔案相關）</block>
-  <block id="b5afb88a144b5f1d8fef11e9d449b1ed" category="list-text">行動的詳細資料–做了什麼：取決於行動</block>
   <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">原則名稱</block>
   <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">用於移動-來源和目的地</block>
   <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">複本：來源和目的地</block>
-  <block id="9291a80cf17849a4539e082f526f27ad" category="list-text">用於標記–標記名稱</block>
-  <block id="f23528dfcdf994100f2eae046bc926bb" category="list-text">指派給–使用者名稱</block>
-  <block id="a9092ee7bb29e06d9e8627660b37d08b" category="list-text">電子郵件警示：電子郵件地址/帳戶</block>
   <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">例如、記錄檔中的下列行顯示複製作業成功、複製作業失敗。</block>
   <block id="4892afff6c12a31702739804f9402dd2" category="section-title">存取記錄檔</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「行動狀態」窗格中監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。</block>
@@ -2480,7 +2475,6 @@
   <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f1619aa0c5343971dffa315bb9524cc9" category="paragraph">例如、若要移除*內部產品ID* regex：</block>
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">現在、您可以在資料中新增Data Sense將識別的自訂模式</block>
-  <block id="cdb141fc7c1c0fc93208e7dbbad88e03" category="paragraph">您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="2190fe4edde1bb0ebe7888202a9ce641" category="inline-link-rx"></block>。</block>
   <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">安裝後、無法變更Data Sense主機系統的IP位址。</block>
   <block id="766f0d81be7879628bc30bd7367309c3" category="paragraph">您可以從路徑*/ opt / NetApp /資料中心/*執行命令。</block>
   <block id="4767339e389eb1fa075ecdec5d1ec320" category="paragraph">如果您想要將regex強制新增至Data Sense（資料感測）、您可以使用命令列結尾的*-f*選項、即使我們認為該選項太寬。</block>
@@ -2632,7 +2626,6 @@
   <block id="8beb1a28cedad4a62270cd87cb0fb73f" category="list-text">或者、如果您想要將通知電子郵件傳送給BlueXP使用者、請勾選此方塊、然後選擇電子郵件傳送的時間間隔。深入瞭解 <block ref="aa3b63c453483f75d4311c7c0137128e" category="inline-link-macro-rx"></block>。</block>
   <block id="07a798a9ca59b7a89db396e7fb102645" category="paragraph">當某些關鍵原則傳回結果時、Cloud Data Sense可傳送電子郵件警示給BlueXP使用者、讓您取得通知來保護資料。您可以選擇每天、每週或每月傳送電子郵件通知。</block>
   <block id="aa9fdbbe260aeca6e8e9574845857dc1" category="list-text">在「Edit Policy（編輯原則）」頁面中、如果您想要將通知電子郵件傳送給BlueXP使用者、請勾選此方塊、然後選擇電子郵件的傳送時間間隔（例如每*週*）。</block>
-  <block id="b767f2b9a2e948e4c282ba767400ea33" category="paragraph">當在雲端部署Data Sense時、您可以使用SSH來執行Data Sense執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：</block>
   <block id="99a08830cf6f1972806c695ac18e69bc" category="list-text">Azure：使用為BlueXP執行個體建立的使用者</block>
   <block id="a5b37e45ed042a9bf7c09bfcc25c3211" category="list-text">GCP：使用為BlueXP執行個體建立的使用者</block>
   <block id="23c0e03df230b1dfa0e16b9d275b80ea" category="list-text">在BlueXP左側導覽功能表中、按一下*管理&gt;分類*。</block>
@@ -2873,7 +2866,6 @@
   <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
   <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">能夠新增額外的內部部署「掃描器」節點、以掃描特定的資料來源</block>
   <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現需要更多掃描處理能力來掃描資料來源、則可以新增更多「掃描器」節點。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。例如、如果您發現某個資料來源的資料量在1年後增加了三倍、您可以新增一個掃描器節點來協助資料掃描。</block>
-  <block id="920d0a192fcf42107e363c75e934277b" category="paragraph">如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。</block>
   <block id="cbcceb43df0c94c9cc9e38ba4b9389c1" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用、SharePoint Online、SharePoint內部部署及OneDrive中的資料。</block>
   <block id="808cffec2f45e3cd0fe5a90bfcca1530" category="summary">Data Sense提供多種方法、讓您新增Data Sense在未來掃描中所識別的自訂「個人資料」清單、讓您完整瞭解所有組織檔案中可能敏感的資料所在位置。</block>
   <block id="779142c3c6196fad0d5a73d9c046a65d" category="paragraph">Data Sense提供多種方法、讓您新增Data Sense在未來掃描中所識別的自訂「個人資料」清單、讓您完整瞭解可能敏感的資料在_all_貴組織檔案中的位置。</block>
@@ -2895,7 +2887,6 @@
   <block id="5279036835630164e29f9d285f1f8ac5" category="list-text">&lt;path_to_the_ssh驗證金鑰&gt;= ssh驗證金鑰的位置</block>
   <block id="84bcb800c1d5099ce2ac32d1e7b6680f" category="list-text">&lt;machine_user&gt;：</block>
   <block id="7ba7a32a873386de0e3b4747ceb28558" category="list-text">&lt;datasense_ip&gt;=虛擬機器執行個體的IP位址</block>
-  <block id="b53091894711b26877d3fa2f1589b745" category="paragraph">請注意、您必須修改安全性群組傳入規則、才能存取系統。如需詳細資料、請參閱：</block>
   <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWS中的安全群組規則</block>
   <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
   <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Azure中的安全性群組規則</block>
@@ -2935,10 +2926,23 @@
   <block id="6e356675279ce269e55ffefd9397769c" category="paragraph">您可以使用多個關鍵字建立單一檔案、或是新增多個檔案、每個檔案都包含特定關鍵字。檔案的格式為每行一字、例如、以下列出類型為貓頭鷹的內部產品名稱：</block>
   <block id="8b78d80928f7b4e5ede92c922915ec73" category="paragraph">如您所見、文字檔的名稱會用作「個人結果」面板中的名稱。如此一來、您就能從不同的文字檔啟動關鍵字、並查看每種關鍵字類型的結果。</block>
   <block id="6d09a2eb7ddd06e7afb4f4e0f4b6f0a8" category="paragraph">例如、若要移除在* inters_product_name.txt*檔案中定義的關鍵字：</block>
-  <block id="855f2bccb1380ed5e79ffd60f06d8209" category="paragraph">稽核日誌每天都會旋轉。</block>
-  <block id="e583d0bb2649633981a5bcb08138c87e" category="paragraph">稽核日誌位於Data Sense機器上的：<block ref="ffd8f753eb106227f8d629727e8f83b2" prefix=" " category="inline-code"></block></block>
   <block id="162bd73d17dd13a664718503fff639fc" category="paragraph">在內部部署安裝Data Sense時、您可以直接瀏覽至記錄檔。</block>
   <block id="69aeb258470eedf7afb44d66a993f4d8" category="paragraph">如果您有特定的資料來源需要由實體靠近資料來源的掃描儀節點進行掃描、您可以定義掃描儀節點或掃描儀節點群組、以掃描特定的資料來源或資料來源群組。在下圖中、有1個Manager節點和3個掃描儀節點。</block>
   <block id="4ab1272ad311bec96f677d25b0901105" category="list-text">如果您想要將掃描器節點新增至「掃描器群組」、請將參數*- r &lt;掃描 儀群組名稱&gt;*新增至命令。否則、掃描儀節點會新增至「預設」群組。</block>
   <block id="f76b6e3dc68f5a15976b3f64aae23646" category="paragraph">任何未新增至清單的工作環境都會由「預設」群組掃描、您必須在「預設」群組中至少有一個管理程式或掃描器節點。</block>
+  <block id="37861c699e1fb7b716f29da056f3ddc5" category="paragraph">在雲端部署Data Sense時、您需要SSH到Data Sense執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：</block>
+  <block id="9580ea03756206f0f5eba6a03bb42d83" category="paragraph">請注意、您需要修改安全群組傳入規則、才能存取雲端上的系統。如需詳細資料、請參閱：</block>
+  <block id="5cd360d496831478b3f9cbc92cce8b43" category="list-text">日期與時間：事件的完整時間戳記</block>
+  <block id="01183a42bef9f9a5314d435065cfc49d" category="list-text">行動的詳細資料：做了什麼：取決於行動</block>
+  <block id="8022db3692364177695fce2a133b526b" category="list-text">用於標記-標記名稱</block>
+  <block id="91f93253b1daa7f572477e6f8dc4f163" category="list-text">指派給-使用者名稱</block>
+  <block id="00fde4d5ca4e0124dccf8017bb92fc4e" category="list-text">電子郵件警示：電子郵件地址/帳戶</block>
+  <block id="b5fcd19ce1eac6e10e82176168a38b4d" category="paragraph">稽核日誌檔位於Data Sense機器上、位於：<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
+  <block id="8cc577dbce4245d15abad6f3b1dfc995" category="paragraph">每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統最多可保留100個記錄檔-在達到上限後、會自動刪除舊的記錄檔。</block>
+  <block id="fbda64f06352e44a4e6523dbdd6b039e" category="paragraph">請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：</block>
+  <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">瞭解如何安裝掃描器節點來掃描其他資料來源</block>
+  <block id="232acd7f039f2650674c20301305634d" category="paragraph">如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。<block ref="1527b8cf69e6865de2ec8736eea9f338" category="inline-link-rx"></block>。</block>
+  <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">您可以使用兩種方法新增自訂的「個人資料」、以便Data Sense在未來的掃描中識別。如此一來、您就能完整瞭解所有組織檔案中潛在敏感資料所在的位置。</block>
+  <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">您可以使用規則運算式（regex）新增個人模式。</block>
+  <block id="a7110ffc746d511f3031ce3693e9c099" category="paragraph">這些關鍵字和模式會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="ba4b576d22723dd9b7b37b67a884a8d7" category="inline-link-rx"></block>。</block>
 </blocks>
