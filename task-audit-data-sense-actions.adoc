@@ -24,11 +24,11 @@ Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描
 
 稽核記錄中的每一行都包含下列格式的資訊：
 
-「<完整日期>|<STATUS>| datasense_nit_logger |<module>| 0 | 0 |檔案<完整檔案路徑>已從裝置<裝置路徑>-<result>'中刪除
+`<full date> | <status> | ds_audit_logger | <module> | 0 | 0 | File <full file path> deleted from device <device path> - <result>`
 
 * 日期與時間：事件的完整時間戳記
 * 狀態-資訊、警告
-* 行動類型（刪除、複製、移動、建立原則、更新原則、 下載Json報告等）
+* 行動類型（刪除、複製、移動、建立原則、更新原則、 重新掃描檔案、下載Json報告等）
 * 檔案名稱（如果動作與檔案相關）
 * 行動的詳細資料：做了什麼：取決於行動
 +
@@ -45,8 +45,8 @@ Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描
 例如、記錄檔中的下列行顯示複製作業成功、複製作業失敗。
 
 ....
-2022-06-06 15:23:08,910 | INFO | datasense_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
-2022-06-06 15:23:08,968 | WARNING | datasense_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
+2022-06-06 15:23:08,910 | INFO | ds_audit_logger | es_scanned_file | 237 | 49 | Copy file /CIFS_share/data/dop1/random_positives.tsv from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - SUCCESS
+2022-06-06 15:23:08,968 | WARNING | ds_audit_logger | es_scanned_file | 239 | 153 | Copy file /CIFS_share/data/compliance-netapp.tar.gz from device 10.31.133.183 (type: SMB_SHARE) to device 10.31.130.133:/export_reports (NFS_SHARE) - FAILURE
 ....
 
 

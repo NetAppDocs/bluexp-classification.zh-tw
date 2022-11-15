@@ -226,7 +226,7 @@ image:screenshot_compliance_investigation_report.png["下載調查報告頁面�
 
 對話方塊會顯示正在下載報告的訊息。
 
-您可以在中檢視Json報告產生的進度  the status of your compliance actions,「行動狀態」窗格。
+您可以在中檢視Json報告產生的進度 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
 
 
 

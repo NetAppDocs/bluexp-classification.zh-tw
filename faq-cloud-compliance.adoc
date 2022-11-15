@@ -311,7 +311,7 @@ Data Sense只會掃描中繼資料。這對整體資料管理與治理、快速�
 
 使用Cloud Data Sense的成本取決於您要掃描的資料量。資料感測在BlueXP工作區中掃描的前1 TB資料是免費的。達到該限制後、您需要下列其中一項、才能繼續掃描超過1 TB的資料：
 
-* 向您的雲端供應商訂購Cloud Manager Marketplace清單、或
+* 向您的雲端供應商訂閱BlueXP Marketplace清單、或
 * NetApp的自帶授權（BYOL）
 
 

@@ -18,7 +18,7 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
-== 2022年11月7日（1.17版）
+== 2022年11月13日（1.17版）
 
 
 
@@ -36,9 +36,15 @@ Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳�
 
 === 能夠新增額外的內部部署「掃描器」節點、以掃描特定的資料來源
 
-如果您已在內部部署位置安裝Data Sense、而且發現需要更多掃描處理能力來掃描資料來源、則可以新增更多「掃描器」節點。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。例如、如果您發現某個資料來源的資料量在1年後增加了三倍、您可以新增一個掃描器節點來協助資料掃描。
+如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。
 
 如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["瞭解如何安裝掃描器節點來掃描其他資料來源"^]。
+
+
+
+=== 內部部署安裝程式現在會在開始安裝之前執行預先檢查
+
+在Linux系統上安裝Data Sense時、安裝程式會先檢查系統是否符合所有必要的需求（CPU、RAM、容量、網路等）、然後再開始實際安裝。這有助於您在*之前*花時間進行安裝。
 
 
 
@@ -271,7 +277,7 @@ Data Sense現在可以讀取OneDrive帳戶和SharePoint帳戶中掃描檔案的�
 
 === 支援在黑暗站台部署OneDrive和SharePoint資料時掃描
 
-當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 link:task-deploy-compliance-dark-site.html#sharepoint_and_onedrive_special_requirements["您必須允許存取下列端點。"]
+當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["您必須允許存取下列端點。"]
 
 
 
@@ -367,7 +373,7 @@ link:task-managing-highlights.html#cloning-volume-data-to-a-new-volume["瞭解�
 
 當您從「調查結果」窗格對許多檔案執行動作時、例如刪除50個檔案、程序可能需要一些時間。現在您可以監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。
 
-link:task-managing-highlights.html#viewing-the-status-of-your-compliance-actions["瞭解如何檢視持續法規遵循行動的狀態"]。
+link:task-view-compliance-actions.html["瞭解如何檢視持續法規遵循行動的狀態"]。
 
 
 
@@ -515,54 +521,10 @@ Data Sense現在可以掃描來自FSX的CIFS Volume、以供ONTAP 支援各種�
 
 === 執行慢速掃描的能力
 
-資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）、立即執行「Slow」（慢速）掃描。 link:task-managing-compliance.html#reducing-the-data-sense-scan-speed["瞭解方法"]。
+資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）、立即執行「Slow」（慢速）掃描。 link:task-reduce-scan-speed.html["瞭解方法"]。
 
 
 
 === Data Sense會追蹤上次存取檔案的時間
 
 上次存取時間值已新增至「檔案詳細資料」頁面、以及您以CSV格式輸出的報告、以便您查看使用者上次存取檔案的時間。
-
-
-
-== 2021年6月7日
-
-
-
-=== Cloud Compliance已重新命名為Cloud Data Sense。
-
-雲端法規遵循已於本次發行時重新命名為* Cloud Data Sense *。由於產品中包含所有新的治理和其他功能、因此法規遵循名稱並未推廣完整的功能組合。
-
-
-
-=== 您可從「管理儀表板」取得新的「完整資料對應」報告
-
-您可從「管理儀表板」取得全新的「完整資料對應」報告、概述儲存在企業資料來源中的資料、協助您做出移轉、備份、安全性及法規遵循程序等決策。
-
-此報告提供總覽頁面、摘要說明您所有的工作環境和資料來源、然後提供每個工作環境的明細資料。 link:task-generating-compliance-reports.html#generating-the-data-mapping-report["請到這裡"] 以取得更多詳細資料。
-
-
-
-=== 「調查」頁面中的新篩選器、可檢視所有重複的檔案
-
-「資料調查」頁面中的新篩選器可讓您檢視儲存系統中所有重複檔案的清單。這有助於識別可節省儲存空間的區域、或識別具有特定權限或敏感資訊的檔案、而您不想在儲存設備之間複製這些檔案。 link:task-controlling-private-data.html#viewing-all-duplicated-files["瞭解如何檢視所有重複的檔案"]。
-
-
-
-=== Data Sense可將自訂標記新增至組織檔案
-
-您可以將自訂標記新增至Data Sense正在掃描的檔案。標記不會以新增AIP標籤的相同方式新增至檔案。Cloud Manager使用者剛看到標記、因此您可以指出檔案是否需要刪除、或是因為某種原因而檢查。 link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["瞭解如何套用及檢視檔案中的標記"]。
-
-「調查」頁面中的新篩選器可讓您輕鬆檢視已指派標記的所有檔案。
-
-
-
-=== 能夠掃描.dcm和.dicom檔案
-
-Cloud Data Sense可在兩種其他檔案類型中掃描個人識別資訊（PII）：.dcm和.dicom。
-
-
-
-=== Data Sense現在會追蹤檔案的其他屬性
-
-檔案大小、建立日期和上次修改日期值已新增至您以CSV格式輸出的報告。「建立日期」也是一種新的篩選條件、可用來縮小「調查」頁面搜尋結果範圍。

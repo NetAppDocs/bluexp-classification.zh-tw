@@ -40,7 +40,7 @@ summary: 完成幾個步驟、在雲端部署Cloud Data Sense。
 啟動安裝精靈、在雲端部署Cloud Data Sense執行個體。
 
 [role="quick-margin-para"]
-在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。您必須透過雲端供應商Marketplace訂閱Cloud Manager、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。
+在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。
 
 
 

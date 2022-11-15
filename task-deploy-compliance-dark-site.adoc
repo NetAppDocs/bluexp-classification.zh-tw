@@ -82,7 +82,7 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 
 資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
 
-* 作業系統：Red Hat Enterprise Linux或CentOS 8.0至8.4版
+* 作業系統：Red Hat Enterprise Linux或CentOS 8.0至8.6.版
 +
 ** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
 ** 作業系統必須能夠安裝Docker Engine（例如、視需要停用_firewalld_服務）
@@ -209,6 +209,9 @@ image:screenshot_cloud_compliance_deploy_darksite.png["選取按鈕以在內部�
 tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 ----
 . 當安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式：
++
+請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。
+
 +
 [cols="50a,50"]
 |===

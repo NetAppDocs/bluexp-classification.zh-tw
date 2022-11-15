@@ -18,7 +18,7 @@ summary: 在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費
 
 在閱讀更多內容之前、請先提供幾個附註：
 
-* 如果您已在雲端供應商的市場訂閱Cloud Manager隨用隨付（PAYGO）、您也會自動訂閱Cloud Data Sense。您不需要再次訂閱。
+* 如果您已在雲端供應商的市場訂閱BlueXP隨用隨付（PAYGO）、您也會自動訂閱Cloud Data Sense。您不需要再次訂閱。
 * Cloud Data Sense自帶授權（BYOL）是一個_浮 點型授權、您可以在您計畫掃描的工作環境和資料來源中使用。您會在Digital Wallet中看到使用中的訂閱內容。
 
 
@@ -45,7 +45,7 @@ image:screenshot_settings_icon.gif["BlueXP右上方橫幅的快照、您可在�
 訂閱必須新增至執行個體設定檔、託管服務識別或Google Project。否則無法充電。
 
 +
-如果您已經訂閱（如下所示）、就表示您已完成設定、沒有其他需要做的事。
+如果您已經訂閱了BlueXP（如下所示、適用於AWS）、那麼您就已經設定好了、沒有其他需要做的事了。
 
 +
 image:screenshot_profile_subscription.gif["「認證」頁面的快照、顯示使用中訂閱的執行個體設定檔。"]

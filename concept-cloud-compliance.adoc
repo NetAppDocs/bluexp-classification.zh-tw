@@ -294,7 +294,7 @@ BlueXP部署Cloud Data Sense執行個體時、會有一個安全群組、可從C
 
 傳出規則已完全開啟。需要存取網際網路、才能安裝及升級Data Sense軟體、並傳送使用量標準。
 
-如果您有嚴格的網路需求、 link:task-deploy-cloud-compliance.html#reviewing-prerequisites["深入瞭解Cloud Data意義上的端點"^]。
+如果您有嚴格的網路需求、 link:task-deploy-cloud-compliance.html#review-prerequisites["深入瞭解Cloud Data意義上的端點"^]。
 
 
 

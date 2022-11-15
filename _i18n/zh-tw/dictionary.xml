@@ -784,7 +784,6 @@
   <block id="fa00f0feeabd281b23e8571faacaf649" category="list-text">您必須具有「帳戶管理」或「工作區管理」角色、才能複製及同步檔案。</block>
   <block id="2e5ce55dec2ff1c76b2eb8662089db85" category="list-text">所有選取的檔案都必須來自相同的來源儲存庫（ONTAP 例如、SFC磁碟區、S3磁碟區、NFS或CIFS共用區等）。</block>
   <block id="5698905e8d060e455d19636040ff425c" category="inline-link-macro">快速入門說明</block>
-  <block id="77129c83b2501b2eb47ff0a1fa67f801" category="list-text">您需要啟動Cloud Sync 「還原」服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。請從開始檢閱Cloud Sync 《不整合需求 <block ref="b962387ad67b92b5132f148579512908" category="inline-link-macro-rx"></block>。</block>
   <block id="627bf959aabe96a1a08aad7eaf1ab97a" category="paragraph">請注意Cloud Sync 、如果您在雲端部署資料代理程式、則該服務會針對您的同步關係另行收取服務費用。</block>
   <block id="ff0485cd041399c074cb840a8d93eafb" category="list-text">在「資料調查」窗格中、選取單一*工作環境*和單一*儲存儲存庫*來建立篩選器、以確保所有檔案都來自相同的儲存庫。</block>
   <block id="6b063a37c6525c913c2ebc03bba94e6e" category="paragraph">套用任何其他篩選條件、以便只看到您要複製並同步到目的地系統的檔案。</block>
@@ -1006,7 +1005,6 @@
   <block id="8914a2ab502c2e892c90f9e40240866c" category="list-text">列數</block>
   <block id="0ed0a0ad5aadf8f8ef3ea382b8f4a106" category="doc">設定Cloud Data Sense授權</block>
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">在閱讀更多內容之前、請先提供幾個附註：</block>
-  <block id="67dc5872edad6cc97bdb69ec8f4447f2" category="list-text">如果您已在雲端供應商的市場訂閱Cloud Manager隨用隨付（PAYGO）、您也會自動訂閱Cloud Data Sense。您不需要再次訂閱。</block>
   <block id="e2efd47bd42c53cc1253f29754c3836a" category="list-text">Cloud Data Sense自帶授權（BYOL）是一個_浮 點型授權、您可以在您計畫掃描的工作環境和資料來源中使用。您會在Digital Wallet中看到使用中的訂閱內容。</block>
   <block id="4bc0671413757c3b06269c6869b1c24d" category="inline-link-macro">深入瞭解Cloud Data Sense的授權與成本</block>
   <block id="dcba253c1898878efeea1f106871ba52" category="paragraph"><block ref="32c4fb91a406f3c38311c8b665707774" category="inline-link-macro-rx"></block>。</block>
@@ -1018,7 +1016,6 @@
   <block id="b2f44b30cb7b59e6531b838d2b079d16" category="paragraph">這些步驟必須由擁有 _Account Admin_ 角色的使用者完成。</block>
   <block id="bea1f499527daa402d9417b6befca37e" category="list-text">尋找AWS執行個體設定檔、Azure託管服務身分識別或Google Project的認證資料。</block>
   <block id="8071861b8e3a5d88d5457ddd1596427a" category="paragraph">訂閱必須新增至執行個體設定檔、託管服務識別或Google Project。否則無法充電。</block>
-  <block id="c5a48d7441653b12c714ba7f9509be09" category="paragraph">如果您已經訂閱（如下所示）、就表示您已完成設定、沒有其他需要做的事。</block>
   <block id="62e5878faab04822cdc1e0afde654b25" category="inline-image-macro">「認證」頁面的快照、顯示使用中訂閱的執行個體設定檔。</block>
   <block id="960eb5524321a41f4a846cf6d41aa4ba" category="paragraph"><block ref="960eb5524321a41f4a846cf6d41aa4ba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1127f6d49115a82bf6a8108eed8e2e9" category="list-text">如果您尚未訂閱、請將游標移至認證上方、按一下動作功能表、然後按一下*建立訂閱關聯*。</block>
@@ -1216,7 +1213,6 @@
   <block id="7b895b198aba9634ffec5e0ec9a3aff4" category="section-title">網路總覽</block>
   <block id="6134fb19f2424f157bd88b36e40dcf10" category="paragraph">傳出規則已完全開啟。需要存取網際網路、才能安裝及升級Data Sense軟體、並傳送使用量標準。</block>
   <block id="12d39974306420354fffe75c7f15e621" category="inline-link-macro">深入瞭解Cloud Data意義上的端點</block>
-  <block id="56de08dfb4f78c8968cdc6b05d0014af" category="paragraph">如果您有嚴格的網路需求、 <block ref="34785efa2a38488608f222d4a2795abf" category="inline-link-macro-rx"></block>。</block>
   <block id="d359ba9662c22ff5e27bf861300c6bbf" category="section-title">使用者存取法規遵循資訊</block>
   <block id="7e576e4144e56e656ad24bb096e2e6fe" category="list-text">*帳戶管理員*可管理所有工作環境的法規遵循設定及檢視法規遵循資訊。</block>
   <block id="e84e463a5d50d51ba24671ea703ccd3a" category="list-text">具有* Compliance Viewer*角色的使用者只能檢視法規遵循資訊、並針對擁有存取權限的系統產生報告。這些使用者無法啟用 / 停用掃描磁碟區、儲存區或資料庫架構。這些使用者也無法複製、移動或刪除檔案。</block>
@@ -1285,7 +1281,6 @@
   <block id="49b8c4f61544245ecf36672ba0113068" category="section-title">能夠檢視您長期執行的法規遵循行動狀態</block>
   <block id="c066aa13effff0bea79252a20699074b" category="paragraph">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除50個檔案、程序可能需要一些時間。現在您可以監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。</block>
   <block id="7fc4a6242ce76e0415a989d1dbc8b9d4" category="inline-link-macro">瞭解如何檢視持續法規遵循行動的狀態</block>
-  <block id="0a8b229d21efe889c341133fa43bc3f7" category="paragraph"><block ref="b64e3c30f28dd83a2184563dc44ee1de" category="inline-link-macro-rx"></block>。</block>
   <block id="6241446e1383ab0c8cc0cebdfbb90484" category="inline-link-macro">請參閱Data Sense在掃描中找到的所有個人資料類型清單</block>
   <block id="2164b22cc8c41bee72c53771bd025c07" category="paragraph">Data Sense現在可以在檔案中找到個人資料類型「British Passport"（英國護照）」和「National Health Service（NHS）Number（美國國家醫療服務（NHS）編號）」。 <block ref="ce74ef267e6a0fa015475f7a67f6924a" category="inline-link-macro-rx"></block>。</block>
   <block id="89372f2a277a8453dc542e88ba9ef4f0" category="section-title">「新篩選器」可顯示屬於特定工作環境類型的檔案</block>
@@ -1346,27 +1341,8 @@
   <block id="60ee57016f16f38febc0431619eaa4bb" category="paragraph">有些掃描需求較小的使用者要求能夠使用較小的Cloud Data Sense執行個體。現在您可以了。使用這些較小的執行個體時有一些限制 <block ref="2721bef887c25ebcb5745416e289e70e" category="inline-link-macro-rx"></block>。</block>
   <block id="a37544bc609cd0b6c2d725d27d13ab21" category="section-title">執行慢速掃描的能力</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">瞭解方法</block>
-  <block id="5eea29ff6cc3dad991a8789d591533a9" category="paragraph">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）、立即執行「Slow」（慢速）掃描。 <block ref="be5ca65137ce848c8d09c371939d6748" category="inline-link-macro-rx"></block>。</block>
   <block id="f1c9a9425a145e1b1614fa251d393989" category="section-title">Data Sense會追蹤上次存取檔案的時間</block>
   <block id="34549c51a038d2c00ade5270b233fb1c" category="paragraph">上次存取時間值已新增至「檔案詳細資料」頁面、以及您以CSV格式輸出的報告、以便您查看使用者上次存取檔案的時間。</block>
-  <block id="945fb8f32f58d1cc36cb9f1e9e4c6fe5" category="section-title">2021年6月7日</block>
-  <block id="6561d0dbae2df54bbe8349c518489172" category="section-title">Cloud Compliance已重新命名為Cloud Data Sense。</block>
-  <block id="d3c761a2e0f04b6d5a3de0a1d64ba674" category="paragraph">雲端法規遵循已於本次發行時重新命名為* Cloud Data Sense *。由於產品中包含所有新的治理和其他功能、因此法規遵循名稱並未推廣完整的功能組合。</block>
-  <block id="763a569da43c025c1d54060a2ef2efbe" category="section-title">您可從「管理儀表板」取得新的「完整資料對應」報告</block>
-  <block id="b1c097baa7655613db39bdfee4aa9834" category="paragraph">您可從「管理儀表板」取得全新的「完整資料對應」報告、概述儲存在企業資料來源中的資料、協助您做出移轉、備份、安全性及法規遵循程序等決策。</block>
-  <block id="e4769dc6302d1988b2db369ee09d08df" category="inline-link-macro">請到這裡</block>
-  <block id="e49617bb2d098bc9411a20ab9cc7800e" category="paragraph">此報告提供總覽頁面、摘要說明您所有的工作環境和資料來源、然後提供每個工作環境的明細資料。 <block ref="69c5d3a80c29cb6ecc9dff8619a99bf7" category="inline-link-macro-rx"></block> 以取得更多詳細資料。</block>
-  <block id="08684668c10e9c17789be7934ef88e51" category="section-title">「調查」頁面中的新篩選器、可檢視所有重複的檔案</block>
-  <block id="7a75a1cb539ce717ffb70a6f45b1183c" category="inline-link-macro">瞭解如何檢視所有重複的檔案</block>
-  <block id="49088960be4d8db4c1a11ba7678fee3f" category="paragraph">「資料調查」頁面中的新篩選器可讓您檢視儲存系統中所有重複檔案的清單。這有助於識別可節省儲存空間的區域、或識別具有特定權限或敏感資訊的檔案、而您不想在儲存設備之間複製這些檔案。 <block ref="9b932b7183a8b1eae080a32497be2440" category="inline-link-macro-rx"></block>。</block>
-  <block id="8152326061d8b3d329ba2607a09b0fa1" category="section-title">Data Sense可將自訂標記新增至組織檔案</block>
-  <block id="3bef072dfa864da4aa8559c03c7d0ca8" category="inline-link-macro">瞭解如何套用及檢視檔案中的標記</block>
-  <block id="cf5c65a6d69d1529a0f0cd6dd86b5edb" category="paragraph">您可以將自訂標記新增至Data Sense正在掃描的檔案。標記不會以新增AIP標籤的相同方式新增至檔案。Cloud Manager使用者剛看到標記、因此您可以指出檔案是否需要刪除、或是因為某種原因而檢查。 <block ref="7a35795d2be1b40763c1be0abb286f6d" category="inline-link-macro-rx"></block>。</block>
-  <block id="6e30bf5f27ef24f35407940f36e6664a" category="paragraph">「調查」頁面中的新篩選器可讓您輕鬆檢視已指派標記的所有檔案。</block>
-  <block id="c832a419d50a23d5a24e8b88cb7b1f44" category="section-title">能夠掃描.dcm和.dicom檔案</block>
-  <block id="34872f144eacfe5c837131480f6e243a" category="paragraph">Cloud Data Sense可在兩種其他檔案類型中掃描個人識別資訊（PII）：.dcm和.dicom。</block>
-  <block id="831cb0c03277fa9f02db351f7b681988" category="section-title">Data Sense現在會追蹤檔案的其他屬性</block>
-  <block id="fc15edce938be94b7835bbbb16d686b4" category="paragraph">檔案大小、建立日期和上次修改日期值已新增至您以CSV格式輸出的報告。「建立日期」也是一種新的篩選條件、可用來縮小「調查」頁面搜尋結果範圍。</block>
   <block id="1d7b157ba2877d6d0d3d8d256ab8cfb9" category="summary">完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp Files 整套功能。</block>
   <block id="cd7afa87e9e8523b4b9129d2a8cc9511" category="doc">Cloud Data Sense for Azure NetApp Files 功能入門</block>
   <block id="8e6b2e179301ba8e4086645fd738ff9d" category="paragraph">按一下「 * Compliance * （ * 符合性 * ）」、選取「 * Configuration * （ * 組態 * ）」索引標籤、然後針對特定工作環境中的磁碟區啟動法規遵循掃描。</block>
@@ -2083,7 +2059,6 @@
   <block id="e6955249e6953613536ae08a88475a81" category="paragraph">完整掃描之後、您可以將許多其他Data Sense功能套用至資料、例如在「Data Investigation」（資料調查）頁面中檢視及精簡資料、在檔案中搜尋名稱、複製、移動及刪除來源檔案等。</block>
   <block id="1a068d00fba0764fe495dfcb9428ba33" category="section-title">授權與成本</block>
   <block id="efd4a405d0fc94dd44dd46314145b533" category="paragraph">下列問題與使用Cloud Data Sense的授權和成本有關。</block>
-  <block id="d28d4f6cb9334067ba763d5205ef3408" category="list-text">向您的雲端供應商訂購Cloud Manager Marketplace清單、或</block>
   <block id="4aaa082eb5a6a6d38594fed7ac9dfc5c" category="list-text">NetApp的自帶授權（BYOL）</block>
   <block id="d593d438e7fbece83184e3d6d94b77d8" category="paragraph">請參閱<block ref="6bbe1a830896033f3d42bc42c545c572" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="df633ebdc2836fc65b2b5c8df3071fad" category="section-title">如果我達到BYOL容量上限、會發生什麼事？</block>
@@ -2208,7 +2183,6 @@
   <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">現在您可以編輯所建立的現有原則</block>
   <block id="61e409921fe798c5667689af4656a112" category="inline-link">瞭解如何編輯原則</block>
   <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
-  <block id="1f50cc006f0a9aa5fa08f3f58b10bf1d" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <block ref="8c0c83431a0c54e3e158fb0a6b366a6d" category="inline-link-macro-rx"></block></block>
   <block id="fbbd4044d95d7d79fb98ebd8d7daf546" category="summary">如果需要、您可以停止Cloud Data Sense掃描一或多個工作環境、資料庫、檔案共用群組、OneDrive帳戶、Google雲端硬碟帳戶、 或SharePoint帳戶。</block>
   <block id="a80767bb4322f81d8b7bd0b15673f6ab" category="summary">您可以解除安裝Data Sense軟體來疑難排解問題、或是從主機上永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟、所有已掃描的資訊「Data Sense」（資料感測）都會永久刪除。</block>
   <block id="9cd2794f7afcdacb42a1ab6334e60324" category="doc">解除安裝Cloud Data Sense</block>
@@ -2249,9 +2223,7 @@
   <block id="f8563669b8d53fea23814d12a98674cd" category="paragraph">例如、您可以查看發出的要求、要求時間、以及檔案刪除時的來源位置、或檔案移動時的來源和目的地位置等詳細資料。</block>
   <block id="f4d44f4e933c52507fc1f60eb487d44a" category="section-title">記錄檔內容</block>
   <block id="787cbeccb975d71260f61cb0fbe84553" category="paragraph">稽核記錄中的每一行都包含下列格式的資訊：</block>
-  <block id="727fb114deba541b53a0b54311e03930" category="paragraph">「&lt;完整日期&gt;|&lt;STATUS&gt;| datasense_nit_logger |&lt;module&gt;| 0 | 0 |檔案&lt;完整檔案路徑&gt;已從裝置&lt;裝置路徑&gt;-&lt;result&gt;'中刪除</block>
   <block id="79480e26f983c197c4338ae916966c93" category="list-text">狀態-資訊、警告</block>
-  <block id="8c5560001ce7d874ad9b883caee72f9c" category="list-text">行動類型（刪除、複製、移動、建立原則、更新原則、 下載Json報告等）</block>
   <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">檔案名稱（如果動作與檔案相關）</block>
   <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">原則名稱</block>
   <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">用於移動-來源和目的地</block>
@@ -2268,7 +2240,6 @@
   <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baa6537e5347accba4142c762df4cdf0" category="paragraph">選取.Json報告時、請以「&lt;host_name&gt;//&lt;share_path&gt;'的格式輸入要下載報告的NFS共用名稱。</block>
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">對話方塊會顯示正在下載報告的訊息。</block>
-  <block id="2bbb59657134248b81caacac241c5f02" category="paragraph">您可以在中檢視Json報告產生的進度 <block ref="7ab6e8afc5b3f27fa1b074f775217e39" category="inline-xref-macro-rx"></block>。</block>
   <block id="8cb8a6e0c4d4366f74cd4f0b6f61a0f6" category="paragraph">*非結構化目錄資料報告*包含下列資料夾與檔案共用的相關資訊：</block>
   <block id="76cbd87b5322b897c255d541785ad658" category="list-text">儲存儲存庫（例如資料夾或檔案共用）</block>
   <block id="45fe1c24aae6844389ce04f26df40a13" category="list-text">檔案路徑（目錄名稱）</block>
@@ -2371,7 +2342,6 @@
   <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecc7450cf52e0d0d89139603b07ea706" category="paragraph">您可以將游標停留在_掃描狀態_欄中的圖表上、查看每個儲存庫中仍要對應或分類的檔案數目（本範例中為儲存庫）。</block>
   <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">資料庫無法設定為僅對應掃描。資料庫掃描功能可以是關閉或開啟、其中ON等同於Map &amp;分類。</block>
-  <block id="9db1ab99c3f7640c000fdc19054af26c" category="list-text">作業系統：Red Hat Enterprise Linux或CentOS 8.0至8.4版</block>
   <block id="ce12cca419124f32a01c6fec5a3be62f" category="list-text">可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本</block>
   <block id="9308bcab83008e639f95b088d89b11c4" category="cell">澳洲駕駛人授權</block>
   <block id="1ce92447664cc42f3e2c04aaf8570862" category="cell">紐西蘭銀行帳戶</block>
@@ -2698,7 +2668,6 @@
   <block id="b857453947413e0fa339869d22d4c786" category="paragraph"><block ref="0f3b3f14a152082b591c2061f55976b1" category="inline-link-rx"></block>。</block>
   <block id="79212600af75dc48b9f7e59a9927a88e" category="list-text">在BlueXP左側導覽功能表中、按一下*管理&gt;分類*、然後選取*組態*索引標籤。</block>
   <block id="623d17b9d36b70bf9a4a775a9d346f58" category="admonition">對本產品而言、Cloud Data Sense只能掃描與BlueXP位於同一區域的磁碟區。Azure NetApp Files</block>
-  <block id="4479e460b4d47f38dc9336cba866cce4" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。您必須透過雲端供應商Marketplace訂閱Cloud Manager、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。</block>
   <block id="16f6b76e35946d0224b05a1466e556f0" category="inline-link">BlueXP功能需要連接器</block>
   <block id="b4af24a1096b735934691c65956c7d7a" category="paragraph">如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block> 或<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>或<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。在大多數情況下、您可能會先設定Connector、然後才嘗試啟動Cloud Data Sense、因為大多數情況都是如此<block ref="d18edc1f87b2c25c3b9a75b33d4a162f" category="inline-link-rx"></block>但有些情況下您需要立即設定一個。</block>
   <block id="7d0e3dd93f2549f8ce0be2f0454b12b2" category="cell">與BlueXP網站通訊以進行集中式使用者驗證。</block>
@@ -2859,13 +2828,11 @@
   <block id="b77072323352dd1724df6d20002eb9f2" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：<block ref="f484d7848213083a72fafef02f452b57" prefix=" " category="inline-code"></block></block>
   <block id="a147b656a2355ffcebd357dcfbb4b53f" category="paragraph">Data Sense是透過Manager和掃描儀節點來設定、可掃描所有資料來源。</block>
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。</block>
-  <block id="0fd7cab37419c3f9fdd225020324c7dc" category="section-title">2022年11月7日（1.17版）</block>
   <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">支援掃描SharePoint內部部署帳戶</block>
   <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
   <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">能夠重新掃描多個目錄（資料夾或共用）</block>
   <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
   <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">能夠新增額外的內部部署「掃描器」節點、以掃描特定的資料來源</block>
-  <block id="c6cc179979c3b50e9f274669a7debb6f" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現需要更多掃描處理能力來掃描資料來源、則可以新增更多「掃描器」節點。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。例如、如果您發現某個資料來源的資料量在1年後增加了三倍、您可以新增一個掃描器節點來協助資料掃描。</block>
   <block id="cbcceb43df0c94c9cc9e38ba4b9389c1" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用、SharePoint Online、SharePoint內部部署及OneDrive中的資料。</block>
   <block id="808cffec2f45e3cd0fe5a90bfcca1530" category="summary">Data Sense提供多種方法、讓您新增Data Sense在未來掃描中所識別的自訂「個人資料」清單、讓您完整瞭解所有組織檔案中可能敏感的資料所在位置。</block>
   <block id="779142c3c6196fad0d5a73d9c046a65d" category="paragraph">Data Sense提供多種方法、讓您新增Data Sense在未來掃描中所識別的自訂「個人資料」清單、讓您完整瞭解可能敏感的資料在_all_貴組織檔案中的位置。</block>
@@ -2945,4 +2912,24 @@
   <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">您可以使用兩種方法新增自訂的「個人資料」、以便Data Sense在未來的掃描中識別。如此一來、您就能完整瞭解所有組織檔案中潛在敏感資料所在的位置。</block>
   <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">您可以使用規則運算式（regex）新增個人模式。</block>
   <block id="a7110ffc746d511f3031ce3693e9c099" category="paragraph">這些關鍵字和模式會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="ba4b576d22723dd9b7b37b67a884a8d7" category="inline-link-rx"></block>。</block>
+  <block id="415d8b1f8ef7e8bc1bca29c92bbffb9b" category="list-text">作業系統：Red Hat Enterprise Linux或CentOS 8.0至8.6.版</block>
+  <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。</block>
+  <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">向您的雲端供應商訂閱BlueXP Marketplace清單、或</block>
+  <block id="10d127f1d0ce294ce4f4f8e7ebf6106b" category="paragraph">如果您有嚴格的網路需求、 <block ref="8ee644766673e1cde7b0c260d7a4e2e0" category="inline-link-macro-rx"></block>。</block>
+  <block id="21315205ba34163a83853c5526e534c1" category="list-text">一次最多可重新掃描1000個項目。</block>
+  <block id="8ec215ce3c88ae58412a2c9d13f5d15b" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。</block>
+  <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
+  <block id="79bd49250e598bf53655f50c83b04044" category="list-text">行動類型（刪除、複製、移動、建立原則、更新原則、 重新掃描檔案、下載Json報告等）</block>
+  <block id="9d282ec5c19d83f47fc9504e4ff50325" category="list-text">如果您已在雲端供應商的市場訂閱BlueXP隨用隨付（PAYGO）、您也會自動訂閱Cloud Data Sense。您不需要再次訂閱。</block>
+  <block id="f6d56db241e1b67ea15f2bcfc6d58cee" category="paragraph">如果您已經訂閱了BlueXP（如下所示、適用於AWS）、那麼您就已經設定好了、沒有其他需要做的事了。</block>
+  <block id="8a19b447bcd4da037940f31306b703f2" category="list-text">您需要啟動Cloud Sync 「還原」服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。請從開始檢閱Cloud Sync 《不整合需求<block ref="e51d588768ce18b65058ca75b02bbb45" category="inline-link-rx"></block>。</block>
+  <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">您可以在中檢視Json報告產生的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
+  <block id="0527c3c624cc9c38c92e3f9b20bd744d" category="list-text">安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式。</block>
+  <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日（1.17版）</block>
+  <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。</block>
+  <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">內部部署安裝程式現在會在開始安裝之前執行預先檢查</block>
+  <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">在Linux系統上安裝Data Sense時、安裝程式會先檢查系統是否符合所有必要的需求（CPU、RAM、容量、網路等）、然後再開始實際安裝。這有助於您在*之前*花時間進行安裝。</block>
+  <block id="9d2608b0b15c6604020ef66ba698a70d" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
+  <block id="80ca59a22e157477c940f080c9cf1223" category="paragraph"><block ref="b1c06333aab3fa5206e44a440f888650" category="inline-link-macro-rx"></block>。</block>
+  <block id="fa18750d3909d8a2d2d0a22c1611a692" category="paragraph">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）、立即執行「Slow」（慢速）掃描。 <block ref="50748b3ac35725f5f9be1dab9c684e55" category="inline-link-macro-rx"></block>。</block>
 </blocks>
