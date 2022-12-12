@@ -22,15 +22,19 @@ summary: 請完成幾個步驟、以Cloud Data Sense開始掃描Google雲端硬�
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱Google雲端硬碟的必要條件
 [role="quick-margin-para"]
 確認您擁有登入Google雲端硬碟帳戶的管理認證資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 登入Google雲端硬碟帳戶
 [role="quick-margin-para"]
 使用管理使用者認證、登入您要存取的Google雲端硬碟帳戶、將其新增為新的資料來源。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 選取使用者檔案的掃描類型
 [role="quick-margin-para"]
 選取您要對使用者檔案執行的掃描類型；對應或對應及分類。
 
@@ -111,6 +115,7 @@ image:screenshot_compliance_google_drive_select_scan.png["顯示如何選取掃�
 |===
 
 
+.結果
 Cloud Data Sense會開始掃描所新增Google雲端硬碟帳戶中的檔案、結果會顯示在儀表板和其他位置。
 
 

@@ -22,18 +22,22 @@ summary: 請完成幾個步驟、以Cloud Data Sense直接掃描物件儲存區�
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱物件儲存先決條件
 [role="quick-margin-para"]
 您需要有端點URL才能連線至物件儲存服務。
 
 [role="quick-margin-para"]
 您需要從物件儲存供應商取得存取金鑰和秘密金鑰、以便Cloud Data Sense能夠存取儲存區。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense執行個體
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 新增物件儲存服務
 [role="quick-margin-para"]
 將物件儲存服務新增至Cloud Data Sense。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 選取要掃描的儲存區
 [role="quick-margin-para"]
 選取您要掃描的儲存區、Cloud Data Sense將開始掃描。
 
@@ -83,6 +87,7 @@ image:screenshot_compliance_add_object_storage.png["對話方塊的快照、您�
 
 
 
+.結果
 新的物件儲存服務會新增至工作環境清單。
 
 
@@ -116,4 +121,5 @@ image:screenshot_compliance_object_storage_select_buckets.png["選取您要掃�
 |===
 
 
+.結果
 Cloud Data Sense會開始掃描您啟用的儲存區。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。

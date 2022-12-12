@@ -31,7 +31,7 @@ summary: 請完成幾個步驟、在內部部署站台的主機上部署Cloud Da
 * 使用簡易儲存服務（S3）傳輸協定的物件儲存設備
 
 
-如果您需要非常安全的BlueXP安裝、但又想要從OneDrive帳戶或SharePoint Online帳戶掃描本機資料、則可以使用Data Sense離線安裝程式、並提供網際網路存取功能給少數幾個選定的端點。請參閱  and OneDrive special requirements,SharePoint和OneDrive的特殊需求 以取得詳細資料。
+如果您需要非常安全的BlueXP安裝、但又想要從OneDrive帳戶或SharePoint Online帳戶掃描本機資料、則可以使用Data Sense離線安裝程式、並提供網際網路存取功能給少數幾個選定的端點。請參閱 <<SharePoint和OneDrive的特殊需求,SharePoint和OneDrive的特殊需求>> 以取得詳細資料。
 
 當Data Sense部署在黑暗的站台時、目前不支援掃描Cloud Volumes ONTAP 功能的支援功能包括：適用於Azure NetApp Files 下列項目的功能：適用於ONTAP 支援功能的功能：
 
@@ -48,7 +48,7 @@ summary: 請完成幾個步驟、在內部部署站台的主機上部署Cloud Da
 * 接收使用者意見反應
 * 從BlueXP自動升級軟體
 +
-BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 link:whats-new.html["Cloud Data Sense版本說明"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行  Data Sense software,升級您的Data Sense軟體。
+BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 link:whats-new.html["Cloud Data Sense版本說明"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 <<升級Data Sense軟體,升級您的Data Sense軟體>>。
 
 
 
@@ -58,15 +58,19 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 安裝BlueXP Connector
 [role="quick-margin-para"]
 如果您的離線內部部署站台上尚未安裝Connector、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["部署Connector"^] 現在就在Linux主機上。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 檢閱資料感知先決條件
 [role="quick-margin-para"]
-確保您的Linux系統符合  the Linux host system,主機需求、並已安裝所有必要的軟體、而且您的離線環境符合所需  BlueXP and Data Sense prerequisites,權限與連線能力。
+確保您的Linux系統符合 <<準備Linux主機系統,主機需求>>、並已安裝所有必要的軟體、而且您的離線環境符合所需 <<驗證BlueXP和Data Sense必要條件,權限與連線能力>>。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 下載並部署Data Sense
 [role="quick-margin-para"]
 從NetApp支援網站下載Cloud Data Sense軟體、並將安裝程式檔案複製到您打算使用的Linux主機。然後啟動安裝精靈、並依照提示部署Cloud Data Sense執行個體。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 訂閱Cloud Data Sense服務
 [role="quick-margin-para"]
 在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。NetApp需要BYOL授權、才能在該點之後繼續掃描資料。
 
@@ -82,30 +86,46 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 
 資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
 
-* 作業系統：Red Hat Enterprise Linux或CentOS 8.0至8.6.版
+* *作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.6.版
 +
 ** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
-** 作業系統必須能夠安裝Docker Engine（例如、視需要停用_firewalld_服務）
+** 作業系統必須能夠安裝Docker Engine
 
 
-* 磁碟：SSD搭載500 GiB、可在/、或上使用
+* *磁碟*：SSD搭配500 GiB、可在/、或上使用
 +
 ** 100 GiB可在/op
 ** 400 GiB可在/var
 ** 5 GiB、位於/tmp
 
 
-* RAM：64 GB（交換記憶體必須在主機上停用）
-* CPU：16核心
+* * RAM*：64 GB（交換記憶體必須在主機上停用）
+* * CPU*：16核心
 +
 請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
 
+* *其他軟體*：您必須先在主機上安裝下列軟體、才能安裝Data Sense：
++
+** Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
+** Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 
 
-在安裝Data Sense之前、您必須先在主機上安裝下列軟體：
+* * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝Data Sense之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此它能與Data Sense相容：
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-service=mysql
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --permanent --add-port=555/tcp
+firewall-cmd --permanent --add-port=3306/tcp
+firewall-cmd --reload
+....
++
+如果您啟用 `firewalld` 安裝Data Sense之後、您必須重新啟動Docker。
 
-* Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
-* Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 
 
 
@@ -117,14 +137,7 @@ NOTE: 安裝後、無法變更Data Sense主機系統的IP位址。
 
 在部署Cloud Data Sense之前、請先檢閱下列先決條件、確定您擁有支援的組態。
 
-* 確保BlueXP擁有部署資源的權限、並為Cloud Data Sense執行個體建立安全群組。
-* 確認BlueXP Connector可以存取Data Sense執行個體。連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。
-+
-此連線可部署Data Sense執行個體、並可讓您檢視法規遵循與治理資訊。
-
-+
-請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。
-
+* 確保Connector擁有部署資源的權限、並為Cloud Data Sense執行個體建立安全群組。您可以在中找到最新的BlueXP權限 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
 * 確保雲端資料認證能夠持續運作。Cloud Data Sense執行個體必須持續運作、才能持續掃描資料。
 * 確保網頁瀏覽器連線至Cloud Data Sense。啟用Cloud Data Sense之後、請確保使用者從連線至Data Sense執行個體的主機存取BlueXP介面。
 +
@@ -134,11 +147,66 @@ Data Sense執行個體使用私有IP位址、確保其他人無法存取索引�
 
 
 
+== 確認已啟用所有必要的連接埠
+
+您必須確保所有必要的連接埠都已開啟、以便在Connector、Data Sense、Active Directory和資料來源之間進行通訊。
+
+[cols="25,25,50"]
+|===
+| 連線類型 | 連接埠 | 說明 
+
+
+| 連接器<>資料感知 | 8080（TCP）、443（TCP）及80 | 連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。 
+
+
+| 連接器<> ONTAP -叢集（NAS） | 443（TCP）  a| 
+BlueXP會使用ONTAP HTTPS探索叢集。如果使用自訂防火牆原則、則必須符合下列需求：
+
+* 連接器主機必須允許透過連接埠 443 進行傳出 HTTPS 存取。如果 Connector 位於雲端、則預先定義的安全性群組會允許所有傳出通訊。
+* 這個支援叢集必須允許透過連接埠 443 進行傳入 HTTPS 存取。 ONTAP預設的「管理」防火牆原則允許從所有 IP 位址進行傳入 HTTPS 存取。如果您修改此預設原則、或是建立自己的防火牆原則、則必須將 HTTPS 傳輸協定與該原則建立關聯、並啟用從 Connector 主機存取。
+
+
+
+
+| 資料感知<> ONTAP  a| 
+* NFS：111（TCP\udp）和2049（TCP\udp）
+* 適用於CIFS - 139（TCP\udp）和445（TCP\udp）
+
+ a| 
+Data Sense需要網路連線到Cloud Volumes ONTAP 每個子網路或內部ONTAP 的系統。適用於此功能的安全群組Cloud Volumes ONTAP 必須允許來自Data Sense執行個體的傳入連線。
+
+請確定這些連接埠已開放給Data Sense執行個體：
+
+* NFS：111和2049
+* 適用於CIFS - 139和445
+
+
+NFS Volume匯出原則必須允許從Data Sense執行個體存取。
+
+
+
+| 資料感知<> Active Directory | 389（TCP與udp）、636（TCP）、3268（TCP）和3269（TCP）  a| 
+您必須已為公司中的使用者設定Active Directory。此外、Data Sense需要Active Directory認證來掃描CIFS磁碟區。
+
+您必須擁有Active Directory的資訊：
+
+* DNS伺服器IP位址或多個IP位址
+* 伺服器的使用者名稱和密碼
+* 網域名稱（Active Directory名稱）
+* 無論您是否使用安全LDAP（LDAPS）
+* LDAP伺服器連接埠（LDAP一般為389、安全LDAP一般為636）
+
+
+|===
+如果您使用多部Data Sense主機來提供額外的處理能力來掃描資料來源、則必須啟用其他連接埠/傳輸協定。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["請參閱其他連接埠需求"]。
+
+
+
 == SharePoint和OneDrive的特殊需求
 
 當在無法存取網際網路的網站上部署BlueXP和Data Sense時、您可以透過網際網路存取部分選定端點、來掃描SharePoint Online和OneDrive帳戶中的檔案。
 
-SharePoint內部部署帳戶無需提供任何網際網路存取、即可進行掃描。
+可掃描本機安裝的SharePoint內部部署帳戶、而不需提供任何網際網路存取。
 
 [cols="50,50"]
 |===
@@ -148,9 +216,9 @@ SharePoint內部部署帳戶無需提供任何網際網路存取、即可進行�
 | \login.microsoft.com \graph.microsoft.com | 與Microsoft伺服器通訊、以登入所選的線上服務。 
 
 
-| \https://cloudmanager.cloud.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
+| \https://api.bluexp.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
 |===
-只有在初始連線至這些外部服務時、才需要存取_cloudmanager.cloud.netapp.com_。
+只有在初始連線至這些外部服務時、才需要存取_api.bluexp.netapp.com_。
 
 
 
@@ -170,11 +238,11 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["圖表顯示在內部部
 
 在離線環境中的單一內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。
 
-.您需要的是 #8217 ；需要的是什麼
-* 確認您的Linux系統符合  the Linux host system,主機需求。
+.您需要的產品
+* 確認您的Linux系統符合 <<準備Linux主機系統,主機需求>>。
 * 確認您已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
 * 請確定您擁有Linux系統的root權限。
-* 確認您的離線環境符合所需  BlueXP and Data Sense prerequisites,權限與連線能力。
+* 確認您的離線環境符合所需 <<驗證BlueXP和Data Sense必要條件,權限與連線能力>>。
 
 
 .步驟
@@ -238,10 +306,12 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 
 
 
+.結果
 Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安裝可能需要 10 到 20 分鐘。
 
 如果主機與連接器執行個體之間有連接埠8080的連線、您會在BlueXP的「Data Sense（資料感測）」索引標籤中看到安裝進度。
 
+.下一步
 在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
 
 您也可以 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["設定Cloud Data Sense的BYOL授權"] 現在請從「數位錢包」頁面。在資料量超過 1 TB 之前、您將不會付費。
@@ -254,11 +324,11 @@ Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安
 
 在離線環境中的多部內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。
 
-.您需要的是 #8217 ；需要的是什麼
-* 確認Manager和掃描儀節點的所有Linux系統都符合  the Linux host system,主機需求。
+.您需要的產品
+* 確認Manager和掃描儀節點的所有Linux系統都符合 <<準備Linux主機系統,主機需求>>。
 * 確認您已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
 * 請確定您擁有Linux系統的root權限。
-* 確認您的離線環境符合所需  BlueXP and Data Sense prerequisites,權限與連線能力。
+* 確認您的離線環境符合所需 <<驗證BlueXP和Data Sense必要條件,權限與連線能力>>。
 * 您必須擁有要使用的掃描器節點主機的IP位址。
 * 必須在所有主機上啟用下列連接埠和傳輸協定：
 +
@@ -311,8 +381,10 @@ Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安
 
 
 
+.結果
 Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可能需要15至25分鐘。
 
+.下一步
 在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和本機 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
 
 您也可以 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["設定Cloud Data Sense的BYOL授權"] 現在請從「數位錢包」頁面。在資料量超過 1 TB 之前、您將不會付費。
@@ -357,6 +429,7 @@ start_darksite_upgrade.sh
 ----
 
 
+.結果
 Data Sense軟體會在您的主機上進行升級。更新可能需要5到10分鐘的時間。
 
 請注意、如果您已在多個主機系統上部署Data Sense來掃描非常大型的組態、則不需要在掃描器節點上進行升級。

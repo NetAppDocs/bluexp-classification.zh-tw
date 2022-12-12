@@ -22,15 +22,19 @@ summary: 請完成幾個步驟、直接掃描非NetApp NFS或CIFS檔案與Cloud 
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱檔案共用先決條件
 [role="quick-margin-para"]
 若為CIFS（SMB）共用、請確定您擁有存取共用的認證資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense執行個體
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 建立一個群組以保留檔案共用
 [role="quick-margin-para"]
 此群組是您要掃描之檔案共用的容器、會做為這些檔案共用的工作環境名稱。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 新增檔案共用區、然後選取要掃描的共用區
 [role="quick-margin-para"]
 新增您要掃描的檔案共用清單、然後選取掃描類型。一次最多可新增100個檔案共用區。
 
@@ -140,6 +144,7 @@ image:screenshot_compliance_fileshares_add_file_shares.png["「新增檔案共�
 |===
 
 
+.結果
 Cloud Data Sense會開始掃描您新增檔案共用中的檔案、結果會顯示在儀表板和其他位置。
 
 

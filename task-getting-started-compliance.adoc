@@ -22,22 +22,28 @@ summary: 請完成幾個步驟、Cloud Volumes ONTAP 使用Cloud Data Sense開�
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 探索您要掃描的資料來源
 [role="quick-margin-para"]
 在掃描磁碟區之前、您必須先將系統新增為藍圖XP中的工作環境：
 
+[role="quick-margin-list"]
 * 對於供應系統、這些工作環境應該已經可在BlueXP中使用Cloud Volumes ONTAP
 * 對於內部部署 ONTAP 的不全系統、 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXP必須探索ONTAP 整個叢集"^]
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense執行個體
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 啟用Cloud Data Sense並選取要掃描的磁碟區
 [role="quick-margin-para"]
 按一下「*資料感應*」、選取「*組態*」索引標籤、然後啟動特定工作環境中磁碟區的法規遵循掃描。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 確保能夠存取磁碟區
 [role="quick-margin-para"]
 雲端資料感測功能已經啟用、請確定它可以存取所有磁碟區。
 
+[role="quick-margin-list"]
 * Cloud Data Sense執行個體需要網路連線至Cloud Volumes ONTAP 每個子網路或內部ONTAP 的支援系統。
 * 適用於此功能的安全群組Cloud Volumes ONTAP 必須允許來自Data Sense執行個體的傳入連線。
 * 請確定這些連接埠已開放給Data Sense執行個體：
@@ -53,6 +59,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 管理您要掃描的磁碟區
 [role="quick-margin-para"]
 選取或取消選取您要掃描的磁碟區、Cloud Data Sense將會開始或停止掃描。
 
@@ -92,13 +99,14 @@ image:screenshot_cloud_compliance_we_scan_config.png["部署Cloud Data Sense執�
 ** 若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。
 ** 若要自訂每個Volume的掃描、請按一下*或選取每個Volume *的掃描類型、然後選擇您要對應和/或分類的Volume。
 +
-請參閱  and disabling compliance scans on volumes,啟用及停用磁碟區的法規遵循掃描 以取得詳細資料。
+請參閱 <<啟用及停用磁碟區的法規遵循掃描,啟用及停用磁碟區的法規遵循掃描>> 以取得詳細資料。
 
 
 
 . 在確認對話方塊中、按一下*核准*、讓Data Sense開始掃描您的磁碟區。
 
 
+.結果
 Cloud Data Sense會開始掃描您在工作環境中選取的磁碟區。一旦Cloud Data Sense完成初始掃描、就會在「法規遵循」儀表板中顯示結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。
 
 
@@ -196,6 +204,7 @@ NOTE: 只有在標題區域中設定了*地圖*或*地圖與分類*設定之後�
 
 image:screenshot_cloud_compliance_dp_volumes.png["顯示「啟用 DP 磁碟區存取」按鈕的快照、可供您選擇掃描資料保護磁碟區。"]
 
+.步驟
 如果您要掃描這些資料保護磁碟區：
 
 . 按一下頁面頂端的*「Enable Access to DP Volumes」（啟用DP磁碟區存取）*。
@@ -208,9 +217,10 @@ image:screenshot_compliance_dp_cifs_volumes.png["這是兩個啟用 CIFS 資料�
 
 
 
-. 啟動您要掃描的每個 DP Volume  and disabling compliance scans on volumes,啟用其他磁碟區的方式相同。
+. 啟動您要掃描的每個 DP Volume <<啟用及停用磁碟區的法規遵循掃描,啟用其他磁碟區的方式相同>>。
 
 
+.結果
 一旦啟用、Cloud Data Sense便會從每個啟用掃描的DP磁碟區建立NFS共用區。共用匯出原則僅允許從Data Sense執行個體存取。
 
 *附註：*如果您在一開始啟用DP磁碟區存取時沒有CIFS資料保護磁碟區、之後再新增部分資料、則「組態」頁面頂端會出現*「啟用CIFS DP*存取」按鈕。按一下此按鈕並新增 CIFS 認證、以啟用對這些 CIFS DP 磁碟區的存取。

@@ -413,35 +413,26 @@
   <block id="915bca96e4db936d4227065b020aa1cf" category="paragraph">從NetApp支援網站下載Cloud Data Sense軟體、並將安裝程式檔案複製到您打算使用的Linux主機。然後啟動安裝精靈、並依照提示部署Cloud Data Sense執行個體。</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">準備Linux主機系統</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。</block>
-  <block id="1a266a5587d22f934ba784d02d2d2b1f" category="list-text">作業系統必須能夠安裝Docker Engine（例如、視需要停用_firewalld_服務）</block>
-  <block id="e73aeaebf87fd2ee4bfa7ec0d8dd7e26" category="list-text">磁碟：SSD搭載500 GiB、可在/、或上使用</block>
   <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 GiB可在/op</block>
   <block id="f12d2902352feb2353dd1667f55dc293" category="list-text">400 GiB可在/var</block>
   <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">5 GiB、位於/tmp</block>
-  <block id="a5c179e2fdd6f5e7316bce2d986b6a88" category="list-text">RAM：64 GB（交換記憶體必須在主機上停用）</block>
-  <block id="08e13bbbf0255b955820ad8ae3cc8c53" category="list-text">CPU：16核心</block>
   <block id="5da9cb7e92b520a48c2475de5ec9958c" category="inline-link-macro">使用較小的執行個體類型</block>
   <block id="7e3d41c2a56c6d626cd7bcbb65667f41" category="paragraph">請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
-  <block id="5a07c55d314714fa3a36d7f6231d91b2" category="paragraph">在安裝Data Sense之前、您必須先在主機上安裝下列軟體：</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">檢視安裝指示</block>
   <block id="978609569f7aa2ebd2e50aa2d7c3f2da" category="list-text">Docker Engine 19版或更新版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
   <block id="c0ffa5845aefb5e4bb0fa6089bcc513d" category="list-text">Python 3版本3.6或更新版本。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block>。</block>
   <block id="73b95f9cb4d6b028a07c08d4d8325338" category="paragraph">在部署Cloud Data Sense之前、請先檢閱下列先決條件、確定您擁有支援的組態。</block>
-  <block id="94a2fcd6e007496b983d98e326de30eb" category="paragraph">此連線可部署Data Sense執行個體、並可讓您檢視法規遵循與治理資訊。</block>
   <block id="75913c473742502800ae1c0a9a5a93df" category="list-text">確保雲端資料認證能夠持續運作。Cloud Data Sense執行個體必須持續運作、才能持續掃描資料。</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
   <block id="ca31f5af8410452f51d81153fffb5c54" category="cell">\login.microsoft.com \graph.microsoft.com</block>
   <block id="bea203a1b40a7cbfe57a7032625d4eed" category="cell">與Microsoft伺服器通訊、以登入所選的線上服務。</block>
-  <block id="115781a0043a85f8707c5c99fd02dc75" category="cell">\https://cloudmanager.cloud.netapp.com</block>
-  <block id="665921fa8f2b4f0c994ec8d226f8544f" category="paragraph">只有在初始連線至這些外部服務時、才需要存取_cloudmanager.cloud.netapp.com_。</block>
   <block id="8a344d9380d42668324bc0e5df589f1a" category="section-title">部署資料感測</block>
   <block id="92aadc02d249003db0a3c659eb74f06b" category="inline-link-macro">請參閱此處的步驟</block>
   <block id="2e7ee80a6e4d40bc409d4f4893e290bb" category="paragraph">對於一般組態、您將在單一主機系統上安裝軟體。 <block ref="a4f6f244c9fb5caddddb02072a431c59" category="inline-link-macro-rx"></block>。</block>
   <block id="49110f631362d4a9865d9c280368ebb1" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。 <block ref="31dc1b3eda8e489f4f5ca469c6f3d2e1" category="inline-link-macro-rx"></block>。</block>
   <block id="fadc42ee050a70884c159ab263e06542" category="section-title">一般組態的單一主機安裝</block>
   <block id="5320c49fb554169a0a2f10c69a68cde5" category="paragraph">在離線環境中的單一內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要的是 #8217 ；需要的是什麼</block>
   <block id="d709c500efa2b07b31dad2acb1fc7b92" category="list-text">確認您的Linux系統符合 <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>。</block>
   <block id="03d8c71f4932cca67122b714ef67000c" category="list-text">確認您已安裝兩個必要的軟體套件（Docker Engine和Python 3）。</block>
   <block id="7e1fecc0c3cbd38b434a0a6232a69c06" category="list-text">請確定您擁有Linux系統的root權限。</block>
@@ -1151,7 +1142,6 @@
   <block id="5bce28fa8820f7bebc8473b0aaa42f72" category="paragraph">您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些功能較不強大的系統時會有一些限制。</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">系統大小</block>
   <block id="360d214e899b88b8fe54a260668c2f48" category="cell">規格</block>
-  <block id="4fea54070443e1e34b598ddd0474d4cc" category="cell">超大（預設）</block>
   <block id="22fad480ac9ff79ef7e253e26c1bafb9" category="cell">16個CPU、64 GB RAM、500 GB SSD</block>
   <block id="6adf97f83acf6453d4a6a4b1070f3754" category="cell">無</block>
   <block id="87f8a6ab85c9ced3702b4ea641ad4bb5" category="cell">中</block>
@@ -1172,7 +1162,6 @@
   <block id="58707bf2085548306b3864bbada7715a" category="paragraph">Data Sense可掛載NFS和CIFS磁碟區、如同任何其他用戶端一樣連線至資料。NFS 磁碟區會自動以唯讀方式存取、而您需要提供 Active Directory 認證來掃描 CIFS 磁碟區。</block>
   <block id="041dc474a2214d6c773db6f804ec65c7" category="paragraph">在初始掃描之後、Data Sense會持續掃描您的資料、以偵測遞增變更（這也是為何務必保持執行個體的重要性）。</block>
   <block id="3a7d96d307a8facb682992a53315a953" category="paragraph">您可以在磁碟區層級、儲存庫層級、資料庫架構層級、OneDrive使用者層級和SharePoint網站層級啟用和停用掃描。</block>
-  <block id="07319052a199a3efec9e35f531ee2368" category="section-title">對應掃描與分類掃描之間有何差異</block>
   <block id="a6555d8888ac95f7925f179ea7e8d4a8" category="paragraph">下表顯示部分差異：</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">功能</block>
   <block id="5c9335b28e6277ddbe0137f04e5e58a7" category="cell">分類</block>
@@ -1629,9 +1618,7 @@
   <block id="9f95203b9ac2e9ce54061e42c78f9259" category="cell">\https://cognito-idp.us-east-1.amazonaws.com \https://cognito-identity.us-east-1.amazonaws.com \https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \https://customer-data-production.s3.us-west-2.amazonaws.com</block>
   <block id="879c5c0005fb4ccd4c0bfb1e4b2fa5d1" category="cell">讓Cloud Data Sense能夠存取及下載資訊清單和範本、並傳送記錄和數據。</block>
   <block id="68aa91879d1edd6e2d295cced958491d" category="paragraph">* Azure與GCP部署所需的端點：*</block>
-  <block id="a8e9825bc4e10e94d0aa2e9a5f6063bb" category="cell">\https://support.compliance.cloudmanager.cloud.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/</block>
   <block id="5147b0c617e7ed1d50e337cd63b46209" category="cell">提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。</block>
-  <block id="51db659b18130ea2f42d7d3802f59866" category="cell">\https://support.compliance.cloudmanager.cloud.netapp.com/</block>
   <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">NetApp 提供的原則</block>
   <block id="1e4d2fe4f612f57b44ef8e5cef94c206" category="list-text">檢查 vCPU 的限制</block>
   <block id="6009dfe81252cdbe89810207bc79df09" category="inline-link-macro">請參閱所需的執行個體類型</block>
@@ -1887,15 +1874,10 @@
   <block id="0c2ece8552f22362671f28b71520f912" category="paragraph">您也需要符合的Linux系統 <block ref="a2ec304d11350e1ba44149ab8f817c68" category="inline-xref-macro-rx"></block>。</block>
   <block id="c77d213688bea929060b009132bd92bb" category="paragraph">從NetApp支援網站下載Cloud Data Sense軟體、並將安裝程式檔案複製到您打算使用的Linux主機。然後啟動安裝精靈、並依照提示部署Data Sense執行個體。</block>
   <block id="da7bf2e7dc8499e5ac0775b3710a0ae4" category="list-text">在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的連接器。</block>
-  <block id="6eca1a824e059bf4f2eb266bd39b58c5" category="list-text">作業系統必須能夠安裝 Docker 引擎（例如、視需要停用 _firewalld_ 服務）</block>
-  <block id="99d2310654d20771b9bddf3c5bbb5573" category="list-text">Red Hat Enterprise Linux 系統必須在 Red Hat 訂購管理中註冊。如果未註冊、系統將無法在安裝期間存取儲存庫來更新所需的協力廠商軟體。</block>
-  <block id="5225652eff69d3e0f7880ed73e7fa226" category="list-text">主機上必須安裝下列軟體。如果主機上尚未存在、安裝程式會為您安裝軟體：</block>
   <block id="395c76aed45fc268c6d9ca2be5d8b452" category="paragraph">在Linux系統上部署Cloud Data Sense之前、請先檢閱下列先決條件、確定您擁有支援的組態。</block>
   <block id="9c43d511337ac0c672bf80907225f82e" category="list-text">Cloud Data Sense需要傳出網際網路存取。如果您的虛擬或實體網路使用Proxy伺服器進行網際網路存取、請確定Data Sense執行個體具有傳出網際網路存取權限、以聯絡下列端點。</block>
   <block id="f132f9796727cdfbd850e6d1f0af2208" category="cell">\https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm</block>
   <block id="c82303c6d5888ba9f147a501b8fe7f29" category="cell">提供安裝所需的必要套件。</block>
-  <block id="6b6fffa4739e3a43c3841523e378e090" category="list-text">確保Connector與Cloud Data Sense執行個體之間的連線能力。連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。</block>
-  <block id="fe619b22b13f0638b6496d965869898c" category="paragraph">此連線可部署Data Sense執行個體、並可讓您在「Compliance and Governance（法規遵循與治理）」索引標籤中檢視資訊。</block>
   <block id="a2ed9b99c4cd06a57cbda6cfbd6772c3" category="section-title">在內部部署部署Data Sense</block>
   <block id="cdcaeff13fccb06b7b310f6f966ada4f" category="paragraph">對於一般組態、您將在單一主機系統上安裝軟體。 <block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block>。</block>
   <block id="446f633ae412e24a0a66d9d154552c63" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。 <block ref="72f8bc610961b8d2bc734f2ce5e89019" category="inline-xref-macro-rx"></block>。</block>
@@ -1905,7 +1887,6 @@
   <block id="42d1c021036734670ca245849e323735" category="admonition">當Azure NetApp Files 軟體安裝在內部部署環境中時、Cloud Data Sense目前無法掃描S3儲存區、功能區、或FSXfor ONTAP the Sf2。在這種情況下、您需要在雲端和部署獨立的Connector和Data Sense執行個體<block ref="7ef29812cbbbb10ee35427be73d0c671" category="inline-link-rx"></block> 適用於不同的資料來源。</block>
   <block id="34dc49ad79c5d0ec1f3c661ca216a2a5" category="paragraph">在單一內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。</block>
   <block id="7199b645acc24a52b20f838d1ed9b928" category="list-text">（選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果此軟體尚未安裝在系統上、安裝程式將會安裝此軟體。</block>
-  <block id="20239b9e1ff59549b2664ece6e8dde14" category="list-text">如果您使用的是Proxy、而且它正在執行TLS攔截、則必須知道Data Sense Linux系統上儲存TLS CA憑證的路徑。</block>
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">將安裝程式檔案複製到您打算使用的 Linux 主機（使用「 XCP 」或其他方法）。</block>
   <block id="a7f360748435372720f8441cac0e45c8" category="list-text">按一下「*啟動資料感應*」以啟動內部部署精靈。</block>
   <block id="202436dc011fc7327435fdc5f118df63" category="paragraph"><block ref="202436dc011fc7327435fdc5f118df63" category="inline-image-macro-rx" type="image"></block></block>
@@ -2293,7 +2274,6 @@
   <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">您可以「暫停」掃描儲存庫、暫時停止掃描特定內容</block>
   <block id="1c32547b30cc36869742df049964326d" category="inline-link">瞭解如何暫停和繼續掃描</block>
   <block id="686ab925b6e810c9c0fd8f818fda9d3f" category="paragraph">暫停掃描表示「資料感應」不會針對任何新增或變更的磁碟區或儲存區執行未來掃描、但系統仍會提供所有目前的結果。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
-  <block id="74055d71ba1631fb4f3285d57f607264" category="section-title">美國駕駛人的授權資料來自其他三種狀態、可透過Data Sense識別</block>
   <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">Data Sense可識別及分類包含來自印第安納州、紐約州和德州的駕駛授權資料的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">原則現在會傳回符合搜尋條件的目錄</block>
   <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">深入瞭解如何建立原則</block>
@@ -2569,9 +2549,6 @@
   <block id="28312bff8dd6c634a03c918b3596d5f7" category="section-title">安裝BlueXP Connector</block>
   <block id="dd4c90ec72ae39b7ae5e4b23558ad715" category="paragraph">如果您的離線內部部署站台尚未安裝BlueXP Connector、<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> 在離線站台的Linux主機上。</block>
   <block id="0c9e786ebc9e7a7d92ca8bd8ccb639a3" category="section-title">驗證BlueXP和Data Sense必要條件</block>
-  <block id="28b81c1cbcffd9f36e1786c674a34853" category="list-text">確保BlueXP擁有部署資源的權限、並為Cloud Data Sense執行個體建立安全群組。</block>
-  <block id="babc3f71908606e92b8b50a6dbf71db1" category="list-text">確認BlueXP Connector可以存取Data Sense執行個體。連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。</block>
-  <block id="a61f4ab811e77ee3b40d4a874244bdf4" category="paragraph">請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。</block>
   <block id="7c2b9bc82b54ae1bc75bf6e5ec464df1" category="list-text">確保網頁瀏覽器連線至Cloud Data Sense。啟用Cloud Data Sense之後、請確保使用者從連線至Data Sense執行個體的主機存取BlueXP介面。</block>
   <block id="623bbc14fb82c35326b70f6f05086c6b" category="paragraph">Data Sense執行個體使用私有IP位址、確保其他人無法存取索引資料。因此、您用來存取BlueXP的網頁瀏覽器必須連線至該私有IP位址。該連線可能來自與Data Sense執行個體位於同一個網路內的主機。</block>
   <block id="332d093355e8c40301ec0cb1a26d1539" category="paragraph">當在無法存取網際網路的網站上部署BlueXP和Data Sense時、您可以透過網際網路存取部分選定端點、來掃描SharePoint Online和OneDrive帳戶中的檔案。</block>
@@ -2735,7 +2712,6 @@
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
   <block id="cd02721523de57441e385fc64cc693cc" category="list-text">SharePoint內部部署帳戶（SharePoint Server）</block>
-  <block id="4ce17fa0fb7143d2e32c031ba0514f14" category="paragraph">SharePoint內部部署帳戶無需提供任何網際網路存取、即可進行掃描。</block>
   <block id="97f34c43cfd5abbd752382f17f44c9a2" category="list-text">在BlueXP功能表中、按一下*管理&gt;分類*。</block>
   <block id="4bb7a83842b1271682b6be62080707cb" category="list-text">SharePoint Online和內部部署帳戶</block>
   <block id="e83ddd1a0d6942fff435d08a6e6cf089" category="list-text">SharePoint內部部署（SharePoint Server）</block>
@@ -2763,7 +2739,6 @@
   <block id="3aa95927284ca0cd4e7737dd41a53153" category="list-text">來源檔案可在下列資料來源中找到：內部部署ONTAP 的地方使用、Cloud Volumes ONTAP 使用、不只是供參考Azure NetApp Files 、使用、還可選擇供參考、使用、或是使用SharePoint Online。</block>
   <block id="52cd2f737a295e43ee2f51fe52c772a4" category="list-text">對於NFS資料：匯出原則必須以寫入權限定義。</block>
   <block id="2a500e3681b7e207d0d6c159ff2008ab" category="list-text">CIFS資料：CIFS認證需要具有寫入權限。</block>
-  <block id="2657135ace802974c1da59a8b1c975ae" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為Manager節點、而提供額外處理能力的其他系統則稱為掃描器節點。</block>
   <block id="6668c5a05c34ac9059616c249cfb56c8" category="paragraph">安裝Data Sense時、您需要連接器系統的IP位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。</block>
   <block id="054d10b91a2e5ce49cf12f8ebacd96f3" category="section-title">將掃描器節點新增至現有部署</block>
   <block id="0a4316eaec4759a96358821b3d6d871e" category="paragraph">如果您發現需要更多掃描處理能力來掃描資料來源、可以新增更多掃描器節點。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。例如、如果您發現其中一個資料來源的資料量在6個月後增加了兩倍或三倍、您可以新增一個掃描器節點來協助資料掃描。</block>
@@ -2784,15 +2759,11 @@
   <block id="f8655d78a4818956ec9919a65a7f089b" category="list-text">準備將做為掃描儀節點的Linux主機系統</block>
   <block id="c9680eb28f36717df9004e52c8105d05" category="list-text">將Data Sense軟體下載到這些Linux系統</block>
   <block id="c65de7b0c08505f3e13c93ead522765f" category="list-text">在Manager節點上執行命令、以識別掃描儀節點</block>
-  <block id="0f80e57c86ea1bf667a2898a564c0787" category="list-text">請依照步驟在掃描儀節點上部署軟體（並選擇性地為每個掃描儀節點定義「掃描儀群組」）。</block>
   <block id="37151576493b3aebc74476f19e767278" category="list-text">如果您定義了掃描器群組、請在Manager節點上：</block>
   <block id="5a838e350187be3ad79ae1b63fe95a2b" category="list-text">開啟檔案「jobing_for_banner_group_config.yml」、並定義每個掃描器群組要掃描的工作環境</block>
-  <block id="e2e3eb36b60cbca43e892318b81f3968" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：「update_we掃描儀_群組_from _config_file.sh」</block>
   <block id="02d7e4f0f1520dae85025d3974fbed76" category="list-text">請確認適用於掃描儀節點的所有Linux系統均符合 <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>。</block>
   <block id="b24a973a5aa3fefd5ec9cba471feff39" category="list-text">您必須擁有要新增的掃描儀節點主機的IP位址。</block>
   <block id="381a200bbbe3c44cfbf711f7668b21fe" category="list-text">您必須擁有Data Sense Manager節點主機系統的IP位址</block>
-  <block id="9a32f4baaf4784969a37289509630325" category="list-text">您必須擁有連接器系統的IP位址或主機名稱、NetApp帳戶ID、連接器用戶端ID和使用者存取權杖。請參閱下方的_Prerequisite步驟_以取得此資訊。</block>
-  <block id="dc70c7be1ad69578d1109a6df390121c" category="list-text">您必須知道帳戶中每個資料來源的_工作環境ID_。如有您的要求、請聯絡NetApp：ng-contact-data-sense@netapp.com。</block>
   <block id="e498e68245d2d68d5d4b94b2fd3a608f" category="paragraph">請依照下列步驟取得新增掃描器節點所需的NetApp帳戶ID、Connector用戶端ID、Connector伺服器名稱及使用者存取權杖。</block>
   <block id="eabdc901feba22c87ee7a01af9e34801" category="list-text">在BlueXP功能表列中、按一下*帳戶&gt;管理帳戶*。</block>
   <block id="f5ffeabde3d0f311232b751083215871" category="inline-image-macro">藍圖XP帳戶詳細資料的快照。</block>
@@ -2819,10 +2790,8 @@
   <block id="b0c80b9aebe2393782fd3bb0680a791b" category="list-text">貼上並執行您在步驟2中複製的命令。</block>
   <block id="8dd42ed78b27180f93de7913ecab156f" category="paragraph">在所有掃描儀節點上完成安裝、並已加入管理器節點之後、「add_bers_node.sh」指令碼也會完成。安裝可能需要10到20分鐘。</block>
   <block id="ced90f42fe9747f4578603471ea454a3" category="list-text">如果將任何掃描儀節點新增至掃描儀群組、請返回Manager節點並執行下列2項工作：</block>
-  <block id="946503e0cf13fd867381ff9b4e0a1fb1" category="list-text">開啟檔案「/opt/netapp/Datasense/siting_Environ_to _bANer_Group_config.yml」、然後輸入掃描程式群組掃描特定工作環境的對應。您必須取得NetApp每個資料來源的_工作環境ID_（電子郵件：ng-contact-data-sense@netapp.com）。例如、下列項目可將2個工作環境新增至2個掃描器群組：</block>
   <block id="b77072323352dd1724df6d20002eb9f2" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：<block ref="f484d7848213083a72fafef02f452b57" prefix=" " category="inline-code"></block></block>
   <block id="a147b656a2355ffcebd357dcfbb4b53f" category="paragraph">Data Sense是透過Manager和掃描儀節點來設定、可掃描所有資料來源。</block>
-  <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。</block>
   <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">支援掃描SharePoint內部部署帳戶</block>
   <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
   <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">能夠重新掃描多個目錄（資料夾或共用）</block>
@@ -2907,7 +2876,6 @@
   <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">您可以使用兩種方法新增自訂的「個人資料」、以便Data Sense在未來的掃描中識別。如此一來、您就能完整瞭解所有組織檔案中潛在敏感資料所在的位置。</block>
   <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">您可以使用規則運算式（regex）新增個人模式。</block>
   <block id="a7110ffc746d511f3031ce3693e9c099" category="paragraph">這些關鍵字和模式會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="ba4b576d22723dd9b7b37b67a884a8d7" category="inline-link-rx"></block>。</block>
-  <block id="415d8b1f8ef7e8bc1bca29c92bbffb9b" category="list-text">作業系統：Red Hat Enterprise Linux或CentOS 8.0至8.6.版</block>
   <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。</block>
   <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">向您的雲端供應商訂閱BlueXP Marketplace清單、或</block>
   <block id="10d127f1d0ce294ce4f4f8e7ebf6106b" category="paragraph">如果您有嚴格的網路需求、 <block ref="8ee644766673e1cde7b0c260d7a4e2e0" category="inline-link-macro-rx"></block>。</block>
@@ -2932,4 +2900,130 @@
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。</block>
   <block id="cc8b0535948da368f832027c19b7f853" category="list-text">請務必複製上述序號欄位使用的帳戶序號（960xxxx）。這將加速帳戶處理。</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
+  <block id="d9c5a199091edda801a88fd2fdabd9d0" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 探索您ONTAP 想要掃描的FSXfor Sf2檔案系統</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
+  <block id="9ee922543315e2844decc59895db9264" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 部署Cloud Data Sense執行個體</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
+  <block id="075aea6f7a20bbf1a53452659d5f846b" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 啟用Cloud Data Sense並選取要掃描的磁碟區</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">四</block>
+  <block id="a464b933df257e13e398798317ac784a" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 確保能夠存取磁碟區</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">五</block>
+  <block id="2f16858adc0a1e155de180519a9e4591" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 管理您要掃描的磁碟區</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="1b189011c424e8c00ecd3f9bc8925c86" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱資料庫先決條件</block>
+  <block id="9603ea8b40ce9806f5c742bedf6353c3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 新增資料庫伺服器</block>
+  <block id="207288dfb0e2353fa1e1661a7548545e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 選取架構</block>
+  <block id="c23d7a03220a66b375312d608d112a88" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱 OneDrive 先決條件</block>
+  <block id="23a18ac8d262769f514ee754aa942244" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 新增 OneDrive 帳戶</block>
+  <block id="1e91a35a4b5b4c34950343e981ca88b0" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 新增使用者並選取掃描類型</block>
+  <block id="a3f1215a60ced30f6b58ece6e4fb2da2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱檔案共用先決條件</block>
+  <block id="116ef64523fed5112220351fa1d75dc4" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 建立一個群組以保留檔案共用</block>
+  <block id="b66fb4cea2ccd5e683401c9c49dfb560" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 新增檔案共用區、然後選取要掃描的共用區</block>
+  <block id="9af77730e3223116097b8cf1de0a2c1c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝BlueXP Connector</block>
+  <block id="ae52b22627bc20f5bd1f0ae7399f808a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 檢閱資料感知先決條件</block>
+  <block id="5145a29bff9f5d1e0a1fc1ca423ecea3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 下載並部署Data Sense</block>
+  <block id="dc557754b902711b46f03bde4f8cd281" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 訂閱Cloud Data Sense服務</block>
+  <block id="09d9d4a9e8c1c823f1c15443ff20382a" category="list-text">*作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.6.版</block>
+  <block id="369bb58f2fbc4fcfb60a188e89ca29e3" category="list-text">作業系統必須能夠安裝Docker Engine</block>
+  <block id="792c9336a56fa746327b500536c3ac74" category="list-text">*磁碟*：SSD搭配500 GiB、可在/、或上使用</block>
+  <block id="f1c885ee2358fbb418dfe35e68a4002a" category="list-text">* RAM*：64 GB（交換記憶體必須在主機上停用）</block>
+  <block id="1f810cefd66fa5d8c5990d6c051c53a7" category="list-text">* CPU*：16核心</block>
+  <block id="7962e6ebf5c099feb974a40aed988873" category="list-text">*其他軟體*：您必須先在主機上安裝下列軟體、才能安裝Data Sense：</block>
+  <block id="72334fae14a444a21b5a6f8b702612c3" category="list-text">* Firewalld考量事項*：如果您打算使用<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>、建議您在安裝Data Sense之前先啟用此功能。執行下列命令進行設定<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 因此它能與Data Sense相容：</block>
+  <block id="c353e72a0df04595cb1fda2b9283bd9e" category="paragraph">如果您啟用<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 安裝Data Sense之後、您必須重新啟動Docker。</block>
+  <block id="c25a3cd032bae342ac5375b1deef93ba" category="list-text">確保Connector擁有部署資源的權限、並為Cloud Data Sense執行個體建立安全群組。您可以在中找到最新的BlueXP權限<block ref="4d2fb4fece4e907087732c2d95d31be2" category="inline-link-rx"></block>。</block>
+  <block id="5ec77a792038bab65f9bfd97af0b2704" category="section-title">確認已啟用所有必要的連接埠</block>
+  <block id="10d082e3794dbe503739f294f4a9afc1" category="paragraph">您必須確保所有必要的連接埠都已開啟、以便在Connector、Data Sense、Active Directory和資料來源之間進行通訊。</block>
+  <block id="e279c07f8fb282c171724e558925c858" category="cell">連線類型</block>
+  <block id="407c4e9fac86b98147da49acd4fa0d01" category="cell">連接埠</block>
+  <block id="cc383db4435ccdee02fb8c434544fa76" category="cell">連接器&lt;&gt;資料感知</block>
+  <block id="d58ea55d9425e8ef73d976d9662c2616" category="cell">8080（TCP）、443（TCP）及80</block>
+  <block id="13d4e3506d63ac1994aa1227c67e6be8" category="cell">連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。</block>
+  <block id="62e97b929ca433dfe61e82d128653c46" category="cell">連接器&lt;&gt; ONTAP -叢集（NAS）</block>
+  <block id="3a0fddda7e650f4aa4c24cb76fb17af0" category="cell">443（TCP）</block>
+  <block id="7e5d9a5421498db733ec66073d7872b4" category="paragraph">BlueXP會使用ONTAP HTTPS探索叢集。如果使用自訂防火牆原則、則必須符合下列需求：</block>
+  <block id="0ade297321b9ef21e8713a6dcb596f85" category="list-text">連接器主機必須允許透過連接埠 443 進行傳出 HTTPS 存取。如果 Connector 位於雲端、則預先定義的安全性群組會允許所有傳出通訊。</block>
+  <block id="68a31aee6ed17baf7f680ccc49bda595" category="list-text">這個支援叢集必須允許透過連接埠 443 進行傳入 HTTPS 存取。 ONTAP預設的「管理」防火牆原則允許從所有 IP 位址進行傳入 HTTPS 存取。如果您修改此預設原則、或是建立自己的防火牆原則、則必須將 HTTPS 傳輸協定與該原則建立關聯、並啟用從 Connector 主機存取。</block>
+  <block id="561588d748959badef423f0450994d3c" category="cell">資料感知&lt;&gt; ONTAP</block>
+  <block id="241ba9ff87f0666e68fc0cc21f19a8dc" category="list-text">NFS：111（TCP\udp）和2049（TCP\udp）</block>
+  <block id="e1a888256fda414af1e7d195ee9bedbb" category="list-text">適用於CIFS - 139（TCP\udp）和445（TCP\udp）</block>
+  <block id="070b9cca7731737ad3fffbb1795d8b3b" category="paragraph">Data Sense需要網路連線到Cloud Volumes ONTAP 每個子網路或內部ONTAP 的系統。適用於此功能的安全群組Cloud Volumes ONTAP 必須允許來自Data Sense執行個體的傳入連線。</block>
+  <block id="ad7298bcd89281d83eddb3e633b2d082" category="list-text">NFS：111和2049</block>
+  <block id="a48f4e223524f9629ce5ecfebce7e768" category="list-text">適用於CIFS - 139和445</block>
+  <block id="1f454cdc82235ab587a1254b3741587e" category="cell">資料感知&lt;&gt; Active Directory</block>
+  <block id="1b7ccf3735aab9407a71052e40136f7e" category="cell">389（TCP與udp）、636（TCP）、3268（TCP）和3269（TCP）</block>
+  <block id="1cc4b53f433cb999dd9c063df077dcb9" category="paragraph">您必須已為公司中的使用者設定Active Directory。此外、Data Sense需要Active Directory認證來掃描CIFS磁碟區。</block>
+  <block id="4c1d159c6f87e616542feee759bfc905" category="list-text">DNS伺服器IP位址或多個IP位址</block>
+  <block id="196004c131c20b6770256be1148132f8" category="list-text">伺服器的使用者名稱和密碼</block>
+  <block id="baeedc928ad10edb5cbbe96bbe80e8d0" category="inline-link-macro">請參閱其他連接埠需求</block>
+  <block id="502f7dda33435f5064c5b238523eee70" category="paragraph">如果您使用多部Data Sense主機來提供額外的處理能力來掃描資料來源、則必須啟用其他連接埠/傳輸協定。 <block ref="e303a6ed4733e13f7eeaf8613138004c" category="inline-link-macro-rx"></block>。</block>
+  <block id="3bf2456fb220c8f0aea512c206de9dbc" category="paragraph">可掃描本機安裝的SharePoint內部部署帳戶、而不需提供任何網際網路存取。</block>
+  <block id="e1095ff19466581c5274f67123c95036" category="cell">\https://api.bluexp.netapp.com</block>
+  <block id="9cd9b273214587b2412be84cb1a1a42d" category="paragraph">只有在初始連線至這些外部服務時、才需要存取_api.bluexp.netapp.com_。</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
+  <block id="ad5480f838ed67e92fecf7af3cef120d" category="paragraph-title">下一步</block>
+  <block id="86e6b4ce8205c2db3b733482275e7c94" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 探索Azure NetApp Files 您想要掃描的解決方案</block>
+  <block id="2b91239a08044af034941b142fbcb9a9" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 探索您要掃描的資料來源</block>
+  <block id="5f416f277e6c7af36efa90cbe31fdc89" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱SharePoint先決條件</block>
+  <block id="9fe6e2fee7993c52383e8b7d6305217d" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 登入SharePoint帳戶</block>
+  <block id="3c584664ee2c98abe2634d62c3ff9951" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 新增要掃描的SharePoint網站URL</block>
+  <block id="78d0efd6b2c71cba47286de0ff16747c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 建立連接器</block>
+  <block id="dbb438ff0747a3a5f69dfe3d4e6b3d31" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 檢閱先決條件</block>
+  <block id="d8346ab981108a3aa21896d31517b343" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 部署Cloud Data Sense</block>
+  <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\https://support.compliance.api.bluexp.netapp.com/\https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/\https://dseasb33srnrn.cloudfront.net/\https://production.cloudflare.docker.com/</block>
+  <block id="a326c778205842f816c52ca7e63cae5d" category="cell">\https://support.compliance.api.bluexp.netapp.com/</block>
+  <block id="fd69c5cf902969e6fb71d043085ddee6" category="paragraph-title">結果</block>
+  <block id="07325ce7c33806c13a1c0ce3a88fe719" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱Google雲端硬碟的必要條件</block>
+  <block id="2e52dc5a6ab32252278a92ffa97488bb" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 部署Cloud Data Sense</block>
+  <block id="7f3a6165a7d52a388ec786e779b31687" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 登入Google雲端硬碟帳戶</block>
+  <block id="6187258d3b87228cf977d535a5db1ea0" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 選取使用者檔案的掃描類型</block>
+  <block id="1a7c4f8acb1e42cdd7c2f34894fc2a2a" category="cell">大型（預設）</block>
+  <block id="9868eea85c69d464c823a4c7e185121a" category="section-title">對應掃描與分類掃描之間有何差異</block>
+  <block id="c3828ad11edf9a8e2a0d7bd8910b2ad3" category="section-title">2022年12月11日（版本1.18）</block>
+  <block id="329171a5c817ab7ae03a1497aa6d59fa" category="section-title">內部部署安裝增強功能</block>
+  <block id="500b30285e1a741b658bc533a0a125a1" category="paragraph">內部部署Data Sense安裝新增下列增強功能：</block>
+  <block id="bacf3e82e48abd0e39c6a162b4aa7191" category="list-text">在內部部署主機上開始安裝之前、現在會先檢查其他一些先決條件。這有助於確保主機系統100%準備好安裝Data Sense軟體：</block>
+  <block id="ac340636071cd9dc2033767452420aab" category="list-text">測試/var/lib/dDocker、/tmpt和/opt上是否有足夠的空間</block>
+  <block id="8e3833fdafa0cd3a63d1fae40cbd74e9" category="list-text">測試所有必要資料夾的相關權限</block>
+  <block id="36cbb51c271d3c68a01a8599c0fbd2b8" category="list-text">在「組態」頁面中、「工作環境」區段現在會顯示_工作環境ID_和_掃描器群組_名稱。如果您打算使用多個Data Sense主機來提供額外的處理能力來掃描資料來源、則必須知道工作環境ID。</block>
+  <block id="81dbf04e421aa5fa2a4acce5215da760" category="list-text">在「組態」頁面中、新的區段會顯示您已設定的掃描器群組、以及每個群組中的掃描器節點。</block>
+  <block id="73e22396c6474ab27832098f1351b823" category="inline-link">深入瞭解如何在單一主機伺服器和多個主機上安裝Data Sense</block>
+  <block id="7d11de825f5fb48a0194c3826f7e2322" category="paragraph"><block ref="6aec5abc0a91e6bbae2064cb8f81d2dd" category="inline-link-rx"></block>。</block>
+  <block id="13e915b0d4f4c5b06792671c4c55da56" category="section-title">Data Sense可識別來自其他三種狀態的美國駕駛證資料</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">開始之前</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
+  <block id="9c2468c732c2a3c37f5718ed3927f188" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱物件儲存先決條件</block>
+  <block id="fadb1720cdd8a007cefc0f21747a7236" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 新增物件儲存服務</block>
+  <block id="0cf30da5b3284b65f1bd1464a838ef7e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 選取要掃描的儲存區</block>
+  <block id="9abb28e2822a3af34f9b1e46c458bec4" category="paragraph">典型的內部安裝具有下列元件和連線。</block>
+  <block id="f1250c9b73cd8f5ef391e449f0b5dcb4" category="inline-image-macro">所需的BlueXP和網路元件、以及相關連線的圖表。</block>
+  <block id="0b0f1899ec6aba7470224b92502a86ac" category="paragraph"><block ref="0b0f1899ec6aba7470224b92502a86ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="396121a53646ba01890701d692ca845f" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為Manager節點、提供額外處理能力的其他系統稱為「掃描儀節點」。</block>
+  <block id="d2ff672ff3253780b01cf63f61afcc7b" category="paragraph">如果您還沒有連接器、<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在網路或雲端的Linux主機上。</block>
+  <block id="7253a7683e98218c221f39d0f0ad5f29" category="paragraph">您也可以與雲端供應商建立Connector。請參閱<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block>、<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>或<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。</block>
+  <block id="d555b3c4f5c30360fbf950950d34991e" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 下載並部署Cloud Data Sense</block>
+  <block id="e33a78c333a2d3b8efa0e2ba89103793" category="paragraph">您必須先安裝BlueXP Connector、才能安裝及使用Data Sense。在大多數情況下、您可能會先設定Connector、然後才嘗試啟動Cloud Data Sense、因為大多數情況都是如此<block ref="d18edc1f87b2c25c3b9a75b33d4a162f" category="inline-link-rx"></block>但有些情況下您需要立即設定一個。</block>
+  <block id="16e20291df97bd9c6dbb59865aa7c8bd" category="paragraph">若要在雲端供應商環境中建立一個、請參閱<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block>、<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>或<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。</block>
+  <block id="04e234c985524a78187de245502e592b" category="paragraph">資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。Linux主機可以位於您的網路或雲端。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。</block>
+  <block id="5b028b19d86301024ced75afef69e66d" category="list-text">作業系統必須能夠安裝Docker引擎</block>
+  <block id="1c92a0c0cd35f6a2ac3eae778656a791" category="list-text">* Red Hat訂購管理*：Red Hat Enterprise Linux系統必須註冊Red Hat訂購管理。如果未註冊、系統將無法在安裝期間存取儲存庫來更新所需的協力廠商軟體。</block>
+  <block id="33ae97607a5852c9d67f0dadc6c961ca" category="list-text">*其他軟體*：主機上必須安裝下列軟體。如果主機上尚未存在、安裝程式會為您安裝軟體：</block>
+  <block id="f24b544287fed82f5888fff45246cb27" category="paragraph">如果您打算使用其他Data Sense主機、請現在將這些規則新增至您的主要系統：</block>
+  <block id="45359f5e3b3f139065dc03bb1f5eb15f" category="list-text">確認BlueXP Connector具有必要的權限</block>
+  <block id="42c6542c35468a15e7f1803950b9291d" category="list-text">Cloud Data Sense機器必須持續運作、才能持續掃描資料。</block>
+  <block id="7e9d35e7187b767f275e31d6a5cf324c" category="paragraph">如果您使用多部Data Sense主機來提供額外的處理能力來掃描資料來源、則必須啟用其他連接埠/傳輸協定。 <block ref="3be03acda87575f8178f170dc170b26c" category="inline-link-macro-rx"></block>。</block>
+  <block id="3ce88af879db89d6da43dca91e5ac2a6" category="list-text">如果您使用的是Proxy、而且它正在執行TLS攔截、則必須知道Data Sense Linux系統上儲存TLS CA憑證的路徑。</block>
+  <block id="b2fe6e75aa67d3e83769c7fce0162b2e" category="list-text">請依照步驟在掃描儀節點上部署軟體（並選擇性地為某些掃描儀節點定義「掃描儀群組」）。</block>
+  <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
+  <block id="463edc84b77ce25b2bdd37762148629e" category="list-text">您必須擁有連接器系統的IP位址或主機名稱、NetApp帳戶ID、連接器用戶端ID和使用者存取權杖。如果您打算使用掃描器群組、則必須知道帳戶中每個資料來源的工作環境ID。請參閱下方的_Prerequisite步驟_以取得此資訊。</block>
+  <block id="868d9ff1d3a68b958d1cfc9f569a6cd9" category="list-text">如果您使用<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 在您的Data Sense機器上、建議您在安裝Data Sense之前先啟用此功能。執行下列命令進行設定<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 因此它能與Data Sense相容：</block>
+  <block id="a27db93614949e38a138b99356391903" category="paragraph-title">必要步驟</block>
+  <block id="3cdc63cef0cf27689a17ead11a3df89d" category="list-text">如果您打算使用掃描器群組、請從「Data Sense Configuration」（資料感應組態）索引標籤、複製您計畫新增至掃描器群組之每個工作環境的工作環境ID。</block>
+  <block id="b9b2a61802564ecdd67b1afcc2e172cd" category="inline-image-macro">「Data Sense Configuration」（資料感知組態）頁面的工作環境ID快照。</block>
+  <block id="e7576c2663649d382b17d7327bacfa57" category="paragraph"><block ref="e7576c2663649d382b17d7327bacfa57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ac8aa2b1d950b2c2c10b26890f3510f5" category="list-text">開啟檔案「/opt/netapp/Datasense/siting_Environ_to _bANer_Group_config.yml」、然後輸入掃描程式群組掃描特定工作環境的對應。您需要為每個資料來源設定_工作環境ID_。例如、下列項目可將2個工作環境新增至2個掃描器群組：</block>
+  <block id="b4cd0788ed595770d9f52041f8bd5f09" category="paragraph">從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。您可以在「組態」頁面中查看每個工作環境的「掃描器群組」名稱。</block>
+  <block id="ddeaea1d2d5cacbe438413e4143bca6e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 在雲端環境中設定 S3 需求</block>
+  <block id="cb12d258a5a14064728e8b458c732c1e" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 在S3工作環境中啟動Data Sense</block>
 </blocks>

@@ -129,7 +129,7 @@ Data Sense支援NFS 3.x、4.0及4.1版、以及CIFS 1.x、2.0、2.1及3.0版。
 +
 link:task-licensing-datasense.html["瞭解如何取得Cloud Data Sense授權"^]。
 
-* 若要在雲端上安裝Cloud Data Sense、必須部署雲端執行個體、這會導致雲端供應商在部署雲端執行個體時收取費用。請參閱  Cloud Data Sense instance,為每個雲端供應商部署的執行個體類型。如果您在內部部署系統上安裝Data Sense、則不需支付任何費用。
+* 若要在雲端上安裝Cloud Data Sense、必須部署雲端執行個體、這會導致雲端供應商在部署雲端執行個體時收取費用。請參閱 <<Cloud Data Sense執行個體,為每個雲端供應商部署的執行個體類型>>。如果您在內部部署系統上安裝Data Sense、則不需支付任何費用。
 * Cloud Data Sense要求您部署了BlueXP Connector。在許多情況下、由於您在BlueXP中使用的其他儲存設備和服務、您已經擁有Connector。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["為每個雲端供應商部署的執行個體類型"^]。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。
 
 
@@ -185,7 +185,7 @@ TIP: 由於Cloud Data Sense會持續掃描資料、因此執行個體應隨時�
 | 系統大小 | 規格 | 限制 
 
 
-| 超大（預設） | 16個CPU、64 GB RAM、500 GB SSD | 無 
+| 大型（預設） | 16個CPU、64 GB RAM、500 GB SSD | 無 
 
 
 | 中 | 8個CPU、32 GB RAM、200 GB SSD | 掃描速度較慢、最多只能掃描100萬個檔案。 

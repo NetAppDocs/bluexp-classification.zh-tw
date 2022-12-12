@@ -22,18 +22,23 @@ summary: 完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp File
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 探索Azure NetApp Files 您想要掃描的解決方案
 [role="quick-margin-para"]
 在掃描Azure NetApp Files 完所有資料之前、 https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html["必須設定BlueXP以探索組態"^]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense執行個體
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["在BlueXP中部署Cloud Data Sense"^] 如果尚未部署執行個體、
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 啟用Cloud Data Sense並選取要掃描的磁碟區
 [role="quick-margin-para"]
 按一下「 * Compliance * （ * 符合性 * ）」、選取「 * Configuration * （ * 組態 * ）」索引標籤、然後針對特定工作環境中的磁碟區啟動法規遵循掃描。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 確保能夠存取磁碟區
 [role="quick-margin-para"]
 雲端資料感測功能已經啟用、請確定它可以存取所有磁碟區。
 
+[role="quick-margin-list"]
 * Cloud Data Sense執行個體需要網路連線至每Azure NetApp Files 個子網路。
 * 請確定這些連接埠已開放給Data Sense執行個體：
 +
@@ -48,6 +53,7 @@ link:task-deploy-cloud-compliance.html["在BlueXP中部署Cloud Data Sense"^] �
 
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 管理您要掃描的磁碟區
 [role="quick-margin-para"]
 選取或取消選取您要掃描的磁碟區、Cloud Data Sense將會開始或停止掃描。
 
@@ -87,13 +93,14 @@ image:screenshot_cloud_compliance_anf_scan_config.png["部署Cloud Data Sense執
 ** 若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。
 ** 若要自訂每個Volume的掃描、請按一下*或選取每個Volume *的掃描類型、然後選擇您要對應和/或分類的Volume。
 +
-請參閱  and disabling compliance scans on volumes,啟用及停用磁碟區的法規遵循掃描 以取得詳細資料。
+請參閱 <<啟用及停用磁碟區的法規遵循掃描,啟用及停用磁碟區的法規遵循掃描>> 以取得詳細資料。
 
 
 
 . 在確認對話方塊中、按一下*核准*、讓Data Sense開始掃描您的磁碟區。
 
 
+.結果
 Cloud Data Sense會開始掃描您在工作環境中選取的磁碟區。一旦Cloud Data Sense完成初始掃描、就會在「法規遵循」儀表板中顯示結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。
 
 

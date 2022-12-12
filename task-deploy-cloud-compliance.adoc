@@ -24,21 +24,25 @@ summary: 完成幾個步驟、在雲端部署Cloud Data Sense。
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 建立連接器
 [role="quick-margin-para"]
 如果您還沒有連接器、請立即建立連接器。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在GCP中建立連接器"^]。
 
 [role="quick-margin-para"]
 您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在內部部署連接器"^] 在網路或雲端的Linux主機上。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 檢閱先決條件
 [role="quick-margin-para"]
-確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與Cloud Data Sense之間透過連接埠443的連線等。  prerequisites,請參閱完整清單。
+確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與Cloud Data Sense之間透過連接埠443的連線等。 <<檢閱先決條件,請參閱完整清單>>。
 
 [role="quick-margin-para"]
 預設組態需要16個vCPU用於Cloud Data Sense執行個體。請參閱 link:concept-cloud-compliance.html#the-cloud-data-sense-instance["執行個體類型的詳細資料"^]。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 部署Cloud Data Sense
 [role="quick-margin-para"]
 啟動安裝精靈、在雲端部署Cloud Data Sense執行個體。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 訂閱Cloud Data Sense服務
 [role="quick-margin-para"]
 在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。
 
@@ -93,7 +97,7 @@ summary: 完成幾個步驟、在雲端部署Cloud Data Sense。
 | 端點 | 目的 
 
 
-| \https://cloudmanager.cloud.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
+| \https://api.bluexp.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
 
 
 | \https://netapp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
@@ -114,16 +118,16 @@ summary: 完成幾個步驟、在雲端部署Cloud Data Sense。
 | 端點 | 目的 
 
 
-| \https://cloudmanager.cloud.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
+| \https://api.bluexp.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
 
 
 | \https://netapp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
 
 
-| \https://support.compliance.cloudmanager.cloud.netapp.com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
+| \https://support.compliance.api.bluexp.netapp.com/\https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/\https://dseasb33srnrn.cloudfront.net/\https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
 
 
-| \https://support.compliance.cloudmanager.cloud.netapp.com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
+| \https://support.compliance.api.bluexp.netapp.com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
 |===
 --
 確認BlueXP擁有必要的權限:: 確保BlueXP擁有部署資源的權限、並為Cloud Data Sense執行個體建立安全群組。您可以在中找到最新的BlueXP權限 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
@@ -181,8 +185,10 @@ image:screenshot_cloud_compliance_wizard_start.png["Cloud Data Sense精靈的快
 . 部署執行個體後、按一下*繼續進行組態*以移至「_Configuration」頁面。
 
 
+.結果
 BlueXP會在雲端供應商中部署Cloud Data Sense執行個體。
 
+.下一步
 您可以從「組態」頁面選取要掃描的資料來源。
 
 您也可以 link:task-licensing-datasense.html["設定Cloud Data Sense授權"] 目前。在資料量超過 1 TB 之前、您將不會付費。

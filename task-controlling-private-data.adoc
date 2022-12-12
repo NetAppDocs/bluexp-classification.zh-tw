@@ -23,9 +23,9 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 
 image:screenshot_compliance_dashboard.png["Cloud Data Sense儀表板的快照"]
 
-如果您只想查看部分工作環境的資料、  Dashboard data for specific working environments,選擇那些工作環境。
+如果您只想查看部分工作環境的資料、 <<檢視特定工作環境的儀表板資料,選擇那些工作環境>>。
 
-您也可以從「資料調查」頁面篩選結果、並將結果報告下載為 CSV 檔案。請參閱  data in the Data Investigation page,篩選資料調查頁面中的資料 以取得詳細資料。
+您也可以從「資料調查」頁面篩選結果、並將結果報告下載為 CSV 檔案。請參閱 <<篩選資料調查頁面中的資料,篩選資料調查頁面中的資料>> 以取得詳細資料。
 
 
 

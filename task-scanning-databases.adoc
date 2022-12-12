@@ -22,15 +22,19 @@ summary: 請完成幾個步驟、開始使用Cloud Data Sense掃描資料庫架�
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱資料庫先決條件
 [role="quick-margin-para"]
 請確定您的資料庫受到支援、而且您擁有連線至資料庫所需的資訊。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense執行個體
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 新增資料庫伺服器
 [role="quick-margin-para"]
 新增您要存取的資料庫伺服器。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 選取架構
 [role="quick-margin-para"]
 選取您要掃描的架構。
 
@@ -132,4 +136,5 @@ image:screenshot_compliance_select_schemas.png["「掃描組態」頁面的快�
 
 
 
+.結果
 Cloud Data Sense會開始掃描您啟用的資料庫架構。如果有任何錯誤、它們會顯示在「狀態」欄中、以及修正錯誤所需的動作。

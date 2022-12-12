@@ -137,6 +137,7 @@ image:screenshot_compliance_clone_files_dialog.png["顯示「複製檔案」對�
 
 
 
+.結果
 新的複製磁碟區會建立在與來源磁碟區相同的集合體中。
 
 您可以在中檢視複製作業的進度 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
@@ -189,6 +190,7 @@ image:screenshot_compliance_sync_files_dialog.png["顯示「複製檔案」對�
 . 您需要選取目標系統、然後選取（或建立）您打算使用的Data Broker。請從開始檢閱Cloud Sync 《不整合需求 link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html.html["快速入門說明"^]。
 
 
+.結果
 檔案會複製到目標系統、並根據您定義的排程進行同步。如果您選取一次性同步、則只會複製檔案並同步一次。如果您選擇定期同步、則檔案會根據排程進行同步。請注意、如果來源系統新增的檔案符合您使用篩選器建立的查詢、則這些_new檔案將會複製到目的地、並在未來進行同步處理。
 
 請注意Cloud Sync 、從Data Sense中叫用某些常用的功能不再運作：
@@ -315,6 +317,7 @@ image:screenshot_compliance_delete_files_using_policies.png["顯示如何設定�
 
 
 
+.結果
 新原則會出現在原則索引標籤中。符合原則的檔案會在原則執行時每天刪除一次。
 
 您可以在中檢視已刪除的檔案清單 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
