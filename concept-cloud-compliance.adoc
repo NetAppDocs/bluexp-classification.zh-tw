@@ -150,9 +150,6 @@ link:task-licensing-datasense.html["瞭解如何取得Cloud Data Sense授權"^]�
 
 在雲端部署Data Sense時、BlueXP會將執行個體部署在連接器所在的同一子網路中。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["深入瞭解連接器。"^]
 
-
-NOTE: 如果連接器安裝在內部環境中、它會在Cloud Volumes ONTAP 要求中的第一個支援系統相同VPC或vnet中部署Cloud Data Sense執行個體。您也可以在內部安裝Data Sense。
-
 image:diagram_cloud_compliance_instance.png["顯示在雲端供應商中執行的BlueXP執行個體和Cloud Data Sense執行個體的圖表。"]
 
 請注意下列關於預設執行個體的資訊：

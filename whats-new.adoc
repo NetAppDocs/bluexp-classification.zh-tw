@@ -28,12 +28,12 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 * 在內部部署主機上開始安裝之前、現在會先檢查其他一些先決條件。這有助於確保主機系統100%準備好安裝Data Sense軟體：
 +
-** 測試/var/lib/dDocker、/tmpt和/opt上是否有足夠的空間
+** 測試上是否有足夠的空間 `/var/lib/docker`、 `/tmp`和 `/opt`
 ** 測試所有必要資料夾的相關權限
 
 
 * 在「組態」頁面中、「工作環境」區段現在會顯示_工作環境ID_和_掃描器群組_名稱。如果您打算使用多個Data Sense主機來提供額外的處理能力來掃描資料來源、則必須知道工作環境ID。
-* 在「組態」頁面中、新的區段會顯示您已設定的掃描器群組、以及每個群組中的掃描器節點。
+* 此外、在「組態」頁面中、會有一個新區段顯示您已設定的掃描器群組、以及每個群組中的掃描器節點。
 
 
 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html["深入瞭解如何在單一主機伺服器和多個主機上安裝Data Sense"]。

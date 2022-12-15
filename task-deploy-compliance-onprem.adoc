@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: 完成幾個步驟、即可在網路或雲端上可存取網際網路的Linux主機上部署Cloud Data Sense。 
+summary: 完成幾個步驟、即可在網路中的Linux主機或雲端中可存取網際網路的Linux主機上部署Cloud Data Sense。 
 ---
 = 在可存取網際網路的Linux主機上部署Cloud Data Sense
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 完成幾個步驟、即可在網路或雲端上可存取網際網路�
 
 
 [role="lead"]
-完成幾個步驟、即可在網路或雲端上可存取網際網路的Linux主機上部署Cloud Data Sense。
+完成幾個步驟、即可在網路中的Linux主機或雲端中可存取網際網路的Linux主機上部署Cloud Data Sense。
 
 如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、則內部安裝可能是個不錯的選擇、但這並非必要。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。
 
@@ -86,6 +86,8 @@ image:diagram_deploy_onprem_overview.png["所需的BlueXP和網路元件、以�
 
 資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。Linux主機可以位於您的網路或雲端。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
 
+確保雲端資料認證能夠持續運作。Cloud Data Sense機器必須持續運作、才能持續掃描資料。
+
 * *作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.6.版
 +
 ** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
@@ -127,8 +129,8 @@ firewall-cmd --reload
 +
 ....
 firewall-cmd --permanent --add-port=2377/tcp
-firewall-cmd --permanent --add-port=7496/udp
-firewall-cmd --permanent --add-port=7496/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
@@ -141,13 +143,10 @@ NOTE: 安裝後、無法變更Data Sense主機系統的IP位址。
 
 
 
-== 驗證BlueXP和Data Sense必要條件
+== 從Cloud Data Sense啟用傳出網際網路存取
 
-在Linux系統上部署Cloud Data Sense之前、請先檢閱下列先決條件、確定您擁有支援的組態。
+Cloud Data Sense需要傳出網際網路存取。如果您的虛擬或實體網路使用Proxy伺服器進行網際網路存取、請確定Data Sense執行個體具有傳出網際網路存取權限、以聯絡下列端點。
 
-從Cloud Data Sense啟用傳出網際網路存取:: Cloud Data Sense需要傳出網際網路存取。如果您的虛擬或實體網路使用Proxy伺服器進行網際網路存取、請確定Data Sense執行個體具有傳出網際網路存取權限、以聯絡下列端點。
-+
---
 [cols="43,57"]
 |===
 | 端點 | 目的 
@@ -167,17 +166,6 @@ NOTE: 安裝後、無法變更Data Sense主機系統的IP位址。
 
 | \https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | 提供安裝所需的必要套件。 
 |===
---
-確認BlueXP Connector具有必要的權限:: 確保Connector擁有部署資源的權限、並為Cloud Data Sense執行個體建立安全群組。您可以在中找到最新的BlueXP權限 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
-確保雲端資料認證能夠持續運作:: Cloud Data Sense機器必須持續運作、才能持續掃描資料。
-確保網頁瀏覽器連線至Cloud Data Sense:: 啟用Cloud Data Sense之後、請確保使用者從連線至Data Sense執行個體的主機存取BlueXP介面。
-+
---
-Data Sense執行個體使用私有IP位址、確保索引資料無法存取網際網路。因此、您用來存取BlueXP的網頁瀏覽器必須連線至該私有IP位址。這種連線可能來自直接連線至雲端供應商（例如VPN）、或來自與Data Sense執行個體位於同一個網路內的主機。
-
---
-
-
 
 
 == 確認已啟用所有必要的連接埠
@@ -189,13 +177,13 @@ Data Sense執行個體使用私有IP位址、確保索引資料無法存取網�
 | 連線類型 | 連接埠 | 說明 
 
 
-| 連接器<>資料感知 | 8080（TCP）、443（TCP）及80 | 連接器的安全性群組必須允許傳入和傳出經由連接埠443的流量進出Data Sense執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。 
+| 連接器<>資料感知 | 8080（TCP）、443（TCP）及80 | 連接器的防火牆或路由規則必須允許進出連接埠443的傳入和傳出流量進出Data Sense執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。 
 
 
 | 連接器<> ONTAP -叢集（NAS） | 443（TCP）  a| 
 BlueXP會使用ONTAP HTTPS探索叢集。如果使用自訂防火牆原則、則必須符合下列需求：
 
-* 連接器主機必須允許透過連接埠 443 進行傳出 HTTPS 存取。如果 Connector 位於雲端、則預先定義的安全性群組會允許所有傳出通訊。
+* 連接器主機必須允許透過連接埠 443 進行傳出 HTTPS 存取。如果連接器位於雲端、則預先定義的防火牆或路由規則會允許所有傳出通訊。
 * 這個支援叢集必須允許透過連接埠 443 進行傳入 HTTPS 存取。 ONTAP預設的「管理」防火牆原則允許從所有 IP 位址進行傳入 HTTPS 存取。如果您修改此預設原則、或是建立自己的防火牆原則、則必須將 HTTPS 傳輸協定與該原則建立關聯、並啟用從 Connector 主機存取。
 
 
@@ -206,7 +194,7 @@ BlueXP會使用ONTAP HTTPS探索叢集。如果使用自訂防火牆原則、則
 * 適用於CIFS - 139（TCP\udp）和445（TCP\udp）
 
  a| 
-Data Sense需要網路連線到Cloud Volumes ONTAP 每個子網路或內部ONTAP 的系統。適用於此功能的安全群組Cloud Volumes ONTAP 必須允許來自Data Sense執行個體的傳入連線。
+Data Sense需要網路連線到Cloud Volumes ONTAP 每個子網路或內部ONTAP 的系統。適用於此功能的防火牆或路由規則Cloud Volumes ONTAP 必須允許來自Data Sense執行個體的傳入連線。
 
 請確定這些連接埠已開放給Data Sense執行個體：
 
@@ -245,7 +233,7 @@ image:diagram_deploy_onprem_single_host_internet.png["圖表顯示使用內部�
 
 image:diagram_deploy_onprem_multi_host_internet.png["圖表顯示當使用部署在內部部署且可存取網際網路的多個Data Sense執行個體時、您可以掃描的資料來源位置。"]
 
-請參閱 <<準備Linux主機系統,準備Linux主機系統>> 和 <<驗證BlueXP和Data Sense必要條件,檢閱先決條件>> 以取得部署Cloud Data Sense之前的完整需求清單。
+請參閱 <<準備Linux主機系統,準備Linux主機系統>> 和 <<從Cloud Data Sense啟用傳出網際網路存取,檢閱先決條件>> 以取得部署Cloud Data Sense之前的完整需求清單。
 
 只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
 
@@ -263,7 +251,7 @@ NOTE: 當Azure NetApp Files 軟體安裝在內部部署環境中時、Cloud Data
 * （選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果此軟體尚未安裝在系統上、安裝程式將會安裝此軟體。
 * 請確定您擁有Linux系統的root權限。
 * 如果您使用的是Proxy、而且它正在執行TLS攔截、則必須知道Data Sense Linux系統上儲存TLS CA憑證的路徑。
-* 確認您的離線環境符合所需 <<驗證BlueXP和Data Sense必要條件,權限與連線能力>>。
+* 確認您的離線環境符合所需 <<從Cloud Data Sense啟用傳出網際網路存取,權限與連線能力>>。
 
 
 .步驟
@@ -382,7 +370,7 @@ image:diagram_onprem_scanner_groups.png["資料感應掃描程式在指派給不
 * 請確認適用於掃描儀節點的所有Linux系統均符合 <<準備Linux主機系統,主機需求>>。
 * （選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果系統上尚未安裝此軟體、安裝程式將會安裝此軟體。
 * 請確定您擁有Linux系統的root權限。
-* 確認您的環境符合所需 <<驗證BlueXP和Data Sense必要條件,權限與連線能力>>。
+* 確認您的環境符合所需 <<從Cloud Data Sense啟用傳出網際網路存取,權限與連線能力>>。
 * 您必須擁有要新增的掃描儀節點主機的IP位址。
 * 您必須擁有Data Sense Manager節點主機系統的IP位址
 * 您必須擁有連接器系統的IP位址或主機名稱、NetApp帳戶ID、連接器用戶端ID和使用者存取權杖。如果您打算使用掃描器群組、則必須知道帳戶中每個資料來源的工作環境ID。請參閱下方的_Prerequisite步驟_以取得此資訊。
@@ -419,8 +407,8 @@ firewall-cmd --permanent --add-port=80/tcp
 firewall-cmd --permanent --add-port=8080/tcp
 firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --permanent --add-port=2377/tcp
-firewall-cmd --permanent --add-port=7496/udp
-firewall-cmd --permanent --add-port=7496/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 firewall-cmd --reload
 ....
@@ -487,7 +475,7 @@ image:screenshot_client_access_token.png["API說明文件頁面的快照、其�
 
 . 如果將任何掃描儀節點新增至掃描儀群組、請返回Manager節點並執行下列2項工作：
 +
-.. 開啟檔案「/opt/netapp/Datasense/siting_Environ_to _bANer_Group_config.yml」、然後輸入掃描程式群組掃描特定工作環境的對應。您需要為每個資料來源設定_工作環境ID_。例如、下列項目可將2個工作環境新增至2個掃描器群組：
+.. 開啟檔案「/opt/netapp/Datasense/siting_Environ_to _bANer_Group_config.yml」、然後輸入掃描程式群組掃描特定工作環境的對應。您需要為每個資料來源設定_工作環境ID_。例如、下列項目會將2個工作環境新增至「Europe」掃描器群組、將2個新增至「US_USEY」掃描器群組：
 +
 ....
 scanner group:
@@ -511,9 +499,17 @@ scanner group:
 Data Sense是透過Manager和掃描儀節點來設定、可掃描所有資料來源。
 
 .下一步
-從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。您可以在「組態」頁面中查看每個工作環境的「掃描器群組」名稱。
+從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。
 
-您也可以 link:task-licensing-datasense.html["設定Cloud Data Sense授權"] 目前。在資料量超過 1 TB 之前、您將不會付費。
+您可以在「組態」頁面中查看每個工作環境的「掃描器群組」名稱。
+
+image:screenshot_work_env_id.png["「Data Sense Configuration」（資料感知組態）頁面的工作環境ID快照。"]
+
+您也可以在「組態」頁面底部查看所有掃描器群組的清單、以及群組中每個掃描器節點的IP位址和狀態。
+
+image:screenshot_scanner_groups.png["快照會列出群組中所有掃描器群組、以及每個掃描器節點的IP位址。"]
+
+您可以 link:task-licensing-datasense.html["設定Cloud Data Sense授權"] 目前。在資料量超過 1 TB 之前、您將不會付費。
 
 
 
@@ -527,7 +523,7 @@ Data Sense是透過Manager和掃描儀節點來設定、可掃描所有資料來
 * 確認Manager和掃描儀節點的所有Linux系統都符合 <<準備Linux主機系統,主機需求>>。
 * （選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果系統上尚未安裝此軟體、安裝程式將會安裝此軟體。
 * 請確定您擁有Linux系統的root權限。
-* 確認您的環境符合所需 <<驗證BlueXP和Data Sense必要條件,權限與連線能力>>。
+* 確認您的環境符合所需 <<從Cloud Data Sense啟用傳出網際網路存取,權限與連線能力>>。
 * 您必須擁有要使用的掃描器節點主機的IP位址。
 * 必須在所有主機上啟用下列連接埠和傳輸協定：
 +
