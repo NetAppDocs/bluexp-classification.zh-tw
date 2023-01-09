@@ -34,7 +34,9 @@ Cloud Data Sense提供預先定義的參數（例如敏感資訊類型和類別�
 
 === 雲端資料感測如何運作？
 
-Cloud Data Sense會在您的BlueXP系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。Data Sense運用人工智慧和自然語言處理、而非以一般運算式和模式比對為基礎的替代解決方案。Cloud Data Sense使用AI來提供資料的關聯式瞭解、以利準確偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。
+Cloud Data Sense會在您的BlueXP系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。Data Sense運用人工智慧和自然語言處理、而非以一般運算式和模式比對為基礎的替代解決方案。
+
+Cloud Data Sense使用AI來提供資料的關聯式瞭解、以利準確偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。
 
 link:concept-cloud-compliance.html["深入瞭解Cloud Data Sense的運作方式"^]。
 
@@ -185,7 +187,7 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["深入
 
 === 是否有人能存取在我的瀏覽器和Data Sense之間傳送的私有資料？
 
-不可以在瀏覽器與Data Sense執行個體之間傳送的私有資料、會以端點對端點加密加以保護、這表示NetApp與第三方無法讀取。除非您申請並核准存取、否則Data Sense不會與NetApp分享任何資料或結果。
+不可以在瀏覽器和Data Sense執行個體之間傳送的私有資料、會以端點對端點加密來保護、這表示NetApp和第三方無法讀取。除非您申請並核准存取、否則Data Sense不會與NetApp分享任何資料或結果。
 
 
 
@@ -199,7 +201,7 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["深入
 
 === Cloud Data Sense可以傳送通知給我的組織嗎？
 
-是的。搭配原則功能、您可以在原則傳回結果時、將電子郵件警示傳送給BlueXP使用者（每日、每週或每月）、以便取得通知來保護資料。深入瞭解 link:task-org-private-data.html#controlling-your-data-using-policies["原則"^]。
+是的。搭配原則功能、您可以在原則傳回結果時、將電子郵件警示傳送給BlueXP使用者（每日、每週或每月）或任何其他電子郵件地址、以便取得通知來保護資料。深入瞭解 link:task-org-private-data.html#controlling-your-data-using-policies["原則"^]。
 
 您也可以從「治理」頁面和「調查」頁面下載狀態報告、以便在組織內部分享。
 
@@ -207,7 +209,7 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["深入
 
 === Cloud Data Sense是否能搭配我檔案內嵌的AIP標籤運作？
 
-是的。您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） link:https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。
+是的。您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。
 
 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["深入瞭解"^]。
 
@@ -321,7 +323,7 @@ Data Sense只會掃描中繼資料。這對整體資料管理與治理、快速�
 
 === 如果我達到BYOL容量上限、會發生什麼事？
 
-如果您達到BYOL容量限制、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何已掃描資料的相關資訊。只有在您想要減少所掃描的磁碟區數量、使容量使用量可能低於授權限制時、才可使用「組態」頁面。您必須續約BYOL授權、才能重新取得Data Sense的完整存取權。
+如果您達到BYOL容量限制、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何掃描資料的相關資訊。只有在您想要減少所掃描的磁碟區數量、使容量使用量可能低於授權限制時、才可使用「組態」頁面。您必須續約BYOL授權、才能重新取得Data Sense的完整存取權。
 
 
 
@@ -345,7 +347,7 @@ Connector是在雲端帳戶內或內部部署的運算執行個體上執行的�
 * 在內部部署ONTAP 的支援系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶中掃描資料時、您可以在這些雲端位置中使用連接器。
 
 
-因此、如果您在這些位置中有許多資料、您可能需要使用 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個連接器"]。
+因此、如果您在這些位置中有許多資料、您可能需要使用 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個連接器"^]。
 
 
 

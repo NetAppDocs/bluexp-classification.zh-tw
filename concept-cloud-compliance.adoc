@@ -34,7 +34,7 @@ Data Sense提供多種工具、可協助您達成法規遵循目標。您可以�
 * 根據GDPR、CCPA、PCI及HIPAA隱私權法規的要求、識別範圍廣泛的敏感個人資訊。
 * 根據名稱或電子郵件地址回應資料主旨存取要求（DSAR）。
 * 識別資料庫的唯一識別碼是否存在於其他儲存庫中的檔案中、基本上是建立您自己的「個人資料」清單、以在「資料感應」掃描中加以識別。
-* 當檔案包含特定的PII時、透過電子郵件通知BlueXP使用者（您使用定義此條件 link:task-org-private-data.html#controlling-your-data-using-policies["原則"^]）以便決定行動計畫。
+* 當檔案包含特定PII時、透過電子郵件通知特定使用者（您使用定義此條件 link:task-org-private-data.html#controlling-your-data-using-policies["原則"^]）以便決定行動計畫。
 
 
 
@@ -59,7 +59,7 @@ Data Sense提供的工具可協助您降低儲存設備的總體擁有成本（T
 
 * 識別重複或非業務相關的資料、以提高儲存效率。您可以使用此資訊來決定要移動或刪除特定檔案。
 * 刪除看起來不安全或風險太高、無法留在儲存系統中、或是您已識別為重複的檔案。您可以使用_policies自動刪除符合特定條件的檔案。
-* 識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["深入瞭解分層"^]。
+* 識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["深入瞭解Cloud Volumes ONTAP 從NetApp系統分層的相關資訊"^]。 https://docs.netapp.com/us-en/cloud-manager-tiering/concept-cloud-tiering.html["深入瞭解內部部署ONTAP 的資訊系統分層"^]。
 
 
 

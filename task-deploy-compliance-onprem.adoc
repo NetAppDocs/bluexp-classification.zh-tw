@@ -88,7 +88,7 @@ image:diagram_deploy_onprem_overview.png["所需的BlueXP和網路元件、以�
 
 確保雲端資料認證能夠持續運作。Cloud Data Sense機器必須持續運作、才能持續掃描資料。
 
-* *作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.6.版
+* *作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.7版
 +
 ** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
 ** 作業系統必須能夠安裝Docker引擎
@@ -107,7 +107,7 @@ image:diagram_deploy_onprem_overview.png["所需的BlueXP和網路元件、以�
 請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
 
 * * Red Hat訂購管理*：Red Hat Enterprise Linux系統必須註冊Red Hat訂購管理。如果未註冊、系統將無法在安裝期間存取儲存庫來更新所需的協力廠商軟體。
-* *其他軟體*：主機上必須安裝下列軟體。如果主機上尚未存在、安裝程式會為您安裝軟體：
+* *其他軟體*：您必須先在主機上安裝下列軟體、才能安裝Data Sense：
 +
 ** Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
 ** Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
@@ -248,7 +248,7 @@ NOTE: 當Azure NetApp Files 軟體安裝在內部部署環境中時、Cloud Data
 
 .您需要的產品
 * 確認您的Linux系統符合 <<準備Linux主機系統,主機需求>>。
-* （選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果此軟體尚未安裝在系統上、安裝程式將會安裝此軟體。
+* 確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
 * 請確定您擁有Linux系統的root權限。
 * 如果您使用的是Proxy、而且它正在執行TLS攔截、則必須知道Data Sense Linux系統上儲存TLS CA憑證的路徑。
 * 確認您的離線環境符合所需 <<從Cloud Data Sense啟用傳出網際網路存取,權限與連線能力>>。
@@ -368,7 +368,7 @@ image:diagram_onprem_scanner_groups.png["資料感應掃描程式在指派給不
 
 .您需要的產品
 * 請確認適用於掃描儀節點的所有Linux系統均符合 <<準備Linux主機系統,主機需求>>。
-* （選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果系統上尚未安裝此軟體、安裝程式將會安裝此軟體。
+* 確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
 * 請確定您擁有Linux系統的root權限。
 * 確認您的環境符合所需 <<從Cloud Data Sense啟用傳出網際網路存取,權限與連線能力>>。
 * 您必須擁有要新增的掃描儀節點主機的IP位址。
@@ -478,13 +478,15 @@ image:screenshot_client_access_token.png["API說明文件頁面的快照、其�
 .. 開啟檔案「/opt/netapp/Datasense/siting_Environ_to _bANer_Group_config.yml」、然後輸入掃描程式群組掃描特定工作環境的對應。您需要為每個資料來源設定_工作環境ID_。例如、下列項目會將2個工作環境新增至「Europe」掃描器群組、將2個新增至「US_USEY」掃描器群組：
 +
 ....
-scanner group:
+scanner_groups:
  europe:
-   - "working_environment_id1"
-   - "working_environment_id2"
+   working_environments:
+     - "working_environment_id1"
+     - "working_environment_id2"
  united_states:
-   - "working_environment_id3"
-   - "working_environment_id4"
+   working_environments:
+     - "working_environment_id3"
+     - "working_environment_id4"
 ....
 +
 任何未新增至清單的工作環境都會由「預設」群組掃描、您必須在「預設」群組中至少有一個管理程式或掃描器節點。
@@ -521,7 +523,7 @@ image:screenshot_scanner_groups.png["快照會列出群組中所有掃描器群�
 
 .您需要的產品
 * 確認Manager和掃描儀節點的所有Linux系統都符合 <<準備Linux主機系統,主機需求>>。
-* （選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果系統上尚未安裝此軟體、安裝程式將會安裝此軟體。
+* 確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
 * 請確定您擁有Linux系統的root權限。
 * 確認您的環境符合所需 <<從Cloud Data Sense啟用傳出網際網路存取,權限與連線能力>>。
 * 您必須擁有要使用的掃描器節點主機的IP位址。

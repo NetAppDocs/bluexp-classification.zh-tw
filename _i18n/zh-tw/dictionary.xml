@@ -84,7 +84,6 @@
   <block id="2b275eaee13cb00a92bf6cca3d87498e" category="section-title">使用AIP標籤分類資料</block>
   <block id="297d1b6c4f0dca560e7de55a7695e6b4" category="paragraph">您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>。AIP可讓您將標籤套用至內容、以分類及保護文件與檔案。Data Sense可讓您檢視已指派給檔案的標籤、新增標籤至檔案、以及在標籤已經存在時變更標籤。</block>
   <block id="2473b4a68e8fb944fa5afe552e508d00" category="paragraph">Cloud Data Sense支援下列檔案類型中的AIP標籤：.DOC、.DOCX、.PDF、.PPTX、.XLS、 XLSX：</block>
-  <block id="80b4732b42c9c04d16bcddade3a9f773" category="list-text">如果檔案有AIP不再存在的標籤、Cloud Data Sense會將其視為沒有標籤的檔案。</block>
   <block id="96238d4f93a120c69c563c428e826a69" category="section-title">將AIP標籤整合到工作區中</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">需求</block>
   <block id="134b8f00ffb7e15169d315180cdd63ef" category="list-text">您必須擁有帳戶和Azure資訊保護授權。</block>
@@ -258,33 +257,19 @@
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">名稱</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">說明</block>
   <block id="35ba1271dff4019593d3034c929e1bbc" category="cell">邏輯</block>
-  <block id="bb627ad08bda16be7fcbd5d9ac5c68c2" category="cell">S3 公開的私有資料</block>
   <block id="6d8581e73b26d09315e4b727a68517a9" category="cell">S3 物件包含個人或敏感個人資訊、具有開放式公共讀取存取權。</block>
   <block id="9fed1100c53a7ff82737d8ea58a70762" category="cell">S3公開、並包含個人或敏感的個人資訊</block>
-  <block id="9768bf8d35c1624bc02674d01e47437c" category="cell">PCI DSS ： 30 天內的過時資料</block>
   <block id="d9feeb683678a852eb16c7ad8b7bcf31" category="cell">包含信用卡資訊的檔案、上次修改時間超過 30 天。</block>
   <block id="e96296b0712e5a5809c0ef17fe6eb940" category="cell">包含信用卡、最後修改時間超過 30 天</block>
-  <block id="a37ab45c54567a1ed3511db25126b9f5" category="cell">HIPAA – 30 天內過時的資料</block>
   <block id="b73569024ca700234ae0e5e825744c4f" category="cell">包含健全狀況資訊的檔案、上次修改時間超過 30 天。</block>
   <block id="28ba9ca568a4c86b74c28031eceed9cf" category="cell">包含健全狀況資料（定義方式與 HIPAA 報告相同）、最後修改時間超過 30 天</block>
-  <block id="9ff2a34bbcb8bdd9a9e2ea552c1f65c4" category="cell">私有資料： 7 年來已過時</block>
   <block id="0658572f595df4673d537d6a8a8b1a1a" category="cell">包含個人或敏感個人資訊的檔案、上次修改時間是 7 年前。</block>
   <block id="2e54b6ea8f6706e7beb9350d62e23178" category="cell">包含個人或敏感個人資訊的檔案、上次修改時間是 7 年前</block>
-  <block id="245b1cb769234b0bf16b4606f4e3c4e3" category="cell">GDPR –歐洲公民</block>
-  <block id="901ff5eafbbfa39f4535c8c93b55ab1a" category="cell">包含超過 5 個歐盟國家公民識別碼的檔案、或含有歐盟國家公民識別碼的 DB 表格。</block>
-  <block id="6797dffa43cd3b9fb4dbf293f60ec899" category="cell">包含超過 5 個（一）個歐盟公民識別碼的檔案、或含有超過 15% 欄位列的 DB 表格、以及一個國家的歐盟識別碼。（歐洲國家的任何國家識別碼之一。不包括巴西、加州、美國 SSN 、以色列、南非）</block>
-  <block id="76b2ceb7c3304c3d74f8a3c67204664f" category="cell">CCPA –加州居民</block>
-  <block id="a3ca33cb61cb831167e837897d598032" category="cell">包含超過 10 個加州驅動程式授權識別碼或具有此識別碼的 DB 表格的檔案。</block>
-  <block id="f2c60575d291087562b14b07d6a573a5" category="cell">包含 10 多個加州驅動程式授權識別碼的檔案、或包含加州驅動程式授權的 DB 表格</block>
-  <block id="56162cf47a2c6ac40b81b81d2e8a8f6e" category="cell">資料主旨名稱–高風險</block>
   <block id="dc33521f475dd5a7293f3917bf0af42f" category="cell">具有超過 50 個資料主體名稱的檔案。</block>
   <block id="803f715ed99c292cad7695adc28eb9d6" category="cell">具有超過 50 個資料主體名稱的檔案</block>
-  <block id="a2742dcb5483765bc9185da19e4e4287" category="cell">電子郵件地址–高風險</block>
   <block id="692c6580584ac112966355c5be17619f" category="cell">超過 50 個電子郵件地址的檔案、或是超過 50% 列包含電子郵件地址的資料庫欄</block>
-  <block id="43684d46343749eea79e764abdb4b9c8" category="cell">個人資料–高風險</block>
   <block id="f01867afcb6e04d62f44ff0ba1bea1a8" category="cell">具有 20 個以上個人資料識別碼的檔案、或是含有超過 50% 的資料列包含個人資料識別碼的 DB 資料欄。</block>
   <block id="8f08d4145d6e3a493a3fa4cd9e22247f" category="cell">擁有 20 個以上個人資料的檔案、或擁有超過 50% 的資料列包含個人資料的 DB 資料欄</block>
-  <block id="049c171b1dc7d32860afb59cd0dfc6bd" category="cell">敏感的個人資料–高風險</block>
   <block id="9b81ccdb2be13f884e301547dfac52b2" category="cell">具有 20 個以上敏感個人資料識別碼的檔案、或是含有敏感個人資料的資料列超過 50% 的 DB 資料欄。</block>
   <block id="d3566f9763235eb9dbff68cd1220088a" category="cell">具有 20 多個敏感個人資料的檔案、或是擁有超過 50% 的資料列包含敏感個人資料的 DB 資料欄</block>
   <block id="62833e4a62aecb06bdb2de4d651190fb" category="summary">Cloud Data Sense是一項資料治理服務、可掃描資料來源以對應及分類資料、並識別私有資訊。</block>
@@ -934,46 +919,29 @@
   <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">開啟權限</block>
   <block id="11103ebc3d212c95261e2603bcb74624" category="cell">使用者/群組權限</block>
   <block id="7593aaae27016a1a6e673834742f688c" category="cell">檔案擁有者</block>
-  <block id="041e6d70f8356e275da0ead58dccdf88" category="cell">輸入檔案擁有者名稱</block>
   <block id="b021df6aac4654c454f46c77646e745f" category="cell">標籤</block>
   <block id="d9104233b7c0bd37d4c7d710debdd552" category="cell">工作環境類型</block>
   <block id="424c7d928317581f5f55ac74c144b45a" category="cell">工作環境名稱</block>
-  <block id="e9a13f10d7b028f52966f59cde41518f" category="cell">選擇特定的工作環境</block>
   <block id="5da8b466834d55ddcdf18f51655016b9" category="cell">儲存儲存庫</block>
-  <block id="546dfd83236bdaec8635098165334215" category="cell">選取儲存儲存儲存庫、例如磁碟區或架構</block>
   <block id="5da9dcd1cb9325e60a8744a544371fd3" category="cell">檔案路徑</block>
-  <block id="18645e81cac35a5353abf701f8a143b5" category="cell">輸入部分或完整路徑</block>
   <block id="3adbdb3ac060038aa0e6e6c138ef9873" category="cell">類別</block>
   <block id="dad25b649a281b9705d7fbdfc91bb96c" category="inline-link-macro">類別類型</block>
-  <block id="0e44b2b774524434cca65d00db4db5b6" category="cell">選取 <block ref="d4eabbd4fb9268c1389fccae66300714" category="inline-link-macro-rx"></block></block>
   <block id="86171ac828a961155f1ccf4dfa1eb93f" category="cell">敏感度等級</block>
   <block id="d0902d27bce16ddeb2cb9c788db8ddcd" category="cell">個人資料</block>
   <block id="7a3dcbf3ed229470d34578d4f4f6fc43" category="inline-link-macro">個人資料類型</block>
-  <block id="4fcae143243cf4e0c0e7aacf6294e13a" category="cell">選取 <block ref="1b5fb6ede432593c04dc0306b78c1e56" category="inline-link-macro-rx"></block></block>
   <block id="7c65cc06bc9ebcd449c8956bcf440d87" category="cell">敏感個人資料</block>
   <block id="22d9005388d9e535daefed3f2e693f8c" category="inline-link-macro">敏感個人資料的類型</block>
-  <block id="1da3d4bf2d9a543d087ae38adeb8d861" category="cell">選取 <block ref="ea8f57582e4e2ddb4974e03972a326d7" category="inline-link-macro-rx"></block></block>
   <block id="6e264db6b651951b08b9d4e4d7a39d66" category="cell">資料主旨</block>
-  <block id="94e2cf1b9ae8761f9a169cbf6d254ace" category="cell">輸入資料主旨的完整名稱或已知識別碼</block>
   <block id="e539fd665e202f536325140d87d7bf72" category="cell">檔案類型</block>
   <block id="928f61e49cd944376fa6750b67a9050e" category="inline-link-macro">檔案類型</block>
-  <block id="fd08a48ceb257d93135aef5c0e163610" category="cell">選取 <block ref="4a178e0468c164aff717ffc6699fa1c6" category="inline-link-macro-rx"></block></block>
   <block id="a00fe904aecabd4bff74d8776e6da2c5" category="cell">檔案大小</block>
-  <block id="e191f11e5142cd09289e8b8eb4a444d3" category="cell">選取檔案大小範圍</block>
   <block id="171f0707519d57cefcbb271e1ecffd3c" category="cell">建立時間</block>
-  <block id="94535da589767aed7a3566ffc91b39fd" category="cell">選取檔案建立時的範圍</block>
   <block id="ffee492fc0ef4b414798708835feada8" category="cell">探索到的時間</block>
-  <block id="323788a99ce6208cb1a3416cef2985db" category="cell">選取「Data偵測」探索檔案的範圍</block>
   <block id="84ba4cf46c874b0b5951eb3b75298329" category="cell">上次修改日期</block>
-  <block id="20e7afdbbd33993f4e2e59612e461db1" category="cell">選取上次修改檔案的範圍</block>
   <block id="a9f801b2760a798eee18ba63dccf3ba6" category="cell">上次存取</block>
-  <block id="ea7f521962f8eb77567e2f09e34053c5" category="cell">選取上次存取檔案的範圍。對於Data Sense掃描的檔案類型、這是Data Sense掃描檔案的最後一次。</block>
   <block id="763275034b3bde5ad4f0fb074a35e741" category="cell">重複項目</block>
-  <block id="ee3ae9516151c6012c7652565dfd0088" category="cell">選取檔案是否在儲存庫中重複</block>
   <block id="116279f96a5a5a07b36a9ed5e3b30ae8" category="cell">檔案雜湊</block>
-  <block id="eb173689f884b625c2ebc512044eaa1f" category="cell">輸入檔案的雜湊以尋找特定檔案、即使名稱不同也沒問題</block>
   <block id="0056a7841e032922f086add6ff46bdf7" category="cell">指派給</block>
-  <block id="91b1c67fd436922743b5db9b97cac01a" category="cell">選取指派檔案的人員名稱</block>
   <block id="34082694d21dbdcfc31e6e32d9fb2b9f" category="list-text">檔案名稱</block>
   <block id="8c16f0464e311229da94de789324309e" category="list-text">位置類型</block>
   <block id="e39236d23fb63bab78a9ca2abc0cc5e9" category="list-text">工作環境名稱</block>
@@ -1493,22 +1461,15 @@
   <block id="0ff635b15f7fdd9403b351ffc3d0c2a1" category="section-title">敏感個人資料的類型</block>
   <block id="b14a1801297548a365efb89c7bd8874b" category="paragraph">Cloud Data Sense可在檔案中找到的敏感個人資料包括下列清單。此類別中的項目目前只能以英文辨識。</block>
   <block id="98d51623eb7c03f43fa0678301f5efd4" category="list-text">刑事訴訟程序參考資料</block>
-  <block id="37b32e89145a837709bfc61e3defdf71" category="list-text">關於任何人的刑事定罪和犯罪的資料。</block>
   <block id="369810982fcd806bbde0147f11c0364d" category="list-text">族群參考資料</block>
-  <block id="8919f6c07c25e456aa0ed53b5b10b39e" category="list-text">關於一個人的種族或族裔來源的資料。</block>
   <block id="4d0838c277b16e4c72ecafbaf587b10f" category="list-text">健全狀況參考資料</block>
-  <block id="c9501f4f2cb501d1c74fe64616a839eb" category="list-text">關於自然人健康的資料。</block>
   <block id="f23c75cf09f52ec14b1d9b58cc0fe32c" category="list-text">ICD-9-CM 醫療代碼</block>
   <block id="ea13a98b7046850c04c07db39e39139c" category="list-text">醫療與醫療產業所使用的代碼。</block>
   <block id="94eba79711527a8cc4882b225301c4d1" category="list-text">ICD-10-CM 醫療代碼</block>
   <block id="3a2343e75371abf39ce11f0ae877ef3b" category="list-text">哲學理念參考資料</block>
-  <block id="9e04f8c9855ebe80f93fddbee2924791" category="list-text">關於自然人哲學理念的資料。</block>
   <block id="e02ca0fa6e286458f0e6d2d8ab570cbe" category="list-text">政治意見參考資料</block>
-  <block id="41333852b82ec27222db841d68d4405c" category="list-text">關於天然人物政治見解的資料。</block>
   <block id="9c816fac79e497eaa62bbb4a3adddfc1" category="list-text">《宗教信仰參考》</block>
-  <block id="4202036daa48dbe473aac72c370f5a63" category="list-text">關於自然人的宗教信仰的資料。</block>
   <block id="1126ae684e7f83d7ad03320e3339f2e4" category="list-text">性生活或取向參考資料</block>
-  <block id="a420f1bb8aaa0d65aa0d19afa8ece091" category="list-text">關於自然人性生活或性取向的資料。</block>
   <block id="3b59f947bb18be76ff03ca45ee9db241" category="section-title">類別類型</block>
   <block id="82355eab158a61a75b39fa1ecb5f9d01" category="paragraph">Cloud Data Sense會將您的資料分類如下。這些類別大部分都能以英文、德文和西班牙文辨識。</block>
   <block id="78463a384a5aa4fad5fa73e2f506ecfc" category="cell">英文</block>
@@ -1553,7 +1514,6 @@
   <block id="9909759c6fe8a3f1958ec5ddf2c84149" category="list-text">資料庫與索引檔案</block>
   <block id="5656b1e2824ccc307842bdbfcce33f69" category="list-text">設計檔案</block>
   <block id="b5b1c75f892d4dcc8edd5a8e28d9762a" category="list-text">電子郵件應用程式資料</block>
-  <block id="def09fa4a833717d38298eb37c861af8" category="list-text">加密</block>
   <block id="01d90e538560c2994d5d9c87e034a52a" category="list-text">財務應用程式資料</block>
   <block id="d97029382d191e3f165a54df3d2ffbc9" category="list-text">健全狀況應用程式資料</block>
   <block id="1fff7d0267e317efd36ddf5f7e241931" category="list-text">雜項文件</block>
@@ -1570,7 +1530,6 @@
   <block id="be5edab59de4ea30531374e506b03822" category="list-text">精確性</block>
   <block id="9e9dbe4095e6d9d42f40376813ebf180" category="list-text">已正確識別出Data Sense發現的可能性。例如、 90% 的個人資料精準率表示、在 10 個被識別為包含個人資訊的檔案中、有 9 個檔案實際上包含個人資訊。10 個檔案中有 1 個是誤報的。</block>
   <block id="69eb3025218859c5cdddb82869b9edee" category="list-text">回收</block>
-  <block id="912d74e8bc95d15396c9c506ba3baff2" category="list-text">「資料感測」找到應有的可能性。例如、70%的個人資料回收率表示Data Sense可識別出組織中實際包含個人資訊的10個檔案中的7個。Data Sense會遺漏30%的資料、而且不會出現在儀表板中。</block>
   <block id="3334410b97f8ef448fe29459f3ce91c6" category="paragraph">我們不斷改善結果的準確度。這些改良功能將會在未來的Data Sense版本中自動提供。</block>
   <block id="071b1bc331e11423355c278905f6831a" category="cell">個人資料 - 一般</block>
   <block id="9638a8654641975a891da2b96b1c5edd" category="cell">90% 至 95%</block>
@@ -1683,7 +1642,6 @@
   <block id="ccb037c7d80d63e9af886062cbd4ad64" category="paragraph">如果您日後移除SharePoint網站、或決定不掃描SharePoint網站中的檔案、您可以隨時移除個別SharePoint網站的檔案掃描功能。只要按一下「組態」頁面中的「*移除SharePoint Site*」即可。</block>
   <block id="847f8497652f42ef7fd027f30c4dd069" category="inline-image-macro">螢幕擷取畫面顯示如何移除單一SharePoint網站、使其檔案無法掃描。</block>
   <block id="9fadb22715a72b9017d3b43a7b3177e2" category="paragraph"><block ref="9fadb22715a72b9017d3b43a7b3177e2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a0d932b5085e493a71dbcdcc11a705b4" category="summary">如果您只是想要快速回答問題、這個常見問題集就能幫上忙。</block>
   <block id="eab720ff04548794ffc2cbbd9f06daf4" category="doc">有關Cloud Data Sense的常見問題集</block>
   <block id="64a21279fa6b558777872e8b5865a2ab" category="section-title">什麼是雲端資料意義？</block>
   <block id="71f9b1308ab675e9dd6df174e1a60f18" category="paragraph">Cloud Data Sense提供預先定義的參數（例如敏感資訊類型和類別）、以因應資料隱私和敏感度的新資料法規遵循要求、例如GDPR、CCPA、HIPAA等。</block>
@@ -1715,7 +1673,6 @@
   <block id="1243186ecf08fa3beb624fdea23033c7" category="list-text">隱私權風險評估報告</block>
   <block id="91aef07a29d8068140e7dca06bec6d9d" category="list-text">提供資料的隱私見解和隱私權風險分數。 <block ref="890a798f73fe571345d1ff7c58a08844" category="inline-link-macro-rx"></block>。</block>
   <block id="3a3337f232548d40f54052862077499b" category="list-text">資料主旨存取要求報告</block>
-  <block id="eeec57ad13401b39337794c5e3d5ffa6" category="list-text">可讓您擷取包含資料主旨特定名稱或個人識別碼相關資訊之所有檔案的報告。 <block ref="ce887aadf58ec6a0a140db57b924eac0" category="inline-link-macro-rx"></block>。</block>
   <block id="14167b2f4f95b7ebdb671b9dc719f2b4" category="list-text">PCI DSS 報告</block>
   <block id="39630dece802514e5f7336bcbbf0ac6f" category="list-text">協助您辨識信用卡資訊在檔案之間的發佈情形。 <block ref="ef3bace538be6eee30a3e48516637cf7" category="inline-link-macro-rx"></block>。</block>
   <block id="0fbc5c9a0ab1eecf4064d4ae4ef04fe5" category="list-text">HIPAA 報告</block>
@@ -1739,10 +1696,8 @@
   <block id="7245782d4f1eb0db394d9f1f8ae02b2c" category="paragraph">法規遵循掃描不會將冷資料加熱、而是維持冷態並分層至物件儲存設備。</block>
   <block id="a7865b20d9097d32d555ae9b2251ef31" category="section-title">Cloud Data Sense可以傳送通知給我的組織嗎？</block>
   <block id="0a351d661588dd9301518a85a687c4dc" category="paragraph">您也可以從「治理」頁面和「調查」頁面下載狀態報告、以便在組織內部分享。</block>
-  <block id="dd742fd59ea51a52070d76e5deb35cf8" category="section-title">我可以根據組織的需求自訂服務嗎？</block>
   <block id="eab4d10a40c49ac7fa1a3daf5756345e" category="paragraph">Cloud Data Sense可為您的資料提供隨裝即用的洞見。您可以擷取這些洞見、並將其用於貴組織的需求。</block>
   <block id="2a19be2b476a8e80b3ee67f3237bdef2" category="section-title">Cloud Data Sense是否能搭配我檔案內嵌的AIP標籤運作？</block>
-  <block id="170074f761e651b98302125c2a5a72c1" category="paragraph">是的。您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） <block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。</block>
   <block id="399d9d9194e5aac73d00fdd68d88fed1" category="paragraph"><block ref="d2df47398690701c36c48ad6a1a06ca4" category="inline-link-macro-rx"></block>。</block>
   <block id="883ee475fde85ed340a34ff3e7779a40" category="section-title">我可以將Cloud Data Sense資訊限制在特定使用者身上嗎？</block>
   <block id="70e4204451ab8b7224b342245071bd70" category="paragraph"><block ref="8b78b4503f012c98d9a7bad6859a8875" category="inline-link-macro-rx"></block>。</block>
@@ -1883,7 +1838,6 @@
   <block id="ae8f9609c5884d9f4db4d05e14862cd4" category="inline-link">在連接器之間切換</block>
   <block id="42d1c021036734670ca245849e323735" category="admonition">當Azure NetApp Files 軟體安裝在內部部署環境中時、Cloud Data Sense目前無法掃描S3儲存區、功能區、或FSXfor ONTAP the Sf2。在這種情況下、您需要在雲端和部署獨立的Connector和Data Sense執行個體<block ref="7ef29812cbbbb10ee35427be73d0c671" category="inline-link-rx"></block> 適用於不同的資料來源。</block>
   <block id="34dc49ad79c5d0ec1f3c661ca216a2a5" category="paragraph">在單一內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。</block>
-  <block id="7199b645acc24a52b20f838d1ed9b928" category="list-text">（選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果此軟體尚未安裝在系統上、安裝程式將會安裝此軟體。</block>
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">將安裝程式檔案複製到您打算使用的 Linux 主機（使用「 XCP 」或其他方法）。</block>
   <block id="a7f360748435372720f8441cac0e45c8" category="list-text">按一下「*啟動資料感應*」以啟動內部部署精靈。</block>
   <block id="202436dc011fc7327435fdc5f118df63" category="paragraph"><block ref="202436dc011fc7327435fdc5f118df63" category="inline-image-macro-rx" type="image"></block></block>
@@ -1899,7 +1853,6 @@
   <block id="0a6dc77d8aa2ba619cb18a788482f78a" category="list-text">_ca_cert_dir_= Data Sense Linux系統上包含額外TLS CA憑證套件的路徑。僅當Proxy執行TLS攔截時才需要。</block>
   <block id="92950fbc35dd1c9fdc3896ffb51749bc" category="paragraph">Cloud Data Sense安裝程式會安裝套件、安裝泊塢視窗、註冊安裝、以及安裝Data Sense。安裝可能需要 10 到 20 分鐘。</block>
   <block id="2c340191b330c641363a55766c89b4bf" category="paragraph">在多部內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。</block>
-  <block id="9e1ecd43547b653bae3907b8b91d78bf" category="list-text">（選用）確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。如果系統上尚未安裝此軟體、安裝程式將會安裝此軟體。</block>
   <block id="2f22ab4135a481a1450cf28cb5f05c26" category="list-text">請依照中的步驟1至7進行 <block ref="ca10c193ae29117fbfb6ce9e3e248e8b" category="inline-xref-macro-rx"></block> 在管理器節點上。</block>
   <block id="48e1e343989571ace6bf404a680635d8" category="list-text">如步驟8所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。</block>
   <block id="8b1cdcd166f0c70f7233d0d11c7bddf2" category="paragraph">除了可用於單一主機安裝的變數之外、還會使用新的選項*- n &lt;node_ip&gt;*來指定掃描儀節點的IP位址。多個掃描儀節點IP之間以一個逗號分隔。</block>
@@ -2015,7 +1968,6 @@
   <block id="ddc3aba4eccf7778417b3605919f552e" category="list-text">將資料從舊系統移轉至雲端。</block>
   <block id="d7f674bb407247f888d30ade7b86a73a" category="section-title">Cloud Data Sense支援哪些部署模式？</block>
   <block id="c0f907bdf9a6cc93e97081efb1ad0ba0" category="section-title">是否有人能存取在我的瀏覽器和Data Sense之間傳送的私有資料？</block>
-  <block id="90ecb8f144bb75027d2645db76b9c80e" category="paragraph">不可以在瀏覽器與Data Sense執行個體之間傳送的私有資料、會以端點對端點加密加以保護、這表示NetApp與第三方無法讀取。除非您申請並核准存取、否則Data Sense不會與NetApp分享任何資料或結果。</block>
   <block id="9184420bd7268b81521fe2c0fb829c50" category="paragraph">是的。Cloud Data Sense所提供的資訊可能與貴組織中的其他利害關係人有關、因此我們可讓您產生報告、以分享這些見解。下列報告適用於Data Sense：</block>
   <block id="d998d7b40ffedd2d0b6c4e2cd0e738fb" category="admonition">在資料來源上啟動Cloud Data Sense會立即進行初始掃描。掃描結果會在不久後顯示。</block>
   <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">來源系統和資料類型的類型</block>
@@ -2039,12 +1991,10 @@
   <block id="4aaa082eb5a6a6d38594fed7ac9dfc5c" category="list-text">NetApp的自帶授權（BYOL）</block>
   <block id="d593d438e7fbece83184e3d6d94b77d8" category="paragraph">請參閱<block ref="6bbe1a830896033f3d42bc42c545c572" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="df633ebdc2836fc65b2b5c8df3071fad" category="section-title">如果我達到BYOL容量上限、會發生什麼事？</block>
-  <block id="58455ce9c1fb7906220e35f5849d83c1" category="paragraph">如果您達到BYOL容量限制、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何已掃描資料的相關資訊。只有在您想要減少所掃描的磁碟區數量、使容量使用量可能低於授權限制時、才可使用「組態」頁面。您必須續約BYOL授權、才能重新取得Data Sense的完整存取權。</block>
   <block id="f56912566696fa3cc8524bcac5febbeb" category="section-title">連接器部署</block>
   <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">什麼是Connector？</block>
   <block id="417cf0f3678f81efde443c4a85c2acb8" category="section-title">連接器需要安裝在何處？</block>
   <block id="f4fb039a49b8c7eb94cbf1c2e74a625f" category="list-text">在內部部署ONTAP 的支援系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶中掃描資料時、您可以在這些雲端位置中使用連接器。</block>
-  <block id="47b38df4edf7a31520897ce7498de0a0" category="paragraph">因此、如果您在這些位置中有許多資料、您可能需要使用<block ref="61272ee1a17c9c174cf490124a0940a3" category="inline-link-rx"></block>。</block>
   <block id="0908d2929b9ac231d6e9a69ca517b2e3" category="section-title">我可以在自己的主機上部署Connector嗎？</block>
   <block id="45c9d2d43a741ab63e518aa05e11fa70" category="paragraph">是的。您可以<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在網路或雲端的Linux主機上。如果您打算在內部部署Data Sense、則可能也想在內部部署安裝Connector、但這不是必要的。</block>
   <block id="729ba1cfab33ecb7cda6d642c21b247d" category="section-title">沒有網際網路存取的安全網站又如何？</block>
@@ -2087,12 +2037,8 @@
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive、SharePoint和Google雲端硬碟帳戶、檔案大小上限為4 MB。</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。</block>
   <block id="fe340da6c921cdc51f04bc690aa53387" category="cell">選取原則。行動 <block ref="55cb9da8823849acf874e6889a810e98" category="inline-link-macro-rx"></block> 可查看現有策略列表並創建您自己的自定義策略。</block>
-  <block id="1a81671798e285bd46fa9b2aa3c86d00" category="cell">選取一或多個使用者名稱和/或群組名稱、或輸入部分名稱</block>
-  <block id="c9b82f90ba4459b8fcdadccfbe372539" category="cell">選取 <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> 指派給您的檔案</block>
   <block id="c3a9830be43f6515257f3979e66816fd" category="cell">目錄類型</block>
-  <block id="9091f9c1f743dae16df2f0455ff3be56" category="cell">選取目錄類型：「Share（共用）」或「Folder（資料夾）」</block>
   <block id="f8a85ed4966ec4306b4e58f3bd439410" category="inline-link-macro">標記</block>
-  <block id="2ee519be0f1e6f6176e28f4d0dc72a02" category="cell">選取 <block ref="d459f7b3039eb26458088e9c5f84d9e6" category="inline-link-macro-rx"></block> 指派給您的檔案</block>
   <block id="ce2e33acff157139d73902f7ac835d64" category="summary">請完成幾個步驟、以Cloud Data Sense開始掃描Google雲端硬碟帳戶中的使用者檔案。</block>
   <block id="7516ed4bcabc82b8b67177aff48fb5b0" category="doc">正在掃描Google雲端硬碟帳戶</block>
   <block id="df1a99e8a5c605960dde068efb83d492" category="paragraph">確認您擁有登入Google雲端硬碟帳戶的管理認證資料。</block>
@@ -2143,8 +2089,6 @@
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">篩選資料以檢視特定檔案</block>
   <block id="c7fd320d60c5b92b36ff4a806aef9121" category="paragraph">除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。系統會為已掃描的CIFS和NFS共用、以及OneDrive、SharePoint和Google Drive資料夾建立目錄索引。現在您可以在目錄層級檢視權限並管理資料。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
   <block id="bc80eb794f149fca6a16076a0e09247f" category="list-text">最上層的索引標籤可讓您檢視檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料。</block>
-  <block id="234e430c736f07d10569c360fb740db6" category="cell">選取資料內及資料夾/共用內的權限類型</block>
-  <block id="24f81a8dd0e927be2bf9fb46e2588281" category="paragraph">請注意、「目錄」層級目前不支援按鈕列和原則中可用的動作。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">新增使用者檔案所在的Google雲端硬碟帳戶。如果您想要掃描多位使用者的檔案、您必須為每位使用者執行此步驟。</block>
   <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">現在您可以從「資料調查」頁面下載結果、做為.Json報告</block>
   <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">請參閱如何從「資料調查」頁面建立報告</block>
@@ -2269,7 +2213,6 @@
   <block id="a90ca4eb6ddb2e74f2c65cdc04cc3fbb" category="paragraph">過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。<block ref="b60fb470aa4bdcc4f286155f14ead62c" category="inline-link-rx"></block>。</block>
   <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">您可以「暫停」掃描儲存庫、暫時停止掃描特定內容</block>
   <block id="1c32547b30cc36869742df049964326d" category="inline-link">瞭解如何暫停和繼續掃描</block>
-  <block id="686ab925b6e810c9c0fd8f818fda9d3f" category="paragraph">暫停掃描表示「資料感應」不會針對任何新增或變更的磁碟區或儲存區執行未來掃描、但系統仍會提供所有目前的結果。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
   <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">Data Sense可識別及分類包含來自印第安納州、紐約州和德州的駕駛授權資料的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">原則現在會傳回符合搜尋條件的目錄</block>
   <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">深入瞭解如何建立原則</block>
@@ -2305,7 +2248,6 @@
   <block id="5529cbafb2e0562120cf639c1f822fa6" category="inline-image-macro">按一下「調查結果」之後、可在目錄中找到詳細資訊的快照。</block>
   <block id="886eca0ba693f7fa50ef2d9fe4c0887f" category="paragraph"><block ref="886eca0ba693f7fa50ef2d9fe4c0887f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf5b7f26c8f48a1eb758b47185081250" category="paragraph">Cloud Data Sense會自動識別特殊類型的敏感個人資訊、如隱私權法規所定義<block ref="413dcff8641b851bffd5ca7e45c359a4" category="inline-link-rx"></block>。例如、關於個人健康、族群或性取向的資訊。 <block ref="6507e706b290d038d0deb8cb0d263511" category="inline-link-macro-rx"></block>。Data Sense可在個別檔案、目錄內的檔案（共享區和資料夾）和資料庫表格中識別這類資訊。</block>
-  <block id="a3e2b4b381ddb4550a30923ee80c5bd7" category="cell">選取敏感度等級：個人、敏感個人或不敏感</block>
   <block id="2c967160785c40cca46a7d4cade36507" category="cell">選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。在目錄中篩選時、Data Sense會將每個資料夾（及子資料夾）中所有檔案的相符項目總計一次。</block>
   <block id="c82ffa722bb30ecf26aa93c8c1f6491b" category="paragraph">或者、您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在來源位置建立一個名為「&lt;fileName（檔案名稱）&gt;-breadcrumb-&lt;date（日期）&gt;.txt'的階層連結檔案。您可以在對話方塊中新增要新增至階層連結檔案的文字、以指出檔案的移動位置和移動檔案的使用者。</block>
   <block id="e947d88fc82f247e554cf80e35ff0831" category="list-text">在「_Move Files_」（移動檔案_）對話方塊中、輸入NFS共用的名稱、所有選取的檔案將以「&lt;host_name&gt;//&lt;share_path&gt;'的格式移動。</block>
@@ -2319,17 +2261,13 @@
   <block id="ecc7450cf52e0d0d89139603b07ea706" category="paragraph">您可以將游標停留在_掃描狀態_欄中的圖表上、查看每個儲存庫中仍要對應或分類的檔案數目（本範例中為儲存庫）。</block>
   <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">資料庫無法設定為僅對應掃描。資料庫掃描功能可以是關閉或開啟、其中ON等同於Map &amp;分類。</block>
   <block id="ce12cca419124f32a01c6fec5a3be62f" category="list-text">可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本</block>
-  <block id="9308bcab83008e639f95b088d89b11c4" category="cell">澳洲駕駛人授權</block>
   <block id="1ce92447664cc42f3e2c04aaf8570862" category="cell">紐西蘭銀行帳戶</block>
-  <block id="fd9022553098e5fa6a8b25ae3a2dc65d" category="cell">紐西蘭駕駛證</block>
   <block id="2be885677b02540592a1f44b87ee5fb9" category="cell">紐西蘭IRD編號（稅金ID）</block>
-  <block id="52c2b4f82109d0afee40fe69db9a8cbe" category="cell">紐西蘭NHI（國家健康指數）編號 </block>
   <block id="3c266b4db1bf588305e19eddcef36116" category="cell">紐西蘭護照號碼</block>
   <block id="6006377785b7aa3dfed8795e05fbc569" category="section-title">2022年8月7日（1.15版）</block>
   <block id="afae08b9f3014d73a3bf7e0c201b2b36" category="section-title">來自紐西蘭的五種新型個人資料是由Data Sense所識別</block>
   <block id="3b4b0faa54186ef002c6026e97e51a10" category="paragraph">Data Sense可識別及分類包含下列資料類型的檔案：</block>
   <block id="c189819be34e41f0ac712261c4bb10b0" category="list-text">紐西蘭銀行帳戶號碼</block>
-  <block id="57d4e061073cf52ee992a5523c0e31cb" category="list-text">紐西蘭駕駛證號碼</block>
   <block id="c8c8337bd5f0527c7ba4b08117f3d96f" category="paragraph"><block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="8d3dd83a131924f6dd08fdea2d8e7828" category="section-title">能夠新增階層連結檔案、以指出檔案移動的原因</block>
   <block id="e92169a6172fd2cba6d57bfe01aea45a" category="paragraph">當您使用「資料感應」功能將來源檔案移至NFS共用時、現在您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在來源位置建立一個名為「&lt;fileName（檔案名稱）&gt;-breadcrumbsum-&lt;date（日期）&gt;.txt'的階層連結檔案、以顯示檔案的移動位置和移動檔案的使用者。<block ref="c1eac1298d336c56373b10262d37ad96" category="inline-link-rx"></block>。</block>
@@ -2353,9 +2291,7 @@
   <block id="c5a4c30302bcf6c00f47a3aa96512f69" category="paragraph">Cloud Data Sense提供廣泛的搜尋功能、可讓您輕鬆搜尋所有連線來源的特定檔案或資料。Data Sense可讓使用者進行更深入的搜尋、而不只是中繼資料所反映的內容。這項不受語言限制的服務也能讀取檔案、分析各種敏感資料類型、例如名稱和ID。例如、使用者可以搜尋結構化和非結構化的資料儲存區、找出可能從資料庫洩漏到使用者檔案的資料、違反企業原則。搜尋可儲存以供日後使用、並可建立原則以設定頻率搜尋結果並採取行動。</block>
   <block id="079d7156babd96f6ffb88d74b81e0293" category="paragraph">找到感興趣的檔案後、即可列出特性、包括標記、工作環境帳戶、儲存庫、檔案路徑、 類別（從分類）、檔案大小、上次修改、權限狀態、重複項目、 敏感度層級、個人資料、檔案內的敏感資料類型、擁有者、檔案類型、檔案大小、建立時間、 檔案雜湊、是否將資料指派給尋求注意的人員等。篩選條件可用於篩選出不相關的特性。Data Sense也具有RBAC控制項、可在有適當權限時、允許移動或刪除檔案。如果沒有適當的權限存在、則可將工作指派給組織中擁有適當權限的人員。</block>
   <block id="3a88ff6fa01735721c31c271559e1eba" category="paragraph">資料來源可以視覺化呈現、並以圖形方式定義和描繪關係。例如、管理員可以查看整個企業內所有資料來源（內部部署系統、資料庫、檔案共用、S3儲存區、OneDrive、 等）。然後、他們可以複製、移動、刪除及管理資料、以最佳化儲存成本並降低風險。使用者可以查看哪些敏感資料可能會外洩、藉此降低風險、並建立工作來管理強大資料保護的權限。Data Sense也會將所有不同類型的資料進行分類、讓管理員可以根據類型來調查資料、查看對資料採取的行動、以及採取的時間。</block>
-  <block id="38f627c4b21375a40c92925baf7924e3" category="paragraph">掃描效能可能會因網路頻寬和環境中的平均檔案大小而有所不同。也可能取決於主機系統的大小特性（無論是雲端或內部部署）。請參閱 <block ref="ba79215ce103197616664775b93ba86f" category="inline-link-macro-rx"></block> 和 <block ref="1cff0a801d1de3ceb2e474846f005821" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="992e3ca84c2944a0dbcaf7e99231a50e" category="inline-link-macro">瞭解對應與分類掃描之間的差異</block>
-  <block id="def0998b91888f6c8913daf5857514fe" category="paragraph">一開始新增資料來源時、您也可以選擇只執行「對應」掃描、而非完整的「分類」掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。 <block ref="51b8d4ed20a0bce6d8202eb3e674faa5" category="inline-link-macro-rx"></block>。</block>
   <block id="30cedf267127066ad1ae6900fcd4efd6" category="paragraph">在整個環境中使用標準傳輸協定和唯讀權限進行資料感應掃描。針對敏感的業務相關資料、私有資訊及勒索軟體相關問題、會開啟並掃描選取的檔案。</block>
   <block id="6d221b0532f183c43399fe3cf826487d" category="paragraph">是的、這也受到支援。您可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
   <block id="861f912bdc60a9b71f6f643f31234fb5" category="paragraph">Cloud Data Sense使用人工智慧（AI）、自然語言處理（NLP）和機器學習（ML）來瞭解其掃描的內容、以便擷取實體並據此分類內容。這可讓Data Sense提供下列功能領域。</block>
@@ -2374,8 +2310,6 @@
   <block id="5df73f30ee77990aa89c16d3484cbec4" category="paragraph">Data Sense提供的工具可協助您降低儲存設備的總體擁有成本（TCO）。您可以使用Data Sense：</block>
   <block id="17e4f6fc55d9d61a5481011f4bc71a46" category="list-text">識別重複或非業務相關的資料、以提高儲存效率。您可以使用此資訊來決定要移動或刪除特定檔案。</block>
   <block id="1dd59d53f98a1d164f58cb70191c512b" category="list-text">刪除看起來不安全或風險太高、無法留在儲存系統中、或是您已識別為重複的檔案。您可以使用_policies自動刪除符合特定條件的檔案。</block>
-  <block id="4adf15614982e126334e7fcb5609beb6" category="inline-link">深入瞭解分層</block>
-  <block id="2ec592d707b81ee084ad77b364a2f19b" category="list-text">識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。<block ref="1c87834aa441e9ddec7d154f9ed3550f" category="inline-link-rx"></block>。</block>
   <block id="0539321f76da9af4cf373049cff32281" category="section-title">加速資料移轉</block>
   <block id="031851f09928a9ba770d9a60621692bb" category="paragraph">Data Sense可用於在將內部部署資料移轉至公有雲或私有雲之前、先掃描內部部署資料。您可以使用Data Sense：</block>
   <block id="3b53e0b18b32eb9915a9cbf82593a1a1" category="list-text">篩選來源資料（根據超過25種準則）、以便只將所需檔案移至目的地、不必要的資料不會移動。</block>
@@ -2414,7 +2348,6 @@
   <block id="0b674f6afef562ef0fec5869730d7efe" category="paragraph">新增自訂regex的命令語法如下：</block>
   <block id="c0860cd77b783ac8ccb3c6de19266e83" category="paragraph">請注意、我們會測試每個新的regex、以驗證其範圍是否太廣、而且會傳回太多相符項目。如果是這種情況、則會顯示下列記錄訊息：</block>
   <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">範例</block>
-  <block id="1c247fabef1a02cfb25e0c5a09f1ce81" category="paragraph">產品ID是以201開頭的12位數號碼、因此規則運算式是*\b201\d｛9｝\b*。您想要在Data Sense UI中輸入文字、將此模式識別為*內部產品ID*。</block>
   <block id="ce52796a17167ca6f97268ee7baaa0de" category="paragraph">若要查看所有檔案中提及的內部產品ID、請輸入下列命令。</block>
   <block id="1e4b16d4f3c8faa8b0a90ebbeae0a0f7" category="paragraph">下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。</block>
   <block id="5e0b61460f50f9b62d95b060b2f3f8d2" category="inline-image-macro">在「調查結果」窗格中顯示自訂regex結果範例的快照。</block>
@@ -2423,7 +2356,6 @@
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">現在、您可以在資料中新增Data Sense將識別的自訂模式</block>
   <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">安裝後、無法變更Data Sense主機系統的IP位址。</block>
   <block id="766f0d81be7879628bc30bd7367309c3" category="paragraph">您可以從路徑*/ opt / NetApp /資料中心/*執行命令。</block>
-  <block id="4767339e389eb1fa075ecdec5d1ec320" category="paragraph">如果您想要將regex強制新增至Data Sense（資料感測）、您可以使用命令列結尾的*-f*選項、即使我們認為該選項太寬。</block>
   <block id="19f9f2c4f009c255e214b21dae526160" category="paragraph">如果您稍後決定不需要使用Data Sense來識別您輸入為regex的自訂模式、請使用命令中的* deacter*選項來移除每個regex。</block>
   <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（1.16版）</block>
   <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">能夠立即重新掃描儲存庫、以反映檔案中的變更</block>
@@ -2555,15 +2487,11 @@
   <block id="e1b1b617543f2b58f77159919d102775" category="list-text">_cm_host_= BlueXP Connector系統的IP位址或主機名稱。</block>
   <block id="1fb26fce06486e786dfd1a1f7db4dd91" category="paragraph">如果主機與連接器執行個體之間有連接埠8080的連線、您會在BlueXP的「Data Sense（資料感測）」索引標籤中看到安裝進度。</block>
   <block id="4641554e9ff0ab6b08e16160ca0cf9af" category="list-text">您可以將BlueXP使用者指派給特定檔案或多個檔案、以便該人員負責管理檔案。</block>
-  <block id="ac1647b86e9a6db3e5ad68b1e0ba22a9" category="list-text">當某些關鍵原則傳回結果時、您可以傳送電子郵件警示給BlueXP使用者。</block>
   <block id="63b7beb8f794c45da0a0cefd2daaa890" category="paragraph">在您管理AIP標籤之前、您必須先登入現有的Azure帳戶、將AIP標籤功能整合至Cloud Data Sense。一旦啟用、您就能在檔案中管理所有人的AIP標籤 <block ref="590012ab10bd1b63820c3ad5e15aed82" category="inline-link-macro-rx"></block> 在您的BlueXP工作區中。</block>
   <block id="f649bee14ac2bfc4bdf680a6c4d7f933" category="paragraph">請注意、標記不會以AIP標籤是檔案中繼資料一部分的方式新增至檔案。BlueXP使用者使用Cloud Data Sense時會看到這個標記、因此您可以查看檔案是否需要刪除或檢查某種類型的後續追蹤。</block>
   <block id="c38adf84c9ff1f07a9abdc6fc5abfc96" category="paragraph">您可以將BlueXP使用者指派給特定檔案或多個檔案、以便該人員負責該檔案所需的任何後續行動。此功能通常與功能搭配使用、以將自訂狀態標記新增至檔案。</block>
   <block id="53d075953a933a24d0e4c29b6a87ee6e" category="paragraph">請注意、使用者名稱並未新增至檔案作為檔案中繼資料的一部分、而是在使用Cloud Data Sense時、由BlueXP使用者看到。</block>
   <block id="022976657937301218e21398ba9fa972" category="list-text">當某些關鍵原則傳回結果時、請傳送電子郵件警示給BlueXP使用者、以便您取得通知來保護資料</block>
-  <block id="8beb1a28cedad4a62270cd87cb0fb73f" category="list-text">或者、如果您想要將通知電子郵件傳送給BlueXP使用者、請勾選此方塊、然後選擇電子郵件傳送的時間間隔。深入瞭解 <block ref="aa3b63c453483f75d4311c7c0137128e" category="inline-link-macro-rx"></block>。</block>
-  <block id="07a798a9ca59b7a89db396e7fb102645" category="paragraph">當某些關鍵原則傳回結果時、Cloud Data Sense可傳送電子郵件警示給BlueXP使用者、讓您取得通知來保護資料。您可以選擇每天、每週或每月傳送電子郵件通知。</block>
-  <block id="aa9fdbbe260aeca6e8e9574845857dc1" category="list-text">在「Edit Policy（編輯原則）」頁面中、如果您想要將通知電子郵件傳送給BlueXP使用者、請勾選此方塊、然後選擇電子郵件的傳送時間間隔（例如每*週*）。</block>
   <block id="99a08830cf6f1972806c695ac18e69bc" category="list-text">Azure：使用為BlueXP執行個體建立的使用者</block>
   <block id="a5b37e45ed042a9bf7c09bfcc25c3211" category="list-text">GCP：使用為BlueXP執行個體建立的使用者</block>
   <block id="23c0e03df230b1dfa0e16b9d275b80ea" category="list-text">在BlueXP左側導覽功能表中、按一下*管理&gt;分類*。</block>
@@ -2596,13 +2524,11 @@
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服務*：選取問題相關的服務。例如、特定於服務工作流程或功能的技術支援問題的BlueXP。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作環境清單位於您在服務的最上層橫幅中所選的BlueXP帳戶、工作區和Connector範圍內。</block>
   <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">此錯誤可能表示、與該帳戶相關聯的NSS帳戶及記錄公司與BlueXP帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以在「建立案例*」表單頂端查看您的NSS帳戶清單、以找出最適合的項目、或使用下列其中一個選項尋求協助：</block>
-  <block id="fbfd2fbbd4f85dce01ccde33810c06c4" category="paragraph">Cloud Data Sense會在您的BlueXP系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。Data Sense運用人工智慧和自然語言處理、而非以一般運算式和模式比對為基礎的替代解決方案。Cloud Data Sense使用AI來提供資料的關聯式瞭解、以利準確偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。</block>
   <block id="da201fda9b2353c11c65e6451333259b" category="paragraph">Cloud Data Sense是BlueXP的一部分、支援AWS、Azure和GCP。如此一來、您的組織便能在不同的雲端供應商之間統一化隱私權可見度。</block>
   <block id="b75d6d4905807d9feeb30793683fb25c" category="paragraph">BlueXP支援其服務的REST API功能。如果BlueXP不是首選的管理點、雲端資料感應等服務也可透過REST API使用。每個使用者動作都有REST API、可與協力廠商系統整合。</block>
   <block id="9538628b5eb615940770421ce1fdab23" category="paragraph">是的、您可以從AWS、Azure和GCP市場取得BlueXP和Cloud Data Sense。</block>
   <block id="90a9997e0440c020b9b048fe6fd4c2bc" category="paragraph">首先、您需要在BlueXP或內部部署系統上部署Cloud Data Sense執行個體。執行個體之後、您可以從* Data Sense *標籤或選取特定工作環境、在現有的工作環境、資料庫及其他資料來源上啟用服務。</block>
   <block id="60e395d9f5ec11e9e22b10ca11e3901b" category="paragraph">是的、Cloud Data Sense已與BlueXP完全整合。BlueXP使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。</block>
-  <block id="029e2772a2a4cb0ce3e90281c227cf24" category="paragraph">是的。搭配原則功能、您可以在原則傳回結果時、將電子郵件警示傳送給BlueXP使用者（每日、每週或每月）、以便取得通知來保護資料。深入瞭解 <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>。</block>
   <block id="4cc029f3cdd3510dcb1f5fd06a5ab6a8" category="paragraph">Cloud Data Sense可掃描已新增至BlueXP畫版的工作環境中的資料、以及Data Sense可透過網路存取的多種結構化和非結構化資料來源。</block>
   <block id="51a53248ad26463c7bf5cb1ed219cc4b" category="paragraph">使用Cloud Data Sense的成本取決於您要掃描的資料量。資料感測在BlueXP工作區中掃描的前1 TB資料是免費的。達到該限制後、您需要下列其中一項、才能繼續掃描超過1 TB的資料：</block>
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">下列問題與BlueXP Connector有關。</block>
@@ -2611,7 +2537,6 @@
   <block id="0a910e312b49386ea49dd33a91914e80" category="paragraph">是的。您可以將Data Sense軟體安裝在可在網路或雲端存取網際網路的Linux主機上。一切運作方式都一樣、您可以透過BlueXP繼續管理掃描組態和結果。請參閱 <block ref="a7e82d64861a5e64770734ee02976112" category="inline-link-macro-rx"></block> 以取得系統需求和安裝詳細資料。</block>
   <block id="e722a863038d03a6b956233c29a8c9e6" category="summary">Cloud Data Sense是適用於BlueXP的資料治理服務、可掃描企業內部部署與雲端資料來源、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
   <block id="c62d988c2493270126de8287b22e76ac" category="paragraph">Cloud Data Sense是適用於BlueXP（前身為Cloud Manager）的資料治理服務、可掃描企業內部部署與雲端資料來源、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
-  <block id="ec3687c7555fdcc0744e8594fe15048c" category="list-text">當檔案包含特定的PII時、透過電子郵件通知BlueXP使用者（您使用定義此條件 <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>）以便決定行動計畫。</block>
   <block id="629fc635e3b0007019bd6fe0cb5a386c" category="list-text">將自訂標記新增至檔案（例如「需要搬移」）、並指派一個BlueXP使用者、讓該人員擁有檔案的更新。</block>
   <block id="d1f1eb6537084b73d6b1c7485236b667" category="list-text">使用Cloud Data Sense的成本取決於您要掃描的資料量。資料感測在BlueXP工作區中掃描的前1 TB資料是免費的。這包括所有工作環境和資料來源的所有資料。必須訂閱AWS、Azure或GCP Marketplace、或NetApp的BYOL授權、才能在該點之後繼續掃描資料。請參閱<block ref="7a3eda134173271beb15500b84a25151" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="414779643224750f91153e1e93366d7b" category="list-text">Cloud Data Sense要求您部署了BlueXP Connector。在許多情況下、由於您在BlueXP中使用的其他儲存設備和服務、您已經擁有Connector。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。</block>
@@ -2918,7 +2843,6 @@
   <block id="ae52b22627bc20f5bd1f0ae7399f808a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 檢閱資料感知先決條件</block>
   <block id="5145a29bff9f5d1e0a1fc1ca423ecea3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 下載並部署Data Sense</block>
   <block id="dc557754b902711b46f03bde4f8cd281" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 訂閱Cloud Data Sense服務</block>
-  <block id="09d9d4a9e8c1c823f1c15443ff20382a" category="list-text">*作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.6.版</block>
   <block id="369bb58f2fbc4fcfb60a188e89ca29e3" category="list-text">作業系統必須能夠安裝Docker Engine</block>
   <block id="792c9336a56fa746327b500536c3ac74" category="list-text">*磁碟*：SSD搭配500 GiB、可在/、或上使用</block>
   <block id="f1c885ee2358fbb418dfe35e68a4002a" category="list-text">* RAM*：64 GB（交換記憶體必須在主機上停用）</block>
@@ -3000,7 +2924,6 @@
   <block id="04e234c985524a78187de245502e592b" category="paragraph">資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。Linux主機可以位於您的網路或雲端。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。</block>
   <block id="5b028b19d86301024ced75afef69e66d" category="list-text">作業系統必須能夠安裝Docker引擎</block>
   <block id="1c92a0c0cd35f6a2ac3eae778656a791" category="list-text">* Red Hat訂購管理*：Red Hat Enterprise Linux系統必須註冊Red Hat訂購管理。如果未註冊、系統將無法在安裝期間存取儲存庫來更新所需的協力廠商軟體。</block>
-  <block id="33ae97607a5852c9d67f0dadc6c961ca" category="list-text">*其他軟體*：主機上必須安裝下列軟體。如果主機上尚未存在、安裝程式會為您安裝軟體：</block>
   <block id="f24b544287fed82f5888fff45246cb27" category="paragraph">如果您打算使用其他Data Sense主機、請現在將這些規則新增至您的主要系統：</block>
   <block id="7e9d35e7187b767f275e31d6a5cf324c" category="paragraph">如果您使用多部Data Sense主機來提供額外的處理能力來掃描資料來源、則必須啟用其他連接埠/傳輸協定。 <block ref="3be03acda87575f8178f170dc170b26c" category="inline-link-macro-rx"></block>。</block>
   <block id="3ce88af879db89d6da43dca91e5ac2a6" category="list-text">如果您使用的是Proxy、而且它正在執行TLS攔截、則必須知道Data Sense Linux系統上儲存TLS CA憑證的路徑。</block>
@@ -3031,4 +2954,93 @@
   <block id="e046fe016499c2584ccbc85ec4b21f9d" category="inline-image-macro">快照會列出群組中所有掃描器群組、以及每個掃描器節點的IP位址。</block>
   <block id="dace7436ca5a83360d9bbd7d056c44bd" category="paragraph"><block ref="dace7436ca5a83360d9bbd7d056c44bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d780548e828596e2a46211d87c5a2909" category="paragraph">您可以 <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 目前。在資料量超過 1 TB 之前、您將不會付費。</block>
+  <block id="50e51bdb9274c5704404f14dc8b7e114" category="list-text">當檔案包含特定PII時、透過電子郵件通知特定使用者（您使用定義此條件 <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>）以便決定行動計畫。</block>
+  <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">深入瞭解Cloud Volumes ONTAP 從NetApp系統分層的相關資訊</block>
+  <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">深入瞭解內部部署ONTAP 的資訊系統分層</block>
+  <block id="7a120914c03f44c0510fb37c3a4130dd" category="list-text">識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。<block ref="3d81b5b5d603ea4b1368feff62e3ead0" category="inline-link-rx"></block>。<block ref="7352e09cdfe02b104fd014f47f71d967" category="inline-link-rx"></block>。</block>
+  <block id="a33f1b61e65aad9cca86d3578cf3028a" category="cell">選取資料內及資料夾/共用內的權限類型。</block>
+  <block id="81593873baa2c232be0bc3600b554eb3" category="cell">擁有存取權的使用者人數</block>
+  <block id="0ffaed104783fa77dca7b463b63d6a3d" category="cell">選取一或多個類別範圍、以顯示哪些檔案和資料夾已對特定數量的使用者開啟。</block>
+  <block id="71336345482d82fac965748940e9723b" category="cell">選取一或多個使用者名稱和/或群組名稱、或輸入部分名稱。</block>
+  <block id="ff149397e3b0b14099015d624d39c42d" category="cell">輸入檔案擁有者名稱。</block>
+  <block id="5e11b9767e7bd2c58f38d60ac9f67f80" category="cell">選取 <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> 指派給您的檔案。</block>
+  <block id="c670f11fe2007eb5c3be88dd2f27af16" category="cell">選擇特定的工作環境。</block>
+  <block id="5bf1893d83226372ff2fad4fcb1c9ae2" category="cell">選取儲存儲存儲存庫、例如磁碟區或架構。</block>
+  <block id="e980323c9092e1f118449edafa2ceb15" category="cell">輸入最多20個要包含或排除在查詢之外的部分或完整路徑。如果您同時輸入「包含路徑」和「排除路徑」、則「Data Sense」會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。</block>
+  <block id="01c40954af185b794e35d719875d3a7a" category="cell">選取 <block ref="d4eabbd4fb9268c1389fccae66300714" category="inline-link-macro-rx"></block>。</block>
+  <block id="cc8f113115a15a733dabb8452c0006ca" category="cell">選取敏感度等級：個人、敏感個人或不敏感。</block>
+  <block id="858f7504093c180b7179d29d8e1200d9" category="cell">選取 <block ref="1b5fb6ede432593c04dc0306b78c1e56" category="inline-link-macro-rx"></block>。</block>
+  <block id="efbc704c741274e96fb34f9918eea9bc" category="cell">選取 <block ref="ea8f57582e4e2ddb4974e03972a326d7" category="inline-link-macro-rx"></block>。</block>
+  <block id="e9f27357b5c27ea5a56801efd544f2d7" category="cell">輸入資料主旨的完整名稱或已知識別碼。</block>
+  <block id="6dd0ccfe2edc5e0affb1f92d200d803f" category="cell">選取目錄類型：「Share（共用）」或「Folder（資料夾）」。</block>
+  <block id="af1d33c2d159e6129aa8d5cec06d9e66" category="cell">選取 <block ref="4a178e0468c164aff717ffc6699fa1c6" category="inline-link-macro-rx"></block>。</block>
+  <block id="7e1e60231552d76c5626d3b5ad9519d3" category="cell">選取檔案大小範圍。</block>
+  <block id="9b5e1fda139121eaa435619d67e14fd7" category="cell">選取建立檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。</block>
+  <block id="9a0f4bd0f77ffaa6f3beb585c8d18994" category="cell">選取Data Sense探索檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。</block>
+  <block id="55e421a96ef89113e0aa27aebfaa73aa" category="cell">選取上次修改檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。</block>
+  <block id="4e4be7e4053f318985404b5ad48beff4" category="cell">選取上次存取檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。對於Data Sense掃描的檔案類型、這是Data Sense掃描檔案的最後一次。</block>
+  <block id="936baf22f04cffa654fef2a2806e8fcd" category="cell">選取檔案是否在儲存庫中重複。</block>
+  <block id="6c19be59705b1afb4e5b6315b9a0d84e" category="cell">輸入檔案的雜湊以尋找特定檔案、即使名稱不同也沒問題。</block>
+  <block id="fdd455d725fb278b4fe9d43c83722f88" category="cell">選取 <block ref="d459f7b3039eb26458088e9c5f84d9e6" category="inline-link-macro-rx"></block> 指派給您的檔案。</block>
+  <block id="396e873f2847657ab91854cd3443d47e" category="cell">選取指派檔案的人員名稱。</block>
+  <block id="fdf2788bf7f989d9f8956d46160abea0" category="list-text">*作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.7版</block>
+  <block id="e57c13b9d9d82321ef540f00ada2dc8c" category="list-text">支援範圍= 300個字元以內的字詞（在找到的模式之前或之後）、有助於精準調整結果的準確度&lt;proximity_words&gt; 。每個字詞都以一個逗號（、）分隔。</block>
+  <block id="df20dd9030c6ddada288b6ad4c67a8ef" category="paragraph">如果您想要將regex強制新增至Data Sense（資料感測）、您可以使用命令列結尾的*-f*選項、即使我們認為該選項太寬。或者、您也可以使用「-p」選項來嘗試精簡搜尋結果。</block>
+  <block id="7b364c1840c2eff35e06ff4fa4503e36" category="paragraph">產品ID是以201開頭的12位數號碼、例如「201123456789」。因此規則運算式是*\b201\d｛9｝\b*。您希望Data Sense UI中的文字將此模式識別為*內部產品ID*。我們會新增「產品ID」和「識別碼」等鄰近詞彙。</block>
+  <block id="ef566437fd42a378331d4f798dff6f8a" category="paragraph">此命令的輸出為：</block>
+  <block id="542947c94dac5ea97aa3f3323ad86f25" category="cell">澳洲駕駛授權</block>
+  <block id="15ed3f23837f7e98eb87015b76063af1" category="cell">紐西蘭駕駛證</block>
+  <block id="6e7f259c1c7d110bc303264a6e6061a8" category="cell">紐西蘭NHI（國家健康指數）編號</block>
+  <block id="eee8240ee2489053f1b73dc1c725bc30" category="list-text">關於任何人的刑事定罪和犯罪的資料。</block>
+  <block id="8c91af16b200cd5f170a0c293f6c8c10" category="list-text">關於一個人的種族或族裔來源的資料。</block>
+  <block id="fa9e0f66f09e924c8d185b0c3f264c96" category="list-text">關於自然人健康的資料。</block>
+  <block id="21b44c1ea87d2453923ecdda08fbf204" category="list-text">關於自然人哲學理念的資料。</block>
+  <block id="09695dd2eeacedaa3efcdb4907f651ba" category="list-text">關於天然人物政治見解的資料。</block>
+  <block id="93bdcf06c4b4aa8c6c1c5863c54998be" category="list-text">關於自然人的宗教信仰的資料。</block>
+  <block id="29ba89564fc652396b0a0ef333c039bf" category="list-text">關於任何人性生活或性取向的資料。</block>
+  <block id="43b0a31f7bbdb0db052e57796301b990" category="list-text">加密（具有高Entropy分數的檔案）</block>
+  <block id="d9c711e681dca1e6422cd0a91260f448" category="list-text">受密碼保護的檔案</block>
+  <block id="b503acdec2e98cc1c6f1e7c5d9ddbeb1" category="list-text">「資料感測」找到應有的可能性。例如、70%的個人資料回收率表示Data Sense可識別出組織中實際包含個人資訊的10個檔案中的7個。Data Sense會遺漏30%的資料、而且不會出現在儀表板中。</block>
+  <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">如果您只是想要快速回答問題、這個常見問題集就能幫上忙。</block>
+  <block id="728e96f7d8b432ec8169e686d7cef795" category="paragraph">Cloud Data Sense會在您的BlueXP系統和儲存系統旁部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。Data Sense運用人工智慧和自然語言處理、而非以一般運算式和模式比對為基礎的替代解決方案。</block>
+  <block id="d79fc2808ec15f17eb06b530fbc42e08" category="paragraph">Cloud Data Sense使用AI來提供資料的關聯式瞭解、以利準確偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。</block>
+  <block id="257ce5cea33f6025c745b8be7cfdabb7" category="list-text">可讓您擷取包含資料主旨特定名稱或個人識別碼相關資訊之所有檔案的報告。 <block ref="ce887aadf58ec6a0a140db57b924eac0" category="inline-link-macro-rx"></block>。</block>
+  <block id="8b910a2b6442673756042f3448361fcc" category="paragraph">掃描效能可能會因網路頻寬和環境中的平均檔案大小而有所不同。也可能取決於主機系統的大小特性（無論是雲端或內部部署）。請參閱 <block ref="ba79215ce103197616664775b93ba86f" category="inline-link-macro-rx"></block> 和 <block ref="1cff0a801d1de3ceb2e474846f005821" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
+  <block id="4cefd69158974e4aee3260041ff258d4" category="paragraph">一開始新增資料來源時、您也可以選擇只執行「對應」掃描、而非完整的「分類」掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。 <block ref="51b8d4ed20a0bce6d8202eb3e674faa5" category="inline-link-macro-rx"></block>。</block>
+  <block id="0c3df620e5f733002f5c1ad4579a8153" category="section-title">我可以根據組織的需求自訂服務嗎？</block>
+  <block id="787f680b28a951f7c27c3d60fc4deba7" category="paragraph">不可以在瀏覽器和Data Sense執行個體之間傳送的私有資料、會以端點對端點加密來保護、這表示NetApp和第三方無法讀取。除非您申請並核准存取、否則Data Sense不會與NetApp分享任何資料或結果。</block>
+  <block id="be708482143e1a632f86625ad9d5f985" category="paragraph">是的。搭配原則功能、您可以在原則傳回結果時、將電子郵件警示傳送給BlueXP使用者（每日、每週或每月）或任何其他電子郵件地址、以便取得通知來保護資料。深入瞭解 <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>。</block>
+  <block id="048951d0dcc8dac7d3052b4251c3a49c" category="paragraph">是的。您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱）<block ref="dc81bb027ada9d4ecc15bb9933242e3a" category="inline-link-rx"></block>。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。</block>
+  <block id="ac72ea445437d7985cf7cfd438bfae5b" category="paragraph">如果您達到BYOL容量限制、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何掃描資料的相關資訊。只有在您想要減少所掃描的磁碟區數量、使容量使用量可能低於授權限制時、才可使用「組態」頁面。您必須續約BYOL授權、才能重新取得Data Sense的完整存取權。</block>
+  <block id="d6e4cbf0a56fc8c55a32c1540faee3e4" category="paragraph">因此、如果您在這些位置中有許多資料、您可能需要使用<block ref="666b387130f125264ee326f0a4738ff7" category="inline-link-rx"></block>。</block>
+  <block id="042d6a5acaf1a16f91ab258697afa46c" category="list-text">當某些重要原則傳回結果時、您可以傳送電子郵件警示給BlueXP使用者或任何其他電子郵件地址。</block>
+  <block id="dd5495a2a1bd2c271297d93d4feec5f0" category="list-text">如果檔案有AIP不再存在的標籤、Cloud Data Sense會將其視為沒有標籤的檔案。</block>
+  <block id="77b468348f66c4ec44fb9f239b70f78f" category="list-text">或者、如果您想要將通知電子郵件傳送給您帳戶中的BlueXP使用者、請勾選此方塊、然後選擇電子郵件傳送的時間間隔。深入瞭解 <block ref="aa3b63c453483f75d4311c7c0137128e" category="inline-link-macro-rx"></block>。</block>
+  <block id="719c5f27c509dcbb26618669f0941757" category="paragraph">Cloud Data Sense可在特定重要原則傳回結果時、傳送電子郵件警示給您帳戶中的BluXP使用者、以便您取得通知來保護資料。您可以選擇每天、每週或每月傳送電子郵件通知。</block>
+  <block id="0f45f5e9392cad0f6f0647364c3255a6" category="list-text">在「編輯原則」頁面中：</block>
+  <block id="8e77c496ba7cea76c0e1e5ce3797b5fd" category="list-text">如果您想要將通知電子郵件傳送給您BlueXP帳戶中的使用者、請勾選「在此帳戶中傳送所有使用者電子郵件」方塊、然後選擇電子郵件的傳送時間間隔（例如*每天*）。</block>
+  <block id="096cbc59642308b2b360d46b2fe32336" category="cell">S3公開-公開的私有資料</block>
+  <block id="199ce6d2f5756d8386133698d8a0167d" category="cell">PCI DSS：30天內的過時資料</block>
+  <block id="14e7d3cf16e036365503290423116713" category="cell">HIPAA：30天內過時的資料</block>
+  <block id="88a8fc10a4a6b28d78fc1e400182ead7" category="cell">私有資料：7年來已過時</block>
+  <block id="ec8b470280b749361b5f17f66c37f2d1" category="cell">GDPR -歐洲公民</block>
+  <block id="60053e7e80058ff9b98a2eb044d59147" category="cell">包含超過5個歐盟國家公民識別碼的檔案、或含有歐盟國家公民識別碼的DB表格。</block>
+  <block id="f7a3b7dbd401968ccc9110d0def68d9e" category="cell">包含超過5個（一）個歐盟公民識別碼的檔案、或包含超過15%欄位列的DB表格、以及一個國家的歐盟識別碼。（歐洲國家的任何國家識別碼之一。不包括巴西、加州、美國 SSN 、以色列、南非）</block>
+  <block id="47cda3153750b148ac7acfe73a1f2628" category="cell">CCPA -加州居民</block>
+  <block id="4e312634cb386d9d4172a3e4521c37f2" category="cell">包含超過10個加州驅動程式授權識別碼的檔案、或含有此識別碼的DB表格。</block>
+  <block id="d88e06e21102f19cbd38c115fdb573d9" category="cell">檔案包含超過10個加州驅動程式的授權識別碼、或包含加州驅動程式授權的DB表格</block>
+  <block id="85198c4138d424a195c0c9dd0b22bd8f" category="cell">資料主旨名稱：高風險</block>
+  <block id="688de20ddbb7b2207a9c3999989be28b" category="cell">電子郵件地址-高風險</block>
+  <block id="d55a6a9af72cb1355db97941acafb865" category="cell">個人資料：高風險</block>
+  <block id="39dcf805c803eacb6e35a6ea5e8cb25d" category="cell">敏感個人資料-高風險</block>
+  <block id="91edc807a7157b7f0159521433ea5b0f" category="section-title">2023年1月9日（1.19版）</block>
+  <block id="738f7059231d5fe5c1e22879f52682fd" category="section-title">「資料調查」頁面提供三種新篩選條件</block>
+  <block id="a05ecd168005e0205e52b540a66b4208" category="paragraph">我們提供新的篩選條件、以精簡「資料調查」頁面中顯示的結果：</block>
+  <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">「有存取權的使用者人數」篩選器會顯示哪些檔案和資料夾已對特定數量的使用者開放。您可以選擇一個數字範圍來精簡結果、例如、查看51到100位使用者可以存取哪些檔案。</block>
+  <block id="142c1e7e965016b6fe04e45f8ae01209" category="list-text">「建立時間」、「探索時間」、「上次修改時間」和「上次存取時間」篩選條件現在可讓您建立自訂日期範圍、而不只是選擇預先定義的天數範圍。例如、您可以在「過去10天」內尋找「建立時間」為「6個月以上」或「上次修改日期」的檔案。</block>
+  <block id="e2abff3453b8cf47fe2cb0886e10722b" category="list-text">「檔案路徑」篩選現在可讓您指定要從篩選查詢結果中排除的路徑。如果您輸入同時包含和排除特定資料的路徑、Data Sense會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。</block>
+  <block id="248b219562d5c677bea769543286aaf9" category="list-text">紐西蘭駕駛證號碼</block>
+  <block id="3f69bac652b22744f89b8727420c50db" category="paragraph">暫停掃描表示「Data Sense」（資料感測）將不會在任何新增或變更磁碟區或儲存區的情況下執行未來掃描、但系統仍會提供所有目前的結果。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
+  <block id="1a70f847ca98ead8008196451ddb3173" category="list-text">確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。</block>
+  <block id="dc398b6dfc944aa53fc80c488796fb93" category="list-text">確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。</block>
 </blocks>

@@ -86,7 +86,7 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 
 資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
 
-* *作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.6.版
+* *作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.7版
 +
 ** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
 ** 作業系統必須能夠安裝Docker Engine

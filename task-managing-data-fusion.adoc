@@ -209,9 +209,10 @@ image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示�
 
 新增自訂regex的命令語法如下：
 
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>"
+ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>" -p "<proximity_words>"
 * =此名稱將顯示在Data Sense UI中。請確定名稱可識別regex的設計用途。名稱必須至少包含一個字母、且長度最多可達70個字元。
 * =這可以是任何合法的規則運算式。
+* 支援範圍= 300個字元以內的字詞（在找到的模式之前或之後）、有助於精準調整結果的準確度<proximity_words> 。每個字詞都以一個逗號（、）分隔。
 
 
 您可以從路徑*/ opt / NetApp /資料中心/*執行命令。
@@ -219,21 +220,23 @@ image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示�
 請注意、我們會測試每個新的regex、以驗證其範圍是否太廣、而且會傳回太多相符項目。如果是這種情況、則會顯示下列記錄訊息：
 
  log v1.0 | 2022-08-17 07:24:19,585 | ERROR | ds_logger | custom_regex | 119 | 1 | None | custom_regex_119 | The regex has high risk to identify false positives. Please narrow the regular expression and try again. To add it anyway, use the force flag (-f) at the end
-如果您想要將regex強制新增至Data Sense（資料感測）、您可以使用命令列結尾的*-f*選項、即使我們認為該選項太寬。
+如果您想要將regex強制新增至Data Sense（資料感測）、您可以使用命令列結尾的*-f*選項、即使我們認為該選項太寬。或者、您也可以使用「-p」選項來嘗試精簡搜尋結果。
 
 
 
 === 範例
 
-產品ID是以201開頭的12位數號碼、因此規則運算式是*\b201\d｛9｝\b*。您想要在Data Sense UI中輸入文字、將此模式識別為*內部產品ID*。
+產品ID是以201開頭的12位數號碼、例如「201123456789」。因此規則運算式是*\b201\d｛9｝\b*。您希望Data Sense UI中的文字將此模式識別為*內部產品ID*。我們會新增「產品ID」和「識別碼」等鄰近詞彙。
 
 若要查看所有檔案中提及的內部產品ID、請輸入下列命令。
 
 [source, cli]
 ----
 [user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b"
+[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b" -p "product id,identifier"
 ----
+此命令的輸出為：
+
 ....
 [+] Adding Custom Regex to Data Sense
 log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
