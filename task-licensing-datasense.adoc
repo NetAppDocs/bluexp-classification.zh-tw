@@ -14,7 +14,7 @@ summary: 在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費
 
 
 [role="lead"]
-在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費的。NetApp的BYOL授權或雲端供應商的市場訂閱、必須在該點之後繼續掃描資料。
+在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費的30天。NetApp的BYOL授權或雲端供應商的市場訂閱、必須在該點之後繼續掃描資料。
 
 在閱讀更多內容之前、請先提供幾個附註：
 
@@ -30,7 +30,7 @@ link:concept-cloud-compliance.html#cost["深入瞭解Cloud Data Sense的授權�
 
 雲端供應商市場的隨用隨付訂閱可讓您授權使用Cloud Volumes ONTAP 多方面的系統及雲端資料服務、例如Cloud Data Sense。
 
-您可以隨時訂閱、而且在資料量超過 1 TB 之前、將不會向您收取費用。您可以隨時從Data Sense儀表板查看要掃描的資料總量。而且「立即訂閱」按鈕可讓您在準備就緒時輕鬆訂閱。
+您可以隨時訂閱、而且在30天試用結束或資料量超過1 TB之前、將不會向您收取任何費用。您可以隨時從Data Sense儀表板查看要掃描的資料總量。而且「立即訂閱」按鈕可讓您在準備就緒時輕鬆訂閱。
 
 image:screenshot_compliance_subscribe.png["螢幕快照顯示正在掃描多少資料、以及訂閱服務的「訂閱」按鈕。"]
 

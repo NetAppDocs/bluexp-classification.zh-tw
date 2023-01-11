@@ -450,7 +450,6 @@
   <block id="e61ce3062cb76770658896b778ad06cd" category="inline-link-macro">資料庫</block>
   <block id="c3cea28bb90c637f494d5021dcebdf2d" category="paragraph">在「組態」頁面中、您可以選取本機 <block ref="c23a74d01fbf5deb3a784c3ec1da6439" category="inline-link-macro-rx"></block> 和 <block ref="6d4571a63bcf6d226319383d2911863e" category="inline-link-macro-rx"></block> 您想要掃描的。</block>
   <block id="343b5204b7d2300922822e2011c9a4f3" category="inline-link-macro">設定Cloud Data Sense的BYOL授權</block>
-  <block id="13fe4e99c19b67b7e79851a22fe8855d" category="paragraph">您也可以 <block ref="b892dec3891355dbda549908e2a94427" category="inline-link-macro-rx"></block> 現在請從「數位錢包」頁面。在資料量超過 1 TB 之前、您將不會付費。</block>
   <block id="395dcebab79d1562df7f797d717d3d8f" category="section-title">適用於大型組態的多主機安裝</block>
   <block id="be4a7080dd55701eeeb6864dd9cb1174" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。</block>
   <block id="19e570c9d474722a52d6a09394b18a73" category="paragraph">在離線環境中的多部內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。</block>
@@ -969,7 +968,6 @@
   <block id="dcba253c1898878efeea1f106871ba52" category="paragraph"><block ref="32c4fb91a406f3c38311c8b665707774" category="inline-link-macro-rx"></block>。</block>
   <block id="00c0607d57d70dd0c000ccd8f5f5bb89" category="section-title">使用Cloud Data Sense PAYGO訂閱</block>
   <block id="6ab66e7507bcf25ed5182e8854303971" category="paragraph">雲端供應商市場的隨用隨付訂閱可讓您授權使用Cloud Volumes ONTAP 多方面的系統及雲端資料服務、例如Cloud Data Sense。</block>
-  <block id="205814fad56f2730ff9c5ed77caa402e" category="paragraph">您可以隨時訂閱、而且在資料量超過 1 TB 之前、將不會向您收取費用。您可以隨時從Data Sense儀表板查看要掃描的資料總量。而且「立即訂閱」按鈕可讓您在準備就緒時輕鬆訂閱。</block>
   <block id="8e8f343d4d11cb796ed5e3db94f54fe3" category="inline-image-macro">螢幕快照顯示正在掃描多少資料、以及訂閱服務的「訂閱」按鈕。</block>
   <block id="a503bdaee5c948e64f10ac7ae38b987f" category="paragraph"><block ref="a503bdaee5c948e64f10ac7ae38b987f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2f44b30cb7b59e6531b838d2b079d16" category="paragraph">這些步驟必須由擁有 _Account Admin_ 角色的使用者完成。</block>
@@ -1313,7 +1311,6 @@
   <block id="59da637a5daa4fdc3901cb939fca6c7e" category="doc">檢視法規遵循報告</block>
   <block id="16a978df0c48afdfbda069f5d1b195fc" category="admonition">本節所述的報告僅在您選擇對資料來源執行完整分類掃描時可用。具有純對應掃描的資料來源只能產生資料對應報告。</block>
   <block id="216b4fc24b6fa4197a8fc2d1066a4de4" category="section-title">隱私權風險評估報告</block>
-  <block id="0536072d2717a92a8a5a62bad5ca5809" category="paragraph">隱私權風險評估報告概述貴組織的隱私權風險狀態、如 GDPR 和 CCPA 等隱私權法規要求。報告包含下列資訊：</block>
   <block id="86bb262dfb2fdc1b5bf97779c25bf74e" category="list-text">法規遵循狀態</block>
   <block id="382281063951b90be482eaf4d662e71d" category="inline-xref">嚴重性分數</block>
   <block id="1781723f3ebf3dc877d6552ad464f5c8" category="list-text">答 <block ref="93dc7e58650d49384eb429ebc02cc1b9" category="inline-xref-macro-rx"></block> 以及資料的發佈、無論是不敏感、個人或敏感的個人資料。</block>
@@ -1368,7 +1365,6 @@
   <block id="c574f719f3835448fef801f6174f2213" category="section-title">產生 PCI DSS 報告</block>
   <block id="82ee2415e5e4e15c63902d6a550b7af1" category="list-text">按一下「* Compliance *（*符合性*）」、然後按一下「* Reports *（*報告*）」下「* PCI DSS Report*（* PCI DSS報告*）」旁的下</block>
   <block id="8e4972d194dcdd01c957ef6b3398d9e2" category="section-title">HIPAA 報告</block>
-  <block id="d6aeb85e2f20631465d272516fa08415" category="paragraph">健康保險流通與責任法案（ HIPAA ）報告可協助您識別含有健全狀況資訊的檔案。其設計旨在協助貴組織遵守 HIPAA 資料隱私權法律。Cloud Data Sense所需的資訊包括：</block>
   <block id="9965e5c3b37cecfca0bb5cbb1e086c48" category="list-text">健全狀況參考模式</block>
   <block id="53155f0c534ef44d114eeae0b0f2e638" category="list-text">ICD-10-CM 醫療代碼</block>
   <block id="f1d3fc4a48ee497faf58426c477a8bd3" category="list-text">ICD-9-CM 醫療代碼</block>
@@ -1604,7 +1600,6 @@
   <block id="b6537529e2ca7a01f194a6653cce5a42" category="list-text">部署執行個體後、按一下*繼續進行組態*以移至「_Configuration」頁面。</block>
   <block id="9b305ee4bd352f956f4cb24478769e42" category="paragraph">您可以從「組態」頁面選取要掃描的資料來源。</block>
   <block id="90fcbce9bfec3d7a472c7ee2962c602f" category="inline-link-macro">設定Cloud Data Sense授權</block>
-  <block id="9f2c63e53415cfb87166b66765887e4c" category="paragraph">您也可以 <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 目前。在資料量超過 1 TB 之前、您將不會付費。</block>
   <block id="2ef77a3845de73c82db787233e991d0c" category="doc">掃描SharePoint帳戶</block>
   <block id="040e5e5b0b4e3b56e337960cee1ba171" category="paragraph">請確定您擁有登入SharePoint帳戶的管理認證、而且您有要掃描之SharePoint網站的URL。</block>
   <block id="0fd354f4598b432146c03a6c1b496e25" category="paragraph">使用管理使用者認證、登入您要存取的SharePoint帳戶、將其新增為新的資料來源/工作環境。</block>
@@ -2008,7 +2003,6 @@
   <block id="517748e2f135f076ee74e5741d804b66" category="paragraph">「資料調查報告」是「資料調查」頁面內容的下載內容。 <block ref="777485da66bf4538c99c96042630b627" category="inline-link-macro-rx"></block>。</block>
   <block id="44ef9b305f89e2a0007a9f26dc30474e" category="section-title">產生資料調查報告</block>
   <block id="0f259b55b58f019c0dd1cc33fbe10199" category="list-text">在「Data Investigation（資料調查）」頁面中、按一下 <block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block> 按鈕。</block>
-  <block id="02fa34d7d96f4d3bb7e17ee4a2fc93a7" category="section-title">每份資料調查報告所包含的內容</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">*非結構化檔案資料報告*包含下列檔案相關資訊：</block>
   <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">*結構化資料報告*包含下列資料庫表格的相關資訊：</block>
   <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">新增支援在Google雲端硬碟帳戶中掃描資料</block>
@@ -2473,7 +2467,6 @@
   <block id="33054e4c4ec78cdbffe4024718f5be95" category="list-text">從BlueXP自動升級軟體</block>
   <block id="70f30fa3be0f8d566af792a54f7feca4" category="paragraph">BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="57d5e1045a3473cd48f13a7e21feffdf" category="paragraph">確保您的Linux系統符合 <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>、並已安裝所有必要的軟體、而且您的離線環境符合所需 <block ref="cecf7d2039efa2511a1cd1c96e91a043" category="inline-xref-macro-rx"></block>。</block>
-  <block id="fa834ed3a4990182d6f2cd1a7b04900b" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。NetApp需要BYOL授權、才能在該點之後繼續掃描資料。</block>
   <block id="28312bff8dd6c634a03c918b3596d5f7" category="section-title">安裝BlueXP Connector</block>
   <block id="dd4c90ec72ae39b7ae5e4b23558ad715" category="paragraph">如果您的離線內部部署站台尚未安裝BlueXP Connector、<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> 在離線站台的Linux主機上。</block>
   <block id="0c9e786ebc9e7a7d92ca8bd8ccb639a3" category="section-title">驗證BlueXP和Data Sense必要條件</block>
@@ -2530,7 +2523,6 @@
   <block id="90a9997e0440c020b9b048fe6fd4c2bc" category="paragraph">首先、您需要在BlueXP或內部部署系統上部署Cloud Data Sense執行個體。執行個體之後、您可以從* Data Sense *標籤或選取特定工作環境、在現有的工作環境、資料庫及其他資料來源上啟用服務。</block>
   <block id="60e395d9f5ec11e9e22b10ca11e3901b" category="paragraph">是的、Cloud Data Sense已與BlueXP完全整合。BlueXP使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。</block>
   <block id="4cc029f3cdd3510dcb1f5fd06a5ab6a8" category="paragraph">Cloud Data Sense可掃描已新增至BlueXP畫版的工作環境中的資料、以及Data Sense可透過網路存取的多種結構化和非結構化資料來源。</block>
-  <block id="51a53248ad26463c7bf5cb1ed219cc4b" category="paragraph">使用Cloud Data Sense的成本取決於您要掃描的資料量。資料感測在BlueXP工作區中掃描的前1 TB資料是免費的。達到該限制後、您需要下列其中一項、才能繼續掃描超過1 TB的資料：</block>
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">下列問題與BlueXP Connector有關。</block>
   <block id="4b9fa14b0c391d57619fddd2ee2ccc25" category="paragraph">Connector是在雲端帳戶內或內部部署的運算執行個體上執行的軟體、可讓BlueXP安全地管理雲端資源。您必須部署Connector才能使用Cloud Data Sense。</block>
   <block id="ee7ede689c65732abc73da2104adbd45" category="paragraph">BlueXP可讓使用者在幾乎任何位置掃描及報告系統、包括內部部署、雲端及混合式環境。Cloud Data Sense通常是使用SaaS模式來部署、在這種模式中、服務是透過BlueXP介面來啟用、不需要安裝硬體或軟體。即使是在這種點選即用部署模式下、資料管理也能完成、無論資料存放區是在內部部署或公有雲中。</block>
@@ -2538,7 +2530,6 @@
   <block id="e722a863038d03a6b956233c29a8c9e6" category="summary">Cloud Data Sense是適用於BlueXP的資料治理服務、可掃描企業內部部署與雲端資料來源、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
   <block id="c62d988c2493270126de8287b22e76ac" category="paragraph">Cloud Data Sense是適用於BlueXP（前身為Cloud Manager）的資料治理服務、可掃描企業內部部署與雲端資料來源、以對應及分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
   <block id="629fc635e3b0007019bd6fe0cb5a386c" category="list-text">將自訂標記新增至檔案（例如「需要搬移」）、並指派一個BlueXP使用者、讓該人員擁有檔案的更新。</block>
-  <block id="d1f1eb6537084b73d6b1c7485236b667" category="list-text">使用Cloud Data Sense的成本取決於您要掃描的資料量。資料感測在BlueXP工作區中掃描的前1 TB資料是免費的。這包括所有工作環境和資料來源的所有資料。必須訂閱AWS、Azure或GCP Marketplace、或NetApp的BYOL授權、才能在該點之後繼續掃描資料。請參閱<block ref="7a3eda134173271beb15500b84a25151" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="414779643224750f91153e1e93366d7b" category="list-text">Cloud Data Sense要求您部署了BlueXP Connector。在許多情況下、由於您在BlueXP中使用的其他儲存設備和服務、您已經擁有Connector。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱<block ref="afb51f96ab234eaf32dde49b48eed419" category="inline-link-rx"></block>。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。</block>
   <block id="81cfe398dd170f2b6299e94974778f0e" category="paragraph">在雲端部署Data Sense時、BlueXP會將執行個體部署在連接器所在的同一子網路中。<block ref="5ef86a9d91601df9732f9c29cb9efbcc" category="inline-link-rx"></block></block>
   <block id="77fffe47a015e5ea37a6ab2fa4a35417" category="inline-image-macro">顯示在雲端供應商中執行的BlueXP執行個體和Cloud Data Sense執行個體的圖表。</block>
@@ -2584,7 +2575,6 @@
   <block id="550ed190220c30a219939b5cc149ea64" category="admonition">對於FSXfor ONTAP Sfor Sf, Cloud Data Sense只能掃描與BlueXP相同區域的磁碟區。</block>
   <block id="605064cd8edf5ae796b155904f40b48f" category="paragraph">如果在沒有網際網路存取的網站上安裝Data Sense、則同樣也必須在沒有網際網路存取的同一個網站上安裝BlueXP Connector。<block ref="879ebf9ca74e8f08bfff336454f4ade3" category="inline-link-rx"></block>。</block>
   <block id="65b1808e8755301d9b88abfe2641bc90" category="summary">在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費的。NetApp的BYOL授權或雲端供應商Marketplace的訂閱、必須在該點之後繼續掃描資料。</block>
-  <block id="ab1e5b33f7f51cc6c40c92f1f5929447" category="paragraph">在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費的。NetApp的BYOL授權或雲端供應商的市場訂閱、必須在該點之後繼續掃描資料。</block>
   <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。</block>
   <block id="0f6c00034bac6e049845fa36d40deb87" category="inline-image-macro">BlueXP右上方橫幅的快照、您可在其中選取「設定」圖示。</block>
   <block id="ec24fbf33d16fbcbcd5109403b3ac212" category="paragraph"><block ref="ec24fbf33d16fbcbcd5109403b3ac212" category="inline-image-macro-rx" type="image"></block></block>
@@ -2619,7 +2609,6 @@
   <block id="51fb345d59b3adb8f0060afb63071c67" category="paragraph">您的需求系統應該已經可在BlueXP的畫版中使用。Cloud Volumes ONTAP若為內部部署ONTAP 的功能、您必須擁有<block ref="0ea86f15e08471a3866cbc09dd9a2bd4" category="inline-link-rx"></block>。</block>
   <block id="0718fb096056f1b13075e60b653a79cf" category="paragraph">如果您正在掃描ONTAP 安裝在沒有網際網路連線的黑暗站台上的內部部署的資訊系統、您需要 <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。這也需要在同一個內部部署位置部署BlueXP Connector。</block>
   <block id="37bd317738b255170eae4641d8d07b07" category="paragraph">確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與Cloud Data Sense之間透過連接埠443的連線等。 <block ref="d9771ea7e072ff16d9d579f1908bd406" category="inline-xref-macro-rx"></block>。</block>
-  <block id="2fef7080c414770f313f45ddf7b1259e" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。您必須向雲端供應商Marketplace訂閱、或向NetApp訂購BYOL授權、才能在該時間點之後繼續掃描資料。</block>
   <block id="213c26a534506d1ae60070296a0343e1" category="list-text">在BlueXP中、選取*管理&gt;分類*。</block>
   <block id="b14547d13e4545e40f6cf3e9a06dd4ab" category="list-text">根據提示輸入 Proxy 詳細資料。如果您的BlueXP Connector已經使用Proxy、則不需要在此輸入此資訊、因為Data Sense將自動使用Connector所使用的Proxy。</block>
   <block id="a7daee29c59d5c1bd111c784f878f35b" category="paragraph">如果您要掃描安裝在無法存取網際網路的暗點中的非NetApp NFS或CIFS檔案共用、您必須執行 <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。這也需要在同一個內部部署位置部署BlueXP Connector。</block>
@@ -2799,7 +2788,6 @@
   <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">向您的雲端供應商訂閱BlueXP Marketplace清單、或</block>
   <block id="10d127f1d0ce294ce4f4f8e7ebf6106b" category="paragraph">如果您有嚴格的網路需求、 <block ref="8ee644766673e1cde7b0c260d7a4e2e0" category="inline-link-macro-rx"></block>。</block>
   <block id="21315205ba34163a83853c5526e534c1" category="list-text">一次最多可重新掃描1000個項目。</block>
-  <block id="8ec215ce3c88ae58412a2c9d13f5d15b" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。</block>
   <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
   <block id="79bd49250e598bf53655f50c83b04044" category="list-text">行動類型（刪除、複製、移動、建立原則、更新原則、 重新掃描檔案、下載Json報告等）</block>
   <block id="9d282ec5c19d83f47fc9504e4ff50325" category="list-text">如果您已在雲端供應商的市場訂閱BlueXP隨用隨付（PAYGO）、您也會自動訂閱Cloud Data Sense。您不需要再次訂閱。</block>
@@ -2953,7 +2941,6 @@
   <block id="1f3259fd3977a2467ab298df6a6d44d1" category="paragraph">您也可以在「組態」頁面底部查看所有掃描器群組的清單、以及群組中每個掃描器節點的IP位址和狀態。</block>
   <block id="e046fe016499c2584ccbc85ec4b21f9d" category="inline-image-macro">快照會列出群組中所有掃描器群組、以及每個掃描器節點的IP位址。</block>
   <block id="dace7436ca5a83360d9bbd7d056c44bd" category="paragraph"><block ref="dace7436ca5a83360d9bbd7d056c44bd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d780548e828596e2a46211d87c5a2909" category="paragraph">您可以 <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 目前。在資料量超過 1 TB 之前、您將不會付費。</block>
   <block id="50e51bdb9274c5704404f14dc8b7e114" category="list-text">當檔案包含特定PII時、透過電子郵件通知特定使用者（您使用定義此條件 <block ref="0a2fc0f403ef4a50a3606f593b466bde" category="inline-link-macro-rx"></block>）以便決定行動計畫。</block>
   <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">深入瞭解Cloud Volumes ONTAP 從NetApp系統分層的相關資訊</block>
   <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">深入瞭解內部部署ONTAP 的資訊系統分層</block>
@@ -3043,4 +3030,18 @@
   <block id="3f69bac652b22744f89b8727420c50db" category="paragraph">暫停掃描表示「Data Sense」（資料感測）將不會在任何新增或變更磁碟區或儲存區的情況下執行未來掃描、但系統仍會提供所有目前的結果。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
   <block id="1a70f847ca98ead8008196451ddb3173" category="list-text">確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。</block>
   <block id="dc398b6dfc944aa53fc80c488796fb93" category="list-text">確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。</block>
+  <block id="05bff04a554e6a3bc1b13115f3188390" category="list-text">使用Cloud Data Sense的成本取決於您要掃描的資料量。在BlueXP工作區中、Data Sense掃描的前1 TB資料是免費的30天。這包括所有工作環境和資料來源的所有資料。必須訂閱AWS、Azure或GCP Marketplace、或NetApp的BYOL授權、才能在該點之後繼續掃描資料。請參閱<block ref="7a3eda134173271beb15500b84a25151" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="0efc0d04ea0f559551eaf028d9be1905" category="paragraph">在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費的30天。NetApp的BYOL授權或雲端供應商的市場訂閱、必須在該點之後繼續掃描資料。</block>
+  <block id="c7fd038a8877e8d2d0c181ebca21d6b7" category="paragraph">您可以隨時訂閱、而且在30天試用結束或資料量超過1 TB之前、將不會向您收取任何費用。您可以隨時從Data Sense儀表板查看要掃描的資料總量。而且「立即訂閱」按鈕可讓您在準備就緒時輕鬆訂閱。</block>
+  <block id="0ef849d1fbf19559ecd642854437445c" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的30天。NetApp需要BYOL授權、才能在該點之後繼續掃描資料。</block>
+  <block id="7d520eab49b612c3173705846b0a81a4" category="paragraph">您也可以 <block ref="b892dec3891355dbda549908e2a94427" category="inline-link-macro-rx"></block> 現在請從「數位錢包」頁面。30天免費試用期結束前、您將不需付費。</block>
+  <block id="4b013f5657095f9d6af00100e52bc1bf" category="paragraph">使用Cloud Data Sense的成本取決於您要掃描的資料量。在BlueXP工作區中、Data Sense掃描的前1 TB資料是免費的30天。達到任一上限後、您需要下列其中一項才能繼續掃描資料：</block>
+  <block id="47a431ede9d263c65258e5be6ff6b2c1" category="paragraph">隱私權風險評估報告概述貴組織的隱私權風險狀態、如GDPR和CCPA等隱私權法規要求。報告包含下列資訊：</block>
+  <block id="77c511801e7a90a6a31b53c3c33b5397" category="paragraph">健康保險流通與責任法案（ HIPAA ）報告可協助您識別含有健全狀況資訊的檔案。其設計旨在協助貴組織遵守HIPAA資料隱私權法律。Cloud Data Sense所需的資訊包括：</block>
+  <block id="af4b0162529178f9269843c02de9011a" category="paragraph">請注意、您可以按一下、從「資料感知」頁面頂端自訂顯示在報告第一頁上的公司名稱 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 然後按一下*變更公司名稱*。</block>
+  <block id="e9ebebe267d1d822cab67a314b8df765" category="section-title">每份資料調查報告中包含的內容</block>
+  <block id="507eb1b330c9b9c53f787e32eb212a8c" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的30天。您必須向雲端供應商Marketplace訂閱、或向NetApp訂購BYOL授權、才能在該時間點之後繼續掃描資料。</block>
+  <block id="d16229fe4c13eabaf4888e33502b9f43" category="paragraph">您也可以 <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 目前。30天免費試用期結束前、您將不需付費。</block>
+  <block id="68b93206d7f113e3a7eb3b6c41df6f6e" category="paragraph">您可以 <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 目前。30天免費試用期結束前、您將不需付費。</block>
+  <block id="4836df02e5a10e2b5f7369a02cc815e2" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的30天。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。</block>
 </blocks>

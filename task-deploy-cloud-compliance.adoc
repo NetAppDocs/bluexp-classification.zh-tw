@@ -44,7 +44,7 @@ summary: 完成幾個步驟、在雲端部署Cloud Data Sense。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 訂閱Cloud Data Sense服務
 [role="quick-margin-para"]
-在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。
+在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的30天。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。
 
 
 
@@ -191,4 +191,4 @@ BlueXP會在雲端供應商中部署Cloud Data Sense執行個體。
 .下一步
 您可以從「組態」頁面選取要掃描的資料來源。
 
-您也可以 link:task-licensing-datasense.html["設定Cloud Data Sense授權"] 目前。在資料量超過 1 TB 之前、您將不會付費。
+您也可以 link:task-licensing-datasense.html["設定Cloud Data Sense授權"] 目前。30天免費試用期結束前、您將不需付費。

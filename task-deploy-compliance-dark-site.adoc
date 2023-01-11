@@ -72,7 +72,7 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 訂閱Cloud Data Sense服務
 [role="quick-margin-para"]
-在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的。NetApp需要BYOL授權、才能在該點之後繼續掃描資料。
+在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的30天。NetApp需要BYOL授權、才能在該點之後繼續掃描資料。
 
 
 
@@ -314,7 +314,7 @@ Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安
 .下一步
 在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
 
-您也可以 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["設定Cloud Data Sense的BYOL授權"] 現在請從「數位錢包」頁面。在資料量超過 1 TB 之前、您將不會付費。
+您也可以 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["設定Cloud Data Sense的BYOL授權"] 現在請從「數位錢包」頁面。30天免費試用期結束前、您將不需付費。
 
 
 
@@ -387,7 +387,7 @@ Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可�
 .下一步
 在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和本機 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
 
-您也可以 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["設定Cloud Data Sense的BYOL授權"] 現在請從「數位錢包」頁面。在資料量超過 1 TB 之前、您將不會付費。
+您也可以 link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["設定Cloud Data Sense的BYOL授權"] 現在請從「數位錢包」頁面。30天免費試用期結束前、您將不需付費。
 
 
 
