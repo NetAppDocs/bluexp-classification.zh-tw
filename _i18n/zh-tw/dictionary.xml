@@ -2418,10 +2418,7 @@
   <block id="9a996c7f10537ef7b705b42e701d4b6e" category="paragraph"><block ref="9a996c7f10537ef7b705b42e701d4b6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="56d39ecb5bf4d2ec753c12fbb0e00108" category="paragraph">AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。請參閱<block ref="74fb388667736bb2b34ea14720dd63e3" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="261826c213e3c9cbf53df120aaf0be3b" category="paragraph">Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。請參閱<block ref="e1893ebf6f9d2e927a13d052b78eec9f" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="2152258e1def6997a945ef8261b66bcc" category="paragraph">這會擷取必要的軟體和實際安裝檔案* datASENSE-installer-v1.16.1.tar。gz*。</block>
-  <block id="7dcbe0be3e8e2a9fd658d871499bd050" category="list-text">將Data Sense安裝程式檔案（* datASENSE-installer-ze.tar.gz*&lt;version&gt; ）複製到主機機器。</block>
   <block id="4866a563c343528540aa5c3529f908ca" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您安裝的是1.5.x版、則只能升級至1.16.x版如果您落後幾個主要版本、就必須多次升級軟體。</block>
-  <block id="eb2cb5912ef10d2dcff7761bde0a5ace" category="paragraph">這會擷取安裝檔案* DatASENSE-installer-V1.16.1.tar.gz*。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">有兩種登錄形式可啟動支援服務權利：</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在Cloud Volumes ONTAP 雲端供應商的市場中註冊與訂閱相關的支援服務序號（這些序號為20位數909601xxxxxxxx序號）。</block>
@@ -3044,4 +3041,7 @@
   <block id="d16229fe4c13eabaf4888e33502b9f43" category="paragraph">您也可以 <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 目前。30天免費試用期結束前、您將不需付費。</block>
   <block id="68b93206d7f113e3a7eb3b6c41df6f6e" category="paragraph">您可以 <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 目前。30天免費試用期結束前、您將不需付費。</block>
   <block id="4836df02e5a10e2b5f7369a02cc815e2" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的30天。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。</block>
+  <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">這會擷取所需的軟體和實際安裝檔案* cc_OnPrem_installer.tar。gz*。</block>
+  <block id="6cc29d8f722610f8a1e880227931a300" category="list-text">將Data Sense安裝程式檔案（* cc_OnPrem_installer.tar.gz*）複製到主機機器。</block>
+  <block id="7b8f90ccd6fc9dda39797ae84ca7f14d" category="paragraph">這會擷取安裝檔案* cc_OnPrem_installer.tar.gz*。</block>
 </blocks>

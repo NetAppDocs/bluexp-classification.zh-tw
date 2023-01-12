@@ -255,7 +255,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["圖表顯示在內部部
 tar -xzf DataSense-offline-bundle-v1.16.1.tar.gz
 ----
 +
-這會擷取必要的軟體和實際安裝檔案* datASENSE-installer-v1.16.1.tar。gz*。
+這會擷取所需的軟體和實際安裝檔案* cc_OnPrem_installer.tar。gz*。
 
 . 啟動BlueXP、然後選取*管理>分類*。
 . 按一下「*啟動資料感應*」。
@@ -274,7 +274,7 @@ image:screenshot_cloud_compliance_deploy_darksite.png["選取按鈕以在內部�
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
+tar -xzf cc_onprem_installer.tar.gz
 ----
 . 當安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式：
 +
@@ -371,7 +371,7 @@ Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安
 
 . 在*每個*掃描儀節點主機上：
 +
-.. 將Data Sense安裝程式檔案（* datASENSE-installer-ze.tar.gz*<version> ）複製到主機機器。
+.. 將Data Sense安裝程式檔案（* cc_OnPrem_installer.tar.gz*）複製到主機機器。
 .. 解壓縮安裝程式檔案。
 .. 貼上並執行您在步驟3中複製的命令。
 +
@@ -410,13 +410,13 @@ Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可�
 tar -xvf DataSense-offline-bundle-v1.16.1.tar.gz
 ----
 +
-這會擷取安裝檔案* DatASENSE-installer-V1.16.1.tar.gz*。
+這會擷取安裝檔案* cc_OnPrem_installer.tar.gz*。
 
 . 在主機上解壓縮安裝檔案、例如：
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
+tar -xzf cc_onprem_installer.tar.gz
 ----
 +
 這會擷取升級指令碼* start_dimite_upgrade.sh*和任何必要的協力廠商軟體。
