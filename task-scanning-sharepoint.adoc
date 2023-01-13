@@ -24,7 +24,7 @@ summary: 請完成幾個步驟、開始使用Cloud Data Sense掃描SharePoint On
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱SharePoint先決條件
 [role="quick-margin-para"]
-請確定您擁有登入SharePoint帳戶的管理認證、而且您有要掃描之SharePoint網站的URL。
+請確定您擁有登入SharePoint帳戶的合格認證、而且您有要掃描之SharePoint網站的URL。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense執行個體
 [role="quick-margin-para"]
@@ -32,7 +32,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 登入SharePoint帳戶
 [role="quick-margin-para"]
-使用管理使用者認證、登入您要存取的SharePoint帳戶、將其新增為新的資料來源/工作環境。
+使用合格的使用者認證、登入您要存取的SharePoint帳戶、以便將其新增為新的資料來源/工作環境。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 新增要掃描的SharePoint網站URL
 [role="quick-margin-para"]
@@ -44,7 +44,11 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 請檢閱下列必要條件、確定您已準備好在SharePoint帳戶上啟動Cloud Data Sense。
 
-* 您必須擁有SharePoint帳戶的管理員登入認證、才能提供對所有SharePoint網站的讀取存取權。
+* 您必須擁有SharePoint帳戶的管理員使用者登入認證、才能提供所有SharePoint網站的讀取存取權。
++
+** 對於SharePoint Online、您可以使用非系統管理帳戶、但該使用者必須擁有存取您要掃描之所有SharePoint網站的權限。
+
+
 * 對於內部部署的SharePoint、您也需要SharePoint Server的URL。
 * 您需要SharePoint網站URL的行分隔清單、以供掃描所有資料。
 
@@ -78,7 +82,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 image:screenshot_compliance_add_sharepoint_button.png["「組態」頁面的快照、您可以在其中按一下「新增SharePoint Online」按鈕。"]
 
 . 在「新增SharePoint Online帳戶」對話方塊中、按一下*「登入SharePoint」*。
-. 在顯示的Microsoft頁面中、選取SharePoint帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*、以允許Cloud Data Sense從此帳戶讀取資料。
+. 在顯示的Microsoft頁面中、選取SharePoint帳戶並輸入使用者和密碼（管理員使用者或其他具有SharePoint網站存取權的使用者）、然後按一下「* Accept*（接受）」以允許Cloud Data Sense從這個帳戶讀取資料。
 
 
 SharePoint Online帳戶會新增至工作環境清單。

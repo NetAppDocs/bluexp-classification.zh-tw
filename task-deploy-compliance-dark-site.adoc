@@ -357,7 +357,7 @@ Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安
 
 
 .步驟
-. 請依照中的步驟1至8進行 link:task-deploy-compliance-dark-site.html#deploy-data-sense-on-a-single-host-typical-configuration["單一主機安裝"] 在管理器節點上。
+. 請依照中的步驟1至8進行 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["單一主機安裝"] 在管理器節點上。
 . 如步驟9所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。
 +
 除了可用於單一主機安裝的變數之外、還會使用新的選項*- n <node_ip>*來指定掃描儀節點的IP位址。多個節點IP之間以一個逗號分隔。
@@ -396,7 +396,7 @@ Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可�
 由於Data Sense軟體會定期更新新功能、因此您應該定期檢查新版本、以確保使用最新的軟體和功能。您需要手動升級Data Sense軟體、因為沒有網際網路連線功能可自動執行升級。
 
 .開始之前
-* Data Sense軟體一次可升級一個主要版本。例如、如果您安裝的是1.5.x版、則只能升級至1.16.x版如果您落後幾個主要版本、就必須多次升級軟體。
+* Data Sense軟體一次可升級一個主要版本。例如、如果您安裝1.17.x版、則只能升級至1.18如果您落後幾個主要版本、就必須多次升級軟體。
 * 確認您的內部部署Connector軟體已升級至最新版本。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["請參閱連接器升級步驟"^]。
 
 

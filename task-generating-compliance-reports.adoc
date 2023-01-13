@@ -142,7 +142,7 @@ Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給�
 * 健全狀況參考模式
 * ICD-10-CM 醫療代碼
 * ICD-9-CM 醫療代碼
-* HR –健全狀況類別
+* HR -健全狀況類別
 * 健全狀況應用程式資料類別
 
 
@@ -203,7 +203,7 @@ image:screenshot_compliance_data_mapping_report_button.png["管理儀表板的�
 .結果
 Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給其他群組。
 
-請注意、您可以按一下、從「資料感知」頁面頂端自訂顯示在報告第一頁上的公司名稱 image:screenshot_gallery_options.gif["更多按鈕"] 然後按一下*變更公司名稱*。
+請注意、您可以按一下、從「資料感知」頁面頂端自訂顯示在報告第一頁上的公司名稱 image:screenshot_gallery_options.gif["「更多」按鈕"] 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。
 
 
 

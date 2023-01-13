@@ -17,8 +17,8 @@ summary: Cloud Data Sense提供多種方法來管理您的私有資料。有些�
 Cloud Data Sense提供多種方法來管理您的私有資料。有些功能可讓您更輕鬆地準備資料移轉、而其他功能則可讓您變更資料。
 
 * 如果您想要複製特定資料並將其移至不同的NFS位置、可以將檔案複製到目的地NFS共用。
-* 您可以將ONTAP 某個實體磁碟區複製到新的磁碟區、但只能在新的複製磁碟區中包含來自來源磁碟區的選定檔案。如果您正在移轉資料、但想要從原始Volume中排除某些檔案、這項功能非常實用。
-* 您可以將檔案從來源儲存庫複製並同步處理至特定目的地位置的目錄。當您將資料從一個來源系統移轉至另一個來源系統時、如果來源檔案仍有一些最終活動、這項功能就很實用。
+* 您可以將ONTAP 某個實體磁碟區複製到新的磁碟區、但只能在新的複製磁碟區中包含來自來源磁碟區的選定檔案。如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。
+* 您可以將檔案從來源儲存庫複製並同步處理至特定目的地位置的目錄。當您將資料從一個來源系統移轉至另一個來源系統、但來源檔案仍有一些最終活動時、此功能非常實用。
 * 您可以將Data Sense正在掃描的來源檔案移至任何NFS共用區。
 * 您可以刪除看起來不安全或風險太高的檔案、使其留在儲存系統中、或是您已識別為重複的檔案。
 
@@ -42,7 +42,7 @@ Cloud Data Sense提供多種方法來管理您的私有資料。有些功能可�
 
 * *將ONTAP 某個實體磁碟區*複製到同一個集合體中的新磁碟區、但只會在新的複製磁碟區中包含來源磁碟區中選取的檔案。
 +
-如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。此動作使用 link:https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone"^] 功能可快速複製磁碟區、然後移除您*未選取*的檔案。
+如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。此動作使用 https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone"^] 功能可快速複製磁碟區、然後移除您*未選取*的檔案。
 
 * *將檔案*從單一來源儲存庫（ONTAP 例如、S庫、S3儲存庫、NFS共用等）複製並同步到特定目的地（目標）位置的目錄。
 +
@@ -73,7 +73,7 @@ image:screenshot_compliance_copy_multi_files.png["顯示如何從「資料調查
 +
 ** 若要選取個別檔案、請核取每個檔案的方塊（image:button_backup_1_volume.png[""]）。
 ** 若要選取目前頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）。
-** 若要選取所有頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）、然後在快顯訊息中顯示 image:screenshot_select_all_items.png[""]，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*
+** 若要選取所有頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）、然後在快顯訊息中顯示 image:screenshot_select_all_items.png["關於選取所有檔案"]，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*
 
 
 . 在_複製檔案_對話方塊中、選取*一般複本*索引標籤。
@@ -124,7 +124,7 @@ image:screenshot_compliance_copy_multi_files.png["顯示如何從「資料調查
 +
 ** 若要選取個別檔案、請核取每個檔案的方塊（image:button_backup_1_volume.png[""]）。
 ** 若要選取目前頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）。
-** 若要選取所有頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）、然後在快顯訊息中顯示 image:screenshot_select_all_items.png[""]，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*
+** 若要選取所有頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）、然後在快顯訊息中顯示 image:screenshot_select_all_items.png["關於選取所有檔案"]，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*
 
 
 . 在_複製檔案_對話方塊中、選取* FlexClone *索引標籤。此頁面顯示將從磁碟區（您選取的檔案）複製的檔案總數、以及未從複製磁碟區中包含/刪除的檔案數目（您未選取的檔案）。
@@ -172,7 +172,7 @@ image:screenshot_compliance_filter_1_repo.png["建立篩選器的快照、其中
 +
 套用任何其他篩選條件、以便只看到您要複製並同步到目的地系統的檔案。
 
-. 在「調查結果」窗格中、勾選標題列中的方塊、以選取所有頁面上的所有檔案（image:button_select_all_files.png[""]）、然後在快顯訊息中 image:screenshot_select_all_items.png[""] 按一下「*選取清單中的所有項目（xxx個項目）*」、然後按一下「*複製*」。
+. 在「調查結果」窗格中、勾選標題列中的方塊、以選取所有頁面上的所有檔案（image:button_select_all_files.png[""]）、然後在快顯訊息中 image:screenshot_select_all_items.png["關於選取所有檔案"] 按一下「*選取清單中的所有項目（xxx個項目）*」、然後按一下「*複製*」。
 +
 image:screenshot_compliance_sync_multi_files.png["顯示如何從「資料調查」頁面選取要複製的檔案、以及「複製」按鈕的快照。"]
 
@@ -187,7 +187,7 @@ image:screenshot_compliance_sync_files_dialog.png["顯示「複製檔案」對�
 +
 系統會提示您定義同步關係。來源系統會根據您在Data有意義中選取的儲存庫和檔案預先填入資料。
 
-. 您需要選取目標系統、然後選取（或建立）您打算使用的Data Broker。請從開始檢閱Cloud Sync 《不整合需求 link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html.html["快速入門說明"^]。
+. 您需要選取目標系統、然後選取（或建立）您打算使用的Data Broker。請從開始檢閱Cloud Sync 《不整合需求 link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["快速入門說明"^]。
 
 
 .結果
@@ -227,7 +227,7 @@ image:screenshot_compliance_move_multi_files.png["顯示如何從「資料調查
 +
 ** 若要選取個別檔案、請核取每個檔案的方塊（image:button_backup_1_volume.png[""]）。
 ** 若要選取目前頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）。
-** 若要選取所有頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）、然後在快顯訊息中顯示 image:screenshot_select_all_items.png[""]，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*
+** 若要選取所有頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）、然後在快顯訊息中顯示 image:screenshot_select_all_items.png["關於選取所有檔案"]，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*
 
 
 . 在按鈕列中、按一下*移動*。
@@ -278,7 +278,7 @@ image:screenshot_compliance_delete_multi_files.png["顯示如何從「資料調�
 +
 ** 若要選取個別檔案、請核取每個檔案的方塊（image:button_backup_1_volume.png[""]）。
 ** 若要選取目前頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）。
-** 若要選取所有頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）、然後在快顯訊息中顯示 image:screenshot_select_all_items.png[""]，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*
+** 若要選取所有頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）、然後在快顯訊息中顯示 image:screenshot_select_all_items.png["關於選取所有檔案"]，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*
 
 
 . 在按鈕列中、按一下*刪除*。

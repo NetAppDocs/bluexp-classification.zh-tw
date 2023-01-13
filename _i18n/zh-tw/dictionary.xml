@@ -2,7 +2,6 @@
 <blocks>
   <block id="a1244561bd1d271f7f6a76554fae2cde" category="summary">控制與組織儲存資源資料相關的成本。Cloud Data Sense可識別系統中的過時資料、非商業資料、重複檔案和非常大的檔案數量、讓您決定要移除或分層將部分檔案移至較便宜的物件儲存設備。</block>
   <block id="16ace13e9030ba8b43b8bf469be3ffff" category="doc">檢視組織中儲存資料的治理詳細資料</block>
-  <block id="8e907bbc7c59c56a9ea9a3660e214fb9" category="paragraph">此外、如果您計畫將資料從內部部署位置移轉至雲端、您可以在移動資料之前檢視資料大小、以及是否有任何資料包含敏感資訊。</block>
   <block id="f7b090ae0361a33be68398c938094aa6" category="section-title">管理儀表板</block>
   <block id="e5295f0dcd9974bcca40c2b38f856a76" category="paragraph">「治理」儀表板提供相關資訊、讓您提高效率、並控制儲存在儲存資源上的資料相關成本。</block>
   <block id="275752eff701cbf90c07d1beb3ef4a06" category="inline-image-macro">Cloud Data Sense管理儀表板的快照。</block>
@@ -21,22 +20,17 @@
   <block id="dc6d9a4419750aae3db17878ffe18e5c" category="inline-link-macro">查看顯示哪些類型的重複檔案</block>
   <block id="af3ebdfa0de82f4ebf264444127ceba9" category="list-text">*重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。 <block ref="aed0fa6f561bb8f0cefd5cb21d93e1cf" category="inline-link-macro-rx"></block>。</block>
   <block id="2b4d8a4ffe486173d89394fc3d6ccdb3" category="section-title">結果最多的原則</block>
-  <block id="a7a23c7ed8e3b4d314ee2c49d88b93c6" category="paragraph">按一下「_Policy_」區域中的原則名稱、即可在「調查」頁面中顯示結果。按一下*檢視全部*以檢視所有可用原則的清單。</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">請按這裡</block>
   <block id="f49cd49d999d1390260fa896a1a3ceec" category="paragraph">按一下 <block ref="4860dd37562d5a245a69a17be60d42e2" category="inline-link-macro-rx"></block> 以深入瞭解原則。</block>
   <block id="b70528883a2d1dce278c3b16e0f8c608" category="section-title">資料總覽</block>
   <block id="15a0850e358be6a3f1534ff44f5ee252" category="inline-link-macro">資料對應報告</block>
-  <block id="0a9145dde57003fa4c977f908ffbd528" category="paragraph">快速概覽正在掃描的所有資料。按一下按鈕、即可下載完整的資料對應報告、其中包含所有工作環境和資料來源的使用容量、資料存留時間、資料大小和檔案類型。請參閱 <block ref="5efa252e20225abbecfacf56f2ab906a" category="inline-link-macro-rx"></block> 以取得完整詳細資料。</block>
   <block id="5054e48efbd7d7a23b39d5c48f13943f" category="section-title">依資料敏感度列出的主要資料儲存庫</block>
-  <block id="021e89108a720478560938c05dd763cf" category="paragraph">「_依敏感度等級_排名的資料儲存庫」區域最多可列出包含最敏感項目的前四個資料儲存庫（工作環境和資料來源）。每個工作環境的長條圖分為：</block>
-  <block id="149c82afeb3e94deb5ab558ddbbfbfcb" category="list-text">非個人資料</block>
   <block id="6370c5a9859b827de2be9d30ec4b997e" category="list-text">個人資料</block>
   <block id="0f0be2946f647a34d438bb34323fd30e" category="list-text">敏感的個人資料</block>
   <block id="43ec9a8f95b41a9a8648d4df5db2c7f1" category="paragraph">您可以將游標停留在每個區段上、查看每個類別中的項目總數。</block>
   <block id="9f3ca55177a9cff0208b29196f6a269a" category="paragraph">按一下每個區域、即可在「調查」頁面中檢視篩選後的結果、以便進一步調查。</block>
   <block id="645e4f0b71c92a4a3810668742adff95" category="section-title">依開放權限類型列出的資料</block>
   <block id="140692ffca26cf04b2ffe208e40614b6" category="paragraph">「_開啟權限_」區域會顯示所有要掃描之檔案所存在的每種權限類型的百分比。此圖表顯示下列權限類型：</block>
-  <block id="5eef11b580781f577a31fd66fb5e92bc" category="list-text">無開放存取權</block>
   <block id="a1803d6c124292f91b3806ee4c46b406" category="list-text">開放給組織使用</block>
   <block id="8c8bc01ad66acc46ad4db72461de09d9" category="list-text">開放給大眾使用</block>
   <block id="77660481bdb77bcf47202315fe7e0d51" category="list-text">不明存取</block>
@@ -51,7 +45,6 @@
   <block id="65da47b6ef0adda3d4c4ed54dfde4494" category="inline-link-macro">檔案類型</block>
   <block id="02ac28e6aac96ae29edd75daf4e929ad" category="inline-link-macro">AIP標籤</block>
   <block id="f887e54f519cc35b4741120230ac9d1a" category="paragraph">「_Classification」區域提供最能辨識的清單 <block ref="b823fa31d5dec268aaa19a8828bf34fe" category="inline-link-macro-rx"></block>、 <block ref="336d27c782a82199a3380deae5570591" category="inline-link-macro-rx"></block>和 <block ref="8376771def5b60bb1cfdd0dc180ae5cc" category="inline-link-macro-rx"></block> 在掃描資料中。</block>
-  <block id="439fa70484344162e488c2f6e8d7f52c" category="paragraph">類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、「恢復」或「員工合約」等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。</block>
   <block id="f57be897cf74c2ec8ac018d90999d9ef" category="inline-link-macro">依類別檢視檔案</block>
   <block id="659056cf2678e420a1509bbcc731edcf" category="paragraph">請參閱 <block ref="21094466ac939ca1953a7d6cc6a49a1d" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="cb45e879b815142e4e2cd0d22e5c6dd9" category="paragraph">檢閱檔案類型有助於控制敏感資料、因為您可能會發現某些檔案類型儲存不正確。</block>
@@ -475,7 +468,6 @@
   <block id="edcc6720ea7c450bc260e04210895e7c" category="cell">NFS伺服器、用於在主機之間共用檔案（從每個掃描儀節點到管理器節點都需要）</block>
   <block id="06b1338ba02add2b5d2da67663b19ebe" category="cell">2049</block>
   <block id="26285ebf37a162fef382f275814886c9" category="inline-link-macro">單一主機安裝</block>
-  <block id="a34d1a701917dbbb1735e81c6c612bc0" category="list-text">請依照中的步驟1至8進行 <block ref="80550799407a84f7dd8a18bd5786e6be" category="inline-link-macro-rx"></block> 在管理器節點上。</block>
   <block id="cfc66ec017142ce1f8420ffb8db2e3cd" category="list-text">如步驟9所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。</block>
   <block id="5e2f5642806d5ddc2868631f2e508d3d" category="paragraph">除了可用於單一主機安裝的變數之外、還會使用新的選項*- n &lt;node_ip&gt;*來指定掃描儀節點的IP位址。多個節點IP之間以一個逗號分隔。</block>
   <block id="5fa878295b23e50238df7f7395042d79" category="paragraph">例如、此命令會新增3個掃描儀節點：「Udo ./install.sh -A &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;tokent&gt;-host &lt;ds_host&gt;--manager-host &lt;cm_host&gt;*-n &lt;node_IP1&gt;、&lt;node_IP2&gt;、&lt;node_IP3&gt;*--ne-proxy-site。</block>
@@ -698,8 +690,6 @@
   <block id="ddd83696bfecd5c4f7b1fd6fd308c800" category="summary">Cloud Data Sense提供多種方法來管理您的私有資料。有些功能可讓您更輕鬆地準備資料移轉、而其他功能則可讓您變更資料。</block>
   <block id="4264ca6efffa4cf6fdf127440dfdd525" category="doc">管理您的私有資料</block>
   <block id="681a30d34dc88519fc9d3b5f02853ef5" category="list-text">如果您想要複製特定資料並將其移至不同的NFS位置、可以將檔案複製到目的地NFS共用。</block>
-  <block id="34413ef9a2fa02e162300410e4578dc8" category="list-text">您可以將ONTAP 某個實體磁碟區複製到新的磁碟區、但只能在新的複製磁碟區中包含來自來源磁碟區的選定檔案。如果您正在移轉資料、但想要從原始Volume中排除某些檔案、這項功能非常實用。</block>
-  <block id="d230e126c453ad22ad5fcc3f4415075f" category="list-text">您可以將檔案從來源儲存庫複製並同步處理至特定目的地位置的目錄。當您將資料從一個來源系統移轉至另一個來源系統時、如果來源檔案仍有一些最終活動、這項功能就很實用。</block>
   <block id="13aa22f4ea4821e274ae149a6821fb68" category="list-text">您可以將Data Sense正在掃描的來源檔案移至任何NFS共用區。</block>
   <block id="8cd71862f8a8c010084d3687780ba841" category="list-text">您可以刪除看起來不安全或風險太高的檔案、使其留在儲存系統中、或是您已識別為重複的檔案。</block>
   <block id="e1ceec320e11017e93f764dd05d20aa0" category="section-title">正在複製來源檔案</block>
@@ -708,7 +698,6 @@
   <block id="73d4c457b0f8ca0f7be75dc85bba7f0f" category="paragraph">如果您想要複製特定資料並將其移至不同的NFS位置、這項功能就很實用。</block>
   <block id="d5c3d70f964953312816ce98d2f4f5d1" category="list-text">*將ONTAP 某個實體磁碟區*複製到同一個集合體中的新磁碟區、但只會在新的複製磁碟區中包含來源磁碟區中選取的檔案。</block>
   <block id="2c727edaa875c00494a86714e286c25d" category="inline-link-macro">NetApp FlexClone</block>
-  <block id="ec086256431805bc6e71317d95f6f6a8" category="paragraph">如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。此動作使用 <block ref="92039e8ff3437cbcef178dbc4c5e027b" category="inline-link-macro-rx"></block> 功能可快速複製磁碟區、然後移除您*未選取*的檔案。</block>
   <block id="cacf80b84fb78c42b4f9ad4c81a37286" category="list-text">*將檔案*從單一來源儲存庫（ONTAP 例如、S庫、S3儲存庫、NFS共用等）複製並同步到特定目的地（目標）位置的目錄。</block>
   <block id="dc188738e6cc2e9f8314e1b95f18ebfd" category="inline-link">NetApp Cloud Sync</block>
   <block id="6e9116627887d2ff2f373f0cac2792f4" category="paragraph">當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。初始複本之後、服務會根據您設定的排程同步任何變更的資料。此動作使用<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> 將資料從來源複製及同步至目標的功能。</block>
@@ -721,7 +710,6 @@
   <block id="07fc1f9bea8dc1060003a2fea5aa3598" category="list-text">在「資料調查結果」窗格中、選取您要複製的檔案、然後按一下「*複製*」。</block>
   <block id="e78ae78fac1620efb2c4db4938844274" category="inline-image-macro">顯示如何從「資料調查」頁面選取要複製的檔案、以及「複製」按鈕的快照。</block>
   <block id="cb1cacc23b0ae330cc87e78659350142" category="paragraph"><block ref="cb1cacc23b0ae330cc87e78659350142" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="954c8e4a2fef11c0a6762941ba9d8127" category="list-text">若要選取所有頁面上的所有檔案、請核取標題列中的方塊（<block ref="131fceed6fc7a6aedc494491ecbfa63c" category="inline-image-macro-rx" type="image"></block>）、然後在快顯訊息中顯示 <block ref="59f58c07f404f0ac69cc91cb0db7e0be" category="inline-image-macro-rx" type="image"></block>，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*</block>
   <block id="62a136d0cb137d3728e47722538ef521" category="list-text">在_複製檔案_對話方塊中、選取*一般複本*索引標籤。</block>
   <block id="ce317c87ce4844ca643177409a988555" category="inline-image-macro">顯示「複製檔案」對話方塊的快照、可讓您指定要複製所有選取檔案的NFS共用區名稱。</block>
   <block id="29119fd663ff44c4494107f1f7eaca94" category="paragraph"><block ref="29119fd663ff44c4494107f1f7eaca94" category="inline-image-macro-rx" type="image"></block></block>
@@ -762,14 +750,12 @@
   <block id="627bf959aabe96a1a08aad7eaf1ab97a" category="paragraph">請注意Cloud Sync 、如果您在雲端部署資料代理程式、則該服務會針對您的同步關係另行收取服務費用。</block>
   <block id="ff0485cd041399c074cb840a8d93eafb" category="list-text">在「資料調查」窗格中、選取單一*工作環境*和單一*儲存儲存庫*來建立篩選器、以確保所有檔案都來自相同的儲存庫。</block>
   <block id="6b063a37c6525c913c2ebc03bba94e6e" category="paragraph">套用任何其他篩選條件、以便只看到您要複製並同步到目的地系統的檔案。</block>
-  <block id="ec9e1d0eb5ba32bb2965598b3dbf2b63" category="list-text">在「調查結果」窗格中、勾選標題列中的方塊、以選取所有頁面上的所有檔案（<block ref="131fceed6fc7a6aedc494491ecbfa63c" category="inline-image-macro-rx" type="image"></block>）、然後在快顯訊息中 <block ref="59f58c07f404f0ac69cc91cb0db7e0be" category="inline-image-macro-rx" type="image"></block> 按一下「*選取清單中的所有項目（xxx個項目）*」、然後按一下「*複製*」。</block>
   <block id="57b19a0c98df2d7d9398a909c1eae2e5" category="paragraph"><block ref="57b19a0c98df2d7d9398a909c1eae2e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8431faf03ecbbded4ece2797b0f5e558" category="list-text">在_複製檔案_對話方塊中、選取*同步*索引標籤。</block>
   <block id="0c6b55cfd6cc79430c7e6b4984da814c" category="inline-image-macro">顯示「複製檔案」對話方塊的快照、讓您選取「同步」選項。</block>
   <block id="ffeb2bccdadff5d463af8c266e273c3a" category="paragraph"><block ref="ffeb2bccdadff5d463af8c266e273c3a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f99d47fc2b2d15f7a4e71c406605af8c" category="list-text">如果確定要將選取的檔案同步到目的地位置、請按一下*確定*。</block>
   <block id="41d86a9722ccbf049c18c60903920b5d" category="paragraph">系統會提示您定義同步關係。來源系統會根據您在Data有意義中選取的儲存庫和檔案預先填入資料。</block>
-  <block id="82ad1ea6a2070297147f61890ad6c8ae" category="list-text">您需要選取目標系統、然後選取（或建立）您打算使用的Data Broker。請從開始檢閱Cloud Sync 《不整合需求 <block ref="5abefb1df304535da49e476c753377a4" category="inline-link-macro-rx"></block>。</block>
   <block id="e6533856451037047a525dba26682255" category="paragraph">檔案會複製到目標系統、並根據您定義的排程進行同步。如果您選取一次性同步、則只會複製檔案並同步一次。如果您選擇定期同步、則檔案會根據排程進行同步。請注意、如果來源系統新增的檔案符合您使用篩選器建立的查詢、則這些_new檔案將會複製到目的地、並在未來進行同步處理。</block>
   <block id="ebcbe4686337bc3124e5b405399e043b" category="paragraph">請注意Cloud Sync 、從Data Sense中叫用某些常用的功能不再運作：</block>
   <block id="9b955d2f8c7eb79fa331696ccaea0382" category="list-text">您無法使用*刪除來源上的檔案*或*刪除目標上的檔案*按鈕。</block>
@@ -1368,7 +1354,6 @@
   <block id="9965e5c3b37cecfca0bb5cbb1e086c48" category="list-text">健全狀況參考模式</block>
   <block id="53155f0c534ef44d114eeae0b0f2e638" category="list-text">ICD-10-CM 醫療代碼</block>
   <block id="f1d3fc4a48ee497faf58426c477a8bd3" category="list-text">ICD-9-CM 醫療代碼</block>
-  <block id="73d3d4a3c512af892bcba03ccfb7e0a3" category="list-text">HR –健全狀況類別</block>
   <block id="8948f9f8b6a6a046dfc8b73ef1fa8c51" category="list-text">健全狀況應用程式資料類別</block>
   <block id="889fccf2502dc396b9b9c66885b6a093" category="paragraph">報告包含下列資訊：</block>
   <block id="8e73880b563de5164876f6e85029b66a" category="list-text">有多少檔案包含健全狀況資訊、以及在哪些工作環境中。</block>
@@ -1402,7 +1387,6 @@
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">鄰近驗證</block>
   <block id="f380f59dbabc3f03bd073f2248216ea2" category="paragraph">檔案中的個人資料可以是一般個人資料或國家識別碼。第三欄會識別Cloud Data Sense是否使用 <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> 驗證識別碼的發現。</block>
   <block id="9ad88770f453f002d943e75f7bc6c007" category="paragraph">此類別中的項目可以任何語言辨識。</block>
-  <block id="6ea5e530965ed45d43a0385246e6a51b" category="paragraph">請注意、如果您正在掃描資料庫伺服器、可以新增至檔案中的個人資料清單。Data Fusion SURE_功能可讓您在資料庫表格中選取欄位、以選擇Cloud Data Sense在掃描中所要尋找的其他識別碼。請參閱 <block ref="e5fd618a95839b26abd9eb3c166b6d5a" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
   <block id="29ee5d1ebcc033234938a5234f1f2075" category="cell">識別碼</block>
   <block id="ed82815cd7c9b16e760f312718a9a3d3" category="cell">鄰近驗證？</block>
@@ -1601,11 +1585,8 @@
   <block id="9b305ee4bd352f956f4cb24478769e42" category="paragraph">您可以從「組態」頁面選取要掃描的資料來源。</block>
   <block id="90fcbce9bfec3d7a472c7ee2962c602f" category="inline-link-macro">設定Cloud Data Sense授權</block>
   <block id="2ef77a3845de73c82db787233e991d0c" category="doc">掃描SharePoint帳戶</block>
-  <block id="040e5e5b0b4e3b56e337960cee1ba171" category="paragraph">請確定您擁有登入SharePoint帳戶的管理認證、而且您有要掃描之SharePoint網站的URL。</block>
-  <block id="0fd354f4598b432146c03a6c1b496e25" category="paragraph">使用管理使用者認證、登入您要存取的SharePoint帳戶、將其新增為新的資料來源/工作環境。</block>
   <block id="a8c0024f4de7eafbcc79573f90579f5f" category="paragraph">在SharePoint帳戶中新增您要掃描的SharePoint網站URL清單、然後選取掃描類型。您一次最多可以新增100個URL。</block>
   <block id="2b4e0126afcd89267252cefaf503c414" category="section-title">檢閱SharePoint需求</block>
-  <block id="e1f7c840b56984612690abc476c04c51" category="list-text">您必須擁有SharePoint帳戶的管理員登入認證、才能提供對所有SharePoint網站的讀取存取權。</block>
   <block id="f86df9b5b428fe5b37c14bd1162bc107" category="list-text">您需要SharePoint網站URL的行分隔清單、以供掃描所有資料。</block>
   <block id="21470a3e6a3feaf105174d0e14c5f537" category="inline-link-macro">部署於雲端</block>
   <block id="cb4787e4f5b2886c42c46c918daec655" category="paragraph">資料感測可以是 <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> 或 <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block>。</block>
@@ -1613,7 +1594,6 @@
   <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">請參閱此處的必要端點清單</block>
   <block id="cb49e9afef4bc3127fbf2d354d00fd54" category="list-text">在「工作環境組態」頁面中、按一下「*新增資料來源*」&gt;「*新增SharePoint Online帳戶*」。</block>
   <block id="ea56ecd454d4962a21bd35be41237229" category="list-text">在「新增SharePoint Online帳戶」對話方塊中、按一下*「登入SharePoint」*。</block>
-  <block id="e61b097ecbac4c8e2db9675d4c9f64cb" category="list-text">在顯示的Microsoft頁面中、選取SharePoint帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*、以允許Cloud Data Sense從此帳戶讀取資料。</block>
   <block id="88f6018b4c4004a32e426fcb13381212" category="section-title">將SharePoint網站新增至法規遵循掃描</block>
   <block id="32d4436877412c0a858739daddb125a4" category="list-text">在「_Configuration」頁面中、按一下SharePoint帳戶的*組態*按鈕。</block>
   <block id="bf65515a2a1389b2c93cbb10daab04e7" category="paragraph"><block ref="bf65515a2a1389b2c93cbb10daab04e7" category="inline-image-macro-rx" type="image"></block></block>
@@ -2017,7 +1997,6 @@
   <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">身為Data Sense權限功能的一部分、您現在可以檢視擁有檔案存取權的使用者和群組清單。每個群組都可展開以顯示群組中的使用者清單。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
   <block id="96ab93ed4512cdb4dd07828ed738b502" category="section-title">「資料調查」頁面新增兩個篩選條件</block>
   <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">「目錄類型」篩選器可讓您精簡資料、只查看資料夾或共用區。結果將顯示在新的*目錄*索引標籤中。</block>
-  <block id="7613f02556e4a651db53f06b87b1b460" category="list-text">「使用者/群組權限」篩選器可讓您列出特定使用者或群組具有讀取和/或寫入權限的檔案、資料夾和共用。您可以選取多個使用者和/或群組名稱、或輸入部分名稱。T</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">請參閱所有篩選器清單、以供您調查資料</block>
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
   <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">已新增名為「使用者/群組權限」的篩選器、以便列出特定使用者或群組具有讀取和/或寫入權限的檔案。您可以選取一或多個使用者和/或群組名稱、或輸入部分名稱。此功能適用於Cloud Volumes ONTAP 下列系統上的Volume：功能：功能包括：功能性、內部ONTAP 版本、功能性、Azure NetApp Files 功能性、功能性、功能性ONTAP 、功能性、功能性、功能性、功能性、功能性、功能性、功能性、可在</block>
@@ -2214,7 +2193,6 @@
   <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">Data Sense現在一次最多可移動100、000個檔案</block>
   <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">瞭解如何使用Data Sense移動檔案</block>
   <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
-  <block id="b71c8f6fc8800b6bd7a829954617c2fb" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="c761b545ddd43d078ae7ea86495182db" category="paragraph">除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 <block ref="de464dfb9c55e9818cd55e6911bff3a5" category="inline-link-macro-rx"></block>。</block>
   <block id="7d3fd85c1133d516ea08b3afb6e176b0" category="list-text">您可以看到 <block ref="48c020a7f60397cfd78a107333e0da79" category="inline-link-macro-rx"></block> 按一下「檢視所有權限」按鈕、即可查看每個檔案和目錄。</block>
   <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">非NetApp CIFS檔案共用（非NFS檔案共用）</block>
@@ -2418,7 +2396,6 @@
   <block id="9a996c7f10537ef7b705b42e701d4b6e" category="paragraph"><block ref="9a996c7f10537ef7b705b42e701d4b6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="56d39ecb5bf4d2ec753c12fbb0e00108" category="paragraph">AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。請參閱<block ref="74fb388667736bb2b34ea14720dd63e3" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="261826c213e3c9cbf53df120aaf0be3b" category="paragraph">Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。請參閱<block ref="e1893ebf6f9d2e927a13d052b78eec9f" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="4866a563c343528540aa5c3529f908ca" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您安裝的是1.5.x版、則只能升級至1.16.x版如果您落後幾個主要版本、就必須多次升級軟體。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">有兩種登錄形式可啟動支援服務權利：</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在Cloud Volumes ONTAP 雲端供應商的市場中註冊與訂閱相關的支援服務序號（這些序號為20位數909601xxxxxxxx序號）。</block>
@@ -2605,7 +2582,6 @@
   <block id="f0d07e71c0ad5ba2b297c19c3e9347e0" category="inline-link">BlueXP會探索這些叢集</block>
   <block id="51fb345d59b3adb8f0060afb63071c67" category="paragraph">您的需求系統應該已經可在BlueXP的畫版中使用。Cloud Volumes ONTAP若為內部部署ONTAP 的功能、您必須擁有<block ref="0ea86f15e08471a3866cbc09dd9a2bd4" category="inline-link-rx"></block>。</block>
   <block id="0718fb096056f1b13075e60b653a79cf" category="paragraph">如果您正在掃描ONTAP 安裝在沒有網際網路連線的黑暗站台上的內部部署的資訊系統、您需要 <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。這也需要在同一個內部部署位置部署BlueXP Connector。</block>
-  <block id="37bd317738b255170eae4641d8d07b07" category="paragraph">確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與Cloud Data Sense之間透過連接埠443的連線等。 <block ref="d9771ea7e072ff16d9d579f1908bd406" category="inline-xref-macro-rx"></block>。</block>
   <block id="213c26a534506d1ae60070296a0343e1" category="list-text">在BlueXP中、選取*管理&gt;分類*。</block>
   <block id="b14547d13e4545e40f6cf3e9a06dd4ab" category="list-text">根據提示輸入 Proxy 詳細資料。如果您的BlueXP Connector已經使用Proxy、則不需要在此輸入此資訊、因為Data Sense將自動使用Connector所使用的Proxy。</block>
   <block id="a7daee29c59d5c1bd111c784f878f35b" category="paragraph">如果您要掃描安裝在無法存取網際網路的暗點中的非NetApp NFS或CIFS檔案共用、您必須執行 <block ref="ecc0eddec0bd55859619b2c1bb3475b2" category="inline-link-macro-rx"></block>。這也需要在同一個內部部署位置部署BlueXP Connector。</block>
@@ -2796,7 +2772,6 @@
   <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。</block>
   <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">內部部署安裝程式現在會在開始安裝之前執行預先檢查</block>
   <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">在Linux系統上安裝Data Sense時、安裝程式會先檢查系統是否符合所有必要的需求（CPU、RAM、容量、網路等）、然後再開始實際安裝。這有助於您在*之前*花時間進行安裝。</block>
-  <block id="9d2608b0b15c6604020ef66ba698a70d" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense但無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
   <block id="80ca59a22e157477c940f080c9cf1223" category="paragraph"><block ref="b1c06333aab3fa5206e44a440f888650" category="inline-link-macro-rx"></block>。</block>
   <block id="fa18750d3909d8a2d2d0a22c1611a692" category="paragraph">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）、立即執行「Slow」（慢速）掃描。 <block ref="50748b3ac35725f5f9be1dab9c684e55" category="inline-link-macro-rx"></block>。</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 搭配BlueXP使用的支援帳戶。</block>
@@ -3035,7 +3010,6 @@
   <block id="4b013f5657095f9d6af00100e52bc1bf" category="paragraph">使用Cloud Data Sense的成本取決於您要掃描的資料量。在BlueXP工作區中、Data Sense掃描的前1 TB資料是免費的30天。達到任一上限後、您需要下列其中一項才能繼續掃描資料：</block>
   <block id="47a431ede9d263c65258e5be6ff6b2c1" category="paragraph">隱私權風險評估報告概述貴組織的隱私權風險狀態、如GDPR和CCPA等隱私權法規要求。報告包含下列資訊：</block>
   <block id="77c511801e7a90a6a31b53c3c33b5397" category="paragraph">健康保險流通與責任法案（ HIPAA ）報告可協助您識別含有健全狀況資訊的檔案。其設計旨在協助貴組織遵守HIPAA資料隱私權法律。Cloud Data Sense所需的資訊包括：</block>
-  <block id="af4b0162529178f9269843c02de9011a" category="paragraph">請注意、您可以按一下、從「資料感知」頁面頂端自訂顯示在報告第一頁上的公司名稱 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 然後按一下*變更公司名稱*。</block>
   <block id="e9ebebe267d1d822cab67a314b8df765" category="section-title">每份資料調查報告中包含的內容</block>
   <block id="507eb1b330c9b9c53f787e32eb212a8c" category="paragraph">在BlueXP中、Cloud Data Sense掃描的前1 TB資料是免費的30天。您必須向雲端供應商Marketplace訂閱、或向NetApp訂購BYOL授權、才能在該時間點之後繼續掃描資料。</block>
   <block id="d16229fe4c13eabaf4888e33502b9f43" category="paragraph">您也可以 <block ref="f05debecbc76a97697e3cf4388733167" category="inline-link-macro-rx"></block> 目前。30天免費試用期結束前、您將不需付費。</block>
@@ -3044,4 +3018,49 @@
   <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">這會擷取所需的軟體和實際安裝檔案* cc_OnPrem_installer.tar。gz*。</block>
   <block id="6cc29d8f722610f8a1e880227931a300" category="list-text">將Data Sense安裝程式檔案（* cc_OnPrem_installer.tar.gz*）複製到主機機器。</block>
   <block id="7b8f90ccd6fc9dda39797ae84ca7f14d" category="paragraph">這會擷取安裝檔案* cc_OnPrem_installer.tar.gz*。</block>
+  <block id="09e1ed363a7252c16bbc8ca0ad3a7d25" category="list-text">您可以將ONTAP 某個實體磁碟區複製到新的磁碟區、但只能在新的複製磁碟區中包含來自來源磁碟區的選定檔案。如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。</block>
+  <block id="8a830392b0909b9d61d8e815dedd9fdf" category="list-text">您可以將檔案從來源儲存庫複製並同步處理至特定目的地位置的目錄。當您將資料從一個來源系統移轉至另一個來源系統、但來源檔案仍有一些最終活動時、此功能非常實用。</block>
+  <block id="b458a6221660c2545d4e63150fc30774" category="paragraph">如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。此動作使用<block ref="95dabe3aae7c23d92fe2946a33d7431b" category="inline-link-rx"></block> 功能可快速複製磁碟區、然後移除您*未選取*的檔案。</block>
+  <block id="eb5af0227fcd1de16ca060308646450a" category="list-text">若要選取個別檔案、請核取每個檔案的方塊（<block ref="27922440534843fc73bbce66b8385327" category="inline-image-macro-rx" type="image"></block>）。</block>
+  <block id="96b986b243d8224bb69f4a0238f93c7f" category="list-text">若要選取目前頁面上的所有檔案、請核取標題列中的方塊（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）。</block>
+  <block id="657428712375fa5789abe7c6de9782a7" category="inline-image-macro">關於選取所有檔案</block>
+  <block id="f4b007384ec89845c9935758ba0063c6" category="list-text">若要選取所有頁面上的所有檔案、請核取標題列中的方塊（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）、然後在快顯訊息中顯示 <block ref="a340f0047d2dd8cefeca9fd0bc9a1c6d" category="inline-image-macro-rx" type="image"></block>，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*</block>
+  <block id="78f57849bdbd66782ef9877d36177fcb" category="list-text">在「調查結果」窗格中、勾選標題列中的方塊、以選取所有頁面上的所有檔案（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）、然後在快顯訊息中 <block ref="a340f0047d2dd8cefeca9fd0bc9a1c6d" category="inline-image-macro-rx" type="image"></block> 按一下「*選取清單中的所有項目（xxx個項目）*」、然後按一下「*複製*」。</block>
+  <block id="a93d7894db2eb1a8c67a7153c6ef02fd" category="list-text">您需要選取目標系統、然後選取（或建立）您打算使用的Data Broker。請從開始檢閱Cloud Sync 《不整合需求 <block ref="b962387ad67b92b5132f148579512908" category="inline-link-macro-rx"></block>。</block>
+  <block id="17dca911bcce42574615a9d04b2c26cd" category="paragraph">此外、如果您計畫將資料從內部部署位置移轉至雲端、您可以在移動資料之前、先檢視資料大小、以及是否有任何資料包含敏感資訊。</block>
+  <block id="8eb1fec334dabbaf8e8ce1c5c57d9629" category="paragraph">在_policies區域中、結果最多的原則會顯示在清單頂端。按一下原則名稱、即可在「調查」頁面中顯示結果。按一下*檢視全部*以檢視所有可用原則的清單。</block>
+  <block id="078f2282264732bc04d57f7f04fa0205" category="paragraph">「_Data Overview」（資料概覽）區段提供所有正在掃描資料的快速概覽。按一下按鈕、即可下載完整的資料對應報告、其中包含所有工作環境和資料來源的使用容量、資料存留時間、資料大小和檔案類型。請參閱 <block ref="90964462e03b814a1facf08c0124716b" category="inline-link-macro-rx"></block> 以取得此報告的完整詳細資料。</block>
+  <block id="c84e7df5fd818e5aa11d03239984b3bd" category="paragraph">「_Top Data儲存庫依敏感度等級_」區域列出前四大資料儲存庫（工作環境和資料來源）、其中包含最敏感的項目。每個工作環境的長條圖分為：</block>
+  <block id="c2587967478c7df25fe839d6f619f443" category="list-text">非敏感資料</block>
+  <block id="f5423605d721232bdd43a55550c3e489" category="section-title">依敏感度和廣泛權限列出的資料</block>
+  <block id="ae9f83336e41be79c7921c9f6c692b67" category="paragraph">「敏感資料」和「寬權限」區域提供內含敏感資料（包括敏感和敏感的個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料的風險所在。</block>
+  <block id="e0247fb281ffe9cb88e8d27a1d7db85b" category="paragraph">檔案的評分是根據具有X軸存取檔案權限的使用者人數（最低至最高）、以及Y軸上檔案中的敏感識別碼數量（最低至最高）。區塊代表與X和Y軸項目相符的檔案數量。較淺的色塊很好；使用者較少、每個檔案的機密識別碼較少。較暗的區塊是您可能想要調查的項目。例如、下方畫面顯示深藍色區塊的暫留文字。這表示您有1、500個檔案、其中751-100個使用者可以存取、其中每個檔案有501-100個敏感識別碼。</block>
+  <block id="baf19cb0f888989db2710471a613fbd9" category="inline-image-macro">當您將游標置於此面板中的元素上時、會顯示所顯示的資料快照。</block>
+  <block id="84bb65a316fae3e8d82ea950dc220467" category="paragraph"><block ref="84bb65a316fae3e8d82ea950dc220467" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c09a51a41728880502cacff404ad64e8" category="paragraph">您可以按一下您感興趣的區塊、在「調查」頁面中檢視受影響檔案的篩選結果、以便進一步調查。</block>
+  <block id="f4200d6b39c6bf611267284ca071fd8b" category="inline-link-macro">瞭解如何將Active Directory服務與Data Sense整合</block>
+  <block id="87fae032ed5605e45b8ed104db07d51d" category="paragraph">如果您尚未將身分識別服務與Data Sense整合、則此面板不會顯示任何資料。 <block ref="ab23cf884d322a71ba54be70f25499ab" category="inline-link-macro-rx"></block>。</block>
+  <block id="fc6931051107a02ba34edee1230d2510" category="admonition">此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔案。目前不支援資料庫、Google雲端硬碟、Amazon S3和一般物件儲存設備。</block>
+  <block id="4f7b4b702c17bca954d2d186aaea71c0" category="list-text">無開放權限</block>
+  <block id="e5ffd57c8ceca007705d9700419ab52a" category="paragraph">類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、「恢復」或「員工合約」等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。</block>
+  <block id="13e71bc7a750dcb909f7b6e859dba7aa" category="paragraph">請確定您擁有登入SharePoint帳戶的合格認證、而且您有要掃描之SharePoint網站的URL。</block>
+  <block id="6d3bb929d06fa3023ab7239f4567ed1a" category="paragraph">使用合格的使用者認證、登入您要存取的SharePoint帳戶、以便將其新增為新的資料來源/工作環境。</block>
+  <block id="7a8c400460fcd57ab61e646f8f7222ff" category="list-text">您必須擁有SharePoint帳戶的管理員使用者登入認證、才能提供所有SharePoint網站的讀取存取權。</block>
+  <block id="fbd2a3d3a2a95ffb088fd8e0ccf6b67d" category="list-text">對於SharePoint Online、您可以使用非系統管理帳戶、但該使用者必須擁有存取您要掃描之所有SharePoint網站的權限。</block>
+  <block id="bd483f6f02b237b48ea9d830b65ef4c2" category="list-text">在顯示的Microsoft頁面中、選取SharePoint帳戶並輸入使用者和密碼（管理員使用者或其他具有SharePoint網站存取權的使用者）、然後按一下「* Accept*（接受）」以允許Cloud Data Sense從這個帳戶讀取資料。</block>
+  <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="section-title">能夠檢視含有敏感資料且過於許可的檔案圖表</block>
+  <block id="d9b195efc41ceb51899b712eb2c0c583" category="paragraph">「治理」儀表板新增了「敏感資料」和「廣泛權限」區域、提供內含敏感資料（包括敏感和敏感個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料的風險所在。<block ref="315faeb2b0e6f27dd87bce24f0b16dd0" category="inline-link-rx"></block>。</block>
+  <block id="39042f4c3554377e7367f85ef5edf207" category="section-title">Data Sense可識別日本的個人號碼</block>
+  <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">Data Sense可識別及分類含有日文個人號碼（也稱為「My Number（我的號碼）」）的檔案。這包括「個人」和「公司我的號碼」。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
+  <block id="ee7392d2316f5d3dd66a6f38dfd1dbfb" category="list-text">「使用者/群組權限」篩選器可讓您列出特定使用者或群組具有讀取和/或寫入權限的檔案、資料夾和共用。您可以選取多個使用者和/或群組名稱、或輸入部分名稱。</block>
+  <block id="d03ac14c4e429af55c127e304518d56e" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
+  <block id="765a37e7c0d57c675f5f9b8438aa0b27" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense、但該網站無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
+  <block id="0e91e4dc71e9acf8654f7179d48b5ccd" category="paragraph">請注意、您可以新增至檔案中的個人資料清單。如果您正在掃描資料庫伺服器、「_Data Fusion Sesf_」功能可讓您選擇資料庫表格中的欄位、以選擇Cloud Data Sense在其掃描中尋找的其他識別碼。您也可以從文字檔新增自訂關鍵字、或使用規則運算式新增自訂模式。請參閱 <block ref="2871b8c2613a3da825be1a942ca6c1d2" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
+  <block id="3631ca73c04d0e5a0d6b08517f6f049f" category="cell">日文個人識別號碼（個人和公司）</block>
+  <block id="35c134848f5f2aeab535e7e525874a02" category="paragraph">確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與Cloud Data Sense之間透過連接埠443的連線等。 <block ref="41431224cdc0c634efe8819b91420afe" category="inline-xref-macro-rx"></block>。</block>
+  <block id="21e0d61d9e797a17767287de32bd7bef" category="list-text">HR -健全狀況類別</block>
+  <block id="46bd1bd2277d77e6f044cdb7a6983fc6" category="inline-image-macro">「更多」按鈕</block>
+  <block id="d9453653a677951287ccfb3413d6baff" category="paragraph">請注意、您可以按一下、從「資料感知」頁面頂端自訂顯示在報告第一頁上的公司名稱 <block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block> 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。</block>
+  <block id="9098e762df6423155c77747444ce3402" category="list-text">請依照中的步驟1至8進行 <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> 在管理器節點上。</block>
+  <block id="63ceb32b6f9962bbdcea6fcd1a87c47e" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您安裝1.17.x版、則只能升級至1.18如果您落後幾個主要版本、就必須多次升級軟體。</block>
 </blocks>
