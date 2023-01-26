@@ -1088,7 +1088,6 @@
   <block id="6c5ebc6dfed433f5cfd2cbc9f155a4d4" category="paragraph">在無法使用n2-Standard-16的區域中、Data Sense會改為在n2d-Standard-16或n1-Standard-16 VM上執行。</block>
   <block id="005b996ef864c5e5d692c055b435643b" category="list-text">此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
   <block id="3fad8aded3d84039416c1bf00afe09d2" category="list-text">每個連接器只部署一個Data Sense執行個體。</block>
-  <block id="96087d5776ba4bf8ffcadbc67f69905c" category="list-text">只要執行個體能夠存取網際網路、就會自動升級Data Sense軟體。</block>
   <block id="37b7293831ce40b655b7cce97556550c" category="admonition">由於Cloud Data Sense會持續掃描資料、因此執行個體應隨時保持執行狀態。</block>
   <block id="5bce28fa8820f7bebc8473b0aaa42f72" category="paragraph">您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些功能較不強大的系統時會有一些限制。</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">系統大小</block>
@@ -1149,7 +1148,6 @@
   <block id="a596c8a5fca6f5403662e33b92d475a7" category="list-text">Cloud Data Sense會將掃描的資料取走、並依檔案類型加以細分。 <block ref="7a0e9af4a23944c56398184b71788414" category="inline-link-macro-rx"></block>。</block>
   <block id="999ab1f0dcc560a0944b54ec5ef461c0" category="list-text">名稱實體辨識</block>
   <block id="13d0a191166a1a3dc29ebcd8e3aae81f" category="inline-link-macro">瞭解如何回應資料主體存取要求</block>
-  <block id="9816543e530fddede751b52325d3679a" category="list-text">Cloud Data Sense使用AI從文件中擷取天然人士的姓名。 <block ref="7dd684ea66077256bb820673a1d9b83b" category="inline-link-macro-rx"></block>。</block>
   <block id="7b895b198aba9634ffec5e0ec9a3aff4" category="section-title">網路總覽</block>
   <block id="6134fb19f2424f157bd88b36e40dcf10" category="paragraph">傳出規則已完全開啟。需要存取網際網路、才能安裝及升級Data Sense軟體、並傳送使用量標準。</block>
   <block id="12d39974306420354fffe75c7f15e621" category="inline-link-macro">深入瞭解Cloud Data意義上的端點</block>
@@ -1385,8 +1383,6 @@
   <block id="5fb27f475a6e9a151878bcedcee62656" category="admonition">如果您需要Cloud Data Sense來識別其他私有資料類型、例如其他國家ID號碼或醫療識別碼、請寄送電子郵件至ng-contact-data-sense@netapp.com並附上您的要求。</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人資料類型</block>
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">鄰近驗證</block>
-  <block id="f380f59dbabc3f03bd073f2248216ea2" category="paragraph">檔案中的個人資料可以是一般個人資料或國家識別碼。第三欄會識別Cloud Data Sense是否使用 <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> 驗證識別碼的發現。</block>
-  <block id="9ad88770f453f002d943e75f7bc6c007" category="paragraph">此類別中的項目可以任何語言辨識。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
   <block id="29ee5d1ebcc033234938a5234f1f2075" category="cell">識別碼</block>
   <block id="ed82815cd7c9b16e760f312718a9a3d3" category="cell">鄰近驗證？</block>
@@ -1439,7 +1435,6 @@
   <block id="3b5f87032b5dd0beea89f73c7f8f64c0" category="cell">英國ID （ Nino ）</block>
   <block id="f5817b4cc67ee41de01a4a19fc33ef7d" category="cell">美國社會安全號碼（ SSN ）</block>
   <block id="0ff635b15f7fdd9403b351ffc3d0c2a1" category="section-title">敏感個人資料的類型</block>
-  <block id="b14a1801297548a365efb89c7bd8874b" category="paragraph">Cloud Data Sense可在檔案中找到的敏感個人資料包括下列清單。此類別中的項目目前只能以英文辨識。</block>
   <block id="98d51623eb7c03f43fa0678301f5efd4" category="list-text">刑事訴訟程序參考資料</block>
   <block id="369810982fcd806bbde0147f11c0364d" category="list-text">族群參考資料</block>
   <block id="4d0838c277b16e4c72ecafbaf587b10f" category="list-text">健全狀況參考資料</block>
@@ -1451,7 +1446,6 @@
   <block id="9c816fac79e497eaa62bbb4a3adddfc1" category="list-text">《宗教信仰參考》</block>
   <block id="1126ae684e7f83d7ad03320e3339f2e4" category="list-text">性生活或取向參考資料</block>
   <block id="3b59f947bb18be76ff03ca45ee9db241" category="section-title">類別類型</block>
-  <block id="82355eab158a61a75b39fa1ecb5f9d01" category="paragraph">Cloud Data Sense會將您的資料分類如下。這些類別大部分都能以英文、德文和西班牙文辨識。</block>
   <block id="78463a384a5aa4fad5fa73e2f506ecfc" category="cell">英文</block>
   <block id="86bc3115eb4e9873ac96904a4a68e19e" category="cell">德文</block>
   <block id="cb5480c32e71778852b08ae1e8712775" category="cell">西班牙文</block>
@@ -2277,7 +2271,6 @@
   <block id="7aa9c47f42013735e3c5573eb7004a9d" category="list-text">識別所有具有開放權限的檔案和目錄（共享區和資料夾）、這些檔案和目錄都會公開給整個組織或大眾使用。</block>
   <block id="5e27afd1e1e5a71e7aff888767d3214a" category="list-text">識別位於初始專屬位置之外的敏感資料。</block>
   <block id="2f548b9a1e6e69aa1914a6a893db7f50" category="list-text">使用_policies自動通知安全員工新的安全問題、以便他們立即採取行動。</block>
-  <block id="1d6cf8f9413aa74ccb67dc25a0cd30f6" category="list-text">檢視及修改 <block ref="d0f9730625a218e637a0d6df3df12f2b" category="inline-link-macro-rx"></block> 在您的檔案中。</block>
   <block id="c5f92f73b9ea92063c2fc24f82a835d2" category="section-title">最佳化儲存使用量</block>
   <block id="5df73f30ee77990aa89c16d3484cbec4" category="paragraph">Data Sense提供的工具可協助您降低儲存設備的總體擁有成本（TCO）。您可以使用Data Sense：</block>
   <block id="17e4f6fc55d9d61a5481011f4bc71a46" category="list-text">識別重複或非業務相關的資料、以提高儲存效率。您可以使用此資訊來決定要移動或刪除特定檔案。</block>
@@ -2512,7 +2505,6 @@
   <block id="004a6e22e05156a8504de44d04937337" category="inline-image-macro">顯示在雲端供應商中執行的BlueXP執行個體和Cloud Data Sense執行個體的圖表。Data Sense執行個體會連線至NFS和CIFS磁碟區、S3儲存區、OneDrive帳戶和資料庫進行掃描。</block>
   <block id="e24936cd2f763a15070324e06686d5c5" category="paragraph"><block ref="e24936cd2f763a15070324e06686d5c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7b8407f88948038fa5832e4ef1655ec3" category="paragraph">BlueXP部署Cloud Data Sense執行個體時、會有一個安全群組、可從Connector執行個體啟用傳入HTTP連線。</block>
-  <block id="7f60df85905efef37e6ae9a727f03e7a" category="paragraph">在SaaS模式下使用BlueXP時、會透過HTTPS連線至BlueXP、而在瀏覽器和Data Sense執行個體之間傳送的私有資料則會以端點對端點加密來保護、這表示NetApp和第三方無法讀取。</block>
   <block id="b665e2a24b5ee1b15d4e77131925e0bb" category="paragraph">指派給每位使用者的角色、可在BlueXP和Cloud Data範圍內提供不同的功能：</block>
   <block id="2ccf8faa066b22b32e97c83d5372f44b" category="list-text">*工作區管理*只能管理具有存取權限的系統的法規遵循設定及檢視法規遵循資訊。如果Workspace管理程式無法存取BlueXP中的工作環境、則無法在「Data Sense（資料感測）」索引標籤中看到工作環境的任何法規遵循資訊。</block>
   <block id="78e53b124783e106b07d5599c5ff16c3" category="inline-link">深入瞭解BlueXP角色</block>
@@ -3055,7 +3047,6 @@
   <block id="ee7392d2316f5d3dd66a6f38dfd1dbfb" category="list-text">「使用者/群組權限」篩選器可讓您列出特定使用者或群組具有讀取和/或寫入權限的檔案、資料夾和共用。您可以選取多個使用者和/或群組名稱、或輸入部分名稱。</block>
   <block id="d03ac14c4e429af55c127e304518d56e" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="765a37e7c0d57c675f5f9b8438aa0b27" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense、但該網站無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
-  <block id="0e91e4dc71e9acf8654f7179d48b5ccd" category="paragraph">請注意、您可以新增至檔案中的個人資料清單。如果您正在掃描資料庫伺服器、「_Data Fusion Sesf_」功能可讓您選擇資料庫表格中的欄位、以選擇Cloud Data Sense在其掃描中尋找的其他識別碼。您也可以從文字檔新增自訂關鍵字、或使用規則運算式新增自訂模式。請參閱 <block ref="2871b8c2613a3da825be1a942ca6c1d2" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="3631ca73c04d0e5a0d6b08517f6f049f" category="cell">日文個人識別號碼（個人和公司）</block>
   <block id="35c134848f5f2aeab535e7e525874a02" category="paragraph">確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與Cloud Data Sense之間透過連接埠443的連線等。 <block ref="41431224cdc0c634efe8819b91420afe" category="inline-xref-macro-rx"></block>。</block>
   <block id="21e0d61d9e797a17767287de32bd7bef" category="list-text">HR -健全狀況類別</block>
@@ -3063,4 +3054,27 @@
   <block id="d9453653a677951287ccfb3413d6baff" category="paragraph">請注意、您可以按一下、從「資料感知」頁面頂端自訂顯示在報告第一頁上的公司名稱 <block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block> 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。</block>
   <block id="9098e762df6423155c77747444ce3402" category="list-text">請依照中的步驟1至8進行 <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> 在管理器節點上。</block>
   <block id="63ceb32b6f9962bbdcea6fcd1a87c47e" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您安裝1.17.x版、則只能升級至1.18如果您落後幾個主要版本、就必須多次升級軟體。</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支援雲端供應商解決方案</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">如需您已整合至BlueXP的下列雲端供應商解決方案的技術支援、請參閱該產品的藍圖XP文件中的「取得協助」。</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="0b95409e38fd76ec71d03e3e14b83763" category="paragraph">所有語言均支援所有這些新增自訂掃描準則的機制。</block>
+  <block id="966065b551c0c5d33146e32380dffc54" category="paragraph">檔案中的個人資料可以是一般個人資料或國家識別碼。下表第三欄會指出Cloud Data Sense是否使用 <block ref="a9db31e17b18ff2d62fd6f2133dfbfce" category="inline-link-macro-rx"></block> 驗證識別碼的發現。</block>
+  <block id="e1a196cfa9a98106e5ba102887a0c95d" category="paragraph">可辨識這些項目的語言列於表格中。</block>
+  <block id="7a8c2ce1750465ec6bf270edb025f14f" category="paragraph">請注意、您可以新增至檔案中的個人資料清單。如果您正在掃描資料庫伺服器、「_Data Fusion Sesf_」功能可讓您選擇資料庫表格中的欄位、以選擇Cloud Data Sense在其掃描中尋找的其他識別碼。您也可以從文字檔新增自訂關鍵字、或使用規則運算式新增自訂模式。請參閱 <block ref="2871b8c2613a3da825be1a942ca6c1d2" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
+  <block id="ad225f707802ba118c22987186dd38e8" category="cell">法文</block>
+  <block id="f32ced6a9ba164c4b3c047fd1d7c882e" category="cell">日文</block>
+  <block id="4ef37c8218042a526e063ddcb7f99e4e" category="paragraph">Cloud Data Sense可在檔案中找到的敏感個人資料包括下列清單。</block>
+  <block id="3b3e3761409ec91318d55527674759e3" category="paragraph">此類別中的項目目前只能以英文辨識。</block>
+  <block id="d28ebbcb60fdecb8e44508f82867ad79" category="paragraph">Cloud Data Sense會將您的資料分類如下。</block>
+  <block id="5ad8ae17298ed454e6b4639368851b62" category="paragraph">這些類別大部分都能以英文、德文和西班牙文辨識。</block>
+  <block id="db58ba41843c3976a8e9932df76277ec" category="list-text">檢視及修改<block ref="59692f28ce49bb83d818eeb4f17b5a14" category="inline-link-rx"></block> 在您的檔案中。</block>
+  <block id="afdc492e219eada4c9eca232defb9ab7" category="paragraph">您也可以在內部部署的Linux主機或偏好的雲端供應商的主機上部署Data Sense。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。只要執行個體能夠存取網際網路、就會自動升級Data Sense軟體。</block>
+  <block id="dc59914806276092072d36ab9d88436a" category="section-title">資料感應掃描資料的速度有多快</block>
+  <block id="de07b97b8f1edf6b3a5e144748a45572" category="paragraph">資料感應可在每天15到40 TB的資料之間掃描、每個掃描儀節點。掃描速度會受到網路延遲、磁碟延遲、網路頻寬、環境大小和檔案發佈大小的影響。</block>
+  <block id="e56c626eb62df6bf64f545a2d416aa7c" category="inline-link-macro">深入瞭解如何部署多個掃描器節點來掃描資料</block>
+  <block id="fb3ba22f3eff98ea203090bc210752be" category="paragraph"><block ref="eefbdd7e2d2119a699d2995aece8c9f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="d5e0083566ed8d85ca68105bf8cfd38e" category="list-text">Cloud Data Sense使用AI從文件中擷取天然人士的姓名。 <block ref="7dd684ea66077256bb820673a1d9b83b" category="inline-link-macro-rx"></block>。</block>
+  <block id="008c6840e9f624b9435a7c107d8afaff" category="paragraph">在SaaS模式下使用BlueXP時、會透過HTTPS連線至BlueXP、而在瀏覽器和Data Sense執行個體之間傳送的私有資料則會以端點對端點加密來保護、這表示NetApp和第三方無法讀取。</block>
 </blocks>

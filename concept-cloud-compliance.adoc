@@ -48,7 +48,7 @@ Data Sense可識別出可能有犯罪目的存取風險的資料。您可以使�
 * 遵守資料保留政策。
 * 使用_policies自動通知安全員工新的安全問題、以便他們立即採取行動。
 * 將自訂標記新增至檔案（例如「需要搬移」）、並指派一個BlueXP使用者、讓該人員擁有檔案的更新。
-* 檢視及修改 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）標籤"^] 在您的檔案中。
+* 檢視及修改 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）標籤"^] 在您的檔案中。
 
 
 
@@ -165,8 +165,9 @@ image:diagram_cloud_compliance_instance.png["顯示在雲端供應商中執行�
 
 * 此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * 每個連接器只部署一個Data Sense執行個體。
-* 只要執行個體能夠存取網際網路、就會自動升級Data Sense軟體。
 
+
+您也可以在內部部署的Linux主機或偏好的雲端供應商的主機上部署Data Sense。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。只要執行個體能夠存取網際網路、就會自動升級Data Sense軟體。
 
 
 TIP: 由於Cloud Data Sense會持續掃描資料、因此執行個體應隨時保持執行狀態。
@@ -267,6 +268,14 @@ Cloud Data Sense可讓您在選定的資料來源上執行一般的「對應」�
 
 | 執行其他報告的能力 | 是的 | 否 
 |===
+
+
+=== 資料感應掃描資料的速度有多快
+
+資料感應可在每天15到40 TB的資料之間掃描、每個掃描儀節點。掃描速度會受到網路延遲、磁碟延遲、網路頻寬、環境大小和檔案發佈大小的影響。
+
+link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["深入瞭解如何部署多個掃描器節點來掃描資料"^]。
+
 
 
 == Cloud Data Sense索引的資訊
