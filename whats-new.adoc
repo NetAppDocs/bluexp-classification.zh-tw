@@ -18,6 +18,44 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
+== 2023年2月5日（1.20版）
+
+
+
+=== 能夠將原則型通知電子郵件傳送至任何電子郵件地址
+
+在舊版的Cloud Data Sense中、當某些重要原則傳回結果時、您可以傳送電子郵件警示給帳戶中的BlueXP使用者。此功能可讓您取得通知、在您不在線上時保護資料。現在、您也可以將原則的電子郵件警示傳送給任何其他使用者（最多20個電子郵件地址）、而這些使用者不在您的BlueXP帳戶中。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["深入瞭解如何根據原則結果傳送電子郵件警示"]。
+
+
+
+=== 現在您可以從UI新增Data Sense將識別的個人模式
+
+Data Sense能夠新增自訂的「個人資料」、讓Data Sense在未來一段時間的掃描中能夠識別這些資料。不過、您需要登入Data Sense Linux主機、然後使用命令列新增自訂模式。在此版本中、使用regex新增個人模式的功能位於Data Sense UI中、可讓您輕鬆新增及編輯這些自訂模式。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["深入瞭解如何從Data Sense UI新增自訂模式"^]。
+
+
+
+=== 能夠使用Data Sense搬移1500萬個檔案
+
+過去、您可以讓Data Sense將最多100、000個來源檔案移至任何NFS共用區。現在您一次最多可以搬移1500萬個檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["深入瞭解如何使用Data Sense移動來源檔案"]。
+
+
+
+=== 能夠查看有權存取SharePoint Online檔案的使用者人數
+
+篩選器「具有存取權限的使用者人數」現在支援儲存在SharePoint Online儲存庫中的檔案。過去只支援CIFS共用上的檔案。請注意、目前不以Active Directory為基礎的SharePoint群組將不會計入此篩選器。
+
+
+
+=== 新的「部分成功」狀態已新增至「行動狀態」面板
+
+新的「部分成功」狀態表示「資料感知」動作已完成、部分項目失敗、部分項目成功、例如、您正在移動或刪除100個檔案時。此外、「已完成」狀態已重新命名為「成功」。過去、「已完成」狀態可能會列出成功及失敗的動作。現在「成功」狀態代表所有項目的所有行動都成功。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["請參閱如何檢視「動作狀態」面板"]。
+
+
+
 == 2023年1月9日（1.19版）
 
 

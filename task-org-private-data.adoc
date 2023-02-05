@@ -16,7 +16,7 @@ summary: Cloud Data Sense提供多種方法、讓您管理及組織私有資料�
 [role="lead"]
 Cloud Data Sense提供多種方法、讓您管理及組織私有資料。如此一來、您就能更輕鬆地查看最重要的資料。
 
-* 如果您已訂閱 link:https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^] 若要分類及保護檔案、您可以使用Cloud Data Sense來管理這些AIP標籤。
+* 如果您已訂閱 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^] 若要分類及保護檔案、您可以使用Cloud Data Sense來管理這些AIP標籤。
 * 您可以將標記新增至您要標記為組織或某種後續追蹤的檔案。
 * 您可以將BlueXP使用者指派給特定檔案或多個檔案、以便該人員負責管理檔案。
 * 使用「原則」功能、您可以建立自己的自訂搜尋查詢、只要按一下按鈕、就能輕鬆查看結果。
@@ -55,7 +55,7 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 
 == 使用AIP標籤分類資料
 
-您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） link:https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。AIP可讓您將標籤套用至內容、以分類及保護文件與檔案。Data Sense可讓您檢視已指派給檔案的標籤、新增標籤至檔案、以及在標籤已經存在時變更標籤。
+您可以在Cloud Data Sense正在掃描的檔案中管理AIP標籤（若已訂閱） https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。AIP可讓您將標籤套用至內容、以分類及保護文件與檔案。Data Sense可讓您檢視已指派給檔案的標籤、新增標籤至檔案、以及在標籤已經存在時變更標籤。
 
 Cloud Data Sense支援下列檔案類型中的AIP標籤：.DOC、.DOCX、.PDF、.PPTX、.XLS、 XLSX：
 
@@ -356,7 +356,7 @@ image:screenshot_compliance_select_user_multi.png["顯示如何在「資料調�
 * <<預先定義原則的清單,預先定義的原則>> 根據使用者要求從NetApp取得
 * 能夠建立您自己的自訂原則
 * 只要按一下、就能啟動「調查」頁面、並取得原則的結果
-* 當某些關鍵原則傳回結果時、請傳送電子郵件警示給BlueXP使用者、以便您取得通知來保護資料
+* 當特定重要原則傳回結果時、請傳送電子郵件警示給BlueXP使用者或任何其他電子郵件地址、以便您取得通知來保護資料
 * 自動將AIP（Azure資訊保護）標籤指派給符合原則中所定義條件的所有檔案
 * 當某些原則傳回結果時、自動刪除檔案（每天一次）、以便您自動保護資料
 
@@ -394,6 +394,7 @@ image:screenshot_compliance_save_as_highlight.png["顯示如何將篩選查詢�
 .. 輸入唯一的名稱和說明。
 .. 您也可以勾選此方塊、自動刪除符合原則參數的檔案。深入瞭解 link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["使用原則刪除來源檔案"]。
 .. 或者、如果您想要將通知電子郵件傳送給您帳戶中的BlueXP使用者、請勾選此方塊、然後選擇電子郵件傳送的時間間隔。深入瞭解 link:task-org-private-data.html#sending-email-alerts-when-non-compliant-data-is-found["根據原則結果傳送電子郵件警示"]。
+.. 或者、如果您想要將通知電子郵件傳送給其他使用者、請勾選此方塊、最多輸入20個電子郵件地址、然後選擇電子郵件傳送的時間間隔。
 .. 您也可以勾選此方塊、自動將AIP標籤指派給符合原則參數的檔案、然後選取標籤。（只有在您已整合AIP標籤時才需要。深入瞭解 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP標籤"]）
 .. 按一下「*建立原則*」。
 +
@@ -410,7 +411,7 @@ image:screenshot_compliance_save_highlight.png["顯示如何設定原則並加�
 
 === 發現不符合法規的資料時傳送電子郵件警示
 
-Cloud Data Sense可在特定重要原則傳回結果時、傳送電子郵件警示給您帳戶中的BluXP使用者、以便您取得通知來保護資料。您可以選擇每天、每週或每月傳送電子郵件通知。
+Cloud Data Sense可在特定重要原則傳回結果時、傳送電子郵件警示給您帳戶中的BluXP使用者、以便您取得通知來保護資料。您可以選擇每天、每週或每月傳送電子郵件通知。您也可以選擇將電子郵件警示傳送至任何其他電子郵件地址（最多20個電子郵件地址）、而非在您的BlueXP帳戶中。
 
 您可以在建立原則或編輯任何原則時設定此設定。
 
@@ -424,6 +425,7 @@ image:screenshot_compliance_add_email_alert_1.png["顯示如何編輯現有原�
 . 在「編輯原則」頁面中：
 +
 .. 如果您想要將通知電子郵件傳送給您BlueXP帳戶中的使用者、請勾選「在此帳戶中傳送所有使用者電子郵件」方塊、然後選擇電子郵件的傳送時間間隔（例如*每天*）。
+.. 如果您想要將通知電子郵件傳送給其他使用者、請勾選「傳送電子郵件」方塊、選擇電子郵件傳送的時間間隔、然後輸入最多20個電子郵件地址。
 +
 image:screenshot_compliance_add_email_alert_2.png["螢幕快照顯示如何選擇要傳送給原則的電子郵件條件。"]
 

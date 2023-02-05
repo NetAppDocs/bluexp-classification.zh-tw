@@ -159,7 +159,7 @@ image:diagram_cloud_compliance_instance.png["顯示在雲端供應商中執行�
 在無法使用m5.4xLarge的區域中、Data Sense會改為在m4.4xLarge執行個體上執行。
 
 * 在Azure中、Cloud Data Sense可在上執行 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] 使用 512 GB 磁碟。作業系統映像是CentOS 7.8。
-* 在GCP中、Cloud Data Sense可在上執行 link:https://cloud.google.com/compute/docs/machine-types#recommendations_for_machine_types["n2-Standard-16 VM"^] 使用512 GB標準持續磁碟。作業系統映像是CentOS 7.9。
+* 在GCP中、Cloud Data Sense可在上執行 link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16 VM"^] 使用512 GB標準持續磁碟。作業系統映像是CentOS 7.9。
 +
 在無法使用n2-Standard-16的區域中、Data Sense會改為在n2d-Standard-16或n1-Standard-16 VM上執行。
 
@@ -272,7 +272,7 @@ Cloud Data Sense可讓您在選定的資料來源上執行一般的「對應」�
 
 === 資料感應掃描資料的速度有多快
 
-資料感應可在每天15到40 TB的資料之間掃描、每個掃描儀節點。掃描速度會受到網路延遲、磁碟延遲、網路頻寬、環境大小和檔案發佈大小的影響。
+資料感應可在每天15-40 Tib之間掃描每個掃描儀節點的資料。掃描速度會受到網路延遲、磁碟延遲、網路頻寬、環境大小和檔案發佈大小的影響。
 
 link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["深入瞭解如何部署多個掃描器節點來掃描資料"^]。
 

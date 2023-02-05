@@ -106,7 +106,7 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 
 * *其他軟體*：您必須先在主機上安裝下列軟體、才能安裝Data Sense：
 +
-** Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
+** Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
 ** Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 
 
@@ -266,7 +266,7 @@ image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動Cloud D
 +
 image:screenshot_cloud_compliance_deploy_darksite.png["選取按鈕以在內部部署Cloud Data Sense的螢幕快照。"]
 
-. 在_部署內部部署資料感測_對話方塊中、複製所提供的命令並貼到文字檔中、以便稍後使用、然後按一下*關閉*。例如：
+. 此時會顯示「部署內部部署的資料感知」對話方塊。複製所提供的命令並貼到文字檔中、以便稍後使用、然後按一下*關閉*。例如：
 +
 「Udo ./install.sh -a 12345 -c 27AG75 -t 2198qq --暗房」
 
@@ -309,7 +309,7 @@ tar -xzf cc_onprem_installer.tar.gz
 .結果
 Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安裝可能需要 10 到 20 分鐘。
 
-如果主機與連接器執行個體之間有連接埠8080的連線、您會在BlueXP的「Data Sense（資料感測）」索引標籤中看到安裝進度。
+如果主機與連接器執行個體之間有連接埠8080的連線、您會在BlueXP的「Data Sense（資料感知）」索引標籤中看到安裝進度。
 
 .下一步
 在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
@@ -396,7 +396,7 @@ Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可�
 由於Data Sense軟體會定期更新新功能、因此您應該定期檢查新版本、以確保使用最新的軟體和功能。您需要手動升級Data Sense軟體、因為沒有網際網路連線功能可自動執行升級。
 
 .開始之前
-* Data Sense軟體一次可升級一個主要版本。例如、如果您安裝1.17.x版、則只能升級至1.18如果您落後幾個主要版本、就必須多次升級軟體。
+* Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝1.18x版、則只能升級至1.19.x如果您落後幾個主要版本、就必須多次升級軟體。
 * 確認您的內部部署Connector軟體已升級至最新版本。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["請參閱連接器升級步驟"^]。
 
 
@@ -407,7 +407,7 @@ Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可�
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.16.1.tar.gz
+tar -xvf DataSense-offline-bundle-v1.19.1.tar.gz
 ----
 +
 這會擷取安裝檔案* cc_OnPrem_installer.tar.gz*。

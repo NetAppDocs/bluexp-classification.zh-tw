@@ -217,7 +217,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 * 每欄頂端的控制項可讓您依照數字或字母順序來排序結果。
 * 左窗格篩選器可讓您從下列屬性中選取、以精簡結果：
 +
-[cols="35,65"]
+[cols="30,65"]
 |===
 | 篩選器 | 詳細資料 
 

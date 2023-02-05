@@ -83,6 +83,72 @@ image:screenshot_compliance_delete_data_fusion.png["顯示如何移除資料 Fus
 
 
 
+== 使用regex新增自訂的個人資料識別碼
+
+您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。這可讓您建立新的自訂regex、以識別系統中尚未存在的新個人資訊元素。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。
+
+例如、您可能想要查看所有檔案中提及內部產品ID的位置。例如、如果產品ID的結構清楚明確、12位數的編號從201開始、您可以使用自訂的regex功能在檔案中搜尋。此範例的規則運算式為*\b201\d｛9｝\b*。
+
+新增regex之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新結果會顯示在「個人結果」區段下方的「資料感知法規遵循儀表板」、以及「個人資料」篩選器的「調查」頁面。
+
+.步驟
+. 從「自訂類別器」索引標籤中、按一下「*新增類別器*」以啟動「新增自訂類別器_」精靈。
++
+image:screenshot_compliance_add_classifier_button.png["顯示如何啟動「新增自訂類別器」精靈的快照。"]
+
+. 在_選取類型_頁面中、輸入類別器的名稱、提供簡短說明、選取*個人識別符號*、然後按*下一步*。
++
+您輸入的名稱會顯示在Data Sense UI中、做為符合類別器需求的掃描檔案標題。您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料。
+
++
+image:screenshot_select_classifier_type.png["顯示如何命名類別器並選取類別器類型的快照。"]
+
+. 在「選取資料分析工具」頁面中、選取*自訂規則運算式*做為定義類別器的方法、然後按一下*下一步*。
++
+image:screenshot_select_classifier_tool.png["快照顯示「自訂規則運算式」選項、做為Data Sense建置模式所用的工具。"]
+
+. 在_建立邏輯_頁面中、輸入規則運算式和任何鄰近字詞、然後按一下*完成*。
++
+.. 您可以輸入任何合法的規則運算式。按一下「*驗證*」按鈕、讓「資料感知」驗證規則運算式是否有效、且其範圍不太廣、表示會傳回太多結果。
+.. 您也可以輸入一些鄰近詞彙、以協助精簡結果的準確度。這些詞彙通常會在您要搜尋的模式300個字元內找到（在找到的模式之前或之後）。在單獨一行輸入每個字詞或片語。
++
+image:screenshot_select_classifier_create_logic.png["為您的客戶類別者輸入regex和近接字的快照。"]
+
+
+
+
+
+.結果
+新增類別器、Data Sense開始重新掃描所有資料來源。您會回到「自訂類別器」頁面、在其中可以檢視符合新類別器的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。
+
+image:screenshot_personal_info_regex_added.png["快照顯示在掃描進行中新增至系統的新regex類別器結果。"]
+
+
+
+=== 檢視自訂分類器的結果
+
+您可以在"規範儀表板"和"調查"頁面中檢視任何自訂類別器的結果。例如、此螢幕擷取畫面會在「個人結果」區段的「法規遵循儀表板」中顯示相符的資訊。
+
+image:screenshot_add_regex_result.png["在「調查結果」窗格中顯示自訂regex結果範例的快照。"]
+
+按一下 image:button_arrow_investigate.png["使用箭頭畫圓"] 按鈕、可在「調查」頁面中查看詳細結果。
+
+此外、您的所有自訂類別器結果都會顯示在「自訂類別器」索引標籤中、前6個自訂類別器結果則會顯示在「符合性儀表板」中、如下所示。
+
+image:screenshot_custom_classifier_top_5.png["根據傳回的結果顯示前3大自訂分類器的快照。"]
+
+
+
+=== 管理自訂分類器
+
+您可以使用*編輯分類器*按鈕來變更您所建立的任何自訂分類器。
+
+如果您稍後決定不需要「資料感知」來識別您新增的自訂模式、您可以使用*刪除分類器*按鈕來移除每個項目。
+
+image:screenshot_custom_classifiers_manage.png["「自訂類別器」頁面的快照、其中包含用於編輯和刪除類別器的按鈕。"]
+
+
+
 == 從文字檔新增自訂關鍵字
 
 您可以將自訂關鍵字新增至Data Sense、以便識別資料中的特定資訊。您可以從您定義的文字檔新增關鍵字。關鍵字會新增至Data Sense已使用的現有預先定義關鍵字、結果會顯示在「個人模式」區段下方。
@@ -193,73 +259,3 @@ image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示�
 [user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names.txt
 ----
  log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully
-
-
-== 使用regex新增自訂的個人資料識別碼
-
-您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。
-
-例如、您可能想要查看所有檔案中提及內部產品ID的位置。例如、如果產品ID的結構清楚明確、12位數的編號從201開始、您可以使用自訂的regex功能在檔案中搜尋。
-
-新增regex之後、Data Sense會重新開始掃描所有資料來源、掃描完成後、新結果會出現在Data Sense中。
-
-
-
-=== 命令語法以新增regex
-
-您必須存取Data Sense系統、才能新增包含自訂關鍵字模式的檔案、並啟動命令來新增自訂關鍵字。 <<存取命令列,瞭解如何存取命令列>> 無論您是在內部部署環境中安裝Data Sense、或是在雲端中部署Data Sense、
-
-新增自訂regex的命令語法如下：
-
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "<pattern_name>" -r "<regular_expression>" -p "<proximity_words>"
-* =此名稱將顯示在Data Sense UI中。請確定名稱可識別regex的設計用途。名稱必須至少包含一個字母、且長度最多可達70個字元。
-* =這可以是任何合法的規則運算式。
-* 支援範圍= 300個字元以內的字詞（在找到的模式之前或之後）、有助於精準調整結果的準確度<proximity_words> 。每個字詞都以一個逗號（、）分隔。
-
-
-您可以從路徑*/ opt / NetApp /資料中心/*執行命令。
-
-請注意、我們會測試每個新的regex、以驗證其範圍是否太廣、而且會傳回太多相符項目。如果是這種情況、則會顯示下列記錄訊息：
-
- log v1.0 | 2022-08-17 07:24:19,585 | ERROR | ds_logger | custom_regex | 119 | 1 | None | custom_regex_119 | The regex has high risk to identify false positives. Please narrow the regular expression and try again. To add it anyway, use the force flag (-f) at the end
-如果您想要將regex強制新增至Data Sense（資料感測）、您可以使用命令列結尾的*-f*選項、即使我們認為該選項太寬。或者、您也可以使用「-p」選項來嘗試精簡搜尋結果。
-
-
-
-=== 範例
-
-產品ID是以201開頭的12位數號碼、例如「201123456789」。因此規則運算式是*\b201\d｛9｝\b*。您希望Data Sense UI中的文字將此模式識別為*內部產品ID*。我們會新增「產品ID」和「識別碼」等鄰近詞彙。
-
-若要查看所有檔案中提及的內部產品ID、請輸入下列命令。
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s activate -n "Internal Product ID" -r "\b201\d{9}\b" -p "product id,identifier"
-----
-此命令的輸出為：
-
-....
-[+] Adding Custom Regex to Data Sense
-log v1.0 | 2022-08-23 13:19:01,476 | INFO | ds_logger | custom_regex | 154 | 1 | None | custom_regex_154 | A pattern named 'Internal Product ID' was added successfully to Data Sense
-....
-.結果
-下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。
-
-image:screenshot_add_regex_result.png["在「調查結果」窗格中顯示自訂regex結果範例的快照。"]
-
-
-
-=== 停用自訂regex
-
-如果您稍後決定不需要使用Data Sense來識別您輸入為regex的自訂模式、請使用命令中的* deacter*選項來移除每個regex。
-
- sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "<pattern name>"
-例如、若要移除*內部產品ID* regex：
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_regex/custom_regex.sh -s deactivate -n "Internal Product ID"
-----
- log v1.0 | 2022-08-17 09:13:15,431 | INFO | ds_logger | custom_regex | 31 | 1 | None | custom_regex_31 | A pattern named 'Internal Product ID' was deactivated successfully

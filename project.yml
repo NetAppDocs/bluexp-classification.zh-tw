@@ -8,7 +8,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
-  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr,fr-fr,de-de
+  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,fr-fr
 sidebar:
   entries:
   - title: Cloud Data Sense文件
@@ -23,7 +23,7 @@ sidebar:
       entries:
       - title: 部署於雲端
         url: "/task-deploy-cloud-compliance.html"
-      - title: 部署內部部署並可存取網際網路
+      - title: 部署在可存取網際網路的Linux主機上
         url: "/task-deploy-compliance-onprem.html"
       - title: 部署內部部署、無需存取網際網路
         url: "/task-deploy-compliance-dark-site.html"
@@ -105,7 +105,7 @@ homepage:
       url: whats-new.html
     - title: 在雲端部署Data Sense
       url: task-deploy-cloud-compliance.html
-    - title: 透過網際網路在內部部署Data Sense
+    - title: 在具備網際網路的Linux主機上部署Data Sense
       url: task-deploy-compliance-onprem.html
     - title: 無需網際網路、即可在內部部署Data Sense
       url: task-deploy-compliance-dark-site.html
@@ -174,13 +174,13 @@ homepage:
   - title: 部落格社群
     links:
     - title: NetApp社群
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: BlueXP使用案例
-      url: https://cloud.netapp.com/netapp-cloud-data-sense
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: 資料感知使用案例
+      url: https://bluexp.netapp.com/netapp-cloud-data-sense
     - title: BlueXP部落格
-      url: https://cloud.netapp.com/blog
+      url: https://bluexp.netapp.com/blog
     - title: 雲端網路研討會
-      url: https://cloud.netapp.com/events
+      url: https://bluexp.netapp.com/events
 product-family:
   name: BlueXP
   repo: cloud-manager-family

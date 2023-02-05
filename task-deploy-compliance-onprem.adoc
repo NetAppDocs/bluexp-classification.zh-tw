@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: 完成幾個步驟、即可在網路中的Linux主機或雲端中可存取網際網路的Linux主機上部署Cloud Data Sense。 
+summary: 完成幾個步驟、即可在網路中的Linux主機上或雲端中的Linux主機上部署Cloud Data Sense（雲端資料感知）、並可存取網際網路。 
 ---
 = 在可存取網際網路的Linux主機上部署Cloud Data Sense
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 完成幾個步驟、即可在網路中的Linux主機或雲端中可存
 
 
 [role="lead"]
-完成幾個步驟、即可在網路中的Linux主機或雲端中可存取網際網路的Linux主機上部署Cloud Data Sense。
+完成幾個步驟、即可在網路中的Linux主機上或雲端中的Linux主機上部署Cloud Data Sense（雲端資料感知）、並可存取網際網路。
 
 如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、則內部安裝可能是個不錯的選擇、但這並非必要。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。
 
@@ -22,7 +22,7 @@ summary: 完成幾個步驟、即可在網路中的Linux主機或雲端中可存
 
 image:diagram_deploy_onprem_overview.png["所需的BlueXP和網路元件、以及相關連線的圖表。"]
 
-對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為Manager節點、提供額外處理能力的其他系統稱為「掃描儀節點」。
+對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。
 
 請注意、您也可以 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的內部部署網站上部署Data Sense"] 完全安全的網站。
 
@@ -34,7 +34,7 @@ image:diagram_deploy_onprem_overview.png["所需的BlueXP和網路元件、以�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 建立連接器
 [role="quick-margin-para"]
-如果您還沒有連接器、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在內部部署連接器"^] 在網路或雲端的Linux主機上。
+如果您還沒有連接器、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在內部部署連接器"^] 在網路中的Linux主機上、或是在雲端的Linux主機上。
 
 [role="quick-margin-para"]
 您也可以與雲端供應商建立Connector。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在GCP中建立連接器"^]。
@@ -88,28 +88,31 @@ image:diagram_deploy_onprem_overview.png["所需的BlueXP和網路元件、以�
 
 確保雲端資料認證能夠持續運作。Cloud Data Sense機器必須持續運作、才能持續掃描資料。
 
+* * CPU*：16核心
+* * RAM*：64 GB（交換記憶體必須在主機上停用）
+* *磁碟*：SSD搭配500 GiB、可在/、或上使用
++
+** 100 GiB可在/op
+** 400 GiB可在/var
+** 5 GiB、位於/tmp
++
+請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
+
+
+
+* * AWS EC2執行個體類型*：符合上述CPU和RAM需求的執行個體類型。我們推薦 https://aws.amazon.com/ec2/instance-types/m5/["M5.4xLarge"^]。
+* * Azure VM Sizing*：符合上述CPU與RAM需求的執行個體類型。我們推薦 https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^]。
+* * GCP機器類型*：符合上述CPU與RAM需求的執行個體類型。我們推薦 https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16"^]。
 * *作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.7版
 +
 ** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
 ** 作業系統必須能夠安裝Docker引擎
 
 
-* *磁碟*：SSD搭配500 GiB、可在/、或上使用
-+
-** 100 GiB可在/op
-** 400 GiB可在/var
-** 5 GiB、位於/tmp
-
-
-* * RAM*：64 GB（交換記憶體必須在主機上停用）
-* * CPU*：16核心
-+
-請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
-
 * * Red Hat訂購管理*：Red Hat Enterprise Linux系統必須註冊Red Hat訂購管理。如果未註冊、系統將無法在安裝期間存取儲存庫來更新所需的協力廠商軟體。
 * *其他軟體*：您必須先在主機上安裝下列軟體、才能安裝Data Sense：
 +
-** Docker Engine 19版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
+** Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
 ** Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 
 
@@ -124,7 +127,7 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-如果您打算使用其他Data Sense主機、請現在將這些規則新增至您的主要系統：
+如果您打算使用其他Data Sense主機做為掃描儀節點、請在此時將這些規則新增至您的主要系統：
 
 +
 ....
@@ -262,11 +265,11 @@ NOTE: 當Azure NetApp Files 軟體安裝在內部部署環境中時、Cloud Data
 +
 image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動Cloud Data Sense的螢幕快照。"]
 
-. 按一下「*啟動資料感應*」以啟動內部部署精靈。
+. 視部署於雲端執行個體或內部部署執行個體而定、請按一下適當的*部署*按鈕、啟動「Data Sense部署精靈」。
 +
-image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在內部部署Cloud Data Sense的螢幕快照。"]
+image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在雲端或內部部署的機器上部署Cloud Data Sense的螢幕快照。"]
 
-. 在_部署內部部署資料感測_對話方塊中、複製所提供的命令並貼到文字檔中、以便稍後使用、然後按一下*關閉*。例如：
+. 此時會顯示「部署內部部署的資料感知」對話方塊。複製所提供的命令並貼到文字檔中、以便稍後使用、然後按一下*關閉*。例如：
 +
 「Udo ./install.sh -a 12345 -c 27AG75 -t 2198qq」
 
@@ -314,9 +317,9 @@ tar -xzf DATASENSE-INSTALLER-V1.16.1.tar.gz
 
 
 .結果
-Cloud Data Sense安裝程式會安裝套件、安裝泊塢視窗、註冊安裝、以及安裝Data Sense。安裝可能需要 10 到 20 分鐘。
+Cloud Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安裝可能需要 10 到 20 分鐘。
 
-如果主機與連接器執行個體之間有連接埠8080的連線、您會在BlueXP的「Data Sense（資料感測）」索引標籤中看到安裝進度。
+如果主機與連接器執行個體之間有連接埠8080的連線、您會在BlueXP的「Data Sense（資料感知）」索引標籤中看到安裝進度。
 
 .下一步
 您可以從「組態」頁面選取要掃描的資料來源。
@@ -332,7 +335,7 @@ Cloud Data Sense安裝程式會安裝套件、安裝泊塢視窗、註冊安裝�
 有兩種方法可以新增其他掃描器節點：
 
 * 新增節點以協助掃描所有資料來源
-* 新增節點以協助掃描特定資料來源或特定的資料來源群組
+* 新增節點以協助掃描特定資料來源或特定資料來源群組（通常是根據位置）
 
 
 根據預設、您新增的任何新掃描器節點都會新增至一般掃描資源池。這稱為「預設掃描器群組」。在下圖中、「預設」群組中有1個Manager節點和3個掃描儀節點、全部都是來自所有6個資料來源的掃描資料。
@@ -373,7 +376,7 @@ image:diagram_onprem_scanner_groups.png["資料感應掃描程式在指派給不
 * 確認您的環境符合所需 <<從Cloud Data Sense啟用傳出網際網路存取,權限與連線能力>>。
 * 您必須擁有要新增的掃描儀節點主機的IP位址。
 * 您必須擁有Data Sense Manager節點主機系統的IP位址
-* 您必須擁有連接器系統的IP位址或主機名稱、NetApp帳戶ID、連接器用戶端ID和使用者存取權杖。如果您打算使用掃描器群組、則必須知道帳戶中每個資料來源的工作環境ID。請參閱下方的_Prerequisite步驟_以取得此資訊。
+* 您必須擁有連接器系統的IP位址或主機名稱、NetApp帳戶ID、連接器用戶端ID和使用者存取權杖。如果您打算使用掃描器群組、則必須知道帳戶中每個資料來源的工作環境ID。請參閱下方的*先決條件步驟_*以取得此資訊。
 * 必須在所有主機上啟用下列連接埠和傳輸協定：
 +
 [cols="15,20,55"]
@@ -519,7 +522,7 @@ image:screenshot_scanner_groups.png["快照會列出群組中所有掃描器群�
 
 對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。
 
-在多部內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。
+在多部內部部署主機上同時安裝Data Sense軟體時、請遵循下列步驟。請注意、以這種方式部署多個主機時、您無法使用「掃描器群組」。
 
 .您需要的產品
 * 確認Manager和掃描儀節點的所有Linux系統都符合 <<準備Linux主機系統,主機需求>>。
@@ -579,7 +582,7 @@ image:screenshot_scanner_groups.png["快照會列出群組中所有掃描器群�
 
 
 .結果
-Cloud Data Sense安裝程式會完成套件、Docker的安裝、並登錄安裝。安裝可能需要 10 到 20 分鐘。
+Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可能需要 10 到 20 分鐘。
 
 .下一步
 您可以從「組態」頁面選取要掃描的資料來源。
