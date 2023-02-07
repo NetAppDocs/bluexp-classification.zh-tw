@@ -44,7 +44,7 @@ image:screenshot_compliance_governance_dashboard.png["Cloud Data Sense管理儀�
 ** 雜項（一般「其他」類別）
 
 
-* *重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。 link:task-controlling-private-data.html#viewing-all-duplicated-files["查看顯示哪些類型的重複檔案"]。
+* *重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。 link:task-investigate-data.html#viewing-all-duplicated-files["查看顯示哪些類型的重複檔案"]。
 
 
 
@@ -53,13 +53,13 @@ image:screenshot_compliance_governance_dashboard.png["Cloud Data Sense管理儀�
 
 在_policies區域中、結果最多的原則會顯示在清單頂端。按一下原則名稱、即可在「調查」頁面中顯示結果。按一下*檢視全部*以檢視所有可用原則的清單。
 
-按一下 link:task-org-private-data.html#controlling-your-data-using-policies["請按這裡"] 以深入瞭解原則。
+按一下 link:task-using-policies.html["請按這裡"] 以深入瞭解原則。
 
 
 
 === 資料總覽
 
-「_Data Overview」（資料概覽）區段提供所有正在掃描資料的快速概覽。按一下按鈕、即可下載完整的資料對應報告、其中包含所有工作環境和資料來源的使用容量、資料存留時間、資料大小和檔案類型。請參閱 link:task-generating-compliance-reports.html#data-mapping-report["資料對應報告"^] 以取得此報告的完整詳細資料。
+「_Data Overview」（資料概覽）區段提供所有正在掃描資料的快速概覽。按一下按鈕、即可下載完整的資料對應報告、其中包含所有工作環境和資料來源的使用容量、資料存留時間、資料大小和檔案類型。請參閱 <<資料對應報告,資料對應報告>> 以取得此報告的完整詳細資料。
 
 
 
@@ -148,3 +148,36 @@ TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔�
 如果您已訂閱Azure資訊保護（AIP）、您可以將標籤套用至內容、以分類及保護文件與檔案。檢閱指派給檔案的最常用AIP標籤、即可查看檔案中最常用的標籤。
 
 請參閱 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP標籤"^] 以取得更多資訊。
+
+
+
+=== 資料對應報告
+
+資料對應報告概述儲存在企業資料來源中的資料、協助您做出移轉、備份、安全性及法規遵循程序等決策。報告首先列出一份概述報告、摘要說明您所有的工作環境和資料來源、然後針對每個工作環境提供詳細資料。
+
+報告包含下列資訊：
+
+使用容量:: 適用於所有工作環境：列出每個工作環境的檔案數量和使用容量。對於單一工作環境：列出使用最大容量的檔案。
+資料存留期:: 提供三個圖表、說明檔案建立、上次修改或上次存取的時間。根據特定日期範圍列出檔案數量及其使用容量。
+資料大小:: 列出工作環境中特定大小範圍內的檔案數量。
+檔案類型:: 列出儲存在工作環境中的每種檔案類型的檔案總數和使用容量。
+
+
+
+
+==== 產生資料對應報告
+
+移至「Data Sense（資料感測）」索引標籤以產生報告。
+
+.步驟
+. 在BlueXP功能表中、按一下*管理>分類*。
+. 按一下「*管理*」、然後按一下「管理儀表板」中的「*完整資料對應總覽報告*」按鈕。
++
+image:screenshot_compliance_data_mapping_report_button.png["「管理儀表板」的快照、顯示如何啟動資料對應報告。"]
+
+
+
+.結果
+Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給其他群組。
+
+請注意、您可以按一下、從「資料感知」頁面頂端自訂顯示在報告第一頁上的公司名稱 image:screenshot_gallery_options.gif["「更多」按鈕"] 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。

@@ -49,7 +49,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 * 請確定這些連接埠已開放給Data Sense執行個體：
 +
 ** NFS：連接埠111和2049。
-** 適用於CIFS：連接埠139和445。
+** 適用於CIFS -連接埠139和445。
 
 
 * NFS Volume匯出原則必須允許從Data Sense執行個體存取。
@@ -124,7 +124,7 @@ Cloud Data Sense會開始掃描您在工作環境中選取的磁碟區。一旦C
 . 確認下列連接埠已開放給Data Sense執行個體：
 +
 ** NFS：連接埠111和2049。
-** 適用於CIFS：連接埠139和445。
+** 適用於CIFS -連接埠139和445。
 
 
 . 確保NFS Volume匯出原則包含Data Sense執行個體的IP位址、以便存取每個Volume上的資料。

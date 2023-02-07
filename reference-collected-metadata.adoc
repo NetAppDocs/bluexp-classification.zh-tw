@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: reference-collected-metadata.html 
+keywords: compliance, metadata, permissions, time stamps, privacy 
+summary: Data Sense會在資料來源和工作環境中對資料執行分類掃描時、收集特定的中繼資料。Data Sense可存取我們分類資料所需的大部分中繼資料、但有些來源無法存取我們所需的資料。 
+---
+= 從資料來源收集的中繼資料
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Data Sense會在資料來源和工作環境中對資料執行分類掃描時、收集特定的中繼資料。Data Sense可存取我們分類資料所需的大部分中繼資料、但有些來源無法存取我們所需的資料。
+
+|===
+|  | *中繼資料* | * CIFS * | * NFS* 
+
+
+.3+| *時間戳記* | *建立時間* | 可用 | 無法使用（Linux不支援） 
+
+
+| *上次存取時間* | 可用 | 可用 
+
+
+| *上次修改時間* | 可用 | 可用 
+
+
+.2+| *權限* | *開放權限* | 如果「每個人」群組都能存取該檔案、則會被視為「開放給組織」 | 如果「其他人」可以存取該檔案、則會被視為「開放給組織」 
+
+
+| *使用者/群組存取* | 使用者和群組資訊取自LDAP | 不可用（NFS使用者通常在伺服器本機管理、因此同一位使用者在每個伺服器上可以有不同的UID） 
+|===

@@ -137,4 +137,4 @@ image:screenshot_compliance_select_schemas.png["「掃描組態」頁面的快�
 
 
 .結果
-Cloud Data Sense會開始掃描您啟用的資料庫架構。如果有任何錯誤、它們會顯示在「狀態」欄中、以及修正錯誤所需的動作。
+Cloud Data Sense會開始掃描您啟用的資料庫架構。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。

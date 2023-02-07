@@ -249,7 +249,7 @@ image:screenshot_compliance_move_file.png["顯示「資料調查」頁面中檔�
 
 您可以永久移除看起來不安全或風險太高的來源檔案、使其留在儲存系統中、或是您已識別為重複檔案。此動作是永久性的、而且不會復原或還原。
 
-您可以從「調查」窗格手動刪除檔案、或使用原則自動刪除檔案。
+您可以從「調查」窗格手動刪除檔案、或 link:task-using-policies.html#deleting-source-files-automatically-using-policies["自動使用原則"^]。
 
 
 TIP: 您無法刪除位於資料庫中的檔案。
@@ -290,34 +290,3 @@ image:screenshot_compliance_delete_multi_files.png["顯示如何從「資料調�
 請注意、您也可以在檢視檔案的中繼資料詳細資料時刪除個別檔案。只要按一下*刪除檔案*即可。
 
 image:screenshot_compliance_delete_file.png["快照顯示「資料調查」頁面中檔案的中繼資料詳細資料中選取的「刪除檔案」按鈕。"]
-
-
-
-=== 使用原則自動刪除來源檔案
-
-您可以建立自訂原則來刪除符合原則的檔案。例如、您可能想要刪除包含敏感資訊且在過去30天內由Data Sense發現的檔案。
-
-只有帳戶管理員可以建立原則來自動刪除檔案。
-
-
-NOTE: 符合原則的所有檔案將一天永久刪除一次。
-
-.步驟
-. 在「資料調查」頁面中、選取您要使用的所有篩選條件、以定義您的搜尋。請參閱 link:task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["篩選資料調查頁面中的資料"^] 以取得詳細資料。
-. 當您以所需的方式擁有所有篩選特性之後、請按一下*從此搜尋建立原則*。
-. 命名原則並選取原則可執行的其他動作：
-+
-.. 輸入唯一的名稱和說明。
-.. 核取「自動刪除符合此原則的檔案」方塊、然後輸入*永久刪除*、確認您要使用此原則永久刪除檔案。
-.. 按一下「*建立原則*」。
-+
-image:screenshot_compliance_delete_files_using_policies.png["顯示如何設定原則並加以儲存的快照。"]
-
-
-
-
-
-.結果
-新原則會出現在原則索引標籤中。符合原則的檔案會在原則執行時每天刪除一次。
-
-您可以在中檢視已刪除的檔案清單 link:task-view-compliance-actions.html["「行動狀態」窗格"]。

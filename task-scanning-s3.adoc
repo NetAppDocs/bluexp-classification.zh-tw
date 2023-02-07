@@ -83,7 +83,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 --
 建立VPC端點時、請務必選取對應至Cloud Data Sense執行個體的區域、VPC和路由表。您也必須修改安全性群組、以新增允許流量到 S3 端點的傳出 HTTPS 規則。否則、Data Sense無法連線至S3服務。
 
-如果您遇到任何問題、請參閱 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS 支援知識中心：為什麼我無法使用閘道 VPC 端點連線至 S3 儲存區？"^]
+如果您遇到任何問題、請參閱 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS支援知識中心：為什麼我無法使用閘道VPC端點連線至S3儲存區？"^]
 
 另一種方法是使用 NAT 閘道來提供連線。
 
@@ -182,7 +182,7 @@ Cloud Data Sense會開始掃描您啟用的S3儲存區。如果有任何錯誤�
 .步驟
 . 前往您要掃描 S3 儲存區的目標 AWS 帳戶、然後選取 * 其他 AWS 帳戶 * 來建立 IAM 角色。
 +
-image:screenshot_iam_create_role.gif[""]
+image:screenshot_iam_create_role.gif["用來建立IAM角色的AWS頁面快照。"]
 
 +
 請務必執行下列動作：
