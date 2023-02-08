@@ -73,7 +73,7 @@ sidebar:
       url: "/task-managing-highlights.html"
     - title: 變更掃描設定
       url: task-managing-repo-scanning.html
-    - title: 產生報告
+    - title: 產生法規遵循報告
       url: "/task-generating-compliance-reports.html"
   - title: 管理雲端資料感測
     entries:
