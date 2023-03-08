@@ -356,8 +356,6 @@
   <block id="4de725d331cf276fac026642a5f17603" category="paragraph">如果不再需要掃描特定檔案共用、您可以隨時將個別檔案共用區移除、使其檔案不再掃描。只要按一下「組態」頁面中的「*移除共用*」即可。</block>
   <block id="90777a343fd7f5c83c97f473d59a2af2" category="inline-image-macro">螢幕快照顯示如何移除單一檔案共用區以掃描其檔案。</block>
   <block id="c8716632d7055f530ad579b6f751cf3a" category="paragraph"><block ref="c8716632d7055f530ad579b6f751cf3a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fc8b1fc5168574e248a2f42d3e9b0cc5" category="summary">請完成幾個步驟、在內部部署站台的主機上部署Cloud Data Sense、但該站台無法存取網際網路。這類安裝最適合安全的站台。</block>
-  <block id="03207363010b8ea77da69a9f09065d71" category="doc">在內部部署Cloud Data Sense、無需存取網際網路</block>
   <block id="e2115e429619cedeaf6aeedfb1d4d0d7" category="inline-link-macro">將Data Sense部署在可存取網際網路的內部部署站台</block>
   <block id="1c038c580523f9a3d7126408c53a8288" category="paragraph">請注意、您也可以 <block ref="1079604978fa03138d29a36dc3d0bf3f" category="inline-link-macro-rx"></block>。</block>
   <block id="70d7362b35a6ff039264c78f2d35ab2c" category="section-title">支援的資料來源</block>
@@ -498,21 +496,16 @@
   <block id="d65142db38828c0dd5d365061085a9bf" category="list-text">選取 Amazon S3 工作環境。</block>
   <block id="0935819aba236aea3b813f76e288f13a" category="inline-image-macro">Amazon S3 工作環境圖示的快照</block>
   <block id="a3a4b47224ab5ffd3c2bd00fdf40f4ab" category="paragraph"><block ref="a3a4b47224ab5ffd3c2bd00fdf40f4ab" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ba5791d4b3e450f80ba97b71a8085fc1" category="list-text">在右側的「Data檢測」窗格中、按一下「*啟用*」。</block>
   <block id="9728950e84ccd6542f6769c5939d2ca1" category="inline-image-macro">從「服務」面板啟用Cloud Data Sense服務的快照</block>
-  <block id="72964bc33c91e31da04a6d4db666303d" category="paragraph"><block ref="72964bc33c91e31da04a6d4db666303d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a6100ac4fa5cb7bbb1c49e95165b96b2" category="inline-xref">必要的權限</block>
   <block id="74e5e01600beec43894e96e22ac9f5eb" category="list-text">出現提示時、請將IAM角色指派給具有的Cloud Data Sense執行個體 <block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>。</block>
   <block id="a14eadef9fed4334ae62e1b07a91b3d1" category="inline-image-macro">輸入AWS IAM角色for Cloud Data Sense的快照</block>
-  <block id="17ca8b6da2574412974f28f85e8bc202" category="paragraph"><block ref="17ca8b6da2574412974f28f85e8bc202" category="inline-image-macro-rx" type="image"></block></block>
   <block id="909d8cdc7c100d1834d4de10094f43ca" category="list-text">按一下「*啟用*」。</block>
   <block id="d761456e00468ed6d2677409261cd941" category="admonition">您也可以按一下「組態」頁面、針對工作環境啟用法規遵循掃描 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> 按鈕並選擇*啟動Data檢測*。</block>
   <block id="e18a75263bcb68f3fcffe930704c1b61" category="section-title">啟用和停用 S3 儲存區的法規遵循掃描</block>
   <block id="7c2a1afd2de07142fad71a298b835868" category="inline-xref">掃描位於不同 AWS 帳戶中的 S3 儲存區</block>
   <block id="b1e8e17ac8da06f3bc41e785862093df" category="paragraph">雲端資料感應也能實現 <block ref="fbc7d1e2817308c6eddf1c4eb56ce78c" category="inline-xref-macro-rx"></block>。</block>
-  <block id="69f17b5356378bcc05856aa61cd79b46" category="list-text">在右側窗格中、按一下 * 設定鏟斗 * 。</block>
   <block id="488f97fa3f9c407a3e1f8f12be96ad79" category="inline-image-macro">按一下「 Configure boose 」（設定儲存庫）以選擇您要掃描的 S3 儲存區的快照</block>
-  <block id="01e1641f56cce6118fc73fbc01cddcf3" category="paragraph"><block ref="01e1641f56cce6118fc73fbc01cddcf3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c33c67608fa8a89c762775a89bf2094f" category="inline-image-macro">選取您要掃描的 S3 儲存區的快照</block>
   <block id="e3f6bceac4bf21688390b971a13b99f1" category="paragraph"><block ref="e3f6bceac4bf21688390b971a13b99f1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="90b24e6f91588c8716039d3bf7440db0" category="paragraph">Cloud Data Sense會開始掃描您啟用的S3儲存區。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。</block>
@@ -532,7 +525,6 @@
   <block id="e7cd110e747552b06f0f533c44e8165a" category="list-text">按一下「*啟動Data Sense &amp; Select bucket *」、然後選取您要掃描的儲存區。</block>
   <block id="94b8ae05ce3e7062b43a79d08eec1bfe" category="paragraph">Cloud Data Sense會開始掃描您啟用的新S3儲存區。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
-  <block id="07d41912a6ab6b97216f8cf89e93205c" category="section-title">自我支援</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">這些選項可供免費使用、一天24小時、一週7天：</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">知識庫</block>
   <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
@@ -540,8 +532,6 @@
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">文件</block>
   <block id="80b1b0d2b1ebf2b3cba2d25759801afd" category="list-text">mailto：ng-cloudmanager-feedback@netapp.com [意見反應電子郵件]</block>
-  <block id="0659d428df833a806e29e65e632d380a" category="section-title">NetApp支援</block>
-  <block id="f5052c65917d7341726235d4d4941461" category="list-text">在「Technical Support（技術支援）」下選擇可用的選項之一：</block>
   <block id="03eb150633fbc0232b1ee17ab48b43ae" category="summary">請完成幾個步驟、開始使用ONTAP Cloud Data Sense掃描Amazon FSX for Sf大量 資料。</block>
   <block id="eddf71c2364cb70dc54a32723a344817" category="doc">開始瞭解Cloud Data Sense for Amazon FSX ONTAP for Sf</block>
   <block id="2b8c960a15fe1935fd5872b84fee2da7" category="list-text">您需要AWS中的Active Connector來部署和管理Data Sense。</block>
@@ -1168,84 +1158,8 @@
   <block id="f8add8b46019d8016befb6aebc941e84" category="inline-link">瞭解如何設定全域Active Directory</block>
   <block id="ed02f2ad98646d05140c6f62857791cb" category="section-title">資料感應「原則」現在可用於刪除檔案</block>
   <block id="4fdca8fbbd2a76d7345e79fb0e7fd3fc" category="inline-link">瞭解如何建立自訂原則</block>
-  <block id="096a1667ae412a6b3dd6d7318a0fb8d4" category="section-title">2021年12月16日</block>
-  <block id="4fda7be69eb097891068c14360cba258" category="section-title">資料感測功能可在黑暗的站台中掃描資料</block>
-  <block id="3c6e7a50358ad493c1281cc6aa27309a" category="paragraph">Cloud Manager（連接器）和Cloud Data Sense均可部署在內部部署站台、但無法存取網際網路。現在、您的安全網站可以使用Cloud Manager來管理內部ONTAP 的支援叢集、在叢集之間複寫資料、以及使用Cloud Data Sense從這些叢集掃描資料。</block>
-  <block id="1eee0717fa00b6d32dfb2ab489f54964" category="inline-link-macro">瞭解如何在無法存取網際網路的站台上部署Cloud Data Sense</block>
-  <block id="b8039ded95757c80005c804fabc145a1" category="paragraph"><block ref="79863890a17e4bdd9593d37ca0d14fc0" category="inline-link-macro-rx"></block>。</block>
-  <block id="f61163b681442ac500a8018c87241770" category="section-title">2021年11月28日</block>
-  <block id="6d732051b4ee221c3896e5943078d7c4" category="section-title">Data Sense可用於從ONTAP 某個作業系統複製磁碟區</block>
-  <block id="0e65b1a6d06c19deb46ff998c80de0a5" category="paragraph">您可以使用Data Sense來複製ONTAP 一個實體磁碟區、但只能在新的複製磁碟區中包含來源磁碟區中選取的檔案。如果您正在移轉資料、想要排除某些檔案、或想要建立磁碟區的複本以供測試、這項功能很有幫助。</block>
-  <block id="e0dab5e04e9cb55716e589595b1e6b4b" category="inline-link-macro">瞭解如何複製磁碟區</block>
-  <block id="9d321eefe3fb98368019ac183d4f559f" category="paragraph"><block ref="99c1ffe6c02d2af43316b015cbc9c8a2" category="inline-link-macro-rx"></block>。</block>
-  <block id="aa316c658b08b1eec45b0e73dc9d8e96" category="section-title">適用於Cloud Manager的GCP Marketplace訂閱現已包含對Cloud Data Sense的支援</block>
-  <block id="4932ec0144d6d1640460f5cfee326e0f" category="inline-link">適用於Cloud Manager的GCP Marketplace訂閱</block>
-  <block id="6fef68839fa6cc086be3d7d7abb69cad" category="paragraph">。<block ref="d5f59196a7b849b257c625be10a1d93c" category="inline-link-rx"></block> 現在支援Cloud Data Sense。現在您可以使用這份隨用隨付（PAYGO）訂閱、掃描Cloud Volumes ONTAP 部署在Google Cloud儲存設備上的__LW_YGO]系統中的資料、以及使用NetApp的BYOL授權。</block>
-  <block id="49b8c4f61544245ecf36672ba0113068" category="section-title">能夠檢視您長期執行的法規遵循行動狀態</block>
-  <block id="c066aa13effff0bea79252a20699074b" category="paragraph">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除50個檔案、程序可能需要一些時間。現在您可以監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。</block>
-  <block id="7fc4a6242ce76e0415a989d1dbc8b9d4" category="inline-link-macro">瞭解如何檢視持續法規遵循行動的狀態</block>
-  <block id="6241446e1383ab0c8cc0cebdfbb90484" category="inline-link-macro">請參閱Data Sense在掃描中找到的所有個人資料類型清單</block>
-  <block id="2164b22cc8c41bee72c53771bd025c07" category="paragraph">Data Sense現在可以在檔案中找到個人資料類型「British Passport"（英國護照）」和「National Health Service（NHS）Number（美國國家醫療服務（NHS）編號）」。 <block ref="ce74ef267e6a0fa015475f7a67f6924a" category="inline-link-macro-rx"></block>。</block>
-  <block id="89372f2a277a8453dc542e88ba9ef4f0" category="section-title">「新篩選器」可顯示屬於特定工作環境類型的檔案</block>
-  <block id="9a67fa9362671e5cfd7881e63183490e" category="paragraph">在「資料調查」頁面中篩選資料時、已新增「工作環境類型」的篩選器。這可讓您篩選Cloud Volumes ONTAP 出適用於下列項目的結果：支援各種功能的不全系統、ONTAP 適用於各種系統的FSX、內部部署ONTAP 的不全系統等等。</block>
-  <block id="e370b3500d8b67f884ff10af2cab702c" category="section-title">2021年11月7日</block>
-  <block id="e48cb5e3594830a9679d2e76261df2e8" category="section-title">現在、您可以選擇在工作環境中對應或分類個別磁碟區</block>
-  <block id="8226af020361fe3987ed52162cbc4d06" category="paragraph">過去您可以對應所有磁碟區、或是對應及分類每個工作環境中的所有磁碟區。現在、您可以選擇對應_OR來對應及分類個別磁碟區。此選項可用於Cloud Volumes ONTAP 支援下列項目：SFFEM Volume、ANF Volume、on prem ONTAP 、以及ONTAP 適用於Sfx6 Volume的FSX。</block>
-  <block id="ce8e3fe1aae847699e405f937430c727" category="section-title">Data Sense可將檔案從資料來源複製到目的地NFS共用區</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
-  <block id="489bbace9696e34940e2b4012383115f" category="paragraph">您可以將Data Sense正在掃描的任何來源檔案複製到目的地NFS共用區。如果您想要複製特定資料並將其移至不同的NFS位置、這項功能就很有幫助。 <block ref="d05c5872a8ecb6f8190249ddc8786d34" category="inline-link-macro-rx"></block>。</block>
-  <block id="459fecfdaf1e78b26ef269df213bc81a" category="section-title">能夠掃描FSX上ONTAP 的資料保護磁碟區、以利執行不需使用的檔案系統</block>
-  <block id="d80d3c7ebf333488ef4d2c74d7fde58e" category="paragraph">現在、您可以在FSXfor ONTAP Sfor Solidffile系統上掃描資料保護磁碟區。 <block ref="12146991433bc5a213bcb83d563990f4" category="inline-link-macro-rx"></block>。</block>
-  <block id="60465eb8970b5bad23ff0f639954b0ae" category="section-title">新的篩選器、可在Data Sense首次發現檔案時、依日期範圍顯示檔案</block>
-  <block id="e02ef706eaed7e8a20115407bffb0216" category="paragraph">「調查」頁面中名為「探索時間」的新篩選器、可讓您在Data Sense首次探索檔案時、依日期範圍檢視檔案。探索到的時間也已新增至「檔案詳細資料」頁面、以及以CSV格式輸出檔案的報告。</block>
-  <block id="0b43e955bb49e08923e9b43ee20ef2b3" category="section-title">SOC 2類型2認證</block>
-  <block id="bda633aa50f099014aa085ad93af9cff" category="paragraph">一家獨立認證的公共會計公司和服務稽核員審查了Cloud Data Sense、並根據適用的信任服務準則、確認已達成SOC 2類報告。</block>
-  <block id="582a36961cbdd6ca90f6672041cdab83" category="inline-link">檢視NetApp的SOC 2報告</block>
-  <block id="f982fa3c6fb84f7cccc6a84a6ffc9a1d" category="paragraph"><block ref="958c315a8c40765f65895091ecc83488" category="inline-link-rx"></block>。</block>
-  <block id="d1c47d8bf748c203ff983262e6c108cb" category="section-title">2021年10月4日</block>
-  <block id="7175abddc94aae9f582ff187e073eac7" category="section-title">支援NetApp的BYOL授權</block>
-  <block id="c513c649fe64ed52674dbb18376d71fa" category="paragraph">除了透過雲端供應商的市場取得Data Sense授權、現在您可以向NetApp購買自帶授權（BYOL）、以便在Cloud Manager帳戶中的所有工作環境和資料來源中使用。</block>
-  <block id="00beacb1f1189c9f01dd562d2e17ba8f" category="inline-link-macro">深入瞭解全新Cloud Data Sense BYOL授權</block>
-  <block id="9091d7d6e522e57e8207ba8ce0760373" category="paragraph"><block ref="acbd27f5f515b9d59280399ad7e728ba" category="inline-link-macro-rx"></block>。</block>
-  <block id="7e6a902227a5aff46cb434910e5c292f" category="section-title">支援Google Cloud Platform</block>
-  <block id="defb90791cab3206e78b5423ed2c8b26" category="paragraph">現在Cloud Data Sense可以掃描Cloud Volumes ONTAP 部署在GCP上的各種支援系統中的資料。資料感應必須部署在GCP上、而且連接器必須部署在GCP或內部部署上。與Connector相關的GCP服務帳戶需要最新權限、才能將Cloud Data Sense部署至GCP。</block>
-  <block id="5b5f95cb16cc6baa317f2459854a87af" category="section-title">能夠掃描FSX上 的CIFS Volume、以利ONTAP 支援不順暢的檔案系統</block>
-  <block id="4ad745dcbae16cc9cbfa352d10dee9d2" category="inline-link-macro">瞭解如何掃描Amazon FSXfor ONTAP SfundVolume</block>
-  <block id="a840a5a79ff17611f610aea797443528" category="paragraph">Data Sense現在可以掃描來自FSX的CIFS Volume、以供ONTAP 支援各種系統。 <block ref="0eeca2862916d1603da10da4ea8f7a8e" category="inline-link-macro-rx"></block>。</block>
-  <block id="d798cbf5a08fbeb9fdd3652e5b00bb4c" category="section-title">2021年9月2日</block>
-  <block id="e55ec0c0e7df55e996e766cf1ddfcd6c" category="section-title">能夠掃描FSX上的NFS磁碟區ONTAP 、以供支援不全檔案系統之用</block>
-  <block id="f0e03aeff7590515947d417df3c44149" category="inline-link-macro">瞭解如何為您的FSX ONTAP for Sf哪些 系統設定掃描</block>
-  <block id="d3a24d1f0136676bd5e6c7dfdd76a1f3" category="paragraph">新增支援在Amazon FSX for ONTAP Sf系 上掃描NFS磁碟區上的資料。 <block ref="78789fe6f73d50e026d33dc711bd85c0" category="inline-link-macro-rx"></block>。</block>
-  <block id="ed336c97bd7749d0b604d710a3169440" category="section-title">資料感應「狀態」項目已變更為「標記」項目</block>
-  <block id="3dcb86dca720d483150e850e6939f919" category="inline-link-macro">深入瞭解檔案層級標記</block>
-  <block id="396db0ecff0e339a92f9b3a2af31d263" category="paragraph">使用Data Sense將「狀態」資訊新增至檔案的功能、已將術語變更為「標記」。這些是檔案層級標籤、請勿與可套用至磁碟區、EC2執行個體、虛擬機器等的資源層級標籤混淆 <block ref="fae0dc82413cbf28598c32b2f2b30fe3" category="inline-link-macro-rx"></block>。</block>
-  <block id="9e27c4a53794e4f6cfc9949de58e5091" category="section-title">2021年8月1日</block>
-  <block id="b2a24b78c7ab82f495008fb584802b8e" category="section-title">一次管理多個檔案的檔案設定</block>
-  <block id="911d437fe43df208c05b7bd0a3a5fd36" category="paragraph">在舊版的Cloud Data Sense中、您可以一次對一個檔案執行下列動作：新增狀態標記、指派使用者、以及新增AIP標籤。現在、您可以從「資料調查」頁面選取多個檔案、並在多個檔案上執行這些動作。</block>
-  <block id="a0c71efbfb9cd276842249b759494dca" category="section-title">管理儀表板會根據資料建立時間或上次存取時間來顯示資料</block>
-  <block id="81fa8b9a7e51e3b6727474568dca14d0" category="paragraph">在「管理」儀表板中檢視資料的存留期時、除了根據上次修改的時間來檢視資料之外、現在您可以根據資料建立時間或上次存取時間（讀取時間）來檢視資料。此資訊也會在資料對應報告中提供。</block>
-  <block id="715df5847e32201de12278bd599a747f" category="section-title">掃描大型組態時、能夠使用多部主機來提供額外的處理能力</block>
-  <block id="5b36750f739fc1c783153e7581ff604f" category="paragraph">部署內部部署Data Sense時、現在您可以在計畫掃描包含數PB資料的組態時、將掃描軟體安裝在其他內部部署主機上。這些額外的_掃描儀節點_可在掃描非常大的組態時提供更高的處理能力。</block>
-  <block id="cec6006ebbef58d19ece0bccf55641bd" category="inline-link-macro">在多個主機上部署Data Sense軟體</block>
-  <block id="65fa82fb8a157d27290b37d014a1e038" category="paragraph">瞭解如何操作 <block ref="fcd2ff9a961d403217fed261cd527026" category="inline-link-macro-rx"></block>。</block>
-  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021年7月7日</block>
-  <block id="0b8379ea047ac207c395c8a9c6709526" category="section-title">Data Sense可將檔案從資料來源移至目的地NFS共用區</block>
-  <block id="f30ef67a4274772079ff06a86e3a74e2" category="inline-link-macro">將Data Sense正在掃描的任何來源檔案移至任何NFS共用區</block>
-  <block id="c1f264653480074b4ff5c33f6da78cca" category="paragraph">新功能可讓您實現 <block ref="cc908d8cc2317a532e385546a3f8e196" category="inline-link-macro-rx"></block>。這可讓您將敏感或安全性相關的檔案移至特殊區域、以便進行更多分析。</block>
-  <block id="002a13154f4ce5f6f1ca6b053cd26c76" category="section-title">能夠快速分類資料、而非執行完整分類掃描</block>
-  <block id="ed4bdff0b14403bf62e234ebd3b70386" category="inline-link-macro">檢視資料對應報告</block>
-  <block id="8b1cff14f17bbdf3a25104f916729ebc" category="paragraph">您現在可以選擇將資料快速對應至類別、而非執行完整分類掃描。如此一來、您就能 <block ref="6b081f418bc21ae87c3e1758cd454263" category="inline-link-macro-rx"></block> 當您不需要執行完整掃描的特定資料來源時、請從「管理儀表板」取得資料總覽。</block>
-  <block id="d80b36ddfa007c5b8414c96e0ae118d9" category="section-title">能夠將檔案指派給Cloud Manager使用者</block>
-  <block id="91905b6c0e5bd3b31a5a9faff7fc5218" category="inline-link-macro">將檔案指派給特定Cloud Manager使用者</block>
-  <block id="ebc240befa04f487177655f353d72802" category="paragraph">現在您可以了 <block ref="60706a069633267dd80739a874a1ee5a" category="inline-link-macro-rx"></block> 如此一來、該人員就能對需要在檔案上執行的任何後續行動負責。此功能可與現有功能搭配使用、將自訂標記新增至檔案。</block>
-  <block id="596f96f82c371a240d0be177aa3f1ee0" category="paragraph">「調查」頁面中的新篩選器也可讓您輕鬆檢視「指派給」欄位中有相同人員的所有檔案。</block>
-  <block id="bddd2179a36dc08b8bb7be3660c8fed4" category="section-title">能夠使用較小的Cloud Data Sense執行個體</block>
-  <block id="cf3f2cc15d62c716232f57e1283f8347" category="inline-link-macro">請先瞭解這些限制</block>
-  <block id="60ee57016f16f38febc0431619eaa4bb" category="paragraph">有些掃描需求較小的使用者要求能夠使用較小的Cloud Data Sense執行個體。現在您可以了。使用這些較小的執行個體時有一些限制 <block ref="2721bef887c25ebcb5745416e289e70e" category="inline-link-macro-rx"></block>。</block>
-  <block id="a37544bc609cd0b6c2d725d27d13ab21" category="section-title">執行慢速掃描的能力</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">瞭解方法</block>
-  <block id="f1c9a9425a145e1b1614fa251d393989" category="section-title">Data Sense會追蹤上次存取檔案的時間</block>
-  <block id="34549c51a038d2c00ade5270b233fb1c" category="paragraph">上次存取時間值已新增至「檔案詳細資料」頁面、以及您以CSV格式輸出的報告、以便您查看使用者上次存取檔案的時間。</block>
   <block id="1d7b157ba2877d6d0d3d8d256ab8cfb9" category="summary">完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp Files 整套功能。</block>
   <block id="cd7afa87e9e8523b4b9129d2a8cc9511" category="doc">Cloud Data Sense for Azure NetApp Files 功能入門</block>
   <block id="8e6b2e179301ba8e4086645fd738ff9d" category="paragraph">按一下「 * Compliance * （ * 符合性 * ）」、選取「 * Configuration * （ * 組態 * ）」索引標籤、然後針對特定工作環境中的磁碟區啟動法規遵循掃描。</block>
@@ -1364,7 +1278,6 @@
   <block id="13b6fb090b361e21da7d5f1f7be6810c" category="cell">巴西 ID （ CPF ）</block>
   <block id="e29d7f1eae16ec5fe9b36f7588f2a07d" category="cell">英國護照</block>
   <block id="c829ddab5419b8fa34d5c686b7e39d5e" category="cell">保加利亞文 ID （ UCN）</block>
-  <block id="2ce7beca50827016ec0b11a0c09b583b" category="cell">California Driver's License （加州駕駛授權）</block>
   <block id="ebd5d868a9aa8ec82c598921c02dc41c" category="cell">克羅地亞 ID （ OIB ）</block>
   <block id="1fb8f0e6f1d2d7a4082230422bb7d9e9" category="cell">塞浦路斯稅務識別編號（ TIC ）</block>
   <block id="96d7df20ade7d6ce6522053eb6569698" category="cell">捷克文 / 斯洛伐克文 ID</block>
@@ -1747,7 +1660,6 @@
   <block id="a010805627ab286c5d83a11d886cf170" category="paragraph">如果使用者離開公司或變更其電子郵件地址、您可以隨時將個別 OneDrive 使用者的檔案掃描完畢。只要按一下「組態」頁面中的「 * 移除 OneDrive 使用者 * 」即可。</block>
   <block id="ed026517be9fe6d05aaa49ea802eff93" category="inline-image-macro">顯示如何移除單一使用者檔案的快照。</block>
   <block id="c10114c9189f598289f5615e85beb064" category="paragraph"><block ref="c10114c9189f598289f5615e85beb064" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0f828553dd90e6a1da6fd1104a080663" category="doc">在可存取網際網路的Linux主機上部署Cloud Data Sense</block>
   <block id="edc5cb08ed944714ebae42cfa6a8ba4c" category="paragraph">如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、則內部安裝可能是個不錯的選擇、但這並非必要。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。</block>
   <block id="ad2930ccaf67236b6ce95ac2d7f536c3" category="paragraph">請注意、您也可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
   <block id="e780ba1dc1fa7caee58066eebb1037f9" category="inline-xref">符合下列需求</block>
@@ -1851,7 +1763,6 @@
   <block id="e87b43c3f65a9e6b5fc0f778e155e091" category="sidebar">組織您的私有資料</block>
   <block id="3e51e074f12d2c873310422bb9c8cb50" category="sidebar">管理您的私有資料</block>
   <block id="b243b08794c870ea91d13357c677102f" category="sidebar">新增自訂個人資料識別碼</block>
-  <block id="7ecd0726b721e17d74d280fdd93e49f8" category="sidebar">產生報告</block>
   <block id="f8b28f56cf385c66a4a0078795b69320" category="sidebar">從Data Sense移除資料來源</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
   <block id="1cdcdefa74c2914f109f17dbba9e6f8f" category="sidebar">無需網際網路、即可在內部部署Data Sense</block>
@@ -2046,9 +1957,7 @@
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">顯示如何變更篩選設定來編輯查詢的快照。</block>
   <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a5816406505d9f49c1bfa13c98461f7" category="paragraph">原則會立即變更。為該原則定義的任何傳送電子郵件、新增AIP標籤或刪除檔案的動作、都會在下一個內部發生。</block>
-  <block id="f7ed3633a3e848b0d67caa9326d256b6" category="summary">Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。您可以檢視Data Sense稽核記錄檔的內容、或是下載這些檔案、以查看發生了哪些檔案變更、以及何時發生。</block>
   <block id="5de1b662853ab92b885225780d3125b7" category="doc">稽核Data Sense動作的歷程記錄</block>
-  <block id="f8563669b8d53fea23814d12a98674cd" category="paragraph">例如、您可以查看發出的要求、要求時間、以及檔案刪除時的來源位置、或檔案移動時的來源和目的地位置等詳細資料。</block>
   <block id="f4d44f4e933c52507fc1f60eb487d44a" category="section-title">記錄檔內容</block>
   <block id="787cbeccb975d71260f61cb0fbe84553" category="paragraph">稽核記錄中的每一行都包含下列格式的資訊：</block>
   <block id="79480e26f983c197c4338ae916966c93" category="list-text">狀態-資訊、警告</block>
@@ -2128,10 +2037,7 @@
   <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
   <block id="c761b545ddd43d078ae7ea86495182db" category="paragraph">除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 <block ref="de464dfb9c55e9818cd55e6911bff3a5" category="inline-link-macro-rx"></block>。</block>
   <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">非NetApp CIFS檔案共用（非NFS檔案共用）</block>
-  <block id="4f872362ba4f34050c74d7c25062ac0d" category="paragraph">如果您想要確保「上次存取時間」的檔案不會因資料感應分類掃描而改變、建議使用者具有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="5f5211c62ad18524e9e94e7a1524c835" category="list-text">在「Data Sense（資料感測）」頁面頂端、按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block> 然後按一下*解除安裝Data檢測*。</block>
-  <block id="58c8e0b1374b7f5b507570dc0385f473" category="cell">印第安納州駕駛授權</block>
-  <block id="0e03a64a4a78cbeacfa2d9a80a300d92" category="cell">New York Driver's License</block>
   <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">德州驅動程式授權</block>
   <block id="89b56b1e048dcf0ec285e29a05d6d029" category="paragraph">如果目的地位置存在名稱相同的檔案、則不會移動該檔案。</block>
   <block id="f466f17a82f9ca3b39b50be85ceb8395" category="list-text">移動檔案需要NFS共用區允許從Data Sense執行個體IP位址存取。</block>
@@ -2139,7 +2045,6 @@
   <block id="5587c065d5a62295455b157389cd71e5" category="paragraph">請注意、根據原則結果刪除資料及指派AIP標籤的動作僅對檔案有效。無法自動刪除符合搜尋條件的目錄、或指派AIP標籤。</block>
   <block id="90915c385560094095567649cbd732aa" category="section-title">檢視檔案和目錄的權限</block>
   <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">此外、 您可以按一下使用者或群組的名稱、「調查」頁面會顯示該使用者或群組的名稱、並填入「使用者/群組權限」篩選器中、以便查看使用者或群組可存取的所有檔案和目錄。</block>
-  <block id="3e75ffa254c777c4ea8d93dfbb0b6eba" category="paragraph">+如果您想要確保「上次存取時間」的檔案在「資料感測」分類掃描中維持不變、建議使用者具有「寫入屬性」權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="8a45623b5a3c251ed21845e747d3e9fa" category="paragraph">對於CIFS磁碟區/檔案共用、如果您想要確保「上次存取時間」由「資料感測」分類掃描而維持不變、建議使用者具有「寫入屬性」權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="04843fa750ddea2d46823d2d06cf3063" category="paragraph">請注意、有些資料來源會在功能表中提供暫停與恢復功能、如下所示、適用於SharePoint網站。</block>
   <block id="fb575acbb63d1898a1021e2856b18b6e" category="inline-image-macro">顯示如何在SharePoint網站上暫停及繼續掃描的螢幕快照。</block>
@@ -2241,15 +2146,11 @@
   <block id="7a4f785c9bf1b41e9eb899da0e988d27" category="paragraph">下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。您新增的每個來源欄都會以「Table.column」格式顯示在篩選清單中、例如「Customer.CustomerID」。</block>
   <block id="86776d2aca02c16f7beb228e9112d324" category="inline-image-macro">「Fusion 調查結果」窗格中顯示資料實例的快照。</block>
   <block id="4275c0ed3233cbea8a2f0bc0d2c33395" category="paragraph"><block ref="4275c0ed3233cbea8a2f0bc0d2c33395" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="936f32b71b96ea5785d6a11d0da86d15" category="paragraph">當您的內部部署安裝Data Sense時、您可以直接存取命令列。</block>
   <block id="0bac9ec0256a9fd2858c7836245c9025" category="list-text">對於AWS：使用&lt;EC2-user&gt;</block>
-  <block id="0a52730597fb4ffa01fc117d9e71e3a9" category="section-title">範例</block>
-  <block id="1e4b16d4f3c8faa8b0a90ebbeae0a0f7" category="paragraph">下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。</block>
   <block id="5e0b61460f50f9b62d95b060b2f3f8d2" category="inline-image-macro">在「調查結果」窗格中顯示自訂regex結果範例的快照。</block>
   <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">現在、您可以在資料中新增Data Sense將識別的自訂模式</block>
   <block id="cdd8fa6a73205d146405999abb5c86ec" category="admonition">安裝後、無法變更Data Sense主機系統的IP位址。</block>
-  <block id="766f0d81be7879628bc30bd7367309c3" category="paragraph">您可以從路徑*/ opt / NetApp /資料中心/*執行命令。</block>
   <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（1.16版）</block>
   <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">能夠立即重新掃描儲存庫、以反映檔案中的變更</block>
   <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">請參閱如何重新掃描目錄</block>
@@ -2292,7 +2193,6 @@
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您想與電話上的其他人通話、請按一下*「呼叫我們*」。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
-  <block id="bf5bc6ab0f95f17f4e98c9d766b8c11d" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
   <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">*《支援帳戶*》：選取與開立支援案例的人員相關的適用的NSS帳戶。NetApp 支援網站除了以下提供的其他電子郵件之外、此人將是NetApp聯絡的主要聯絡人。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作環境*：如果適用於儲存設備、請選取* Cloud Volumes ONTAP 《*》或*《內部部署*》、然後選取相關的工作環境。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例優先順序*：選擇案例的優先順序、可以是低、中、高或嚴重。</block>
@@ -2328,10 +2228,7 @@
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">帳戶必須是客戶層級的帳戶（不是來賓帳戶或臨時帳戶）。</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">三個橫點的圖示</block>
-  <block id="ff67299785d475e87002751aa6ab5eb8" category="list-text">成功登入後、NetApp會儲存NSS.使用者名稱。這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
-  <block id="505da61efe6bebebbaf092da18f64613" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。使用此選項會提示您重新登入。</block>
   <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">向NetApp註冊</block>
   <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
@@ -2360,7 +2257,6 @@
   <block id="c5fa07750716427fc488615add6ab90d" category="list-text">當某些關鍵原則傳回結果時、會傳送電子郵件警示給BlueXP使用者</block>
   <block id="afc0d971e4ebfa53c171b355bc2599a4" category="list-text">為不同的使用者設定BlueXP角色（例如帳戶管理員或法規遵循檢視器）</block>
   <block id="33054e4c4ec78cdbffe4024718f5be95" category="list-text">從BlueXP自動升級軟體</block>
-  <block id="70f30fa3be0f8d566af792a54f7feca4" category="paragraph">BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="57d5e1045a3473cd48f13a7e21feffdf" category="paragraph">確保您的Linux系統符合 <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>、並已安裝所有必要的軟體、而且您的離線環境符合所需 <block ref="cecf7d2039efa2511a1cd1c96e91a043" category="inline-xref-macro-rx"></block>。</block>
   <block id="28312bff8dd6c634a03c918b3596d5f7" category="section-title">安裝BlueXP Connector</block>
   <block id="dd4c90ec72ae39b7ae5e4b23558ad715" category="paragraph">如果您的離線內部部署站台尚未安裝BlueXP Connector、<block ref="b3b935401d776406adc004ee5c72bf0e" category="inline-link-rx"></block> 在離線站台的Linux主機上。</block>
@@ -2603,14 +2499,7 @@
   <block id="2af88522df8219c02b648f709d0d7441" category="paragraph">您必須擁有 <block ref="4ec8c7ffee3077e2fe1a50f122f89322" category="inline-link-macro-rx"></block> 在您新增資料Fusion 來源之前、請先將資料感測納入資料感測。</block>
   <block id="b5a32f0d4fed8751d01bab34f7653e1c" category="paragraph">「資料Fusion 還原」目錄頁面會顯示您已設定要掃描的「資料感測」資料庫來源欄。</block>
   <block id="6df200d9da4a502fdf5eb4ced7a8d488" category="section-title">刪除資料Fusion 來源</block>
-  <block id="beda883b97aef8f3ae5362485c7c7b8e" category="section-title">從文字檔新增自訂關鍵字</block>
-  <block id="ffe939b4a901f36963b6915c952e5eda" category="paragraph">您可以將自訂關鍵字新增至Data Sense、以便識別資料中的特定資訊。您可以從您定義的文字檔新增關鍵字。關鍵字會新增至Data Sense已使用的現有預先定義關鍵字、結果會顯示在「個人模式」區段下方。</block>
   <block id="4db39af2f2c8dd1ae93885d357ea7d87" category="paragraph">例如、您可能想要查看所有檔案中提及內部產品名稱的位置、以確保這些名稱在不安全的位置無法存取。</block>
-  <block id="e86b773e33290ca180bab4702f6221dc" category="paragraph">更新自訂關鍵字之後、Data Sense會重新開始掃描所有資料來源、掃描完成後、新結果會出現在Data Sense中。</block>
-  <block id="a022f59f73d13dba25886111bbcbfbe7" category="paragraph">您必須在Data Sense系統的下列位置新增或建立包含自訂關鍵字的文字檔：</block>
-  <block id="9e5355e710468619132238aa9a8b9c22" category="paragraph">_inters_product_names.txt_</block>
-  <block id="3dc7d5f9e5fd1366a21d3d3a927df1f0" category="paragraph">資料感應搜尋這些項目不區分大小寫。</block>
-  <block id="057d52aa1154035622f873117dc92349" category="paragraph">您需要存取Data Sense系統、才能啟動命令來新增自訂關鍵字。</block>
   <block id="5279036835630164e29f9d285f1f8ac5" category="list-text">&lt;path_to_the_ssh驗證金鑰&gt;= ssh驗證金鑰的位置</block>
   <block id="84bcb800c1d5099ce2ac32d1e7b6680f" category="list-text">&lt;machine_user&gt;：</block>
   <block id="7ba7a32a873386de0e3b4747ceb28558" category="list-text">&lt;datasense_ip&gt;=虛擬機器執行個體的IP位址</block>
@@ -2620,20 +2509,8 @@
   <block id="c3122c19fb459588f8438e668beb5f88" category="list-text"><block ref="c3122c19fb459588f8438e668beb5f88" category="inline-link-rx"></block></block>
   <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloud中的防火牆規則</block>
   <block id="2cfdb7ae537da608249744d8e40289a8" category="list-text"><block ref="2cfdb7ae537da608249744d8e40289a8" category="inline-link-rx"></block></block>
-  <block id="64eaf133adcf35171f2b21d53ac1d51f" category="section-title">新增自訂關鍵字的命令語法</block>
-  <block id="cc6ab41a96e05bf1a4e537962c380442" category="paragraph">從檔案新增自訂關鍵字的命令語法如下：</block>
-  <block id="c279e8e722787c40c4b102abaedc66b2" category="list-text">=這是包含關鍵字的檔案名稱。</block>
-  <block id="7479128473e97401c8fbc1525c2dd799" category="paragraph">如果您已建立許多包含自訂關鍵字的檔案、您可以使用下列命令一次新增所有檔案的關鍵字：</block>
-  <block id="c4e448abb596b34945911578eb3b4e45" category="paragraph">請注意下列需求：</block>
-  <block id="32b446525f2a4b6a6e34ba346b55fea6" category="list-text">檔案名稱不應包含數字。</block>
-  <block id="c781b817668135b2a7800b19a53b3351" category="list-text">每個檔案最多可包含100、000個字。如果有更多字詞、則只會新增前10、000個字。</block>
-  <block id="c84a723bb8343259efcc07b5d335a94d" category="list-text">每個字詞長度必須至少3個字元。忽略較短的字詞。</block>
-  <block id="9b2456bacc9d094f1cd53f784d659a37" category="list-text">重複的字詞只會新增一次。</block>
-  <block id="a05f2f2af09092d7732c02cc3039dad9" category="paragraph">若要查看所有檔案中提及的內部產品名稱、請輸入下列命令。</block>
   <block id="d1cae4639086ce5de29473a5d53747c7" category="inline-image-macro">在「調查結果」窗格中顯示自訂關鍵字範例的快照。</block>
   <block id="7b739c51b4a511be3459afe942a8ef3c" category="paragraph"><block ref="7b739c51b4a511be3459afe942a8ef3c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="10e08b10c8ba5b9b6646011e823e86ed" category="section-title">停用自訂關鍵字</block>
-  <block id="c67491a05b3eada8d8830f7e24dff0b6" category="paragraph">如果您稍後決定不需要使用「資料感應」來識別之前新增的特定自訂關鍵字、請使用命令中的*停用*選項來移除文字檔中定義的關鍵字。</block>
   <block id="9c0bd48717ec950ad656ee0c5cbe1bd7" category="section-title">使用regex新增自訂的個人資料識別碼</block>
   <block id="a47191a447cfd30eaac5f91623a8e2e1" category="paragraph">Cloud Data Sense是一款雲端產品、採用人工智慧（AI）導向技術、可協助您瞭解資料內容、並識別儲存系統中的敏感資料。這些系統可以是您新增至BlueXP畫版的工作環境、以及Data Sense可透過網路存取的許多類型資料來源。 <block ref="098fc5cd7fc00ea7f0929a4918ac3fdc" category="inline-link-macro-rx"></block>。</block>
   <block id="f93db149bc3a1616f1fc0abae89a8cb4" category="paragraph">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。 <block ref="c0297b8a85bd81fc39a6444d8d1b6586" category="inline-link-macro-rx"></block>。</block>
@@ -2642,21 +2519,16 @@
   <block id="db40121770270b95c73895598e6343b2" category="list-text">您可以從文字檔新增自訂關鍵字。</block>
   <block id="d2e9b58709e185388c14e9b7f7c876b8" category="list-text">您可以使用規則運算式（regex）新增自訂模式。</block>
   <block id="6b0cdbce1552e1685f4b4095276b6078" category="paragraph"><block ref="4a5fd31f8eed80e720a59ea6d295b8eb" category="inline-link-macro-rx"></block>。</block>
-  <block id="6e356675279ce269e55ffefd9397769c" category="paragraph">您可以使用多個關鍵字建立單一檔案、或是新增多個檔案、每個檔案都包含特定關鍵字。檔案的格式為每行一字、例如、以下列出類型為貓頭鷹的內部產品名稱：</block>
-  <block id="8b78d80928f7b4e5ede92c922915ec73" category="paragraph">如您所見、文字檔的名稱會用作「個人結果」面板中的名稱。如此一來、您就能從不同的文字檔啟動關鍵字、並查看每種關鍵字類型的結果。</block>
-  <block id="6d09a2eb7ddd06e7afb4f4e0f4b6f0a8" category="paragraph">例如、若要移除在* inters_product_name.txt*檔案中定義的關鍵字：</block>
   <block id="162bd73d17dd13a664718503fff639fc" category="paragraph">在內部部署安裝Data Sense時、您可以直接瀏覽至記錄檔。</block>
   <block id="69aeb258470eedf7afb44d66a993f4d8" category="paragraph">如果您有特定的資料來源需要由實體靠近資料來源的掃描儀節點進行掃描、您可以定義掃描儀節點或掃描儀節點群組、以掃描特定的資料來源或資料來源群組。在下圖中、有1個Manager節點和3個掃描儀節點。</block>
   <block id="4ab1272ad311bec96f677d25b0901105" category="list-text">如果您想要將掃描器節點新增至「掃描器群組」、請將參數*- r &lt;掃描 儀群組名稱&gt;*新增至命令。否則、掃描儀節點會新增至「預設」群組。</block>
   <block id="f76b6e3dc68f5a15976b3f64aae23646" category="paragraph">任何未新增至清單的工作環境都會由「預設」群組掃描、您必須在「預設」群組中至少有一個管理程式或掃描器節點。</block>
   <block id="37861c699e1fb7b716f29da056f3ddc5" category="paragraph">在雲端部署Data Sense時、您需要SSH到Data Sense執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：</block>
-  <block id="9580ea03756206f0f5eba6a03bb42d83" category="paragraph">請注意、您需要修改安全群組傳入規則、才能存取雲端上的系統。如需詳細資料、請參閱：</block>
   <block id="5cd360d496831478b3f9cbc92cce8b43" category="list-text">日期與時間：事件的完整時間戳記</block>
   <block id="01183a42bef9f9a5314d435065cfc49d" category="list-text">行動的詳細資料：做了什麼：取決於行動</block>
   <block id="8022db3692364177695fce2a133b526b" category="list-text">用於標記-標記名稱</block>
   <block id="91f93253b1daa7f572477e6f8dc4f163" category="list-text">指派給-使用者名稱</block>
   <block id="00fde4d5ca4e0124dccf8017bb92fc4e" category="list-text">電子郵件警示：電子郵件地址/帳戶</block>
-  <block id="b5fcd19ce1eac6e10e82176168a38b4d" category="paragraph">稽核日誌檔位於Data Sense機器上、位於：<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
   <block id="8cc577dbce4245d15abad6f3b1dfc995" category="paragraph">每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統最多可保留100個記錄檔-在達到上限後、會自動刪除舊的記錄檔。</block>
   <block id="fbda64f06352e44a4e6523dbdd6b039e" category="paragraph">請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：</block>
   <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">瞭解如何安裝掃描器節點來掃描其他資料來源</block>
@@ -2679,8 +2551,6 @@
   <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。</block>
   <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">內部部署安裝程式現在會在開始安裝之前執行預先檢查</block>
   <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">在Linux系統上安裝Data Sense時、安裝程式會先檢查系統是否符合所有必要的需求（CPU、RAM、容量、網路等）、然後再開始實際安裝。這有助於您在*之前*花時間進行安裝。</block>
-  <block id="80ca59a22e157477c940f080c9cf1223" category="paragraph"><block ref="b1c06333aab3fa5206e44a440f888650" category="inline-link-macro-rx"></block>。</block>
-  <block id="fa18750d3909d8a2d2d0a22c1611a692" category="paragraph">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）、立即執行「Slow」（慢速）掃描。 <block ref="50748b3ac35725f5f9be1dab9c684e55" category="inline-link-macro-rx"></block>。</block>
   <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 搭配BlueXP使用的支援帳戶。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
@@ -2826,7 +2696,6 @@
   <block id="5e11b9767e7bd2c58f38d60ac9f67f80" category="cell">選取 <block ref="b0becded2b1c1949046ca8118d27118b" category="inline-link-macro-rx"></block> 指派給您的檔案。</block>
   <block id="c670f11fe2007eb5c3be88dd2f27af16" category="cell">選擇特定的工作環境。</block>
   <block id="5bf1893d83226372ff2fad4fcb1c9ae2" category="cell">選取儲存儲存儲存庫、例如磁碟區或架構。</block>
-  <block id="e980323c9092e1f118449edafa2ceb15" category="cell">輸入最多20個要包含或排除在查詢之外的部分或完整路徑。如果您同時輸入「包含路徑」和「排除路徑」、則「Data Sense」會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。</block>
   <block id="01c40954af185b794e35d719875d3a7a" category="cell">選取 <block ref="d4eabbd4fb9268c1389fccae66300714" category="inline-link-macro-rx"></block>。</block>
   <block id="cc8f113115a15a733dabb8452c0006ca" category="cell">選取敏感度等級：個人、敏感個人或不敏感。</block>
   <block id="858f7504093c180b7179d29d8e1200d9" category="cell">選取 <block ref="1b5fb6ede432593c04dc0306b78c1e56" category="inline-link-macro-rx"></block>。</block>
@@ -2838,7 +2707,6 @@
   <block id="9b5e1fda139121eaa435619d67e14fd7" category="cell">選取建立檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。</block>
   <block id="9a0f4bd0f77ffaa6f3beb585c8d18994" category="cell">選取Data Sense探索檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。</block>
   <block id="55e421a96ef89113e0aa27aebfaa73aa" category="cell">選取上次修改檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。</block>
-  <block id="4e4be7e4053f318985404b5ad48beff4" category="cell">選取上次存取檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。對於Data Sense掃描的檔案類型、這是Data Sense掃描檔案的最後一次。</block>
   <block id="936baf22f04cffa654fef2a2806e8fcd" category="cell">選取檔案是否在儲存庫中重複。</block>
   <block id="6c19be59705b1afb4e5b6315b9a0d84e" category="cell">輸入檔案的雜湊以尋找特定檔案、即使名稱不同也沒問題。</block>
   <block id="fdd455d725fb278b4fe9d43c83722f88" category="cell">選取 <block ref="d459f7b3039eb26458088e9c5f84d9e6" category="inline-link-macro-rx"></block> 指派給您的檔案。</block>
@@ -2983,21 +2851,17 @@
   <block id="da932f7eef3a2768f6b53d366221c254" category="paragraph">您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。這可讓您建立新的自訂regex、以識別系統中尚未存在的新個人資訊元素。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。</block>
   <block id="18faf11e669e669b541338888d9bea32" category="paragraph">例如、您可能想要查看所有檔案中提及內部產品ID的位置。例如、如果產品ID的結構清楚明確、12位數的編號從201開始、您可以使用自訂的regex功能在檔案中搜尋。此範例的規則運算式為*\b201\d｛9｝\b*。</block>
   <block id="f63c6623f7c373abcfcd168f9cda13ac" category="paragraph">新增regex之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新結果會顯示在「個人結果」區段下方的「資料感知法規遵循儀表板」、以及「個人資料」篩選器的「調查」頁面。</block>
-  <block id="168c8e32a1b235d5e5a3bd5630708081" category="list-text">從「自訂類別器」索引標籤中、按一下「*新增類別器*」以啟動「新增自訂類別器_」精靈。</block>
   <block id="03a9ab83293882634c4137aa0d2b8963" category="inline-image-macro">顯示如何啟動「新增自訂類別器」精靈的快照。</block>
   <block id="6111b89fea1527ae77c65d4a19404b4a" category="paragraph"><block ref="6111b89fea1527ae77c65d4a19404b4a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41980f6e23a56df37090697fb6ee5802" category="list-text">在_選取類型_頁面中、輸入類別器的名稱、提供簡短說明、選取*個人識別符號*、然後按*下一步*。</block>
-  <block id="b31f9f55ba118bd096e2a282557a1563" category="paragraph">您輸入的名稱會顯示在Data Sense UI中、做為符合類別器需求的掃描檔案標題。您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料。</block>
   <block id="fb654467306a9ed74856249c6ac9b2f6" category="inline-image-macro">顯示如何命名類別器並選取類別器類型的快照。</block>
   <block id="0931f142421f2e217723300078e3b8b7" category="paragraph"><block ref="0931f142421f2e217723300078e3b8b7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dfc0ae4804b6b33aec281efa7221c9f8" category="list-text">在「選取資料分析工具」頁面中、選取*自訂規則運算式*做為定義類別器的方法、然後按一下*下一步*。</block>
   <block id="3b5f1855b99662101364184845ff3510" category="inline-image-macro">快照顯示「自訂規則運算式」選項、做為Data Sense建置模式所用的工具。</block>
-  <block id="ea39dbbdddfb0a782dc4b45c751fe258" category="paragraph"><block ref="ea39dbbdddfb0a782dc4b45c751fe258" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a9569396e69f952ac709738236397e87" category="list-text">在_建立邏輯_頁面中、輸入規則運算式和任何鄰近字詞、然後按一下*完成*。</block>
   <block id="edd69077eb39ecaa79c200e2aa35e84a" category="list-text">您可以輸入任何合法的規則運算式。按一下「*驗證*」按鈕、讓「資料感知」驗證規則運算式是否有效、且其範圍不太廣、表示會傳回太多結果。</block>
   <block id="13ba2d1d9a0f00239a30b9470cb310b7" category="list-text">您也可以輸入一些鄰近詞彙、以協助精簡結果的準確度。這些詞彙通常會在您要搜尋的模式300個字元內找到（在找到的模式之前或之後）。在單獨一行輸入每個字詞或片語。</block>
   <block id="1e7880d19e1061f1e0be8da511ed88eb" category="inline-image-macro">為您的客戶類別者輸入regex和近接字的快照。</block>
-  <block id="7084b45a6d0c1162ac3d5f6b215cc0f1" category="paragraph"><block ref="7084b45a6d0c1162ac3d5f6b215cc0f1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2a475d0ea29a27140d6f6bc03695803c" category="paragraph">新增類別器、Data Sense開始重新掃描所有資料來源。您會回到「自訂類別器」頁面、在其中可以檢視符合新類別器的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。</block>
   <block id="8925d45313a1840fbda58900234b9850" category="inline-image-macro">快照顯示在掃描進行中新增至系統的新regex類別器結果。</block>
   <block id="a70eb09ec7232b2b5daa5a4ed1191637" category="paragraph"><block ref="a70eb09ec7232b2b5daa5a4ed1191637" category="inline-image-macro-rx" type="image"></block></block>
@@ -3013,7 +2877,6 @@
   <block id="8dc803e9e2ed886e283db4b174d14ab1" category="paragraph">如果您稍後決定不需要「資料感知」來識別您新增的自訂模式、您可以使用*刪除分類器*按鈕來移除每個項目。</block>
   <block id="6c4af53d01a0fd2f4b9e2d860002e476" category="inline-image-macro">「自訂類別器」頁面的快照、其中包含用於編輯和刪除類別器的按鈕。</block>
   <block id="ba3a038a97b620898e33b9e09db66632" category="paragraph"><block ref="ba3a038a97b620898e33b9e09db66632" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cbcbb4eb39088cc429c550b8a7b20858" category="section-title">存取命令列</block>
   <block id="969665117064b959d3c660b43611f713" category="list-text">Docker Engine 19.3.1版或更新版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
   <block id="666bbf651dbf568f97e37372014cde9a" category="list-text">此時會顯示「部署內部部署的資料感知」對話方塊。複製所提供的命令並貼到文字檔中、以便稍後使用、然後按一下*關閉*。例如：</block>
   <block id="bef424c97f7f20957409f086ca8ff3db" category="paragraph">如果主機與連接器執行個體之間有連接埠8080的連線、您會在BlueXP的「Data Sense（資料感知）」索引標籤中看到安裝進度。</block>
@@ -3026,7 +2889,6 @@
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="section-title">能夠將原則型通知電子郵件傳送至任何電子郵件地址</block>
   <block id="01bfbdebf8836af0160f70e1bacc3787" category="paragraph">在舊版的Cloud Data Sense中、當某些重要原則傳回結果時、您可以傳送電子郵件警示給帳戶中的BlueXP使用者。此功能可讓您取得通知、在您不在線上時保護資料。現在、您也可以將原則的電子郵件警示傳送給任何其他使用者（最多20個電子郵件地址）、而這些使用者不在您的BlueXP帳戶中。</block>
   <block id="01111213f34b03537871696a29c018fa" category="inline-link">深入瞭解如何根據原則結果傳送電子郵件警示</block>
-  <block id="58c8b31479a452f2c02b4c4beb2b8e6f" category="section-title">現在您可以從UI新增Data Sense將識別的個人模式</block>
   <block id="bbc056ffe85cbc0784df7b39d5fac941" category="paragraph">Data Sense能夠新增自訂的「個人資料」、讓Data Sense在未來一段時間的掃描中能夠識別這些資料。不過、您需要登入Data Sense Linux主機、然後使用命令列新增自訂模式。在此版本中、使用regex新增個人模式的功能位於Data Sense UI中、可讓您輕鬆新增及編輯這些自訂模式。</block>
   <block id="e743c1cea3cca118a07bf2fd9a21ec39" category="inline-link">深入瞭解如何從Data Sense UI新增自訂模式</block>
   <block id="6f3ebec91d6086cea205504bdbc3fd37" category="paragraph"><block ref="8eedc9e36b5a6054f1f5d8b4937ba068" category="inline-link-rx"></block>。</block>
@@ -3159,4 +3021,165 @@
   <block id="949195768b714c50c6fc8c9385a74cc5" category="sidebar">調查您的資料</block>
   <block id="8ca194e9f33f192ece200a8c9ed9e621" category="sidebar">指派原則給您的資料</block>
   <block id="63d5049791d9d79d86e9a108b0a999ca" category="sidebar">參考資料</block>
+  <block id="dcb1076fed166631ed4c43d938783bbc" category="paragraph">只要執行個體具備網際網路連線、就會自動升級至BlueXP Connector和Data Sense軟體。</block>
+  <block id="ca01a94f38912cd0a130467fd970c237" category="paragraph">Cloud Data Sense會開始掃描您在工作環境中選取的磁碟區。只要Data Sense完成初始掃描、即可在「Compliance」（法規遵循）儀表板中取得結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。</block>
+  <block id="98f6fa36d18876695de95f3552eef95c" category="admonition">根據預設、如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統將不會掃描磁碟區中的檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。您可以啟用該頁面的設定、讓Data Sense無論權限為何、都能掃描磁碟區。</block>
+  <block id="a00ed12f7b85db2513cbe254229fb9e7" category="paragraph">如果您想要確保「上次存取時間」的檔案不會因資料感知分類掃描而改變、建議使用者在CIFS中擁有寫入屬性權限、或在NFS中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
+  <block id="7d23ada8396afe0182bb76af9cac5dae" category="paragraph">預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統就不會掃描檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。 <block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>。</block>
+  <block id="edd15fbeb7b2dffa163336ecd4f3e80c" category="section-title">使用自我支援選項</block>
+  <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">利用NetApp支援建立案例</block>
+  <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">在「*資源*」頁面上、選擇「技術支援」下的其中一個可用選項：</block>
+  <block id="5be2e1dfe4bf215289731df45ec8157b" category="list-text">按一下*建立案例*、與NetApp支援專家一起開啟問題單：</block>
+  <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">管理支援案例（預覽）</block>
+  <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">您可以直接從BlueXP檢視及管理作用中和已解決的支援案例。您可以管理與您的NSS帳戶和貴公司相關的個案。</block>
+  <block id="394ef093ad3259b9ff0fe7406f015b83" category="paragraph">案例管理可透過預覽取得。我們計畫改善這項體驗、並在即將推出的版本中加入增強功能。請使用產品內建聊天功能、向我們傳送意見反應。</block>
+  <block id="5e4e7672ec2ba2b8a763da7f6714e212" category="list-text">頁面頂端的案例管理儀表板提供兩種檢視：</block>
+  <block id="01c3ffea552d74a5ae390b10e71a1f26" category="list-text">左側檢視顯示您所提供的使用者nssc帳戶在過去3個月內開啟的個案總數。</block>
+  <block id="e3b6c09a5686233f72ce1ea60a1eb088" category="list-text">右側檢視顯示過去3個月內、貴公司層級根據您的使用者nssc帳戶所開啟的個案總數。</block>
+  <block id="b19b168cc8a2b8c984465e140256b3a2" category="paragraph">表格中的結果會反映您所選檢視的相關個案。</block>
+  <block id="56dcadeee6b0e5c47a52673f9b5a0bb3" category="list-text">您可以新增或移除感興趣的欄、也可以篩選優先順序和狀態等欄的內容。其他欄則只提供排序功能。</block>
+  <block id="6f936762e1223311f031685422fcd3a4" category="paragraph">如需詳細資料、請參閱下列步驟。</block>
+  <block id="b14929795a61440e9b4ec9f8a4885ae3" category="list-text">在個別案例層級、我們提供更新案例附註或關閉尚未處於「已結案」或「待結案」狀態的案例的功能。</block>
+  <block id="34b1296d31cefa72dae9b3a364b1f444" category="list-text">按一下*個案管理*、如果出現提示、請將您的NSS帳戶新增至藍圖XP。</block>
+  <block id="d8ce1865cf1fe3cffd60300b4b86ad63" category="paragraph">「*個案管理*」頁面會顯示與您的BlueXP使用者帳戶相關聯的與NSS帳戶相關的未決個案。這是顯示在「* nssnmanagement *」頁面頂端的相同nss.帳戶。</block>
+  <block id="2ae5ae78bdb2d222f15fd8e89248709c" category="list-text">（可選）修改表格中顯示的資訊：</block>
+  <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">在*組織案例*下、按一下*檢視*以檢視與貴公司相關的所有案例。</block>
+  <block id="059e856250b59be3069246887b74a23c" category="list-text">選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。</block>
+  <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。</block>
+  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">篩選欄的內容。</block>
+  <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。</block>
+  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">出現在表格中的加號圖示</block>
+  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">按一下以變更表格中顯示的欄 <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
+  <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">顯示可在表格中顯示之欄的快照。</block>
+  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一欄中出現三個點的圖示</block>
+  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">按一下即可管理現有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
+  <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*檢視案例*：檢視特定案例的完整詳細資料。</block>
+  <block id="482429810c2b00a4fa04f9900c560232" category="list-text">*更新案例備註*：提供您問題的其他詳細資料。</block>
+  <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。</block>
+  <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
+  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="99d97930418935683e2b318283d0dfe1" category="section-title">上次存取時間時間戳記</block>
+  <block id="328433e1229196dfcfbc0b9d019a9d21" category="paragraph">當Data Sense從檔案共用區擷取資料時、作業系統會將其視為存取資料、並據此變更「上次存取時間」。掃描後、Data Sense會嘗試將上次存取時間還原為原始時間戳記。如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統就無法將上次存取時間還原為原始時間戳記。</block>
+  <block id="8fccf85628cfcd90d8b0fe5cab43c86d" category="paragraph">根據預設、如果Data Sense沒有這些權限、系統就不會掃描磁碟區中的檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。不過、如果您不在意上次存取時間是否重設為檔案中的原始時間、您可以按一下「組態」頁面底部的「當缺少「寫入屬性」權限時、*掃描」選項、讓「Data」（資料感測）不論權限為何、都能掃描磁碟區。</block>
+  <block id="3b65a5e239394b9dd027910cc1b152c1" category="inline-image-macro">螢幕擷取畫面顯示可讓Data Sense掃描檔案的交換器、即使它沒有將上次存取時間還原為原始時間戳記的正確權限。</block>
+  <block id="44408bbd035a502d323b922a5560e5d4" category="paragraph"><block ref="44408bbd035a502d323b922a5560e5d4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b2d4384c1deeeb5068a47d9c4f7fecae" category="paragraph">此功能適用於內部部署ONTAP 的不間斷支援、Cloud Volumes ONTAP 例如：支援Azure NetApp Files 功能的內部系統、支援功能、支援功能、支援ONTAP 功能、以及非NetApp檔案共享。</block>
+  <block id="581d69e206b5b89f885e30ba63c4f580" category="paragraph">請注意、「調查」頁面中有一個名為_Scan Analysis事件_的篩選器、可讓您顯示由於「資料感應」無法回復上次存取時間而未分類的檔案、 或者、即使Data Sense無法回復上次存取時間、也能將檔案分類。</block>
+  <block id="2e9bf0fba1b77a1da35499a6b728c5e6" category="inline-image-macro">篩選器的螢幕快照、可根據是否具有寫入權限、來查看哪些檔案已掃描而非掃描。</block>
+  <block id="ee9a6cd4eeadce3c62fa7db3af1981ac" category="paragraph"><block ref="ee9a6cd4eeadce3c62fa7db3af1981ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">篩選選項包括：</block>
+  <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">「未分類-無法回復上次存取時間」-這會顯示由於遺失寫入權限而未分類的檔案。</block>
+  <block id="3648b57c3461ab987d19b2aa1fb8dec8" category="list-text">「機密與更新的上次存取時間」-這會顯示已分類的檔案、而且Data Sense無法將上次存取時間重設回原始日期。此篩選器僅適用於您在上遺失「寫入屬性」權限*時、開啟*「掃描」的環境。</block>
+  <block id="529e58159a0567a96e1265aa7c80760b" category="inline-link">深入瞭解資料調查報告</block>
+  <block id="1519214436b24573d7996e8c310f57e7" category="paragraph">如有需要、您可以將這些結果匯出至報告、以便查看哪些檔案因為權限而被掃描或未被掃描。<block ref="55841a629b143f31cba7cbe4e8dd8d86" category="inline-link-rx"></block>。</block>
+  <block id="b70232fe808c101066f1d5f669f6a6cd" category="paragraph"><block ref="b70232fe808c101066f1d5f669f6a6cd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e320df9c865260fc39e7beb28a2b5885" category="doc">在可存取網際網路的主機上部署Cloud Data Sense</block>
+  <block id="5dd68ea8038a218beb217f08f4009e7f" category="list-text">也支援CentOS串流8</block>
+  <block id="e47ea30e34a3a076c6a7779b8a54db7c" category="cell">波札那身分證（Omang）號碼</block>
+  <block id="2d3ad991cc78b072cf48ad8db3fb43e0" category="cell">波札那護照號碼</block>
+  <block id="ff3bab043a00af2e37e7dcaf393aea61" category="cell">新加坡國家註冊身分證（NRIC）</block>
+  <block id="5721a59dab5cc5d2f326b7e5464d9860" category="cell">美國加州駕駛授權</block>
+  <block id="162e79a198624ab621c2e0fcd8aa5099" category="cell">美國印地安那州駕駛授權</block>
+  <block id="56ee28a97ee2b5724da347257b198872" category="cell">美國紐約駕駛授權</block>
+  <block id="bc9381c1fffa85e3370bbee2fa58936b" category="list-text">您可以新增自訂類別、以識別資料中的特定資訊類別。</block>
+  <block id="4bd299bcf1b9820ccf748c7b1d8dc677" category="section-title">從字詞清單新增自訂關鍵字</block>
+  <block id="f0d5fde32162b77852b6cf1d798bc666" category="paragraph">您可以將自訂關鍵字新增至Data Sense、以便識別資料中的資訊位置。只要輸入您想要讓Data Sense辨識的每個字詞、就能新增關鍵字。關鍵字會新增至Data Sense已使用的現有預先定義關鍵字、結果會顯示在「個人模式」區段下方。</block>
+  <block id="072b822348181a77a46c4656eb517597" category="paragraph">更新自訂關鍵字之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新結果會顯示在「個人結果」區段下方的「資料感知法規遵循儀表板」、以及「個人資料」篩選器的「調查」頁面。</block>
+  <block id="10413e6de081bf8f27d3babd998bdad8" category="list-text">從「_Classification settings」（_分類設定_）索引標籤中、按一下「* Add New Classifier*」（*新增分類器*）以啟動「_Add Custom Classifier.</block>
+  <block id="a77b70f3c9f961df305e8d7d9664e850" category="paragraph">您輸入的名稱會顯示在「Data Sense UI」中、做為符合類別器需求的掃描檔案標題、以及「Investigation」（調查）頁面中的篩選名稱。</block>
+  <block id="667625a25925b4137fb76733da1dd35c" category="paragraph">您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料（遮罩會出現在UI中、如下所示：「通過：[*、通過：[*、通過：[*、*、*、3434）。</block>
+  <block id="e3c79b2ff3bee6052bf8c4ee0232f80e" category="paragraph"><block ref="e3c79b2ff3bee6052bf8c4ee0232f80e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9e4767f52f09ad6e7ef4b30d384072e4" category="list-text">在「選取資料分析工具」頁面中、選取*自訂關鍵字*做為定義類別器的方法、然後按一下*下一步*。</block>
+  <block id="bf76a4c8abf3d57f498be5a1b82759e1" category="inline-image-macro">快照顯示「自訂關鍵字」選項、做為Data Sense用來建置模式的工具。</block>
+  <block id="17e9d0cdb81bd784298dbc17b052dad0" category="paragraph"><block ref="17e9d0cdb81bd784298dbc17b052dad0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3a90a5ca5e14d97fff479f3d90241b87" category="list-text">在_建立邏輯_頁面中、輸入您要辨識的關鍵字-每個字位於一行、然後按一下*驗證*。</block>
+  <block id="79e1eb38204a46f7310b74095882e45d" category="paragraph">以下螢幕快照顯示內部產品名稱（不同類型的貓頭鷹）。資料感應搜尋這些項目不區分大小寫。</block>
+  <block id="191f56b08d3aa6205b1fc04740933cb0" category="inline-image-macro">輸入客戶分類器關鍵字的快照。</block>
+  <block id="e118360bc0be2d158a035dd090d97a14" category="paragraph"><block ref="e118360bc0be2d158a035dd090d97a14" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7e94f86e3a5a16b38e7600a4a99d44e7" category="list-text">按一下「*完成*」、「Data Sense（資料感知）」即開始重新掃描資料。</block>
+  <block id="4a0c8017c43848ad16733c719676cca0" category="paragraph">掃描完成後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段下方、以及「個人資料」篩選器的「調查」頁面。</block>
+  <block id="9d56a2a830feae88d7c977220b52c2f0" category="paragraph">如您所見、分類器的名稱會用作「個人結果」面板中的名稱。如此一來、您就能啟動許多不同的關鍵字群組、並查看每個群組的結果。</block>
+  <block id="2941998d10d5b129985cf6f71952d76a" category="paragraph">請參閱<block ref="58ff2edcee6f09ed29d8b1fa3d90f44d" category="inline-link-rx"></block> 如果您需要協助建立所需的規則運算式、</block>
+  <block id="074f516d5c11f99732211c5b48a14ad3" category="paragraph">您輸入的名稱會顯示在「Data Sense UI」中、做為符合類別器需求的掃描檔案標題、以及「Investigation」（調查）頁面中的篩選名稱。您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料。</block>
+  <block id="66bad3a80be8e193d348efcb46a227cf" category="paragraph"><block ref="66bad3a80be8e193d348efcb46a227cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc88bee93425842eaf0d676cafac7772" category="paragraph"><block ref="bc88bee93425842eaf0d676cafac7772" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d221f76e0177c019cf82913885bbd0d" category="section-title">新增自訂類別</block>
+  <block id="0741a8e3d0de49fd54dd6e2c08c12535" category="inline-link-macro">請參閱預先定義類別清單</block>
+  <block id="5fdadb69cfb58e54de4dd4857118ce01" category="paragraph">Data Sense會取得掃描的資料、並將其分成不同類別。類別是以人工智慧分析每個檔案的內容和中繼資料為基礎的主題。 <block ref="e4966eba5f5aa891b400570a53d2b0f2" category="inline-link-macro-rx"></block>。</block>
+  <block id="68791bee5ed94dd2236ce0d5fb76ef7c" category="paragraph">類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、像是_恢復_或_員工合約_的類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。</block>
+  <block id="a9bf0a2ab0c4f088aabe12a1c6c1889a" category="paragraph">您可以將自訂類別新增至「Data Sense」（資料感測）、以便識別資料中的資料資產專屬資訊類別。您可以建立包含您要識別之資料類別的「訓練」檔案來新增每個類別、然後讓Data Sense掃描這些檔案以透過AI「學習」、以便識別資料來源中的資料。類別會新增至Data Sense已識別的現有預先定義類別、結果會顯示在「類別」區段下方。</block>
+  <block id="f0c0b0bdc9d14a04a29a066c322faab9" category="paragraph">例如、您可能想要查看.gz格式的壓縮安裝檔案在檔案中的位置、以便視需要加以移除。</block>
+  <block id="b8f94cf00d4633f8b646c8148ce540ec" category="inline-link-macro">瞭解如何依類別檢視檔案</block>
+  <block id="4e103e3d4fc0c8252a668f5f0876d80f" category="paragraph">更新自訂類別之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新的結果會顯示在「類別」區段下的「資料感知法規遵循儀表板」、以及「類別」篩選器的「調查」頁面。 <block ref="808a87ee72a165bf91101aadbd6c48bb" category="inline-link-macro-rx"></block>。</block>
+  <block id="0187f0ceccb73ec2146f5af2e81dfcb6" category="paragraph">您至少需要建立25個訓練檔案、其中包含您希望Data Sense能夠辨識的資料類別範例。支援下列檔案類型：</block>
+  <block id="f387beeca0e7131b7065d4680044e789" category="paragraph"><block ref="f23c451ac8958276fd9bd9f16f095b45" prefix="" category="inline-code"></block></block>
+  <block id="9ace87ac21bc052092afcf176ecb5912" category="paragraph">檔案必須至少100個位元組、而且必須位於Data Sense可存取的資料夾中。</block>
+  <block id="e6f57057393ec9055269039af8a651e8" category="list-text">在_選取類型_頁面中、輸入類別器的名稱、提供簡短說明、選取*類別*、然後按*下一步*。</block>
+  <block id="04f145668b7cd95c1255bb44664c675f" category="paragraph">您輸入的名稱會顯示在「Data Sense UI」中、做為符合您所定義資料類別的掃描檔案標題、以及「Investigation」（調查）頁面中的篩選名稱。</block>
+  <block id="db52e4302a20ccbe000299b2ff6b0c0b" category="paragraph"><block ref="db52e4302a20ccbe000299b2ff6b0c0b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2bb9f0de4f75776e39d55095eeb7059e" category="list-text">在_建立邏輯_頁面中、確定您已準備好學習檔案、然後按一下*選取檔案*。</block>
+  <block id="1944fc4f1c4ce9c5fcde3c7b8c967d78" category="inline-image-macro">「建立邏輯」頁面的快照、您可在其中新增包含Data Sense所需學習之資料的檔案。</block>
+  <block id="d649acc343ca234737777a38f6b9a7ea" category="paragraph"><block ref="d649acc343ca234737777a38f6b9a7ea" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc31e9efaac961908cb639c6fceb1f14" category="list-text">輸入磁碟區的IP位址、以及訓練檔案所在的路徑、然後按一下*「Add*（新增*）」。</block>
+  <block id="e632e87ed43e5cafa4459cd1935b6030" category="inline-image-macro">顯示如何輸入訓練檔案位置的快照。</block>
+  <block id="74ecc16bb4458e6b0aa7cb21c16f44cd" category="paragraph"><block ref="74ecc16bb4458e6b0aa7cb21c16f44cd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9598f0a3eaf0390815c993fa2139f547" category="list-text">確認Data Sense已辨識訓練檔案。按一下* x*以移除任何不符合要求的訓練檔案。然後按一下「*完成*」。</block>
+  <block id="55ef1b0dcac87ba2d1e533045a15de28" category="inline-image-macro">快照顯示Data Sense將用來做為定義新類別的訓練檔案的檔案。</block>
+  <block id="8160c3db5ceaeec9f21f500ad90a16ee" category="paragraph"><block ref="8160c3db5ceaeec9f21f500ad90a16ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="233a7e974842d65dd39122b575514270" category="paragraph">新類別是依照訓練檔案所定義、並新增至Data Sense。然後、Data Sense會開始重新掃描所有資料來源、以識別適合此新類別的檔案。您會返回「自訂分類器」頁面、在其中可以檢視符合新類別的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。</block>
+  <block id="0fd05b1c9e0bcfc288b3cb64182f45d8" category="summary">請完成幾個步驟、在內部部署站台的主機上部署Cloud Data Sense、但該主機無法存取網際網路。這類安裝最適合安全的站台。</block>
+  <block id="dd8d54cd536de1780b72a7a05a4b8f65" category="doc">在沒有網際網路存取的主機上部署Cloud Data Sense</block>
+  <block id="24986a3fd86695b55b23be0d07a0d801" category="inline-link">升級BlueXP Connector</block>
+  <block id="2976d8218e5021d7d1f5cbbae070157d" category="paragraph">BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="179f3f01544c50dcde464960dc0c66ec" category="inline-link-rx"></block> 和 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e6226abfed55ff05d6368103074cf171" category="paragraph">+如果您想要確保「上次存取時間」的檔案不會因資料感知分類掃描而改變、建議使用者在CIFS中擁有寫入屬性權限、或在NFS中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
+  <block id="b59c5194f3c88dc07265c30dac8a84fe" category="cell">選取上次存取檔案或目錄（僅限CIFS或NFS）的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。對於Data Sense掃描的檔案類型、這是Data Sense掃描檔案的最後一次。</block>
+  <block id="cb9bf9f33de1a01b95ec2d7471fee706" category="cell">輸入最多20個要包含或排除在查詢之外的部分或完整路徑。如果您同時輸入「包含路徑」和「排除路徑」、則「Data Sense」會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。請注意、在此篩選器中包含「*」並不會有任何影響、您必須使用完整路徑來搜尋特定檔案和子資料夾。</block>
+  <block id="42942f3489af451c9c0c8a2e6cc0b756" category="cell">掃描分析事件</block>
+  <block id="86c0d22c969df97ab506580c91428045" category="cell">選取您要檢視的檔案是否因為「資料感知」無法回復上次存取時間而未分類、或是資料感知無法回復上次存取時間而分類的檔案。</block>
+  <block id="0f609c3035a725a4b4c05c34c154b6a8" category="inline-link-macro">請參閱「上次存取時間」時間戳記的詳細資料</block>
+  <block id="cdbe480dc11409647fd956762112b463" category="paragraph"><block ref="cb955744923a641be9b94cbcd31ea046" category="inline-link-macro-rx"></block> 如需使用掃描分析事件進行篩選時、出現在「調查」頁面的項目相關資訊。</block>
+  <block id="916fe80558e430806f51297666a415c2" category="section-title">2023年3月7日（版本1.21）</block>
+  <block id="7cc6aa730dc07100bcd50ee1f4fbfd19" category="section-title">新功能可從Data Sense UI新增您自己的自訂類別</block>
+  <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link">預先定義的類別</block>
+  <block id="e9b59b0856829e5de68c6c48d7bf751a" category="paragraph">Data Sense現在可讓您新增自己的自訂類別、讓Data Sense能夠識別符合這些類別的檔案。資料感測有許多<block ref="de03089a629f50d7fb2223d1c9b484a6" category="inline-link-rx"></block>因此，此功能可讓您新增自訂類別，以識別在資料中找到組織專屬的資訊。</block>
+  <block id="4aedc0068ab1ebb9a68cd09e40502224" category="paragraph"><block ref="29977fc02ca1e575e657cf5a87ae1883" category="inline-link-rx"></block>。</block>
+  <block id="0cfe3d251c44c584db4827f5eac474f3" category="section-title">現在您可以從Data Sense UI新增自訂關鍵字</block>
+  <block id="675cae3035897ece265ad5535f76321b" category="paragraph">Data Sense能夠新增自訂關鍵字、讓Data Sense在未來一段時間內能識別這些關鍵字。不過、您需要登入Data Sense Linux主機、然後使用命令列介面新增關鍵字。在此版本中、新增自訂關鍵字的功能是在Data Sense UI中、因此很容易新增及編輯這些關鍵字。</block>
+  <block id="3c12577975025d20be661bf1079d0923" category="inline-link">深入瞭解如何從Data Sense UI新增自訂關鍵字</block>
+  <block id="5e505948799cd73b45f70a049da0e41a" category="paragraph"><block ref="ef53a029e403771b20a22fa95fad2aaa" category="inline-link-rx"></block>。</block>
+  <block id="146d89b210b39f6767f51058456d0756" category="section-title">在「上次存取時間」變更時、能夠擁有Data Sense * Not *掃描檔案</block>
+  <block id="a295dd857506727c4c246759c7a474d3" category="paragraph">根據預設、如果Data Sense沒有足夠的「寫入」權限、系統就不會掃描磁碟區中的檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。不過、如果您不在意上次存取時間是否重設為檔案中的原始時間、您可以在「組態」頁面中覆寫此行為、讓「Data Sense」（資料感測）不論權限為何、都能掃描磁碟區。</block>
+  <block id="b6bc23c7fd42c2dda40fd1667ea26c94" category="paragraph">結合此功能、新增名為「掃描分析事件」的篩選器、讓您檢視未分類的檔案、因為「資料感應」無法回復上次存取時間、或是資料感應無法回復上次存取時間的檔案。</block>
+  <block id="b498fa3614efad3784e7b196a75f0744" category="inline-link">深入瞭解「上次存取時間時間戳記」和Data Sense所需權限</block>
+  <block id="fdcb05c5040512d32e3c0eb54cd81fdb" category="paragraph"><block ref="094f0faa5796fc52325373d032f76ea7" category="inline-link-rx"></block>。</block>
+  <block id="7abfe7c481a0b29f8cf39a89e86de868" category="section-title">Data Sense可識別三種新類型的個人資料</block>
+  <block id="1e95bdda0b00306da0fc13aa5272c14f" category="paragraph"><block ref="fbd66eb529b6064c128e443473612523" category="inline-link-rx"></block>。</block>
+  <block id="c750c2392e2683a70ab7309253a1954b" category="section-title">目錄的更新功能</block>
+  <block id="179219a43ca594b98a13e70b7ebc112a" category="list-text">資料調查報告的「輕度CSV報告」選項現在包含來自目錄的資訊。</block>
+  <block id="b2755be94249995adeed2a28b31a7393" category="list-text">「上次存取」時間篩選器現在會顯示檔案和目錄的上次存取時間。</block>
+  <block id="013efea19f002683e016d90789038d6e" category="section-title">安裝增強功能</block>
+  <block id="7b335a4581e4988d6ea3f8d6f1235a87" category="list-text">Data Sense可安裝在執行CentOS Stream 8的Linux主機上。</block>
+  <block id="1a62d65b23b4f298f3e1310266bbfad4" category="list-text">不具備網際網路存取（黑點）的站台資料感知安裝程式現在會執行預先檢查、以確保您的系統和網路需求已就緒、可順利安裝。</block>
+  <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">安裝稽核記錄檔現在會儲存、並寫入<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block>。</block>
+  <block id="9a8e487c18ad9b8cacca43174094061d" category="section-title">現在您可以從Data Sense UI新增個人模式</block>
+  <block id="ec084bb25ed5b934c09b361069c246b2" category="list-text">NSS-帳戶必須是客戶層級的帳戶（而非來賓帳戶或暫存帳戶）。您可以擁有多個客戶層級的NSS帳戶。</block>
+  <block id="27387009488fe78dcc7cb7e3e432792f" category="list-text">如果該帳戶是合作夥伴層級帳戶、則只能有一個NSS帳戶。如果您嘗試新增客戶層級的NSS帳戶、但有合作夥伴層級的帳戶存在、您會收到下列錯誤訊息：</block>
+  <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「此帳戶不允許使用新增服務客戶類型、因為已經有不同類型的新增服務使用者。」</block>
+  <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您擁有預先存在的客戶層級的NSS帳戶、並嘗試新增合作夥伴層級的帳戶、情況也是如此。</block>
+  <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登入後、NetApp會儲存NSS.使用者名稱。</block>
+  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項會提示您重新登入。請注意、這些帳戶的權杖會在90天後過期。系統會張貼通知、提醒您注意此點。</block>
+  <block id="50e1c7a3a999563d022a15104bfe9af7" category="summary">Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。Data Sense也會在部署Data Sense執行個體時記錄活動。</block>
+  <block id="c51565229a51d72034c1622ea299b5e3" category="paragraph">您可以檢視Data Sense稽核記錄檔的內容、或是下載這些檔案、以查看發生了哪些檔案變更、以及何時發生。例如、您可以查看發出的要求、要求時間、以及檔案刪除時的來源位置、或檔案移動時的來源和目的地位置等詳細資料。</block>
+  <block id="7ddc3d159536f20b25489b34580e5713" category="paragraph">管理稽核記錄檔位於Data Sense機器上、位於：<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
+  <block id="2eb3b1a195ce77ea7e59b84ba423818c" category="paragraph">安裝稽核記錄檔會寫入<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block></block>
+  <block id="8193e38e933656edf000dbf251568d4d" category="list-text">在右側的「服務」窗格中、按一下「*分類*」旁的「*啟用*」。</block>
+  <block id="f00fdbf27f97ee0ee538742a5e7ed0ce" category="paragraph"><block ref="f00fdbf27f97ee0ee538742a5e7ed0ce" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6d59c0bcfa7b74d31dfcf319aed7bc81" category="paragraph"><block ref="6d59c0bcfa7b74d31dfcf319aed7bc81" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c9ba77685f066f05e419c9ad4b812035" category="list-text">在右側的「服務」窗格中、按一下「*設定桶」。</block>
+  <block id="49f6b32e47bb10336cfb6d4d9edbb52b" category="paragraph"><block ref="49f6b32e47bb10336cfb6d4d9edbb52b" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

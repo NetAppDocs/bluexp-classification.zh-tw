@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-audit-data-sense-actions.html 
-keywords: compliance, actions, view progress 
-summary: Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。您可以檢視Data Sense稽核記錄檔的內容、或是下載這些檔案、以查看發生了哪些檔案變更、以及何時發生。 
+keywords: compliance, actions, view progress, audit, logs, installation 
+summary: Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。Data Sense也會在部署Data Sense執行個體時記錄活動。 
 ---
 = 稽核Data Sense動作的歷程記錄
 :hardbreaks:
@@ -14,9 +14,9 @@ summary: Data Sense會記錄所有工作環境中的檔案、以及Data Sense正
 
 
 [role="lead"]
-Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。您可以檢視Data Sense稽核記錄檔的內容、或是下載這些檔案、以查看發生了哪些檔案變更、以及何時發生。
+Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。Data Sense也會在部署Data Sense執行個體時記錄活動。
 
-例如、您可以查看發出的要求、要求時間、以及檔案刪除時的來源位置、或檔案移動時的來源和目的地位置等詳細資料。
+您可以檢視Data Sense稽核記錄檔的內容、或是下載這些檔案、以查看發生了哪些檔案變更、以及何時發生。例如、您可以查看發出的要求、要求時間、以及檔案刪除時的來源位置、或檔案移動時的來源和目的地位置等詳細資料。
 
 
 
@@ -52,7 +52,9 @@ Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描
 
 == 存取記錄檔
 
-稽核日誌檔位於Data Sense機器上、位於： `/opt/netapp/audit_logs/`
+管理稽核記錄檔位於Data Sense機器上、位於： `/opt/netapp/audit_logs/`
+
+安裝稽核記錄檔會寫入 `/ops/netapp/install_logs`
 
 每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統最多可保留100個記錄檔-在達到上限後、會自動刪除舊的記錄檔。
 

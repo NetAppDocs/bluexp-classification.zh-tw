@@ -18,6 +18,66 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
+== 2023年3月7日（版本1.21）
+
+
+
+=== 新功能可從Data Sense UI新增您自己的自訂類別
+
+Data Sense現在可讓您新增自己的自訂類別、讓Data Sense能夠識別符合這些類別的檔案。資料感測有許多 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories["預先定義的類別"]因此，此功能可讓您新增自訂類別，以識別在資料中找到組織專屬的資訊。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-categories["深入瞭解"^]。
+
+
+
+=== 現在您可以從Data Sense UI新增自訂關鍵字
+
+Data Sense能夠新增自訂關鍵字、讓Data Sense在未來一段時間內能識別這些關鍵字。不過、您需要登入Data Sense Linux主機、然後使用命令列介面新增關鍵字。在此版本中、新增自訂關鍵字的功能是在Data Sense UI中、因此很容易新增及編輯這些關鍵字。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["深入瞭解如何從Data Sense UI新增自訂關鍵字"^]。
+
+
+
+=== 在「上次存取時間」變更時、能夠擁有Data Sense * Not *掃描檔案
+
+根據預設、如果Data Sense沒有足夠的「寫入」權限、系統就不會掃描磁碟區中的檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。不過、如果您不在意上次存取時間是否重設為檔案中的原始時間、您可以在「組態」頁面中覆寫此行為、讓「Data Sense」（資料感測）不論權限為何、都能掃描磁碟區。
+
+結合此功能、新增名為「掃描分析事件」的篩選器、讓您檢視未分類的檔案、因為「資料感應」無法回復上次存取時間、或是資料感應無法回復上次存取時間的檔案。
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-collected-metadata.html#last-access-time-timestamp["深入瞭解「上次存取時間時間戳記」和Data Sense所需權限"]。
+
+
+
+=== Data Sense可識別三種新類型的個人資料
+
+Data Sense可識別及分類包含下列資料類型的檔案：
+
+* 波札那身分證（Omang）號碼
+* 波札那護照號碼
+* 新加坡國家註冊身分證（NRIC）
+
+
+https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["查看Data Sense可在您的資料中識別的所有個人資料類型"]。
+
+
+
+=== 目錄的更新功能
+
+* 資料調查報告的「輕度CSV報告」選項現在包含來自目錄的資訊。
+* 「上次存取」時間篩選器現在會顯示檔案和目錄的上次存取時間。
+
+
+
+
+=== 安裝增強功能
+
+* Data Sense可安裝在執行CentOS Stream 8的Linux主機上。
+* 不具備網際網路存取（黑點）的站台資料感知安裝程式現在會執行預先檢查、以確保您的系統和網路需求已就緒、可順利安裝。
+* 安裝稽核記錄檔現在會儲存、並寫入 `/ops/netapp/install_logs`。
+
+
+
+
 == 2023年2月5日（1.20版）
 
 
@@ -30,7 +90,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#
 
 
 
-=== 現在您可以從UI新增Data Sense將識別的個人模式
+=== 現在您可以從Data Sense UI新增個人模式
 
 Data Sense能夠新增自訂的「個人資料」、讓Data Sense在未來一段時間的掃描中能夠識別這些資料。不過、您需要登入Data Sense Linux主機、然後使用命令列新增自訂模式。在此版本中、使用regex新增個人模式的功能位於Data Sense UI中、可讓您輕鬆新增及編輯這些自訂模式。
 
@@ -425,195 +485,3 @@ Cloud Manager Connector的安全性群組將使用連接埠443、而非連接埠
 === 資料感應「原則」現在可用於刪除檔案
 
 Data Sense可自動刪除符合您在原則中定義之查詢的檔案。 link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["瞭解如何建立自訂原則"]。
-
-
-
-== 2021年12月16日
-
-
-
-=== 資料感測功能可在黑暗的站台中掃描資料
-
-Cloud Manager（連接器）和Cloud Data Sense均可部署在內部部署站台、但無法存取網際網路。現在、您的安全網站可以使用Cloud Manager來管理內部ONTAP 的支援叢集、在叢集之間複寫資料、以及使用Cloud Data Sense從這些叢集掃描資料。
-
-link:task-deploy-compliance-dark-site.html["瞭解如何在無法存取網際網路的站台上部署Cloud Data Sense"^]。
-
-
-
-== 2021年11月28日
-
-
-
-=== Data Sense可用於從ONTAP 某個作業系統複製磁碟區
-
-您可以使用Data Sense來複製ONTAP 一個實體磁碟區、但只能在新的複製磁碟區中包含來源磁碟區中選取的檔案。如果您正在移轉資料、想要排除某些檔案、或想要建立磁碟區的複本以供測試、這項功能很有幫助。
-
-link:task-managing-highlights.html#cloning-volume-data-to-a-new-volume["瞭解如何複製磁碟區"]。
-
-
-
-=== 適用於Cloud Manager的GCP Marketplace訂閱現已包含對Cloud Data Sense的支援
-
-。 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["適用於Cloud Manager的GCP Marketplace訂閱"^] 現在支援Cloud Data Sense。現在您可以使用這份隨用隨付（PAYGO）訂閱、掃描Cloud Volumes ONTAP 部署在Google Cloud儲存設備上的__LW_YGO]系統中的資料、以及使用NetApp的BYOL授權。
-
-
-
-=== 能夠檢視您長期執行的法規遵循行動狀態
-
-當您從「調查結果」窗格對許多檔案執行動作時、例如刪除50個檔案、程序可能需要一些時間。現在您可以監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。
-
-link:task-view-compliance-actions.html["瞭解如何檢視持續法規遵循行動的狀態"]。
-
-
-
-=== Data Sense可識別兩種其他類型的個人資料
-
-Data Sense現在可以在檔案中找到個人資料類型「British Passport"（英國護照）」和「National Health Service（NHS）Number（美國國家醫療服務（NHS）編號）」。 link:reference-private-data-categories.html#types-of-personal-data["請參閱Data Sense在掃描中找到的所有個人資料類型清單"]。
-
-
-
-=== 「新篩選器」可顯示屬於特定工作環境類型的檔案
-
-在「資料調查」頁面中篩選資料時、已新增「工作環境類型」的篩選器。這可讓您篩選Cloud Volumes ONTAP 出適用於下列項目的結果：支援各種功能的不全系統、ONTAP 適用於各種系統的FSX、內部部署ONTAP 的不全系統等等。
-
-
-
-== 2021年11月7日
-
-
-
-=== 現在、您可以選擇在工作環境中對應或分類個別磁碟區
-
-過去您可以對應所有磁碟區、或是對應及分類每個工作環境中的所有磁碟區。現在、您可以選擇對應_OR來對應及分類個別磁碟區。此選項可用於Cloud Volumes ONTAP 支援下列項目：SFFEM Volume、ANF Volume、on prem ONTAP 、以及ONTAP 適用於Sfx6 Volume的FSX。
-
-
-
-=== Data Sense可將檔案從資料來源複製到目的地NFS共用區
-
-您可以將Data Sense正在掃描的任何來源檔案複製到目的地NFS共用區。如果您想要複製特定資料並將其移至不同的NFS位置、這項功能就很有幫助。 link:task-managing-highlights.html#copying-source-files-to-an-nfs-share["深入瞭解"]。
-
-
-
-=== 能夠掃描FSX上ONTAP 的資料保護磁碟區、以利執行不需使用的檔案系統
-
-現在、您可以在FSXfor ONTAP Sfor Solidffile系統上掃描資料保護磁碟區。 link:task-scanning-fsx.html#scanning-data-protection-volumes["深入瞭解"]。
-
-
-
-=== 新的篩選器、可在Data Sense首次發現檔案時、依日期範圍顯示檔案
-
-「調查」頁面中名為「探索時間」的新篩選器、可讓您在Data Sense首次探索檔案時、依日期範圍檢視檔案。探索到的時間也已新增至「檔案詳細資料」頁面、以及以CSV格式輸出檔案的報告。
-
-
-
-=== SOC 2類型2認證
-
-一家獨立認證的公共會計公司和服務稽核員審查了Cloud Data Sense、並根據適用的信任服務準則、確認已達成SOC 2類報告。
-
-https://www.netapp.com/company/trust-center/compliance/soc-2/["檢視NetApp的SOC 2報告"^]。
-
-
-
-== 2021年10月4日
-
-
-
-=== 支援NetApp的BYOL授權
-
-除了透過雲端供應商的市場取得Data Sense授權、現在您可以向NetApp購買自帶授權（BYOL）、以便在Cloud Manager帳戶中的所有工作環境和資料來源中使用。
-
-link:task-licensing-datasense.html#use-a-cloud-data-sense-byol-license["深入瞭解全新Cloud Data Sense BYOL授權"]。
-
-
-
-=== 支援Google Cloud Platform
-
-現在Cloud Data Sense可以掃描Cloud Volumes ONTAP 部署在GCP上的各種支援系統中的資料。資料感應必須部署在GCP上、而且連接器必須部署在GCP或內部部署上。與Connector相關的GCP服務帳戶需要最新權限、才能將Cloud Data Sense部署至GCP。
-
-
-
-=== 能夠掃描FSX上 的CIFS Volume、以利ONTAP 支援不順暢的檔案系統
-
-Data Sense現在可以掃描來自FSX的CIFS Volume、以供ONTAP 支援各種系統。 link:task-scanning-fsx.html["瞭解如何掃描Amazon FSXfor ONTAP SfundVolume"]。
-
-
-
-== 2021年9月2日
-
-
-
-=== 能夠掃描FSX上的NFS磁碟區ONTAP 、以供支援不全檔案系統之用
-
-新增支援在Amazon FSX for ONTAP Sf系 上掃描NFS磁碟區上的資料。 link:task-scanning-fsx.html["瞭解如何為您的FSX ONTAP for Sf哪些 系統設定掃描"]。
-
-
-
-=== 資料感應「狀態」項目已變更為「標記」項目
-
-使用Data Sense將「狀態」資訊新增至檔案的功能、已將術語變更為「標記」。這些是檔案層級標籤、請勿與可套用至磁碟區、EC2執行個體、虛擬機器等的資源層級標籤混淆 link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["深入瞭解檔案層級標記"]。
-
-
-
-== 2021年8月1日
-
-
-
-=== 一次管理多個檔案的檔案設定
-
-在舊版的Cloud Data Sense中、您可以一次對一個檔案執行下列動作：新增狀態標記、指派使用者、以及新增AIP標籤。現在、您可以從「資料調查」頁面選取多個檔案、並在多個檔案上執行這些動作。
-
-
-
-=== 管理儀表板會根據資料建立時間或上次存取時間來顯示資料
-
-在「管理」儀表板中檢視資料的存留期時、除了根據上次修改的時間來檢視資料之外、現在您可以根據資料建立時間或上次存取時間（讀取時間）來檢視資料。此資訊也會在資料對應報告中提供。
-
-
-
-=== 掃描大型組態時、能夠使用多部主機來提供額外的處理能力
-
-部署內部部署Data Sense時、現在您可以在計畫掃描包含數PB資料的組態時、將掃描軟體安裝在其他內部部署主機上。這些額外的_掃描儀節點_可在掃描非常大的組態時提供更高的處理能力。
-
-瞭解如何操作 link:task-deploy-compliance-onprem.html#multi-host-installation-for-large-configurations["在多個主機上部署Data Sense軟體"]。
-
-
-
-== 2021年7月7日
-
-
-
-=== Data Sense可將檔案從資料來源移至目的地NFS共用區
-
-新功能可讓您實現 link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["將Data Sense正在掃描的任何來源檔案移至任何NFS共用區"]。這可讓您將敏感或安全性相關的檔案移至特殊區域、以便進行更多分析。
-
-
-
-=== 能夠快速分類資料、而非執行完整分類掃描
-
-您現在可以選擇將資料快速對應至類別、而非執行完整分類掃描。如此一來、您就能 link:task-generating-compliance-reports.html#data-mapping-report["檢視資料對應報告"] 當您不需要執行完整掃描的特定資料來源時、請從「管理儀表板」取得資料總覽。
-
-
-
-=== 能夠將檔案指派給Cloud Manager使用者
-
-現在您可以了 link:task-org-private-data.html#assigning-users-to-manage-certain-files["將檔案指派給特定Cloud Manager使用者"] 如此一來、該人員就能對需要在檔案上執行的任何後續行動負責。此功能可與現有功能搭配使用、將自訂標記新增至檔案。
-
-「調查」頁面中的新篩選器也可讓您輕鬆檢視「指派給」欄位中有相同人員的所有檔案。
-
-
-
-=== 能夠使用較小的Cloud Data Sense執行個體
-
-有些掃描需求較小的使用者要求能夠使用較小的Cloud Data Sense執行個體。現在您可以了。使用這些較小的執行個體時有一些限制 link:concept-cloud-compliance.html#using-a-smaller-instance-type["請先瞭解這些限制"]。
-
-
-
-=== 執行慢速掃描的能力
-
-資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）、立即執行「Slow」（慢速）掃描。 link:task-reduce-scan-speed.html["瞭解方法"]。
-
-
-
-=== Data Sense會追蹤上次存取檔案的時間
-
-上次存取時間值已新增至「檔案詳細資料」頁面、以及您以CSV格式輸出的報告、以便您查看使用者上次存取檔案的時間。

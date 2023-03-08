@@ -117,13 +117,13 @@ link:task-deploy-cloud-compliance.html["在BlueXP中部署Cloud Data Sense"^] �
 +
 image:screenshot_s3_we.gif["Amazon S3 工作環境圖示的快照"]
 
-. 在右側的「Data檢測」窗格中、按一下「*啟用*」。
+. 在右側的「服務」窗格中、按一下「*分類*」旁的「*啟用*」。
 +
-image:screenshot_s3_enable_compliance.gif["從「服務」面板啟用Cloud Data Sense服務的快照"]
+image:screenshot_s3_enable_compliance.png["從「服務」面板啟用Cloud Data Sense服務的快照"]
 
 . 出現提示時、請將IAM角色指派給具有的Cloud Data Sense執行個體 <<檢閱 S3 的必要條件,必要的權限>>。
 +
-image:screenshot_s3_compliance_iam_role.gif["輸入AWS IAM角色for Cloud Data Sense的快照"]
+image:screenshot_s3_compliance_iam_role.png["輸入AWS IAM角色for Cloud Data Sense的快照"]
 
 . 按一下「*啟用*」。
 
@@ -146,9 +146,9 @@ BlueXP會將IAM角色指派給執行個體。
 
 .步驟
 . 選取 Amazon S3 工作環境。
-. 在右側窗格中、按一下 * 設定鏟斗 * 。
+. 在右側的「服務」窗格中、按一下「*設定桶」。
 +
-image:screenshot_s3_configure_buckets.gif["按一下「 Configure boose 」（設定儲存庫）以選擇您要掃描的 S3 儲存區的快照"]
+image:screenshot_s3_configure_buckets.png["按一下「 Configure boose 」（設定儲存庫）以選擇您要掃描的 S3 儲存區的快照"]
 
 . 在您的庫位上啟用純對應掃描、或是對應和分類掃描。
 +

@@ -118,6 +118,9 @@ image:screenshot_fsx_scanning_activate.png["部署Cloud Data Sense執行個體�
 Cloud Data Sense會開始掃描您在工作環境中選取的磁碟區。一旦Cloud Data Sense完成初始掃描、就會在「法規遵循」儀表板中顯示結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。
 
 
+NOTE: 根據預設、如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統將不會掃描磁碟區中的檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。您可以啟用該頁面的設定、讓Data Sense無論權限為何、都能掃描磁碟區。
+
+
 
 == 驗證Cloud Data Sense是否可存取磁碟區
 
@@ -153,7 +156,7 @@ NOTE: 對於FSXfor ONTAP Sfor Sf, Cloud Data Sense只能掃描與BlueXP相同區
 認證資料可以是唯讀的、但提供管理認證可確保Data Sense能夠讀取任何需要提升權限的資料。認證資料儲存在Cloud Data Sense執行個體上。
 
 +
-如果您想要確保「上次存取時間」的檔案不會因資料感應分類掃描而改變、建議使用者具有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
+如果您想要確保「上次存取時間」的檔案不會因資料感知分類掃描而改變、建議使用者在CIFS中擁有寫入屬性權限、或在NFS中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
 
 +
 輸入認證之後、您應該會看到一則訊息、指出所有 CIFS 磁碟區都已成功驗證。
@@ -167,6 +170,8 @@ NOTE: 對於FSXfor ONTAP Sfor Sf, Cloud Data Sense只能掃描與BlueXP相同區
 == 啟用及停用磁碟區的法規遵循掃描
 
 您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。建議您掃描所有 Volume 。
+
+預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統就不會掃描檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。 link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
 
 image:screenshot_volume_compliance_selection.png["「組態」頁面的快照、可讓您啟用或停用個別磁碟區的掃描。"]
 

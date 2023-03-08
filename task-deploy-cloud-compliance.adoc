@@ -188,6 +188,8 @@ image:screenshot_cloud_compliance_wizard_start.png["Cloud Data Sense精靈的快
 .結果
 BlueXP會在雲端供應商中部署Cloud Data Sense執行個體。
 
+只要執行個體具備網際網路連線、就會自動升級至BlueXP Connector和Data Sense軟體。
+
 .下一步
 您可以從「組態」頁面選取要掃描的資料來源。
 

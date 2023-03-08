@@ -19,6 +19,7 @@ Data Sense提供多種方法、讓您新增Data Sense在未來掃描中所識別
 * 您可以根據所掃描的資料庫中的特定欄位來新增唯一識別碼。
 * 您可以從文字檔新增自訂關鍵字、這些文字會在您的資料中識別。
 * 您可以使用規則運算式（regex）新增個人模式、將regex新增至現有的預先定義模式。
+* 您可以新增自訂類別、以識別資料中的特定資訊類別。
 
 
 所有語言均支援所有這些新增自訂掃描準則的機制。
@@ -83,6 +84,52 @@ image:screenshot_compliance_delete_data_fusion.png["顯示如何移除資料 Fus
 
 
 
+== 從字詞清單新增自訂關鍵字
+
+您可以將自訂關鍵字新增至Data Sense、以便識別資料中的資訊位置。只要輸入您想要讓Data Sense辨識的每個字詞、就能新增關鍵字。關鍵字會新增至Data Sense已使用的現有預先定義關鍵字、結果會顯示在「個人模式」區段下方。
+
+例如、您可能想要查看所有檔案中提及內部產品名稱的位置、以確保這些名稱在不安全的位置無法存取。
+
+更新自訂關鍵字之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新結果會顯示在「個人結果」區段下方的「資料感知法規遵循儀表板」、以及「個人資料」篩選器的「調查」頁面。
+
+.步驟
+. 從「_Classification settings」（_分類設定_）索引標籤中、按一下「* Add New Classifier*」（*新增分類器*）以啟動「_Add Custom Classifier.
++
+image:screenshot_compliance_add_classifier_button.png["顯示如何啟動「新增自訂類別器」精靈的快照。"]
+
+. 在_選取類型_頁面中、輸入類別器的名稱、提供簡短說明、選取*個人識別符號*、然後按*下一步*。
++
+您輸入的名稱會顯示在「Data Sense UI」中、做為符合類別器需求的掃描檔案標題、以及「Investigation」（調查）頁面中的篩選名稱。
+
++
+您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料（遮罩會出現在UI中、如下所示：「通過：[*、通過：[*、通過：[*、*、*、3434）。
+
++
+image:screenshot_select_classifier_type2.png["顯示如何命名類別器並選取類別器類型的快照。"]
+
+. 在「選取資料分析工具」頁面中、選取*自訂關鍵字*做為定義類別器的方法、然後按一下*下一步*。
++
+image:screenshot_select_classifier_tool_keywords.png["快照顯示「自訂關鍵字」選項、做為Data Sense用來建置模式的工具。"]
+
+. 在_建立邏輯_頁面中、輸入您要辨識的關鍵字-每個字位於一行、然後按一下*驗證*。
++
+以下螢幕快照顯示內部產品名稱（不同類型的貓頭鷹）。資料感應搜尋這些項目不區分大小寫。
+
++
+image:screenshot_select_classifier_create_logic_keyword.png["輸入客戶分類器關鍵字的快照。"]
+
+. 按一下「*完成*」、「Data Sense（資料感知）」即開始重新掃描資料。
+
+
+.結果
+掃描完成後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段下方、以及「個人資料」篩選器的「調查」頁面。
+
+image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示自訂關鍵字範例的快照。"]
+
+如您所見、分類器的名稱會用作「個人結果」面板中的名稱。如此一來、您就能啟動許多不同的關鍵字群組、並查看每個群組的結果。
+
+
+
 == 使用regex新增自訂的個人資料識別碼
 
 您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。這可讓您建立新的自訂regex、以識別系統中尚未存在的新個人資訊元素。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。
@@ -91,28 +138,30 @@ image:screenshot_compliance_delete_data_fusion.png["顯示如何移除資料 Fus
 
 新增regex之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新結果會顯示在「個人結果」區段下方的「資料感知法規遵循儀表板」、以及「個人資料」篩選器的「調查」頁面。
 
+請參閱 https://regex101.com/[] 如果您需要協助建立所需的規則運算式、
+
 .步驟
-. 從「自訂類別器」索引標籤中、按一下「*新增類別器*」以啟動「新增自訂類別器_」精靈。
+. 從「_Classification settings」（_分類設定_）索引標籤中、按一下「* Add New Classifier*」（*新增分類器*）以啟動「_Add Custom Classifier.
 +
 image:screenshot_compliance_add_classifier_button.png["顯示如何啟動「新增自訂類別器」精靈的快照。"]
 
 . 在_選取類型_頁面中、輸入類別器的名稱、提供簡短說明、選取*個人識別符號*、然後按*下一步*。
 +
-您輸入的名稱會顯示在Data Sense UI中、做為符合類別器需求的掃描檔案標題。您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料。
+您輸入的名稱會顯示在「Data Sense UI」中、做為符合類別器需求的掃描檔案標題、以及「Investigation」（調查）頁面中的篩選名稱。您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料。
 
 +
 image:screenshot_select_classifier_type.png["顯示如何命名類別器並選取類別器類型的快照。"]
 
 . 在「選取資料分析工具」頁面中、選取*自訂規則運算式*做為定義類別器的方法、然後按一下*下一步*。
 +
-image:screenshot_select_classifier_tool.png["快照顯示「自訂規則運算式」選項、做為Data Sense建置模式所用的工具。"]
+image:screenshot_select_classifier_tool_regex.png["快照顯示「自訂規則運算式」選項、做為Data Sense建置模式所用的工具。"]
 
 . 在_建立邏輯_頁面中、輸入規則運算式和任何鄰近字詞、然後按一下*完成*。
 +
 .. 您可以輸入任何合法的規則運算式。按一下「*驗證*」按鈕、讓「資料感知」驗證規則運算式是否有效、且其範圍不太廣、表示會傳回太多結果。
 .. 您也可以輸入一些鄰近詞彙、以協助精簡結果的準確度。這些詞彙通常會在您要搜尋的模式300個字元內找到（在找到的模式之前或之後）。在單獨一行輸入每個字詞或片語。
 +
-image:screenshot_select_classifier_create_logic.png["為您的客戶類別者輸入regex和近接字的快照。"]
+image:screenshot_select_classifier_create_logic_regex.png["為您的客戶類別者輸入regex和近接字的快照。"]
 
 
 
@@ -125,7 +174,57 @@ image:screenshot_personal_info_regex_added.png["快照顯示在掃描進行中�
 
 
 
-=== 檢視自訂分類器的結果
+== 新增自訂類別
+
+Data Sense會取得掃描的資料、並將其分成不同類別。類別是以人工智慧分析每個檔案的內容和中繼資料為基礎的主題。 link:reference-private-data-categories.html#types-of-categories["請參閱預先定義類別清單"]。
+
+類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、像是_恢復_或_員工合約_的類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。
+
+您可以將自訂類別新增至「Data Sense」（資料感測）、以便識別資料中的資料資產專屬資訊類別。您可以建立包含您要識別之資料類別的「訓練」檔案來新增每個類別、然後讓Data Sense掃描這些檔案以透過AI「學習」、以便識別資料來源中的資料。類別會新增至Data Sense已識別的現有預先定義類別、結果會顯示在「類別」區段下方。
+
+例如、您可能想要查看.gz格式的壓縮安裝檔案在檔案中的位置、以便視需要加以移除。
+
+更新自訂類別之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新的結果會顯示在「類別」區段下的「資料感知法規遵循儀表板」、以及「類別」篩選器的「調查」頁面。 link:task-controlling-private-data.html#viewing-files-by-categories["瞭解如何依類別檢視檔案"]。
+
+.您需要的產品
+您至少需要建立25個訓練檔案、其中包含您希望Data Sense能夠辨識的資料類別範例。支援下列檔案類型：
+
+`+.CSV, .DOC, .DOCX, .GZ, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
+
+檔案必須至少100個位元組、而且必須位於Data Sense可存取的資料夾中。
+
+.步驟
+. 從「_Classification settings」（_分類設定_）索引標籤中、按一下「* Add New Classifier*」（*新增分類器*）以啟動「_Add Custom Classifier.
++
+image:screenshot_compliance_add_classifier_button.png["顯示如何啟動「新增自訂類別器」精靈的快照。"]
+
+. 在_選取類型_頁面中、輸入類別器的名稱、提供簡短說明、選取*類別*、然後按*下一步*。
++
+您輸入的名稱會顯示在「Data Sense UI」中、做為符合您所定義資料類別的掃描檔案標題、以及「Investigation」（調查）頁面中的篩選名稱。
+
++
+image:screenshot_select_classifier_category.png["顯示如何命名類別器並選取類別器類型的快照。"]
+
+. 在_建立邏輯_頁面中、確定您已準備好學習檔案、然後按一下*選取檔案*。
++
+image:screenshot_category_create_logic.png["「建立邏輯」頁面的快照、您可在其中新增包含Data Sense所需學習之資料的檔案。"]
+
+. 輸入磁碟區的IP位址、以及訓練檔案所在的路徑、然後按一下*「Add*（新增*）」。
++
+image:screenshot_category_add_files.png["顯示如何輸入訓練檔案位置的快照。"]
+
+. 確認Data Sense已辨識訓練檔案。按一下* x*以移除任何不符合要求的訓練檔案。然後按一下「*完成*」。
++
+image:screenshot_category_files_added.png["快照顯示Data Sense將用來做為定義新類別的訓練檔案的檔案。"]
+
+
+
+.結果
+新類別是依照訓練檔案所定義、並新增至Data Sense。然後、Data Sense會開始重新掃描所有資料來源、以識別適合此新類別的檔案。您會返回「自訂分類器」頁面、在其中可以檢視符合新類別的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。
+
+
+
+== 檢視自訂分類器的結果
 
 您可以在"規範儀表板"和"調查"頁面中檢視任何自訂類別器的結果。例如、此螢幕擷取畫面會在「個人結果」區段的「法規遵循儀表板」中顯示相符的資訊。
 
@@ -139,123 +238,10 @@ image:screenshot_custom_classifier_top_5.png["根據傳回的結果顯示前3大
 
 
 
-=== 管理自訂分類器
+== 管理自訂分類器
 
 您可以使用*編輯分類器*按鈕來變更您所建立的任何自訂分類器。
 
 如果您稍後決定不需要「資料感知」來識別您新增的自訂模式、您可以使用*刪除分類器*按鈕來移除每個項目。
 
 image:screenshot_custom_classifiers_manage.png["「自訂類別器」頁面的快照、其中包含用於編輯和刪除類別器的按鈕。"]
-
-
-
-== 從文字檔新增自訂關鍵字
-
-您可以將自訂關鍵字新增至Data Sense、以便識別資料中的特定資訊。您可以從您定義的文字檔新增關鍵字。關鍵字會新增至Data Sense已使用的現有預先定義關鍵字、結果會顯示在「個人模式」區段下方。
-
-例如、您可能想要查看所有檔案中提及內部產品名稱的位置、以確保這些名稱在不安全的位置無法存取。
-
-更新自訂關鍵字之後、Data Sense會重新開始掃描所有資料來源、掃描完成後、新結果會出現在Data Sense中。
-
-您必須在Data Sense系統的下列位置新增或建立包含自訂關鍵字的文字檔：
-
- /opt/netapp/Datasense/tools/datascience/custom_keywords/keywords_sets
-您可以使用多個關鍵字建立單一檔案、或是新增多個檔案、每個檔案都包含特定關鍵字。檔案的格式為每行一字、例如、以下列出類型為貓頭鷹的內部產品名稱：
-
-_inters_product_names.txt_
-
-....
-barred
-barn
-horned
-snowy
-screech
-....
-資料感應搜尋這些項目不區分大小寫。
-
-請注意下列需求：
-
-* 檔案名稱不應包含數字。
-* 每個檔案最多可包含100、000個字。如果有更多字詞、則只會新增前10、000個字。
-* 每個字詞長度必須至少3個字元。忽略較短的字詞。
-* 重複的字詞只會新增一次。
-
-
-
-
-=== 存取命令列
-
-您需要存取Data Sense系統、才能啟動命令來新增自訂關鍵字。
-
-當您的內部部署安裝Data Sense時、您可以直接存取命令列。
-
-在雲端部署Data Sense時、您需要SSH到Data Sense執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path_to_the_ssh驗證金鑰>= ssh驗證金鑰的位置
-* <machine_user>：
-+
-** 對於AWS：使用<EC2-user>
-** Azure：使用為BlueXP執行個體建立的使用者
-** GCP：使用為BlueXP執行個體建立的使用者
-
-
-* <datasense_ip>=虛擬機器執行個體的IP位址
-
-
-請注意、您需要修改安全群組傳入規則、才能存取雲端上的系統。如需詳細資料、請參閱：
-
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
-
-
-
-
-=== 新增自訂關鍵字的命令語法
-
-從檔案新增自訂關鍵字的命令語法如下：
-
- sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate -f <file_name>.txt
-* =這是包含關鍵字的檔案名稱。
-
-
-您可以從路徑*/ opt / NetApp /資料中心/*執行命令。
-
-如果您已建立許多包含自訂關鍵字的檔案、您可以使用下列命令一次新增所有檔案的關鍵字：
-
- sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate
-
-
-=== 範例
-
-若要查看所有檔案中提及的內部產品名稱、請輸入下列命令。
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s activate -f internal_product_names.txt
-----
- log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 126 | 1 | None | upload_custom_keywords_126 | All legal keywords were successfully inserted
-.結果
-下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。
-
-image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示自訂關鍵字範例的快照。"]
-
-如您所見、文字檔的名稱會用作「個人結果」面板中的名稱。如此一來、您就能從不同的文字檔啟動關鍵字、並查看每種關鍵字類型的結果。
-
-
-
-=== 停用自訂關鍵字
-
-如果您稍後決定不需要使用「資料感應」來識別之前新增的特定自訂關鍵字、請使用命令中的*停用*選項來移除文字檔中定義的關鍵字。
-
- sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f <file_name>.txt
-例如、若要移除在* inters_product_name.txt*檔案中定義的關鍵字：
-
-[source, cli]
-----
-[user ~]$ cd /opt/netapp/Datasense/
-[user Datasense]$ sudo bash tools/datascience/custom_keywords/upload_custom_keywords.sh -s deactivate -f internal_product_names.txt
-----
- log v1.0 | 2022-08-24 08:16:25,332 | INFO | ds_logger | upload_custom_keywords | 87 | 1 | None | upload_custom_keywords_87 | Deactivated keyword pattern from internal_product_names.txt successfully
