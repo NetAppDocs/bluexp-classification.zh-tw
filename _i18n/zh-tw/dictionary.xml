@@ -676,7 +676,6 @@
   <block id="6ca416dc347d5360ab86e69583f4b2b0" category="admonition">您無法複製位於資料庫中的檔案。</block>
   <block id="61d4fcc3c026e16853fc4a4c3af3238e" category="list-text">您必須具有「帳戶管理」或「工作區管理」角色、才能複製檔案。</block>
   <block id="ac4f9b37895857d8a8b18cb025880f5a" category="list-text">複製檔案需要目的地NFS共用允許從Data Sense執行個體存取。</block>
-  <block id="31273f8f624a6f2a292d5dfa6bf047a8" category="list-text">您一次最多可以複製100、000個檔案。</block>
   <block id="07fc1f9bea8dc1060003a2fea5aa3598" category="list-text">在「資料調查結果」窗格中、選取您要複製的檔案、然後按一下「*複製*」。</block>
   <block id="e78ae78fac1620efb2c4db4938844274" category="inline-image-macro">顯示如何從「資料調查」頁面選取要複製的檔案、以及「複製」按鈕的快照。</block>
   <block id="cb1cacc23b0ae330cc87e78659350142" category="paragraph"><block ref="cb1cacc23b0ae330cc87e78659350142" category="inline-image-macro-rx" type="image"></block></block>
@@ -3136,7 +3135,6 @@
   <block id="2976d8218e5021d7d1f5cbbae070157d" category="paragraph">BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="179f3f01544c50dcde464960dc0c66ec" category="inline-link-rx"></block> 和 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="e6226abfed55ff05d6368103074cf171" category="paragraph">+如果您想要確保「上次存取時間」的檔案不會因資料感知分類掃描而改變、建議使用者在CIFS中擁有寫入屬性權限、或在NFS中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="b59c5194f3c88dc07265c30dac8a84fe" category="cell">選取上次存取檔案或目錄（僅限CIFS或NFS）的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。對於Data Sense掃描的檔案類型、這是Data Sense掃描檔案的最後一次。</block>
-  <block id="cb9bf9f33de1a01b95ec2d7471fee706" category="cell">輸入最多20個要包含或排除在查詢之外的部分或完整路徑。如果您同時輸入「包含路徑」和「排除路徑」、則「Data Sense」會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。請注意、在此篩選器中包含「*」並不會有任何影響、您必須使用完整路徑來搜尋特定檔案和子資料夾。</block>
   <block id="42942f3489af451c9c0c8a2e6cc0b756" category="cell">掃描分析事件</block>
   <block id="86c0d22c969df97ab506580c91428045" category="cell">選取您要檢視的檔案是否因為「資料感知」無法回復上次存取時間而未分類、或是資料感知無法回復上次存取時間而分類的檔案。</block>
   <block id="0f609c3035a725a4b4c05c34c154b6a8" category="inline-link-macro">請參閱「上次存取時間」時間戳記的詳細資料</block>
@@ -3182,4 +3180,7 @@
   <block id="6d59c0bcfa7b74d31dfcf319aed7bc81" category="paragraph"><block ref="6d59c0bcfa7b74d31dfcf319aed7bc81" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c9ba77685f066f05e419c9ad4b812035" category="list-text">在右側的「服務」窗格中、按一下「*設定桶」。</block>
   <block id="49f6b32e47bb10336cfb6d4d9edbb52b" category="paragraph"><block ref="49f6b32e47bb10336cfb6d4d9edbb52b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="11f3580c4a3b779649df6d1a5c193fdf" category="list-text">您一次可以複製1到100、000個檔案。</block>
+  <block id="5a8d6a8cd28258257694d106e58f4816" category="list-text">您必須選取至少20個檔案。</block>
+  <block id="bd336cd1948dc2bbe990a0988a5e5e9e" category="cell">輸入最多20個要包含或排除在查詢之外的部分或完整路徑。如果您同時輸入「包含路徑」和「排除路徑」、則「Data Sense」會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。請注意、使用此篩選器中的「*」並沒有任何效果、而且您無法將特定資料夾排除在掃描之外、系統將掃描設定共用區下的所有目錄和檔案。</block>
 </blocks>
