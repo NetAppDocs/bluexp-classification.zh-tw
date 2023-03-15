@@ -4,7 +4,7 @@ permalink: task-deploy-compliance-dark-site.html
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
 summary: 請完成幾個步驟、在內部部署站台的主機上部署Cloud Data Sense、但該主機無法存取網際網路。這類安裝最適合安全的站台。 
 ---
-= 在沒有網際網路存取的主機上部署Cloud Data Sense
+= 在沒有網際網路存取的主機上安裝Data Sense
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -223,7 +223,7 @@ NFS Volume匯出原則必須允許從Data Sense執行個體存取。
 
 
 
-== 部署資料感測
+== 在內部部署的Linux主機上安裝Data Sense
 
 對於一般組態、您將在單一主機系統上安裝軟體。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["請參閱此處的步驟"]。
 
@@ -258,26 +258,23 @@ tar -xzf DataSense-offline-bundle-v1.21.0.tar.gz
 +
 這會擷取所需的軟體和實際安裝檔案* cc_OnPrem_installer.tar。gz*。
 
-. 啟動BlueXP、然後選取*管理>分類*。
-. 按一下「*啟動資料感應*」。
-+
-image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動Cloud Data Sense的螢幕快照。"]
-
-. 按一下「*部署*」以啟動內部部署精靈。
-+
-image:screenshot_cloud_compliance_deploy_darksite.png["選取按鈕以在內部部署Cloud Data Sense的螢幕快照。"]
-
-. 此時會顯示「部署內部部署的資料感知」對話方塊。複製所提供的命令並貼到文字檔中、以便稍後使用、然後按一下*關閉*。例如：
-+
-「Udo ./install.sh -a 12345 -c 27AG75 -t 2198qq --暗房」
-
 . 在主機上解壓縮安裝檔案、例如：
 +
 [source, cli]
 ----
 tar -xzf cc_onprem_installer.tar.gz
 ----
-. 當安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式：
+. 啟動BlueXP、然後選取*管理>分類*。
+. 按一下「*啟動資料感應*」。
++
+image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動Cloud Data Sense的螢幕快照。"]
+
+. 按一下「*部署*」開始內部安裝。
++
+image:screenshot_cloud_compliance_deploy_darksite.png["選取按鈕以在內部部署Cloud Data Sense的螢幕快照。"]
+
+. 此時會顯示「部署內部部署的資料感知」對話方塊。複製提供的命令（例如： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq --darksite`）並貼到文字檔中、以便日後使用。然後按一下*關閉*以關閉對話方塊。
+. 在主機上、輸入您複製的命令、然後依照一系列提示操作、或者您也可以提供完整命令、包括所有必要參數做為命令列引數。
 +
 請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。
 
@@ -288,7 +285,8 @@ tar -xzf cc_onprem_installer.tar.gz
 
 
  a| 
-.. 貼上您從步驟7複製的資訊：「Udo ./install.sh -a <account_id>-c <agent_id>-t <tokent>--lidsite」
+.. 貼上您從步驟8複製的資訊：
+`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --darksite`
 .. 輸入Data Sense主機機器的IP位址或主機名稱、以便連接器執行個體存取。
 .. 輸入BlueXP Connector主機的IP位址或主機名稱、以便Data Sense執行個體存取。
 
@@ -366,10 +364,7 @@ Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安
 +
 例如、此命令會新增3個掃描儀節點：「Udo ./install.sh -A <account_id>-c <agent_id>-t <tokent>-host <ds_host>--manager-host <cm_host>*-n <node_IP1>、<node_IP2>、<node_IP3>*--ne-proxy-site。
 
-. 在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令並將其儲存在文字檔中。例如：
-+
-「Udo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212」
-
+. 在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`）並將其儲存在文字檔中。
 . 在*每個*掃描儀節點主機上：
 +
 .. 將Data Sense安裝程式檔案（* cc_OnPrem_installer.tar.gz*）複製到主機機器。

@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance 
-summary: 完成幾個步驟、在雲端部署Cloud Data Sense。Data Sense執行個體將部署在與BlueXP Connector相同的雲端供應商網路中。 
+summary: 完成幾個步驟、在雲端部署Cloud Data Sense。BlueXP將在與BlueXP Connector相同的雲端供應商網路中部署Data Sense執行個體。 
 ---
-= 在雲端部署Cloud Data Sense
+= 使用BlueXP在雲端部署Cloud Data Sense
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: 完成幾個步驟、在雲端部署Cloud Data Sense。Data Sense執行
 
 
 [role="lead"]
-完成幾個步驟、在雲端部署Cloud Data Sense。Data Sense執行個體將部署在與BlueXP Connector相同的雲端供應商網路中。
+完成幾個步驟、在雲端部署Cloud Data Sense。BlueXP將在與BlueXP Connector相同的雲端供應商網路中部署Data Sense執行個體。
 
-請注意、您也可以 link:task-deploy-compliance-onprem.html["在可存取網際網路的Linux主機上部署Data Sense"]。如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、這類安裝可能是個不錯的選擇、但這並不是必要的。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。
+請注意、您也可以 link:task-deploy-compliance-onprem.html["在可存取網際網路的Linux主機上安裝Data Sense"]。如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、這類安裝可能是個不錯的選擇、但這並不是必要的。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。
 
 
 

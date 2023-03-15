@@ -391,7 +391,6 @@
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
   <block id="ca31f5af8410452f51d81153fffb5c54" category="cell">\login.microsoft.com \graph.microsoft.com</block>
   <block id="bea203a1b40a7cbfe57a7032625d4eed" category="cell">與Microsoft伺服器通訊、以登入所選的線上服務。</block>
-  <block id="8a344d9380d42668324bc0e5df589f1a" category="section-title">部署資料感測</block>
   <block id="92aadc02d249003db0a3c659eb74f06b" category="inline-link-macro">請參閱此處的步驟</block>
   <block id="2e7ee80a6e4d40bc409d4f4893e290bb" category="paragraph">對於一般組態、您將在單一主機系統上安裝軟體。 <block ref="a4f6f244c9fb5caddddb02072a431c59" category="inline-link-macro-rx"></block>。</block>
   <block id="49110f631362d4a9865d9c280368ebb1" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。 <block ref="31dc1b3eda8e489f4f5ca469c6f3d2e1" category="inline-link-macro-rx"></block>。</block>
@@ -407,15 +406,11 @@
   <block id="cce26d229722c6ca9257990a7091d9c0" category="list-text">按一下「*啟動資料感應*」。</block>
   <block id="af9d594fa710dc13ae352e89ff99e6a8" category="inline-image-macro">選取按鈕以啟動Cloud Data Sense的螢幕快照。</block>
   <block id="2ee561fe4cbc55aa0245c40198b23955" category="paragraph"><block ref="2ee561fe4cbc55aa0245c40198b23955" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="56aed921ec3e492e9095e626c14396cb" category="list-text">按一下「*部署*」以啟動內部部署精靈。</block>
   <block id="48e13f41d0a6dd2616f2ecf0c9e1eaa6" category="inline-image-macro">選取按鈕以在內部部署Cloud Data Sense的螢幕快照。</block>
   <block id="d81a8cbca4762be44dc0845220ba9dcf" category="paragraph"><block ref="d81a8cbca4762be44dc0845220ba9dcf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="de228a79f2490bf5b3308e91ce0e8426" category="paragraph">「Udo ./install.sh -a 12345 -c 27AG75 -t 2198qq --暗房」</block>
   <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">在主機上解壓縮安裝檔案、例如：</block>
-  <block id="44913217828f63e33072c448b10eb218" category="list-text">當安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式：</block>
   <block id="7811f7ac7277273963aaa041e6dee561" category="cell">根據提示輸入參數：</block>
   <block id="92a8de5d873f4ac3a57f4d866c8ed98c" category="cell">輸入完整命令：</block>
-  <block id="ad9960c224b334ea469591738244827c" category="list-text">貼上您從步驟7複製的資訊：「Udo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;tokent&gt;--lidsite」</block>
   <block id="dde575296d7c18c713a24acdec3bb7b6" category="list-text">輸入Data Sense主機機器的IP位址或主機名稱、以便連接器執行個體存取。</block>
   <block id="d34764ccb2a6879e5ef576e7ea2fb550" category="cell">或者、您也可以事先建立整個命令、提供必要的主機參數：「Udo ./install.sh -A &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;tokent&gt;-host &lt;ds_host&gt;--manager-host &lt;cm_host&gt;--ne-proxy--dimsite」</block>
   <block id="99a5b8fe9eadd5739e3e760584c579fc" category="paragraph">變數值：</block>
@@ -456,8 +451,6 @@
   <block id="cfc66ec017142ce1f8420ffb8db2e3cd" category="list-text">如步驟9所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。</block>
   <block id="5e2f5642806d5ddc2868631f2e508d3d" category="paragraph">除了可用於單一主機安裝的變數之外、還會使用新的選項*- n &lt;node_ip&gt;*來指定掃描儀節點的IP位址。多個節點IP之間以一個逗號分隔。</block>
   <block id="5fa878295b23e50238df7f7395042d79" category="paragraph">例如、此命令會新增3個掃描儀節點：「Udo ./install.sh -A &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;tokent&gt;-host &lt;ds_host&gt;--manager-host &lt;cm_host&gt;*-n &lt;node_IP1&gt;、&lt;node_IP2&gt;、&lt;node_IP3&gt;*--ne-proxy-site。</block>
-  <block id="743663a45dfd2f9237dfcf266bf499a6" category="list-text">在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令並將其儲存在文字檔中。例如：</block>
-  <block id="bb70d223e1e51328f09038d97ad81b07" category="paragraph">「Udo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212」</block>
   <block id="611c763bf4c9dbb7098d6afa814b754f" category="list-text">在*每個*掃描儀節點主機上：</block>
   <block id="d3d41a6c99806d8a969b69a369935644" category="list-text">解壓縮安裝程式檔案。</block>
   <block id="05c158c3674b19417f2abea1a13ea2f3" category="list-text">貼上並執行您在步驟3中複製的命令。</block>
@@ -970,7 +963,6 @@
   <block id="7d3786abf2ebb473a5ba70b680734525" category="section-title">BYOL 授權考量</block>
   <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">當您正在掃描的資料量達到授權容量的80%時、當您達到限制時、也會再次顯示</block>
   <block id="d8ea74d0bc0e6f3c5be22312a953d7fb" category="list-text">授權到期前 30 天、授權到期後再一次</block>
-  <block id="fb319f290355569f99ed376ce5d98c05" category="paragraph">如果授權過期、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何掃描資料的相關資訊。如果您想減少所掃描的磁碟區數量、使容量使用量可能低於授權限制、則只有「_Configuration」頁面可用。</block>
   <block id="c438a45ba498e9cee6eb5d6bb573e3dc" category="inline-xref">如何更新Cloud Data Sense授權</block>
   <block id="becde272662faf1aa4393e2cd5fbf2f7" category="admonition">如果您使用的帳戶同時擁有BYOL授權和PAYGO訂閱、則當BYOL授權到期時、Data Sense _will不會移轉至PAYGO訂閱。您必須續約BYOL授權。</block>
   <block id="d117f1960f80fb3c03967f2cd00addba" category="summary">請完成幾個步驟、Cloud Volumes ONTAP 使用Cloud Data Sense開始掃描您的內部和內部部署ONTAP 的各個方面。</block>
@@ -1389,8 +1381,6 @@
   <block id="51d9478e8b1c7fd3b915c3258ca90c5f" category="cell">80% 至 95%</block>
   <block id="1f11d46635a2bb0b45eb74583d762a6b" category="cell">20% 至 30%</block>
   <block id="fcfb74f2666b695b8ad53eb3d1e156ff" category="cell">90% 至 97%</block>
-  <block id="638b36e7b559bbb7ff5161d7a8fa8bf5" category="doc">在雲端部署Cloud Data Sense</block>
-  <block id="f1b417d70cc0826ea97b7fb76ba27c7a" category="inline-link-macro">在可存取網際網路的Linux主機上部署Data Sense</block>
   <block id="211751cb447d335f31ff23a277ab83a3" category="inline-link">在 AWS 中建立連接器</block>
   <block id="b51a9186f236269e0e1206fe364d56ee" category="inline-link">在 Azure 中建立 Connector</block>
   <block id="24f7d339e21b63b3cef99a7c8f1236fe" category="inline-link">在GCP中建立連接器</block>
@@ -1660,7 +1650,6 @@
   <block id="ed026517be9fe6d05aaa49ea802eff93" category="inline-image-macro">顯示如何移除單一使用者檔案的快照。</block>
   <block id="c10114c9189f598289f5615e85beb064" category="paragraph"><block ref="c10114c9189f598289f5615e85beb064" category="inline-image-macro-rx" type="image"></block></block>
   <block id="edc5cb08ed944714ebae42cfa6a8ba4c" category="paragraph">如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、則內部安裝可能是個不錯的選擇、但這並非必要。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。</block>
-  <block id="ad2930ccaf67236b6ce95ac2d7f536c3" category="paragraph">請注意、您也可以 <block ref="8567cf2a27ba4e05e4d07919092c29e8" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
   <block id="e780ba1dc1fa7caee58066eebb1037f9" category="inline-xref">符合下列需求</block>
   <block id="0c2ece8552f22362671f28b71520f912" category="paragraph">您也需要符合的Linux系統 <block ref="a2ec304d11350e1ba44149ab8f817c68" category="inline-xref-macro-rx"></block>。</block>
   <block id="c77d213688bea929060b009132bd92bb" category="paragraph">從NetApp支援網站下載Cloud Data Sense軟體、並將安裝程式檔案複製到您打算使用的Linux主機。然後啟動安裝精靈、並依照提示部署Data Sense執行個體。</block>
@@ -1668,7 +1657,6 @@
   <block id="9c43d511337ac0c672bf80907225f82e" category="list-text">Cloud Data Sense需要傳出網際網路存取。如果您的虛擬或實體網路使用Proxy伺服器進行網際網路存取、請確定Data Sense執行個體具有傳出網際網路存取權限、以聯絡下列端點。</block>
   <block id="f132f9796727cdfbd850e6d1f0af2208" category="cell">\https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm</block>
   <block id="c82303c6d5888ba9f147a501b8fe7f29" category="cell">提供安裝所需的必要套件。</block>
-  <block id="a2ed9b99c4cd06a57cbda6cfbd6772c3" category="section-title">在內部部署部署Data Sense</block>
   <block id="cdcaeff13fccb06b7b310f6f966ada4f" category="paragraph">對於一般組態、您將在單一主機系統上安裝軟體。 <block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block>。</block>
   <block id="446f633ae412e24a0a66d9d154552c63" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。 <block ref="72f8bc610961b8d2bc734f2ce5e89019" category="inline-xref-macro-rx"></block>。</block>
   <block id="ab6f827b404fc74a3d59a176e44dce54" category="inline-xref">準備Linux主機系統</block>
@@ -1677,9 +1665,7 @@
   <block id="42d1c021036734670ca245849e323735" category="admonition">當Azure NetApp Files 軟體安裝在內部部署環境中時、Cloud Data Sense目前無法掃描S3儲存區、功能區、或FSXfor ONTAP the Sf2。在這種情況下、您需要在雲端和部署獨立的Connector和Data Sense執行個體<block ref="7ef29812cbbbb10ee35427be73d0c671" category="inline-link-rx"></block> 適用於不同的資料來源。</block>
   <block id="34dc49ad79c5d0ec1f3c661ca216a2a5" category="paragraph">在單一內部部署主機上安裝Data Sense軟體時、請遵循下列步驟。</block>
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">將安裝程式檔案複製到您打算使用的 Linux 主機（使用「 XCP 」或其他方法）。</block>
-  <block id="f7fe0f4c5bd3dd34e31c9eae80732a01" category="paragraph">「Udo ./install.sh -a 12345 -c 27AG75 -t 2198qq」</block>
   <block id="65a0409250bc34ad7aed301586de5abc" category="list-text">在主機上解壓縮安裝程式檔案、例如：</block>
-  <block id="0c3e94a9670a26d481343fe02b9df002" category="list-text">貼上您從步驟6複製的資訊：「Udo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;tokent&gt;」</block>
   <block id="90a01f1462a77154d1dedbbcca2933fd" category="cell">或者、您也可以事先建立整個命令、提供必要的主機和Proxy參數：「Udo ./install.sh -A &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;tokent&gt;-host &lt;ds_host&gt;-manager-host &lt;cm_host&gt;-proxy_host &lt;proxy_host&gt;--proxy-port &lt;proxy_port&gt;-cert-proxy_proxy_proxy_proxy&gt;&lt;key&gt;&lt;key_proxy_proxy_user-proxy_proxy&gt;-tese&gt;</block>
   <block id="f31705a3bb2f2507f4803c1d996c4887" category="list-text">_proxy_host_ = 代理伺服器的 IP 或主機名稱（如果主機位於 Proxy 伺服器之後）。</block>
   <block id="580d63944c0010bfed9db7cc082666bf" category="list-text">_proxy_port_ = 連接到 Proxy 伺服器的連接埠（預設值 80 ）。</block>
@@ -1746,8 +1732,6 @@
   <block id="1a3dd42e7f140871b4724418e36e52fb" category="sidebar">Cloud Data Sense文件</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">版本資訊</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始使用</block>
-  <block id="ce5d6bd317f10e98c0ed8cd1d8a5eb77" category="sidebar">部署於雲端</block>
-  <block id="88b8e638dc99736099049254e46001f8" category="sidebar">部署內部部署、無需存取網際網路</block>
   <block id="77cb6eb12b1c27e0f1e04f0f158eb184" category="sidebar">啟動資料來源的掃描</block>
   <block id="8c7729e22a223978ef26b521fa9ee122" category="sidebar">不只是內部和內部的Cloud Volumes ONTAP ONTAP</block>
   <block id="6b7cef11406f2fff58dcc619a2b7e482" category="sidebar">Amazon S3 儲存桶</block>
@@ -2476,8 +2460,6 @@
   <block id="48e3dc371ee5116828a05b4a97621caa" category="list-text">_ds_manager_ip_= Data Sense Manager節點系統的私有IP位址</block>
   <block id="f58e80ea5a832fe99f930893c4ae0376" category="list-text">_node_Private IP = Data Sense掃描儀節點系統的IP位址（多個掃描儀節點IP會以逗號分隔）</block>
   <block id="33b07d0ffb66d0a6cd8a0162e20adca4" category="list-text">_user_tokon_= JWT使用者存取權杖</block>
-  <block id="285b492c7171f599200c3fe3d4f808d6" category="list-text">在ADD_SCIER_nodes指令碼完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令並將其儲存在文字檔中。例如：</block>
-  <block id="58e40c834f3acaaccc3823bbd917e6d7" category="paragraph"><block ref="7c95eda18e13e25941273928f0d149ba" prefix="" category="inline-code"></block></block>
   <block id="b0c80b9aebe2393782fd3bb0680a791b" category="list-text">貼上並執行您在步驟2中複製的命令。</block>
   <block id="8dd42ed78b27180f93de7913ecab156f" category="paragraph">在所有掃描儀節點上完成安裝、並已加入管理器節點之後、「add_bers_node.sh」指令碼也會完成。安裝可能需要10到20分鐘。</block>
   <block id="ced90f42fe9747f4578603471ea454a3" category="list-text">如果將任何掃描儀節點新增至掃描儀群組、請返回Manager節點並執行下列2項工作：</block>
@@ -2541,11 +2523,9 @@
   <block id="21315205ba34163a83853c5526e534c1" category="list-text">一次最多可重新掃描1000個項目。</block>
   <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
   <block id="79bd49250e598bf53655f50c83b04044" category="list-text">行動類型（刪除、複製、移動、建立原則、更新原則、 重新掃描檔案、下載Json報告等）</block>
-  <block id="9d282ec5c19d83f47fc9504e4ff50325" category="list-text">如果您已在雲端供應商的市場訂閱BlueXP隨用隨付（PAYGO）、您也會自動訂閱Cloud Data Sense。您不需要再次訂閱。</block>
   <block id="f6d56db241e1b67ea15f2bcfc6d58cee" category="paragraph">如果您已經訂閱了BlueXP（如下所示、適用於AWS）、那麼您就已經設定好了、沒有其他需要做的事了。</block>
   <block id="8a19b447bcd4da037940f31306b703f2" category="list-text">您需要啟動Cloud Sync 「還原」服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。請從開始檢閱Cloud Sync 《不整合需求<block ref="e51d588768ce18b65058ca75b02bbb45" category="inline-link-rx"></block>。</block>
   <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">您可以在中檢視Json報告產生的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
-  <block id="0527c3c624cc9c38c92e3f9b20bd744d" category="list-text">安裝程式提示時、您可以在一系列提示中輸入所需的值、或是將所需的參數作為命令列引數提供給安裝程式。</block>
   <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日（1.17版）</block>
   <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。</block>
   <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">內部部署安裝程式現在會在開始安裝之前執行預先檢查</block>
@@ -2648,7 +2628,6 @@
   <block id="9c2468c732c2a3c37f5718ed3927f188" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱物件儲存先決條件</block>
   <block id="fadb1720cdd8a007cefc0f21747a7236" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 新增物件儲存服務</block>
   <block id="0cf30da5b3284b65f1bd1464a838ef7e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 選取要掃描的儲存區</block>
-  <block id="9abb28e2822a3af34f9b1e46c458bec4" category="paragraph">典型的內部安裝具有下列元件和連線。</block>
   <block id="f1250c9b73cd8f5ef391e449f0b5dcb4" category="inline-image-macro">所需的BlueXP和網路元件、以及相關連線的圖表。</block>
   <block id="0b0f1899ec6aba7470224b92502a86ac" category="paragraph"><block ref="0b0f1899ec6aba7470224b92502a86ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7253a7683e98218c221f39d0f0ad5f29" category="paragraph">您也可以與雲端供應商建立Connector。請參閱<block ref="e291ebc6db7a8ec08d333384efa4743e" category="inline-link-rx"></block>、<block ref="3f9648a8e8f665af7b23c050702c5c95" category="inline-link-rx"></block>或<block ref="2559e3f18112d727f751d3574900096c" category="inline-link-rx"></block>。</block>
@@ -2877,12 +2856,9 @@
   <block id="6c4af53d01a0fd2f4b9e2d860002e476" category="inline-image-macro">「自訂類別器」頁面的快照、其中包含用於編輯和刪除類別器的按鈕。</block>
   <block id="ba3a038a97b620898e33b9e09db66632" category="paragraph"><block ref="ba3a038a97b620898e33b9e09db66632" category="inline-image-macro-rx" type="image"></block></block>
   <block id="969665117064b959d3c660b43611f713" category="list-text">Docker Engine 19.3.1版或更新版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
-  <block id="666bbf651dbf568f97e37372014cde9a" category="list-text">此時會顯示「部署內部部署的資料感知」對話方塊。複製所提供的命令並貼到文字檔中、以便稍後使用、然後按一下*關閉*。例如：</block>
   <block id="bef424c97f7f20957409f086ca8ff3db" category="paragraph">如果主機與連接器執行個體之間有連接埠8080的連線、您會在BlueXP的「Data Sense（資料感知）」索引標籤中看到安裝進度。</block>
   <block id="ed8c7ad82b3b6c68d52e7468a26cf5a7" category="list-text">Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝1.18x版、則只能升級至1.19.x如果您落後幾個主要版本、就必須多次升級軟體。</block>
   <block id="49bb7289b8abc33c271f634fc8149b1e" category="list-text">一次最多可移動1500萬個檔案。</block>
-  <block id="c92960c8f2e94d1653cffccc72067124" category="summary">完成幾個步驟、在雲端部署Cloud Data Sense。Data Sense執行個體將部署在與BlueXP Connector相同的雲端供應商網路中。</block>
-  <block id="34bce1a775347f02f4865a45804d2e40" category="paragraph">請注意、您也可以 <block ref="645115e66496a0ec0a40c4c3811246be" category="inline-link-macro-rx"></block>。如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、這類安裝可能是個不錯的選擇、但這並不是必要的。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。</block>
   <block id="a09a5c1c3cb0d27dbac4cfa3c73c0ec8" category="list-text">按一下「*部署*」以啟動雲端部署精靈。</block>
   <block id="5c19ef53902ef56ea5c8f554cccb9ad8" category="section-title">2023年2月5日（1.20版）</block>
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="section-title">能夠將原則型通知電子郵件傳送至任何電子郵件地址</block>
@@ -2906,7 +2882,6 @@
   <block id="208609a972f6a4981e2c9511fc7d0063" category="paragraph">Cloud Data Sense可在特定重要原則傳回結果時、傳送電子郵件警示給您帳戶中的BluXP使用者、以便您取得通知來保護資料。您可以選擇每天、每週或每月傳送電子郵件通知。您也可以選擇將電子郵件警示傳送至任何其他電子郵件地址（最多20個電子郵件地址）、而非在您的BlueXP帳戶中。</block>
   <block id="abf0f7e6ece371db4b19fea5e49a4de2" category="list-text">如果您想要將通知電子郵件傳送給其他使用者、請勾選「傳送電子郵件」方塊、選擇電子郵件傳送的時間間隔、然後輸入最多20個電子郵件地址。</block>
   <block id="590f4e9626c88a785e5743f04a242c0f" category="list-text">在GCP中、Cloud Data Sense可在上執行 <block ref="f47e4641d38801bee7cf28563a438093" category="inline-link-macro-rx"></block> 使用512 GB標準持續磁碟。作業系統映像是CentOS 7.9。</block>
-  <block id="6cdf48342be8a4ae3df3303f43e83b16" category="summary">完成幾個步驟、即可在網路中的Linux主機上或雲端中的Linux主機上部署Cloud Data Sense（雲端資料感知）、並可存取網際網路。</block>
   <block id="4bd0feba4f0658e9db32d120e7e95926" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。</block>
   <block id="a76b68d7e44fa22f2d4b5107c0729fa7" category="paragraph">如果您還沒有連接器、<block ref="cc74d10e9becb23436e4fcec6c3105c6" category="inline-link-rx"></block> 在網路中的Linux主機上、或是在雲端的Linux主機上。</block>
   <block id="6124944413e19a98a7cefa988e91f90e" category="inline-link">M5.4xLarge</block>
@@ -2916,7 +2891,6 @@
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">n2-Standard-16</block>
   <block id="73731a154d429f05332addb49f2ec537" category="list-text">* GCP機器類型*：符合上述CPU與RAM需求的執行個體類型。我們推薦<block ref="bb9e331217b48a311c7947c404f21f76" category="inline-link-rx"></block>。</block>
   <block id="2b27dbdd91cbe22f05c819e1be37f3ad" category="paragraph">如果您打算使用其他Data Sense主機做為掃描儀節點、請在此時將這些規則新增至您的主要系統：</block>
-  <block id="63dd0b4f2d962679267fa85d05e72c92" category="list-text">視部署於雲端執行個體或內部部署執行個體而定、請按一下適當的*部署*按鈕、啟動「Data Sense部署精靈」。</block>
   <block id="80341b8c2d424b4008a1d168ff76c6a9" category="inline-image-macro">選取按鈕以在雲端或內部部署的機器上部署Cloud Data Sense的螢幕快照。</block>
   <block id="df6d41b53ad1938e7b8934fc6ffdf147" category="paragraph"><block ref="df6d41b53ad1938e7b8934fc6ffdf147" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8e0047562d617c82a4034cce03ff08a" category="paragraph">Cloud Data Sense安裝程式會安裝套件、登錄安裝、並安裝Data Sense。安裝可能需要 10 到 20 分鐘。</block>
@@ -2924,7 +2898,6 @@
   <block id="3fe624f4914417740fe3cf68a4327554" category="list-text">您必須擁有連接器系統的IP位址或主機名稱、NetApp帳戶ID、連接器用戶端ID和使用者存取權杖。如果您打算使用掃描器群組、則必須知道帳戶中每個資料來源的工作環境ID。請參閱下方的*先決條件步驟_*以取得此資訊。</block>
   <block id="a566366d665bafe53c9d0a82a6befd65" category="paragraph">在多部內部部署主機上同時安裝Data Sense軟體時、請遵循下列步驟。請注意、以這種方式部署多個主機時、您無法使用「掃描器群組」。</block>
   <block id="65c70fcd12b102e4a08b42a41a2e7de8" category="paragraph">Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可能需要 10 到 20 分鐘。</block>
-  <block id="5512cd55404b66757fcb9aa5273c9b47" category="sidebar">部署在可存取網際網路的Linux主機上</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新增功能</block>
   <block id="f8f0bde9e4fc1fbeefb41437010577d4" category="sidebar">在具備網際網路的Linux主機上部署Data Sense</block>
   <block id="83d2b5781b150dc742697f6275e740ca" category="sidebar">資料感知使用案例</block>
@@ -3075,7 +3048,6 @@
   <block id="529e58159a0567a96e1265aa7c80760b" category="inline-link">深入瞭解資料調查報告</block>
   <block id="1519214436b24573d7996e8c310f57e7" category="paragraph">如有需要、您可以將這些結果匯出至報告、以便查看哪些檔案因為權限而被掃描或未被掃描。<block ref="55841a629b143f31cba7cbe4e8dd8d86" category="inline-link-rx"></block>。</block>
   <block id="b70232fe808c101066f1d5f669f6a6cd" category="paragraph"><block ref="b70232fe808c101066f1d5f669f6a6cd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e320df9c865260fc39e7beb28a2b5885" category="doc">在可存取網際網路的主機上部署Cloud Data Sense</block>
   <block id="5dd68ea8038a218beb217f08f4009e7f" category="list-text">也支援CentOS串流8</block>
   <block id="e47ea30e34a3a076c6a7779b8a54db7c" category="cell">波札那身分證（Omang）號碼</block>
   <block id="2d3ad991cc78b072cf48ad8db3fb43e0" category="cell">波札那護照號碼</block>
@@ -3130,7 +3102,6 @@
   <block id="8160c3db5ceaeec9f21f500ad90a16ee" category="paragraph"><block ref="8160c3db5ceaeec9f21f500ad90a16ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="233a7e974842d65dd39122b575514270" category="paragraph">新類別是依照訓練檔案所定義、並新增至Data Sense。然後、Data Sense會開始重新掃描所有資料來源、以識別適合此新類別的檔案。您會返回「自訂分類器」頁面、在其中可以檢視符合新類別的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。</block>
   <block id="0fd05b1c9e0bcfc288b3cb64182f45d8" category="summary">請完成幾個步驟、在內部部署站台的主機上部署Cloud Data Sense、但該主機無法存取網際網路。這類安裝最適合安全的站台。</block>
-  <block id="dd8d54cd536de1780b72a7a05a4b8f65" category="doc">在沒有網際網路存取的主機上部署Cloud Data Sense</block>
   <block id="24986a3fd86695b55b23be0d07a0d801" category="inline-link">升級BlueXP Connector</block>
   <block id="2976d8218e5021d7d1f5cbbae070157d" category="paragraph">BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="179f3f01544c50dcde464960dc0c66ec" category="inline-link-rx"></block> 和 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="e6226abfed55ff05d6368103074cf171" category="paragraph">+如果您想要確保「上次存取時間」的檔案不會因資料感知分類掃描而改變、建議使用者在CIFS中擁有寫入屬性權限、或在NFS中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
@@ -3183,4 +3154,34 @@
   <block id="11f3580c4a3b779649df6d1a5c193fdf" category="list-text">您一次可以複製1到100、000個檔案。</block>
   <block id="5a8d6a8cd28258257694d106e58f4816" category="list-text">您必須選取至少20個檔案。</block>
   <block id="bd336cd1948dc2bbe990a0988a5e5e9e" category="cell">輸入最多20個要包含或排除在查詢之外的部分或完整路徑。如果您同時輸入「包含路徑」和「排除路徑」、則「Data Sense」會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。請注意、使用此篩選器中的「*」並沒有任何效果、而且您無法將特定資料夾排除在掃描之外、系統將掃描設定共用區下的所有目錄和檔案。</block>
+  <block id="791d01e2ffeb344fb72ea0c9c72960db" category="doc">在沒有網際網路存取的主機上安裝Data Sense</block>
+  <block id="1889f0657e0c433d173ded88a1a3a24f" category="section-title">在內部部署的Linux主機上安裝Data Sense</block>
+  <block id="497d508053af04935d2eb62e219372c8" category="list-text">按一下「*部署*」開始內部安裝。</block>
+  <block id="7bde2d7cf6c722c1135ccccea2a76b1a" category="list-text">此時會顯示「部署內部部署的資料感知」對話方塊。複製提供的命令（例如：<block ref="4041549bf21d4c7bed0bfcbf52842063" prefix=" " category="inline-code"></block>）並貼到文字檔中、以便日後使用。然後按一下*關閉*以關閉對話方塊。</block>
+  <block id="9c219f00fda547ddab566c43975acd6b" category="list-text">在主機上、輸入您複製的命令、然後依照一系列提示操作、或者您也可以提供完整命令、包括所有必要參數做為命令列引數。</block>
+  <block id="2817a1d472ecfcca8fe861c57ec6f447" category="list-text">貼上您從步驟8複製的資訊：<block ref="feca0af1809ee364465c858e41f4ada4" prefix=" " category="inline-code"></block></block>
+  <block id="ce99bf86c57675420203e054ffc86a6d" category="list-text">在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如：<block ref="2478484d96d8c17b7752fd15d3b26f12" prefix=" " category="inline-code"></block>）並將其儲存在文字檔中。</block>
+  <block id="b056211dff1fc57845bf9cbcca6028fb" category="summary">完成幾個步驟、在雲端部署Cloud Data Sense。BlueXP將在與BlueXP Connector相同的雲端供應商網路中部署Data Sense執行個體。</block>
+  <block id="68e2c37bd2867239a02b30abd4095416" category="doc">使用BlueXP在雲端部署Cloud Data Sense</block>
+  <block id="3d8ecdf8f23b00fcd443553659989a15" category="inline-link-macro">在可存取網際網路的Linux主機上安裝Data Sense</block>
+  <block id="79db9e590c357a77fc5430f2dc1f8f69" category="paragraph">請注意、您也可以 <block ref="05339bd093ad6200c6b8b4293a577733" category="inline-link-macro-rx"></block>。如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、這類安裝可能是個不錯的選擇、但這並不是必要的。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。</block>
+  <block id="193ff08e362b0135a9b658cb11ea2cca" category="summary">完成幾個步驟、即可在網路中的Linux主機上、或是在具有網際網路存取權的雲端Linux主機上部署Data Sense。</block>
+  <block id="884b0821c52542ca3e3aa10a26f92b31" category="doc">在具有網際網路存取的主機上安裝Data Sense</block>
+  <block id="6ee85eb402345aafdbfbb8895e9ee104" category="paragraph">在內部部署的Linux主機上進行一般安裝時、會有下列元件和連線。</block>
+  <block id="248161764b5ff5f54888ebefe222f3e4" category="paragraph">在雲端的Linux主機上進行一般安裝時、會有下列元件和連線。</block>
+  <block id="19c8d978817f5ad2c7d566851ddf6e4e" category="paragraph"><block ref="19c8d978817f5ad2c7d566851ddf6e4e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cf484cfb7fc7fb235ee523a43dbe1c32" category="inline-link-macro">在無法存取網際網路的內部部署網站上安裝Data Sense</block>
+  <block id="d8ab1de8b00d809182655fd215e4c838" category="paragraph">請注意、您也可以 <block ref="740ddda1a4e327959c966d3a6913fb51" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
+  <block id="115b1db268bc8066a2a6f9174de75f96" category="section-title">在Linux主機上安裝Data Sense</block>
+  <block id="983f3e7e80ab153851d8f5302ab019d5" category="list-text">視您是在雲端上準備的執行個體上安裝Data Sense、還是在內部部署中準備的執行個體上安裝、按一下適當的*部署*按鈕、即可開始Data Sense安裝。</block>
+  <block id="bda678b1fb683a403f093f2555da8faf" category="list-text">此時會顯示「部署內部部署的資料感知」對話方塊。複製提供的命令（例如：<block ref="a402a6c8a10b4c24d7596599c6dfb7db" prefix=" " category="inline-code"></block>）並貼到文字檔中、以便日後使用。然後按一下*關閉*以關閉對話方塊。</block>
+  <block id="e342bb199ba04c6458bcb1b1464f1d00" category="list-text">貼上您從步驟7複製的資訊：<block ref="924ff0749b2ad085d56d695be970e489" prefix=" " category="inline-code"></block></block>
+  <block id="3aa548170d376264933f54bb0d2c3ad6" category="list-text">在ADD_SCIER_nodes指令碼完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如：<block ref="7c95eda18e13e25941273928f0d149ba" prefix=" " category="inline-code"></block>）並將其儲存在文字檔中。</block>
+  <block id="8e477b6128906752f1b086a48c07fef7" category="list-text">在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如<block ref="2478484d96d8c17b7752fd15d3b26f12" prefix=" " category="inline-code"></block>）並將其儲存在文字檔中。</block>
+  <block id="027400835e3f9c8cdefc405a8ee10cdf" category="list-text">如果您已在雲端供應商的市場訂閱BlueXP隨用隨付（PAYGO）、您也會自動訂閱Cloud Data Sense。您不需要再次訂閱。</block>
+  <block id="3fab6a2d0465498818a33336e6028494" category="paragraph">如果您的授權過期或已達到BYOL限制、Data Sense仍會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何掃描資料的相關資訊。如果您想減少所掃描的磁碟區數量、使容量使用量可能低於授權限制、則只有「_Configuration」頁面可用。</block>
+  <block id="20aa1bbdb0fac9cadb849e6ab2887670" category="sidebar">使用BlueXP在雲端部署</block>
+  <block id="7c454725651fa93e75c3603da01e3ae2" category="sidebar">安裝在可存取網際網路的Linux主機上</block>
+  <block id="34c631136a1ff65c0e2a718e56622097" category="sidebar">在內部安裝、無需網際網路存取</block>
+  <block id="86d55936ff74c558250b6d6c3c3440fe" category="sidebar">自動在雲端部署Data Sense</block>
 </blocks>

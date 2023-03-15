@@ -21,11 +21,11 @@ sidebar:
       url: "/concept-cloud-compliance.html"
     - title: 部署Cloud Data Sense
       entries:
-      - title: 部署於雲端
+      - title: 使用BlueXP在雲端部署
         url: "/task-deploy-cloud-compliance.html"
-      - title: 部署在可存取網際網路的Linux主機上
+      - title: 安裝在可存取網際網路的Linux主機上
         url: "/task-deploy-compliance-onprem.html"
-      - title: 部署內部部署、無需存取網際網路
+      - title: 在內部安裝、無需網際網路存取
         url: "/task-deploy-compliance-dark-site.html"
     - title: 啟動資料來源的掃描
       entries:
@@ -109,7 +109,7 @@ homepage:
       url: concept-cloud-compliance.html
     - title: 新增功能
       url: whats-new.html
-    - title: 在雲端部署Data Sense
+    - title: 自動在雲端部署Data Sense
       url: task-deploy-cloud-compliance.html
     - title: 在具備網際網路的Linux主機上部署Data Sense
       url: task-deploy-compliance-onprem.html

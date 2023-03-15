@@ -185,9 +185,9 @@ BlueXP會更新授權、讓您的Cloud Data Sense服務持續運作。
 
 當您看到這些警告時、請使用BlueXP介面右下角的聊天圖示來續約授權。
 
-如果授權過期、Data Sense會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何掃描資料的相關資訊。如果您想減少所掃描的磁碟區數量、使容量使用量可能低於授權限制、則只有「_Configuration」頁面可用。
+如果您的授權過期或已達到BYOL限制、Data Sense仍會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何掃描資料的相關資訊。如果您想減少所掃描的磁碟區數量、使容量使用量可能低於授權限制、則只有「_Configuration」頁面可用。
 
 一旦您續約BYOL授權、BlueXP會自動更新Digital Wallet中的授權、並提供所有儀表板的完整存取權限。如果BlueXP無法透過安全的網際網路連線存取授權檔案（例如、安裝在暗點）、您可以自行取得該檔案、然後手動上傳至BlueXP。如需相關指示、請參閱 <<更新Cloud Data Sense BYOL授權,如何更新Cloud Data Sense授權>>。
 
 
-TIP: 如果您使用的帳戶同時擁有BYOL授權和PAYGO訂閱、則當BYOL授權到期時、Data Sense _will不會移轉至PAYGO訂閱。您必須續約BYOL授權。
+NOTE: 如果您使用的帳戶同時擁有BYOL授權和PAYGO訂閱、則當BYOL授權到期時、Data Sense _will不會移轉至PAYGO訂閱。您必須續約BYOL授權。
