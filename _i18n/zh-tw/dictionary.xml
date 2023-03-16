@@ -378,9 +378,6 @@
   <block id="915bca96e4db936d4227065b020aa1cf" category="paragraph">從NetApp支援網站下載Cloud Data Sense軟體、並將安裝程式檔案複製到您打算使用的Linux主機。然後啟動安裝精靈、並依照提示部署Cloud Data Sense執行個體。</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">準備Linux主機系統</block>
   <block id="5d7ec019a090d19805ff8b8708516943" category="paragraph">資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。</block>
-  <block id="feb0221200046a709566079a3cbc3e5f" category="list-text">100 GiB可在/op</block>
-  <block id="f12d2902352feb2353dd1667f55dc293" category="list-text">400 GiB可在/var</block>
-  <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">5 GiB、位於/tmp</block>
   <block id="5da9cb7e92b520a48c2475de5ec9958c" category="inline-link-macro">使用較小的執行個體類型</block>
   <block id="7e3d41c2a56c6d626cd7bcbb65667f41" category="paragraph">請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">檢視安裝指示</block>
@@ -2560,9 +2557,6 @@
   <block id="5145a29bff9f5d1e0a1fc1ca423ecea3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 下載並部署Data Sense</block>
   <block id="dc557754b902711b46f03bde4f8cd281" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 訂閱Cloud Data Sense服務</block>
   <block id="369bb58f2fbc4fcfb60a188e89ca29e3" category="list-text">作業系統必須能夠安裝Docker Engine</block>
-  <block id="792c9336a56fa746327b500536c3ac74" category="list-text">*磁碟*：SSD搭配500 GiB、可在/、或上使用</block>
-  <block id="f1c885ee2358fbb418dfe35e68a4002a" category="list-text">* RAM*：64 GB（交換記憶體必須在主機上停用）</block>
-  <block id="1f810cefd66fa5d8c5990d6c051c53a7" category="list-text">* CPU*：16核心</block>
   <block id="7962e6ebf5c099feb974a40aed988873" category="list-text">*其他軟體*：您必須先在主機上安裝下列軟體、才能安裝Data Sense：</block>
   <block id="72334fae14a444a21b5a6f8b702612c3" category="list-text">* Firewalld考量事項*：如果您打算使用<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>、建議您在安裝Data Sense之前先啟用此功能。執行下列命令進行設定<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 因此它能與Data Sense相容：</block>
   <block id="c353e72a0df04595cb1fda2b9283bd9e" category="paragraph">如果您啟用<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 安裝Data Sense之後、您必須重新啟動Docker。</block>
@@ -2638,7 +2632,6 @@
   <block id="5b028b19d86301024ced75afef69e66d" category="list-text">作業系統必須能夠安裝Docker引擎</block>
   <block id="1c92a0c0cd35f6a2ac3eae778656a791" category="list-text">* Red Hat訂購管理*：Red Hat Enterprise Linux系統必須註冊Red Hat訂購管理。如果未註冊、系統將無法在安裝期間存取儲存庫來更新所需的協力廠商軟體。</block>
   <block id="7e9d35e7187b767f275e31d6a5cf324c" category="paragraph">如果您使用多部Data Sense主機來提供額外的處理能力來掃描資料來源、則必須啟用其他連接埠/傳輸協定。 <block ref="3be03acda87575f8178f170dc170b26c" category="inline-link-macro-rx"></block>。</block>
-  <block id="3ce88af879db89d6da43dca91e5ac2a6" category="list-text">如果您使用的是Proxy、而且它正在執行TLS攔截、則必須知道Data Sense Linux系統上儲存TLS CA憑證的路徑。</block>
   <block id="b2fe6e75aa67d3e83769c7fce0162b2e" category="list-text">請依照步驟在掃描儀節點上部署軟體（並選擇性地為某些掃描儀節點定義「掃描儀群組」）。</block>
   <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
   <block id="868d9ff1d3a68b958d1cfc9f569a6cd9" category="list-text">如果您使用<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 在您的Data Sense機器上、建議您在安裝Data Sense之前先啟用此功能。執行下列命令進行設定<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 因此它能與Data Sense相容：</block>
@@ -3184,4 +3177,21 @@
   <block id="7c454725651fa93e75c3603da01e3ae2" category="sidebar">安裝在可存取網際網路的Linux主機上</block>
   <block id="34c631136a1ff65c0e2a718e56622097" category="sidebar">在內部安裝、無需網際網路存取</block>
   <block id="86d55936ff74c558250b6d6c3c3440fe" category="sidebar">自動在雲端部署Data Sense</block>
+  <block id="1b829a0b2a17806376d7530e7c1aa7d0" category="list-text">視您打算掃描的資料集大小而定、主機系統可以指定三種大小。</block>
+  <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
+  <block id="05289cee10f1f9057410b216de0d7e36" category="cell">RAM（交換記憶體必須停用）</block>
+  <block id="380dbc8d9d2c8a17f6ebb0b2c62d3e85" category="cell">磁碟</block>
+  <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">大</block>
+  <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">16個CPU</block>
+  <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64 GB RAM</block>
+  <block id="d1dfcf68dd28742f6e8c1a149039f317" category="cell">500 GB SSD on /或* 100 GB（可在/opt * 395GB上取得）、/tmp* 5 GB可在/var*上取得</block>
+  <block id="bef6aed074693bd02885fa89c8b418f0" category="cell">8個CPU</block>
+  <block id="70eb72cfa1dbdb5556e79344f161d62a" category="cell">32 GB RAM</block>
+  <block id="03c4b3e038e1f3312ead503649c43953" category="cell">200 GB SSD on /、或* 50 GB（可在/opt * 145 GB上取得）、/tmp*上的/var* 5 GB可供使用</block>
+  <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB RAM</block>
+  <block id="ed04b9cefc3e8c7791055ad71b874777" category="cell">100 GB SSD開啟/、或* 50 GB可在/opt * 45 GB上取得、可在/tmp*上的/var* 5 GB上取得</block>
+  <block id="a0b7a7641d24b4614381b2d6a615f220" category="paragraph">請注意、使用這些較小的系統時會有一些限制。請參閱 <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
+  <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">如果您使用Proxy存取網際網路：</block>
+  <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">您需要Proxy伺服器資訊（IP位址或主機名稱、連線連接埠、連線配置：HTTPS或http、使用者名稱和密碼）。</block>
+  <block id="566740fad5c1ec59669bd6641875006e" category="list-text">如果Proxy正在執行TLS攔截、您需要知道Data Sense Linux系統上儲存TLS CA憑證的路徑。</block>
 </blocks>

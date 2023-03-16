@@ -86,24 +86,30 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 
 資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
 
+* 視您打算掃描的資料集大小而定、主機系統可以指定三種大小。
++
+[cols="18,18,26,30"]
+|===
+| 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
+
+
+| 大 | 16個CPU | 64 GB RAM | 500 GB SSD on /或* 100 GB（可在/opt * 395GB上取得）、/tmp* 5 GB可在/var*上取得 
+
+
+| 中 | 8個CPU | 32 GB RAM | 200 GB SSD on /、或* 50 GB（可在/opt * 145 GB上取得）、/tmp*上的/var* 5 GB可供使用 
+
+
+| 小 | 8個CPU | 16 GB RAM | 100 GB SSD開啟/、或* 50 GB可在/opt * 45 GB上取得、可在/tmp*上的/var* 5 GB上取得 
+|===
++
+請注意、使用這些較小的系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
+
 * *作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.7版
 +
 ** 也支援CentOS串流8
 ** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
 ** 作業系統必須能夠安裝Docker Engine
 
-
-* *磁碟*：SSD搭配500 GiB、可在/、或上使用
-+
-** 100 GiB可在/op
-** 400 GiB可在/var
-** 5 GiB、位於/tmp
-
-
-* * RAM*：64 GB（交換記憶體必須在主機上停用）
-* * CPU*：16核心
-+
-請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
 
 * *其他軟體*：您必須先在主機上安裝下列軟體、才能安裝Data Sense：
 +

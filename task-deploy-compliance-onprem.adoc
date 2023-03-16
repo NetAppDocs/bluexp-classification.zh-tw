@@ -92,19 +92,23 @@ image:diagram_deploy_onprem_cloud_instance.png["所需的BlueXP和網路元件�
 
 確保雲端資料認證能夠持續運作。Cloud Data Sense機器必須持續運作、才能持續掃描資料。
 
-* * CPU*：16核心
-* * RAM*：64 GB（交換記憶體必須在主機上停用）
-* *磁碟*：SSD搭配500 GiB、可在/、或上使用
+* 視您打算掃描的資料集大小而定、主機系統可以指定三種大小。
 +
-** 100 GiB可在/op
-** 400 GiB可在/var
-** 5 GiB、位於/tmp
+[cols="18,18,26,30"]
+|===
+| 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
+
+
+| 大 | 16個CPU | 64 GB RAM | 500 GB SSD on /或* 100 GB（可在/opt * 395GB上取得）、/tmp* 5 GB可在/var*上取得 
+
+
+| 中 | 8個CPU | 32 GB RAM | 200 GB SSD on /、或* 50 GB（可在/opt * 145 GB上取得）、/tmp*上的/var* 5 GB可供使用 
+
+
+| 小 | 8個CPU | 16 GB RAM | 100 GB SSD開啟/、或* 50 GB可在/opt * 45 GB上取得、可在/tmp*上的/var* 5 GB上取得 
+|===
 +
-請注意、您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些系統時仍有限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
-
-
-
-
+請注意、使用這些較小的系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
 
 * * AWS EC2執行個體類型*：符合上述CPU和RAM需求的執行個體類型。我們推薦 https://aws.amazon.com/ec2/instance-types/m5/["M5.4xLarge"^]。
 * * Azure VM Sizing*：符合上述CPU與RAM需求的執行個體類型。我們推薦 https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^]。
@@ -260,7 +264,12 @@ NOTE: 當Azure NetApp Files 軟體安裝在內部部署環境中時、Cloud Data
 * 確認您的Linux系統符合 <<準備Linux主機系統,主機需求>>。
 * 確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
 * 請確定您擁有Linux系統的root權限。
-* 如果您使用的是Proxy、而且它正在執行TLS攔截、則必須知道Data Sense Linux系統上儲存TLS CA憑證的路徑。
+* 如果您使用Proxy存取網際網路：
++
+** 您需要Proxy伺服器資訊（IP位址或主機名稱、連線連接埠、連線配置：HTTPS或http、使用者名稱和密碼）。
+** 如果Proxy正在執行TLS攔截、您需要知道Data Sense Linux系統上儲存TLS CA憑證的路徑。
+
+
 * 確認您的離線環境符合所需 <<從Cloud Data Sense啟用傳出網際網路存取,權限與連線能力>>。
 
 
