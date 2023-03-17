@@ -1140,12 +1140,6 @@
   <block id="da848e916ac29d03235a007036cf77ca" category="inline-link">請參閱「Data Sense」在掃描中識別的所有個人資料類型清單</block>
   <block id="2da79a92d5bb1f1f77ab993c07c12703" category="section-title">安全性群組連接埠已變更、以便與連接器進行Data Sense通訊</block>
   <block id="2e38fe6622e02d0346ffbd31c4347739" category="paragraph">Cloud Manager Connector的安全性群組將使用連接埠443、而非連接埠80、用於往返Data Sense執行個體的傳入和傳出流量、以提高安全性。這兩個連接埠目前仍為開啟狀態、因此您不會看到任何問題、但您應該更新任何舊版連接器部署中的安全性群組、因為連接埠80將在未來的版本中被淘汰。</block>
-  <block id="586301717819197e24001cac47efdaaa" category="section-title">2022年1月2日</block>
-  <block id="39ad63f56fe19489716d253d535f6033" category="section-title">能夠整合全域Active Directory、以識別檔案擁有者和權限</block>
-  <block id="e4a822ae3bd5d19b76fea8306ce5774c" category="paragraph">現在、您可以將全域Active Directory與Cloud Data Sense整合、以強化Data Sense針對檔案擁有者及哪些使用者和群組有權存取檔案的結果。</block>
-  <block id="f8add8b46019d8016befb6aebc941e84" category="inline-link">瞭解如何設定全域Active Directory</block>
-  <block id="ed02f2ad98646d05140c6f62857791cb" category="section-title">資料感應「原則」現在可用於刪除檔案</block>
-  <block id="4fdca8fbbd2a76d7345e79fb0e7fd3fc" category="inline-link">瞭解如何建立自訂原則</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">瞭解方法</block>
   <block id="1d7b157ba2877d6d0d3d8d256ab8cfb9" category="summary">完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp Files 整套功能。</block>
@@ -1831,8 +1825,6 @@
   <block id="659d1ffa40af561d84c53558562c1ec0" category="paragraph">現在您可以將SharePoint線上帳戶新增至Data Sense、以便從SharePoint網站掃描文件和檔案。 <block ref="7eefe10c1c468dca4cd0e6b3eed1adc0" category="inline-link-macro-rx"></block>。</block>
   <block id="77a75568e8846a1bf685d1ee50c690cf" category="paragraph"><block ref="6cdda3320a1281c9d4957b83cba366de" category="inline-link-macro-rx"></block>。</block>
   <block id="d55b3233b82d41486408c8252b8ebafb" category="paragraph">Data Sense現在可以在檔案中找到法文社會安全號碼、法文ID和法文驅動程式授權號碼。 <block ref="685a6d4b5536628189414cd84011e60e" category="inline-link-macro-rx"></block>。</block>
-  <block id="eed42314c8425f21a986d3b70cb05658" category="paragraph">除了您輸入的Active Directory認證資料、以便Data Sense能夠掃描來自特定資料來源的CIFS磁碟區之外、這項新的整合功能還能為其他使用者和系統提供額外的整合功能。Data Sense會在所有整合式Active Directory中尋找使用者與權限詳細資料。 <block ref="64cba81c60533194508987e16994b8d7" category="inline-link-macro-rx"></block>。</block>
-  <block id="aa46c786779de0fbd3280d592901e64f" category="paragraph">Data Sense可自動刪除符合您在原則中定義之查詢的檔案。 <block ref="68f7176f15fa3737e845d858e7820489" category="inline-link-macro-rx"></block>。</block>
   <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">從Data Sense刪除整個SharePoint帳戶</block>
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">請注意、您可以 <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> 如果您不想再從SharePoint帳戶掃描任何使用者資料。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive、SharePoint和Google雲端硬碟帳戶、檔案大小上限為4 MB。</block>
@@ -2810,7 +2802,6 @@
   <block id="afdc492e219eada4c9eca232defb9ab7" category="paragraph">您也可以在內部部署的Linux主機或偏好的雲端供應商的主機上部署Data Sense。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。只要執行個體能夠存取網際網路、就會自動升級Data Sense軟體。</block>
   <block id="dc59914806276092072d36ab9d88436a" category="section-title">資料感應掃描資料的速度有多快</block>
   <block id="e56c626eb62df6bf64f545a2d416aa7c" category="inline-link-macro">深入瞭解如何部署多個掃描器節點來掃描資料</block>
-  <block id="fb3ba22f3eff98ea203090bc210752be" category="paragraph"><block ref="eefbdd7e2d2119a699d2995aece8c9f3" category="inline-link-macro-rx"></block>。</block>
   <block id="008c6840e9f624b9435a7c107d8afaff" category="paragraph">在SaaS模式下使用BlueXP時、會透過HTTPS連線至BlueXP、而在瀏覽器和Data Sense執行個體之間傳送的私有資料則會以端點對端點加密來保護、這表示NetApp和第三方無法讀取。</block>
   <block id="c06ccfe24df0bff683583f82911916e0" category="paragraph">當您從「調查結果」窗格對許多檔案執行非同步動作時、例如移動或刪除100個檔案、程序可能需要一些時間。您可以在「_Action Status」（動作狀態）窗格中監控這些動作的狀態、以便得知何時已將其套用至所有檔案。</block>
   <block id="10b276faf6d38414fa314b1a97e5e144" category="list-text">成功：完成「資料感知」行動、所有項目都成功。</block>
@@ -3094,7 +3085,6 @@
   <block id="55ef1b0dcac87ba2d1e533045a15de28" category="inline-image-macro">快照顯示Data Sense將用來做為定義新類別的訓練檔案的檔案。</block>
   <block id="8160c3db5ceaeec9f21f500ad90a16ee" category="paragraph"><block ref="8160c3db5ceaeec9f21f500ad90a16ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="233a7e974842d65dd39122b575514270" category="paragraph">新類別是依照訓練檔案所定義、並新增至Data Sense。然後、Data Sense會開始重新掃描所有資料來源、以識別適合此新類別的檔案。您會返回「自訂分類器」頁面、在其中可以檢視符合新類別的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。</block>
-  <block id="0fd05b1c9e0bcfc288b3cb64182f45d8" category="summary">請完成幾個步驟、在內部部署站台的主機上部署Cloud Data Sense、但該主機無法存取網際網路。這類安裝最適合安全的站台。</block>
   <block id="24986a3fd86695b55b23be0d07a0d801" category="inline-link">升級BlueXP Connector</block>
   <block id="2976d8218e5021d7d1f5cbbae070157d" category="paragraph">BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="179f3f01544c50dcde464960dc0c66ec" category="inline-link-rx"></block> 和 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
   <block id="e6226abfed55ff05d6368103074cf171" category="paragraph">+如果您想要確保「上次存取時間」的檔案不會因資料感知分類掃描而改變、建議使用者在CIFS中擁有寫入屬性權限、或在NFS中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
@@ -3158,10 +3148,7 @@
   <block id="68e2c37bd2867239a02b30abd4095416" category="doc">使用BlueXP在雲端部署Cloud Data Sense</block>
   <block id="3d8ecdf8f23b00fcd443553659989a15" category="inline-link-macro">在可存取網際網路的Linux主機上安裝Data Sense</block>
   <block id="79db9e590c357a77fc5430f2dc1f8f69" category="paragraph">請注意、您也可以 <block ref="05339bd093ad6200c6b8b4293a577733" category="inline-link-macro-rx"></block>。如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、這類安裝可能是個不錯的選擇、但這並不是必要的。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。</block>
-  <block id="193ff08e362b0135a9b658cb11ea2cca" category="summary">完成幾個步驟、即可在網路中的Linux主機上、或是在具有網際網路存取權的雲端Linux主機上部署Data Sense。</block>
   <block id="884b0821c52542ca3e3aa10a26f92b31" category="doc">在具有網際網路存取的主機上安裝Data Sense</block>
-  <block id="6ee85eb402345aafdbfbb8895e9ee104" category="paragraph">在內部部署的Linux主機上進行一般安裝時、會有下列元件和連線。</block>
-  <block id="248161764b5ff5f54888ebefe222f3e4" category="paragraph">在雲端的Linux主機上進行一般安裝時、會有下列元件和連線。</block>
   <block id="19c8d978817f5ad2c7d566851ddf6e4e" category="paragraph"><block ref="19c8d978817f5ad2c7d566851ddf6e4e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf484cfb7fc7fb235ee523a43dbe1c32" category="inline-link-macro">在無法存取網際網路的內部部署網站上安裝Data Sense</block>
   <block id="d8ab1de8b00d809182655fd215e4c838" category="paragraph">請注意、您也可以 <block ref="740ddda1a4e327959c966d3a6913fb51" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
@@ -3194,4 +3181,9 @@
   <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">如果您使用Proxy存取網際網路：</block>
   <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">您需要Proxy伺服器資訊（IP位址或主機名稱、連線連接埠、連線配置：HTTPS或http、使用者名稱和密碼）。</block>
   <block id="566740fad5c1ec59669bd6641875006e" category="list-text">如果Proxy正在執行TLS攔截、您需要知道Data Sense Linux系統上儲存TLS CA憑證的路徑。</block>
+  <block id="bb239f614886950a8a7955eb804ef8d4" category="summary">請完成幾個步驟、將Data Sense安裝在內部部署網站中無法存取網際網路的Linux主機上。這類安裝最適合安全的站台。</block>
+  <block id="82e8ecf7e928e70a97d21b2cd773dec7" category="paragraph"><block ref="c12a8f0104732399e0f36d3f90295943" category="inline-link-macro-rx"></block>。</block>
+  <block id="3ba3230839f950166b5b123c0bb22ee3" category="summary">請完成幾個步驟、在網路中的Linux主機或具有網際網路存取權的雲端Linux主機上安裝Data Sense。您必須在網路或雲端中手動部署Linux主機、才能完成此安裝。</block>
+  <block id="829124a47242d374aed9d0704a781736" category="paragraph">在內部部署的Linux主機_上的典型安裝具有下列元件和連線。</block>
+  <block id="f6e3ad4e2f1393513d919f090b15ac68" category="paragraph">Linux主機_在雲端_上的典型安裝具有下列元件和連線。</block>
 </blocks>

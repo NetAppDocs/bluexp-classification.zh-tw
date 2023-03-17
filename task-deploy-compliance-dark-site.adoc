@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
-summary: 請完成幾個步驟、在內部部署站台的主機上部署Cloud Data Sense、但該主機無法存取網際網路。這類安裝最適合安全的站台。 
+summary: 請完成幾個步驟、將Data Sense安裝在內部部署網站中無法存取網際網路的Linux主機上。這類安裝最適合安全的站台。 
 ---
 = 在沒有網際網路存取的主機上安裝Data Sense
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 請完成幾個步驟、在內部部署站台的主機上部署Cloud Da
 
 
 [role="lead"]
-請完成幾個步驟、在內部部署站台的主機上部署Cloud Data Sense、但該主機無法存取網際網路。這類安裝最適合安全的站台。
+請完成幾個步驟、將Data Sense安裝在內部部署網站中無法存取網際網路的Linux主機上。這類安裝最適合安全的站台。
 
 請注意、您也可以 link:task-deploy-compliance-onprem.html["將Data Sense部署在可存取網際網路的內部部署站台"]。
 

@@ -467,21 +467,3 @@ Data Sense現在可以在檔案中找到法文社會安全號碼、法文ID和�
 === 安全性群組連接埠已變更、以便與連接器進行Data Sense通訊
 
 Cloud Manager Connector的安全性群組將使用連接埠443、而非連接埠80、用於往返Data Sense執行個體的傳入和傳出流量、以提高安全性。這兩個連接埠目前仍為開啟狀態、因此您不會看到任何問題、但您應該更新任何舊版連接器部署中的安全性群組、因為連接埠80將在未來的版本中被淘汰。
-
-
-
-== 2022年1月2日
-
-
-
-=== 能夠整合全域Active Directory、以識別檔案擁有者和權限
-
-現在、您可以將全域Active Directory與Cloud Data Sense整合、以強化Data Sense針對檔案擁有者及哪些使用者和群組有權存取檔案的結果。
-
-除了您輸入的Active Directory認證資料、以便Data Sense能夠掃描來自特定資料來源的CIFS磁碟區之外、這項新的整合功能還能為其他使用者和系統提供額外的整合功能。Data Sense會在所有整合式Active Directory中尋找使用者與權限詳細資料。 link:task-add-active-directory-datasense.html["瞭解如何設定全域Active Directory"]。
-
-
-
-=== 資料感應「原則」現在可用於刪除檔案
-
-Data Sense可自動刪除符合您在原則中定義之查詢的檔案。 link:task-managing-highlights.html#deleting-source-files-automatically-using-policies["瞭解如何建立自訂原則"]。

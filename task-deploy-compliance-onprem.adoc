@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
-summary: 完成幾個步驟、即可在網路中的Linux主機上、或是在具有網際網路存取權的雲端Linux主機上部署Data Sense。 
+summary: 請完成幾個步驟、在網路中的Linux主機或具有網際網路存取權的雲端Linux主機上安裝Data Sense。您必須在網路或雲端中手動部署Linux主機、才能完成此安裝。 
 ---
 = 在具有網際網路存取的主機上安裝Data Sense
 :hardbreaks:
@@ -14,15 +14,15 @@ summary: 完成幾個步驟、即可在網路中的Linux主機上、或是在具
 
 
 [role="lead"]
-完成幾個步驟、即可在網路中的Linux主機上、或是在具有網際網路存取權的雲端Linux主機上部署Data Sense。
+請完成幾個步驟、在網路中的Linux主機或具有網際網路存取權的雲端Linux主機上安裝Data Sense。您必須在網路或雲端中手動部署Linux主機、才能完成此安裝。
 
 如果您偏好使用ONTAP 內部部署的Data Sense執行個體來掃描內部部署的支援系統、則內部安裝可能是個不錯的選擇、但這並非必要。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。
 
-在內部部署的Linux主機上進行一般安裝時、會有下列元件和連線。
+在內部部署的Linux主機_上的典型安裝具有下列元件和連線。
 
 image:diagram_deploy_onprem_overview.png["所需的BlueXP和網路元件、以及相關連線的圖表。"]
 
-在雲端的Linux主機上進行一般安裝時、會有下列元件和連線。
+Linux主機_在雲端_上的典型安裝具有下列元件和連線。
 
 image:diagram_deploy_onprem_cloud_instance.png["所需的BlueXP和網路元件、以及相關連線的圖表。"]
 

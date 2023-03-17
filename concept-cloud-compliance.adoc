@@ -278,7 +278,7 @@ Cloud Data Sense可讓您在選定的資料來源上執行一般的「對應」�
 * 執行分類掃描時、Data Sense可在每天15至40 Tib之間掃描每個掃描儀節點的資料。
 
 
-link:task-deploy-compliance-onprem.html#deploy-data-sense-on-premises["深入瞭解如何部署多個掃描器節點來掃描資料"^]。
+link:task-deploy-compliance-onprem.html#install-data-sense-on-the-linux-host["深入瞭解如何部署多個掃描器節點來掃描資料"^]。
 
 
 
