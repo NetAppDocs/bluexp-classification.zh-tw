@@ -26,7 +26,7 @@ summary: 完成幾個步驟、在雲端部署Cloud Data Sense。BlueXP將在與B
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 建立連接器
 [role="quick-margin-para"]
-如果您還沒有連接器、請立即建立連接器。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在GCP中建立連接器"^]。
+如果您還沒有連接器、請立即建立連接器。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。
 
 [role="quick-margin-para"]
 您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在您網路中的 Linux 主機或雲端中的 Linux 主機上。
@@ -47,7 +47,7 @@ summary: 完成幾個步驟、在雲端部署Cloud Data Sense。BlueXP將在與B
 
 == 建立連接器
 
-如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["在 AWS 中建立連接器"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["在GCP中建立連接器"^]。在大多數情況下、您可能會先設定Connector、然後才嘗試啟動Cloud Data Sense、因為大多數情況都是如此 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXP功能需要連接器"]但有些情況下您需要立即設定一個。
+如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。在大多數情況下、您可能會先設定Connector、然後才嘗試啟動Cloud Data Sense、因為大多數情況都是如此 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXP功能需要連接器"]但有些情況下您需要立即設定一個。
 
 有些情況下、您必須使用部署在特定雲端供應商中的Connector：
 
@@ -62,7 +62,7 @@ summary: 完成幾個步驟、在雲端部署Cloud Data Sense。BlueXP將在與B
 
 使用ONTAP 上述任何雲端連接器時、均可掃描內部系統、非NetApp檔案共用、一般S3物件儲存設備、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶。
 
-請注意、您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["在內部部署安裝連接器"^] 在網路或雲端的Linux主機上。有些打算在內部安裝Data Sense的使用者也可能選擇在內部安裝Connector。
+請注意、您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在網路或雲端的Linux主機上。有些打算在內部安裝Data Sense的使用者也可能選擇在內部安裝Connector。
 
 如您所見、您可能需要使用某些情況 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["多個連接器"]。
 
@@ -192,7 +192,7 @@ Data Sense執行個體使用私有IP位址、確保索引資料無法存取網�
 
 請遵循下列步驟、在雲端部署Cloud Data Sense執行個體。Connector 會在雲端部署執行個體、然後在該執行個體上安裝 Data Sense 軟體。
 
-請注意、在 AWS 環境中從 BlueXP Connector 部署 Data Sense 時、您可以選取預設執行個體大小、也可以從兩種較小的執行個體類型中選擇。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["請參閱可用的執行個體類型和限制"]。
+請注意、在 AWS 環境中從 BlueXP Connector 部署 Data Sense 時、您可以選取預設執行個體大小、也可以從兩種較小的執行個體類型中選擇。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["請參閱可用的執行個體類型和限制"]。在無法使用預設執行個體類型的區域中、 Data Sense 會在上執行 link:reference-instance-types.html["替代執行個體類型"]。
 
 [role="tabbed-block"]
 ====

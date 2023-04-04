@@ -40,12 +40,6 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
-=== Data Sense BYOL 授權現在支援 Dark 站台
-
-現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 Digital Wallet 、以便在授權即將到期時收到通知。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-licensing-datasense.html#obtain-your-cloud-data-sense-license-file["瞭解如何取得及上傳您的 Data Sense BYOL 授權"]。
-
-
-
 == 2023年3月7日（版本1.21）
 
 
