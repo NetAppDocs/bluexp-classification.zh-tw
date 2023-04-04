@@ -39,9 +39,11 @@ Active Directory與Cloud Data Sense的整合可識別下列資料來源中的資
 * Azure NetApp Files
 * FSX ONTAP
 * 非NetApp CIFS檔案共用（非NFS檔案共用）
+* OneDrive 帳戶
+* SharePoint帳戶
 
 
-不支援從資料庫架構、OneDrive帳戶、SharePoint帳戶、Google雲端硬碟帳戶、Amazon S3帳戶、 或使用簡易儲存服務（S3）傳輸協定的物件儲存設備。
+不支援識別資料庫架構、 Google Drive 帳戶、 Amazon S3 帳戶或使用簡易儲存服務（ S3 ）傳輸協定的物件儲存設備中的使用者和權限資訊。
 
 
 

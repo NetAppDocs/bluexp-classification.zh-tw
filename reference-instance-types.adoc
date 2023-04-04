@@ -1,0 +1,61 @@
+---
+sidebar: sidebar 
+permalink: reference-instance-types.html 
+keywords: data sense, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
+summary: 資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。在雲端部署 Data Sense 時、我們建議您使用具有「大型」特性的系統、以獲得完整功能。 
+---
+= 支援的 Data Sense 執行個體類型
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。在雲端部署 Data Sense 時、我們建議您使用具有「大型」特性的系統、以獲得完整功能。
+
+您可以在CPU較少、RAM較少的系統上部署Data Sense、但使用這些功能較不強大的系統時會有一些限制。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["瞭解這些限制"^]。
+
+在下表中、如果標記為「預設」的系統在您要安裝 Data Sense 的區域中無法使用、則會部署表格中的下一個系統。
+
+
+
+== AWS 執行個體類型
+
+[cols="20,30,25"]
+|===
+| 系統大小 | 規格 | 執行個體類型 
+
+
+| 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge"^] （預設） m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+
+
+| 中 | 8 個 CPU 、 32 GB RAM 、 200 GB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.2xLarge"^] （預設） m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+
+
+| 小 | 8 個 CPU 、 16 GB RAM 、 100 GB SSD | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^] （預設） C5A.2xLarge c5.2xLarge c4.2xLarge 
+|===
+
+
+== Azure 執行個體類型
+
+[cols="20,30,25"]
+|===
+| 系統大小 | 規格 | 執行個體類型 
+
+
+| 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] （預設） 
+|===
+
+
+== GCP 執行個體類型
+
+[cols="20,30,25"]
+|===
+| 系統大小 | 規格 | 執行個體類型 
+
+
+| 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16"^] （預設） n2d-standard-16 n1-Standard-16 
+|===

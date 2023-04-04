@@ -1,0 +1,212 @@
+---
+sidebar: sidebar 
+permalink: task-test-linux-system.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, cloud compliance access, compliance, on-premises, linux, test linux system 
+summary: 在 Linux 主機上手動安裝 Data Sense 之前、您可以在主機上執行指令碼、以驗證安裝 Data Sense 的所有必要條件是否都已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或者主機可以位於無法存取網際網路的站台。 
+---
+= 檢查您的 Linux 主機是否已準備好安裝 Data Sense
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 Linux 主機上手動安裝 Data Sense 之前、您可以在主機上執行指令碼、以驗證安裝 Data Sense 的所有先決條件都已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或主機位於無法存取網際網路的站台（「暗網站」）。
+
+此外、也有一個先決條件測試指令碼、屬於 Data Sense 安裝指令碼的一部分。此處說明的指令碼是專為想要驗證 Linux 主機而不執行 Data Sense 安裝指令碼的使用者所設計。
+
+
+
+== 快速入門
+
+您將執行下列工作。
+
+. 選用。如果您尚未安裝 BlueXP Connector 、請安裝它。您可以在不安裝 Connector 的情況下執行測試指令碼、但指令碼會檢查 Connector 和 Data Sense 主機之間的連線、因此建議您使用 Connector 。
+. 準備主機並確認它符合所有需求。
+. 從 Data Sense 主機機器啟用傳出網際網路存取。
+. 確認所有系統上的所有必要連接埠都已啟用。
+. 下載並執行先決條件測試指令碼。
+
+
+
+
+== 建立連接器
+
+您必須先安裝BlueXP Connector、才能安裝及使用Data Sense。不過、您可以在沒有 Connector 的情況下執行 Prerequisites 指令碼。
+
+您可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部安裝Data Sense的使用者也可能選擇在內部安裝Connector。
+
+若要在雲端供應商環境中建立 Connector 、請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。
+
+執行 Prerequisites 指令碼時、您需要 Connector 系統的 IP 位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。
+
+
+
+== 驗證主機需求
+
+資料感應軟體必須在符合特定作業系統需求、RAM需求、軟體需求等的主機上執行。
+
+* 與其他應用程式共用的主機不支援Data Sense、主機必須是專屬主機。
+
+
+* 在內部環境中建置主機系統時、您可以根據計畫進行 Data Sense 掃描的資料集大小、從三種系統大小中選擇。
++
+[cols="18,18,26,30"]
+|===
+| 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
+
+
+| * 大 * | 16個CPU | 64 GB RAM | 500 GiB SSD on / 、 or - 100 GiB 可在 /opt - 395 GiB 上取得、位於 /tmp 的 /var/-5 GiB 上 
+
+
+| * 中 * | 8個CPU | 32 GB RAM | 200 GiB SSD on / 、 or - 50 GiB 可在 /opt - 145 GiB 上取得、位於 /tmp 的 /var/-5 GiB 上 
+
+
+| * 小 * | 8個CPU | 16 GB RAM | 100 GiB SSD on / 、 or - 50 GiB 可在 /opt - 45 GiB 取得、位於 /tmp 的 /var/-5 GiB 
+|===
++
+請注意、使用這些較小的系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
+
+* 在部署雲端執行個體以進行 Data Sense 安裝時、我們建議系統必須符合上述「大型」系統需求：
++
+** * AWS EC2 執行個體類型 * ：我們建議使用「 m6i.4xlarge 」。 link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
+** * Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。 link:reference-instance-types.html#azure-instance-types["請參閱其他 Azure 執行個體類型"^]。
+** * GCP 機器類型 * ：我們建議使用「 n2-Standard-16 」。 link:reference-instance-types.html#gcp-instance-types["請參閱其他 GCP 執行個體類型"^]。
+
+
+* *作業系統*：Red Hat Enterprise Linux或CentOS 8.0至8.7版
++
+** 也支援CentOS串流8
+** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
+** 作業系統必須能夠安裝Docker引擎
+
+
+* * Red Hat訂購管理*：Red Hat Enterprise Linux系統必須註冊Red Hat訂購管理。如果未註冊、系統將無法在安裝期間存取儲存庫來更新所需的協力廠商軟體。
+* *其他軟體*：您必須先在主機上安裝下列軟體、才能安裝Data Sense：
++
+** Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
+** Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
+
+
+* * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝Data Sense之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此它能與Data Sense相容：
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --reload
+....
++
+如果您打算使用其他 Data Sense 主機做為掃描器節點（在分散式模型中）、請在此時將這些規則新增至主要系統：
+
++
+....
+firewall-cmd --permanent --add-port=2377/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
+firewall-cmd --permanent --add-port=4789/udp
+....
++
+如果您啟用 `firewalld` 安裝Data Sense之後、您必須重新啟動Docker。
+
+
+
+
+
+== 從 Data Sense 啟用傳出網際網路存取
+
+Data Sense 需要外傳網際網路存取。如果您的虛擬或實體網路使用Proxy伺服器進行網際網路存取、請確定Data Sense執行個體具有傳出網際網路存取權限、以聯絡下列端點。
+
+秘訣:: 如果站台中安裝的主機系統沒有網際網路連線、則不需要此區段。
+
+
+[cols="43,57"]
+|===
+| 端點 | 目的 
+
+
+| \https://api.bluexp.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
+
+
+| \https://netapp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/\https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/\https://dseasb33srnrn.cloudfront.net/\https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
+
+
+| \https://support.compliance.api.bluexp.netapp.com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
+
+
+| \https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | 提供安裝所需的必要套件。 
+|===
+
+
+== 確認已啟用所有必要的連接埠
+
+您必須確保所有必要的連接埠都已開啟、以便在Connector、Data Sense、Active Directory和資料來源之間進行通訊。
+
+[cols="25,25,50"]
+|===
+| 連線類型 | 連接埠 | 說明 
+
+
+| 連接器<>資料感知 | 8080（TCP）、443（TCP）及80 | 連接器的防火牆或路由規則必須允許進出連接埠443的傳入和傳出流量進出Data Sense執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。 
+
+
+| 連接器<> ONTAP -叢集（NAS） | 443（TCP）  a| 
+BlueXP會使用ONTAP HTTPS探索叢集。如果您使用自訂防火牆原則、 Connector 主機必須允許透過連接埠 443 進行輸出 HTTPS 存取。如果連接器位於雲端、則預先定義的防火牆或路由規則會允許所有傳出通訊。
+
+|===
+
+
+== 執行 Data Sense Prerequisites 指令碼
+
+請依照下列步驟執行 Data Sense Prerequisites 指令碼。
+
+.您需要的產品
+* 確認您的Linux系統符合 <<驗證主機需求,主機需求>>。
+* 確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
+* 請確定您擁有Linux系統的root權限。
+
+
+.步驟
+. 從下載 Data Sense Prerequisites 指令碼 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選取的檔案名稱為 * <version> * 。
+. 將檔案複製到您打算使用的 Linux 主機（使用 `scp` 或其他方法）。
+. 指派執行指令碼的權限。
++
+[source, cli]
+----
+chmod +x test_datasense_prerequisites_1_0
+----
+. 使用下列命令執行指令碼。
++
+./test_datasense_fortases_1_0 和 #8592 ； - 暗站台 >
+[source, cli]
+----
+Add the option "--darksite" only if you are running the script on a host that doesn't have internet access. Certain prerequisite tests are skipped when the host is not connected to the internet.
+----
+. 指令碼會提示您輸入 Data Sense 主機機器的 IP 位址。
++
+** 輸入 IP 位址或主機名稱。
+
+
+. 指令碼會提示您是否已安裝 BlueXP Connector 。
++
+** 如果您沒有安裝 Connector 、請輸入 * N* 。
+** 如果您有安裝的 Connector 、請輸入 * Y* 。然後輸入 BlueXP Connector 的 IP 位址或主機名稱、讓測試指令碼可以測試這項連線功能。
+
+
+. 指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成時、它會將工作階段的記錄寫入檔案。
+
+
+.結果
+如果所有先決條件測試都成功執行、您可以在準備好時在主機上安裝 Data Sense 。
+
+如果發現任何問題、則會將其歸類為「建議」或「必要」以進行修正。建議的問題通常是讓「資料感應」掃描和分類工作執行速度變慢的項目。這些項目不需要修正、但您可能想解決這些問題。
+
+如果您有任何「必要」問題、您應該修正這些問題、然後再次執行 Prerequisites 測試指令碼。

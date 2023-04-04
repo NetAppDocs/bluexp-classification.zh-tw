@@ -154,15 +154,10 @@ image:diagram_cloud_compliance_instance.png["顯示在雲端供應商中執行�
 
 請注意下列關於預設執行個體的資訊：
 
-* 在AWS中、Cloud Data Sense可在上執行 link:https://aws.amazon.com/ec2/instance-types/m5/["m5.4xLarge 執行個體"^] 使用 500 GB GP2 磁碟。作業系統映像是Amazon Linux 2（Red Hat 7.3.1）。
-+
-在無法使用m5.4xLarge的區域中、Data Sense會改為在m4.4xLarge執行個體上執行。
-
-* 在Azure中、Cloud Data Sense可在上執行 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] 使用 512 GB 磁碟。作業系統映像是CentOS 7.8。
-* 在GCP中、Cloud Data Sense可在上執行 link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16 VM"^] 使用512 GB標準持續磁碟。作業系統映像是CentOS 7.9。
-+
-在無法使用n2-Standard-16的區域中、Data Sense會改為在n2d-Standard-16或n1-Standard-16 VM上執行。
-
+* 在AWS中、Cloud Data Sense可在上執行 https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge 執行個體"^] 搭配 500 GB GP2 磁碟。作業系統映像是Amazon Linux 2。
+* 在Azure中、Cloud Data Sense可在上執行 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] 使用 500 GB 的 GiB 磁碟。作業系統映像是CentOS 7.9。
+* 在GCP中、Cloud Data Sense可在上執行 link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16 VM"^] 使用 500 GB 的 GiB Standard 持續性磁碟。作業系統映像是CentOS 7.9。
+* 在無法使用預設執行個體的區域中、 Data Sense 會在替代執行個體上執行。 link:reference-instance-types.html["請參閱替代執行個體類型"]。
 * 此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * 每個連接器只部署一個Data Sense執行個體。
 
@@ -183,15 +178,15 @@ TIP: 由於Cloud Data Sense會持續掃描資料、因此執行個體應隨時�
 | 系統大小 | 規格 | 限制 
 
 
-| 大型（預設） | 16個CPU、64 GB RAM、500 GB SSD | 無 
+| 大型（預設） | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | 無 
 
 
-| 中 | 8個CPU、32 GB RAM、200 GB SSD | 掃描速度較慢、最多只能掃描100萬個檔案。 
+| 中 | 8 個 CPU 、 32 GB RAM 、 200 GB SSD | 掃描速度較慢、最多只能掃描100萬個檔案。 
 
 
-| 小 | 8個CPU、16 GB RAM、100 GB SSD | 與「中」相同的限制、加上識別能力 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["資料主旨名稱"] 內部檔案已停用。 
+| 小 | 8 個 CPU 、 16 GB RAM 、 100 GB SSD | 與「中」相同的限制、加上識別能力 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["資料主旨名稱"] 內部檔案已停用。 
 |===
-在雲端部署Data Sense時、如果您想要使用其中一個較小的系統、請寄送電子郵件至ng-contact-data-sense@netapp.com尋求協助。我們需要與您合作、以部署這些較小型的雲端組態。
+在 AWS 上的雲端部署 Data Sense 時、您可以選擇大型 / 中型 / 小型執行個體。在 Azure 或 GCP 中部署 Data Sense 時、如果您想要使用其中一個較小的系統、請寄送電子郵件至 ng-contact-data-sense@netapp.com 以取得協助。我們需要與您合作、以部署這些較小型的雲端組態。
 
 在內部部署Data Sense時、只需使用規格較小的Linux主機即可。您不需要聯絡NetApp尋求協助。
 

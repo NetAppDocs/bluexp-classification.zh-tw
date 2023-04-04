@@ -138,3 +138,5 @@ image:screenshot_compliance_select_schemas.png["「掃描組態」頁面的快�
 
 .結果
 Cloud Data Sense會開始掃描您啟用的資料庫架構。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。
+
+請注意、 Data Sense 每天掃描一次資料庫、不會像其他資料來源一樣持續掃描資料庫。

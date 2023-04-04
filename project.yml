@@ -27,6 +27,8 @@ sidebar:
         url: "/task-deploy-compliance-onprem.html"
       - title: 在內部安裝、無需網際網路存取
         url: "/task-deploy-compliance-dark-site.html"
+      - title: 檢查您的 Linux 主機是否已準備好安裝 Data Sense
+        url: "/task-test-linux-system.html"
     - title: 啟動資料來源的掃描
       entries:
       - title: 不只是內部和內部的Cloud Volumes ONTAP ONTAP
@@ -91,6 +93,8 @@ sidebar:
       url: "/task-uninstall-data-sense.html"
   - title: 參考資料
     entries:
+    - title: 支援的 Data Sense 執行個體類型
+      url: "/reference-instance-types.html"
     - title: 從資料來源收集的中繼資料
       url: "/reference-collected-metadata.html"
   - title: 知識與支援
@@ -109,11 +113,11 @@ homepage:
       url: concept-cloud-compliance.html
     - title: 新增功能
       url: whats-new.html
-    - title: 自動在雲端部署Data Sense
+    - title: 使用 BlueXP 在雲端部署 Data Sense
       url: task-deploy-cloud-compliance.html
-    - title: 在具備網際網路的Linux主機上部署Data Sense
+    - title: 在具有網際網路的 Linux 主機上安裝 Data Sense
       url: task-deploy-compliance-onprem.html
-    - title: 無需網際網路、即可在內部部署Data Sense
+    - title: 在內部部署安裝 Data Sense 、不需使用網際網路
       url: task-deploy-compliance-dark-site.html
     - title: 整合Active Directory
       url: task-add-active-directory-datasense.html

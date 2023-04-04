@@ -254,7 +254,7 @@ image:screenshot_compliance_move_file.png["顯示「資料調查」頁面中檔�
 您可以從「調查」窗格手動刪除檔案、或 link:task-using-policies.html#deleting-source-files-automatically-using-policies["自動使用原則"^]。
 
 
-TIP: 您無法刪除位於資料庫中的檔案。
+TIP: 您無法刪除位於資料庫中的檔案。支援所有其他資料來源。
 
 刪除檔案需要下列權限：
 

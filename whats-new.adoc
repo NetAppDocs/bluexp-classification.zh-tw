@@ -18,6 +18,34 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
+== 2023 年 4 月 3 日（版本 1.22 ）
+
+
+
+=== 新的資料探索評估報告
+
+「資料探索評估報告」會針對您所掃描的環境提供高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。本報告的目標是提高對資料治理疑慮、資料安全性曝露及資料集資料合規性缺口的認知度。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["瞭解如何產生及使用資料探索評估報告"]。
+
+
+
+=== 能夠在雲端的較小執行個體上部署 Data Sense
+
+在 AWS 環境中從 BlueXP Connector 部署 Data Sense 時、現在您可以從兩種較預設執行個體可用的執行個體類型來選擇。如果您掃描的是小型環境、這有助於節省雲端成本。不過、使用較小的執行個體時會有一些限制。 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["請參閱可用的執行個體類型和限制"]。
+
+
+
+=== 獨立指令碼現在可供測試、您的 Linux 系統是否符合安裝 Data Sense 的資格
+
+如果您想驗證 Linux 系統是否符合所有先決條件、而不需執行 Data Sense 安裝、您可以下載一個獨立的指令碼、只測試先決條件。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["瞭解如何檢查您的 Linux 主機是否已準備好安裝 Data Sense"]。
+
+
+
+=== Data Sense BYOL 授權現在支援 Dark 站台
+
+現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 Digital Wallet 、以便在授權即將到期時收到通知。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-licensing-datasense.html#obtain-your-cloud-data-sense-license-file["瞭解如何取得及上傳您的 Data Sense BYOL 授權"]。
+
+
+
 == 2023年3月7日（版本1.21）
 
 

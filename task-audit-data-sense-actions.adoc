@@ -58,7 +58,7 @@ Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描
 
 每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統最多可保留100個記錄檔-在達到上限後、會自動刪除舊的記錄檔。
 
-在內部部署安裝Data Sense時、您可以直接瀏覽至記錄檔。
+當 Data Sense 安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至記錄檔。
 
 在雲端部署Data Sense時、您需要SSH到Data Sense執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：
 

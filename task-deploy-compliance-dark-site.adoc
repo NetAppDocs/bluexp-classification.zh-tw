@@ -18,6 +18,8 @@ summary: 請完成幾個步驟、將Data Sense安裝在內部部署網站中無�
 
 請注意、您也可以 link:task-deploy-compliance-onprem.html["將Data Sense部署在可存取網際網路的內部部署站台"]。
 
+Data Sense 安裝指令碼會開始檢查系統和環境是否符合必要的先決條件。如果所有先決條件都符合、則會開始安裝。如果您想要獨立於執行 Data Sense 安裝來驗證先決條件、您可以下載個別的軟體套件、只測試先決條件。 link:task-test-linux-system.html["瞭解如何檢查您的 Linux 主機是否已準備好安裝 Data Sense"]。
+
 
 
 == 支援的資料來源
@@ -48,7 +50,7 @@ summary: 請完成幾個步驟、將Data Sense安裝在內部部署網站中無�
 * 接收使用者意見反應
 * 從BlueXP自動升級軟體
 +
-BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 link:whats-new.html["Cloud Data Sense版本說明"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["升級BlueXP Connector"^] 和 <<升級Data Sense軟體,升級您的Data Sense軟體>>。
+BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 link:whats-new.html["Cloud Data Sense版本說明"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["升級BlueXP Connector"^] 和 <<升級Data Sense軟體,升級您的Data Sense軟體>>。
 
 
 
@@ -60,7 +62,7 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 安裝BlueXP Connector
 [role="quick-margin-para"]
-如果您的離線內部部署站台上尚未安裝Connector、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["部署Connector"^] 現在就在Linux主機上。
+如果您的離線內部部署站台上尚未安裝Connector、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 現在就在Linux主機上。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 檢閱資料感知先決條件
 [role="quick-margin-para"]
@@ -78,7 +80,7 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 
 == 安裝BlueXP Connector
 
-如果您的離線內部部署站台尚未安裝BlueXP Connector、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["部署Connector"^] 在離線站台的Linux主機上。
+如果您的離線內部部署站台尚未安裝BlueXP Connector、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 在離線站台的Linux主機上。
 
 
 
@@ -93,13 +95,15 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 | 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
 
 
-| 大 | 16個CPU | 64 GB RAM | 500 GB SSD on /或* 100 GB（可在/opt * 395GB上取得）、/tmp* 5 GB可在/var*上取得 
+ a| 
+* 大 *
+| 16個CPU | 64 GB RAM | 500 GiB SSD on / 、或 * 100 GiB 可在 /tmp 的 /var/* 5 GiB 上的 /opt * 395 GiB 取得 
 
 
-| 中 | 8個CPU | 32 GB RAM | 200 GB SSD on /、或* 50 GB（可在/opt * 145 GB上取得）、/tmp*上的/var* 5 GB可供使用 
+| * 中 * | 8個CPU | 32 GB RAM | 200 GiB SSD on / 、 or - 50 GiB 可在 /opt - 145 GiB 上取得、位於 /tmp 的 /var/-5 GiB 上 
 
 
-| 小 | 8個CPU | 16 GB RAM | 100 GB SSD開啟/、或* 50 GB可在/opt * 45 GB上取得、可在/tmp*上的/var* 5 GB上取得 
+| * 小 * | 8個CPU | 16 GB RAM | 100 GiB SSD on / 、 or - 50 GiB 可在 /opt - 45 GiB 取得、位於 /tmp 的 /var/-5 GiB 
 |===
 +
 請注意、使用這些較小的系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
@@ -122,12 +126,9 @@ BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能
 ....
 firewall-cmd --permanent --add-service=http
 firewall-cmd --permanent --add-service=https
-firewall-cmd --permanent --add-service=mysql
 firewall-cmd --permanent --add-port=80/tcp
 firewall-cmd --permanent --add-port=8080/tcp
 firewall-cmd --permanent --add-port=443/tcp
-firewall-cmd --permanent --add-port=555/tcp
-firewall-cmd --permanent --add-port=3306/tcp
 firewall-cmd --reload
 ....
 +
@@ -398,8 +399,8 @@ Cloud Data Sense安裝程式會完成安裝套件、並登錄安裝。安裝可�
 由於Data Sense軟體會定期更新新功能、因此您應該定期檢查新版本、以確保使用最新的軟體和功能。您需要手動升級Data Sense軟體、因為沒有網際網路連線功能可自動執行升級。
 
 .開始之前
-* Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝1.18x版、則只能升級至1.19.x如果您落後幾個主要版本、就必須多次升級軟體。
-* 確認您的內部部署Connector軟體已升級至最新版本。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-on-prem-without-internet-access["請參閱連接器升級步驟"^]。
+* Data Sense軟體一次可升級一個主要版本。例如、如果您已安裝版本 1.2.x 、則只能升級至 1.21.x如果您落後幾個主要版本、就必須多次升級軟體。
+* 確認您的內部部署Connector軟體已升級至最新版本。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-in-a-location-without-internet-access["請參閱連接器升級步驟"^]。
 
 
 .步驟
