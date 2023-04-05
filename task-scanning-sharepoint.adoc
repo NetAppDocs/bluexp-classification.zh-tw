@@ -59,14 +59,11 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 如果尚未部署執行個體、請部署Cloud Data Sense。
 
-* 對於SharePoint Online而言、Data Sense可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["安裝在可存取網際網路的內部部署位置"^]。
-+
-資料感測也可以是 link:task-deploy-compliance-dark-site.html["部署在沒有網際網路存取的內部部署位置"^]。不過、您必須提供網際網路存取功能、才能存取少數幾個選定的端點、以掃描SharePoint Online檔案。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["請參閱此處的必要端點清單"]。
-
+* 對於SharePoint Online而言、Data Sense可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^]。
 * 對於SharePoint內部部署、可以安裝Data Sense link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^] 或 link:task-deploy-compliance-dark-site.html["位於無法存取網際網路的內部部署位置"^]。
 
 
-如果在沒有網際網路存取的網站上安裝Data Sense、則同樣也必須在沒有網際網路存取的同一個網站上安裝BlueXP Connector。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-onprem-no-internet.html["深入瞭解"^]。
+如果在沒有網際網路存取的網站上安裝Data Sense、則同樣也必須在沒有網際網路存取的同一個網站上安裝BlueXP Connector。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["深入瞭解"^]。
 
 只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
 

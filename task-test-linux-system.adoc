@@ -24,7 +24,7 @@ summary: 在 Linux 主機上手動安裝 Data Sense 之前、您可以在主機�
 
 您將執行下列工作。
 
-. 選用。如果您尚未安裝 BlueXP Connector 、請安裝它。您可以在不安裝 Connector 的情況下執行測試指令碼、但指令碼會檢查 Connector 和 Data Sense 主機之間的連線、因此建議您使用 Connector 。
+. 或者、如果您尚未安裝 BlueXP Connector 、請安裝該連接器。您可以在不安裝 Connector 的情況下執行測試指令碼、但指令碼會檢查 Connector 和 Data Sense 主機之間的連線、因此建議您使用 Connector 。
 . 準備主機並確認它符合所有需求。
 . 從 Data Sense 主機機器啟用傳出網際網路存取。
 . 確認所有系統上的所有必要連接埠都已啟用。
@@ -175,21 +175,23 @@ BlueXP會使用ONTAP HTTPS探索叢集。如果您使用自訂防火牆原則、
 
 
 .步驟
-. 從下載 Data Sense Prerequisites 指令碼 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選取的檔案名稱為 * <version> * 。
+. 從下載 Data Sense Prerequisites 指令碼 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選擇的檔案名稱為 * 獨立式 - 必要的 - 測試者 - <version> * 。
 . 將檔案複製到您打算使用的 Linux 主機（使用 `scp` 或其他方法）。
 . 指派執行指令碼的權限。
 +
 [source, cli]
 ----
-chmod +x test_datasense_prerequisites_1_0
+chmod +x standalone-pre-requisite-tester-v1.21.0
 ----
 . 使用下列命令執行指令碼。
 +
-./test_datasense_fortases_1_0 和 #8592 ； - 暗站台 >
 [source, cli]
 ----
-Add the option "--darksite" only if you are running the script on a host that doesn't have internet access. Certain prerequisite tests are skipped when the host is not connected to the internet.
+ ./standalone-pre-requisite-tester-v1.21.0 <--darksite>
 ----
++
+只有在沒有網際網路存取權的主機上執行指令碼時、才新增選項「 ---變 暗站台」。當主機未連線至網際網路時、會略過某些必要測試。
+
 . 指令碼會提示您輸入 Data Sense 主機機器的 IP 位址。
 +
 ** 輸入 IP 位址或主機名稱。
@@ -201,7 +203,7 @@ Add the option "--darksite" only if you are running the script on a host that do
 ** 如果您有安裝的 Connector 、請輸入 * Y* 。然後輸入 BlueXP Connector 的 IP 位址或主機名稱、讓測試指令碼可以測試這項連線功能。
 
 
-. 指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成時、它會將工作階段的記錄寫入檔案。
+. 指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成時、它會將工作階段的記錄寫入名為的檔案 `prerequisites-test-<timestamp>.log` 在目錄中 `/opt/netapp/install_logs`。
 
 
 .結果

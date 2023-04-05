@@ -1109,21 +1109,6 @@
   <block id="6f7f4b2d525b7b8ad22c1d283e4b195e" category="section-title">Data Sense可識別兩種其他類型的個人資料</block>
   <block id="d431283363f0e868742391138a4ffbd0" category="list-text">法文INSEE：INSEE程式碼是法國國家統計與經濟研究所（INSEE）用來識別各種實體的數值代碼。</block>
   <block id="7457180e95a424d146842587474ec483" category="list-text">密碼：此資訊是使用鄰近驗證來識別、方法是在英數字元字串旁尋找「password」一詞的排列。找到的項目數量將列在「法規遵循儀表板」的「個人結果」下方。您可以使用「篩選*個人資料&gt;密碼*」在「調查」窗格中搜尋包含密碼的檔案。</block>
-  <block id="7d48333086004a7939c29f033e1bfad5" category="section-title">支援在黑暗站台部署OneDrive和SharePoint資料時掃描</block>
-  <block id="5d1023de4743a538d723b0eea67b9c49" category="inline-link">您必須允許存取下列端點。</block>
-  <block id="536f48524e36a16593703c5d8d108b79" category="section-title">此版本已停止使用Cloud Data Sense掃描雲端備份檔案的試用版功能</block>
-  <block id="17fc50243c5a80f407e83d268bcab18e" category="section-title">2022年2月9日</block>
-  <block id="5b7066a8679e57ba1c6e16c4237fb674" category="section-title">新增掃描Microsoft SharePoint線上帳戶的支援</block>
-  <block id="0d7a2e2094cbd9f065543ad864c58f56" category="inline-link">瞭解如何掃描SharePoint帳戶</block>
-  <block id="b8977b26a070b5eca7e5cfd90f128004" category="section-title">Data Sense可將檔案從資料來源複製到目標位置、並同步處理這些檔案</block>
-  <block id="f72dc999895eb17e77093f9ecff4180c" category="paragraph">如果您正在移轉資料、而且想要追蹤檔案的任何最後變更、這項功能就很有幫助。此動作使用<block ref="a370f691ddfd2ad7b716b2db4ad021a1" category="inline-link-rx"></block> 將資料從來源複製及同步至目標的功能。</block>
-  <block id="48a274f4830d58bf94182b778830c862" category="inline-link">瞭解如何複製及同步檔案</block>
-  <block id="622db54d0a7d9c01c841d932e3988937" category="section-title">為DSAR報告提供新的語言支援</block>
-  <block id="b7be70b4ae08b5c8540e95fbe14dcfa6" category="paragraph">目前支援使用德文和西班牙文搜尋資料主體名稱、以建立資料主體存取要求（DSAR）報告。本報告旨在協助貴組織遵守GDPR或類似的資料隱私權法律。</block>
-  <block id="8cdccfd2e3c1390208fa5892348c4108" category="section-title">Data Sense可識別三種其他類型的個人資料</block>
-  <block id="da848e916ac29d03235a007036cf77ca" category="inline-link">請參閱「Data Sense」在掃描中識別的所有個人資料類型清單</block>
-  <block id="2da79a92d5bb1f1f77ab993c07c12703" category="section-title">安全性群組連接埠已變更、以便與連接器進行Data Sense通訊</block>
-  <block id="2e38fe6622e02d0346ffbd31c4347739" category="paragraph">Cloud Manager Connector的安全性群組將使用連接埠443、而非連接埠80、用於往返Data Sense執行個體的傳入和傳出流量、以提高安全性。這兩個連接埠目前仍為開啟狀態、因此您不會看到任何問題、但您應該更新任何舊版連接器部署中的安全性群組、因為連接埠80將在未來的版本中被淘汰。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">瞭解方法</block>
   <block id="1d7b157ba2877d6d0d3d8d256ab8cfb9" category="summary">完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp Files 整套功能。</block>
@@ -1404,8 +1389,6 @@
   <block id="f86df9b5b428fe5b37c14bd1162bc107" category="list-text">您需要SharePoint網站URL的行分隔清單、以供掃描所有資料。</block>
   <block id="21470a3e6a3feaf105174d0e14c5f537" category="inline-link-macro">部署於雲端</block>
   <block id="cb4787e4f5b2886c42c46c918daec655" category="paragraph">資料感測可以是 <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> 或 <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block>。</block>
-  <block id="1b602d3afff4393bd19938efb7312da3" category="inline-link-macro">部署在沒有網際網路存取的內部部署位置</block>
-  <block id="72be220d746bd2e14365d0ceeea52365" category="inline-link-macro">請參閱此處的必要端點清單</block>
   <block id="cb49e9afef4bc3127fbf2d354d00fd54" category="list-text">在「工作環境組態」頁面中、按一下「*新增資料來源*」&gt;「*新增SharePoint Online帳戶*」。</block>
   <block id="ea56ecd454d4962a21bd35be41237229" category="list-text">在「新增SharePoint Online帳戶」對話方塊中、按一下*「登入SharePoint」*。</block>
   <block id="88f6018b4c4004a32e426fcb13381212" category="section-title">將SharePoint網站新增至法規遵循掃描</block>
@@ -1571,7 +1554,6 @@
   <block id="b4a5c69342b3680972974939d1add5af" category="paragraph">使用管理使用者認證、登入您要存取的 OneDrive 帳戶、以便將其新增為新的工作環境。</block>
   <block id="6a0c37bc5c98bec1f8cf3b1552d3d9fe" category="paragraph">從您要掃描的OneDrive帳戶新增使用者清單、然後選取掃描類型。您一次最多可新增 100 位使用者。</block>
   <block id="338e56fa931ac748f865fb417e3f80cf" category="section-title">檢閱OneDrive要求</block>
-  <block id="e9b6d5f264bba809d5461558e8379d9e" category="paragraph">資料感測也可以是 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。不過、您必須提供網際網路存取功能、才能存取數個選定的端點、以掃描本機OneDrive檔案。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="ff916f8aafd3dd060eaa015e5b21c9c7" category="section-title">新增 OneDrive 帳戶</block>
   <block id="7a461f87d3978d33f6acd8b612c58b19" category="paragraph">新增使用者檔案所在的 OneDrive 帳戶。</block>
   <block id="bef19ab5e14392fb5d2ee72ab0458c4b" category="list-text">在「工作環境組態」頁面中、按一下「 * 新增資料來源 * 」 &gt; 「 * 新增 OneDrive 帳戶 * 」。</block>
@@ -1783,9 +1765,6 @@
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">請參閱所有篩選器清單、以供您調查資料</block>
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
   <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">已新增名為「使用者/群組權限」的篩選器、以便列出特定使用者或群組具有讀取和/或寫入權限的檔案。您可以選取一或多個使用者和/或群組名稱、或輸入部分名稱。此功能適用於Cloud Volumes ONTAP 下列系統上的Volume：功能：功能包括：功能性、內部ONTAP 版本、功能性、Azure NetApp Files 功能性、功能性、功能性ONTAP 、功能性、功能性、功能性、功能性、功能性、功能性、功能性、可在</block>
-  <block id="659d1ffa40af561d84c53558562c1ec0" category="paragraph">現在您可以將SharePoint線上帳戶新增至Data Sense、以便從SharePoint網站掃描文件和檔案。 <block ref="7eefe10c1c468dca4cd0e6b3eed1adc0" category="inline-link-macro-rx"></block>。</block>
-  <block id="77a75568e8846a1bf685d1ee50c690cf" category="paragraph"><block ref="6cdda3320a1281c9d4957b83cba366de" category="inline-link-macro-rx"></block>。</block>
-  <block id="d55b3233b82d41486408c8252b8ebafb" category="paragraph">Data Sense現在可以在檔案中找到法文社會安全號碼、法文ID和法文驅動程式授權號碼。 <block ref="685a6d4b5536628189414cd84011e60e" category="inline-link-macro-rx"></block>。</block>
   <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">從Data Sense刪除整個SharePoint帳戶</block>
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">請注意、您可以 <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> 如果您不想再從SharePoint帳戶掃描任何使用者資料。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive、SharePoint和Google雲端硬碟帳戶、檔案大小上限為4 MB。</block>
@@ -2095,9 +2074,6 @@
   <block id="368538217a4a98d2d78bf94a224b8eb6" category="paragraph">Data Sense現在將階層連結檔案視為「符合性儀表板」中顯示的類別的一部分。將檔案從來源位置移至NFS共用時、會建立這些檔案Data Sense。<block ref="fd6931884959497f6c1600e29f97b838" category="inline-link-rx"></block>。</block>
   <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">此外、在「調查」頁面中執行搜尋時、您可以選取「類別」下的「資料感測Breadcrumbs」、以僅檢視「資料感測階層連結」檔案。</block>
   <block id="758462d66cb32533f49360d3b98e28c4" category="paragraph">請檢閱下列必要條件、確定您已準備好在SharePoint帳戶上啟動Cloud Data Sense。</block>
-  <block id="19814c236f94ff3af850cb182f35add5" category="inline-link-macro">安裝在可存取網際網路的內部部署位置</block>
-  <block id="1834f32ba8d3eab040f5ce5755a6ad8a" category="list-text">對於SharePoint Online而言、Data Sense可以是 <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block> 或 <block ref="1303820445af3a7c87be9fbd1bbc30ad" category="inline-link-macro-rx"></block>。</block>
-  <block id="8985dbaa7cbdc09c9a769e35fc86d4ad" category="paragraph">資料感測也可以是 <block ref="4b1575a5c5c3f80b912837da14c39ab4" category="inline-link-macro-rx"></block>。不過、您必須提供網際網路存取功能、才能存取少數幾個選定的端點、以掃描SharePoint Online檔案。 <block ref="e4bb345ad6bbfa08298160493f1efe0b" category="inline-link-macro-rx"></block>。</block>
   <block id="88ce972549d8b67ad56bc9e681818ca2" category="section-title">新增SharePoint Online帳戶</block>
   <block id="8b7071c98b3d8a3e43ecfa77bab75857" category="paragraph">新增使用者檔案所在的SharePoint Online帳戶。</block>
   <block id="c5545572ea4069cfaa50e205fd80e522" category="inline-image-macro">「組態」頁面的快照、您可以在其中按一下「新增SharePoint Online」按鈕。</block>
@@ -2286,7 +2262,6 @@
   <block id="7c71ca28422eaaaf66d759fac9ddacd8" category="inline-link">瞭解如何在ONTAP BlueXP中探索或建立FSX for Sf更新 檔案系統</block>
   <block id="5dbbb266134a4996024e4714a92eb4f4" category="paragraph"><block ref="b25b20c3e54422c7dfd405e788a8f63b" category="inline-link-rx"></block>。</block>
   <block id="550ed190220c30a219939b5cc149ea64" category="admonition">對於FSXfor ONTAP Sfor Sf, Cloud Data Sense只能掃描與BlueXP相同區域的磁碟區。</block>
-  <block id="605064cd8edf5ae796b155904f40b48f" category="paragraph">如果在沒有網際網路存取的網站上安裝Data Sense、則同樣也必須在沒有網際網路存取的同一個網站上安裝BlueXP Connector。<block ref="879ebf9ca74e8f08bfff336454f4ade3" category="inline-link-rx"></block>。</block>
   <block id="65b1808e8755301d9b88abfe2641bc90" category="summary">在BlueXP工作區中、Cloud Data Sense掃描的前1 TB資料是免費的。NetApp的BYOL授權或雲端供應商Marketplace的訂閱、必須在該點之後繼續掃描資料。</block>
   <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。</block>
   <block id="0f6c00034bac6e049845fa36d40deb87" category="inline-image-macro">BlueXP右上方橫幅的快照、您可在其中選取「設定」圖示。</block>
@@ -2723,7 +2698,6 @@
   <block id="21e575de9b2cf958293bb22c657eba7b" category="paragraph">Data Sense可識別及分類含有日文個人號碼（也稱為「My Number（我的號碼）」）的檔案。這包括「個人」和「公司我的號碼」。<block ref="b4ce36808fde13e40836bb7d14af31c6" category="inline-link-rx"></block>。</block>
   <block id="ee7392d2316f5d3dd66a6f38dfd1dbfb" category="list-text">「使用者/群組權限」篩選器可讓您列出特定使用者或群組具有讀取和/或寫入權限的檔案、資料夾和共用。您可以選取多個使用者和/或群組名稱、或輸入部分名稱。</block>
   <block id="d03ac14c4e429af55c127e304518d56e" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
-  <block id="765a37e7c0d57c675f5f9b8438aa0b27" category="paragraph">當您在內部部署網站的主機上部署Cloud Data Sense、但該網站無法存取網際網路時、現在您可以從OneDrive帳戶或SharePoint帳戶掃描本機資料。 <block ref="1b9c05db061e84ae6eca6f68bdd32c9b" category="inline-link-macro-rx"></block></block>
   <block id="3631ca73c04d0e5a0d6b08517f6f049f" category="cell">日文個人識別號碼（個人和公司）</block>
   <block id="35c134848f5f2aeab535e7e525874a02" category="paragraph">確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與Cloud Data Sense之間透過連接埠443的連線等。 <block ref="41431224cdc0c634efe8819b91420afe" category="inline-xref-macro-rx"></block>。</block>
   <block id="21e0d61d9e797a17767287de32bd7bef" category="list-text">HR -健全狀況類別</block>
@@ -3253,7 +3227,6 @@
   <block id="8239d79bfe51b5787f726e3a0b2f2917" category="paragraph">此外、也有一個先決條件測試指令碼、屬於 Data Sense 安裝指令碼的一部分。此處說明的指令碼是專為想要驗證 Linux 主機而不執行 Data Sense 安裝指令碼的使用者所設計。</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">快速入門</block>
   <block id="88a37f7fbc3214e9153d0377c4db9ded" category="paragraph">您將執行下列工作。</block>
-  <block id="36038c34fcf653c17e321b870bf52dfe" category="list-text">選用。如果您尚未安裝 BlueXP Connector 、請安裝它。您可以在不安裝 Connector 的情況下執行測試指令碼、但指令碼會檢查 Connector 和 Data Sense 主機之間的連線、因此建議您使用 Connector 。</block>
   <block id="699254c5c0c8f50098c4ced6af6b9a8d" category="list-text">準備主機並確認它符合所有需求。</block>
   <block id="0c81481c0b14e8dbff4568e2ed85648f" category="list-text">從 Data Sense 主機機器啟用傳出網際網路存取。</block>
   <block id="1dc78a625057b828e3c9842b6a68f0f6" category="list-text">確認所有系統上的所有必要連接埠都已啟用。</block>
@@ -3287,17 +3260,14 @@
   <block id="f6990f2d470222c3ed9f83899df27c0c" category="section-title">執行 Data Sense Prerequisites 指令碼</block>
   <block id="a440280a0884cc876fd249f888171f56" category="paragraph">請依照下列步驟執行 Data Sense Prerequisites 指令碼。</block>
   <block id="501ccf13f0ae6f5bf8325fb7b226f1cc" category="list-text">確認您的Linux系統符合 <block ref="1d205163b0a8ca2801018349a2f8a3d4" category="inline-xref-macro-rx"></block>。</block>
-  <block id="0aba01bddab7014288e87ba411fee394" category="list-text">從下載 Data Sense Prerequisites 指令碼<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。您應該選取的檔案名稱為 * &lt;version&gt; * 。</block>
   <block id="39ce475fbf0eef780b35fe3ac485fece" category="list-text">將檔案複製到您打算使用的 Linux 主機（使用<block ref="8a444a43bdf534c0c6338bb7809659b3" prefix=" " category="inline-code"></block> 或其他方法）。</block>
   <block id="e9b5bbe1e4c19139761534abb688155a" category="list-text">指派執行指令碼的權限。</block>
   <block id="ed0300f82ab0ca2d48bd381545c0fca0" category="list-text">使用下列命令執行指令碼。</block>
-  <block id="c008ef7c319b7c48878aadb398f3307c" category="listing-title">/test_datasense_fortases_1_0 和 #8592 ； - 暗站台 &amp;gt;</block>
   <block id="d0a708991eb8285a1a4f6a0482ffaaa0" category="list-text">指令碼會提示您輸入 Data Sense 主機機器的 IP 位址。</block>
   <block id="e43c17415cef76a2c212e64025423457" category="list-text">輸入 IP 位址或主機名稱。</block>
   <block id="8f0bad5248b84d3cd04b9ac0be530a9c" category="list-text">指令碼會提示您是否已安裝 BlueXP Connector 。</block>
   <block id="94ac6dca39b0d38f3b950014db488255" category="list-text">如果您沒有安裝 Connector 、請輸入 * N* 。</block>
   <block id="d3530f7f55e5b4f9a9f54539096d928d" category="list-text">如果您有安裝的 Connector 、請輸入 * Y* 。然後輸入 BlueXP Connector 的 IP 位址或主機名稱、讓測試指令碼可以測試這項連線功能。</block>
-  <block id="0c0b961f03e62260991bd4f49a5ad756" category="list-text">指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成時、它會將工作階段的記錄寫入檔案。</block>
   <block id="594043468011cdf9c086f0caf9d02434" category="paragraph">如果所有先決條件測試都成功執行、您可以在準備好時在主機上安裝 Data Sense 。</block>
   <block id="f4901bf6d7d428102d57f8f96d4eec7a" category="paragraph">如果發現任何問題、則會將其歸類為「建議」或「必要」以進行修正。建議的問題通常是讓「資料感應」掃描和分類工作執行速度變慢的項目。這些項目不需要修正、但您可能想解決這些問題。</block>
   <block id="b6aefc1f5bf5d61908d5d40fe783f3c9" category="paragraph">如果您有任何「必要」問題、您應該修正這些問題、然後再次執行 Prerequisites 測試指令碼。</block>
@@ -3358,4 +3328,10 @@
   <block id="2b8cbb70f44f3831d9e9d67800ebb915" category="paragraph">請注意、您也可以 <block ref="239e282f4ba241974ca818753c648c59" category="inline-link-macro-rx"></block>。</block>
   <block id="d102535383c097c61a0a9f0f424e371d" category="paragraph">目前不支援掃描 Cloud Volumes ONTAP 、 Azure NetApp Files 、適用於 ONTAP 的 FSX 、 AWS S3 或 Google Drive 、 當 Data Sense 部署於黑暗的網站時、即為 OneDrive 或 SharePoint Online 帳戶。</block>
   <block id="e63a4e65f36778dd22d90e389565023a" category="paragraph">BlueXP Connector和Data Sense都需要定期手動升級、才能啟用新功能。您可以在Data Sense UI頁面底部看到Data Sense版本。請檢查 <block ref="3c3d51054f26662cb893ae4990a160c5" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="79c1d81a19f6b89269470ecda07878e3" category="inline-link-rx"></block> 和 <block ref="c56369efb4b4a1cf375529ebe17076ee" category="inline-xref-macro-rx"></block>。</block>
+  <block id="5706ba29d6e23990f862120134fbb359" category="list-text">對於SharePoint Online而言、Data Sense可以是 <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block>。</block>
+  <block id="69ac400752b1ac01aa7430b580d1d340" category="paragraph">如果在沒有網際網路存取的網站上安裝Data Sense、則同樣也必須在沒有網際網路存取的同一個網站上安裝BlueXP Connector。<block ref="1c688d8f43aa189fb0a1239cdf9c5893" category="inline-link-rx"></block>。</block>
+  <block id="c624da3c565b6b98b26a4f4ebf15529a" category="list-text">或者、如果您尚未安裝 BlueXP Connector 、請安裝該連接器。您可以在不安裝 Connector 的情況下執行測試指令碼、但指令碼會檢查 Connector 和 Data Sense 主機之間的連線、因此建議您使用 Connector 。</block>
+  <block id="01d6446c1a0e718244e8769f68a304fb" category="list-text">從下載 Data Sense Prerequisites 指令碼<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。您應該選擇的檔案名稱為 * 獨立式 - 必要的 - 測試者 - &lt;version&gt; * 。</block>
+  <block id="b4628b43616bed69627de3b91fe817d0" category="paragraph">只有在沒有網際網路存取權的主機上執行指令碼時、才新增選項「 ---變 暗站台」。當主機未連線至網際網路時、會略過某些必要測試。</block>
+  <block id="1bb79e71fe1463a15c91ab711e20a6ac" category="list-text">指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成時、它會將工作階段的記錄寫入名為的檔案<block ref="7bca4c3da1c027ba15644b115a5e9fd9" prefix=" " category="inline-code"></block> 在目錄中<block ref="8a788ac11c9bfeaba837d43d9090ac97" prefix=" " category="inline-code"></block>。</block>
 </blocks>

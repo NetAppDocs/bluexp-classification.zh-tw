@@ -58,8 +58,6 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
 
-資料感測也可以是 link:task-deploy-compliance-dark-site.html["部署在沒有網際網路存取的內部部署位置"^]。不過、您必須提供網際網路存取功能、才能存取數個選定的端點、以掃描本機OneDrive檔案。 link:task-deploy-compliance-dark-site.html#sharepoint-and-onedrive-special-requirements["請參閱此處的必要端點清單"]。
-
 
 
 == 新增 OneDrive 帳戶
