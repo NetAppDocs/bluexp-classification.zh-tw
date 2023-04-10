@@ -309,13 +309,17 @@ image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在雲端或
 
 
  a| 
-.. 貼上您從步驟7複製的資訊：
+.. 貼上您從步驟 7 複製的命令：
 `sudo ./install.sh -a <account_id> -c <agent_id> -t <token>`
++
+如果您要安裝在雲端執行個體上（而非內部部署）、請新增 `--manual-cloud-install <cloud_provider>`。
+
 .. 輸入Data Sense主機機器的IP位址或主機名稱、以便連接器執行個體存取。
 .. 輸入BlueXP Connector主機的IP位址或主機名稱、以便Data Sense執行個體存取。
 .. 根據提示輸入 Proxy 詳細資料。如果您的BlueXP Connector已經使用Proxy、則不需要在此輸入此資訊、因為Data Sense將自動使用Connector所使用的Proxy。
 
-| 或者、您也可以事先建立整個命令、提供必要的主機和Proxy參數：「Udo ./install.sh -A <account_id>-c <agent_id>-t <tokent>-host <ds_host>-manager-host <cm_host>-proxy_host <proxy_host>--proxy-port <proxy_port>-cert-proxy_proxy_proxy_proxy><key><key_proxy_proxy_user-proxy_proxy>-tese> 
+| 或者、您也可以預先建立完整命令、提供必要的主機和 Proxy 參數：
+`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
 |===
 +
 變數值：
@@ -326,6 +330,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在雲端或
 ** _tokon_ = JWT 使用者權杖
 ** _DS_host_= Data Sense Linux系統的IP位址或主機名稱。
 ** _cm_host_= BlueXP Connector系統的IP位址或主機名稱。
+** _Cloud 供應商 _ = 在雲端執行個體上安裝時、視雲端供應商而定、輸入「 AWS 」、「 Azure 」或「 GCP 」。
 ** _proxy_host_ = 代理伺服器的 IP 或主機名稱（如果主機位於 Proxy 伺服器之後）。
 ** _proxy_port_ = 連接到 Proxy 伺服器的連接埠（預設值 80 ）。
 ** _proxy_schap_=連線配置：HTTPS或http（預設http）。
