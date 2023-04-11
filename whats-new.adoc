@@ -34,7 +34,7 @@ summary: 瞭解Cloud Data意義上的新功能。
 
 
 
-=== 獨立指令碼現在可供測試、您的 Linux 系統是否符合安裝 Data Sense 的資格
+=== 獨立指令碼現已推出、可在安裝 Data Sense 之前驗證您的 Linux 系統
 
 如果您想驗證 Linux 系統是否符合所有先決條件、而不需執行 Data Sense 安裝、您可以下載一個獨立的指令碼、只測試先決條件。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["瞭解如何檢查您的 Linux 主機是否已準備好安裝 Data Sense"]。
 
@@ -419,27 +419,3 @@ Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳�
 === 現在全域Active Directory伺服器可以是LDAP伺服器
 
 除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 link:task-add-active-directory-datasense.html["如需詳細資料、請前往此處"]。
-
-
-
-== 2022年3月15日（版本1.10.0）
-
-
-
-=== 新篩選器、顯示特定使用者或群組擁有讀取或寫入權限的檔案
-
-已新增名為「使用者/群組權限」的篩選器、以便列出特定使用者或群組具有讀取和/或寫入權限的檔案。您可以選取一或多個使用者和/或群組名稱、或輸入部分名稱。此功能適用於Cloud Volumes ONTAP 下列系統上的Volume：功能：功能包括：功能性、內部ONTAP 版本、功能性、Azure NetApp Files 功能性、功能性、功能性ONTAP 、功能性、功能性、功能性、功能性、功能性、功能性、功能性、可在
-
-
-
-=== Data Sense可決定SharePoint和OneDrive帳戶中檔案的權限
-
-Data Sense現在可以讀取OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。此資訊會顯示在檔案的「調查」窗格詳細資料中、以及「治理儀表板」的「開放權限」區域中。
-
-
-
-=== Data Sense可識別兩種其他類型的個人資料
-
-* 法文INSEE：INSEE程式碼是法國國家統計與經濟研究所（INSEE）用來識別各種實體的數值代碼。
-* 密碼：此資訊是使用鄰近驗證來識別、方法是在英數字元字串旁尋找「password」一詞的排列。找到的項目數量將列在「法規遵循儀表板」的「個人結果」下方。您可以使用「篩選*個人資料>密碼*」在「調查」窗格中搜尋包含密碼的檔案。
-

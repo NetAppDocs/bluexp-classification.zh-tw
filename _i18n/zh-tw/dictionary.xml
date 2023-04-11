@@ -1102,12 +1102,6 @@
   <block id="e661d5c04d5948d390d622ba88bdcc6b" category="section-title">Data Sense可識別四種新類型的澳洲個人資料</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看Data Sense可在您的資料中識別的所有個人資料類型</block>
   <block id="0387123627dfe002c7435c0101983f19" category="section-title">現在全域Active Directory伺服器可以是LDAP伺服器</block>
-  <block id="6c0e8ed69caed245f57b7b8ac8246fff" category="section-title">新篩選器、顯示特定使用者或群組擁有讀取或寫入權限的檔案</block>
-  <block id="6bcf3eec310c41993f38eea54e01a446" category="section-title">Data Sense可決定SharePoint和OneDrive帳戶中檔案的權限</block>
-  <block id="c23f592529f8db7551eafe3830b6427a" category="paragraph">Data Sense現在可以讀取OneDrive帳戶和SharePoint帳戶中掃描檔案的權限。此資訊會顯示在檔案的「調查」窗格詳細資料中、以及「治理儀表板」的「開放權限」區域中。</block>
-  <block id="6f7f4b2d525b7b8ad22c1d283e4b195e" category="section-title">Data Sense可識別兩種其他類型的個人資料</block>
-  <block id="d431283363f0e868742391138a4ffbd0" category="list-text">法文INSEE：INSEE程式碼是法國國家統計與經濟研究所（INSEE）用來識別各種實體的數值代碼。</block>
-  <block id="7457180e95a424d146842587474ec483" category="list-text">密碼：此資訊是使用鄰近驗證來識別、方法是在英數字元字串旁尋找「password」一詞的排列。找到的項目數量將列在「法規遵循儀表板」的「個人結果」下方。您可以使用「篩選*個人資料&gt;密碼*」在「調查」窗格中搜尋包含密碼的檔案。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link-macro">瞭解方法</block>
   <block id="1d7b157ba2877d6d0d3d8d256ab8cfb9" category="summary">完成幾個步驟、開始使用Cloud Data Sense for Azure NetApp Files 整套功能。</block>
@@ -1762,7 +1756,6 @@
   <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">「目錄類型」篩選器可讓您精簡資料、只查看資料夾或共用區。結果將顯示在新的*目錄*索引標籤中。</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">請參閱所有篩選器清單、以供您調查資料</block>
   <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
-  <block id="fca7f51b54fee8b38e01607def214d88" category="paragraph">已新增名為「使用者/群組權限」的篩選器、以便列出特定使用者或群組具有讀取和/或寫入權限的檔案。您可以選取一或多個使用者和/或群組名稱、或輸入部分名稱。此功能適用於Cloud Volumes ONTAP 下列系統上的Volume：功能：功能包括：功能性、內部ONTAP 版本、功能性、Azure NetApp Files 功能性、功能性、功能性ONTAP 、功能性、功能性、功能性、功能性、功能性、功能性、功能性、可在</block>
   <block id="9f2913099fea83e0f323c9eaa2647551" category="inline-link-macro">從Data Sense刪除整個SharePoint帳戶</block>
   <block id="22653e7e1ce41c78cecfefd77069565b" category="paragraph">請注意、您可以 <block ref="b445b66eb7994fc8803d57fcbaaa50f1" category="inline-link-macro-rx"></block> 如果您不想再從SharePoint帳戶掃描任何使用者資料。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive、SharePoint和Google雲端硬碟帳戶、檔案大小上限為4 MB。</block>
@@ -1899,7 +1892,6 @@
   <block id="360d69dcc915fa54a4ac5faccbaf2127" category="section-title">2022年6月12日（1.13.1版）</block>
   <block id="2dd4f685f001cb4e6c0149956ba4a997" category="section-title">2022年5月11日（1.12.1版）</block>
   <block id="07de9e897e96f5f63e0778d691b62d59" category="section-title">2022年4月5日（版本1.11.1）</block>
-  <block id="2d2a847fccc748834cee74d3441a948b" category="section-title">2022年3月15日（版本1.10.0）</block>
   <block id="fae289ef9204f7c3119e084615a6d53f" category="list-text">如果您已在政府區域或內部部署Data Sense、但該位置無法存取網際網路（也稱為暗站）、則AIP標籤功能將無法使用。</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">若為Sfor Same、則必須將其部署在您要掃描的磁碟區所在的相同區域。Azure NetApp Files</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府區域支援</block>
@@ -3035,7 +3027,6 @@
   <block id="50e1c7a3a999563d022a15104bfe9af7" category="summary">Data Sense會記錄所有工作環境中的檔案、以及Data Sense正在掃描的資料來源所執行的管理活動。Data Sense也會在部署Data Sense執行個體時記錄活動。</block>
   <block id="c51565229a51d72034c1622ea299b5e3" category="paragraph">您可以檢視Data Sense稽核記錄檔的內容、或是下載這些檔案、以查看發生了哪些檔案變更、以及何時發生。例如、您可以查看發出的要求、要求時間、以及檔案刪除時的來源位置、或檔案移動時的來源和目的地位置等詳細資料。</block>
   <block id="7ddc3d159536f20b25489b34580e5713" category="paragraph">管理稽核記錄檔位於Data Sense機器上、位於：<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
-  <block id="2eb3b1a195ce77ea7e59b84ba423818c" category="paragraph">安裝稽核記錄檔會寫入<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block></block>
   <block id="8193e38e933656edf000dbf251568d4d" category="list-text">在右側的「服務」窗格中、按一下「*分類*」旁的「*啟用*」。</block>
   <block id="f00fdbf27f97ee0ee538742a5e7ed0ce" category="paragraph"><block ref="f00fdbf27f97ee0ee538742a5e7ed0ce" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6d59c0bcfa7b74d31dfcf319aed7bc81" category="paragraph"><block ref="6d59c0bcfa7b74d31dfcf319aed7bc81" category="inline-image-macro-rx" type="image"></block></block>
@@ -3271,7 +3262,6 @@
   <block id="a2f7db2af3b89cce9c368f52089406c7" category="paragraph">「資料探索評估報告」會針對您所掃描的環境提供高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。本報告的目標是提高對資料治理疑慮、資料安全性曝露及資料集資料合規性缺口的認知度。<block ref="9ad86f8b2d35a79c635fcc2e2795f8e1" category="inline-link-rx"></block>。</block>
   <block id="67778bfe57cf94d953dd530babc8df46" category="section-title">能夠在雲端的較小執行個體上部署 Data Sense</block>
   <block id="34590974cfa4c7d3c4258641c30ef959" category="paragraph">在 AWS 環境中從 BlueXP Connector 部署 Data Sense 時、現在您可以從兩種較預設執行個體可用的執行個體類型來選擇。如果您掃描的是小型環境、這有助於節省雲端成本。不過、使用較小的執行個體時會有一些限制。<block ref="98ea36794454fcb53d0ac9a791bd6948" category="inline-link-rx"></block>。</block>
-  <block id="914d653aae79118a23517243079b88cb" category="section-title">獨立指令碼現在可供測試、您的 Linux 系統是否符合安裝 Data Sense 的資格</block>
   <block id="374deadc3a3b7f52c668078795f75e3a" category="inline-link">瞭解如何檢查您的 Linux 主機是否已準備好安裝 Data Sense</block>
   <block id="04659fbbded99230220bc3321874622f" category="paragraph">如果您想驗證 Linux 系統是否符合所有先決條件、而不需執行 Data Sense 安裝、您可以下載一個獨立的指令碼、只測試先決條件。<block ref="721973ab191f916be1f3432f173ac838" category="inline-link-rx"></block>。</block>
   <block id="6858940dfbd3de02768877bc5d1ef613" category="paragraph">請注意、 Data Sense 每天掃描一次資料庫、不會像其他資料來源一樣持續掃描資料庫。</block>
@@ -3336,4 +3326,6 @@
   <block id="388579bd3749a8791992636cbe6fcba2" category="paragraph">如果您要安裝在雲端執行個體上（而非內部部署）、請新增<block ref="8a51c007faa66fa433403fdda9b5aea8" prefix=" " category="inline-code"></block>。</block>
   <block id="6da4fe596757430b3c8aac2020ced6c0" category="cell">或者、您也可以預先建立完整命令、提供必要的主機和 Proxy 參數：<block ref="dd2499ea1a73d24df83008235f503dbc" prefix=" " category="inline-code"></block></block>
   <block id="652d29fc9fdc8e0b507bb9eeecca952e" category="list-text">_Cloud 供應商 _ = 在雲端執行個體上安裝時、視雲端供應商而定、輸入「 AWS 」、「 Azure 」或「 GCP 」。</block>
+  <block id="9e7ff0af4669feb5e45b838a89143e27" category="paragraph">安裝稽核記錄檔會寫入<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block></block>
+  <block id="c1fe7e1d533d99b367d348052b2d15b2" category="section-title">獨立指令碼現已推出、可在安裝 Data Sense 之前驗證您的 Linux 系統</block>
 </blocks>
