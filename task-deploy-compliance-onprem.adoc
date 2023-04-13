@@ -466,7 +466,8 @@ image:screenshot_work_env_id.png["「Data Sense Configuration」（資料感知�
 +
 image:screenshot_client_access_token.png["API說明文件頁面的快照、其中包含驗證指示的連結。"]
 
-. 遵循驗證指示、然後從回應複製_access tokon_。
+. 請遵循驗證指示、在「使用者名稱」和「密碼」參數中使用帳戶管理員的使用者名稱和密碼。
+. 然後從回應複製 _access token-.
 
 
 .步驟

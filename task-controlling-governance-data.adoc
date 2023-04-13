@@ -45,6 +45,10 @@ image:screenshot_compliance_governance_dashboard.png["Cloud Data Sense管理儀�
 
 
 * *重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。 link:task-investigate-data.html#viewing-all-duplicated-files["查看顯示哪些類型的重複檔案"]。
++
+附註:: 如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 過時資料 _ 類別中進行識別。
+
+
 
 
 
@@ -91,7 +95,7 @@ image:screenshot_compliance_sensitive_data.png["當您將游標置於此面板�
 如果您尚未將身分識別服務與Data Sense整合、則此面板不會顯示任何資料。 link:task-add-active-directory-datasense.html["瞭解如何將Active Directory服務與Data Sense整合"^]。
 
 
-TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔案。目前不支援資料庫、Google雲端硬碟、Amazon S3和一般物件儲存設備。
+TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔案。目前不支援資料庫、 Google Drive 、 Amazon S3 和一般物件儲存。
 
 
 
@@ -117,6 +121,10 @@ TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔�
 
 * *資料圖表的存留期*：根據資料建立時間、上次存取時間或上次修改時間來分類資料。
 * *資料圖表大小*：根據大小來分類資料。
++
+附註:: 如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 資料存留期 _ 圖表中加以識別。
+
+
 
 
 

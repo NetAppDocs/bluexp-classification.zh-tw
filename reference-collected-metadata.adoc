@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-collected-metadata.html 
-keywords: compliance, metadata, permissions, time stamps, privacy 
+keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
 summary: Data Sense會在資料來源和工作環境中對資料執行分類掃描時、收集特定的中繼資料。Data Sense可存取我們分類資料所需的大部分中繼資料、但有些來源無法存取我們所需的資料。 
 ---
 = 從資料來源收集的中繼資料
@@ -16,6 +16,7 @@ summary: Data Sense會在資料來源和工作環境中對資料執行分類掃�
 [role="lead"]
 Data Sense會在資料來源和工作環境中對資料執行分類掃描時、收集特定的中繼資料。Data Sense可存取我們分類資料所需的大部分中繼資料、但有些來源無法存取我們所需的資料。
 
+[cols="15,25,25,25"]
 |===
 |  | *中繼資料* | * CIFS * | * NFS* 
 
@@ -38,7 +39,7 @@ Data Sense會在資料來源和工作環境中對資料執行分類掃描時、�
 
 == 上次存取時間時間戳記
 
-當Data Sense從檔案共用區擷取資料時、作業系統會將其視為存取資料、並據此變更「上次存取時間」。掃描後、Data Sense會嘗試將上次存取時間還原為原始時間戳記。如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統就無法將上次存取時間還原為原始時間戳記。
+當Data Sense從檔案共用區擷取資料時、作業系統會將其視為存取資料、並據此變更「上次存取時間」。掃描後、Data Sense會嘗試將上次存取時間還原為原始時間戳記。如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統就無法將上次存取時間還原為原始時間戳記。使用 SnapLock 設定的 ONTAP Volume 具有唯讀權限、也無法將上次存取時間還原為原始時間戳記。
 
 根據預設、如果Data Sense沒有這些權限、系統就不會掃描磁碟區中的檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。不過、如果您不在意上次存取時間是否重設為檔案中的原始時間、您可以按一下「組態」頁面底部的「當缺少「寫入屬性」權限時、*掃描」選項、讓「Data」（資料感測）不論權限為何、都能掃描磁碟區。
 

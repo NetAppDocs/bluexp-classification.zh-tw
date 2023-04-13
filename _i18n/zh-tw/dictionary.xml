@@ -254,7 +254,6 @@
   <block id="8f08d4145d6e3a493a3fa4cd9e22247f" category="cell">擁有 20 個以上個人資料的檔案、或擁有超過 50% 的資料列包含個人資料的 DB 資料欄</block>
   <block id="9b81ccdb2be13f884e301547dfac52b2" category="cell">具有 20 個以上敏感個人資料識別碼的檔案、或是含有敏感個人資料的資料列超過 50% 的 DB 資料欄。</block>
   <block id="d3566f9763235eb9dbff68cd1220088a" category="cell">具有 20 多個敏感個人資料的檔案、或是擁有超過 50% 的資料列包含敏感個人資料的 DB 資料欄</block>
-  <block id="62833e4a62aecb06bdb2de4d651190fb" category="summary">Cloud Data Sense是一項資料治理服務、可掃描資料來源以對應及分類資料、並識別私有資訊。</block>
   <block id="c0554a6d8deefa28ad0d9e99455a69f7" category="doc">Cloud Data Sense文件</block>
   <block id="0ab4a8173c2166c58fc098827e525da4" category="summary">請完成幾個步驟、以Cloud Data Sense直接掃描物件儲存區內的資料。Data Sense可從任何使用簡易儲存服務（S3）傳輸協定的物件儲存服務掃描資料。其中包括NetApp StorageGRID 功能、IBM Cloud Object Store、Azure Blob（使用MinIO）、Linode、B2 Cloud Storage、Amazon S3等。</block>
   <block id="74585f658544c691c6f6afb583a9dc61" category="doc">掃描使用S3傳輸協定的物件儲存設備</block>
@@ -313,7 +312,6 @@
   <block id="d2ea2bf943bb8c943367ebfd6b8aec96" category="paragraph">此群組是您要掃描之檔案共用的容器、會做為這些檔案共用的工作環境名稱。</block>
   <block id="925a5b3d46766546e19dbce83a2fefb6" category="paragraph">新增您要掃描的檔案共用清單、然後選取掃描類型。一次最多可新增100個檔案共用區。</block>
   <block id="6f1739c829744e6585dc123d746a9106" category="section-title">檢閱檔案共用需求</block>
-  <block id="2f01eae5e8c5b9452e84210106577138" category="list-text">共享區可在任何地方代管、包括雲端或內部部署。這些是位於非NetApp儲存系統上的檔案共用。</block>
   <block id="8b1b8390e7a987a1d682e70703508660" category="list-text">Data Sense執行個體與共用區之間必須有網路連線。</block>
   <block id="83a1beaa5a1e567dba033b274f79447d" category="list-text">請確定這些連接埠已開放給Data Sense執行個體：</block>
   <block id="c780a7831238096b62ccda3512612e65" category="list-text">NFS：連接埠111和2049。</block>
@@ -1453,8 +1451,6 @@
   <block id="7a833d41d59abd430a8a21760722d14a" category="paragraph"><block ref="57d1ac548ab885ff197c8b0634f5bdfc" category="inline-link-macro-rx"></block>。</block>
   <block id="551187f69bb192d7df69d2113a8acac4" category="admonition">若要完全移除Cloud Data Sense執行個體、您可以從雲端供應商的入口網站或內部位置手動移除Data Sense執行個體。</block>
   <block id="ae64bece015f15eb39e95575c833f8d3" category="section-title">如果在您的功能區上啟用資料分層、會發生什麼情況ONTAP ？</block>
-  <block id="2de4e78513aa5bfeb890fe4ddc3ec775" category="paragraph">您可能想要在ONTAP 將冷資料分層儲存至物件儲存的功能區系統上啟用Cloud Data Sense。如果啟用資料分層、Data Sense會掃描磁碟上的所有資料、並將冷資料階層化至物件儲存設備。</block>
-  <block id="7245782d4f1eb0db394d9f1f8ae02b2c" category="paragraph">法規遵循掃描不會將冷資料加熱、而是維持冷態並分層至物件儲存設備。</block>
   <block id="a7865b20d9097d32d555ae9b2251ef31" category="section-title">Cloud Data Sense可以傳送通知給我的組織嗎？</block>
   <block id="0a351d661588dd9301518a85a687c4dc" category="paragraph">您也可以從「治理」頁面和「調查」頁面下載狀態報告、以便在組織內部分享。</block>
   <block id="eab4d10a40c49ac7fa1a3daf5756345e" category="paragraph">Cloud Data Sense可為您的資料提供隨裝即用的洞見。您可以擷取這些洞見、並將其用於貴組織的需求。</block>
@@ -2357,7 +2353,6 @@
   <block id="e3aca1bee4b16554fd364b73482af4f3" category="list-text">前往<block ref="100b541e6046352c2cfaf3c9e6ddaf4d" category="inline-link-rx"></block> 然後按一下*瞭解如何驗證*。</block>
   <block id="7ef314f37951a4ffae65aed3439a8da1" category="inline-image-macro">API說明文件頁面的快照、其中包含驗證指示的連結。</block>
   <block id="e7897b39cbb592afc0430305aca32cc1" category="paragraph"><block ref="e7897b39cbb592afc0430305aca32cc1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d059d805b5ca279d8574f2b15a932bed" category="list-text">遵循驗證指示、然後從回應複製_access tokon_。</block>
   <block id="9cb50d789a41a5c166876e5a17ca1d7c" category="list-text">在Data Sense Manager節點上、執行指令碼「add_inber_node.sh」。例如、此命令會新增2個掃描儀節點：</block>
   <block id="1480262c4a9656977a70cff8c21b5dc0" category="paragraph"><block ref="0d45fd4edeb386e475963435f8cc230a" prefix="" category="inline-code"></block></block>
   <block id="0490466572986d52027e27d707b776a5" category="list-text">_client_id_=連接器用戶端ID</block>
@@ -2458,7 +2453,6 @@
   <block id="1e91a35a4b5b4c34950343e981ca88b0" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 新增使用者並選取掃描類型</block>
   <block id="a3f1215a60ced30f6b58ece6e4fb2da2" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱檔案共用先決條件</block>
   <block id="116ef64523fed5112220351fa1d75dc4" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 建立一個群組以保留檔案共用</block>
-  <block id="b66fb4cea2ccd5e683401c9c49dfb560" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 新增檔案共用區、然後選取要掃描的共用區</block>
   <block id="9af77730e3223116097b8cf1de0a2c1c" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝BlueXP Connector</block>
   <block id="ae52b22627bc20f5bd1f0ae7399f808a" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 檢閱資料感知先決條件</block>
   <block id="5145a29bff9f5d1e0a1fc1ca423ecea3" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 下載並部署Data Sense</block>
@@ -2673,7 +2667,6 @@
   <block id="c09a51a41728880502cacff404ad64e8" category="paragraph">您可以按一下您感興趣的區塊、在「調查」頁面中檢視受影響檔案的篩選結果、以便進一步調查。</block>
   <block id="f4200d6b39c6bf611267284ca071fd8b" category="inline-link-macro">瞭解如何將Active Directory服務與Data Sense整合</block>
   <block id="87fae032ed5605e45b8ed104db07d51d" category="paragraph">如果您尚未將身分識別服務與Data Sense整合、則此面板不會顯示任何資料。 <block ref="ab23cf884d322a71ba54be70f25499ab" category="inline-link-macro-rx"></block>。</block>
-  <block id="fc6931051107a02ba34edee1230d2510" category="admonition">此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔案。目前不支援資料庫、Google雲端硬碟、Amazon S3和一般物件儲存設備。</block>
   <block id="4f7b4b702c17bca954d2d186aaea71c0" category="list-text">無開放權限</block>
   <block id="e5ffd57c8ceca007705d9700419ab52a" category="paragraph">類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、「恢復」或「員工合約」等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。</block>
   <block id="13e71bc7a750dcb909f7b6e859dba7aa" category="paragraph">請確定您擁有登入SharePoint帳戶的合格認證、而且您有要掃描之SharePoint網站的URL。</block>
@@ -2918,7 +2911,6 @@
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
   <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
   <block id="99d97930418935683e2b318283d0dfe1" category="section-title">上次存取時間時間戳記</block>
-  <block id="328433e1229196dfcfbc0b9d019a9d21" category="paragraph">當Data Sense從檔案共用區擷取資料時、作業系統會將其視為存取資料、並據此變更「上次存取時間」。掃描後、Data Sense會嘗試將上次存取時間還原為原始時間戳記。如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統就無法將上次存取時間還原為原始時間戳記。</block>
   <block id="8fccf85628cfcd90d8b0fe5cab43c86d" category="paragraph">根據預設、如果Data Sense沒有這些權限、系統就不會掃描磁碟區中的檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。不過、如果您不在意上次存取時間是否重設為檔案中的原始時間、您可以按一下「組態」頁面底部的「當缺少「寫入屬性」權限時、*掃描」選項、讓「Data」（資料感測）不論權限為何、都能掃描磁碟區。</block>
   <block id="3b65a5e239394b9dd027910cc1b152c1" category="inline-image-macro">螢幕擷取畫面顯示可讓Data Sense掃描檔案的交換器、即使它沒有將上次存取時間還原為原始時間戳記的正確權限。</block>
   <block id="44408bbd035a502d323b922a5560e5d4" category="paragraph"><block ref="44408bbd035a502d323b922a5560e5d4" category="inline-image-macro-rx" type="image"></block></block>
@@ -3328,4 +3320,17 @@
   <block id="652d29fc9fdc8e0b507bb9eeecca952e" category="list-text">_Cloud 供應商 _ = 在雲端執行個體上安裝時、視雲端供應商而定、輸入「 AWS 」、「 Azure 」或「 GCP 」。</block>
   <block id="9e7ff0af4669feb5e45b838a89143e27" category="paragraph">安裝稽核記錄檔會寫入<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block></block>
   <block id="c1fe7e1d533d99b367d348052b2d15b2" category="section-title">獨立指令碼現已推出、可在安裝 Data Sense 之前驗證您的 Linux 系統</block>
+  <block id="e08c39eeecbac5d5f73dff71e2512def" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 將檔案共用新增至群組</block>
+  <block id="1c23c4b7c88b3335b15ccab5f09de226" category="list-text">共享區可在任何地方代管、包括雲端或內部部署。在大多數情況下、這些是位於非 NetApp 儲存系統上的檔案共用。但是、舊型 NetApp 7-Mode 儲存系統的 CIFS 共用可以掃描為檔案共用。</block>
+  <block id="5f191911e5c5f72232f6a4507e559266" category="paragraph">Data Sense 無法從 7-Mode 系統擷取權限或上次存取時間。此外、已知 Linux 不支援在 SMB 第 2 版上掛載 CIFS 共享區的問題。</block>
+  <block id="ba1b63d2bb4a9da8ac213b1773e59355" category="paragraph">當Data Sense從檔案共用區擷取資料時、作業系統會將其視為存取資料、並據此變更「上次存取時間」。掃描後、Data Sense會嘗試將上次存取時間還原為原始時間戳記。如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統就無法將上次存取時間還原為原始時間戳記。使用 SnapLock 設定的 ONTAP Volume 具有唯讀權限、也無法將上次存取時間還原為原始時間戳記。</block>
+  <block id="a22c3482ee96047a1abb3e9833dd6645" category="summary">BlueXP 分類（ Cloud Data Sense ）是一種資料治理服務、可掃描資料來源以對應及分類資料、並識別私有資訊。</block>
+  <block id="0daf80bfa5f39bbd5725c0b5fb7a4c95" category="paragraph">當 Data Sense 掃描具有冷資料階層至物件儲存的磁碟區時、它會掃描本機磁碟上的所有資料、以及分層至物件儲存的冷資料。對於實作分層的非 NetApp 產品來說、也是如此。</block>
+  <block id="a6ca0e2e27cafcb7c34af13f7d19c004" category="paragraph">掃描不會使冷資料變熱、因為它會保持冷、並留在物件儲存區中。</block>
+  <block id="10de4bc81f754b19b0d27246a0589c05" category="list-text">附註</block>
+  <block id="312ffbf4bf2c65989ebbd000c725c369" category="list-text">如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 過時資料 _ 類別中進行識別。</block>
+  <block id="66d08fa5ddeba835b1d01655713b9120" category="admonition">此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔案。目前不支援資料庫、 Google Drive 、 Amazon S3 和一般物件儲存。</block>
+  <block id="fd48a7c8c60d4f4ca62e7f192f27abea" category="list-text">如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 資料存留期 _ 圖表中加以識別。</block>
+  <block id="81ca64cf8cdaf987cf8d5efa54a4b6fd" category="list-text">請遵循驗證指示、在「使用者名稱」和「密碼」參數中使用帳戶管理員的使用者名稱和密碼。</block>
+  <block id="1edd72049e168646cdf62fc97f08f63c" category="list-text">然後從回應複製 _access token-.</block>
 </blocks>
