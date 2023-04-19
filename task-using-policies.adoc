@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-using-policies.html 
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
-summary: 原則就像是自訂篩選器的最愛清單、可在「調查」頁面中針對一般要求的法規遵循查詢提供搜尋結果。Cloud Data Sense根據一般客戶要求提供一組預先定義的原則。您可以建立自訂原則、針對組織專屬的搜尋結果提供結果。 
+summary: 原則就像是自訂篩選器的最愛清單、可在「調查」頁面中針對一般要求的法規遵循查詢提供搜尋結果。BlueXP 分類提供一組根據一般客戶要求而預先定義的原則。您可以建立自訂原則、針對組織專屬的搜尋結果提供結果。 
 ---
 = 指派原則給您的資料
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 原則就像是自訂篩選器的最愛清單、可在「調查」頁�
 
 
 [role="lead"]
-原則就像是自訂篩選器的最愛清單、可在「調查」頁面中針對一般要求的法規遵循查詢提供搜尋結果。Cloud Data Sense根據一般客戶要求提供一組預先定義的原則。您可以建立自訂原則、針對組織專屬的搜尋結果提供結果。
+原則就像是自訂篩選器的最愛清單、可在「調查」頁面中針對一般要求的法規遵循查詢提供搜尋結果。BlueXP 分類提供一組根據一般客戶要求而預先定義的原則。您可以建立自訂原則、針對組織專屬的搜尋結果提供結果。
 
 原則提供下列功能：
 
@@ -26,9 +26,9 @@ summary: 原則就像是自訂篩選器的最愛清單、可在「調查」頁�
 * 當某些原則傳回結果時、自動刪除檔案（每天一次）、以便您自動保護資料
 
 
-「法規遵循儀表板」中的「*原則*」索引標籤會列出此Cloud Data Sense執行個體上可用的所有預先定義和自訂原則。
+規範儀表板中的 * 原則 * 索引標籤會列出此 BlueXP 分類執行個體上可用的所有預先定義和自訂原則。
 
-image:screenshot_compliance_highlights_tab.png["Cloud Data Sense儀表板中原則索引標籤的快照。"]
+image:screenshot_compliance_highlights_tab.png["BlueXP 分類儀表板中原則索引標籤的螢幕擷取畫面。"]
 
 此外、原則會顯示在「調查」頁面的篩選器清單中。
 
@@ -76,7 +76,7 @@ image:screenshot_compliance_save_highlight.png["顯示如何設定原則並加�
 
 == 發現不符合法規的資料時傳送電子郵件警示
 
-Cloud Data Sense可在特定重要原則傳回結果時、傳送電子郵件警示給您帳戶中的BluXP使用者、以便您取得通知來保護資料。您可以選擇每天、每週或每月傳送電子郵件通知。您也可以選擇將電子郵件警示傳送至任何其他電子郵件地址（最多20個電子郵件地址）、而非在您的BlueXP帳戶中。
+BlueXP 分類可在某些關鍵原則傳回結果時、將電子郵件警示傳送給帳戶中的 BlueXP 使用者、讓您收到保護資料的通知。您可以選擇每天、每週或每月傳送電子郵件通知。您也可以選擇將電子郵件警示傳送至任何其他電子郵件地址（最多20個電子郵件地址）、而非在您的BlueXP帳戶中。
 
 您可以在建立原則或編輯任何原則時設定此設定。
 
@@ -106,7 +106,7 @@ image:screenshot_compliance_add_email_alert_2.png["螢幕快照顯示如何選�
 
 == 使用原則自動刪除來源檔案
 
-您可以建立自訂原則來刪除符合原則的檔案。例如、您可能想要刪除包含敏感資訊且在過去30天內由Data Sense發現的檔案。
+您可以建立自訂原則來刪除符合原則的檔案。例如、您可能想要刪除包含敏感資訊、並在過去 30 天內被 BlueXP 分類發現的檔案。
 
 只有帳戶管理員可以建立原則來自動刪除檔案。
 
@@ -139,7 +139,7 @@ image:screenshot_compliance_delete_files_using_policies.png["顯示如何設定�
 
 您可以將AIP標籤指派給符合原則條件的所有檔案。您可以在建立原則時指定AIP標籤、也可以在編輯任何原則時新增標籤。
 
-隨著Cloud Data Sense掃描檔案、檔案中會持續新增或更新標籤。
+當 BlueXP 分類掃描您的檔案時、標籤會在檔案中持續新增或更新。
 
 根據標籤是否已套用至檔案、以及標籤的分類層級、變更標籤時會採取下列動作：
 
@@ -220,7 +220,7 @@ image:screenshot_compliance_edit_policy_query.png["顯示如何變更篩選設�
 
 == 預先定義原則的清單
 
-Cloud Data Sense提供下列系統定義原則：
+BlueXP 分類提供下列系統定義原則：
 
 [cols="25,40,40"]
 |===

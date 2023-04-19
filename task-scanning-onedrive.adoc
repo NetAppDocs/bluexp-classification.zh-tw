@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-onedrive.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, Data Sense 
-summary: 請完成幾個步驟、以Cloud Data Sense開始掃描使用者OneDrive資料夾中的檔案。 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
+summary: 完成幾個步驟、開始使用 BlueXP 分類、掃描使用者 OneDrive 資料夾中的檔案。 
 ---
 = 正在掃描 OneDrive 帳戶
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 請完成幾個步驟、以Cloud Data Sense開始掃描使用者OneDriv
 
 
 [role="lead"]
-請完成幾個步驟、以Cloud Data Sense開始掃描使用者OneDrive資料夾中的檔案。
+完成幾個步驟、開始使用 BlueXP 分類、掃描使用者 OneDrive 資料夾中的檔案。
 
 
 
@@ -26,9 +26,9 @@ summary: 請完成幾個步驟、以Cloud Data Sense開始掃描使用者OneDriv
 [role="quick-margin-para"]
 請確認您擁有登入 OneDrive 帳戶的管理認證。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 新增 OneDrive 帳戶
 [role="quick-margin-para"]
@@ -42,7 +42,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 == 檢閱OneDrive要求
 
-請先檢閱下列先決條件、確定您擁有支援的組態、然後再啟用Cloud Data Sense。
+在啟用 BlueXP 分類之前、請先檢閱下列先決條件、確定您已擁有支援的組態。
 
 * 您必須擁有OneDrive for Business帳戶的管理員登入認證、才能提供使用者檔案的讀取存取權。
 * 您需要一份以行分隔的電子郵件地址清單、列出您要掃描OneDrive資料夾的所有使用者。
@@ -50,13 +50,13 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 
 
-== 部署Cloud Data Sense執行個體
+== 部署 BlueXP 分類執行個體
 
-如果尚未部署執行個體、請部署Cloud Data Sense。
+如果尚未部署執行個體、請部署 BlueXP 分類。
 
-資料感測可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
+BlueXP 分類可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
 
-只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 
 
 
@@ -70,7 +70,7 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 image:screenshot_compliance_add_onedrive_button.png["「掃描組態」頁面的快照、您可在其中按一下「新增 OneDrive 」按鈕。"]
 
 . 在「新增 OneDrive 帳戶」對話方塊中、按一下 * 「登入 OneDrive* 」。
-. 在顯示的Microsoft頁面中、選取OneDrive帳戶並輸入所需的管理使用者和密碼、然後按一下*接受*、以允許Cloud Data Sense從此帳戶讀取資料。
+. 在出現的 Microsoft 頁面中、選取 OneDrive 帳戶並輸入所需的管理員使用者和密碼、然後按一下 * 接受 * 、允許 BlueXP 分類從這個帳戶讀取資料。
 
 
 OneDrive 帳戶會新增至工作環境清單。
@@ -79,7 +79,7 @@ OneDrive 帳戶會新增至工作環境清單。
 
 == 將 OneDrive 使用者新增至法規遵循掃描
 
-您可以新增個別OneDrive使用者或所有OneDrive使用者、以便Cloud Data Sense掃描他們的檔案。
+您可以新增個別 OneDrive 使用者或您所有的 OneDrive 使用者、以便以 BlueXP 分類來掃描其檔案。
 
 .步驟
 . 在「_Configuration」頁面中、按一下OneDrive帳戶的*組態*按鈕。
@@ -124,7 +124,7 @@ image:screenshot_compliance_onedrive_add_email_addresses.png["「新增 OneDrive
 
 
 .結果
-Cloud Data Sense會開始掃描您所新增使用者的檔案、結果會顯示在儀表板和其他位置。
+BlueXP 分類會開始掃描您新增之使用者的檔案、結果會顯示在儀表板和其他位置。
 
 
 
@@ -134,4 +134,4 @@ Cloud Data Sense會開始掃描您所新增使用者的檔案、結果會顯示�
 
 image:screenshot_compliance_onedrive_remove_user.png["顯示如何移除單一使用者檔案的快照。"]
 
-請注意、您可以 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-cloud-data-sense["從Data Sense刪除整個OneDrive帳戶"] 如果您不想再從OneDrive帳戶掃描任何使用者資料、
+請注意、您可以 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["從 BlueXP 分類中刪除整個 OneDrive 帳戶"] 如果您不想再從OneDrive帳戶掃描任何使用者資料、

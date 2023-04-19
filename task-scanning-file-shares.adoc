@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-scanning-file-shares.html 
-keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, Data Sense 
-summary: 請完成幾個步驟、直接掃描非NetApp NFS或CIFS檔案與Cloud Data Sense共享區。這些檔案共用區可位於內部部署或雲端。 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
+summary: 請完成幾個步驟、開始直接掃描非 NetApp NFS 或 CIFS 檔案與 BlueXP 分類共用。這些檔案共用區可位於內部部署或雲端。 
 ---
 = 正在掃描檔案共用
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 請完成幾個步驟、直接掃描非NetApp NFS或CIFS檔案與Cloud 
 
 
 [role="lead"]
-請完成幾個步驟、直接掃描非NetApp NFS或CIFS檔案與Cloud Data Sense共享區。這些檔案共用區可位於內部部署或雲端。
+請完成幾個步驟、開始直接掃描非 NetApp NFS 或 CIFS 檔案與 BlueXP 分類共用。這些檔案共用區可位於內部部署或雲端。
 
 
 
@@ -26,9 +26,9 @@ summary: 請完成幾個步驟、直接掃描非NetApp NFS或CIFS檔案與Cloud 
 [role="quick-margin-para"]
 若為CIFS（SMB）共用、請確定您擁有存取共用的認證資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 建立一個群組以保留檔案共用
 [role="quick-margin-para"]
@@ -42,37 +42,37 @@ link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未�
 
 == 檢閱檔案共用需求
 
-請先檢閱下列先決條件、確定您擁有支援的組態、然後再啟用Cloud Data Sense。
+在啟用 BlueXP 分類之前、請先檢閱下列先決條件、確定您已擁有支援的組態。
 
 * 共享區可在任何地方代管、包括雲端或內部部署。在大多數情況下、這些是位於非 NetApp 儲存系統上的檔案共用。但是、舊型 NetApp 7-Mode 儲存系統的 CIFS 共用可以掃描為檔案共用。
 +
-Data Sense 無法從 7-Mode 系統擷取權限或上次存取時間。此外、已知 Linux 不支援在 SMB 第 2 版上掛載 CIFS 共享區的問題。
+請注意、 BlueXP 分類無法從 7-Mode 系統擷取權限或「上次存取時間」。此外、由於某些 Linux 版本與 7-Mode 系統上的 CIFS 共用存在已知問題、因此您必須將共用設定為僅使用啟用了 NTLM 驗證的 SMB v1 。
 
-* Data Sense執行個體與共用區之間必須有網路連線。
-* 請確定這些連接埠已開放給Data Sense執行個體：
+* BlueXP 分類執行個體與共用區之間需要有網路連線。
+* 請確定這些連接埠已開放給 BlueXP 分類執行個體：
 +
 ** NFS：連接埠111和2049。
 ** 適用於CIFS：連接埠139和445。
 
 
 * 您需要以「<host_name>//<share_path>'格式新增的共用清單。您可以個別輸入共用、也可以提供要掃描之檔案共用的行分隔清單。
-* 若為CIFS（SMB）共用、請確定您擁有Active Directory認證、以提供共用的讀取存取權。如果Cloud Data Sense需要掃描任何需要提高權限的資料、則首選管理認證。
+* 若為CIFS（SMB）共用、請確定您擁有Active Directory認證、以提供共用的讀取存取權。如果 BlueXP 分類需要掃描任何需要提高權限的資料、則建議使用管理認證。
 +
-如果您想要確保「上次存取時間」的檔案不會因資料感知分類掃描而改變、建議使用者在CIFS中擁有寫入屬性權限、或在NFS中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
+如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
 
 
 
 
 
-== 部署Cloud Data Sense執行個體
+== 部署 BlueXP 分類執行個體
 
-如果尚未部署執行個體、請部署Cloud Data Sense。
+如果尚未部署執行個體、請部署 BlueXP 分類。
 
-如果您要掃描可透過網際網路存取的非NetApp NFS或CIFS檔案共用、您可以 link:task-deploy-cloud-compliance.html["在雲端部署Cloud Data Sense"^] 或 link:task-deploy-compliance-onprem.html["在內部部署位置部署Data Sense、並可存取網際網路"^]。
+如果您要掃描可透過網際網路存取的非NetApp NFS或CIFS檔案共用、您可以 link:task-deploy-cloud-compliance.html["在雲端部署 BlueXP 分類"^] 或 link:task-deploy-compliance-onprem.html["在內部部署位置部署 BlueXP 分類、以便存取網際網路"^]。
 
-如果您要掃描安裝在無法存取網際網路的暗點中的非NetApp NFS或CIFS檔案共用、您必須執行 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署Cloud Data Sense"^]。這也需要在同一個內部部署位置部署BlueXP Connector。
+如果您要掃描安裝在無法存取網際網路的暗點中的非NetApp NFS或CIFS檔案共用、您必須執行 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署 BlueXP 分類"^]。這也需要在同一個內部部署位置部署BlueXP Connector。
 
-只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 
 
 
@@ -96,7 +96,7 @@ image:screenshot_compliance_add_fileshares_button.png["「掃描組態」頁面�
 
 == 新增檔案共用至群組
 
-您可以將檔案共用新增至檔案共用群組、以便Cloud Data Sense掃描這些共用中的檔案。您可以使用「<host_name>//<share_path>」格式新增共用。
+您可以將檔案共用新增至「檔案共用群組」、以便這些共用中的檔案會由 BlueXP 分類進行掃描。您可以新增格式的共用 `<host_name>:/<share_path>`。
 
 您可以新增個別檔案共用、也可以提供要掃描之檔案共用的行分隔清單。一次最多可新增100個共用。
 
@@ -146,12 +146,12 @@ image:screenshot_compliance_fileshares_add_file_shares.png["「新增檔案共�
 | 停用掃描檔案共用區 | 按一下「*關*」 
 |===
 +
-預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統就不會掃描檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。 link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
+預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。 link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
 
 
 
 .結果
-Cloud Data Sense會開始掃描您新增檔案共用中的檔案、結果會顯示在儀表板和其他位置。
+BlueXP 分類會開始掃描您新增檔案共用中的檔案、結果會顯示在儀表板和其他位置。
 
 
 

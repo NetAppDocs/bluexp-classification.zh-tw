@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-add-active-directory-datasense.html 
 keywords: active directory, ad, data sense, cloud data sense 
-summary: 您可以將全域Active Directory與Cloud Data Sense整合、以增強Data Sense針對檔案擁有者及哪些使用者和群組有權存取您檔案的結果。 
+summary: 您可以將全域 Active Directory 與 BlueXP 分類整合、以強化 BlueXP 分類報告的檔案擁有者、以及哪些使用者和群組可以存取您的檔案的結果。 
 ---
-= 將Active Directory與Cloud Data Sense整合
+= 將 Active Directory 與 BlueXP 分類整合
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: 您可以將全域Active Directory與Cloud Data Sense整合、以增強
 
 
 [role="lead"]
-您可以將全域Active Directory與Cloud Data Sense整合、以增強Data Sense針對檔案擁有者及哪些使用者和群組有權存取您檔案的結果。
+您可以將全域 Active Directory 與 BlueXP 分類整合、以強化 BlueXP 分類報告的檔案擁有者、以及哪些使用者和群組可以存取您的檔案的結果。
 
-當您設定特定資料來源（如下所列）時、您需要輸入Active Directory認證資料、以便Data Sense能夠掃描CIFS磁碟區。這項整合提供資料認知功能、可讓檔案擁有者和這些資料來源中資料的權限詳細資料。針對這些資料來源輸入的Active Directory可能與您在此輸入的全域Active Directory認證不同。Data Sense會在所有整合式Active Directory中尋找使用者與權限詳細資料。
+設定某些資料來源（如下所列）時、您需要輸入 Active Directory 認證、以便 BlueXP 分類掃描 CIFS 磁碟區。這項整合可提供 BlueXP 分類、其中包含檔案擁有者和位於這些資料來源中資料的權限詳細資料。針對這些資料來源輸入的Active Directory可能與您在此輸入的全域Active Directory認證不同。BlueXP 分類將在所有整合式 Active Directory 中查看使用者和權限詳細資料。
 
-此整合可在Data意義上於下列位置提供額外資訊：
+這項整合在 BlueXP 分類的下列位置提供其他資訊：
 
 * 您可以使用「檔案擁有者」 link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["篩選器"] 並在「調查」窗格中查看檔案中繼資料中的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。
 * 您可以看到 link:task-investigate-data.html#viewing-permissions-for-files-and-directories["完整檔案權限"] 按一下「檢視所有權限」按鈕、即可查看每個檔案和目錄。
@@ -32,7 +32,7 @@ NOTE: 來自未知網域的本機使用者SID和SID不會轉譯為實際的使�
 
 == 支援的資料來源
 
-Active Directory與Cloud Data Sense的整合可識別下列資料來源中的資料：
+Active Directory 與 BlueXP 分類的整合可從下列資料來源識別資料：
 
 * 內部部署ONTAP 的作業系統
 * Cloud Volumes ONTAP
@@ -49,11 +49,11 @@ Active Directory與Cloud Data Sense的整合可識別下列資料來源中的資
 
 == 連線至Active Directory伺服器
 
-在您部署Data Sense並啟動資料來源掃描之後、就可以將Data Sense與Active Directory整合。Active Directory可使用DNS伺服器IP位址或LDAP伺服器IP位址來存取。
+部署 BlueXP 分類並在資料來源上啟動掃描之後、您可以將 BlueXP 分類與 Active Directory 整合。Active Directory可使用DNS伺服器IP位址或LDAP伺服器IP位址來存取。
 
-Active Directory認證可以是唯讀的、但提供管理認證可確保Data Sense能夠讀取任何需要提高權限的資料。認證資料儲存在Cloud Data Sense執行個體上。
+Active Directory 認證可以是唯讀的、但提供管理認證可確保 BlueXP 分類能夠讀取任何需要提高權限的資料。認證會儲存在 BlueXP 分類執行個體上。
 
-對於CIFS磁碟區/檔案共用、如果您想要確保「上次存取時間」由「資料感測」分類掃描而維持不變、建議使用者具有「寫入屬性」權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
+對於 CIFS 磁碟區 / 檔案共用、如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、我們建議使用者擁有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
 
 .需求
 * 您必須已為公司中的使用者設定Active Directory。
@@ -72,7 +72,7 @@ LDAP伺服器IP位址或多個IP位址
 ** LDAP伺服器連接埠（LDAP一般為389、安全LDAP一般為636）
 
 
-* Data Sense執行個體必須開啟下列連接埠、才能進行傳出通訊：
+* BlueXP 分類執行個體必須開啟下列連接埠才能進行輸出通訊：
 +
 [cols="20,20,30,30"]
 |===
@@ -93,22 +93,22 @@ LDAP伺服器IP位址或多個IP位址
 
 
 .步驟
-. 在「Cloud Data Sense Configuration」（雲端資料感測組態）頁面中、按一下「* Add Active Directory *」（*
+. 在 BlueXP 分類組態頁面中、按一下 * 新增 Active Directory* 。
 +
-image:screenshot_compliance_integrate_active_directory.png["快照顯示按一下按鈕、將Active Directory伺服器新增至Cloud Data Sense。"]
+image:screenshot_compliance_integrate_active_directory.png["螢幕擷取畫面顯示按一下按鈕、將 Active Directory 伺服器新增至 BlueXP 分類。"]
 
 . 在「連線至Active Directory」對話方塊中、輸入Active Directory詳細資料、然後按一下「*連線*」。
 +
 如有需要、您可以按一下*「Add IP*（新增IP*）」來新增多個IP位址。
 
 +
-image:screenshot_compliance_active_directory_dialog.png["對話方塊的快照、您可在其中定義要與Data Sense整合的Active Directory。"]
+image:screenshot_compliance_active_directory_dialog.png["對話方塊的螢幕擷取畫面、您可在其中定義要與 BlueXP 分類整合的 Active Directory 。"]
 
 +
-Data Sense與Active Directory整合、並在「組態」頁面中新增一節。
+BlueXP 分類與 Active Directory 整合、並在「組態」頁面新增一節。
 
 +
-image:screenshot_compliance_active_directory_added.png["快照顯示整合在Data意義上的新Active Directory。"]
+image:screenshot_compliance_active_directory_added.png["顯示 BlueXP 分類中整合的新 Active Directory 的螢幕擷取畫面。"]
 
 
 

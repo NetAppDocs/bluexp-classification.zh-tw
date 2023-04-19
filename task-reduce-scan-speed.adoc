@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-reduce-scan-speed.html 
 keywords: slow scans, reduce speed 
-summary: 資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。 
+summary: 資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響很小、您可以設定 BlueXP 分類來執行「慢速」掃描。 
 ---
-= 降低資料感應掃描速度
+= 降低 BlueXP 分類掃描速度
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 資料掃描對儲存系統和資料的影響微乎其微。不過、�
 
 
 [role="lead"]
-資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響極小、您可以設定「Data Sense」（資料感測）來執行「Slow」（慢速）掃描。
+資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響很小、您可以設定 BlueXP 分類來執行「慢速」掃描。
 
 啟用時、所有資料來源都會使用慢速掃描、您無法設定單一工作環境或資料來源的慢速掃描。
 

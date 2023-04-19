@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-controlling-private-data.html 
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
-summary: 檢視組織中個人資料和敏感個人資料的詳細資料、以掌控您的私有資料。您也可以檢閱雲端資料在資料中的類別和檔案類型、以獲得可見度。 
+summary: 檢視組織中個人資料和敏感個人資料的詳細資料、以掌控您的私有資料。您也可以檢閱資料中的 BlueXP 分類類別和檔案類型、以獲得可見度。 
 ---
 = 檢視組織中儲存資料的法規遵循詳細資料
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: 檢視組織中個人資料和敏感個人資料的詳細資料、以�
 
 
 [role="lead"]
-檢視組織中個人資料和敏感個人資料的詳細資料、以掌控您的私有資料。您也可以檢閱雲端資料在資料中的類別和檔案類型、以獲得可見度。
+檢視組織中個人資料和敏感個人資料的詳細資料、以掌控您的私有資料。您也可以檢閱資料中的 BlueXP 分類類別和檔案類型、以獲得可見度。
 
 
 NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃描時可用。只有對應掃描的資料來源不會顯示檔案層級的詳細資料。
 
-根據預設、Cloud Data Sense儀表板會顯示所有工作環境和資料庫的法規遵循資料。
+根據預設、 BlueXP 分類儀表板會顯示所有工作環境和資料庫的法規遵循資料。
 
-image:screenshot_compliance_dashboard.png["Cloud Data Sense儀表板的快照"]
+image:screenshot_compliance_dashboard.png["BlueXP 分類儀表板的螢幕擷取畫面"]
 
 如果您只想查看部分工作環境的資料、 <<檢視特定工作環境的儀表板資料,選擇那些工作環境>>。
 
@@ -31,11 +31,11 @@ image:screenshot_compliance_dashboard.png["Cloud Data Sense儀表板的快照"]
 
 == 檢視包含個人資料的檔案
 
-Cloud Data Sense會自動識別資料內部的特定字詞、字串和模式（Regex）。例如、個人識別資訊（PII）、信用卡號碼、社會安全號碼、銀行帳戶號碼、密碼、 以及更多資訊。 link:reference-private-data-categories.html#types-of-personal-data["請參閱完整清單"^]。Data Sense可在個別檔案、目錄內的檔案（共享區和資料夾）和資料庫表格中識別這類資訊。
+BlueXP 分類會自動識別資料中的特定字詞、字串和模式（ Regex ）。例如、個人識別資訊（PII）、信用卡號碼、社會安全號碼、銀行帳戶號碼、密碼、 以及更多資訊。 link:reference-private-data-categories.html#types-of-personal-data["請參閱完整清單"^]。BlueXP 分類可在個別檔案、目錄內的檔案（共用和資料夾）、以及資料庫表格中識別這類資訊。
 
 此外、如果您已新增要掃描的資料庫伺服器、則「 _Data Fusion SUR__ 」功能可讓您掃描檔案、以識別資料庫中的唯一識別碼是否存在於這些檔案或其他資料庫中。請參閱 link:task-managing-data-fusion.html["使用 Data Fusion 功能新增個人資料識別碼"^] 以取得詳細資料。
 
-對於某些類型的個人資料、Data Sense會使用_特殊 警示驗證來驗證其發現結果。驗證的方式是在找到的個人資料附近尋找一或多個預先定義的關鍵字。例如、Data Sense可識別美國社會安全號碼（ SSN ）若在 SSN 旁看到鄰近的詞彙、例如 _SSN_ 或 _Social SECURITY 。 link:reference-private-data-categories.html#types-of-personal-data["個人資料表格"^] 顯示Data Sense何時使用接近驗證。
+對於某些類型的個人資料、 BlueXP 分類會使用鄰近驗證 _ 來驗證其結果。驗證的方式是在找到的個人資料附近尋找一或多個預先定義的關鍵字。例如、 BlueXP 分類可識別美國社會安全號碼（ SSN ）若在 SSN 旁看到鄰近的詞彙、例如 _SSN_ 或 _Social SECURITY 。 link:reference-private-data-categories.html#types-of-personal-data["個人資料表格"^] 顯示 BlueXP 分類何時使用接近驗證。
 
 .步驟
 . 在BlueXP左側導覽功能表中、按一下「*管理>分類*」、然後按一下「*法規遵循*」索引標籤。
@@ -63,11 +63,11 @@ image:screenshot_compliance_investigation_page_directory.png["按一下「調查
 
 == 檢視含有敏感個人資料的檔案
 
-Cloud Data Sense會自動識別特殊類型的敏感個人資訊、如隱私權法規所定義 https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR 第 9 和第 10 條"^]。例如、關於個人健康、族群或性取向的資訊。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["請參閱完整清單"^]。Data Sense可在個別檔案、目錄內的檔案（共享區和資料夾）和資料庫表格中識別這類資訊。
+BlueXP 分類可自動識別機密個人資訊的特殊類型、如隱私權法規所定義 https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR 第 9 和第 10 條"^]。例如、關於個人健康、族群或性取向的資訊。 link:reference-private-data-categories.html#types-of-sensitive-personal-data["請參閱完整清單"^]。BlueXP 分類可在個別檔案、目錄內的檔案（共用和資料夾）、以及資料庫表格中識別這類資訊。
 
-Cloud Data Sense使用人工智慧（AI）、自然語言處理（NLP）、機器學習（ML）和認知運算（CC）來瞭解其掃描內容的意義、以便擷取實體並據此分類。
+BlueXP 分類使用人工智慧（ AI ）、自然語言處理（ NLP ）、機器學習（ ML ）和認知運算（ CC ）來瞭解其所掃描內容的意義、以便擷取實體並據此分類。
 
-例如、一個敏感的 GDPR 資料類別是「族群」。由於其NLP能力、Data Sense可區分「George is墨西哥」（表示GDPR第9條所述的敏感資料）與「George is墨西哥食品」（George正在吃墨西哥食品）這兩個句子之間的差異。
+例如、一個敏感的 GDPR 資料類別是「族群」。由於 BlueXP 的 NLP 能力、因此可以區分「 George is Mexic（ George is Mexicas ）」（表示 GDPR 第 9 條所指定的敏感資料）與「 George 正在吃墨西哥菜」的句子之間的差異。
 
 
 NOTE: 掃描敏感的個人資料時、僅支援英文。稍後將新增更多語言支援。
@@ -89,7 +89,7 @@ image:screenshot_sensitive_personal_files.gif["敏感個人檔案對話方塊的
 
 == 依類別檢視檔案
 
-Cloud Data Sense會將掃描的資料分成不同類型的類別。類別是以 AI 分析每個檔案的內容和中繼資料為基礎的主題。 link:reference-private-data-categories.html#types-of-categories["請參閱類別清單"^]。
+BlueXP 分類會將掃描的資料分成不同類型的類別。類別是以 AI 分析每個檔案的內容和中繼資料為基礎的主題。 link:reference-private-data-categories.html#types-of-categories["請參閱類別清單"^]。
 
 類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、簡歷或員工合約等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。
 
@@ -109,7 +109,7 @@ image:screenshot_categories.gif["類別對話方塊的快照、您可在其中�
 
 == 依檔案類型檢視檔案
 
-Cloud Data Sense會將掃描的資料取走、並依檔案類型加以細分。檢閱檔案類型有助於控制敏感資料、因為您可能會發現某些檔案類型儲存不正確。 link:reference-private-data-categories.html#types-of-files["請參閱檔案類型清單"^]。
+BlueXP 分類會根據檔案類型來記錄掃描的資料、並加以細分。檢閱檔案類型有助於控制敏感資料、因為您可能會發現某些檔案類型儲存不正確。 link:reference-private-data-categories.html#types-of-files["請參閱檔案類型清單"^]。
 
 例如、您可能會儲存 CAD 檔案、其中包含有關組織的非常敏感資訊。如果機密資料不安全、您可以限制權限或將檔案移至其他位置、以取得機密資料的控制權。
 
@@ -126,9 +126,9 @@ image:screenshot_file_types.gif["檔案類型對話方塊的快照、您可以�
 
 == 檢視特定工作環境的儀表板資料
 
-您可以篩選Cloud Data Sense儀表板的內容、查看所有工作環境和資料庫的法規遵循資料、或僅查看特定工作環境的法規遵循資料。
+您可以篩選 BlueXP 分類儀表板的內容、查看所有工作環境和資料庫的法規遵循資料、或僅查看特定工作環境的法規遵循資料。
 
-當您篩選儀表板時、Data Sense會將法規遵循資料和報告範圍僅限於您所選的工作環境。
+當您篩選儀表板時、 BlueXP 分類會將法規遵循資料範圍化、並僅報告給您選取的工作環境。
 
 .步驟
 . 按一下篩選下拉式清單、選取您要檢視資料的工作環境、然後按一下 * 檢視 * 。

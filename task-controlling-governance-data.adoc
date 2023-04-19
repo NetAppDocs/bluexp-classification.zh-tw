@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
 keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
-summary: 控制與組織儲存資源資料相關的成本。Cloud Data Sense可識別系統中的過時資料、非商業資料、重複檔案和非常大的檔案數量、讓您決定要移除或分層將部分檔案移至較便宜的物件儲存設備。 
+summary: 控制與組織儲存資源資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。 
 ---
 = 檢視組織中儲存資料的治理詳細資料
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 控制與組織儲存資源資料相關的成本。Cloud Data Sense可�
 
 
 [role="lead"]
-控制與組織儲存資源資料相關的成本。Cloud Data Sense可識別系統中的過時資料、非商業資料、重複檔案和非常大的檔案數量、讓您決定要移除或分層將部分檔案移至較便宜的物件儲存設備。
+控制與組織儲存資源資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。
 
 此外、如果您計畫將資料從內部部署位置移轉至雲端、您可以在移動資料之前、先檢視資料大小、以及是否有任何資料包含敏感資訊。
 
@@ -24,7 +24,7 @@ summary: 控制與組織儲存資源資料相關的成本。Cloud Data Sense可�
 
 「治理」儀表板提供相關資訊、讓您提高效率、並控制儲存在儲存資源上的資料相關成本。
 
-image:screenshot_compliance_governance_dashboard.png["Cloud Data Sense管理儀表板的快照。"]
+image:screenshot_compliance_governance_dashboard.png["BlueXP 分類治理儀表板的螢幕擷取畫面。"]
 
 
 
@@ -92,7 +92,7 @@ image:screenshot_compliance_sensitive_data.png["當您將游標置於此面板�
 
 您可以按一下您感興趣的區塊、在「調查」頁面中檢視受影響檔案的篩選結果、以便進一步調查。
 
-如果您尚未將身分識別服務與Data Sense整合、則此面板不會顯示任何資料。 link:task-add-active-directory-datasense.html["瞭解如何將Active Directory服務與Data Sense整合"^]。
+如果您尚未將身分識別服務與 BlueXP 分類整合、則此面板不會顯示任何資料。 link:task-add-active-directory-datasense.html["瞭解如何將 Active Directory 服務與 BlueXP 分類整合"^]。
 
 
 TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔案。目前不支援資料庫、 Google Drive 、 Amazon S3 和一般物件儲存。
@@ -185,7 +185,7 @@ TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔�
 
 === 產生資料對應報告
 
-您可以從 Data Sense 的 Governance （治理）索引標籤產生此報告。
+您可以從 BlueXP 分類中的「治理」索引標籤產生此報告。
 
 .步驟
 . 在BlueXP功能表中、按一下*管理>分類*。
@@ -196,9 +196,9 @@ image:screenshot_compliance_data_mapping_report_button.png["「管理儀表板�
 
 
 .結果
-Data Sense 會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
+BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
 
-請注意、您可以按一下、從「資料感知」頁面頂端自訂顯示在報告第一頁上的公司名稱 image:screenshot_gallery_options.gif["「更多」按鈕"] 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。
+請注意、您可以按一下、從 BlueXP 分類頁面頂端自訂顯示在報告第一頁上的公司名稱 image:screenshot_gallery_options.gif["「更多」按鈕"] 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。
 
 
 
@@ -230,7 +230,7 @@ Data Sense 會產生 PDF 報告、您可以視需要檢閱並傳送給其他群�
 
 === 產生資料探索評估報告
 
-您可以從 Data Sense 的 Governance （治理）索引標籤產生此報告。
+您可以從 BlueXP 分類中的「治理」索引標籤產生此報告。
 
 .步驟
 . 在BlueXP功能表中、按一下*管理>分類*。
@@ -241,6 +241,6 @@ image:screenshot_compliance_data_discovery_report_button.png["Governance Dashboa
 
 
 .結果
-Data Sense 會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
+BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
 
-請注意、您可以按一下、從「資料感知」頁面頂端自訂顯示在報告第一頁上的公司名稱 image:screenshot_gallery_options.gif["「更多」按鈕"] 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。
+請注意、您可以按一下、從 BlueXP 分類頁面頂端自訂顯示在報告第一頁上的公司名稱 image:screenshot_gallery_options.gif["「更多」按鈕"] 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。

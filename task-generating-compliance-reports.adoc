@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
 keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file 
-summary: Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料隱私權方案狀態。 
+summary: BlueXP 分類提供的報告可讓您用來更深入瞭解組織資料隱私權方案的狀態。 
 ---
 = 檢視法規遵循報告
 :hardbreaks:
@@ -14,14 +14,14 @@ summary: Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料�
 
 
 [role="lead"]
-Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料隱私權方案狀態。
+BlueXP 分類提供的報告可讓您用來更深入瞭解組織資料隱私權方案的狀態。
 
-根據預設、Cloud Data Sense儀表板會顯示所有工作環境、資料庫和資料來源的法規遵循與治理資料。如果您只想檢視某些工作環境中含有資料的報告、 <<選擇報告的工作環境,選擇那些工作環境>>。
+根據預設、 BlueXP 分類儀表板會顯示所有工作環境、資料庫和資料來源的法規遵循與治理資料。如果您只想檢視某些工作環境中含有資料的報告、 <<選擇報告的工作環境,選擇那些工作環境>>。
 
 [NOTE]
 ====
 * 本節所述的報告僅在您選擇對資料來源執行完整分類掃描時可用。具有純對應掃描的資料來源只能產生資料對應報告。
-* NetApp無法保證Cloud Data有意義的個人資料和敏感個人資料100%準確無誤。您應該一律檢閱資料來驗證資訊。
+* NetApp 無法保證 BlueXP 分類所識別的個人資料和敏感個人資料的 100% 準確度。您應該一律檢閱資料來驗證資訊。
 
 
 ====
@@ -40,7 +40,7 @@ Cloud Data Sense提供的報告可讓您更深入瞭解組織的資料隱私權�
 
 === 產生隱私風險評估報告
 
-移至「Data Sense（資料感測）」索引標籤以產生報告。
+前往「 Compliance 」（法規遵循）索引標籤以產生報告。
 
 .步驟
 . 在BlueXP功能表中、按一下*管理>分類*。
@@ -51,13 +51,13 @@ image:screenshot_privacy_risk_assessment.gif["BlueXP中法規遵循索引標籤�
 
 
 .結果
-Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給其他群組。
+BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
 
 
 
 === 嚴重性分數
 
-Cloud Data Sense會根據三個變數來計算隱私風險評估報告的嚴重性分數：
+BlueXP 分類會根據三個變數來計算隱私風險評估報告的嚴重性分數：
 
 * 所有資料中的個人資料百分比。
 * 所有資料中敏感個人資料的百分比。
@@ -120,7 +120,7 @@ Cloud Data Sense會根據三個變數來計算隱私風險評估報告的嚴重�
 
 === 產生 PCI DSS 報告
 
-移至「Data Sense（資料感測）」索引標籤以產生報告。
+前往「 Compliance 」（法規遵循）索引標籤以產生報告。
 
 .步驟
 . 在BlueXP功能表中、按一下*管理>分類*。
@@ -131,13 +131,13 @@ image:screenshot_pci_dss.gif["BlueXP中法規遵循索引標籤的螢幕擷取�
 
 
 .結果
-Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給其他群組。
+BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
 
 
 
 == HIPAA 報告
 
-健康保險流通與責任法案（ HIPAA ）報告可協助您識別含有健全狀況資訊的檔案。其設計旨在協助貴組織遵守HIPAA資料隱私權法律。Cloud Data Sense所需的資訊包括：
+健康保險流通與責任法案（ HIPAA ）報告可協助您識別含有健全狀況資訊的檔案。其設計旨在協助貴組織遵守HIPAA資料隱私權法律。BlueXP 分類的資訊包括：
 
 * 健全狀況參考模式
 * ICD-10-CM 醫療代碼
@@ -159,7 +159,7 @@ Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給�
 
 === 產生 HIPAA 報告
 
-移至「Data Sense（資料感測）」索引標籤以產生報告。
+前往「 Compliance 」（法規遵循）索引標籤以產生報告。
 
 .步驟
 . 在BlueXP功能表中、按一下*管理>分類*。
@@ -170,7 +170,7 @@ image:screenshot_hipaa.gif["BlueXP中法規遵循索引標籤的螢幕擷取畫�
 
 
 .結果
-Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給其他群組。
+BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
 
 
 
@@ -182,9 +182,9 @@ Cloud Data Sense會產生一份PDF報告、您可以視需要檢閱並傳送給�
 
 
 
-=== Cloud Data Sense如何協助您回應DSAR？
+=== BlueXP 分類如何協助您回應 DSAR ？
 
-當您執行資料主旨搜尋時、Cloud Data Sense會尋找其中含有該人員名稱或識別碼的所有檔案、儲存區、OneDrive和SharePoint帳戶。Data Sense會檢查最新的預先索引資料、找出名稱或識別碼。它不會啟動新的掃描。
+當您執行資料主旨搜尋時、 BlueXP 分類會尋找其中包含該人員名稱或識別碼的所有檔案、儲存區、 OneDrive 和 SharePoint 帳戶。BlueXP 分類會檢查最新的預先索引資料、以找出名稱或識別碼。它不會啟動新的掃描。
 
 搜尋完成後、您就可以下載資料主旨存取要求報告的檔案清單。報告會彙總資料的深入見解、並將其納入法律條款、以便您寄回給該人員。
 
@@ -212,7 +212,7 @@ image:screenshot_dsar_search.gif["顯示搜尋 DSAR 名稱「 John Doe 」的快
 
 . 請選擇下列其中一個可用選項：
 +
-** * 下載 DSAR 報告 * ：您可傳送至資料主旨的存取要求正式回應。此報告會根據Cloud Data Sense在資料主題上找到的資料、並設計為作為範本、提供自動產生的資訊。您應先填寫表單並在內部審查、再將其傳送至資料主旨。
+** * 下載 DSAR 報告 * ：您可傳送至資料主旨的存取要求正式回應。此報告包含根據資料主題上的 BlueXP 分類資料自動產生的資訊、並設計為作為範本使用。您應先填寫表單並在內部審查、再將其傳送至資料主旨。
 ** * 調查結果 * ：此頁面可讓您搜尋、排序、擴充特定檔案的詳細資料、以及下載檔案清單、藉此調查資料。
 +
 
@@ -226,9 +226,9 @@ NOTE: 如果結果超過 10 、 000 個、則檔案清單中只會出現前 10 �
 
 == 選擇報告的工作環境
 
-您可以篩選Cloud Data Sense Compliance儀表板的內容、以查看所有工作環境和資料庫、或只是特定工作環境的法規遵循資料。
+您可以篩選 BlueXP 分類規範儀表板的內容、查看所有工作環境和資料庫的法規遵循資料、或僅查看特定工作環境的法規遵循資料。
 
-當您篩選儀表板時、Data Sense會將法規遵循資料和報告範圍僅限於您所選的工作環境。
+當您篩選儀表板時、 BlueXP 分類會將法規遵循資料範圍化、並僅報告給您選取的工作環境。
 
 .步驟
 . 按一下篩選下拉式清單、選取您要檢視資料的工作環境、然後按一下 * 檢視 * 。

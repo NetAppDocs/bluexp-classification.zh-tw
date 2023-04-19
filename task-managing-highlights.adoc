@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-managing-highlights.html 
 keywords: compliance, privacy, filter data, delete files, move files, copy files, clone files, sync files, data sense, migration 
-summary: Cloud Data Sense提供多種方法來管理您的私有資料。有些功能可讓您更輕鬆地準備資料移轉、而其他功能則可讓您變更資料。 
+summary: BlueXP 分類提供多種方法來管理您的私有資料。有些功能可讓您更輕鬆地準備資料移轉、而其他功能則可讓您變更資料。 
 ---
 = 管理您的私有資料
 :hardbreaks:
@@ -14,12 +14,12 @@ summary: Cloud Data Sense提供多種方法來管理您的私有資料。有些�
 
 
 [role="lead"]
-Cloud Data Sense提供多種方法來管理您的私有資料。有些功能可讓您更輕鬆地準備資料移轉、而其他功能則可讓您變更資料。
+BlueXP 分類提供多種方法來管理您的私有資料。有些功能可讓您更輕鬆地準備資料移轉、而其他功能則可讓您變更資料。
 
 * 如果您想要複製特定資料並將其移至不同的NFS位置、可以將檔案複製到目的地NFS共用。
 * 您可以將ONTAP 某個實體磁碟區複製到新的磁碟區、但只能在新的複製磁碟區中包含來自來源磁碟區的選定檔案。如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。
 * 您可以將檔案從來源儲存庫複製並同步處理至特定目的地位置的目錄。當您將資料從一個來源系統移轉至另一個來源系統、但來源檔案仍有一些最終活動時、此功能非常實用。
-* 您可以將Data Sense正在掃描的來源檔案移至任何NFS共用區。
+* 您可以將 BlueXP 分類掃描的來源檔案移至任何 NFS 共用。
 * 您可以刪除看起來不安全或風險太高的檔案、使其留在儲存系統中、或是您已識別為重複的檔案。
 
 
@@ -34,7 +34,7 @@ Cloud Data Sense提供多種方法來管理您的私有資料。有些功能可�
 
 == 正在複製來源檔案
 
-您可以複製Data Sense正在掃描的任何來源檔案。複本作業有三種類型、取決於您要完成的作業：
+您可以複製 BlueXP 分類正在掃描的任何來源檔案。複本作業有三種類型、取決於您要完成的作業：
 
 * *將檔案*從相同或不同的磁碟區或資料來源複製到目的地NFS共用區。
 +
@@ -46,7 +46,7 @@ Cloud Data Sense提供多種方法來管理您的私有資料。有些功能可�
 
 * *將檔案*從單一來源儲存庫（ONTAP 例如、S庫、S3儲存庫、NFS共用等）複製並同步到特定目的地（目標）位置的目錄。
 +
-當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。初始複本之後、服務會根據您設定的排程同步任何變更的資料。此動作使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync"^] 將資料從來源複製及同步至目標的功能。
+當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。初始複本之後、服務會根據您設定的排程同步任何變更的資料。此動作使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXP 複製與同步"^] 將資料從來源複製及同步至目標的功能。
 
 
 
@@ -54,14 +54,14 @@ Cloud Data Sense提供多種方法來管理您的私有資料。有些功能可�
 
 === 將來源檔案複製到NFS共用區
 
-您可以將Data Sense正在掃描的來源檔案複製到任何NFS共用區。NFS共用區不需要與Data Sense整合、您只需要知道NFS共用區的名稱、所有選取的檔案都會以「<host_name>//<share_path>」格式複製到該共用區。
+您可以將 BlueXP 分類掃描的來源檔案複製到任何 NFS 共用。NFS 共用不需要與 BlueXP 分類整合、您只需要知道 NFS 共用的名稱、所有選取的檔案都會以該格式複製 `<host_name>:/<share_path>`。
 
 
 TIP: 您無法複製位於資料庫中的檔案。
 
 .需求
 * 您必須具有「帳戶管理」或「工作區管理」角色、才能複製檔案。
-* 複製檔案需要目的地NFS共用允許從Data Sense執行個體存取。
+* 複製檔案時、目的地 NFS 共用區必須允許從 BlueXP 分類執行個體存取。
 * 您一次可以複製1到100、000個檔案。
 
 
@@ -96,7 +96,7 @@ image:screenshot_compliance_copy_file.png["快照顯示從「資料調查」頁�
 
 === 將Volume資料複製到新Volume
 
-您可以使用ONTAP NetApp _FlexClone®功能、複製Data Sense正在掃描的現有的SflexfVolume。這可讓您快速複製磁碟區、同時只包含您選取的檔案。如果您正在移轉資料、但想要從原始Volume中排除特定檔案、或是想要建立用於測試的磁碟區複本、則此功能非常實用。
+您可以使用 NetApp _FlexClone _ 功能、複製 BlueXP 分類正在掃描的現有 ONTAP Volume 。這可讓您快速複製磁碟區、同時只包含您選取的檔案。如果您正在移轉資料、但想要從原始Volume中排除特定檔案、或是想要建立用於測試的磁碟區複本、則此功能非常實用。
 
 新磁碟區會建立在與來源磁碟區相同的集合體中。在開始執行此工作之前、請先確定集合中有足夠的空間來容納這個新磁碟區。如有必要、請聯絡您的儲存管理員。
 
@@ -143,15 +143,15 @@ image:screenshot_compliance_clone_files_dialog.png["顯示「複製檔案」對�
 
 您可以在中檢視複製作業的進度 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
 
-如果您一開始為來源磁碟區所在的工作環境啟用「Data」（資料感測）、選擇*「Map all Volumes」（對應所有磁碟區）或*「Map &分類所有磁碟區」*、則「Data Sense」（資料感測）會自動掃描新的複製磁碟區。如果您一開始並未使用上述任一選項、則如果您想要掃描此新Volume、就必須執行此操作 link:task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes["手動在磁碟區上啟用掃描"]。
+如果您在原始磁碟區所在的工作環境中啟用 BlueXP 分類時、一開始選取 * 對應所有磁碟區 * 或 * 對應並分類所有磁碟區 * 、則 BlueXP 分類會自動掃描新的複製磁碟區。如果您一開始並未使用上述任一選項、則如果您想要掃描此新Volume、就必須執行此操作 link:task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes["手動在磁碟區上啟用掃描"]。
 
 
 
 === 將來源檔案複製並同步至目標系統
 
-您可以將Data Sense正在掃描的來源檔案、從任何支援的非結構化資料來源複製到特定目標目的地位置的目錄 (https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["支援的目標位置Cloud Sync"^]）。在初始複本之後、檔案中的任何變更資料都會根據您設定的排程進行同步處理。
+您可以將 BlueXP 分類正在掃描的來源檔案、從任何支援的非結構化資料來源複製到特定目標目的地位置的目錄 (https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["BlueXP 複製與同步支援的目標位置"^]）。在初始複本之後、檔案中的任何變更資料都會根據您設定的排程進行同步處理。
 
-當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。此動作使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp Cloud Sync"^] 將資料從來源複製及同步至目標的功能。
+當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。此動作使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXP 複製與同步"^] 將資料從來源複製及同步至目標的功能。
 
 
 TIP: 您無法複製及同步位於資料庫、OneDrive帳戶或SharePoint帳戶中的檔案。
@@ -160,9 +160,9 @@ TIP: 您無法複製及同步位於資料庫、OneDrive帳戶或SharePoint帳戶
 * 您必須具有「帳戶管理」或「工作區管理」角色、才能複製及同步檔案。
 * 您必須選取至少20個檔案。
 * 所有選取的檔案都必須來自相同的來源儲存庫（ONTAP 例如、SFC磁碟區、S3磁碟區、NFS或CIFS共用區等）。
-* 您需要啟動Cloud Sync 「還原」服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。請從開始檢閱Cloud Sync 《不整合需求 https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["快速入門說明"^]。
+* 您需要啟動 BlueXP 複本與同步服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。從開始檢閱 BlueXP 複本與同步要求 https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["快速入門說明"^]。
 +
-請注意Cloud Sync 、如果您在雲端部署資料代理程式、則該服務會針對您的同步關係另行收取服務費用。
+請注意、 BlueXP 複本與同步服務會為您的同步關係收取不同的服務費用、如果您在雲端部署資料代理程式、則會產生資源費用。
 
 
 
@@ -184,18 +184,18 @@ image:screenshot_compliance_sync_files_dialog.png["顯示「複製檔案」對�
 
 . 如果確定要將選取的檔案同步到目的地位置、請按一下*確定*。
 +
-此功能可在BlueXP中開啟。Cloud Sync
+BlueXP 複本與同步 UI 會在 BlueXP 中開啟。
 
 +
-系統會提示您定義同步關係。來源系統會根據您在Data有意義中選取的儲存庫和檔案預先填入資料。
+系統會提示您定義同步關係。來源系統會根據您已在 BlueXP 分類中選取的儲存庫和檔案預先填入。
 
-. 您需要選取目標系統、然後選取（或建立）您打算使用的Data Broker。請從開始檢閱Cloud Sync 《不整合需求 link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["快速入門說明"^]。
+. 您需要選取目標系統、然後選取（或建立）您打算使用的Data Broker。從開始檢閱 BlueXP 複本與同步要求 link:https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["快速入門說明"^]。
 
 
 .結果
 檔案會複製到目標系統、並根據您定義的排程進行同步。如果您選取一次性同步、則只會複製檔案並同步一次。如果您選擇定期同步、則檔案會根據排程進行同步。請注意、如果來源系統新增的檔案符合您使用篩選器建立的查詢、則這些_new檔案將會複製到目的地、並在未來進行同步處理。
 
-請注意Cloud Sync 、從Data Sense中叫用某些常用的功能不再運作：
+請注意、從 BlueXP 分類中叫用某些通常的 BlueXP 複本與同步作業時、會停用這些作業：
 
 * 您無法使用*刪除來源上的檔案*或*刪除目標上的檔案*按鈕。
 * 執行報告已停用。
@@ -205,7 +205,7 @@ image:screenshot_compliance_sync_files_dialog.png["顯示「複製檔案」對�
 
 == 將來源檔案移至NFS共用區
 
-您可以將Data Sense正在掃描的來源檔案移至任何NFS共用區。NFS共用區不需要與Data Sense整合（請參閱） link:task-scanning-file-shares.html["正在掃描檔案共用"]）。
+您可以將 BlueXP 分類掃描的來源檔案移至任何 NFS 共用。NFS 共用區不需要與 BlueXP 分類整合（請參閱 link:task-scanning-file-shares.html["正在掃描檔案共用"]）。
 
 或者、您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在來源位置建立一個名為「<fileName（檔案名稱）>-breadcrumb-<date（日期）>.txt'的階層連結檔案。您可以在對話方塊中新增要新增至階層連結檔案的文字、以指出檔案的移動位置和移動檔案的使用者。
 
@@ -217,7 +217,7 @@ TIP: 您無法移動位於資料庫中的檔案。
 .需求
 * 您必須具有「帳戶管理」或「工作區管理」角色、才能移動檔案。
 * 來源檔案可在下列資料來源中找到：內部部署ONTAP 的地方使用、Cloud Volumes ONTAP 使用、不只是供參考Azure NetApp Files 、使用、還可選擇供參考、使用、或是使用SharePoint Online。
-* 移動檔案需要NFS共用區允許從Data Sense執行個體IP位址存取。
+* 移動檔案需要 NFS 共用區允許從 BlueXP 分類執行個體 IP 位址存取。
 * 一次最多可移動1500萬個檔案。
 
 

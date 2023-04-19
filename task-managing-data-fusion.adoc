@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-data-fusion.html 
 keywords: data identifiers, personal data, sensitive personal data, compliance, data fusion, data sense 
-summary: Data Sense提供多種方法、讓您新增Data Sense在未來掃描中所識別的自訂「個人資料」清單、讓您完整瞭解所有組織檔案中可能敏感的資料所在位置。 
+summary: BlueXP 分類提供許多方法、讓您新增自訂的「個人資料」清單、 BlueXP 分類將在未來掃描中識別這些清單、讓您完整瞭解可能敏感資料位於組織所有檔案中的位置。 
 ---
-= 將個人資料識別碼新增至「資料感應」掃描
+= 在 BlueXP 分類掃描中新增個人資料識別碼
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Data Sense提供多種方法、讓您新增Data Sense在未來掃描中
 
 
 [role="lead"]
-Data Sense提供多種方法、讓您新增Data Sense在未來掃描中所識別的自訂「個人資料」清單、讓您完整瞭解可能敏感的資料在_all_貴組織檔案中的位置。
+BlueXP 分類提供許多方法、讓您新增自訂的「個人資料」清單、 BlueXP 分類將在未來掃描中識別、讓您完整瞭解可能敏感資料位於組織檔案的位置。
 
 * 您可以根據所掃描的資料庫中的特定欄位來新增唯一識別碼。
 * 您可以從文字檔新增自訂關鍵字、這些文字會在您的資料中識別。
@@ -31,16 +31,16 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 
 == 從資料庫新增自訂的個人資料識別碼
 
-我們稱為「Data Fusion SURE__」的功能可讓您掃描貴組織的資料、找出資料庫中的唯一識別碼是否存在於任何其他資料來源。您可以選取資料庫表格中的特定欄或欄、以選擇Data Sense在掃描中尋找的其他識別碼。例如、下圖顯示 Fusion 如何使用資料功能來掃描您的磁碟區、儲存庫和資料庫、找出 Oracle 資料庫中所有客戶 ID 的出現情形。
+我們稱為「Data Fusion SURE__」的功能可讓您掃描貴組織的資料、找出資料庫中的唯一識別碼是否存在於任何其他資料來源。您可以在資料庫表格中選取特定欄或欄、以選擇 BlueXP 分類在其掃描中尋找的其他識別碼。例如、下圖顯示 Fusion 如何使用資料功能來掃描您的磁碟區、儲存庫和資料庫、找出 Oracle 資料庫中所有客戶 ID 的出現情形。
 
 image:diagram_compliance_data_fusion.png["圖表顯示如何使用資料庫的內容做為來源、以識別包含相同資料的檔案。"]
 
 如您所見、在兩個磁碟區和一個 S3 儲存區中找到兩個獨特的客戶 ID 。也會識別資料庫表格中的任何相符項目。
 
-請注意、由於您正在掃描自己的資料庫、因此無論您的資料儲存在何種語言中、都會在未來的「Data Sense」（資料感測）掃描中用來識別資料。
+請注意、由於您正在掃描自己的資料庫、因此在未來的 BlueXP 分類掃描中、無論資料儲存在哪種語言、都會用來識別資料。
 
 .步驟
-您必須擁有 link:task-scanning-databases.html#adding-the-database-server["新增至少一個資料庫伺服器"^] 在您新增資料Fusion 來源之前、請先將資料感測納入資料感測。
+您必須擁有 link:task-scanning-databases.html#adding-the-database-server["新增至少一個資料庫伺服器"^] 至 BlueXP 分類、然後再新增資料 Fusion 來源。
 
 . 在「組態」頁面中、按一Fusion 下來源資料所在資料庫中的*管理Data S還原*。
 +
@@ -62,7 +62,7 @@ image:screenshot_compliance_add_data_fusion.png["識別資料 Fusion 來源的�
 
 . 按一下「 * 新增資料 Fusion 來源 * 」。
 +
-「資料Fusion 還原」目錄頁面會顯示您已設定要掃描的「資料感測」資料庫來源欄。
+「 Data Fusion 詳細目錄」頁面會顯示您已設定要掃描的 BlueXP 分類的資料庫來源欄。
 
 +
 image:screenshot_compliance_data_fusion_list.png["您已設定資料 Fusion 功能的所有資料來源參考資料的快照。"]
@@ -86,11 +86,11 @@ image:screenshot_compliance_delete_data_fusion.png["顯示如何移除資料 Fus
 
 == 從字詞清單新增自訂關鍵字
 
-您可以將自訂關鍵字新增至Data Sense、以便識別資料中的資訊位置。只要輸入您想要讓Data Sense辨識的每個字詞、就能新增關鍵字。關鍵字會新增至Data Sense已使用的現有預先定義關鍵字、結果會顯示在「個人模式」區段下方。
+您可以將自訂關鍵字新增至 BlueXP 分類、以便識別在資料中找到該資訊的位置。只要輸入您想要 BlueXP 分類辨識的每個字詞、即可新增關鍵字。關鍵字會新增至 BlueXP 分類已使用的現有預先定義關鍵字、結果會顯示在「個人模式」區段下方。
 
 例如、您可能想要查看所有檔案中提及內部產品名稱的位置、以確保這些名稱在不安全的位置無法存取。
 
-更新自訂關鍵字之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新結果會顯示在「個人結果」區段下方的「資料感知法規遵循儀表板」、以及「個人資料」篩選器的「調查」頁面。
+更新自訂關鍵字之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類法規遵循儀表板的「個人結果」區段下方、以及「個人資料」篩選器的「調查」頁面中。
 
 .步驟
 . 從「_Classification settings」（_分類設定_）索引標籤中、按一下「* Add New Classifier*」（*新增分類器*）以啟動「_Add Custom Classifier.
@@ -99,7 +99,7 @@ image:screenshot_compliance_add_classifier_button.png["顯示如何啟動「新�
 
 . 在_選取類型_頁面中、輸入類別器的名稱、提供簡短說明、選取*個人識別符號*、然後按*下一步*。
 +
-您輸入的名稱會顯示在「Data Sense UI」中、做為符合類別器需求的掃描檔案標題、以及「Investigation」（調查）頁面中的篩選名稱。
+您輸入的名稱會顯示在 BlueXP 分類 UI 中、做為符合分類器需求的掃描檔案標題、並顯示為「調查」頁面中的篩選名稱。
 
 +
 您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料（遮罩會出現在UI中、如下所示：「通過：[*、通過：[*、通過：[*、*、*、3434）。
@@ -109,16 +109,16 @@ image:screenshot_select_classifier_type2.png["顯示如何命名類別器並選�
 
 . 在「選取資料分析工具」頁面中、選取*自訂關鍵字*做為定義類別器的方法、然後按一下*下一步*。
 +
-image:screenshot_select_classifier_tool_keywords.png["快照顯示「自訂關鍵字」選項、做為Data Sense用來建置模式的工具。"]
+image:screenshot_select_classifier_tool_keywords.png["螢幕擷取畫面會顯示選擇自訂關鍵字做為 BlueXP 分類工具、用於建立模式。"]
 
 . 在_建立邏輯_頁面中、輸入您要辨識的關鍵字-每個字位於一行、然後按一下*驗證*。
 +
-以下螢幕快照顯示內部產品名稱（不同類型的貓頭鷹）。資料感應搜尋這些項目不區分大小寫。
+以下螢幕快照顯示內部產品名稱（不同類型的貓頭鷹）。這些項目的 BlueXP 分類搜尋不區分大小寫。
 
 +
 image:screenshot_select_classifier_create_logic_keyword.png["輸入客戶分類器關鍵字的快照。"]
 
-. 按一下「*完成*」、「Data Sense（資料感知）」即開始重新掃描資料。
+. 按一下 * 完成 * 、 BlueXP 分類就會開始重新掃描您的資料。
 
 
 .結果
@@ -132,11 +132,11 @@ image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示�
 
 == 使用regex新增自訂的個人資料識別碼
 
-您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。這可讓您建立新的自訂regex、以識別系統中尚未存在的新個人資訊元素。regex會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。
+您可以使用自訂規則運算式（regex）新增個人模式、以識別資料中的特定資訊。這可讓您建立新的自訂regex、以識別系統中尚未存在的新個人資訊元素。regex 會新增至 BlueXP 分類已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。
 
 例如、您可能想要查看所有檔案中提及內部產品ID的位置。例如、如果產品ID的結構清楚明確、12位數的編號從201開始、您可以使用自訂的regex功能在檔案中搜尋。此範例的規則運算式為*\b201\d｛9｝\b*。
 
-新增regex之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新結果會顯示在「個人結果」區段下方的「資料感知法規遵循儀表板」、以及「個人資料」篩選器的「調查」頁面。
+新增 regex 之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類法規遵循儀表板的「個人結果」區段下方、以及「個人資料」篩選器的「調查」頁面中。
 
 請參閱 https://regex101.com/[] 如果您需要協助建立所需的規則運算式、
 
@@ -147,18 +147,18 @@ image:screenshot_compliance_add_classifier_button.png["顯示如何啟動「新�
 
 . 在_選取類型_頁面中、輸入類別器的名稱、提供簡短說明、選取*個人識別符號*、然後按*下一步*。
 +
-您輸入的名稱會顯示在「Data Sense UI」中、做為符合類別器需求的掃描檔案標題、以及「Investigation」（調查）頁面中的篩選名稱。您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料。
+您輸入的名稱會顯示在 BlueXP 分類 UI 中、做為符合分類器需求的掃描檔案標題、並顯示為「調查」頁面中的篩選名稱。您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料。
 
 +
 image:screenshot_select_classifier_type.png["顯示如何命名類別器並選取類別器類型的快照。"]
 
 . 在「選取資料分析工具」頁面中、選取*自訂規則運算式*做為定義類別器的方法、然後按一下*下一步*。
 +
-image:screenshot_select_classifier_tool_regex.png["快照顯示「自訂規則運算式」選項、做為Data Sense建置模式所用的工具。"]
+image:screenshot_select_classifier_tool_regex.png["顯示「自訂規則運算式」選項的螢幕擷取畫面、以作為 BlueXP 分類用來建置模式的工具。"]
 
 . 在_建立邏輯_頁面中、輸入規則運算式和任何鄰近字詞、然後按一下*完成*。
 +
-.. 您可以輸入任何合法的規則運算式。按一下「*驗證*」按鈕、讓「資料感知」驗證規則運算式是否有效、且其範圍不太廣、表示會傳回太多結果。
+.. 您可以輸入任何合法的規則運算式。按一下「 * 驗證 * 」按鈕、讓 BlueXP 分類驗證規則運算式是否有效、且其範圍不太廣、表示它會傳回太多結果。
 .. 您也可以輸入一些鄰近詞彙、以協助精簡結果的準確度。這些詞彙通常會在您要搜尋的模式300個字元內找到（在找到的模式之前或之後）。在單獨一行輸入每個字詞或片語。
 +
 image:screenshot_select_classifier_create_logic_regex.png["為您的客戶類別者輸入regex和近接字的快照。"]
@@ -168,7 +168,7 @@ image:screenshot_select_classifier_create_logic_regex.png["為您的客戶類別
 
 
 .結果
-新增類別器、Data Sense開始重新掃描所有資料來源。您會回到「自訂類別器」頁面、在其中可以檢視符合新類別器的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。
+新增分類器、 BlueXP 分類開始重新掃描所有資料來源。您會回到「自訂類別器」頁面、在其中可以檢視符合新類別器的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。
 
 image:screenshot_personal_info_regex_added.png["快照顯示在掃描進行中新增至系統的新regex類別器結果。"]
 
@@ -176,22 +176,22 @@ image:screenshot_personal_info_regex_added.png["快照顯示在掃描進行中�
 
 == 新增自訂類別
 
-Data Sense會取得掃描的資料、並將其分成不同類別。類別是以人工智慧分析每個檔案的內容和中繼資料為基礎的主題。 link:reference-private-data-categories.html#types-of-categories["請參閱預先定義類別清單"]。
+BlueXP 分類會將它掃描的資料分成不同類型的類別。類別是以人工智慧分析每個檔案的內容和中繼資料為基礎的主題。 link:reference-private-data-categories.html#types-of-categories["請參閱預先定義類別清單"]。
 
 類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、像是_恢復_或_員工合約_的類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。
 
-您可以將自訂類別新增至「Data Sense」（資料感測）、以便識別資料中的資料資產專屬資訊類別。您可以建立包含您要識別之資料類別的「訓練」檔案來新增每個類別、然後讓Data Sense掃描這些檔案以透過AI「學習」、以便識別資料來源中的資料。類別會新增至Data Sense已識別的現有預先定義類別、結果會顯示在「類別」區段下方。
+您可以將自訂類別新增至 BlueXP 分類、以便識別資料資產中唯一的資訊類別。您可以建立「訓練」檔案來新增每個類別、其中包含您要識別的資料類別、然後讓 BlueXP 分類掃描這些檔案、透過 AI 「學習」、以便識別資料來源中的資料。這些類別會新增至 BlueXP 分類已識別的現有預先定義類別、結果會顯示在「類別」區段下方。
 
 例如、您可能想要查看.gz格式的壓縮安裝檔案在檔案中的位置、以便視需要加以移除。
 
-更新自訂類別之後、Data Sense會重新開始掃描所有資料來源。掃描完成後、新的結果會顯示在「類別」區段下的「資料感知法規遵循儀表板」、以及「類別」篩選器的「調查」頁面。 link:task-controlling-private-data.html#viewing-files-by-categories["瞭解如何依類別檢視檔案"]。
+更新自訂類別之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類規範儀表板的「類別」區段下方、以及「類別」篩選器的「調查」頁面中。 link:task-controlling-private-data.html#viewing-files-by-categories["瞭解如何依類別檢視檔案"]。
 
 .您需要的產品
-您至少需要建立25個訓練檔案、其中包含您希望Data Sense能夠辨識的資料類別範例。支援下列檔案類型：
+您至少需要建立 25 個訓練檔案、其中包含您希望 BlueXP 分類識別的資料類別範例。支援下列檔案類型：
 
 `+.CSV, .DOC, .DOCX, .GZ, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
-檔案必須至少100個位元組、而且必須位於Data Sense可存取的資料夾中。
+檔案必須至少為 100 位元組、而且必須位於 BlueXP 分類可存取的資料夾中。
 
 .步驟
 . 從「_Classification settings」（_分類設定_）索引標籤中、按一下「* Add New Classifier*」（*新增分類器*）以啟動「_Add Custom Classifier.
@@ -200,27 +200,27 @@ image:screenshot_compliance_add_classifier_button.png["顯示如何啟動「新�
 
 . 在_選取類型_頁面中、輸入類別器的名稱、提供簡短說明、選取*類別*、然後按*下一步*。
 +
-您輸入的名稱會顯示在「Data Sense UI」中、做為符合您所定義資料類別的掃描檔案標題、以及「Investigation」（調查）頁面中的篩選名稱。
+您輸入的名稱會顯示在 BlueXP 分類 UI 中、做為符合您定義之資料類別的掃描檔案標題、以及「調查」頁面中的篩選名稱。
 
 +
 image:screenshot_select_classifier_category.png["顯示如何命名類別器並選取類別器類型的快照。"]
 
 . 在_建立邏輯_頁面中、確定您已準備好學習檔案、然後按一下*選取檔案*。
 +
-image:screenshot_category_create_logic.png["「建立邏輯」頁面的快照、您可在其中新增包含Data Sense所需學習之資料的檔案。"]
+image:screenshot_category_create_logic.png["「建立邏輯」頁面的螢幕擷取畫面、您可以在其中新增包含您想要 BlueXP 分類學習之資料的檔案。"]
 
 . 輸入磁碟區的IP位址、以及訓練檔案所在的路徑、然後按一下*「Add*（新增*）」。
 +
 image:screenshot_category_add_files.png["顯示如何輸入訓練檔案位置的快照。"]
 
-. 確認Data Sense已辨識訓練檔案。按一下* x*以移除任何不符合要求的訓練檔案。然後按一下「*完成*」。
+. 驗證 BlueXP 分類是否能識別訓練檔案。按一下* x*以移除任何不符合要求的訓練檔案。然後按一下「*完成*」。
 +
-image:screenshot_category_files_added.png["快照顯示Data Sense將用來做為定義新類別的訓練檔案的檔案。"]
+image:screenshot_category_files_added.png["顯示 BlueXP 分類將用作定義新類別的訓練檔案的檔案擷取畫面。"]
 
 
 
 .結果
-新類別是依照訓練檔案所定義、並新增至Data Sense。然後、Data Sense會開始重新掃描所有資料來源、以識別適合此新類別的檔案。您會返回「自訂分類器」頁面、在其中可以檢視符合新類別的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。
+新類別是根據訓練檔案所定義、並新增至 BlueXP 分類。然後 BlueXP 分類會開始重新掃描所有資料來源、以識別符合此新類別的檔案。您會返回「自訂分類器」頁面、在其中可以檢視符合新類別的檔案數量。掃描所有資料來源所產生的結果、將會花費一些時間、視需要掃描的檔案數量而定。
 
 
 
@@ -242,6 +242,6 @@ image:screenshot_custom_classifier_top_5.png["根據傳回的結果顯示前3大
 
 您可以使用*編輯分類器*按鈕來變更您所建立的任何自訂分類器。
 
-如果您稍後決定不需要「資料感知」來識別您新增的自訂模式、您可以使用*刪除分類器*按鈕來移除每個項目。
+如果您稍後決定不需要 BlueXP 分類來識別您新增的自訂模式、您可以使用 * 刪除分類器 * 按鈕來移除每個項目。
 
 image:screenshot_custom_classifiers_manage.png["「自訂類別器」頁面的快照、其中包含用於編輯和刪除類別器的按鈕。"]

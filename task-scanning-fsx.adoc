@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-fsx.html 
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
-summary: 請完成幾個步驟、開始使用ONTAP Cloud Data Sense掃描Amazon FSX for Sf大量 資料。 
+summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描 Amazon FSX for ONTAP Volume 。 
 ---
-= 開始瞭解Cloud Data Sense for Amazon FSX ONTAP for Sf
+= 開始使用 Amazon FSX for ONTAP 的 BlueXP 分類
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: 請完成幾個步驟、開始使用ONTAP Cloud Data Sense掃描Amazon 
 
 
 [role="lead"]
-請完成幾個步驟、開始使用ONTAP Cloud Data Sense掃描Amazon FSX for Sf大量 資料。
+請完成幾個步驟、開始使用 BlueXP 分類來掃描 Amazon FSX for ONTAP Volume 。
 
 
 
 == 開始之前
 
-* 您需要AWS中的Active Connector來部署和管理Data Sense。
-* 您在建立工作環境時所選取的安全群組、必須允許來自Cloud Data Sense執行個體的流量。您可以使用ENI連線至FSX for ONTAP Sfor Sffile系統、找到相關的安全群組、然後使用AWS管理主控台進行編輯。
+* 您需要 AWS 中的作用中 Connector 來部署和管理 BlueXP 分類。
+* 您在建立工作環境時選取的安全性群組必須允許來自 BlueXP 分類執行個體的流量。您可以使用ENI連線至FSX for ONTAP Sfor Sffile系統、找到相關的安全群組、然後使用AWS管理主控台進行編輯。
 +
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html["適用於Linux執行個體的AWS安全性群組"^]
 
@@ -43,33 +43,33 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS彈性網
 [role="quick-margin-para"]
 在掃描FSXfor ONTAP SfundVolume之前、 https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html["您必須設定一個FSX工作環境、並設定磁碟區"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署Cloud Data Sense執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["在BlueXP中部署Cloud Data Sense"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["在 BlueXP 中部署 BlueXP 分類"^] 如果尚未部署執行個體、
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 啟用Cloud Data Sense並選取要掃描的磁碟區
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 啟用 BlueXP 分類、並選取要掃描的磁碟區
 [role="quick-margin-para"]
-按一下「*資料感應*」、選取「*組態*」索引標籤、然後啟動特定工作環境中磁碟區的法規遵循掃描。
+選取 * 組態 * 索引標籤、並針對特定工作環境中的磁碟區啟動法規遵循掃描。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 確保能夠存取磁碟區
 [role="quick-margin-para"]
-雲端資料感測功能已經啟用、請確定它可以存取所有磁碟區。
+現在已啟用 BlueXP 分類、請確定它可以存取所有磁碟區。
 
 [role="quick-margin-list"]
-* Cloud Data Sense執行個體需要網路連線至ONTAP 各個FSXfor E子 網路。
-* 確定下列連接埠已開啟Data Sense執行個體：
+* BlueXP 分類執行個體需要網路連線至每個適用於 ONTAP 子網路的 FSX 。
+* 請確定下列連接埠已開放給 BlueXP 分類執行個體：
 +
 ** NFS：連接埠111和2049。
 ** 適用於CIFS：連接埠139和445。
 
 
-* NFS Volume匯出原則必須允許從Data Sense執行個體存取。
-* Data Sense需要Active Directory認證來掃描CIFS磁碟區。+按一下* Compliance *>* Configuration *>* Edit CIFS Credential*並提供認證資料。
+* NFS Volume 匯出原則必須允許從 BlueXP 分類執行個體存取。
+* BlueXP 分類需要 Active Directory 認證來掃描 CIFS 磁碟區。+按一下* Compliance *>* Configuration *>* Edit CIFS Credential*並提供認證資料。
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 管理您要掃描的磁碟區
 [role="quick-margin-para"]
-選取或取消選取您要掃描的磁碟區、Cloud Data Sense將會開始或停止掃描。
+選取或取消選取您要掃描的磁碟區、 BlueXP 分類將會開始或停止掃描。
 
 
 
@@ -81,25 +81,25 @@ https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/use/task-creating-fsx-work
 
 
 
-== 部署Cloud Data Sense執行個體
+== 部署 BlueXP 分類執行個體
 
-link:task-deploy-cloud-compliance.html["部署Cloud Data Sense"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
 
-您應該在與Connector for AWS和您要掃描的FSX Volume相同的AWS網路中部署Data Sense。
+您應該在與 Connector for AWS 和您要掃描的 FSX 磁碟區相同的 AWS 網路中部署 BlueXP 分類。
 
-*附註：*掃描FSX Volume時、目前不支援在內部部署位置部署Cloud Data Sense。
+* 注意： * 掃描 FSX 磁碟區時、目前不支援在內部部署位置部署 BlueXP 分類。
 
-只要執行個體具備網際網路連線、就會自動升級至Data Sense軟體。
+只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 
 
 
-== 在您的工作環境中實現雲端資料的意義
+== 在您的工作環境中啟用 BlueXP 分類
 
-您可以啟用ONTAP 適用於FSX的Cloud Data Sense for FSX for Sf6 Volume。
+您可以為 ONTAP 磁碟區的 FSX 啟用 BlueXP 分類。
 
 . 在BlueXP左側導覽功能表中、按一下*管理>分類*、然後選取*組態*索引標籤。
 +
-image:screenshot_fsx_scanning_activate.png["部署Cloud Data Sense執行個體後、立即顯示「組態」索引標籤的快照。"]
+image:screenshot_fsx_scanning_activate.png["部署 BlueXP 分類執行個體之後、立即顯示「組態」索引標籤的螢幕快照。"]
 
 . 選取您要在每個工作環境中掃描磁碟區的方式。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["深入瞭解對應與分類掃描"]：
 +
@@ -111,52 +111,52 @@ image:screenshot_fsx_scanning_activate.png["部署Cloud Data Sense執行個體�
 
 
 
-. 在確認對話方塊中、按一下*核准*、讓Data Sense開始掃描您的磁碟區。
+. 在確認對話方塊中、按一下 * 核准 * 、讓 BlueXP 分類開始掃描您的磁碟區。
 
 
 .結果
-Cloud Data Sense會開始掃描您在工作環境中選取的磁碟區。一旦Cloud Data Sense完成初始掃描、就會在「法規遵循」儀表板中顯示結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。
+BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 BlueXP 分類完成初始掃描、就會在法規遵循儀表板中提供結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。
 
 
-NOTE: 根據預設、如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統將不會掃描磁碟區中的檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。您可以啟用該頁面的設定、讓Data Sense無論權限為何、都能掃描磁碟區。
+NOTE: 根據預設、如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統將不會掃描磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。您可以啟用該頁面的設定、以便 BlueXP 分類無論權限為何、都能掃描磁碟區。
 
 
 
-== 驗證Cloud Data Sense是否可存取磁碟區
+== 驗證 BlueXP 分類是否有權存取磁碟區
 
-請檢查您的網路、安全性群組和匯出原則、以確保Cloud Data Sense能夠存取磁碟區。
+請檢查您的網路、安全性群組和匯出原則、確保 BlueXP 分類能夠存取磁碟區。
 
-您必須提供資料認證、以利資料認證、讓IT能夠存取CIFS磁碟區。
+您必須提供具備 CIFS 認證的 BlueXP 分類、才能存取 CIFS 磁碟區。
 
 .步驟
 . 在「_Configuration」頁面上、按一下「*檢視詳細資料*」以檢閱狀態並修正任何錯誤。
 +
-例如、下圖顯示由於Data Sense執行個體與Volume之間的網路連線問題、Volume Cloud Data Sense無法掃描。
+例如、下列影像顯示由於 BlueXP 分類執行個體和磁碟區之間的網路連線問題、導致 Volume BlueXP 分類無法掃描。
 
 +
-image:screenshot_fsx_scanning_no_network_error.png["掃描組態中「檢視詳細資料」頁面的快照、顯示由於Data Sense與Volume之間的網路連線而未掃描的Volume。"]
+image:screenshot_fsx_scanning_no_network_error.png["掃描組態中的「檢視詳細資料」頁面的螢幕擷取畫面、顯示由於 BlueXP 分類與磁碟區之間的網路連線而未進行掃描的磁碟區。"]
 
-. 請確定Cloud Data Sense執行個體與每個網路之間都有網路連線、其中包含FSXfor ONTAP EfSure的磁碟區。
+. 請確定 BlueXP 分類執行個體和每個網路之間都有網路連線、其中包括適用於 ONTAP 的 FSX 磁碟區。
 +
 
-NOTE: 對於FSXfor ONTAP Sfor Sf, Cloud Data Sense只能掃描與BlueXP相同區域的磁碟區。
+NOTE: 對於 ONTAP 的 FSX 、 BlueXP 分類只能掃描與 BlueXP 相同區域的磁碟區。
 
-. 請確定下列連接埠已開放給Data Sense執行個體。
+. 請確定下列連接埠已開放給 BlueXP 分類執行個體使用。
 +
 ** NFS：連接埠111和2049。
 ** 適用於CIFS：連接埠139和445。
 
 
-. 確保NFS Volume匯出原則包含Data Sense執行個體的IP位址、以便存取每個Volume上的資料。
-. 如果您使用CIFS、請提供Data Sense搭配Active Directory認證、以便掃描CIFS磁碟區。
+. 確保 NFS Volume 匯出原則包含 BlueXP 分類執行個體的 IP 位址、以便存取每個磁碟區上的資料。
+. 如果您使用 CIFS 、請提供 Active Directory 認證的 BlueXP 分類、以便掃描 CIFS 磁碟區。
 +
 .. 在BlueXP左側導覽功能表中、按一下*管理>分類*、然後選取*組態*索引標籤。
-.. 針對每個工作環境、按一下*編輯CIFS認證*、然後輸入Data Sense存取系統上CIFS磁碟區所需的使用者名稱和密碼。
+.. 針對每個工作環境、按一下 * 編輯 CIFS 認證 * 、然後輸入 BlueXP 分類存取系統上 CIFS 磁碟區所需的使用者名稱和密碼。
 +
-認證資料可以是唯讀的、但提供管理認證可確保Data Sense能夠讀取任何需要提升權限的資料。認證資料儲存在Cloud Data Sense執行個體上。
+認證可以是唯讀的、但提供管理認證可確保 BlueXP 分類能夠讀取任何需要提高權限的資料。認證會儲存在 BlueXP 分類執行個體上。
 
 +
-如果您想要確保「上次存取時間」的檔案不會因資料感知分類掃描而改變、建議使用者在CIFS中擁有寫入屬性權限、或在NFS中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
+如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
 
 +
 輸入認證之後、您應該會看到一則訊息、指出所有 CIFS 磁碟區都已成功驗證。
@@ -171,7 +171,7 @@ NOTE: 對於FSXfor ONTAP Sfor Sf, Cloud Data Sense只能掃描與BlueXP相同區
 
 您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。建議您掃描所有 Volume 。
 
-預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果Data Sense在CIFS中沒有寫入屬性權限、或在NFS中沒有寫入權限、系統就不會掃描檔案、因為Data Sense無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。 link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
+預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。 link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
 
 image:screenshot_volume_compliance_selection.png["「組態」頁面的快照、可讓您啟用或停用個別磁碟區的掃描。"]
 
@@ -207,7 +207,7 @@ NOTE: 只有在標題區域中設定了*地圖*或*地圖與分類*設定之後�
 
 == 正在掃描資料保護磁碟區
 
-根據預設、不會掃描資料保護（DP）磁碟區、因為這些磁碟區並未對外公開、而且Cloud Data Sense無法存取它們。這些是來自FSXfor ONTAP Sfor the Sfor the Sffile系統的SnapMirror作業目的地Volume。
+根據預設、資料保護（ DP ）磁碟區不會被掃描、因為它們不會暴露在外部、而且 BlueXP 分類無法存取它們。這些是來自FSXfor ONTAP Sfor the Sfor the Sffile系統的SnapMirror作業目的地Volume。
 
 一開始、磁碟區清單會將這些磁碟區識別為「 _Type 」 * 「 DP* 」、「 _Status 」 * 「 Not 掃描」 * 、「 _required Action 」 * 「 Enable Access to DP Volumes 」（啟用對 DP 磁碟區的存取）。
 
@@ -220,7 +220,7 @@ image:screenshot_cloud_compliance_dp_volumes.png["顯示「啟用 DP 磁碟區�
 . 檢閱確認訊息、然後再按一下 * 「 Enable Access to DP Volumes （啟用 DP 磁碟區存取）」 * 。
 +
 ** 最初在來源FSXfor ONTAP the Sfor the Sfor the file系統中建立為NFS Volume的Volume將會啟用。
-** 最初在來源FSXfor ONTAP the Sfor the Sffile系統中建立為CIFS Volume的磁碟區、需要輸入CIFS認證資料才能掃描這些DP Volume。如果您已經輸入Active Directory認證資料、以便Cloud Data Sense能夠掃描CIFS磁碟區、您可以使用這些認證資料、也可以指定不同的管理認證資料集。
+** 最初在來源FSXfor ONTAP the Sfor the Sffile系統中建立為CIFS Volume的磁碟區、需要輸入CIFS認證資料才能掃描這些DP Volume。如果您已經輸入 Active Directory 認證、以便 BlueXP 分類能夠掃描 CIFS 磁碟區、您可以使用這些認證、或是指定不同的管理認證集。
 +
 image:screenshot_compliance_dp_cifs_volumes.png["這是兩個啟用 CIFS 資料保護磁碟區選項的快照。"]
 
@@ -230,7 +230,7 @@ image:screenshot_compliance_dp_cifs_volumes.png["這是兩個啟用 CIFS 資料�
 
 
 .結果
-一旦啟用、Cloud Data Sense便會從每個啟用掃描的DP磁碟區建立NFS共用區。共用匯出原則僅允許從Data Sense執行個體存取。
+一旦啟用、 BlueXP 分類就會從每個已啟動掃描的 DP 磁碟區建立 NFS 共用區。共用匯出原則僅允許從 BlueXP 分類執行個體存取。
 
 *附註：*如果您在一開始啟用DP磁碟區存取時沒有CIFS資料保護磁碟區、之後再新增部分資料、則「組態」頁面頂端會出現*「啟用CIFS DP*存取」按鈕。按一下此按鈕並新增 CIFS 認證、以啟用對這些 CIFS DP 磁碟區的存取。
 
