@@ -104,11 +104,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 上次修改日期 | 選取上次修改檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。 
 
 
-| 上次存取  a| 
-選取上次存取檔案或目錄（僅限CIFS或NFS）的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。對於 BlueXP 分類掃描的檔案類型、這是 BlueXP 分類掃描檔案的最後一次。
-
-請注意、 BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 。
-
+| 上次存取 | 選取上次存取檔案或目錄（僅限CIFS或NFS）的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。對於 BlueXP 分類掃描的檔案類型、這是 BlueXP 分類掃描檔案的最後一次。 
 |===
 
 

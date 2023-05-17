@@ -141,21 +141,21 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 
 
 * * 作業系統 * ：作業系統必須能夠安裝泊塢視窗引擎。
+
+
+* Red Hat Enterprise Linux 8.0 至 8.7 版
+* CentOS 8.0 至 8.7 版
+* CentOS Stream 8.
+* 可以使用 RHEL 或 CentOS 版本 7.8 或 7.9 、但 Linux 核心版本必須為 4.0 或更新版本
 +
-** Red Hat Enterprise Linux 8.0 至 8.7 版
-** CentOS 8.0 至 8.7 版
-** CentOS Stream 8.
-** 可以使用 RHEL 或 CentOS 版本 7.8 或 7.9 、但 Linux 核心版本必須為 4.0 或更新版本
+** * Red Hat Subscription Management* ：主機必須向 Red Hat Subscription Management 註冊。如果系統尚未註冊、則無法在安裝期間存取儲存庫以更新所需的協力廠商軟體。
+** * 其他軟體 * ：安裝 BlueXP 分類之前、您必須在主機上安裝下列軟體：
 
 
-* * Red Hat Subscription Management* ：主機必須向 Red Hat Subscription Management 註冊。如果系統尚未註冊、則無法在安裝期間存取儲存庫以更新所需的協力廠商軟體。
-* * 其他軟體 * ：安裝 BlueXP 分類之前、您必須在主機上安裝下列軟體：
+* Docker Engine 19.3.1版或更新版本。 https://["檢視安裝指示"^]。
+* Python 3版本3.6或更新版本。 https://["檢視安裝指示"^]。
 +
-** Docker Engine 19.3.1版或更新版本。 https://["檢視安裝指示"^]。
-** Python 3版本3.6或更新版本。 https://["檢視安裝指示"^]。
-
-
-* * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此與 BlueXP 分類相容：
+** * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此與 BlueXP 分類相容：
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -177,6 +177,8 @@ firewall-cmd --permanent --add-port=4789/udp
 ....
 +
 請注意、每當您啟用或更新時、都必須重新啟動 Docker `firewalld` 設定：
+
+
 
 
 
