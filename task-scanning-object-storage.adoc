@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-scanning-object-storage.html 
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
-summary: 請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存區內的資料。BlueXP 分類可以掃描使用簡易儲存服務（ S3 ）傳輸協定的任何物件儲存服務的資料。其中包括NetApp StorageGRID 功能、IBM Cloud Object Store、Azure Blob（使用MinIO）、Linode、B2 Cloud Storage、Amazon S3等。 
+summary: 請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存區內的資料。BlueXP 分類可以掃描使用簡易儲存服務（ S3 ）傳輸協定的任何物件儲存服務的資料。其中包括 NetApp StorageGRID 、 IBM Cloud Object Store 、 Linode 、 B2 Cloud Storage 、 Amazon S3 等。 
 ---
 = 掃描使用S3傳輸協定的物件儲存設備
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存
 
 
 [role="lead"]
-請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存區內的資料。BlueXP 分類可以掃描使用簡易儲存服務（ S3 ）傳輸協定的任何物件儲存服務的資料。其中包括NetApp StorageGRID 功能、IBM Cloud Object Store、Azure Blob（使用MinIO）、Linode、B2 Cloud Storage、Amazon S3等。
+請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存區內的資料。BlueXP 分類可以掃描使用簡易儲存服務（ S3 ）傳輸協定的任何物件儲存服務的資料。其中包括 NetApp StorageGRID 、 IBM Cloud Object Store 、 Linode 、 B2 Cloud Storage 、 Amazon S3 等。
 
 
 
@@ -49,7 +49,6 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 * 您需要有端點URL才能連線至物件儲存服務。
 * 您需要物件儲存供應商提供的存取金鑰和秘密金鑰、以便 BlueXP 分類能夠存取這些庫位。
-* 若要支援Azure Blob、您必須使用 link:https://min.io/["MinIO服務"^]。
 
 
 

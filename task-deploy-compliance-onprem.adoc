@@ -40,10 +40,10 @@ image:diagram_deploy_onprem_cloud_instance.png["所需的BlueXP和網路元件�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 建立連接器
 [role="quick-margin-para"]
-如果您還沒有連接器、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["在內部部署連接器"^] 在網路中的Linux主機上、或是在雲端的Linux主機上。
+如果您還沒有連接器、 https://["在內部部署連接器"^] 在網路中的Linux主機上、或是在雲端的Linux主機上。
 
 [role="quick-margin-para"]
-您也可以與雲端供應商建立Connector。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。
+您也可以與雲端供應商建立Connector。請參閱 https://["在 AWS 中建立連接器"^]、 https://["在 Azure 中建立 Connector"^]或 https://["在GCP中建立連接器"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 檢閱先決條件
 [role="quick-margin-para"]
@@ -64,9 +64,9 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須向雲端
 
 == 建立連接器
 
-安裝和使用 BlueXP 分類之前、需要 BlueXP Connector 。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXP功能需要連接器"]但有些情況下您需要立即設定一個。
+安裝和使用 BlueXP 分類之前、需要 BlueXP Connector 。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因 https://["BlueXP功能需要連接器"]但有些情況下您需要立即設定一個。
 
-若要在雲端供應商環境中建立一個、請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。
+若要在雲端供應商環境中建立一個、請參閱 https://["在 AWS 中建立連接器"^]、 https://["在 Azure 中建立 Connector"^]或 https://["在GCP中建立連接器"^]。
 
 有些情況下、您必須使用部署在特定雲端供應商中的Connector：
 
@@ -80,9 +80,9 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須向雲端
 
 內部ONTAP 系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端硬碟帳戶均可使用下列任何一種Cloud Connector進行掃描。
 
-請注意、您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["在內部部署連接器"^] 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
+請注意、您也可以 https://["在內部部署連接器"^] 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
 
-如您所見、您可能需要使用某些情況 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["多個連接器"]。
+如您所見、您可能需要使用某些情況 https://["多個連接器"]。
 
 安裝 BlueXP 分類時、您需要 Connector 系統的 IP 位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。
 
@@ -115,6 +115,24 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 請注意、使用這些較小的系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
 
+* * UNIX 資料夾權限 * ：需要下列最低 UNIX 權限：
++
+[cols="25,25"]
+|===
+| 資料夾 | 最低權限 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /opt | `rwxr-xr-x` 
+
+
+| /var/lib/泊 塢視窗 | `rwx------` 
+
+
+| /user/lib/systemd/system | `rwxr-xr-x` 
+|===
 * 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
 +
 ** * AWS EC2 執行個體類型 * ：我們建議使用「 m6i.4xlarge 」。 link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
@@ -127,14 +145,14 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 ** Red Hat Enterprise Linux 8.0 至 8.7 版
 ** CentOS 8.0 至 8.7 版
 ** CentOS Stream 8.
-** 可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本
+** 可以使用 RHEL 或 CentOS 版本 7.8 或 7.9 、但 Linux 核心版本必須為 4.0 或更新版本
 
 
 * * Red Hat Subscription Management* ：主機必須向 Red Hat Subscription Management 註冊。如果系統尚未註冊、則無法在安裝期間存取儲存庫以更新所需的協力廠商軟體。
 * * 其他軟體 * ：安裝 BlueXP 分類之前、您必須在主機上安裝下列軟體：
 +
-** Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
-** Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
+** Docker Engine 19.3.1版或更新版本。 https://["檢視安裝指示"^]。
+** Python 3版本3.6或更新版本。 https://["檢視安裝指示"^]。
 
 
 * * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此與 BlueXP 分類相容：
@@ -158,7 +176,7 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-如果您啟用 `firewalld` 安裝 BlueXP 分類之後、您必須重新啟動泊塢視窗。
+請注意、每當您啟用或更新時、都必須重新啟動 Docker `firewalld` 設定：
 
 
 
@@ -188,7 +206,10 @@ BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路�
 | \https://support.compliance.api.bluexp.netapp.com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
 
 
-| \https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | 提供安裝所需的必要套件。 
+| https://github.com/docker \https://download.docker.com | 提供泊塢視窗安裝的必要套件。 
+
+
+| http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | 提供 CentOS 安裝的必要套件。 
 |===
 
 
@@ -262,7 +283,7 @@ image:diagram_deploy_onprem_multi_host_internet.png["顯示使用部署在內部
 只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 
 
-NOTE: 當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 儲存區、 Azure NetApp Files 或適用於 ONTAP 的 FSX 。在這些情況下、您需要在雲端和中部署個別的 Connector 和 BlueXP 分類執行個體 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["在連接器之間切換"^] 適用於不同的資料來源。
+NOTE: 當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 儲存區、 Azure NetApp Files 或適用於 ONTAP 的 FSX 。在這些情況下、您需要在雲端和中部署個別的 Connector 和 BlueXP 分類執行個體 https://["在連接器之間切換"^] 適用於不同的資料來源。
 
 
 
@@ -284,7 +305,7 @@ NOTE: 當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 �
 
 
 .步驟
-. 從下載 BlueXP 分類軟體 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選取的檔案名稱為* datASENSE-installer-ze.tar.gz*<version> 。
+. 從下載 BlueXP 分類軟體 https://["NetApp 支援網站"^]。您應該選取的檔案名稱為* datASENSE-installer-ze.tar.gz*<version> 。
 . 將安裝程式檔案複製到您打算使用的 Linux 主機（使用「 XCP 」或其他方法）。
 . 在主機上解壓縮安裝程式檔案、例如：
 +
@@ -314,24 +335,24 @@ image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在雲端或
 
  a| 
 .. 貼上您從步驟 7 複製的命令：
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token>`
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token>`
 +
 如果您要安裝在雲端執行個體上（而非內部部署）、請新增 `--manual-cloud-install <cloud_provider>`。
 
-.. 輸入 BlueXP 分類主機機器的 IP 位址或主機名稱、以便 Connector 執行個體存取。
-.. 輸入 BlueXP Connector 主機機器的 IP 位址或主機名稱、以便 BlueXP 分類執行個體存取。
+.. 輸入 BlueXP 分類主機機器的 IP 位址或主機名稱、以便 Connector 系統存取。
+.. 輸入 BlueXP Connector 主機機器的 IP 位址或主機名稱、以便 BlueXP 分類系統存取。
 .. 根據提示輸入 Proxy 詳細資料。如果您的 BlueXP Connector 已使用 Proxy 、則無需在此再次輸入此資訊、因為 BlueXP 分類將自動使用 Connector 使用的 Proxy 。
 
 | 或者、您也可以預先建立完整命令、提供必要的主機和 Proxy 參數：
-`sudo ./install.sh -a <account_id> -c <agent_id> -t <token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
 |===
 +
 變數值：
 
 +
 ** _Account_id_ = NetApp 帳戶 ID
-** _agent_id_ = 連接器 ID
-** _tokon_ = JWT 使用者權杖
+** _client_id_ = Connector Client ID （如果用戶端 ID 尚未出現、請將字尾「 Clients 」新增至用戶端 ID ）
+** _user_tokon_= JWT使用者存取權杖
 ** _DS_host_ = BlueXP 分類 Linux 系統的 IP 位址或主機名稱。
 ** _cm_host_= BlueXP Connector系統的IP位址或主機名稱。
 ** _Cloud 供應商 _ = 在雲端執行個體上安裝時、視雲端供應商而定、輸入「 AWS 」、「 Azure 」或「 GCP 」。
@@ -445,7 +466,7 @@ firewall-cmd --permanent --add-port=4789/udp
 firewall-cmd --reload
 ....
 +
-如果您啟用 `firewalld` 安裝 BlueXP 分類之後、您必須重新啟動泊塢視窗。
+請注意、每當您啟用或更新時、都必須重新啟動 Docker `firewalld` 設定：
 
 
 
@@ -466,7 +487,7 @@ image:screenshot_connector_client_id.png["BlueXP Connector組態設定的快照�
 +
 image:screenshot_work_env_id.png["BlueXP 分類組態頁面中工作環境 ID 的螢幕擷取畫面。"]
 
-. 前往 https://services.cloud.netapp.com/developer-hub["API文件開發人員中樞"^] 然後按一下*瞭解如何驗證*。
+. 前往 https://["API文件開發人員中樞"^] 然後按一下*瞭解如何驗證*。
 +
 image:screenshot_client_access_token.png["API說明文件頁面的快照、其中包含驗證指示的連結。"]
 
@@ -484,7 +505,7 @@ image:screenshot_client_access_token.png["API說明文件頁面的快照、其�
 
 +
 ** _Account_id_ = NetApp 帳戶 ID
-** _client_id_=連接器用戶端ID
+** _client_id_ = Connector Client ID （將字尾「 Clients 」新增至您在先決條件步驟中複製的用戶端 ID ）
 ** _cm_host_=連接器系統的IP位址或主機名稱
 ** _DS_manager_IP_ = BlueXP 分類管理器節點系統的私有 IP 位址
 ** _node_private IP = BlueXP 分類掃描程式節點系統的 IP 位址（多個掃瞄器節點 IP 以逗號分隔）
@@ -590,7 +611,8 @@ image:screenshot_scanner_groups.png["快照會列出群組中所有掃描器群�
 除了可用於單一主機安裝的變數之外、還會使用新的選項*- n <node_ip>*來指定掃描儀節點的IP位址。多個掃描儀節點IP之間以一個逗號分隔。
 
 +
-例如、此命令會新增3個掃描儀節點：「Udo ./install.sh -a <account_id>-c <agent_id>-t <tokent>-host <ds_host>-manager-host <cm_host>*-n <node_ip1>、<node_ip2>、<node_ip3>*-proxy-host <proxy_proxy_proxy_proxy_proxy_proxy_proxy_user-proxy_proxy>*
+例如、此命令會新增 3 個掃描器節點：
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password>`
 
 . 在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如 `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`）並將其儲存在文字檔中。
 . 在*每個*掃描儀節點主機上：

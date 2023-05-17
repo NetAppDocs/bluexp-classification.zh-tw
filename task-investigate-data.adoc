@@ -60,7 +60,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 敏感個人資料 | 選取 link:reference-private-data-categories.html#types-of-sensitive-personal-data["敏感個人資料的類型"^]。 
 
 
-| 資料主旨 | 輸入資料主旨的完整名稱或已知識別碼。 
+| 資料主旨 | 輸入資料主旨的完整名稱或已知識別碼。 link:task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports["在此深入瞭解資料主題"^]。 
 |===
 
 
@@ -104,7 +104,11 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 上次修改日期 | 選取上次修改檔案的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。 
 
 
-| 上次存取 | 選取上次存取檔案或目錄（僅限CIFS或NFS）的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。對於 BlueXP 分類掃描的檔案類型、這是 BlueXP 分類掃描檔案的最後一次。 
+| 上次存取  a| 
+選取上次存取檔案或目錄（僅限CIFS或NFS）的時間範圍。您也可以指定自訂時間範圍、以進一步精簡搜尋結果。對於 BlueXP 分類掃描的檔案類型、這是 BlueXP 分類掃描檔案的最後一次。
+
+請注意、 BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 。
+
 |===
 
 

@@ -232,8 +232,6 @@
   <block id="91e06e9a9ef97681b798e2e5e007ba97" category="paragraph">請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。</block>
   <block id="fd28e251418a49d4390ec8a9b6592efc" category="paragraph">您需要有端點URL才能連線至物件儲存服務。</block>
   <block id="763a21e3ec238bca68eb25847cf75843" category="section-title">檢閱物件儲存需求</block>
-  <block id="6988ee4ea30eb643c68d53327c6b1220" category="inline-link-macro">MinIO服務</block>
-  <block id="753043f41e69e8fdeb706dd070e87f37" category="list-text">若要支援Azure Blob、您必須使用 <block ref="bb7c39e5bbb16f5f9e18534c8bb03c91" category="inline-link-macro-rx"></block>。</block>
   <block id="0065ab04ebf28ab82ddb160d51d486e6" category="paragraph">新增物件儲存服務。</block>
   <block id="58dc807771e7cb80307d5179257d8cf5" category="list-text">在「工作環境組態」頁面中、按一下「*新增資料來源*」&gt;「*新增物件儲存服務*」。</block>
   <block id="28a37c29073d01b41af962aa45f11615" category="inline-image-macro">「掃描組態」頁面的快照、您可在其中按一下「新增檔案共用群組」按鈕。</block>
@@ -331,11 +329,8 @@
   <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">在主機上解壓縮安裝檔案、例如：</block>
   <block id="7811f7ac7277273963aaa041e6dee561" category="cell">根據提示輸入參數：</block>
   <block id="92a8de5d873f4ac3a57f4d866c8ed98c" category="cell">輸入完整命令：</block>
-  <block id="d34764ccb2a6879e5ef576e7ea2fb550" category="cell">或者、您也可以事先建立整個命令、提供必要的主機參數：「Udo ./install.sh -A &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;tokent&gt;-host &lt;ds_host&gt;--manager-host &lt;cm_host&gt;--ne-proxy--dimsite」</block>
   <block id="99a5b8fe9eadd5739e3e760584c579fc" category="paragraph">變數值：</block>
   <block id="82fbba9871c4c69830c0ea5c2c6fa6f8" category="list-text">_Account_id_ = NetApp 帳戶 ID</block>
-  <block id="ce49b2db53a11ca7ddb5f05294345b09" category="list-text">_agent_id_ = 連接器 ID</block>
-  <block id="1e182d514fc6063a1b524c471660e230" category="list-text">_tokon_ = JWT 使用者權杖</block>
   <block id="5d0d87e9be98aaab11076c1b64d38cc3" category="inline-link-macro">內部ONTAP 部署的叢集</block>
   <block id="e61ce3062cb76770658896b778ad06cd" category="inline-link-macro">資料庫</block>
   <block id="c3cea28bb90c637f494d5021dcebdf2d" category="paragraph">在「組態」頁面中、您可以選取本機 <block ref="c23a74d01fbf5deb3a784c3ec1da6439" category="inline-link-macro-rx"></block> 和 <block ref="6d4571a63bcf6d226319383d2911863e" category="inline-link-macro-rx"></block> 您想要掃描的。</block>
@@ -365,7 +360,6 @@
   <block id="26285ebf37a162fef382f275814886c9" category="inline-link-macro">單一主機安裝</block>
   <block id="cfc66ec017142ce1f8420ffb8db2e3cd" category="list-text">如步驟9所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。</block>
   <block id="5e2f5642806d5ddc2868631f2e508d3d" category="paragraph">除了可用於單一主機安裝的變數之外、還會使用新的選項*- n &lt;node_ip&gt;*來指定掃描儀節點的IP位址。多個節點IP之間以一個逗號分隔。</block>
-  <block id="5fa878295b23e50238df7f7395042d79" category="paragraph">例如、此命令會新增3個掃描儀節點：「Udo ./install.sh -A &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;tokent&gt;-host &lt;ds_host&gt;--manager-host &lt;cm_host&gt;*-n &lt;node_IP1&gt;、&lt;node_IP2&gt;、&lt;node_IP3&gt;*--ne-proxy-site。</block>
   <block id="611c763bf4c9dbb7098d6afa814b754f" category="list-text">在*每個*掃描儀節點主機上：</block>
   <block id="d3d41a6c99806d8a969b69a369935644" category="list-text">解壓縮安裝程式檔案。</block>
   <block id="05c158c3674b19417f2abea1a13ea2f3" category="list-text">貼上並執行您在步驟3中複製的命令。</block>
@@ -1088,7 +1082,6 @@
   <block id="b445de53411a165e9c56da6430c38d59" category="inline-link">Azure 中的 Connector 規則</block>
   <block id="9b305ee4bd352f956f4cb24478769e42" category="paragraph">您可以從「組態」頁面選取要掃描的資料來源。</block>
   <block id="2ef77a3845de73c82db787233e991d0c" category="doc">掃描SharePoint帳戶</block>
-  <block id="a8c0024f4de7eafbcc79573f90579f5f" category="paragraph">在SharePoint帳戶中新增您要掃描的SharePoint網站URL清單、然後選取掃描類型。您一次最多可以新增100個URL。</block>
   <block id="2b4e0126afcd89267252cefaf503c414" category="section-title">檢閱SharePoint需求</block>
   <block id="f86df9b5b428fe5b37c14bd1162bc107" category="list-text">您需要SharePoint網站URL的行分隔清單、以供掃描所有資料。</block>
   <block id="21470a3e6a3feaf105174d0e14c5f537" category="inline-link-macro">部署於雲端</block>
@@ -1235,8 +1228,6 @@
   <block id="c10114c9189f598289f5615e85beb064" category="paragraph"><block ref="c10114c9189f598289f5615e85beb064" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e780ba1dc1fa7caee58066eebb1037f9" category="inline-xref">符合下列需求</block>
   <block id="0c2ece8552f22362671f28b71520f912" category="paragraph">您也需要符合的Linux系統 <block ref="a2ec304d11350e1ba44149ab8f817c68" category="inline-xref-macro-rx"></block>。</block>
-  <block id="f132f9796727cdfbd850e6d1f0af2208" category="cell">\https://github.com/docker \https://download.docker.com \http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm</block>
-  <block id="c82303c6d5888ba9f147a501b8fe7f29" category="cell">提供安裝所需的必要套件。</block>
   <block id="cdcaeff13fccb06b7b310f6f966ada4f" category="paragraph">對於一般組態、您將在單一主機系統上安裝軟體。 <block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block>。</block>
   <block id="446f633ae412e24a0a66d9d154552c63" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。 <block ref="72f8bc610961b8d2bc734f2ce5e89019" category="inline-xref-macro-rx"></block>。</block>
   <block id="ab6f827b404fc74a3d59a176e44dce54" category="inline-xref">準備Linux主機系統</block>
@@ -1252,7 +1243,6 @@
   <block id="2f22ab4135a481a1450cf28cb5f05c26" category="list-text">請依照中的步驟1至7進行 <block ref="ca10c193ae29117fbfb6ce9e3e248e8b" category="inline-xref-macro-rx"></block> 在管理器節點上。</block>
   <block id="48e1e343989571ace6bf404a680635d8" category="list-text">如步驟8所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。</block>
   <block id="8b1cdcd166f0c70f7233d0d11c7bddf2" category="paragraph">除了可用於單一主機安裝的變數之外、還會使用新的選項*- n &lt;node_ip&gt;*來指定掃描儀節點的IP位址。多個掃描儀節點IP之間以一個逗號分隔。</block>
-  <block id="6b356fe759d450cad6ec9f478a17a524" category="paragraph">例如、此命令會新增3個掃描儀節點：「Udo ./install.sh -a &lt;account_id&gt;-c &lt;agent_id&gt;-t &lt;tokent&gt;-host &lt;ds_host&gt;-manager-host &lt;cm_host&gt;*-n &lt;node_ip1&gt;、&lt;node_ip2&gt;、&lt;node_ip3&gt;*-proxy-host &lt;proxy_proxy_proxy_proxy_proxy_proxy_proxy_user-proxy_proxy&gt;*</block>
   <block id="3f0a4de61ad13ce65d1a7332a726eb8d" category="list-text">貼上並執行您在步驟3中複製的命令。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「說明」功能表的快照、其中「支援」是第一個列出的選項</block>
@@ -1336,7 +1326,6 @@
   <block id="becce430afb103abe05ad66b3e6cde8a" category="sidebar">產生法規遵循報告</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
-  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">雲端網路研討會</block>
   <block id="c6bcf4a88b4c531d404128df1f1ad3a8" category="list-text">Google雲端硬碟帳戶</block>
   <block id="dc3d679737d761f6e72564d962617ffa" category="paragraph">許多使用者之所以喜歡這項功能、是因為他們想要快速掃描資料、找出需要更多研究的資料來源、然後只能針對需要的資料來源或磁碟區進行分類掃描。</block>
   <block id="a29f21b4143f28dd101eaaa1fe82fd69" category="inline-xref">請參閱下列完整清單</block>
@@ -1538,7 +1527,6 @@
   <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ecc7450cf52e0d0d89139603b07ea706" category="paragraph">您可以將游標停留在_掃描狀態_欄中的圖表上、查看每個儲存庫中仍要對應或分類的檔案數目（本範例中為儲存庫）。</block>
   <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">資料庫無法設定為僅對應掃描。資料庫掃描功能可以是關閉或開啟、其中ON等同於Map &amp;分類。</block>
-  <block id="ce12cca419124f32a01c6fec5a3be62f" category="list-text">可以使用版本7.8或7.9、但Linux核心版本必須為4.0或更新版本</block>
   <block id="1ce92447664cc42f3e2c04aaf8570862" category="cell">紐西蘭銀行帳戶</block>
   <block id="2be885677b02540592a1f44b87ee5fb9" category="cell">紐西蘭IRD編號（稅金ID）</block>
   <block id="3c266b4db1bf588305e19eddcef36116" category="cell">紐西蘭護照號碼</block>
@@ -1579,7 +1567,6 @@
   <block id="bb88c75c573c51be16c7d85804e7a9fe" category="list-text">Nutanix</block>
   <block id="15fca3b27e46d9a8a2810d30feb9b434" category="list-text">任何其他儲存設備廠商</block>
   <block id="30899efa777e04d2606dffe90717c0b4" category="paragraph">*雲端：*</block>
-  <block id="52745271323ee9ea30e3a37d0338d118" category="list-text">Azure Blob</block>
   <block id="833c2c211a541e50ad94433664e4b5c1" category="list-text">Google Cloud Storage</block>
   <block id="f79cd76b16e526d536ec5f9e3a3dbe9d" category="list-text">OneDrive</block>
   <block id="27bafb3855ae4ca3df676518f2aaad5a" category="list-text">SharePoint Online</block>
@@ -1822,7 +1809,6 @@
   <block id="7ef314f37951a4ffae65aed3439a8da1" category="inline-image-macro">API說明文件頁面的快照、其中包含驗證指示的連結。</block>
   <block id="e7897b39cbb592afc0430305aca32cc1" category="paragraph"><block ref="e7897b39cbb592afc0430305aca32cc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1480262c4a9656977a70cff8c21b5dc0" category="paragraph"><block ref="0d45fd4edeb386e475963435f8cc230a" prefix="" category="inline-code"></block></block>
-  <block id="0490466572986d52027e27d707b776a5" category="list-text">_client_id_=連接器用戶端ID</block>
   <block id="5d0fd32ac4fe744d7966c459776a6b4c" category="list-text">_cm_host_=連接器系統的IP位址或主機名稱</block>
   <block id="33b07d0ffb66d0a6cd8a0162e20adca4" category="list-text">_user_tokon_= JWT使用者存取權杖</block>
   <block id="b0c80b9aebe2393782fd3bb0680a791b" category="list-text">貼上並執行您在步驟2中複製的命令。</block>
@@ -1983,7 +1969,6 @@
   <block id="cc8f113115a15a733dabb8452c0006ca" category="cell">選取敏感度等級：個人、敏感個人或不敏感。</block>
   <block id="858f7504093c180b7179d29d8e1200d9" category="cell">選取 <block ref="1b5fb6ede432593c04dc0306b78c1e56" category="inline-link-macro-rx"></block>。</block>
   <block id="efbc704c741274e96fb34f9918eea9bc" category="cell">選取 <block ref="ea8f57582e4e2ddb4974e03972a326d7" category="inline-link-macro-rx"></block>。</block>
-  <block id="e9f27357b5c27ea5a56801efd544f2d7" category="cell">輸入資料主旨的完整名稱或已知識別碼。</block>
   <block id="6dd0ccfe2edc5e0affb1f92d200d803f" category="cell">選取目錄類型：「Share（共用）」或「Folder（資料夾）」。</block>
   <block id="af1d33c2d159e6129aa8d5cec06d9e66" category="cell">選取 <block ref="4a178e0468c164aff717ffc6699fa1c6" category="inline-link-macro-rx"></block>。</block>
   <block id="7e1e60231552d76c5626d3b5ad9519d3" category="cell">選取檔案大小範圍。</block>
@@ -2179,7 +2164,6 @@
   <block id="cfac86d9b67213d6bb2dc5d1e6dff274" category="paragraph">使用下列篩選器、依AIP標籤或標記檢視資料。</block>
   <block id="b6fb796ef2b473f220b609812d519181" category="cell">選取原則。行動 <block ref="578f763d599897de23ba32ec116d6451" category="inline-link-macro-rx"></block> 可查看現有策略列表並創建您自己的自定義策略。</block>
   <block id="158e99247d19480d767e25e00d129553" category="section-title">依分析狀態篩選資料</block>
-  <block id="3da9db7f0e8d0dab6787227f56d0489b" category="section-title">依重複項目篩選資料</block>
   <block id="9c7541a95b9333c21b847910917cc789" category="paragraph">使用下列篩選器檢視儲存設備中重複的檔案。</block>
   <block id="f29d7c200ca42589e2a229aaea31ee81" category="paragraph">「資料調查報告」是「資料調查」頁面篩選內容的下載檔案。</block>
   <block id="3cb1844e1b6238f77e2e51aff4e9f4d6" category="list-text">您可以使用「檔案擁有者」 <block ref="11e66926bceae3c2a281c0952ca162a2" category="inline-link-macro-rx"></block> 並在「調查」窗格中查看檔案中繼資料中的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。</block>
@@ -2311,7 +2295,6 @@
   <block id="497d508053af04935d2eb62e219372c8" category="list-text">按一下「*部署*」開始內部安裝。</block>
   <block id="7bde2d7cf6c722c1135ccccea2a76b1a" category="list-text">此時會顯示「部署內部部署的資料感知」對話方塊。複製提供的命令（例如：<block ref="4041549bf21d4c7bed0bfcbf52842063" prefix=" " category="inline-code"></block>）並貼到文字檔中、以便日後使用。然後按一下*關閉*以關閉對話方塊。</block>
   <block id="9c219f00fda547ddab566c43975acd6b" category="list-text">在主機上、輸入您複製的命令、然後依照一系列提示操作、或者您也可以提供完整命令、包括所有必要參數做為命令列引數。</block>
-  <block id="2817a1d472ecfcca8fe861c57ec6f447" category="list-text">貼上您從步驟8複製的資訊：<block ref="feca0af1809ee364465c858e41f4ada4" prefix=" " category="inline-code"></block></block>
   <block id="ce99bf86c57675420203e054ffc86a6d" category="list-text">在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如：<block ref="2478484d96d8c17b7752fd15d3b26f12" prefix=" " category="inline-code"></block>）並將其儲存在文字檔中。</block>
   <block id="19c8d978817f5ad2c7d566851ddf6e4e" category="paragraph"><block ref="19c8d978817f5ad2c7d566851ddf6e4e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bda678b1fb683a403f093f2555da8faf" category="list-text">此時會顯示「部署內部部署的資料感知」對話方塊。複製提供的命令（例如：<block ref="a402a6c8a10b4c24d7596599c6dfb7db" prefix=" " category="inline-code"></block>）並貼到文字檔中、以便日後使用。然後按一下*關閉*以關閉對話方塊。</block>
@@ -2361,7 +2344,6 @@
   <block id="04857641e7994338feb506f5b60ebeb0" category="section-title">GCP 執行個體類型</block>
   <block id="dd654e120269d83d0f32a6f695b8bab9" category="cell"><block ref="fc953708959f6784e56436278d753426" category="inline-link-rx"></block> （預設） n2d-standard-16 n1-Standard-16</block>
   <block id="aebeafb9d6b45d6e3629685737b0b510" category="doc">監控及管理檔案存取事件</block>
-  <block id="cec7bcb15c6741f47d69974fd0f0a3da" category="paragraph">例如、如果您想要追蹤對敏感人事檔案或薪資檔案所做的任何變更、您可以在這些檔案所在的磁碟區上啟用此功能。接著您可以檢視檔案存取稽核記錄、查看這些檔案是否已變更。如果變更了、您就能看到進行變更的人員姓名、以及變更的時間。</block>
   <block id="4189ddcc75f1e8d4ba9a48d4e7f2fa48" category="inline-link">FPolicy 功能</block>
   <block id="686e697538050e4664636337cc3b834f" category="list-text">建立</block>
   <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">讀取</block>
@@ -2374,8 +2356,6 @@
   <block id="10eaa67ba3824a947cec2803e682249a" category="list-text">內部部署 ONTAP</block>
   <block id="de7a9ded100f5ab68960785a7977419c" category="section-title">設定磁碟區以進行檔案存取稽核記錄</block>
   <block id="80027566e31a879d1baef50d58692dc4" category="paragraph">您可以在個別磁碟區上啟用檔案存取稽核記錄、以追蹤檔案和目錄的變更。</block>
-  <block id="1eab470a6f707b92e15040773251a746" category="list-text">秘訣</block>
-  <block id="0925da7b2159d87a33d0fde69e738426" category="list-text">您目前可以在每個 ONTAP 系統上設定最多 5 個磁碟區的檔案存取稽核。</block>
   <block id="9d0e2b2eb032ffd4efa13096caae567a" category="list-text">從資料來源的「 _Scan 組態 _ 」頁面、按一下 <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> 針對該 Volume 、選取 * 設定檔案存取稽核 * 。</block>
   <block id="c791f5a696fa23cbe4c6c1b76be84e2f" category="inline-image-macro">選取您要啟用檔案存取記錄的磁碟區的螢幕擷取畫面。</block>
   <block id="df0da4611bcc736388ba21984af1f174" category="paragraph"><block ref="df0da4611bcc736388ba21984af1f174" category="inline-image-macro-rx" type="image"></block></block>
@@ -2387,26 +2367,14 @@
   <block id="760fa6a53e99af41106fb9a484537801" category="inline-image-macro">螢幕擷取畫面顯示特定磁碟區已啟用檔案存取稽核記錄功能。</block>
   <block id="128380149729d40c8a7f08ebcf71b393" category="paragraph"><block ref="128380149729d40c8a7f08ebcf71b393" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a11ed4a6864c5bc8fd26866333740e8b" category="paragraph">為啟用的磁碟區上的檔案所產生的任何檔案存取事件都會新增至記錄檔。偶爾查看記錄檔、查看您正在接收的事件類型。</block>
-  <block id="1f61b01a11eb001752e432e36c02a458" category="paragraph">系統會為您設定用來追蹤檔案存取事件的每個磁碟區建立記錄檔。稽核記錄中的每一行都包含下列格式的資訊：</block>
-  <block id="3608b8757d42972237c90a4166cb40ef" category="paragraph"><block ref="f81bca8d84e25507999914272dc54cf0" prefix="" category="inline-code"></block></block>
-  <block id="1953cba0d55aa268eb5c81452ed41aa0" category="list-text">時間戳記 - 事件的日期和時間</block>
-  <block id="0837106e33dba045cd4d616fc85d209f" category="list-text">Volume name （ Volume 名稱） - Volume 的名稱</block>
-  <block id="03c77c7d7f8909d2d11fdaebf9f808ca" category="list-text">事件類型：建立、讀取、寫入、重新命名、刪除、 變更擁有者 / 權限、並變更 SACL/DACL</block>
-  <block id="5dd6810cd17cbba46940574283942107" category="list-text">檔案名稱 - 完整路徑和檔案名稱</block>
-  <block id="4385297914f93c5a09fb1cce2acb1a12" category="list-text">使用者名稱（或 ID ）：執行動作的人員的名稱或 ID</block>
-  <block id="3e5220331a650cbadbd6ee74b8f31714" category="list-text">行動結果：行動是否成功或失敗、以及成功 / 失敗的原因</block>
-  <block id="41a8d2e8bafe2324a30d9ef1430e5dcb" category="list-text">行動詳細資料 - 已完成的工作：視行動而定</block>
   <block id="2da4d8c5bc0edc06ac63f3c95d761c7b" category="section-title">存取檔案存取稽核記錄檔</block>
   <block id="a02f04e5cf15eab34e36540d19d919c6" category="inline-xref">您可以在「檔案存取稽核記錄組態」頁面中自訂此值。</block>
-  <block id="cee8cebe9beae40b9ff2920c17036564" category="paragraph">目錄中所有記錄檔的總大小設為預設值 50 GB 。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> 達到此限制時、會自動刪除最舊的記錄檔。</block>
   <block id="f1232e8f69c85f39de4569648f81f7d8" category="section-title">設定檔案存取稽核記錄檔設定</block>
   <block id="03dbd1b5fc01bd9510606278903a28bc" category="cell">稽核記錄選項</block>
   <block id="d13e01ef2af0326f4f5a6e15fee2c4bc" category="cell">記錄檔位置</block>
-  <block id="fbc948416dfe24ca5eec1703b2d724e2" category="cell">該位置目前已經過硬編碼、可將記錄檔寫入<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
   <block id="00fc8ad0777a7d04155f0aea1a460364" category="cell">稽核記錄的最大儲存分配</block>
   <block id="e78e3ddb79416e357c114831c02be2ac" category="cell">目錄中所有記錄檔的總大小目前已硬編碼為預設值 50 GB 。達到此限制時、會自動刪除最舊的記錄檔。</block>
   <block id="b98e5f30ca3cd0f113adc1ab13a39525" category="cell">每個稽核檔案的最大稽核事件數</block>
-  <block id="f46fa6c8b79f57cf8c58c5f05f8134cc" category="cell">每個檔案目前已經過硬編碼、最多可包含 50 、 000 個事件。達到此上限後、系統會建立該磁碟區的新記錄檔。新檔案將會有較新的時間戳記。</block>
   <block id="5046b3bc48bd37acc83c5000548deccc" category="paragraph">請注意、這些設定目前已硬式編碼為預設設定。無法變更。</block>
   <block id="8b6c5ced74ae32d25c3f6ebff98f9529" category="inline-link">在內部部署安裝連接器</block>
   <block id="d848fab961367a4c9f58a25dc74053f3" category="paragraph">您也可以<block ref="a4b2312bac71e1fcb5d5edc9dd08d5ef" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。</block>
@@ -2479,16 +2447,13 @@
   <block id="44bc729b266ea1f75cc8d556fa17943e" category="paragraph">若要在雲端供應商環境中建立一個、請參閱<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>、<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>或<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。</block>
   <block id="dcdba57692d95c33c15bffffceb6357c" category="paragraph">如果您的離線內部部署站台上尚未安裝Connector、<block ref="c356cb96564d1aac144adbd1ad0f2ab1" category="inline-link-rx"></block> 現在就在Linux主機上。</block>
   <block id="89825cdcfb92068b90e1077fbbbe7eee" category="paragraph">如果您的離線內部部署站台尚未安裝BlueXP Connector、<block ref="c356cb96564d1aac144adbd1ad0f2ab1" category="inline-link-rx"></block> 在離線站台的Linux主機上。</block>
-  <block id="c1fb9db100b9c0b30bdce67dd119b43a" category="list-text">確認您的內部部署Connector軟體已升級至最新版本。<block ref="ab6868debf887d8dec6688f98c536c70" category="inline-link-rx"></block>。</block>
   <block id="95d360d4c70cbbf05116206b4e5edd67" category="section-title">存取記錄檔</block>
   <block id="57f460460036fcd7ebbf1fddeaa6a3a5" category="paragraph">如果您還沒有連接器、請立即建立連接器。請參閱<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>、<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>或<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。</block>
   <block id="8b4cc0616cd3112ce97c78446249e336" category="inline-link-macro">替代執行個體類型</block>
   <block id="b4628b43616bed69627de3b91fe817d0" category="paragraph">只有在沒有網際網路存取權的主機上執行指令碼時、才新增選項「 ---變 暗站台」。當主機未連線至網際網路時、會略過某些必要測試。</block>
   <block id="1bb79e71fe1463a15c91ab711e20a6ac" category="list-text">指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成時、它會將工作階段的記錄寫入名為的檔案<block ref="7bca4c3da1c027ba15644b115a5e9fd9" prefix=" " category="inline-code"></block> 在目錄中<block ref="8a788ac11c9bfeaba837d43d9090ac97" prefix=" " category="inline-code"></block>。</block>
   <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
-  <block id="5f2318cc261d90be3fcc5f4c7cc873c8" category="list-text">貼上您從步驟 7 複製的命令：<block ref="924ff0749b2ad085d56d695be970e489" prefix=" " category="inline-code"></block></block>
   <block id="388579bd3749a8791992636cbe6fcba2" category="paragraph">如果您要安裝在雲端執行個體上（而非內部部署）、請新增<block ref="8a51c007faa66fa433403fdda9b5aea8" prefix=" " category="inline-code"></block>。</block>
-  <block id="6da4fe596757430b3c8aac2020ced6c0" category="cell">或者、您也可以預先建立完整命令、提供必要的主機和 Proxy 參數：<block ref="dd2499ea1a73d24df83008235f503dbc" prefix=" " category="inline-code"></block></block>
   <block id="652d29fc9fdc8e0b507bb9eeecca952e" category="list-text">_Cloud 供應商 _ = 在雲端執行個體上安裝時、視雲端供應商而定、輸入「 AWS 」、「 Azure 」或「 GCP 」。</block>
   <block id="9e7ff0af4669feb5e45b838a89143e27" category="paragraph">安裝稽核記錄檔會寫入<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block></block>
   <block id="e08c39eeecbac5d5f73dff71e2512def" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 將檔案共用新增至群組</block>
@@ -2509,7 +2474,6 @@
   <block id="bd069242cf8eda4643c1e3d125af30e2" category="list-text">BlueXP 分類執行個體與共用區之間需要有網路連線。</block>
   <block id="4c6967e71e17b25bd9aba5d07ac1a719" category="list-text">請確定這些連接埠已開放給 BlueXP 分類執行個體：</block>
   <block id="7adf75f8aca26c6ef58c5ad60b1edba5" category="list-text">若為CIFS（SMB）共用、請確定您擁有Active Directory認證、以提供共用的讀取存取權。如果 BlueXP 分類需要掃描任何需要提高權限的資料、則建議使用管理認證。</block>
-  <block id="0cab35f215ad785f6bbbd922e56cfc04" category="paragraph">如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="bb0a1704cdb3aa4652bac58b0632ab23" category="section-title">部署 BlueXP 分類執行個體</block>
   <block id="66d6758c1474f6b831dd835dbec91562" category="paragraph">如果尚未部署執行個體、請部署 BlueXP 分類。</block>
   <block id="d040d135cea4209ef4244e9d6e171fee" category="inline-link-macro">在雲端部署 BlueXP 分類</block>
@@ -2658,7 +2622,6 @@
   <block id="599b3adc06ff60709e02c3d42a15c442" category="paragraph">請注意、從 BlueXP 分類中叫用某些通常的 BlueXP 複本與同步作業時、會停用這些作業：</block>
   <block id="0507a26254d90555779319aac2a586a6" category="paragraph">您可以將 BlueXP 分類掃描的來源檔案移至任何 NFS 共用。NFS 共用區不需要與 BlueXP 分類整合（請參閱 <block ref="29fc238c82f37afa6e56193b0cf6f5eb" category="inline-link-macro-rx"></block>）。</block>
   <block id="687c2785d0e6bcc55e7d411f98257c26" category="list-text">移動檔案需要 NFS 共用區允許從 BlueXP 分類執行個體 IP 位址存取。</block>
-  <block id="cba343df3354e636ac19b2eb001d2453" category="summary">請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存區內的資料。BlueXP 分類可以掃描使用簡易儲存服務（ S3 ）傳輸協定的任何物件儲存服務的資料。其中包括NetApp StorageGRID 功能、IBM Cloud Object Store、Azure Blob（使用MinIO）、Linode、B2 Cloud Storage、Amazon S3等。</block>
   <block id="ab799d9194a97ef175cc77104273ab42" category="paragraph">您需要物件儲存供應商提供的存取金鑰和秘密金鑰、以便 BlueXP 分類能夠存取這些庫位。</block>
   <block id="53ab1a83968fb0e47aaf2604fd097f22" category="paragraph">將物件儲存服務新增至 BlueXP 分類。</block>
   <block id="a9dd30151c7008ee5251686104cfa16e" category="paragraph">如果您要掃描S3物件儲存設備的資料、而且可以透過網際網路存取 <block ref="8faa540c15177bc62b151869f0948a64" category="inline-link-macro-rx"></block> 或 <block ref="15df3adeb2abcc06430d6dc64cee819e" category="inline-link-macro-rx"></block>。</block>
@@ -2667,7 +2630,6 @@
   <block id="e263659a3c43d4bb84ed4f6fa63a1fb7" category="list-text">輸入存取金鑰和秘密金鑰、以便 BlueXP 分類能夠存取物件儲存區中的貯體。</block>
   <block id="5f7d2531317684863a8928345cd2c72a" category="paragraph">在物件儲存服務上啟用 BlueXP 分類之後、下一步是設定您要掃描的儲存區。BlueXP 分類會探索這些貯體、並在您建立的工作環境中顯示這些貯體。</block>
   <block id="37e611c0f6034e9d39537aca9c9331a7" category="paragraph">BlueXP 分類會開始掃描您啟用的儲存區。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。</block>
-  <block id="0382fa55a5763522351262f003e2c25e" category="paragraph">+ 如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、我們建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="264b044bf416a5337d28443921b46791" category="list-text">與其他應用程式共用的主機不支援 BlueXP 分類、主機必須是專用主機。</block>
   <block id="34c6b12ec99e0004de549a9d1fd9589c" category="list-text">在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從三種系統大小中進行選擇。</block>
   <block id="d5c832490c0ab9dcb105acd9ee7b4709" category="list-text">在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：</block>
@@ -2715,12 +2677,7 @@
   <block id="e7fa07083790a8112d00af542356ec88" category="paragraph">根據預設、資料保護（ DP ）磁碟區不會被掃描、因為它們不會暴露在外部、而且 BlueXP 分類無法存取它們。這些都是從內部部署 ONTAP 的 SnapMirror 系統或 Cloud Volumes ONTAP 從某個系統進行 SnapMirror 作業的目的地 Volume 。</block>
   <block id="7c0a9b3e555cf595d3d01d33df76df82" category="list-text">最初在來源 ONTAP 系統中建立為 CIFS Volume 的磁碟區、需要輸入 CIFS 認證資料才能掃描這些 DP 磁碟區。如果您已經輸入 Active Directory 認證、以便 BlueXP 分類能夠掃描 CIFS 磁碟區、您可以使用這些認證、或是指定不同的管理認證集。</block>
   <block id="fbf1d4f9e395daa419609b8d5b9705f7" category="summary">您可以設定 BlueXP 分類、以便在存取或變更您要掃描的其中一個檔案時、將事件記錄到檔案中。然後、您可以檢視此檔案的內容（檔案存取稽核記錄）、或下載此檔案、以查看發生了哪些檔案變更、以及由誰進行變更。</block>
-  <block id="ba688e1991b77fcd44ff6195e0c84363" category="paragraph">您可以在 ONTAP 工作環境中的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。</block>
   <block id="52887b7fa084c02e609d7372dfab4740" category="paragraph">BlueXP 分類目前會擷取檔案和目錄上下列動作的事件：</block>
-  <block id="30fc63feb36d512bc110dc008277f74a" category="paragraph">BlueXP 分類可記錄位於下列資料來源的檔案存取事件：</block>
-  <block id="e3ca60acdd422d6c4d10471ba7bafd7a" category="paragraph">您必須為這些資料來源設定 Active Directory 、以便 BlueXP 分類能夠識別存取檔案的人員名稱。</block>
-  <block id="63affb81f248b01271368473d544b519" category="paragraph">檔案存取稽核記錄檔位於 BlueXP 分類機器上的：<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
-  <block id="9f6e20b07afbaa7f960a88a7109d46b7" category="paragraph">記錄檔的名稱為「 &lt;volume_name&gt; &lt;timestamp&gt; ． log 」、例如「檔案存取 Audit_MedicalData_20230205092321.log 」。&lt;timestamp&gt; 是 BlueXP 分類將第一個記錄寫入檔案的時間。依預設、每個檔案最多可包含 50 、 000 個事件。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> 達到此上限後、系統會建立該磁碟區的新記錄檔。新檔案將會有較新的時間戳記。</block>
   <block id="f8a450637ddb6668a04ea30131e3a1e2" category="paragraph">當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至記錄檔。</block>
   <block id="c025349cd3a26a699951f8e578938046" category="paragraph">當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：</block>
   <block id="cbe58906292040b6d0a07fdaf6ed1e88" category="paragraph">您可以針對檔案存取稽核檔案記錄設定三個選項。這些設定適用於在此 BlueXP 分類執行個體上設定檔案存取稽核記錄的所有資料來源。您可以在 BlueXP 分類 _Configuration_ 頁面的 _File Access Audit Log_ 區段中設定這些設定。</block>
@@ -2833,7 +2790,6 @@
   <block id="5c06ff49871066f9ed72b5135320a06f" category="list-text">對於 SharePoint 內部部署、可以安裝 BlueXP 分類 <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block> 或 <block ref="a9e45dedd045b23b06be5ebd4c9f12fb" category="inline-link-macro-rx"></block>。</block>
   <block id="4680fd81d7e45ccfd1ceacd31a49b359" category="paragraph">當 BlueXP 分類安裝在無法存取網際網路的網站上時、 BlueXP Connector 也必須安裝在同一個網站上、而無需存取網際網路。<block ref="1c688d8f43aa189fb0a1239cdf9c5893" category="inline-link-rx"></block>。</block>
   <block id="4e977298e88aace1f09c15f59ce0e78a" category="list-text">在出現的 Microsoft 頁面中、選取 SharePoint 帳戶並輸入使用者和密碼（管理使用者或其他可存取 SharePoint 網站的使用者）、然後按一下 * 接受 * 、允許 BlueXP 分類從這個帳戶讀取資料。</block>
-  <block id="180a03d01ffffc932373d00975d086ae" category="paragraph">您可以新增個別的 SharePoint 網站或帳戶中的所有 SharePoint 網站、以便透過 BlueXP 分類來掃描相關檔案。新增SharePoint Online或SharePoint內部部署網站的步驟相同。</block>
   <block id="b42ad0875678c7c089fca9adf508bcd1" category="paragraph">BlueXP 分類會開始掃描您新增之 SharePoint 網站中的檔案、結果會顯示在儀表板和其他位置。</block>
   <block id="59ebdcac794eeda1621f09a3ecc27439" category="inline-link-macro">從 BlueXP 分類中刪除整個 SharePoint 帳戶</block>
   <block id="87ea3e57f659d791ccd6bc17b3e404d5" category="paragraph">請注意、您可以 <block ref="afcbfb2e520b0252550180b9b85892a0" category="inline-link-macro-rx"></block> 如果您不想再從SharePoint帳戶掃描任何使用者資料。</block>
@@ -2973,7 +2929,6 @@
   <block id="8e14c56957ac95c2facdf955093df914" category="paragraph">BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟體需求等的主機上執行。</block>
   <block id="cd2c26e6dff9147da7b2b00b90713d5e" category="list-text">* Firewalld考量事項*：如果您打算使用<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 因此與 BlueXP 分類相容：</block>
   <block id="90cb1400dc841cf0e0395cb466d11c1b" category="paragraph">如果您打算使用其他 BlueXP 分類主機做為掃描器節點（分散式機型）、請在此時將這些規則新增至主要系統：</block>
-  <block id="17929764ec3eccca8e82d4e75aba909b" category="paragraph">如果您啟用<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 安裝 BlueXP 分類之後、您必須重新啟動泊塢視窗。</block>
   <block id="56fe5177fa37261644d5d8d101772da7" category="paragraph">BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路使用 Proxy 伺服器進行網際網路存取、請確定 BlueXP 分類執行個體具有傳出網際網路存取權、以聯絡下列端點。</block>
   <block id="deee1d8f5a3df758bd42edb041e173a5" category="paragraph">您必須確保所有必要的連接埠都已開啟、以便在 Connector 、 BlueXP 分類、 Active Directory 和資料來源之間進行通訊。</block>
   <block id="f067a4d9a77738e1e7acac4c6780b5e2" category="cell">Connector &lt;&gt; BlueXP 分類</block>
@@ -3106,8 +3061,6 @@
   <block id="8a77259a547d85aa243c1731eb9cf4f9" category="list-text">在網際網路設定的系統上、從下載 BlueXP 分類軟體<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。您應該選取的檔案名稱為* DataSense-offline bund-&lt;版本&gt;.tar.gz*。</block>
   <block id="dcbcd05aacb89b95f784a8b1f1d67b86" category="inline-image-macro">選取按鈕以在內部部署部署 BlueXP 分類的螢幕擷取畫面。</block>
   <block id="9dc22b84a6a7541bd88f9e0826037c0e" category="paragraph"><block ref="9dc22b84a6a7541bd88f9e0826037c0e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3b2bec612e179a339e2d986e54f12d2d" category="list-text">輸入 BlueXP 分類主機機器的 IP 位址或主機名稱、以便 Connector 執行個體存取。</block>
-  <block id="20d266f8fd4f7f938ee410c8fc73fb14" category="list-text">輸入 BlueXP Connector 主機機器的 IP 位址或主機名稱、以便 BlueXP 分類執行個體存取。</block>
   <block id="00f28e201d21c2b9684ea38809307277" category="list-text">_DS_host_ = BlueXP 分類 Linux 系統的 IP 位址或主機名稱。</block>
   <block id="e1d099266f9e920a7c8817ff766480f2" category="paragraph">BlueXP 分類安裝程式會安裝套件、登錄安裝、並安裝 BlueXP 分類。安裝可能需要 10 到 20 分鐘。</block>
   <block id="9abb289ebc0275e08c6036e047e788f2" category="paragraph">如果主機與 Connector 執行個體之間的連接埠 8080 有連線、您會在 BlueXP 的 BlueXP 分類標籤中看到安裝進度。</block>
@@ -3320,4 +3273,72 @@
   <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">在具有網際網路的 Linux 主機上安裝 BlueXP 分類</block>
   <block id="c3e36333a4a6733ccd92dafc9d8c17b5" category="sidebar">在內部部署安裝 BlueXP 分類、無需網際網路</block>
   <block id="c0b7cbffdfa6fa18059367f2045ac22c" category="sidebar">BlueXP 分類使用案例</block>
+  <block id="44b48aa0d2158361e53832315034f513" category="paragraph">例如、如果您想要追蹤對敏感人事檔案或薪資檔案所做的任何變更、您可以在這些檔案所在的磁碟區上啟用此功能。接著您可以檢視檔案存取稽核記錄、查看這些檔案是否已變更。如果變更了這些項目、您就能看到進行變更的人員的安全識別碼（ SID ）、以及變更的時間。</block>
+  <block id="f8877f183813ba08abe0b73b3b1c1a0a" category="paragraph">您可以在工作環境中執行 ONTAP 軟體的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。</block>
+  <block id="c7f8db8434f3e3057bca29922b597e31" category="paragraph">BlueXP 分類可記錄位於下列資料來源中 ONTAP 磁碟區上之檔案的檔案存取事件：</block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX for NetApp ONTAP 產品</block>
+  <block id="64067288b8531fcd99186eba6a8c23b0" category="paragraph">資料來源必須執行 ONTAP 9.11 版或更新版本的軟體。</block>
+  <block id="e409723ead2999f7cf6579d5cdaa079c" category="admonition">您目前可以在每個資料來源上最多 5 個磁碟區上設定檔案存取稽核。</block>
+  <block id="266321178f48dd580597ebe11b4ed93e" category="list-text">您應該為資料來源設定 Active Directory 、以便 BlueXP 分類可以列出存取檔案的人員 ID 。</block>
+  <block id="c59b99fd4a78f457a5e94a037bb88563" category="list-text">必須開啟連接埠 5018 、才能從 BlueXP 分類系統進行輸出存取。</block>
+  <block id="4d2cf95eb79434a26117b70f40109d70" category="paragraph">系統會為您設定用來追蹤檔案存取事件的每個磁碟區建立記錄檔。記錄檔的名稱為「 &lt;volume_name&gt; _ &lt;volume_uuid&gt; _ .log 」、例如「 fpolicy_CIFS_838c1727-dd2d-11ed-a3ec-590ce4991.log 」。稽核記錄中的每一行都包含下列格式的資訊：</block>
+  <block id="d3369c54154da78d99f4f3934bb84f8f" category="list-text">時間戳記 - 事件的日期和時間</block>
+  <block id="4fe39ce84cbfb175d3002259d9f4de1e" category="list-text">用戶端 IP - 執行檔案作業的執行個體 /PC/Proxy IP 位址</block>
+  <block id="abc097a42e084882f0b5057b088f61bd" category="list-text">Volume Name （ Volume 名稱） - Volume 的名稱</block>
+  <block id="dbad63ce70d94484137fd2bcee25dc1c" category="list-text">Volume UUID - 磁碟區的 UUID</block>
+  <block id="ff8a55161214e6aa8d081013df298e9d" category="list-text">檔案類型 - 檔案類型：檔案或 DIR</block>
+  <block id="64256f21f179e353ec3d64543426b9ac" category="list-text">檔案大小 - 檔案大小（以位元組為單位）</block>
+  <block id="69de0dc8b418fef573ebde0673a1eae6" category="list-text">路徑 - 受影響檔案或目錄的完整路徑和名稱</block>
+  <block id="3c08f92438e4ac1c4646bf56ca891fa9" category="list-text">Volume Type - Volume 類型： SMB 或 NFS</block>
+  <block id="04dad560a21879bc6d32b8e30f651a71" category="list-text">使用者 ID - 執行動作之人員的安全性識別碼（ SID ）</block>
+  <block id="cb4c145642d6cf35e5d4a33ece6b7833" category="list-text">檔案擁有者 ID - 檔案擁有者的安全性識別碼（ SID ）</block>
+  <block id="46892b1d18541880bb4ef3ee2f331f45" category="list-text">事件類型：建立、讀取、寫入、重新命名、刪除、 變更擁有者 / 權限、或變更 SACL/DACL</block>
+  <block id="ae99dae6f6384006aeadebbab894f370" category="list-text">行動詳細資料 - 已完成的工作：取決於行動</block>
+  <block id="e4e81dbf5cdcb72e814265ea01d1f3eb" category="paragraph">例如、記錄檔中的下列行顯示「 Create 」（建立）動作已發生在「 fpolicy_CIFS 」磁碟區中、磁碟區中已建立新的檔案「 F14 」。</block>
+  <block id="e5f8c207227297bb2868689eb39d6520" category="paragraph">您可以使用 BlueXP 分類調查頁面來搜尋磁碟區（使用「儲存儲存庫」篩選器）或檔案（使用「檔案 / 目錄路徑」篩選器）、以查看受影響磁碟區和檔案的詳細資料。</block>
+  <block id="f78abbcec2f9ea5bc3fa03b36826fc43" category="paragraph">檔案存取稽核記錄檔位於 BlueXP 分類機器上的：<block ref="fec957882759a1b449bd1dfc164a64e6" prefix=" " category="inline-code"></block></block>
+  <block id="d83435d800785132bce0e54bcaa13373" category="paragraph">依預設、每個檔案最多可包含 50 、 000 個事件。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> 達到此上限後、記錄檔中較舊的項目會被覆寫。</block>
+  <block id="55b3e20fcb82b08c30a902311468d3c8" category="paragraph">預設會將目錄中所有記錄檔的總大小設為最大 50 GB 。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> 達到此限制時、會在新增記錄檔時刪除最舊的記錄檔。此外、任何超過 14 天的記錄檔都會被覆寫、因為這是最大保留時間。</block>
+  <block id="a0381bb8e5ebb77d0c9d2d40db0d1fe3" category="list-text">&lt;datasense_ip&gt; = BlueXP 分類虛擬機器執行個體的 IP 位址</block>
+  <block id="5c3750f0826de99975f78125d81ce638" category="cell">該位置目前已經過硬編碼、可將記錄檔寫入<block ref="fec957882759a1b449bd1dfc164a64e6" prefix=" " category="inline-code"></block></block>
+  <block id="190e59fe3d6a787439b4b5c2c989f6bf" category="cell">每個檔案目前已經過硬編碼、最多可包含 50 、 000 個事件。達到此上限後、新增新事件時會刪除舊事件。</block>
+  <block id="a1c4e88cdf8e157dbb344fe556f58d28" category="paragraph">如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
+  <block id="6af032d0de89339877509ae11ea19c63" category="paragraph">在SharePoint帳戶中新增您要掃描的SharePoint網站URL清單、然後選取掃描類型。您可以一次新增多達 100 個 URL 、每個帳戶最多可新增 1 、 000 個站台。</block>
+  <block id="ef7e50ee52c97b486ba02e2d652aeb20" category="paragraph">您可以在帳戶中新增個別的 SharePoint 網站或多達 1,000 個 SharePoint 網站、以便透過 BlueXP 分類來掃描相關檔案。無論您是新增 SharePoint Online 或 SharePoint 內部部署網站、步驟都一樣。</block>
+  <block id="77c882826320136a310240e5fcb6d49b" category="list-text">如果您需要為此帳戶新增 100 個以上的網站、只要再次按一下 * 新增 SharePoint 網站 * 、直到您為此帳戶新增所有網站（每個帳戶最多可新增 1,000 個網站）。</block>
+  <block id="114b40cee02180a916d6e0a652f1300d" category="list-text">* UNIX 資料夾權限 * ：需要下列最低 UNIX 權限：</block>
+  <block id="b0f2b97dc5d2b76b26e040408bb1d8af" category="cell">資料夾</block>
+  <block id="9dc48a158dad20b2148d68f6a5863b5e" category="cell">最低權限</block>
+  <block id="d42b9c57d24cf5db3bd8d332dc35437f" category="cell">/tmp</block>
+  <block id="f1e98237c93c0717db2bfa4c6177762f" category="cell"><block ref="4d0e8b4926781b53ee3d95354f5c8bb5" prefix="" category="inline-code"></block></block>
+  <block id="68ab1268abb7e5f5688810968df97d6b" category="cell">/opt</block>
+  <block id="5cbcaeca0f98bea3f5714fbeb859b1f8" category="cell"><block ref="a39d05df186d1deb03343bf4f79e6b17" prefix="" category="inline-code"></block></block>
+  <block id="2e1a4e3f55001820560b237188c70bc3" category="cell">/var/lib/泊 塢視窗</block>
+  <block id="651ffe70d1da174ca6955ceb139ab71c" category="cell"><block ref="20218561600e990c68a725b6b98ae569" prefix="" category="inline-code"></block></block>
+  <block id="361e697d946a0a8473f2bda1979090c3" category="cell">/user/lib/systemd/system</block>
+  <block id="fa17233f7eaadf931550cd80b9ba0e45" category="list-text">可以使用 RHEL 或 CentOS 版本 7.8 或 7.9 、但 Linux 核心版本必須為 4.0 或更新版本</block>
+  <block id="9997b2ae11cbffd6fe1a6e9f683ed24a" category="paragraph">+ 如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、我們建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
+  <block id="ae4d468f55febeccb4eff973d9b635ff" category="inline-link-macro">在此深入瞭解資料主題</block>
+  <block id="1a7107cbf75ccf5399b80fbafd0ee649" category="cell">輸入資料主旨的完整名稱或已知識別碼。 <block ref="dbe06c006d2f67629a75e1ec088edbea" category="inline-link-macro-rx"></block>。</block>
+  <block id="c3e061f64826624fb21952c760e39065" category="paragraph">請注意、 BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 。</block>
+  <block id="21ed6b8b65a14c2b031742eda9665bec" category="section-title">依重複項目篩選資料</block>
+  <block id="3cdb36967a02a71e0d639c6d71d16ac3" category="summary">請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存區內的資料。BlueXP 分類可以掃描使用簡易儲存服務（ S3 ）傳輸協定的任何物件儲存服務的資料。其中包括 NetApp StorageGRID 、 IBM Cloud Object Store 、 Linode 、 B2 Cloud Storage 、 Amazon S3 等。</block>
+  <block id="967e2833b7b63650ec3b8ae154cf6a53" category="paragraph">請注意、每當您啟用或更新時、都必須重新啟動 Docker<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 設定：</block>
+  <block id="04b2719843afa330fd4278f18f551cc0" category="list-text">貼上您從步驟8複製的資訊：<block ref="f2d89fd6adc07cc741bd63dae759c280" prefix=" " category="inline-code"></block></block>
+  <block id="a4dd9b20157e1f61ccf2fa0ae455122b" category="list-text">輸入 BlueXP 分類主機機器的 IP 位址或主機名稱、以便 Connector 系統存取。</block>
+  <block id="ddc6172b757657046107ead16ab653d6" category="list-text">輸入 BlueXP Connector 主機機器的 IP 位址或主機名稱、以便 BlueXP 分類系統存取。</block>
+  <block id="6b0aea6c68ef96dbcfc3127ea709758f" category="cell">或者、您也可以預先建立完整命令、提供必要的主機參數：<block ref="30e6510f8ccbe93aadbdbce29e25b293" prefix=" " category="inline-code"></block></block>
+  <block id="8ef5d363a3f52c2b1fa183d2e2dbcb3c" category="list-text">_client_id_ = Connector Client ID （如果用戶端 ID 尚未出現、請將字尾「 Clients 」新增至用戶端 ID ）</block>
+  <block id="e8cce14fafe88ef9a395cf54e51a3470" category="list-text">_DS_host_ = BlueXP 分類系統的 IP 位址或主機名稱。</block>
+  <block id="f28b62cbbb13ada1264e3712622be29c" category="paragraph">例如、此命令會新增 3 個掃描器節點：<block ref="1e3d5ab9f2f03870882d89f4a82b2729" prefix=" " category="inline-code"></block></block>
+  <block id="de093cfeaa4d569528bc92ff96d56cde" category="list-text">確認您的 BlueXP Connector 軟體已升級至最新的可用版本。<block ref="4d8a85a10354910c72eace431e2b6c17" category="inline-link-rx"></block>。</block>
+  <block id="441e8ff948470291018a26dd540b6d1d" category="cell">https://github.com/docker \https://download.docker.com</block>
+  <block id="b629edc182d9ce4a079d9f954ad3f9b7" category="cell">提供泊塢視窗安裝的必要套件。</block>
+  <block id="fa328073ed60b8719f54add213e6f2e6" category="cell">http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm</block>
+  <block id="43881c6dbe21a65cdf42dc01d8cfb295" category="cell">提供 CentOS 安裝的必要套件。</block>
+  <block id="3c2ecff14c7a136216f1928a3a8052bf" category="list-text">貼上您從步驟 7 複製的命令：<block ref="50a00801fc41bbffdcb652318eb14c43" prefix=" " category="inline-code"></block></block>
+  <block id="8a7af24665c107d42e27bf9f85872742" category="cell">或者、您也可以預先建立完整命令、提供必要的主機和 Proxy 參數：<block ref="3b4bbf213dadbeb10421530a3d8a245b" prefix=" " category="inline-code"></block></block>
+  <block id="79dad5af8e7ba04bd45d58a3d10d4209" category="list-text">_client_id_ = Connector Client ID （將字尾「 Clients 」新增至您在先決條件步驟中複製的用戶端 ID ）</block>
+  <block id="800fbb2e9f1063caafe6917c236f24a6" category="paragraph">例如、此命令會新增 3 個掃描器節點：<block ref="ba1da14563d546c370f034861b50d8f8" prefix=" " category="inline-code"></block></block>
+  <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP 網路研討會</block>
 </blocks>

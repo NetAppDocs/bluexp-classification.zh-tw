@@ -16,7 +16,7 @@ summary: BlueXP 分類提供多種方法來管理及組織您的私有資料。�
 [role="lead"]
 BlueXP 分類提供多種方法來管理及組織您的私有資料。如此一來、您就能更輕鬆地查看最重要的資料。
 
-* 如果您已訂閱 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^] 若要分類及保護檔案、您可以使用 BlueXP 分類來管理這些 AIP 標籤。
+* 如果您已訂閱 https://["Azure資訊保護（AIP）"^] 若要分類及保護檔案、您可以使用 BlueXP 分類來管理這些 AIP 標籤。
 * 您可以將標記新增至您要標記為組織或某種後續追蹤的檔案。
 * 您可以將BlueXP使用者指派給特定檔案或多個檔案、以便該人員負責管理檔案。
 * 使用「原則」功能、您可以建立自己的自訂搜尋查詢、只要按一下按鈕、就能輕鬆查看結果。
@@ -55,7 +55,7 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 
 == 使用AIP標籤分類資料
 
-如果您已訂閱、您可以在 BlueXP 分類正在掃描的檔案中管理 AIP 標籤 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。AIP可讓您將標籤套用至內容、以分類及保護文件與檔案。BlueXP 分類可讓您檢視已指派給檔案的標籤、新增標籤至檔案、以及在標籤已存在時變更標籤。
+如果您已訂閱、您可以在 BlueXP 分類正在掃描的檔案中管理 AIP 標籤 https://["Azure資訊保護（AIP）"^]。AIP可讓您將標籤套用至內容、以分類及保護文件與檔案。BlueXP 分類可讓您檢視已指派給檔案的標籤、新增標籤至檔案、以及在標籤已存在時變更標籤。
 
 BlueXP 分類支援下列檔案類型中的 AIP 標籤： .DOC 、 .DOCX 、 .PDF 、 .PPTX 、 .XLS 、 XLSX 。
 

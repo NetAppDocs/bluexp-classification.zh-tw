@@ -52,7 +52,7 @@ link:concept-cloud-compliance.html["深入瞭解 BlueXP 分類的運作方式"^]
 * 遵守資料保留政策。
 
 
-https://bluexp.netapp.com/netapp-cloud-data-sense["深入瞭解 BlueXP 分類的使用案例"^]。
+https://["深入瞭解 BlueXP 分類的使用案例"^]。
 
 
 
@@ -210,7 +210,7 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["深入
 
 === BlueXP 分類是否能與我的檔案中內嵌的 AIP 標籤搭配使用？
 
-是的。如果您已訂閱、您可以在 BlueXP 分類正在掃描的檔案中管理 AIP 標籤 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。
+是的。如果您已訂閱、您可以在 BlueXP 分類正在掃描的檔案中管理 AIP 標籤 https://["Azure資訊保護（AIP）"^]。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。
 
 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["深入瞭解"^]。
 
@@ -318,7 +318,7 @@ BlueXP 分類掃描會使用標準通訊協定、並在整個環境中使用唯�
 * NetApp的自帶授權（BYOL）
 
 
-請參閱 https://bluexp.netapp.com/pricing["定價"^] 以取得詳細資料。
+請參閱 https://["定價"^] 以取得詳細資料。
 
 
 
@@ -348,19 +348,19 @@ Connector是在雲端帳戶內或內部部署的運算執行個體上執行的�
 * 在內部部署ONTAP 的支援系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶中掃描資料時、您可以在這些雲端位置中使用連接器。
 
 
-因此、如果您在這些位置中有許多資料、您可能需要使用 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個連接器"^]。
+因此、如果您在這些位置中有許多資料、您可能需要使用 https://["多個連接器"^]。
 
 
 
 === 我可以在自己的主機上部署Connector嗎？
 
-是的。您可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["在內部部署連接器"^] 在您網路中的 Linux 主機或雲端中的主機上。如果您打算在內部部署部署 BlueXP 分類、則可能也想要在內部部署安裝 Connector 、但這不是必要的。
+是的。您可以 https://["在內部部署連接器"^] 在您網路中的 Linux 主機或雲端中的主機上。如果您打算在內部部署部署 BlueXP 分類、則可能也想要在內部部署安裝 Connector 、但這不是必要的。
 
 
 
 === 沒有網際網路存取的安全網站又如何？
 
-是的、這也受到支援。您可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["在無法存取網際網路的內部部署Linux主機上部署Connector"^]。然後、您可以探索內部部署的 ONTAP 叢集和其他本機資料來源、並使用 BlueXP 分類來掃描資料。
+是的、這也受到支援。您可以 https://["在無法存取網際網路的內部部署Linux主機上部署Connector"^]。然後、您可以探索內部部署的 ONTAP 叢集和其他本機資料來源、並使用 BlueXP 分類來掃描資料。
 
 
 
