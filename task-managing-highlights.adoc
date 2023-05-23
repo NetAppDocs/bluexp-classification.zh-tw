@@ -42,11 +42,11 @@ BlueXP 分類提供多種方法來管理您的私有資料。有些功能可讓�
 
 * *將ONTAP 某個實體磁碟區*複製到同一個集合體中的新磁碟區、但只會在新的複製磁碟區中包含來源磁碟區中選取的檔案。
 +
-如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。此動作使用 https://["NetApp FlexClone"^] 功能可快速複製磁碟區、然後移除您*未選取*的檔案。
+如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。此動作使用 https://docs.netapp.com/us-en/ontap/volumes/flexclone-efficient-copies-concept.html["NetApp FlexClone"^] 功能可快速複製磁碟區、然後移除您*未選取*的檔案。
 
 * *將檔案*從單一來源儲存庫（ONTAP 例如、S庫、S3儲存庫、NFS共用等）複製並同步到特定目的地（目標）位置的目錄。
 +
-當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。初始複本之後、服務會根據您設定的排程同步任何變更的資料。此動作使用 https://["NetApp BlueXP 複製與同步"^] 將資料從來源複製及同步至目標的功能。
+當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。初始複本之後、服務會根據您設定的排程同步任何變更的資料。此動作使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXP 複製與同步"^] 將資料從來源複製及同步至目標的功能。
 
 
 
@@ -149,9 +149,9 @@ image:screenshot_compliance_clone_files_dialog.png["顯示「複製檔案」對�
 
 === 將來源檔案複製並同步至目標系統
 
-您可以將 BlueXP 分類正在掃描的來源檔案、從任何支援的非結構化資料來源複製到特定目標目的地位置的目錄 (https://["BlueXP 複製與同步支援的目標位置"^]）。在初始複本之後、檔案中的任何變更資料都會根據您設定的排程進行同步處理。
+您可以將 BlueXP 分類正在掃描的來源檔案、從任何支援的非結構化資料來源複製到特定目標目的地位置的目錄 (https://docs.netapp.com/us-en/cloud-manager-sync/reference-supported-relationships.html["BlueXP 複製與同步支援的目標位置"^]）。在初始複本之後、檔案中的任何變更資料都會根據您設定的排程進行同步處理。
 
-當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。此動作使用 https://["NetApp BlueXP 複製與同步"^] 將資料從來源複製及同步至目標的功能。
+當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。此動作使用 https://docs.netapp.com/us-en/cloud-manager-sync/concept-cloud-sync.html["NetApp BlueXP 複製與同步"^] 將資料從來源複製及同步至目標的功能。
 
 
 TIP: 您無法複製及同步位於資料庫、OneDrive帳戶或SharePoint帳戶中的檔案。
@@ -160,7 +160,7 @@ TIP: 您無法複製及同步位於資料庫、OneDrive帳戶或SharePoint帳戶
 * 您必須具有「帳戶管理」或「工作區管理」角色、才能複製及同步檔案。
 * 您必須選取至少20個檔案。
 * 所有選取的檔案都必須來自相同的來源儲存庫（ONTAP 例如、SFC磁碟區、S3磁碟區、NFS或CIFS共用區等）。
-* 您需要啟動 BlueXP 複本與同步服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。從開始檢閱 BlueXP 複本與同步要求 https://["快速入門說明"^]。
+* 您需要啟動 BlueXP 複本與同步服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。從開始檢閱 BlueXP 複本與同步要求 https://docs.netapp.com/us-en/cloud-manager-sync/task-quick-start.html["快速入門說明"^]。
 +
 請注意、 BlueXP 複本與同步服務會為您的同步關係收取不同的服務費用、如果您在雲端部署資料代理程式、則會產生資源費用。
 

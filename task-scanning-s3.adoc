@@ -78,12 +78,12 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 }
 ----
 --
-提供從 BlueXP 分類到 Amazon S3 的連線能力:: BlueXP 分類需要連線至 Amazon S3 。提供此連線的最佳方法是透過 VPC 端點連線至 S3 服務。如需相關指示、請參閱 https://["AWS 文件：建立閘道端點"^]。
+提供從 BlueXP 分類到 Amazon S3 的連線能力:: BlueXP 分類需要連線至 Amazon S3 。提供此連線的最佳方法是透過 VPC 端點連線至 S3 服務。如需相關指示、請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
 +
 --
 當您建立 VPC 端點時、請務必選取對應至 BlueXP 分類執行個體的區域、 VPC 和路由表。您也必須修改安全性群組、以新增允許流量到 S3 端點的傳出 HTTPS 規則。否則、 BlueXP 分類無法連線到 S3 服務。
 
-如果您遇到任何問題、請參閱 https://["AWS支援知識中心：為什麼我無法使用閘道VPC端點連線至S3儲存區？"^]
+如果您遇到任何問題、請參閱 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS支援知識中心：為什麼我無法使用閘道VPC端點連線至S3儲存區？"^]
 
 另一種方法是使用 NAT 閘道來提供連線。
 

@@ -18,7 +18,7 @@ summary: 您可以設定 BlueXP 分類、以便在存取或變更您要掃描的
 
 例如、如果您想要追蹤對敏感人事檔案或薪資檔案所做的任何變更、您可以在這些檔案所在的磁碟區上啟用此功能。接著您可以檢視檔案存取稽核記錄、查看這些檔案是否已變更。如果變更了這些項目、您就能看到進行變更的人員的安全識別碼（ SID ）、以及變更的時間。
 
-您可以在工作環境中執行 ONTAP 軟體的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎 https://["FPolicy 功能"^] 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。
+您可以在工作環境中執行 ONTAP 軟體的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy 功能"^] 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。
 
 BlueXP 分類目前會擷取檔案和目錄上下列動作的事件：
 
@@ -135,9 +135,9 @@ image:screenshot_compliance_file_access_audit_done.png["螢幕擷取畫面顯示
 
 請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：
 
-* https://["AWS中的安全群組規則"^]
-* https://["Azure中的安全性群組規則"^]
-* https://["Google Cloud中的防火牆規則"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
 
 
 

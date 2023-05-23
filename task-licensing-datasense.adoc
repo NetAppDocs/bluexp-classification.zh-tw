@@ -57,17 +57,17 @@ image:screenshot_add_subscription.gif["認證頁面中功能表的快照。它�
 
 . 選取現有的訂閱、然後按一下「*經銷*」、或按一下「*新增訂閱*」、然後依照步驟進行。
 +
-下列影片說明如何建立關聯 https://["AWS Marketplace"^] 訂閱AWS訂閱：
+下列影片說明如何建立關聯 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^] 訂閱AWS訂閱：
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]
 +
-下列影片說明如何建立關聯 https://["Azure Marketplace"^] 訂閱Azure：
+下列影片說明如何建立關聯 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace"^] 訂閱Azure：
 
 +
 video::video_subscribing_azure.mp4[width=848,height=480]
 +
-下列影片說明如何建立關聯 https://["GCP 市場"^] 訂購GCP：
+下列影片說明如何建立關聯 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP 市場"^] 訂購GCP：
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
@@ -85,7 +85,7 @@ NetApp自帶授權、提供1年、2年或3年期限。BYOL BlueXP 分類（ Data
 * 按一下BlueXP右下角的聊天圖示、申請授權。
 
 
-或者、如果您沒有使用未指派的 Cloud Volumes ONTAP 節點型授權、您可以將其轉換為具有相同美元對等和相同到期日的 BlueXP 分類授權。 https://["如需詳細資料、請前往此處"^]。
+或者、如果您沒有使用未指派的 Cloud Volumes ONTAP 節點型授權、您可以將其轉換為具有相同美元對等和相同到期日的 BlueXP 分類授權。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["如需詳細資料、請前往此處"^]。
 
 您可以使用 BlueXP 中的 BlueXP 數位錢包頁面來管理 BlueXP 分類 BYOL 授權。您可以新增授權並更新現有授權。
 
@@ -98,7 +98,7 @@ NetApp自帶授權、提供1年、2年或3年期限。BYOL BlueXP 分類（ Data
 如果您已在內部部署網站中沒有網際網路存取權的主機上部署 BlueXP 分類、則必須從連線網際網路的系統取得授權檔案。無法使用序號和NSS帳戶啟動使用許可、進行暗色站台安裝。
 
 .步驟
-. 登入 https://["NetApp 支援網站"^] 然後按一下*系統>軟體授權*。
+. 登入 https://mysupport.netapp.com["NetApp 支援網站"^] 然後按一下*系統>軟體授權*。
 . 輸入您的 BlueXP 分類授權序號。
 +
 image:screenshot_cloud_tiering_license_step1.gif["顯示依序號搜尋後授權表格的快照。"]
@@ -126,7 +126,7 @@ image:screenshot_cloud_tiering_license_step2.gif["螢幕擷取畫面會顯示「
 +
 ** 如果您有 BlueXP 分類授權序號、而且知道您的 NSS 帳戶、請選取 * 輸入序號 * 選項、然後輸入該資訊。
 +
-如果下拉式清單中沒有您的 NetApp 支援網站帳戶， https://["將新增至BlueXP的NSS帳戶"^]。
+如果下拉式清單中沒有您的 NetApp 支援網站帳戶， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["將新增至BlueXP的NSS帳戶"^]。
 
 ** 如果您有 BlueXP 分類授權檔案（安裝在黑暗的網站中時需要）、請選取 * 上傳授權檔案 * 選項、然後依照提示附加檔案。
 +

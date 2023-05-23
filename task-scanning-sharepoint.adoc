@@ -63,7 +63,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 * 對於 SharePoint 內部部署、可以安裝 BlueXP 分類 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^] 或 link:task-deploy-compliance-dark-site.html["位於無法存取網際網路的內部部署位置"^]。
 
 
-當 BlueXP 分類安裝在無法存取網際網路的網站上時、 BlueXP Connector 也必須安裝在同一個網站上、而無需存取網際網路。 https://["深入瞭解"^]。
+當 BlueXP 分類安裝在無法存取網際網路的網站上時、 BlueXP Connector 也必須安裝在同一個網站上、而無需存取網際網路。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["深入瞭解"^]。
 
 只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 

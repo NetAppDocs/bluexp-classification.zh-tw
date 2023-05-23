@@ -76,7 +76,7 @@ BlueXP 分類記錄在 BlueXP 分類所掃描的所有工作環境和資料來�
 
 請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：
 
-* https://["AWS中的安全群組規則"^]
-* https://["Azure中的安全性群組規則"^]
-* https://["Google Cloud中的防火牆規則"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
 

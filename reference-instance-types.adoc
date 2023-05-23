@@ -29,13 +29,13 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 | 系統大小 | 規格 | 執行個體類型 
 
 
-| 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://["m6i.4xlarge"^] （預設） m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+| 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge"^] （預設） m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
 
 
-| 中 | 8 個 CPU 、 32 GB RAM 、 200 GB SSD | https://["m6i.2xLarge"^] （預設） m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+| 中 | 8 個 CPU 、 32 GB RAM 、 200 GB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.2xLarge"^] （預設） m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
 
 
-| 小 | 8 個 CPU 、 16 GB RAM 、 100 GB SSD | https://["c6a.2xlarge"^] （預設） C5A.2xLarge c5.2xLarge c4.2xLarge 
+| 小 | 8 個 CPU 、 16 GB RAM 、 100 GB SSD | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^] （預設） C5A.2xLarge c5.2xLarge c4.2xLarge 
 |===
 
 
@@ -46,7 +46,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 | 系統大小 | 規格 | 執行個體類型 
 
 
-| 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://["Standard_D16s_v3"^] （預設） 
+| 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] （預設） 
 |===
 
 
@@ -57,5 +57,5 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 | 系統大小 | 規格 | 執行個體類型 
 
 
-| 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://["n2-Standard-16"^] （預設） n2d-standard-16 n1-Standard-16 
+| 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16"^] （預設） n2d-standard-16 n1-Standard-16 
 |===

@@ -26,10 +26,10 @@ summary: 完成幾個步驟、在雲端中部署 BlueXP 分類。BlueXP 將在�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 建立連接器
 [role="quick-margin-para"]
-如果您還沒有連接器、請立即建立連接器。請參閱 https://["在 AWS 中建立連接器"^]、 https://["在 Azure 中建立 Connector"^]或 https://["在GCP中建立連接器"^]。
+如果您還沒有連接器、請立即建立連接器。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。
 
 [role="quick-margin-para"]
-您也可以 https://["在內部部署安裝連接器"^] 在您網路中的 Linux 主機或雲端中的 Linux 主機上。
+您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在您網路中的 Linux 主機或雲端中的 Linux 主機上。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 檢閱先決條件
 [role="quick-margin-para"]
@@ -47,7 +47,7 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須透過雲
 
 == 建立連接器
 
-如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱 https://["在 AWS 中建立連接器"^] 或 https://["在 Azure 中建立 Connector"^]或 https://["在GCP中建立連接器"^]。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因 https://["BlueXP功能需要連接器"]但有些情況下您需要立即設定一個。
+如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^] 或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXP功能需要連接器"]但有些情況下您需要立即設定一個。
 
 有些情況下、您必須使用部署在特定雲端供應商中的Connector：
 
@@ -62,9 +62,9 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須透過雲
 
 使用ONTAP 上述任何雲端連接器時、均可掃描內部系統、非NetApp檔案共用、一般S3物件儲存設備、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶。
 
-請注意、您也可以 https://["在內部部署安裝連接器"^] 在網路或雲端的Linux主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
+請注意、您也可以 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在網路或雲端的Linux主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
 
-如您所見、您可能需要使用某些情況 https://["多個連接器"]。
+如您所見、您可能需要使用某些情況 https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html#multiple-connectors["多個連接器"]。
 
 
 
@@ -76,7 +76,7 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須透過雲
 * Microsoft Azure資訊保護（AIP）標籤功能無法整合。
 
 
-https://["如需在政府區域部署 Connector 的詳細資訊、請參閱"^]。
+https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-restricted-mode.html["如需在政府區域部署 Connector 的詳細資訊、請參閱"^]。
 
 
 
@@ -155,13 +155,13 @@ https://["如需在政府區域部署 Connector 的詳細資訊、請參閱"^]�
 |===
 --
 ====
-確認BlueXP擁有必要的權限:: 確保 BlueXP 具有部署資源和建立 BlueXP 分類執行個體安全性群組的權限。您可以在中找到最新的BlueXP權限 https://["NetApp 提供的原則"^]。
+確認BlueXP擁有必要的權限:: 確保 BlueXP 具有部署資源和建立 BlueXP 分類執行個體安全性群組的權限。您可以在中找到最新的BlueXP權限 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
 確保 BlueXP Connector 能夠存取 BlueXP 分類:: 確保 Connector 與 BlueXP 分類執行個體之間的連線能力。Connector 的安全性群組必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。此連線可部署 BlueXP 分類執行個體、並可讓您在「法規遵循與治理」索引標籤中檢視資訊。AWS 和 Azure 中的政府地區均支援 BlueXP 分類。
 +
 --
-AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。請參閱 https://["AWS 中 Connector 的規則"^] 以取得詳細資料。
+AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-aws.html["AWS 中 Connector 的規則"^] 以取得詳細資料。
 
-Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。請參閱 https://["Azure 中的 Connector 規則"^] 以取得詳細資料。
+Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。請參閱 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-ports-azure.html["Azure 中的 Connector 規則"^] 以取得詳細資料。
 
 --
 確保您可以繼續執行 BlueXP 分類:: BlueXP 分類執行個體必須持續運作、才能持續掃描資料。
@@ -176,9 +176,9 @@ BlueXP 分類執行個體使用私有 IP 位址來確保索引資料無法存取
 --
 如需vCPU限制的詳細資料、請參閱下列連結：
 
-* https://["AWS文件：Amazon EC2服務配額"^]
-* https://["Azure 文件：虛擬機器 vCPU 配額"^]
-* https://["Google Cloud文件：資源配額"^]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS文件：Amazon EC2服務配額"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure 文件：虛擬機器 vCPU 配額"^]
+* https://cloud.google.com/compute/quotas["Google Cloud文件：資源配額"^]
 
 
 請注意、您可以在 AWS 雲端環境中的執行個體上部署 BlueXP 分類、但使用這些系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
