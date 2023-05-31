@@ -408,7 +408,6 @@
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
   <block id="360c11bcd9a9bfedb1aa5353935d21cd" category="paragraph">請依照下列步驟快速入門、或向下捲動以取得完整詳細資料。</block>
   <block id="d0e7ae8581484b514e52b4bee068c4f2" category="inline-link">您必須設定一個FSX工作環境、並設定磁碟區</block>
-  <block id="b7f2b0e45c51391324aebf221531b036" category="paragraph">在掃描FSXfor ONTAP SfundVolume之前、<block ref="68e9cbaf33b2641a589dc87867e4bfec" category="inline-link-rx"></block>。</block>
   <block id="bdcd2e9d167fc54f49913257386095c4" category="section-title">探索您ONTAP 要掃描的FSXfor Sf2檔案系統</block>
   <block id="dd786557a341a9cbd5fb1a642121a675" category="inline-link-macro">深入瞭解對應與分類掃描</block>
   <block id="887fd0b7f53fccc2f6d057bd14bf2612" category="list-text">選取您要在每個工作環境中掃描磁碟區的方式。 <block ref="4482921a499e3614d034b24f41c18ded" category="inline-link-macro-rx"></block>：</block>
@@ -1246,7 +1245,6 @@
   <block id="3f0a4de61ad13ce65d1a7332a726eb8d" category="list-text">貼上並執行您在步驟3中複製的命令。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「說明」功能表的快照、其中「支援」是第一個列出的選項</block>
-  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">按一下「*」「nss管理」&gt;「新增nssAccount」*。</block>
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">出現提示時、按一下*繼續*以重新導向至Microsoft登入頁面。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。</block>
@@ -1353,18 +1351,14 @@
   <block id="f7a21d48814a155d5e8e39ddbf0827ae" category="paragraph">*結構化資料報告*包含下列資料庫表格的相關資訊：</block>
   <block id="6c5c8bcc3e6c86825162a1ff2603c1f3" category="section-title">新增支援在Google雲端硬碟帳戶中掃描資料</block>
   <block id="686f6248c08053e57c0ee91c18b2d097" category="inline-link">瞭解如何掃描Google雲端硬碟帳戶</block>
-  <block id="b3393b07bc5334485489796939a3c1ac" category="paragraph">現在您可以將Google雲端硬碟帳戶新增至Data Sense、以便從這些Google雲端硬碟帳戶掃描文件和檔案。<block ref="a42326c5e8654fdf4afea98988689f56" category="inline-link-rx"></block>。</block>
   <block id="1c569820a2d89c87007e78d8b99f545d" category="inline-link">現有檔案類型</block>
-  <block id="d166e1f4f240d3915c676102b853aab5" category="paragraph">Data Sense可從Google Docs套件（文件、工作表和投影片）中識別下列Google檔案類型中的個人識別資訊（PII）、以及<block ref="c10736ee2c8542c954ba18655a2447a7" category="inline-link-rx"></block>。</block>
   <block id="2f8d7f7b2a9f475f94e961eea0214b6f" category="section-title">目錄層級檢視已新增至「資料調查」頁面</block>
   <block id="a1e4ba958a7013f98fdbb1a883102e86" category="inline-link">瞭解如何選取掃描資料的「目錄」檢視</block>
   <block id="fc923fa1acb929379421a26667fff392" category="section-title">展開群組以顯示具有存取檔案權限的使用者/成員</block>
   <block id="87dc185d970f7684d5d731eebbf8d195" category="inline-link">瞭解如何檢視具有檔案讀取和/或寫入權限的使用者和群組</block>
-  <block id="3fedcf7612eed43efc90d19f42d43f9a" category="paragraph">身為Data Sense權限功能的一部分、您現在可以檢視擁有檔案存取權的使用者和群組清單。每個群組都可展開以顯示群組中的使用者清單。<block ref="978ddb309e10f2b48cc0f4a959fbca42" category="inline-link-rx"></block>。</block>
   <block id="96ab93ed4512cdb4dd07828ed738b502" category="section-title">「資料調查」頁面新增兩個篩選條件</block>
   <block id="9e4e3d73f23809aabccd30c3abe0f99f" category="list-text">「目錄類型」篩選器可讓您精簡資料、只查看資料夾或共用區。結果將顯示在新的*目錄*索引標籤中。</block>
   <block id="a3065e926a55339df72c1343ee9b3fae" category="inline-link">請參閱所有篩選器清單、以供您調查資料</block>
-  <block id="2d7dcb96cb20cbaa2b94280f3b67d862" category="paragraph"><block ref="e3dd455551e82145f7b0bbdda5ed35ae" category="inline-link-rx"></block>。</block>
   <block id="3115aebdd180a7f37b3394bf8996ca30" category="list-text">您目前無法在大於30 MB的檔案中變更標籤。對於OneDrive、SharePoint和Google雲端硬碟帳戶、檔案大小上限為4 MB。</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。</block>
   <block id="c3a9830be43f6515257f3979e66816fd" category="cell">目錄類型</block>
@@ -1399,23 +1393,18 @@
   <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">掃描您的工作環境</block>
   <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">掃描其他資料來源</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">篩選資料以檢視特定檔案</block>
-  <block id="c7fd320d60c5b92b36ff4a806aef9121" category="paragraph">除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。系統會為已掃描的CIFS和NFS共用、以及OneDrive、SharePoint和Google Drive資料夾建立目錄索引。現在您可以在目錄層級檢視權限並管理資料。<block ref="9e53e59afd29cea3c43eb27dc0a3476a" category="inline-link-rx"></block>。</block>
   <block id="bc80eb794f149fca6a16076a0e09247f" category="list-text">最上層的索引標籤可讓您檢視檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">新增使用者檔案所在的Google雲端硬碟帳戶。如果您想要掃描多位使用者的檔案、您必須為每位使用者執行此步驟。</block>
   <block id="f313b26419f4694c764a8d9a38b04ce1" category="section-title">現在您可以從「資料調查」頁面下載結果、做為.Json報告</block>
   <block id="d214193a7fda757836199c60304f2ab0" category="inline-link">請參閱如何從「資料調查」頁面建立報告</block>
-  <block id="6cb5a0e32d140f3770c280b471c48cd9" category="paragraph">在「資料調查」頁面中篩選資料之後、除了將資料儲存至本機系統上的.CSV檔案之外、現在您還可以將資料另存為.Json檔案、以便匯出至NFS共用。確認Data合理擁有正確的匯出存取權限。<block ref="0ee382d3ff8086e5d12287af8220734f" category="inline-link-rx"></block>。</block>
   <block id="bef8207d9128cb7b1a5dc68939fc3d45" category="section-title">能夠從Data Sense UI解除安裝Data Sense</block>
-  <block id="4aa7333b6753545c6a6c04dfb41b9866" category="paragraph">您可以解除安裝Data Sense、將軟體從主機中永久移除、如果是雲端部署、請刪除部署Data Sense的虛擬機器/執行個體。刪除執行個體會永久刪除所有已建立索引的資訊Data Sense已掃描。<block ref="3da12a48df084f38bafa988bc8e77bd7" category="inline-link-rx"></block>。</block>
   <block id="d96d07db10c050adfb5fed7e3d885b82" category="section-title">稽核記錄功能現在可用來追蹤Data Sense所執行的行動記錄</block>
   <block id="1ce49760bcdac502d41fb1e9e547086b" category="paragraph">稽核日誌會追蹤Data Sense對所有工作環境中的檔案所執行的管理活動、以及Data Sense正在掃描的資料來源。活動可以是使用者產生的（刪除檔案、建立原則等）或產生的原則（自動新增標籤至檔案、自動刪除檔案等）。</block>
   <block id="f5678b0269d5a9952a36966b56ab8f2e" category="inline-link">如需稽核記錄的詳細資料、請參閱</block>
-  <block id="d96e8ae6f880fe9b4d4de06b59a2128b" category="paragraph"><block ref="a09465601260c6db487e05cfd3d2ec87" category="inline-link-rx"></block>。</block>
   <block id="a74d72e2c5ed113941ee600287aaa999" category="section-title">在「Data Investigation」（資料調查）頁面中新增敏感識別碼的篩選器</block>
   <block id="3c5d93e6c38bd86146cef63658df62d2" category="paragraph">「識別碼數量」篩選器可讓您列出具有特定數量敏感識別碼的檔案、包括個人資料和敏感個人資料。您可以選取1到10或1到1000等範圍、只檢視含有該敏感識別碼數目的檔案。</block>
   <block id="a630192bda7a95f4930b54f41701fc66" category="section-title">現在您可以編輯所建立的現有原則</block>
   <block id="61e409921fe798c5667689af4656a112" category="inline-link">瞭解如何編輯原則</block>
-  <block id="dccade93a4eb5827c9c662378d30957d" category="paragraph">如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。<block ref="9b2d4d6793839e9e21c2eaa1cfc45637" category="inline-link-rx"></block>。</block>
   <block id="b6d077046b2cf0c110fa9676e30656f1" category="list-text">在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要刪除執行個體及所有相關資料、然後按一下「*解除安裝*」。</block>
   <block id="9fa93379f19a53edba45b6ad3485c2ec" category="list-text">在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要清除所有組態資訊、然後按一下「*解除安裝*」。</block>
   <block id="f5778aefaac6fff25d1b42554bc3eb10" category="list-text">若要從主機完成解除安裝、請在主機上執行解除安裝指令碼、例如：</block>
@@ -1491,16 +1480,13 @@
   <block id="d5b8d2f44acff1b98dd9992401eadf24" category="section-title">2022年7月6日（1.14版）</block>
   <block id="45b5235b8c737e18e646514c30664517" category="section-title">現在您可以檢視擁有目錄存取權的使用者和群組</block>
   <block id="949b2765e1f54f21e0cad7eec542e087" category="inline-link">瞭解如何檢視可存取您資料夾和檔案共用的使用者和群組</block>
-  <block id="a90ca4eb6ddb2e74f2c65cdc04cc3fbb" category="paragraph">過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。<block ref="b60fb470aa4bdcc4f286155f14ead62c" category="inline-link-rx"></block>。</block>
   <block id="6a3dc819e6a301f028d6d27063bb3b04" category="section-title">您可以「暫停」掃描儲存庫、暫時停止掃描特定內容</block>
   <block id="1c32547b30cc36869742df049964326d" category="inline-link">瞭解如何暫停和繼續掃描</block>
   <block id="c249f6d964b8afde45218a63824a58eb" category="paragraph">Data Sense可識別及分類包含來自印第安納州、紐約州和德州的駕駛授權資料的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="a3096c7d9e0dca154e6250efb3ce3736" category="section-title">原則現在會傳回符合搜尋條件的目錄</block>
   <block id="9fadb6e2508d92e954b40d39c36e9687" category="inline-link">深入瞭解如何建立原則</block>
-  <block id="108104172f74542ec4477bdc3526c5a6" category="paragraph">過去當您建立自訂原則時、結果會顯示符合搜尋條件的檔案。結果也會顯示符合查詢的目錄（資料夾和檔案共用）。<block ref="15372ef6946b4e16102f5b52608f8748" category="inline-link-rx"></block>。</block>
   <block id="7d96313dbf4a19b7144c3ff41f415250" category="section-title">Data Sense現在一次最多可移動100、000個檔案</block>
   <block id="3e0c53bc3881ac60b7e7165fda5915c1" category="inline-link">瞭解如何使用Data Sense移動檔案</block>
-  <block id="83a532ebc867c79287dd4586ca124d5c" category="paragraph">如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。<block ref="09dde0c065d21cccd7a9b4c85001931c" category="inline-link-rx"></block>。</block>
   <block id="c761b545ddd43d078ae7ea86495182db" category="paragraph">除了先前支援的DNS伺服器之外、您與Data Sense整合的全域Active Directory伺服器現在也可以是LDAP伺服器。 <block ref="de464dfb9c55e9818cd55e6911bff3a5" category="inline-link-macro-rx"></block>。</block>
   <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">非NetApp CIFS檔案共用（非NFS檔案共用）</block>
   <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">德州驅動程式授權</block>
@@ -1536,13 +1522,10 @@
   <block id="c189819be34e41f0ac712261c4bb10b0" category="list-text">紐西蘭銀行帳戶號碼</block>
   <block id="c8c8337bd5f0527c7ba4b08117f3d96f" category="paragraph"><block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="8d3dd83a131924f6dd08fdea2d8e7828" category="section-title">能夠新增階層連結檔案、以指出檔案移動的原因</block>
-  <block id="e92169a6172fd2cba6d57bfe01aea45a" category="paragraph">當您使用「資料感應」功能將來源檔案移至NFS共用時、現在您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在來源位置建立一個名為「&lt;fileName（檔案名稱）&gt;-breadcrumbsum-&lt;date（日期）&gt;.txt'的階層連結檔案、以顯示檔案的移動位置和移動檔案的使用者。<block ref="c1eac1298d336c56373b10262d37ad96" category="inline-link-rx"></block>。</block>
   <block id="13cd21aa095db4c5e2c5cd12303ecc97" category="section-title">您目錄中的個人資料和敏感個人資料會顯示在調查結果中</block>
   <block id="6b473faf5fc253b69b173e6b8b87f726" category="inline-link">請參閱此處的範例</block>
-  <block id="e8886543955f7a165a88e44f53559443" category="paragraph">「資料調查」頁面現在會顯示您目錄（資料夾和共用）內的個人資料和敏感個人資料結果。<block ref="37ae8b694ca9dace0885ec3ddd4e8904" category="inline-link-rx"></block>。</block>
   <block id="76013a8e1044d1903752927bac2c2799" category="section-title">檢視已成功分類的磁碟區、儲存區等數量狀態</block>
   <block id="046e94b126bcddc4303664d7f72819a5" category="inline-link">請參閱如何檢視此資訊</block>
-  <block id="7e79533726de53720d91f0e491df7b7f" category="paragraph">檢視Data Sense正在掃描的個別儲存庫（Volume、儲存區等）時、您現在可以看到「對應」的儲存庫數量、以及「分類」的儲存庫數量。在所有資料上執行完整AI識別時、分類所需時間會更長。<block ref="0871135af547cfbd7267d7772f52c15b" category="inline-link-rx"></block>。</block>
   <block id="992e3ca84c2944a0dbcaf7e99231a50e" category="inline-link-macro">瞭解對應與分類掃描之間的差異</block>
   <block id="5e27c5cc9f66f543d963585b42d1709d" category="section-title">維持法規遵循</block>
   <block id="3a1ce1b3df0ddd54818235c5f83820d9" category="list-text">根據GDPR、CCPA、PCI及HIPAA隱私權法規的要求、識別範圍廣泛的敏感個人資訊。</block>
@@ -1585,15 +1568,12 @@
   <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（1.16版）</block>
   <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">能夠立即重新掃描儲存庫、以反映檔案中的變更</block>
   <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">請參閱如何重新掃描目錄</block>
-  <block id="45b58068004d744461935c2aae409c04" category="paragraph">如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
   <block id="24a7d06e1fe90aca0c0301d12fadc686" category="section-title">在「資料調查」頁面中、新篩選「資料偵測掃描」狀態</block>
   <block id="e2e0734ca474deb38b2c13f526832e06" category="paragraph">「分析狀態」篩選器可讓您列出處於「資料感應」掃描特定階段的檔案。您可以選取一個選項來顯示*擱置第一次掃描*、*完成*正在掃描、*擱置重新掃描*或*失敗*要掃描的檔案清單。</block>
-  <block id="82f05abce805aa872acec563bbca9a1f" category="paragraph"><block ref="b263790debd0f3d5e5a31296d99293db" category="inline-link-rx"></block>。</block>
   <block id="9d771bf7f3ed0f2d7cd7bbf827bab0a2" category="section-title">資料主體現在被視為掃描中「個人資料」的一部分</block>
   <block id="76eab5fecba3164354032ddcdc0feb3d" category="paragraph">Data Sense現已將資料主體視為「法規遵循儀表板」中所顯示之「個人結果」的一部分。此外、在「調查」頁面中執行搜尋時、您可以選取「個人資料」下方的「資料主旨」、以僅檢視包含資料主旨的檔案。</block>
   <block id="6d3ab1cb3139d4416e111272db779d6d" category="section-title">資料感測階層連結檔案現在被視為掃描中「類別」的一部分</block>
   <block id="d6933caaf62074fc0c3e63f604181712" category="inline-link">深入瞭解如何建立階層連結檔案</block>
-  <block id="368538217a4a98d2d78bf94a224b8eb6" category="paragraph">Data Sense現在將階層連結檔案視為「符合性儀表板」中顯示的類別的一部分。將檔案從來源位置移至NFS共用時、會建立這些檔案Data Sense。<block ref="fd6931884959497f6c1600e29f97b838" category="inline-link-rx"></block>。</block>
   <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">此外、在「調查」頁面中執行搜尋時、您可以選取「類別」下的「資料感測Breadcrumbs」、以僅檢視「資料感測階層連結」檔案。</block>
   <block id="88ce972549d8b67ad56bc9e681818ca2" category="section-title">新增SharePoint Online帳戶</block>
   <block id="8b7071c98b3d8a3e43ecfa77bab75857" category="paragraph">新增使用者檔案所在的SharePoint Online帳戶。</block>
@@ -1624,15 +1604,12 @@
   <block id="0f7d9319c95a8be1492e74601c4b3259" category="list-text">*問題說明*：提供問題的詳細說明、包括任何適用的錯誤訊息或您執行的疑難排解步驟。</block>
   <block id="002c6f26fb01affb37b8cf3cef7a1fb0" category="list-text">*其他電子郵件地址*：如果您想讓其他人知道此問題、請輸入其他電子郵件地址。</block>
   <block id="baaf0e61add7d12cf8d12e023d5aef18" category="inline-image-macro">「建立案例」表單的快照、可讓您使用NetApp支援建立案例。</block>
-  <block id="a2ff30886e1baf1e7d5045b5fc24f5b9" category="paragraph"><block ref="a2ff30886e1baf1e7d5045b5fc24f5b9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="18f487556417bb6d9721a7005ae097c9" category="paragraph">您的支援案例編號會出現快顯視窗。NetApp支援專家將會審查您的案例、並盡快回覆您。</block>
   <block id="04e15da1deae9568b4dcda64fbb0c8d5" category="paragraph">如需支援案例的記錄、請按一下*設定&gt;時間軸*、然後尋找名為「create support case」的行動。 最右側的按鈕可讓您展開動作以查看詳細資料。</block>
   <block id="5c56753585e89a84941bb3a78bc681af" category="paragraph">嘗試建立案例時、可能會遇到下列錯誤訊息：</block>
   <block id="a30f69ab0ec85d427a3e8835713525bd" category="paragraph">"您無權針對所選服務建立案例"</block>
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">使用產品內對談</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">請至提交非技術案例<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
-  <block id="56d39ecb5bf4d2ec753c12fbb0e00108" category="paragraph">AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。請參閱<block ref="74fb388667736bb2b34ea14720dd63e3" category="inline-link-rx"></block> 以取得詳細資料。</block>
-  <block id="261826c213e3c9cbf53df120aaf0be3b" category="paragraph">Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。請參閱<block ref="e1893ebf6f9d2e927a13d052b78eec9f" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">有兩種登錄形式可啟動支援服務權利：</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在Cloud Volumes ONTAP 雲端供應商的市場中註冊與訂閱相關的支援服務序號（這些序號為20位數909601xxxxxxxx序號）。</block>
@@ -1650,7 +1627,6 @@
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
   <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">在*資源*頁面上、按一下*註冊以取得支援*。</block>
   <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">顯示帳戶序號和「Register for Support」（註冊支援）選項的快照</block>
-  <block id="113f9cd7bac6f4faa6b8d58e3e099a8e" category="paragraph"><block ref="113f9cd7bac6f4faa6b8d58e3e099a8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶、但無NSS.帳戶</block>
   <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">如果您是現有的NetApp客戶、擁有現有授權和序號、但_否_ nss_帳戶、您只需要建立一個nss.帳戶。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">《使用者登錄表》NetApp 支援網站</block>
@@ -1658,7 +1634,6 @@
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">NetApp全新推出</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">如果您是NetApp的新客戶、而且您沒有新的NSS帳戶、請依照下列每個步驟操作。</block>
-  <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">NetApp的支援註冊網站</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">瀏覽至<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 並選擇*我不是NetApp註冊客戶*。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">填寫必填欄位（紅色星號）。</block>
@@ -1711,12 +1686,9 @@
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">下列問題與BlueXP Connector有關。</block>
   <block id="629fc635e3b0007019bd6fe0cb5a386c" category="list-text">將自訂標記新增至檔案（例如「需要搬移」）、並指派一個BlueXP使用者、讓該人員擁有檔案的更新。</block>
   <block id="78e53b124783e106b07d5599c5ff16c3" category="inline-link">深入瞭解BlueXP角色</block>
-  <block id="46deba2e0c4b4dba926cc2097ba69715" category="paragraph"><block ref="9c4d00bdf3f9c16dcceaebd3af7f5cfa" category="inline-link-rx"></block> 以及使用方法<block ref="3a3e2df7b0eee6c6295e44064611bba2" category="inline-link-rx"></block>。</block>
   <block id="877f09bae1b7112a88e564afe0b39149" category="inline-link">必須設定BlueXP以探索組態</block>
-  <block id="68674698e34196a6d0cf864cd868479f" category="paragraph">在掃描Azure NetApp Files 完所有資料之前、<block ref="1f16ef9297d6a7b7ec23d184ae9888da" category="inline-link-rx"></block>。</block>
   <block id="4739351a47029a08d047c6f8c00da39e" category="paragraph">如果Azure NetApp Files 您要掃描的這個系統尚未在BlueXP中做為工作環境、您現在可以將它新增到繪圖中。</block>
   <block id="fe7e3d60e37233edf0b5fcd9a28bb00d" category="inline-link">瞭解如何在Azure NetApp Files BlueXP中探索這個功能完善的系統</block>
-  <block id="b857453947413e0fa339869d22d4c786" category="paragraph"><block ref="0f3b3f14a152082b591c2061f55976b1" category="inline-link-rx"></block>。</block>
   <block id="79212600af75dc48b9f7e59a9927a88e" category="list-text">在BlueXP左側導覽功能表中、按一下*管理&gt;分類*、然後選取*組態*索引標籤。</block>
   <block id="16f6b76e35946d0224b05a1466e556f0" category="inline-link">BlueXP功能需要連接器</block>
   <block id="7d0e3dd93f2549f8ce0be2f0454b12b2" category="cell">與BlueXP網站通訊以進行集中式使用者驗證。</block>
@@ -1727,7 +1699,6 @@
   <block id="6419d9da11d0c847e6a758af40af198a" category="paragraph">當在AWS帳戶中執行的BlueXP具有您要掃描的S3儲存區時、它會探索這些儲存區、並在Amazon S3工作環境中顯示它們。</block>
   <block id="42161ed94a32c7fa5d4458da4f8fd247" category="paragraph">如果ONTAP 您想要掃描的FSXfor Sfelffile系統尚未在BlueXP中做為工作環境、您現在可以將其新增至繪圖。</block>
   <block id="7c71ca28422eaaaf66d759fac9ddacd8" category="inline-link">瞭解如何在ONTAP BlueXP中探索或建立FSX for Sf更新 檔案系統</block>
-  <block id="5dbbb266134a4996024e4714a92eb4f4" category="paragraph"><block ref="b25b20c3e54422c7dfd405e788a8f63b" category="inline-link-rx"></block>。</block>
   <block id="b019ab068deba8494415cbd226ca0c4e" category="list-text">在BlueXP主控台右上角、按一下「設定」圖示、然後選取*認證*。</block>
   <block id="0f6c00034bac6e049845fa36d40deb87" category="inline-image-macro">BlueXP右上方橫幅的快照、您可在其中選取「設定」圖示。</block>
   <block id="ec24fbf33d16fbcbcd5109403b3ac212" category="paragraph"><block ref="ec24fbf33d16fbcbcd5109403b3ac212" category="inline-image-macro-rx" type="image"></block></block>
@@ -1735,7 +1706,6 @@
   <block id="f68bf28051d836364652b5a91d1bcd3a" category="list-text">輸入您的BlueXP帳戶ID（在支援網站上稱為「租戶ID」）、然後按一下*提交*下載授權檔案。</block>
   <block id="257ff1df6b80ed0bf9b3463d53be79f9" category="paragraph">您可以從BlueXP頂端選取「*帳戶*」下拉式清單、然後按一下帳戶旁的「*管理帳戶*」、即可找到您的BlueXP帳戶ID。您的帳戶ID位於「總覽」索引標籤。</block>
   <block id="bae190eec3db4a0dd635ae72756acde8" category="inline-link">將新增至BlueXP的NSS帳戶</block>
-  <block id="fc76651edf85f11e6b8f2a81226ab59d" category="paragraph">如果下拉式清單中沒有您的 NetApp 支援網站帳戶，<block ref="6d9745cd4f1d60b55f06aef4c5cb6ec4" category="inline-link-rx"></block>。</block>
   <block id="15f4e537c6c3c2957b6e194cb0894a09" category="list-text">按一下BlueXP右下角的聊天圖示、即可針對特定序號、要求延長您的術語或額外的Cloud Data Sense授權容量。您也可以傳送電子郵件至mailto：ng-contact-data-sense@netapp.com®Subject=Licensing[寄送電子郵件要求更新授權]。</block>
   <block id="379dea20c8734742bd3f9c78de134135" category="paragraph">當您看到這些警告時、請使用BlueXP介面右下角的聊天圖示來續約授權。</block>
   <block id="774c84e5f21e54f29a77614631e4f82d" category="inline-image-macro">BlueXP中法規遵循索引標籤的螢幕擷取畫面、會顯示「報告」窗格、您可在其中按一下「隱私風險評估」。</block>
@@ -1746,15 +1716,12 @@
   <block id="502657836c4445c93e125dc0c25c08c9" category="paragraph">在掃描磁碟區之前、您必須先將系統新增為藍圖XP中的工作環境：</block>
   <block id="d192455efa584e015f67ddf2679e991a" category="list-text">對於供應系統、這些工作環境應該已經可在BlueXP中使用Cloud Volumes ONTAP</block>
   <block id="95c6a4075477a94df7d6ca6d51fde02e" category="inline-link">BlueXP必須探索ONTAP 整個叢集</block>
-  <block id="aae13c6b8913545123c9dcae9328764c" category="list-text">對於內部部署 ONTAP 的不全系統、<block ref="216d043bc79eee7a8f02e5b3dc2b23d3" category="inline-link-rx"></block></block>
   <block id="0c482db6ff22c3a7bd9036d861655cbf" category="paragraph">如果您要掃描的資料來源尚未在您的BlueXP環境中、您可以將其新增至繪圖。</block>
   <block id="f0d07e71c0ad5ba2b297c19c3e9347e0" category="inline-link">BlueXP會探索這些叢集</block>
-  <block id="51fb345d59b3adb8f0060afb63071c67" category="paragraph">您的需求系統應該已經可在BlueXP的畫版中使用。Cloud Volumes ONTAP若為內部部署ONTAP 的功能、您必須擁有<block ref="0ea86f15e08471a3866cbc09dd9a2bd4" category="inline-link-rx"></block>。</block>
   <block id="213c26a534506d1ae60070296a0343e1" category="list-text">在BlueXP中、選取*管理&gt;分類*。</block>
   <block id="7aeae51930f9c356f9f8611d740f88b8" category="list-text">在BlueXP左側導覽功能表中、按一下「*管理&gt;分類*」、然後按一下「*法規遵循*」索引標籤。</block>
   <block id="acdc619c23bd4363ccec733a2e8a38ae" category="list-text">您可以將檔案指派給BlueXP使用者、負責對檔案執行任何後續行動。請參閱 <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">藍圖XP注意事項</block>
-  <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
   <block id="cd02721523de57441e385fc64cc693cc" category="list-text">SharePoint內部部署帳戶（SharePoint Server）</block>
@@ -1816,9 +1783,7 @@
   <block id="ced90f42fe9747f4578603471ea454a3" category="list-text">如果將任何掃描儀節點新增至掃描儀群組、請返回Manager節點並執行下列2項工作：</block>
   <block id="b77072323352dd1724df6d20002eb9f2" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：<block ref="f484d7848213083a72fafef02f452b57" prefix=" " category="inline-code"></block></block>
   <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">支援掃描SharePoint內部部署帳戶</block>
-  <block id="576988db8c435aebbdd8f982f33f8ac5" category="paragraph">Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。<block ref="8036d15ae032ce99e20eb0ee5791bf65" category="inline-link-rx"></block>。</block>
   <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">能夠重新掃描多個目錄（資料夾或共用）</block>
-  <block id="5f78811b5a7bfd9355b114563c862fc9" category="paragraph">現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="62c228b6acfb31476d7e800452f50dcd" category="inline-link-rx"></block>。</block>
   <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">能夠新增額外的內部部署「掃描器」節點、以掃描特定的資料來源</block>
   <block id="cbcceb43df0c94c9cc9e38ba4b9389c1" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用、SharePoint Online、SharePoint內部部署及OneDrive中的資料。</block>
   <block id="aadddcc55c6a2a76a433b97a4366f53f" category="list-text">您可以從文字檔新增自訂關鍵字、這些文字會在您的資料中識別。</block>
@@ -1829,11 +1794,8 @@
   <block id="84bcb800c1d5099ce2ac32d1e7b6680f" category="list-text">&lt;machine_user&gt;：</block>
   <block id="7ba7a32a873386de0e3b4747ceb28558" category="list-text">&lt;datasense_ip&gt;=虛擬機器執行個體的IP位址</block>
   <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWS中的安全群組規則</block>
-  <block id="f2ad0eeffca4d67e7eb677593c90d5bf" category="list-text"><block ref="f2ad0eeffca4d67e7eb677593c90d5bf" category="inline-link-rx"></block></block>
   <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Azure中的安全性群組規則</block>
-  <block id="c3122c19fb459588f8438e668beb5f88" category="list-text"><block ref="c3122c19fb459588f8438e668beb5f88" category="inline-link-rx"></block></block>
   <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloud中的防火牆規則</block>
-  <block id="2cfdb7ae537da608249744d8e40289a8" category="list-text"><block ref="2cfdb7ae537da608249744d8e40289a8" category="inline-link-rx"></block></block>
   <block id="d1cae4639086ce5de29473a5d53747c7" category="inline-image-macro">在「調查結果」窗格中顯示自訂關鍵字範例的快照。</block>
   <block id="7b739c51b4a511be3459afe942a8ef3c" category="paragraph"><block ref="7b739c51b4a511be3459afe942a8ef3c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9c0bd48717ec950ad656ee0c5cbe1bd7" category="section-title">使用regex新增自訂的個人資料識別碼</block>
@@ -1852,10 +1814,8 @@
   <block id="8cc577dbce4245d15abad6f3b1dfc995" category="paragraph">每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統最多可保留100個記錄檔-在達到上限後、會自動刪除舊的記錄檔。</block>
   <block id="fbda64f06352e44a4e6523dbdd6b039e" category="paragraph">請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：</block>
   <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">瞭解如何安裝掃描器節點來掃描其他資料來源</block>
-  <block id="232acd7f039f2650674c20301305634d" category="paragraph">如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。<block ref="1527b8cf69e6865de2ec8736eea9f338" category="inline-link-rx"></block>。</block>
   <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">您可以使用兩種方法新增自訂的「個人資料」、以便Data Sense在未來的掃描中識別。如此一來、您就能完整瞭解所有組織檔案中潛在敏感資料所在的位置。</block>
   <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">您可以使用規則運算式（regex）新增個人模式。</block>
-  <block id="a7110ffc746d511f3031ce3693e9c099" category="paragraph">這些關鍵字和模式會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="ba4b576d22723dd9b7b37b67a884a8d7" category="inline-link-rx"></block>。</block>
   <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。</block>
   <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">向您的雲端供應商訂閱BlueXP Marketplace清單、或</block>
   <block id="21315205ba34163a83853c5526e534c1" category="list-text">一次最多可重新掃描1000個項目。</block>
@@ -1932,7 +1892,6 @@
   <block id="8e3833fdafa0cd3a63d1fae40cbd74e9" category="list-text">測試所有必要資料夾的相關權限</block>
   <block id="36cbb51c271d3c68a01a8599c0fbd2b8" category="list-text">在「組態」頁面中、「工作環境」區段現在會顯示_工作環境ID_和_掃描器群組_名稱。如果您打算使用多個Data Sense主機來提供額外的處理能力來掃描資料來源、則必須知道工作環境ID。</block>
   <block id="73e22396c6474ab27832098f1351b823" category="inline-link">深入瞭解如何在單一主機伺服器和多個主機上安裝Data Sense</block>
-  <block id="7d11de825f5fb48a0194c3826f7e2322" category="paragraph"><block ref="6aec5abc0a91e6bbae2064cb8f81d2dd" category="inline-link-rx"></block>。</block>
   <block id="13e915b0d4f4c5b06792671c4c55da56" category="section-title">Data Sense可識別來自其他三種狀態的美國駕駛證資料</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">開始之前</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
@@ -1956,7 +1915,6 @@
   <block id="dace7436ca5a83360d9bbd7d056c44bd" category="paragraph"><block ref="dace7436ca5a83360d9bbd7d056c44bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">深入瞭解Cloud Volumes ONTAP 從NetApp系統分層的相關資訊</block>
   <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">深入瞭解內部部署ONTAP 的資訊系統分層</block>
-  <block id="7a120914c03f44c0510fb37c3a4130dd" category="list-text">識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。<block ref="3d81b5b5d603ea4b1368feff62e3ead0" category="inline-link-rx"></block>。<block ref="7352e09cdfe02b104fd014f47f71d967" category="inline-link-rx"></block>。</block>
   <block id="a33f1b61e65aad9cca86d3578cf3028a" category="cell">選取資料內及資料夾/共用內的權限類型。</block>
   <block id="81593873baa2c232be0bc3600b554eb3" category="cell">擁有存取權的使用者人數</block>
   <block id="0ffaed104783fa77dca7b463b63d6a3d" category="cell">選取一或多個類別範圍、以顯示哪些檔案和資料夾已對特定數量的使用者開啟。</block>
@@ -1993,7 +1951,6 @@
   <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">如果您只是想要快速回答問題、這個常見問題集就能幫上忙。</block>
   <block id="4cefd69158974e4aee3260041ff258d4" category="paragraph">一開始新增資料來源時、您也可以選擇只執行「對應」掃描、而非完整的「分類」掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。 <block ref="51b8d4ed20a0bce6d8202eb3e674faa5" category="inline-link-macro-rx"></block>。</block>
   <block id="0c3df620e5f733002f5c1ad4579a8153" category="section-title">我可以根據組織的需求自訂服務嗎？</block>
-  <block id="d6e4cbf0a56fc8c55a32c1540faee3e4" category="paragraph">因此、如果您在這些位置中有許多資料、您可能需要使用<block ref="666b387130f125264ee326f0a4738ff7" category="inline-link-rx"></block>。</block>
   <block id="042d6a5acaf1a16f91ab258697afa46c" category="list-text">當某些重要原則傳回結果時、您可以傳送電子郵件警示給BlueXP使用者或任何其他電子郵件地址。</block>
   <block id="0f45f5e9392cad0f6f0647364c3255a6" category="list-text">在「編輯原則」頁面中：</block>
   <block id="8e77c496ba7cea76c0e1e5ce3797b5fd" category="list-text">如果您想要將通知電子郵件傳送給您BlueXP帳戶中的使用者、請勾選「在此帳戶中傳送所有使用者電子郵件」方塊、然後選擇電子郵件的傳送時間間隔（例如*每天*）。</block>
@@ -2017,7 +1974,6 @@
   <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">「有存取權的使用者人數」篩選器會顯示哪些檔案和資料夾已對特定數量的使用者開放。您可以選擇一個數字範圍來精簡結果、例如、查看51到100位使用者可以存取哪些檔案。</block>
   <block id="142c1e7e965016b6fe04e45f8ae01209" category="list-text">「建立時間」、「探索時間」、「上次修改時間」和「上次存取時間」篩選條件現在可讓您建立自訂日期範圍、而不只是選擇預先定義的天數範圍。例如、您可以在「過去10天」內尋找「建立時間」為「6個月以上」或「上次修改日期」的檔案。</block>
   <block id="248b219562d5c677bea769543286aaf9" category="list-text">紐西蘭駕駛證號碼</block>
-  <block id="3f69bac652b22744f89b8727420c50db" category="paragraph">暫停掃描表示「Data Sense」（資料感測）將不會在任何新增或變更磁碟區或儲存區的情況下執行未來掃描、但系統仍會提供所有目前的結果。<block ref="a7d93e406d54440657820ff66e02fe00" category="inline-link-rx"></block>。</block>
   <block id="1a70f847ca98ead8008196451ddb3173" category="list-text">確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。</block>
   <block id="dc398b6dfc944aa53fc80c488796fb93" category="list-text">確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。</block>
   <block id="47a431ede9d263c65258e5be6ff6b2c1" category="paragraph">隱私權風險評估報告概述貴組織的隱私權風險狀態、如GDPR和CCPA等隱私權法規要求。報告包含下列資訊：</block>
@@ -2050,7 +2006,6 @@
   <block id="7a8c400460fcd57ab61e646f8f7222ff" category="list-text">您必須擁有SharePoint帳戶的管理員使用者登入認證、才能提供所有SharePoint網站的讀取存取權。</block>
   <block id="fbd2a3d3a2a95ffb088fd8e0ccf6b67d" category="list-text">對於SharePoint Online、您可以使用非系統管理帳戶、但該使用者必須擁有存取您要掃描之所有SharePoint網站的權限。</block>
   <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="section-title">能夠檢視含有敏感資料且過於許可的檔案圖表</block>
-  <block id="d9b195efc41ceb51899b712eb2c0c583" category="paragraph">「治理」儀表板新增了「敏感資料」和「廣泛權限」區域、提供內含敏感資料（包括敏感和敏感個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料的風險所在。<block ref="315faeb2b0e6f27dd87bce24f0b16dd0" category="inline-link-rx"></block>。</block>
   <block id="ee7392d2316f5d3dd66a6f38dfd1dbfb" category="list-text">「使用者/群組權限」篩選器可讓您列出特定使用者或群組具有讀取和/或寫入權限的檔案、資料夾和共用。您可以選取多個使用者和/或群組名稱、或輸入部分名稱。</block>
   <block id="d03ac14c4e429af55c127e304518d56e" category="paragraph">Data Sense可識別及分類包含澳洲（TFN）（稅務檔案編號）、澳洲駕駛證編號、澳洲醫療保險編號及澳洲護照編號的檔案。 <block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
   <block id="3631ca73c04d0e5a0d6b08517f6f049f" category="cell">日文個人識別號碼（個人和公司）</block>
@@ -2059,9 +2014,6 @@
   <block id="9098e762df6423155c77747444ce3402" category="list-text">請依照中的步驟1至8進行 <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> 在管理器節點上。</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支援雲端供應商解決方案</block>
   <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">如需您已整合至BlueXP的下列雲端供應商解決方案的技術支援、請參閱該產品的藍圖XP文件中的「取得協助」。</block>
-  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
-  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
-  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
   <block id="0b95409e38fd76ec71d03e3e14b83763" category="paragraph">所有語言均支援所有這些新增自訂掃描準則的機制。</block>
   <block id="e1a196cfa9a98106e5ba102887a0c95d" category="paragraph">可辨識這些項目的語言列於表格中。</block>
   <block id="ad225f707802ba118c22987186dd38e8" category="cell">法文</block>
@@ -2173,8 +2125,6 @@
   <block id="fa5af203c1129bb563bbf7f09ad2de8e" category="paragraph">是的。搭配原則功能、您可以在原則傳回結果時、將電子郵件警示傳送給BlueXP使用者（每日、每週或每月）或任何其他電子郵件地址、以便取得通知來保護資料。深入瞭解 <block ref="52a90c0911f2be2601275d578a93ce51" category="inline-link-macro-rx"></block>。</block>
   <block id="ea2ae808e5bc26e70d719a3dccac3d1e" category="paragraph">請參閱<block ref="8035aa4e87ed378ff4c6d7c3151d4d34" category="inline-link-rx"></block> 以取得詳細資料。</block>
   <block id="6eab0919191c5c01e62f627bf1087393" category="inline-link">在無法存取網際網路的內部部署Linux主機上部署Connector</block>
-  <block id="6d1902eb0495d9d60f02e9146d0a091a" category="paragraph"><block ref="0ee4c43a6d75245009919f8e1767edb7" category="inline-link-rx"></block>。</block>
-  <block id="33720bb7474c733a91f61445b2fe886d" category="paragraph"><block ref="919878f5ddd65e1ab5af9e84f9299a2f" category="inline-link-rx"></block>。</block>
   <block id="1bfc9901c2c53bbd2c3b887e04b0729a" category="inline-image-macro">刪除標記按鈕位置的快照。</block>
   <block id="40a535759cb359e9c73b128ff3596ce9" category="paragraph"><block ref="40a535759cb359e9c73b128ff3596ce9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f40bed7c791869262a23c697217f4f7" category="list-text">當檔案包含特定PII時、透過電子郵件通知特定使用者（您使用定義此條件 <block ref="52a90c0911f2be2601275d578a93ce51" category="inline-link-macro-rx"></block>）以便決定行動計畫。</block>
@@ -2213,20 +2163,14 @@
   <block id="27635a52fe4c34c39ffc6430f4244ec6" category="list-text">在*組織案例*下、按一下*檢視*以檢視與貴公司相關的所有案例。</block>
   <block id="059e856250b59be3069246887b74a23c" category="list-text">選擇確切的日期範圍或選擇不同的時間範圍、以修改日期範圍。</block>
   <block id="dfb3764bce2548df4e06357403f9c7d0" category="inline-image-macro">案例管理頁面上方表格上方選項的快照、可讓您選擇確切的日期範圍或過去7天、30天或3個月。</block>
-  <block id="7fcba8aeefa9960d3fc3fa08b360ba2e" category="paragraph"><block ref="7fcba8aeefa9960d3fc3fa08b360ba2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a1bb576be9e5a356290f231efb51b3f5" category="list-text">篩選欄的內容。</block>
   <block id="3753f10a59e21f58b30e3e67d416453e" category="inline-image-macro">「狀態」欄中篩選選項的快照、可讓您篩選出符合特定狀態（例如「作用中」或「已關閉」）的個案。</block>
-  <block id="37709be3a43df07d5975287545d0ba12" category="paragraph"><block ref="37709be3a43df07d5975287545d0ba12" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c6ea5ef583389e18e7d7bda70beaa71" category="inline-image-macro">出現在表格中的加號圖示</block>
-  <block id="1614dc8e47c0492434152c990d6c1040" category="list-text">按一下以變更表格中顯示的欄 <block ref="effeab06130cddc8360822b2b706805b" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
   <block id="370b44009f1b82d0b6b178bb80cc62fa" category="inline-image-macro">顯示可在表格中顯示之欄的快照。</block>
-  <block id="5de408d7cbad49634fb25f9047498132" category="paragraph"><block ref="5de408d7cbad49634fb25f9047498132" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad0ae9ea1f2e8d973a9a0f6bb169f494" category="inline-image-macro">表格最後一欄中出現三個點的圖示</block>
-  <block id="98efef1c8a47ed5791b41944e8ff4ec2" category="list-text">按一下即可管理現有案例 <block ref="a0b152b50a56901a75affebabc26ed61" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*檢視案例*：檢視特定案例的完整詳細資料。</block>
   <block id="f791bc685c526af8296381acff10f6a0" category="list-text">*結案案例*：提供結案原因的詳細資料、然後按一下*結案案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
-  <block id="e9a5c374fb47ed2ae5cc6108fb36d829" category="paragraph"><block ref="e9a5c374fb47ed2ae5cc6108fb36d829" category="inline-image-macro-rx" type="image"></block></block>
   <block id="99d97930418935683e2b318283d0dfe1" category="section-title">上次存取時間時間戳記</block>
   <block id="b2d4384c1deeeb5068a47d9c4f7fecae" category="paragraph">此功能適用於內部部署ONTAP 的不間斷支援、Cloud Volumes ONTAP 例如：支援Azure NetApp Files 功能的內部系統、支援功能、支援功能、支援ONTAP 功能、以及非NetApp檔案共享。</block>
   <block id="2e9bf0fba1b77a1da35499a6b728c5e6" category="inline-image-macro">篩選器的螢幕快照、可根據是否具有寫入權限、來查看哪些檔案已掃描而非掃描。</block>
@@ -2234,7 +2178,6 @@
   <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">篩選選項包括：</block>
   <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">「未分類-無法回復上次存取時間」-這會顯示由於遺失寫入權限而未分類的檔案。</block>
   <block id="529e58159a0567a96e1265aa7c80760b" category="inline-link">深入瞭解資料調查報告</block>
-  <block id="1519214436b24573d7996e8c310f57e7" category="paragraph">如有需要、您可以將這些結果匯出至報告、以便查看哪些檔案因為權限而被掃描或未被掃描。<block ref="55841a629b143f31cba7cbe4e8dd8d86" category="inline-link-rx"></block>。</block>
   <block id="b70232fe808c101066f1d5f669f6a6cd" category="paragraph"><block ref="b70232fe808c101066f1d5f669f6a6cd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e47ea30e34a3a076c6a7779b8a54db7c" category="cell">波札那身分證（Omang）號碼</block>
   <block id="2d3ad991cc78b072cf48ad8db3fb43e0" category="cell">波札那護照號碼</block>
@@ -2273,7 +2216,6 @@
   <block id="cdbe480dc11409647fd956762112b463" category="paragraph"><block ref="cb955744923a641be9b94cbcd31ea046" category="inline-link-macro-rx"></block> 如需使用掃描分析事件進行篩選時、出現在「調查」頁面的項目相關資訊。</block>
   <block id="916fe80558e430806f51297666a415c2" category="section-title">2023年3月7日（版本1.21）</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link">預先定義的類別</block>
-  <block id="4aedc0068ab1ebb9a68cd09e40502224" category="paragraph"><block ref="29977fc02ca1e575e657cf5a87ae1883" category="inline-link-rx"></block>。</block>
   <block id="c750c2392e2683a70ab7309253a1954b" category="section-title">目錄的更新功能</block>
   <block id="179219a43ca594b98a13e70b7ebc112a" category="list-text">資料調查報告的「輕度CSV報告」選項現在包含來自目錄的資訊。</block>
   <block id="b2755be94249995adeed2a28b31a7393" category="list-text">「上次存取」時間篩選器現在會顯示檔案和目錄的上次存取時間。</block>
@@ -2284,8 +2226,6 @@
   <block id="d926847e4634e19a1aa7358becc0fa27" category="paragraph">「此帳戶不允許使用新增服務客戶類型、因為已經有不同類型的新增服務使用者。」</block>
   <block id="a04a3a5322782e8c18d0d64be7e1ccbc" category="paragraph">如果您擁有預先存在的客戶層級的NSS帳戶、並嘗試新增合作夥伴層級的帳戶、情況也是如此。</block>
   <block id="1afe8a81cfddc9fa9559e272bb6b9496" category="list-text">成功登入後、NetApp會儲存NSS.使用者名稱。</block>
-  <block id="452cd4df7b0d5eb1156519a2f3b0206b" category="paragraph">這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
-  <block id="fd02e84624a2fdfd58787131aa2820b5" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="0d0843f26c0819e5369f690fefbf68b7" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項會提示您重新登入。請注意、這些帳戶的權杖會在90天後過期。系統會張貼通知、提醒您注意此點。</block>
   <block id="8193e38e933656edf000dbf251568d4d" category="list-text">在右側的「服務」窗格中、按一下「*分類*」旁的「*啟用*」。</block>
   <block id="c9ba77685f066f05e419c9ad4b812035" category="list-text">在右側的「服務」窗格中、按一下「*設定桶」。</block>
@@ -2377,10 +2317,7 @@
   <block id="b98e5f30ca3cd0f113adc1ab13a39525" category="cell">每個稽核檔案的最大稽核事件數</block>
   <block id="5046b3bc48bd37acc83c5000548deccc" category="paragraph">請注意、這些設定目前已硬式編碼為預設設定。無法變更。</block>
   <block id="8b6c5ced74ae32d25c3f6ebff98f9529" category="inline-link">在內部部署安裝連接器</block>
-  <block id="d848fab961367a4c9f58a25dc74053f3" category="paragraph">您也可以<block ref="a4b2312bac71e1fcb5d5edc9dd08d5ef" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。</block>
-  <block id="7136865bb089260220159be68ad07c25" category="paragraph">如您所見、您可能需要使用某些情況<block ref="1b53f67d10a600e06f0d8110c1ecba99" category="inline-link-rx"></block>。</block>
   <block id="d86d903b07bcdf54c0633484d605d52a" category="inline-link">如需在政府區域部署 Connector 的詳細資訊、請參閱</block>
-  <block id="4436ca4e2cfd329d13aeb590ee5ba775" category="paragraph"><block ref="c536f47a35ce0751f8d9699289dc0a42" category="inline-link-rx"></block>。</block>
   <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link-macro">請參閱可用的執行個體類型和限制</block>
   <block id="7df445bf0c34cf36a966141745590030" category="open-title">在 AWS 中部署</block>
   <block id="2cf7dbc159875140b6f5ecc68994fa13" category="list-text">從 _ 安裝 _ 頁面、按一下 * 部署 &gt; 部署 * 以使用「大型」執行個體大小、然後啟動雲端部署精靈。</block>
@@ -2394,7 +2331,6 @@
   <block id="699254c5c0c8f50098c4ced6af6b9a8d" category="list-text">準備主機並確認它符合所有需求。</block>
   <block id="1dc78a625057b828e3c9842b6a68f0f6" category="list-text">確認所有系統上的所有必要連接埠都已啟用。</block>
   <block id="638dfa4dd42c802c871ad02b969b48ab" category="list-text">下載並執行先決條件測試指令碼。</block>
-  <block id="c3ac06ac78781d185b2fc79bb41b4d6e" category="paragraph">若要在雲端供應商環境中建立 Connector 、請參閱<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>、<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>或<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。</block>
   <block id="088be43867eaac29f74142859d1e2a13" category="paragraph">執行 Prerequisites 指令碼時、您需要 Connector 系統的 IP 位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">驗證主機需求</block>
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">* 大 *</block>
@@ -2423,7 +2359,6 @@
   <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">2023 年 4 月 3 日（版本 1.22 ）</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">新的資料探索評估報告</block>
   <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">瞭解如何產生及使用資料探索評估報告</block>
-  <block id="a2f7db2af3b89cce9c368f52089406c7" category="paragraph">「資料探索評估報告」會針對您所掃描的環境提供高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。本報告的目標是提高對資料治理疑慮、資料安全性曝露及資料集資料合規性缺口的認知度。<block ref="9ad86f8b2d35a79c635fcc2e2795f8e1" category="inline-link-rx"></block>。</block>
   <block id="5e4569f52e263bc5988dd871099065f5" category="paragraph">資料對應報告概述儲存在企業資料來源中的資料、協助您做出移轉、備份、安全性及法規遵循程序等決策。報告會先列出概述、總結您所有的工作環境和資料來源、然後提供每個工作環境的詳細資料。</block>
   <block id="2d948e473e2d70b037f0549e51ba2a9d" category="list-text">按一下 * Governance * 、然後按一下 * Data Mapping Report* 按鈕。</block>
   <block id="7ddeaa5e00e834742bed79816a143502" category="section-title">資料探索評估報告</block>
@@ -2442,13 +2377,7 @@
   <block id="1848496efeb9b0561b54c93d4ca7403e" category="list-text">按一下 * 治理 * 、然後按一下 * 資料探索評估報告 * 按鈕。</block>
   <block id="d3cfc5adb7d762b3824a7c02a95765b9" category="inline-image-macro">Governance Dashboard 的螢幕擷取畫面、顯示如何啟動 Data Discovery 評估報告。</block>
   <block id="6e54901f5113f24a64a46275f84c34da" category="paragraph"><block ref="6e54901f5113f24a64a46275f84c34da" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d6c9503df18e166c0913e797664e6004" category="paragraph">如果您還沒有連接器、<block ref="fe048365448a4a82cbd9d363a7137a93" category="inline-link-rx"></block> 在網路中的Linux主機上、或是在雲端的Linux主機上。</block>
-  <block id="4c9ceafe03162f097239df73110df01e" category="paragraph">您也可以與雲端供應商建立Connector。請參閱<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>、<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>或<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。</block>
-  <block id="44bc729b266ea1f75cc8d556fa17943e" category="paragraph">若要在雲端供應商環境中建立一個、請參閱<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>、<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>或<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。</block>
-  <block id="dcdba57692d95c33c15bffffceb6357c" category="paragraph">如果您的離線內部部署站台上尚未安裝Connector、<block ref="c356cb96564d1aac144adbd1ad0f2ab1" category="inline-link-rx"></block> 現在就在Linux主機上。</block>
-  <block id="89825cdcfb92068b90e1077fbbbe7eee" category="paragraph">如果您的離線內部部署站台尚未安裝BlueXP Connector、<block ref="c356cb96564d1aac144adbd1ad0f2ab1" category="inline-link-rx"></block> 在離線站台的Linux主機上。</block>
   <block id="95d360d4c70cbbf05116206b4e5edd67" category="section-title">存取記錄檔</block>
-  <block id="57f460460036fcd7ebbf1fddeaa6a3a5" category="paragraph">如果您還沒有連接器、請立即建立連接器。請參閱<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block>、<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>或<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。</block>
   <block id="8b4cc0616cd3112ce97c78446249e336" category="inline-link-macro">替代執行個體類型</block>
   <block id="b4628b43616bed69627de3b91fe817d0" category="paragraph">只有在沒有網際網路存取權的主機上執行指令碼時、才新增選項「 ---變 暗站台」。當主機未連線至網際網路時、會略過某些必要測試。</block>
   <block id="1bb79e71fe1463a15c91ab711e20a6ac" category="list-text">指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成時、它會將工作階段的記錄寫入名為的檔案<block ref="7bca4c3da1c027ba15644b115a5e9fd9" prefix=" " category="inline-code"></block> 在目錄中<block ref="8a788ac11c9bfeaba837d43d9090ac97" prefix=" " category="inline-code"></block>。</block>
@@ -2606,19 +2535,14 @@
   <block id="25372e1f78b8ce0ec4e14afa7f74b815" category="list-text">您可以將 BlueXP 分類掃描的來源檔案移至任何 NFS 共用。</block>
   <block id="acd6b2448b8006fd84deefdae2057458" category="paragraph">您可以複製 BlueXP 分類正在掃描的任何來源檔案。複本作業有三種類型、取決於您要完成的作業：</block>
   <block id="af392d7cab2127edb2e0275349e8f51a" category="inline-link">NetApp BlueXP 複製與同步</block>
-  <block id="1919f15e8867d288b67e45f28b5dc6d8" category="paragraph">當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。初始複本之後、服務會根據您設定的排程同步任何變更的資料。此動作使用<block ref="6c9ef0bcc1a3e3e4b3c4e7e6db4de45f" category="inline-link-rx"></block> 將資料從來源複製及同步至目標的功能。</block>
   <block id="4582ba30b2499066be90a4bcea5ec4b6" category="paragraph">您可以將 BlueXP 分類掃描的來源檔案複製到任何 NFS 共用。NFS 共用不需要與 BlueXP 分類整合、您只需要知道 NFS 共用的名稱、所有選取的檔案都會以該格式複製<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block>。</block>
   <block id="1394fd88d929360313e8c80ec722b081" category="list-text">複製檔案時、目的地 NFS 共用區必須允許從 BlueXP 分類執行個體存取。</block>
   <block id="5c84e31b934a1e5ffbf85afcc92c6730" category="paragraph">您可以使用 NetApp _FlexClone _ 功能、複製 BlueXP 分類正在掃描的現有 ONTAP Volume 。這可讓您快速複製磁碟區、同時只包含您選取的檔案。如果您正在移轉資料、但想要從原始Volume中排除特定檔案、或是想要建立用於測試的磁碟區複本、則此功能非常實用。</block>
   <block id="3ed37e2cbad5c0cbf1ca40746f8c817b" category="paragraph">如果您在原始磁碟區所在的工作環境中啟用 BlueXP 分類時、一開始選取 * 對應所有磁碟區 * 或 * 對應並分類所有磁碟區 * 、則 BlueXP 分類會自動掃描新的複製磁碟區。如果您一開始並未使用上述任一選項、則如果您想要掃描此新Volume、就必須執行此操作 <block ref="b0c3d20fcc917b1060451bc04147a024" category="inline-link-macro-rx"></block>。</block>
   <block id="6c698876040dfe94322aaa7b32540f7c" category="inline-link">BlueXP 複製與同步支援的目標位置</block>
-  <block id="da71d64153390c7093786b75158f1718" category="paragraph">您可以將 BlueXP 分類正在掃描的來源檔案、從任何支援的非結構化資料來源複製到特定目標目的地位置的目錄 <block ref="60e7e7cf6b7a0533d5128e37b55fa226" category="inline-link-rx"></block>）。在初始複本之後、檔案中的任何變更資料都會根據您設定的排程進行同步處理。</block>
-  <block id="d5472d405504b38d45e036040f2a2884" category="paragraph">當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。此動作使用<block ref="6c9ef0bcc1a3e3e4b3c4e7e6db4de45f" category="inline-link-rx"></block> 將資料從來源複製及同步至目標的功能。</block>
-  <block id="b708490aa82fdd9e17df701b171674c3" category="list-text">您需要啟動 BlueXP 複本與同步服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。從開始檢閱 BlueXP 複本與同步要求<block ref="e51d588768ce18b65058ca75b02bbb45" category="inline-link-rx"></block>。</block>
   <block id="bb76d3cb9e173009378d2c482f1593a3" category="paragraph">請注意、 BlueXP 複本與同步服務會為您的同步關係收取不同的服務費用、如果您在雲端部署資料代理程式、則會產生資源費用。</block>
   <block id="342b7ce218ad37eb58175d677e743a1d" category="paragraph">BlueXP 複本與同步 UI 會在 BlueXP 中開啟。</block>
   <block id="8ed3cff1bce3680cbecb3718361328e0" category="paragraph">系統會提示您定義同步關係。來源系統會根據您已在 BlueXP 分類中選取的儲存庫和檔案預先填入。</block>
-  <block id="3977855388052b409f40ecf2945f98ec" category="list-text">您需要選取目標系統、然後選取（或建立）您打算使用的Data Broker。從開始檢閱 BlueXP 複本與同步要求 <block ref="b962387ad67b92b5132f148579512908" category="inline-link-macro-rx"></block>。</block>
   <block id="599b3adc06ff60709e02c3d42a15c442" category="paragraph">請注意、從 BlueXP 分類中叫用某些通常的 BlueXP 複本與同步作業時、會停用這些作業：</block>
   <block id="0507a26254d90555779319aac2a586a6" category="paragraph">您可以將 BlueXP 分類掃描的來源檔案移至任何 NFS 共用。NFS 共用區不需要與 BlueXP 分類整合（請參閱 <block ref="29fc238c82f37afa6e56193b0cf6f5eb" category="inline-link-macro-rx"></block>）。</block>
   <block id="687c2785d0e6bcc55e7d411f98257c26" category="list-text">移動檔案需要 NFS 共用區允許從 BlueXP 分類執行個體 IP 位址存取。</block>
@@ -2705,7 +2629,6 @@
   <block id="a64334705690e391576da973a9b22ed9" category="section-title">使用 BlueXP 分類 BYOL 授權</block>
   <block id="c9532f19df489d117c681943ff72b47e" category="paragraph">NetApp自帶授權、提供1年、2年或3年期限。BYOL BlueXP 分類（ Data Sense ）授權是一個 _ 浮動 _ 授權、其總容量由 * 所有 * 的工作環境和資料來源共享、讓初始授權和續約變得更簡單。</block>
   <block id="5bae938f4e490a5e1f1b65254d8e3ef5" category="paragraph">如果您沒有 BlueXP 分類授權、請聯絡我們購買：</block>
-  <block id="8b785c1a22df911edaf6654417ec6395" category="paragraph">或者、如果您沒有使用未指派的 Cloud Volumes ONTAP 節點型授權、您可以將其轉換為具有相同美元對等和相同到期日的 BlueXP 分類授權。<block ref="c110e5a4a66d7429a8ced7dc2264a8f5" category="inline-link-rx"></block>。</block>
   <block id="4c7c3836e9f902c5159464ae2ebf8187" category="paragraph">您可以使用 BlueXP 中的 BlueXP 數位錢包頁面來管理 BlueXP 分類 BYOL 授權。您可以新增授權並更新現有授權。</block>
   <block id="656e076fbf2897c36a85dea0c00f2ddf" category="section-title">取得 BlueXP 分類授權檔案</block>
   <block id="ca0f81e80599a08df323b438c6e77e1b" category="paragraph">購買 BlueXP 分類（ Data Sense ）授權後、您可以輸入 BlueXP 分類序號和 NSS 帳戶、或上傳 NLF 授權檔案、在 BlueXP 中啟動授權。下列步驟說明如果您打算使用NLF授權檔案、該如何取得該檔案。</block>
@@ -2744,10 +2667,8 @@
   <block id="d6939615c063b246ee57f46ba5658a27" category="paragraph">啟動安裝精靈、在雲端部署 BlueXP 分類執行個體。</block>
   <block id="fbd26eae2917c57f49aa73f6b5377420" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 訂閱 BlueXP 分類服務</block>
   <block id="b4e5610684f7a33dc46584c41f53be53" category="paragraph">BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。</block>
-  <block id="f9855383f194d1fe55045279644c7edf" category="paragraph">如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱<block ref="06bad1cad7623f84a7790f550bd209ff" category="inline-link-rx"></block> 或<block ref="926977b9dc6e3dc98510a7e4750a6354" category="inline-link-rx"></block>或<block ref="b28439bdd5c342e00ef48eab105c3933" category="inline-link-rx"></block>。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因<block ref="d18edc1f87b2c25c3b9a75b33d4a162f" category="inline-link-rx"></block>但有些情況下您需要立即設定一個。</block>
   <block id="1aedaece9cd7b51146f8247dbb10998f" category="list-text">在 AWS 、 Amazon FSX for ONTAP 或 AWS S3 儲存區中掃描 Cloud Volumes ONTAP 中的資料時、您會在 AWS 中使用 Connector 。</block>
   <block id="3c4d86937393bb95a8eb9deff91fdca3" category="list-text">在 Azure 或 Azure NetApp Files 中掃描 Cloud Volumes ONTAP 資料時、您會使用 Azure 中的 Connector 。</block>
-  <block id="a5b718345c3c3766a954344624d0ea4d" category="paragraph">請注意、您也可以<block ref="a4b2312bac71e1fcb5d5edc9dd08d5ef" category="inline-link-rx"></block> 在網路或雲端的Linux主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
   <block id="434f7377ad007c7085d3489daef770a7" category="paragraph">當 Connector 部署在政府區域（ AWS GovCloud 、 Azure Gov 或 Azure DoD ）時、就支援 BlueXP 分類。以這種方式部署時、 BlueXP 分類具有下列限制：</block>
   <block id="5e23930d439e0ac55d03b274d7f2a1f8" category="paragraph">在雲端部署 BlueXP 分類之前、請先檢閱下列先決條件、確定您擁有支援的組態。</block>
   <block id="a3c7cd542dbae9813f2f591e1d616bf8" category="list-text">從 BlueXP 分類啟用輸出網際網路存取</block>
@@ -2757,7 +2678,6 @@
   <block id="d1bc8972c7e9ec9b764ec46ec4949ad8" category="cell">啟用 BlueXP 分類、以存取及下載資訊清單和範本、以及傳送記錄和計量。</block>
   <block id="7d3a5fc6a103d9c54c1a430dd56ab45f" category="open-title">Azure 所需的端點</block>
   <block id="c35738c7864c7cbf5383db60bc7aceb3" category="open-title">GCP 所需的端點</block>
-  <block id="94e108d3cc8da29b23eb77c92c065f7a" category="list-text">確保 BlueXP 具有部署資源和建立 BlueXP 分類執行個體安全性群組的權限。您可以在中找到最新的BlueXP權限<block ref="4d2fb4fece4e907087732c2d95d31be2" category="inline-link-rx"></block>。</block>
   <block id="a8abb2cf85d3fffe4e0996a3ef7fdff4" category="list-text">確保 BlueXP Connector 能夠存取 BlueXP 分類</block>
   <block id="b3da390fe73676b135519aad2bb0ac8d" category="list-text">確保 Connector 與 BlueXP 分類執行個體之間的連線能力。Connector 的安全性群組必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。此連線可部署 BlueXP 分類執行個體、並可讓您在「法規遵循與治理」索引標籤中檢視資訊。AWS 和 Azure 中的政府地區均支援 BlueXP 分類。</block>
   <block id="4513249ad8c547d3cc999d640e85ec23" category="list-text">確保您可以繼續執行 BlueXP 分類</block>
@@ -2788,7 +2708,6 @@
   <block id="30a7d0aa212920161c46f31812859285" category="paragraph">請檢閱下列先決條件、確定您已準備好在 SharePoint 帳戶上啟動 BlueXP 分類。</block>
   <block id="9505f2139fceb372def97e101e0d0f23" category="list-text">對於 SharePoint Online 、 BlueXP 分類可以是 <block ref="879c41e64fac303868428ba32472ed0b" category="inline-link-macro-rx"></block>。</block>
   <block id="5c06ff49871066f9ed72b5135320a06f" category="list-text">對於 SharePoint 內部部署、可以安裝 BlueXP 分類 <block ref="5433f857b708e940349e34ece6281ba0" category="inline-link-macro-rx"></block> 或 <block ref="a9e45dedd045b23b06be5ebd4c9f12fb" category="inline-link-macro-rx"></block>。</block>
-  <block id="4680fd81d7e45ccfd1ceacd31a49b359" category="paragraph">當 BlueXP 分類安裝在無法存取網際網路的網站上時、 BlueXP Connector 也必須安裝在同一個網站上、而無需存取網際網路。<block ref="1c688d8f43aa189fb0a1239cdf9c5893" category="inline-link-rx"></block>。</block>
   <block id="4e977298e88aace1f09c15f59ce0e78a" category="list-text">在出現的 Microsoft 頁面中、選取 SharePoint 帳戶並輸入使用者和密碼（管理使用者或其他可存取 SharePoint 網站的使用者）、然後按一下 * 接受 * 、允許 BlueXP 分類從這個帳戶讀取資料。</block>
   <block id="b42ad0875678c7c089fca9adf508bcd1" category="paragraph">BlueXP 分類會開始掃描您新增之 SharePoint 網站中的檔案、結果會顯示在儀表板和其他位置。</block>
   <block id="59ebdcac794eeda1621f09a3ecc27439" category="inline-link-macro">從 BlueXP 分類中刪除整個 SharePoint 帳戶</block>
@@ -2891,8 +2810,6 @@
   <block id="ceff76808d468622c1e0a066fef32324" category="paragraph">使用 BlueXP 分類的成本取決於您正在掃描的資料量。BlueXP 分類在 BlueXP 工作區中掃描的前 1 TB 資料可免費使用 30 天。達到任一上限後、您需要下列其中一項才能繼續掃描資料：</block>
   <block id="08ded86bec8c14194b76ccd46cc137b5" category="paragraph">如果您達到 BYOL 容量限制、 BlueXP 分類會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何已掃描資料的相關資訊。只有在您想要減少所掃描的磁碟區數量、使容量使用量可能低於授權限制時、才可使用「組態」頁面。您必須續約 BYOL 授權、才能重新取得 BlueXP 分類的完整存取權。</block>
   <block id="655b44b42a0405ade73bd1b7c7fe7759" category="paragraph">Connector是在雲端帳戶內或內部部署的運算執行個體上執行的軟體、可讓BlueXP安全地管理雲端資源。您必須部署 Connector 才能使用 BlueXP 分類。</block>
-  <block id="9fce372f3b62b5ab1190c1972a7a3ec8" category="paragraph">是的。您可以<block ref="865e4f422286702c9ac14f7eed7c1673" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的主機上。如果您打算在內部部署部署 BlueXP 分類、則可能也想要在內部部署安裝 Connector 、但這不是必要的。</block>
-  <block id="4f943b7566c9a3819f26f71ab87c207c" category="paragraph">是的、這也受到支援。您可以<block ref="c8cfdd4dd29b4c7bb16d619ba3830694" category="inline-link-rx"></block>。然後、您可以探索內部部署的 ONTAP 叢集和其他本機資料來源、並使用 BlueXP 分類來掃描資料。</block>
   <block id="20d2d9d43536e58f448006e30ede92ef" category="section-title">BlueXP 分類部署</block>
   <block id="f64f1950281393c4954c25f27bf434bd" category="paragraph">下列問題與個別的 BlueXP 分類執行個體有關。</block>
   <block id="6d4887be97091c35c15686e3df306d7e" category="section-title">BlueXP 分類支援哪些部署模式？</block>
@@ -2925,7 +2842,6 @@
   <block id="4b764befa0cb902227f07313a78b10cd" category="list-text">或者、如果您尚未安裝 BlueXP Connector 、請安裝該連接器。您可以在不安裝 Connector 的情況下執行測試指令碼、但指令碼會檢查 Connector 和 BlueXP 分類主機之間的連線、因此建議您使用 Connector 。</block>
   <block id="5db707242c7622101c2fde4b257ef0c8" category="list-text">從 BlueXP 分類主機機器啟用輸出網際網路存取。</block>
   <block id="50a80cf2f95124fe279bda28c5ecd44c" category="paragraph">安裝和使用 BlueXP 分類之前、需要 BlueXP Connector 。不過、您可以在沒有 Connector 的情況下執行 Prerequisites 指令碼。</block>
-  <block id="1b7d4e341b51c3ca0921f04e0092a959" category="paragraph">您可以<block ref="a4b2312bac71e1fcb5d5edc9dd08d5ef" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
   <block id="8e14c56957ac95c2facdf955093df914" category="paragraph">BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟體需求等的主機上執行。</block>
   <block id="cd2c26e6dff9147da7b2b00b90713d5e" category="list-text">* Firewalld考量事項*：如果您打算使用<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block>、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 因此與 BlueXP 分類相容：</block>
   <block id="90cb1400dc841cf0e0395cb466d11c1b" category="paragraph">如果您打算使用其他 BlueXP 分類主機做為掃描器節點（分散式機型）、請在此時將這些規則新增至主要系統：</block>
@@ -2981,39 +2897,29 @@
   <block id="08aececdd8070f547d2aa65ea8c35446" category="summary">瞭解 BlueXP 分類的新功能。</block>
   <block id="406ca16c022fe122c7920a69664a84f2" category="doc">BlueXP 分類的新功能</block>
   <block id="21db17f88f41dcd13f48cc90aced1d74" category="section-title">能夠在雲端的較小執行個體上部署 BlueXP 分類</block>
-  <block id="47e8bf8f9cb5a2a9f79b4f6c0ba9d3b5" category="paragraph">在 AWS 環境中從 BlueXP Connector 部署 BlueXP 分類時、現在您可以從兩種比預設執行個體可用的執行個體類型更小的執行個體類型中進行選擇。如果您掃描的是小型環境、這有助於節省雲端成本。不過、使用較小的執行個體時會有一些限制。<block ref="98ea36794454fcb53d0ac9a791bd6948" category="inline-link-rx"></block>。</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="section-title">獨立指令碼現已推出、可在安裝 BlueXP 分類之前驗證您的 Linux 系統</block>
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">瞭解如何檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類</block>
-  <block id="bb29d70cef5d4094c99f48861270a3f2" category="paragraph">如果您想驗證 Linux 系統是否符合所有先決條件、而不需執行 BlueXP 分類安裝、您可以下載一個獨立的指令碼、只測試先決條件。<block ref="48948449a9d3cbb393a739355d00c1db" category="inline-link-rx"></block>。</block>
   <block id="b4602fb47c1d6ee0427e2682d3a0ca06" category="section-title">新功能可從 BlueXP 分類 UI 新增您自己的自訂類別</block>
-  <block id="0d84cea578542d59f48472f8fa838dd2" category="paragraph">BlueXP 分類現在可讓您新增自己的自訂類別、以便 BlueXP 分類能識別符合這些類別的檔案。BlueXP 分類有許多<block ref="de03089a629f50d7fb2223d1c9b484a6" category="inline-link-rx"></block>因此，此功能可讓您新增自訂類別，以識別在資料中找到組織專屬的資訊。</block>
   <block id="bca8069b731ea966c03da0cea318f9d1" category="section-title">現在您可以從 BlueXP 分類 UI 新增自訂關鍵字</block>
   <block id="c9383e3b8d4c0ef8e217c6982644630b" category="paragraph">BlueXP 分類已能夠新增自訂關鍵字、 BlueXP 分類將在未來的掃描中識別這些關鍵字。不過、您需要登入 BlueXP 分類 Linux 主機、並使用命令列介面來新增關鍵字。在此版本中、新增自訂關鍵字的功能位於 BlueXP 分類 UI 中、因此很容易新增及編輯這些關鍵字。</block>
   <block id="bb81f229fc6d121a288d657aea60262e" category="inline-link">深入瞭解如何從 BlueXP 分類 UI 新增自訂關鍵字</block>
-  <block id="f4dad2d041ce1d29145d11e202e2b27d" category="paragraph"><block ref="71b3a2dfeeb158873cc8c25e601a8ef1" category="inline-link-rx"></block>。</block>
   <block id="7e5ec3b51659d16db2e72438a8ca680a" category="section-title">在「上次存取時間」變更時、能夠將 BlueXP 分類 * 非 * 掃描檔案</block>
   <block id="f9bee7a7e545f0d95664d3ccaa7b7151" category="paragraph">根據預設、如果 BlueXP 分類沒有足夠的「寫入」權限、系統將不會掃描您磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。不過、如果您不介意上次存取時間重設為檔案中的原始時間、您可以在「組態」頁面中覆寫此行為、以便 BlueXP 分類不論權限為何、都能掃描磁碟區。</block>
   <block id="61d99226273ea30523883fe7209399c2" category="paragraph">結合這項功能、新增了名為「掃描分析事件」的篩選器、讓您可以檢視未分類的檔案、因為 BlueXP 分類無法還原上次存取的時間、或是即使 BlueXP 分類無法還原上次存取的時間、也無法還原已分類的檔案。</block>
   <block id="bf8521a1bd91dd809d1d007594f22498" category="inline-link">深入瞭解「上次存取時間戳記」和 BlueXP 分類所需的權限</block>
-  <block id="d7a924506a09f425a63dd67ede6e6e41" category="paragraph"><block ref="778f85e03952af8028df26fb1317029e" category="inline-link-rx"></block>。</block>
   <block id="9422d01ffeaf90b54d512834d7e52972" category="section-title">BlueXP 分類可識別三種新的個人資料類型</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXP 分類可識別及分類包含下列資料類型的檔案：</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">查看 BlueXP 分類可在資料中識別的所有個人資料類型</block>
-  <block id="dbf25297f66465b6318f5f04cba2f51c" category="paragraph"><block ref="9f94e4eba86c919ee24774f89d5c47a7" category="inline-link-rx"></block>。</block>
   <block id="c2e0848a220b82c9650399e6f13e1421" category="list-text">BlueXP 分類可安裝在執行 CentOS Stream 8 的 Linux 主機上。</block>
   <block id="27bfd524829d2f58c611b9380403face" category="list-text">對於無法存取網際網路的網站（黑暗網站）、 BlueXP 分類安裝程式現在會執行預先檢查、以確保您的系統和網路需求已就緒、以便順利安裝。</block>
   <block id="af415967f6e10a35f69e4fdddc729da2" category="paragraph">在 BlueXP 分類的舊版中、當某些關鍵原則傳回結果時、您可以傳送電子郵件警示給帳戶中的 BlueXP 使用者。此功能可讓您取得通知、在您不在線上時保護資料。現在、您也可以將原則的電子郵件警示傳送給任何其他使用者（最多20個電子郵件地址）、而這些使用者不在您的BlueXP帳戶中。</block>
   <block id="110171733cad0cc9610f24012ccf6ee1" category="section-title">現在您可以從 BlueXP 分類 UI 新增個人模式</block>
   <block id="b4b2d6fd13a7e1b0764dda2bc816816f" category="paragraph">BlueXP 分類已能夠新增自訂的「個人資料」、 BlueXP 分類將在未來的掃描中識別這些資料。不過、您需要登入 BlueXP 分類 Linux 主機、並使用命令列來新增自訂模式。在此版本中、使用 regex 新增個人模式的功能位於 BlueXP 分類 UI 中、因此新增及編輯這些自訂模式非常容易。</block>
   <block id="5d7647ce431c6117f0877b4d9397cbcd" category="inline-link">深入瞭解如何從 BlueXP 分類 UI 新增自訂模式</block>
-  <block id="c7395420a26259c70a3257b4ecba58b0" category="paragraph"><block ref="0648c6942d50f6fc6c3e2cd38cd80273" category="inline-link-rx"></block>。</block>
   <block id="7a726788f7018e2e33cf2248365cb342" category="section-title">能夠使用 BlueXP 分類來移動 1500 萬個檔案</block>
   <block id="94b91c8b97a54caa51b5a272c3ed5e69" category="inline-link">深入瞭解如何使用 BlueXP 分類來移動來源檔案</block>
-  <block id="a9bcf2c08cd1074d60a61dbe795a6078" category="paragraph">過去、 BlueXP 分類最多可將 100 、 000 個來源檔案移至任何 NFS 共用區。現在您一次最多可以搬移1500萬個檔案。<block ref="e51a5e512ccf2dce3a369a7a0f472593" category="inline-link-rx"></block>。</block>
-  <block id="2ddb0aae0dc60f8ca6d9b049070a373a" category="paragraph">新的「部分成功」狀態表示 BlueXP 分類動作已完成、有些項目失敗、有些項目成功、例如當您移動或刪除 100 個檔案時。此外、「已完成」狀態已重新命名為「成功」。過去、「已完成」狀態可能會列出成功及失敗的動作。現在「成功」狀態代表所有項目的所有行動都成功。<block ref="fcc1d764ae2299a747d914333deb15cf" category="inline-link-rx"></block>。</block>
   <block id="b862b7d304eea679b5f35e8257c465f6" category="list-text">「檔案路徑」篩選現在可讓您指定要從篩選查詢結果中排除的路徑。如果您輸入包含和排除某些資料的路徑、 BlueXP 分類會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。</block>
   <block id="4b273eb22f0e890dce8d8a73dba2425e" category="section-title">BlueXP 分類可識別日本個人號碼</block>
-  <block id="42359fcacc3c7eb14408f1ff11ac125f" category="paragraph">BlueXP 分類可識別及分類包含日文個人編號（也稱為「我的號碼」）的檔案。這包括「個人」和「公司我的號碼」。<block ref="42bae9dd769124b122ef06a119b328ce" category="inline-link-rx"></block>。</block>
   <block id="f5055886b0ed4db432221d378f3730c1" category="paragraph">您可以變更的部分項目包括是否掃描儲存庫、以及 BlueXP 分類是否正在執行 <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。例如、如果您需要停止掃描某個Volume一段時間、也可以暫停和繼續掃描。</block>
   <block id="06f4c04dbf4f6e1007102feb5e139b5f" category="paragraph">您可以檢視 BlueXP 分類正在針對每個工作環境和資料來源掃描的個別儲存庫（磁碟區、貯體等）。此外、您也可以查看「對應」的數量、以及「分類」的數量。在所有資料上執行完整AI識別時、分類需要較長的時間。</block>
   <block id="1653ff09a832461934f62b062bb49a8f" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。這與「關閉」掃描不同。關閉掃描時、系統會移除該磁碟區的所有索引和相關資訊。暫停掃描表示 BlueXP 分類不會在未來執行任何變更或儲存庫新增的掃描、但所有目前的結果仍會顯示在系統中。</block>
@@ -3032,7 +2938,6 @@
   <block id="3810a01b94974a043d567ab2db7a696e" category="list-text">使用 BlueXP 複製與同步處理來複製及同步處理來源檔案</block>
   <block id="4e723b95287afbde0f6a8cc51611032a" category="inline-link-macro">BlueXP 分類版本資訊</block>
   <block id="6e4602d022d98ebc229844c6af6033a1" category="inline-xref">升級 BlueXP 分類軟體</block>
-  <block id="a49c73ef797b9a598b52486b79ad168a" category="paragraph">BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="79c1d81a19f6b89269470ecda07878e3" category="inline-link-rx"></block> 和 <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="88b2eb96c0c532072c520841e863d668" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 檢閱 BlueXP 分類先決條件</block>
   <block id="2c28200a2634ce3b5d50300226b408a0" category="paragraph">確保您的Linux系統符合 <block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>、並已安裝所有必要的軟體、而且您的離線環境符合所需 <block ref="0a0d20cd0d171f694689b851f0521135" category="inline-xref-macro-rx"></block>。</block>
   <block id="192cd84f4e2525fe8b18420dcebd2298" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 下載並部署 BlueXP 分類</block>
@@ -3041,7 +2946,6 @@
   <block id="8cd6bdaa74e38d2e1528afe9821b5929" category="admonition">安裝後無法變更 BlueXP 分類主機系統的 IP 位址。</block>
   <block id="7088c16623e2e9a81505c3fc9b3de511" category="section-title">驗證 BlueXP 和 BlueXP 分類先決條件</block>
   <block id="9a7e54be58f201f0955cf055ce10c16c" category="paragraph">在部署 BlueXP 分類之前、請先檢閱下列先決條件、確定您擁有支援的組態。</block>
-  <block id="e09d407da634514ef013253e0c9953b8" category="list-text">確保 Connector 擁有部署資源的權限、並為 BlueXP 分類執行個體建立安全性群組。您可以在中找到最新的BlueXP權限<block ref="4d2fb4fece4e907087732c2d95d31be2" category="inline-link-rx"></block>。</block>
   <block id="976ad3f2a7f2faaf2e337cc8f2c2ff8d" category="list-text">確保您可以繼續執行 BlueXP 分類。BlueXP 分類執行個體必須持續運作、才能持續掃描資料。</block>
   <block id="1b3e958cf9a7fe344e74aa95f30a09f3" category="list-text">確保網頁瀏覽器連線至 BlueXP 分類。啟用 BlueXP 分類後、請確定使用者從連線至 BlueXP 分類執行個體的主機存取 BlueXP 介面。</block>
   <block id="0886f35745ad179bc8c862cc1f35560d" category="paragraph">BlueXP 分類執行個體使用私有 IP 位址來確保其他人無法存取索引資料。因此、您用來存取BlueXP的網頁瀏覽器必須連線至該私有IP位址。該連線可能來自與 BlueXP 分類執行個體位於同一個網路內的主機。</block>
@@ -3116,9 +3020,7 @@
   <block id="f153a03447ad62ce23eaa1b08f94af6c" category="inline-link-macro">瞭解如何授權 BlueXP 分類</block>
   <block id="268a2edc5cc918a4172afdae90493660" category="paragraph"><block ref="2152e4d362eca07454aaa5bc8c987748" category="inline-link-macro-rx"></block>。</block>
   <block id="79de69a9c27339b7e2c0888ade6a7ff9" category="list-text">在雲端中安裝 BlueXP 分類需要部署雲端執行個體、這會導致部署雲端的雲端供應商收取費用。請參閱 <block ref="a640e98c8584c0b162d717c76dd083cd" category="inline-xref-macro-rx"></block>。如果您在內部部署系統上安裝 BlueXP 分類、則不需支付任何費用。</block>
-  <block id="47b444944d19ef8557b91a09fe3b02ad" category="list-text">BlueXP 分類要求您已部署 BlueXP Connector 。在許多情況下、由於您在BlueXP中使用的其他儲存設備和服務、您已經擁有Connector。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱<block ref="c0edd1cbca522cb267ceeda5d00aace3" category="inline-link-rx"></block>。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。</block>
   <block id="0615a59c06ce6010c202cf2d2963d93b" category="paragraph">資料傳輸成本取決於您的設定。如果 BlueXP 分類執行個體和資料來源位於相同的可用性區域和區域、則不會產生資料傳輸成本。但是如果Cloud Volumes ONTAP 資料來源（例如、不支援的系統或S3時段）位於_不同_可用度區域或區域、則您的雲端供應商會向您收取資料傳輸成本。如需詳細資料、請參閱以下連結：</block>
-  <block id="f8294f2cb2b884e509ae04dff17ad33b" category="paragraph">當您在雲端部署 BlueXP 分類時、 BlueXP 會將執行個體部署在與 Connector 相同的子網路中。<block ref="5ef86a9d91601df9732f9c29cb9efbcc" category="inline-link-rx"></block></block>
   <block id="5224a506004fee451317bef2d8675e7e" category="inline-image-macro">顯示在雲端供應商中執行的 BlueXP 執行個體和 BlueXP 分類執行個體的圖表。</block>
   <block id="fd1e8dbd30ef938d68f6110d8e753a9e" category="paragraph"><block ref="fd1e8dbd30ef938d68f6110d8e753a9e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f8efedf0156c990ce376aed3b9694842" category="list-text">在 AWS 中、 BlueXP 分類是在上執行<block ref="8b5561a11e73285eb1f0d9f437aa0677" category="inline-link-rx"></block> 搭配 500 GB GP2 磁碟。作業系統映像是Amazon Linux 2。在 AWS 中部署時、如果您要掃描少量資料、可以選擇較小的執行個體大小。</block>
@@ -3174,8 +3076,6 @@
   <block id="336bcdf5ccce2f7faf69504d6bb691bc" category="paragraph">確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與透過連接埠 443 的 BlueXP 分類之間的連線、等等。 <block ref="ccadfe94f5aed3b0ce58eed3720936a8" category="inline-xref-macro-rx"></block>。</block>
   <block id="6645e3ab4db2a6af0367cff31c9d8e9f" category="paragraph">從 NetApp 支援網站 下載雲端 BlueXP 分類軟體、並將安裝程式檔案複製到您打算使用的 Linux 主機。然後啟動安裝精靈、並依照提示部署 BlueXP 分類執行個體。</block>
   <block id="037f9a60a04e773700e2b69144bead1d" category="paragraph">BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須向雲端供應商Marketplace訂閱、或向NetApp訂購BYOL授權、才能在該時間點之後繼續掃描資料。</block>
-  <block id="57000c3f4a0e1f715adff84de4d4600e" category="paragraph">安裝和使用 BlueXP 分類之前、需要 BlueXP Connector 。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因<block ref="d18edc1f87b2c25c3b9a75b33d4a162f" category="inline-link-rx"></block>但有些情況下您需要立即設定一個。</block>
-  <block id="3760f1b46375af636a87b39fb65e4679" category="paragraph">請注意、您也可以<block ref="fe048365448a4a82cbd9d363a7137a93" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
   <block id="3d701fef8658b361d5ac38f4a9fbebf7" category="paragraph">安裝 BlueXP 分類時、您需要 Connector 系統的 IP 位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。</block>
   <block id="100b1f7734acb70df17db6d99760e28a" category="paragraph">BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟體需求等的主機上執行。Linux主機可以位於您的網路或雲端。</block>
   <block id="fb28c013f4c23c2c660672d2efce05b2" category="paragraph">確保您可以繼續執行 BlueXP 分類。BlueXP 分類機器必須持續運作、才能持續掃描您的資料。</block>
@@ -3188,7 +3088,6 @@
   <block id="bfd2c96cae6d29697ceac4feda921426" category="inline-image-macro">顯示使用部署在內部部署且可存取網際網路的多個 BlueXP 分類執行個體時、可掃描之資料來源位置的圖表。</block>
   <block id="b1030a584c34dcb45c3a231937109e48" category="paragraph"><block ref="b1030a584c34dcb45c3a231937109e48" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0eb32e59a3574faaca63218c3f5922f" category="paragraph">請參閱 <block ref="dc1d236e8ef0d554549faeaffd48b8b2" category="inline-xref-macro-rx"></block> 和 <block ref="2360c56931bf3d2d23fb74a3dc780c78" category="inline-xref-macro-rx"></block> 以取得部署 BlueXP 分類之前的完整需求清單。</block>
-  <block id="818f9cd0c1414232475f4c33c9548e5a" category="admonition">當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 儲存區、 Azure NetApp Files 或適用於 ONTAP 的 FSX 。在這些情況下、您需要在雲端和中部署個別的 Connector 和 BlueXP 分類執行個體<block ref="a5731cb9d61066e025286d452caac241" category="inline-link-rx"></block> 適用於不同的資料來源。</block>
   <block id="86bb25ae4391f2558f38a5358121ae0d" category="paragraph">在單一內部部署主機上安裝 BlueXP 分類軟體時、請遵循下列步驟。</block>
   <block id="60e3e1e8b520c28183ebe86bd433deda" category="list-text">如果 Proxy 正在執行 TLS 攔截、您必須知道儲存 TLS CA 憑證的 BlueXP 分類 Linux 系統路徑。</block>
   <block id="d66d1b16789175829b23ed7e745d66dd" category="list-text">確認您的離線環境符合所需 <block ref="9eb48ce3a280aa134b4c3aab7ed78a68" category="inline-xref-macro-rx"></block>。</block>
@@ -3331,7 +3230,6 @@
   <block id="8ef5d363a3f52c2b1fa183d2e2dbcb3c" category="list-text">_client_id_ = Connector Client ID （如果用戶端 ID 尚未出現、請將字尾「 Clients 」新增至用戶端 ID ）</block>
   <block id="e8cce14fafe88ef9a395cf54e51a3470" category="list-text">_DS_host_ = BlueXP 分類系統的 IP 位址或主機名稱。</block>
   <block id="f28b62cbbb13ada1264e3712622be29c" category="paragraph">例如、此命令會新增 3 個掃描器節點：<block ref="1e3d5ab9f2f03870882d89f4a82b2729" prefix=" " category="inline-code"></block></block>
-  <block id="de093cfeaa4d569528bc92ff96d56cde" category="list-text">確認您的 BlueXP Connector 軟體已升級至最新的可用版本。<block ref="4d8a85a10354910c72eace431e2b6c17" category="inline-link-rx"></block>。</block>
   <block id="441e8ff948470291018a26dd540b6d1d" category="cell">https://github.com/docker \https://download.docker.com</block>
   <block id="b629edc182d9ce4a079d9f954ad3f9b7" category="cell">提供泊塢視窗安裝的必要套件。</block>
   <block id="fa328073ed60b8719f54add213e6f2e6" category="cell">http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm</block>
@@ -3341,4 +3239,106 @@
   <block id="79dad5af8e7ba04bd45d58a3d10d4209" category="list-text">_client_id_ = Connector Client ID （將字尾「 Clients 」新增至您在先決條件步驟中複製的用戶端 ID ）</block>
   <block id="800fbb2e9f1063caafe6917c236f24a6" category="paragraph">例如、此命令會新增 3 個掃描器節點：<block ref="ba1da14563d546c370f034861b50d8f8" prefix=" " category="inline-code"></block></block>
   <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP 網路研討會</block>
+  <block id="c1560b054493db03cae97adece148673" category="list-text"><block ref="c1560b054493db03cae97adece148673" category="inline-link-rx"></block></block>
+  <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
+  <block id="9d7d457b861dcdf8b4b7f28f3a120c36" category="list-text"><block ref="9d7d457b861dcdf8b4b7f28f3a120c36" category="inline-link-rx"></block></block>
+  <block id="27a42cb797cb36baf2be73ba1bf562ad" category="paragraph">如果您還沒有連接器、請立即建立連接器。請參閱<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>或<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
+  <block id="80a2d22fce4a17e62115e06db4b54813" category="paragraph">您也可以<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。</block>
+  <block id="395b61b094231331c9e09532be870844" category="paragraph">如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block> 或<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>或<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因<block ref="18bff1b9b8925e72393530e6d5a3b8f3" category="inline-link-rx"></block>但有些情況下您需要立即設定一個。</block>
+  <block id="6db1872a82bdc2c16acf6671a92fcc61" category="paragraph">請注意、您也可以<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> 在網路或雲端的Linux主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
+  <block id="a768d0b3e08949fff683fe64ed6fd5f5" category="paragraph">如您所見、您可能需要使用某些情況<block ref="db4f15edddf96a93150dd099178794b8" category="inline-link-rx"></block>。</block>
+  <block id="51afd3e8726efb3f85ec3f1ff2e4d705" category="paragraph"><block ref="8fc1c86bee9d4cd3166508d808625533" category="inline-link-rx"></block>。</block>
+  <block id="8f1a8cf43aa444c46e29ecb0349384d2" category="list-text">確保 BlueXP 具有部署資源和建立 BlueXP 分類執行個體安全性群組的權限。您可以在中找到最新的BlueXP權限<block ref="12017b43c12237092f4f947467fd170e" category="inline-link-rx"></block>。</block>
+  <block id="aa91817c0e1d6a16a1f290ad2357d467" category="paragraph">AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。請參閱<block ref="ed3ada480c52b8e0c09a903c9cf52508" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="b8896222e179e8ba790e363bd135ecae" category="paragraph">Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。請參閱<block ref="179e195cc8e81b19d72f9ddb7460e81f" category="inline-link-rx"></block> 以取得詳細資料。</block>
+  <block id="ccb7563cf9bbae3ac26b7f8f10f59968" category="paragraph">因此、如果您在這些位置中有許多資料、您可能需要使用<block ref="bc298eaca29e4bff3f0d222b24813861" category="inline-link-rx"></block>。</block>
+  <block id="c2a51289509ec65eb3621726e2760f5a" category="paragraph">是的。您可以<block ref="643a4fbaa5b15b86bda31e47e3f0d2bb" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的主機上。如果您打算在內部部署部署 BlueXP 分類、則可能也想要在內部部署安裝 Connector 、但這不是必要的。</block>
+  <block id="b4ebf9c8f6076746b08fc48974345e32" category="paragraph">是的、這也受到支援。您可以<block ref="1c270efcf36a8d1c2de58c1ed2ed7315" category="inline-link-rx"></block>。然後、您可以探索內部部署的 ONTAP 叢集和其他本機資料來源、並使用 BlueXP 分類來掃描資料。</block>
+  <block id="abefc4760bb681a677a193d3f612cf4f" category="paragraph">在掃描FSXfor ONTAP SfundVolume之前、<block ref="7452eb54bbdeb3cd1b4f5d5a58a8a661" category="inline-link-rx"></block>。</block>
+  <block id="bbb49ffca9a7a090a24129f517c49921" category="paragraph"><block ref="cfae4f09920e34de0a804a19a3f6c70a" category="inline-link-rx"></block>。</block>
+  <block id="52ba8ac12050d2494572b940a0d65b25" category="list-text"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
+  <block id="5f9774634d612de809265cc23871cf47" category="paragraph">在掃描Azure NetApp Files 完所有資料之前、<block ref="877b71a5c09299b4320d1e533ba73086" category="inline-link-rx"></block>。</block>
+  <block id="db8769ab87872f8d19b54e22d54685fe" category="paragraph"><block ref="c29073dde35b7e3b513884b9c9e495a3" category="inline-link-rx"></block>。</block>
+  <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
+  <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
+  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
+  <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
+  <block id="1bb5620ed3998fd776980cad36e22c9a" category="paragraph"><block ref="1bb5620ed3998fd776980cad36e22c9a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9b9f3b644051dc45eee1cdd195c832fd" category="paragraph">當 BlueXP 分類安裝在無法存取網際網路的網站上時、 BlueXP Connector 也必須安裝在同一個網站上、而無需存取網際網路。<block ref="151d636b52c90572a7410cd729808024" category="inline-link-rx"></block>。</block>
+  <block id="ae32f6accb2b2a18892af4e654e3ac00" category="paragraph">當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。初始複本之後、服務會根據您設定的排程同步任何變更的資料。此動作使用<block ref="d9f5c10edef42cff18580599262fd784" category="inline-link-rx"></block> 將資料從來源複製及同步至目標的功能。</block>
+  <block id="ed404bde5dfd762dd0759dcedd71cdd7" category="paragraph">您可以將 BlueXP 分類正在掃描的來源檔案、從任何支援的非結構化資料來源複製到特定目標目的地位置的目錄 <block ref="bd72f78a08f0a83b7e3fbbae64df2fed" category="inline-link-rx"></block>）。在初始複本之後、檔案中的任何變更資料都會根據您設定的排程進行同步處理。</block>
+  <block id="e4186dd0c6123ee83f2ac799b88930b1" category="paragraph">當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。此動作使用<block ref="d9f5c10edef42cff18580599262fd784" category="inline-link-rx"></block> 將資料從來源複製及同步至目標的功能。</block>
+  <block id="9b9f495105111a0fa74c1500ac1b40e5" category="list-text">您需要啟動 BlueXP 複本與同步服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。從開始檢閱 BlueXP 複本與同步要求<block ref="33fe85ab0bf4bd63d137fd0932246743" category="inline-link-rx"></block>。</block>
+  <block id="57deaadc70738ae8568cc1a94e30d7cc" category="list-text">您需要選取目標系統、然後選取（或建立）您打算使用的Data Broker。從開始檢閱 BlueXP 複本與同步要求 <block ref="cd1c543c5a66cc4c65b2c39bf97413cd" category="inline-link-macro-rx"></block>。</block>
+  <block id="fb9f305ae47362d3da6e3ade499105ee" category="list-text">識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block>。<block ref="b7350948393fc35e7105d2df80148b7f" category="inline-link-rx"></block>。</block>
+  <block id="8dea330b22e02b664ce6abd469b6f6e0" category="list-text">BlueXP 分類要求您已部署 BlueXP Connector 。在許多情況下、由於您在BlueXP中使用的其他儲存設備和服務、您已經擁有Connector。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱<block ref="48e31103093fd55a8a781c9c8d4b19d2" category="inline-link-rx"></block>。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。</block>
+  <block id="36363460a1fe53a08276b3693b695989" category="paragraph">當您在雲端部署 BlueXP 分類時、 BlueXP 會將執行個體部署在與 Connector 相同的子網路中。<block ref="999d7d869d9eebca95ac2936610a6036" category="inline-link-rx"></block></block>
+  <block id="5d371907ae213447466e27377160549c" category="paragraph"><block ref="19cae19bf9f9858c5d5d9cdd392e7141" category="inline-link-rx"></block> 以及使用方法<block ref="27e77e6892da189bf97ea3bb339cc8fb" category="inline-link-rx"></block>。</block>
+  <block id="96b988aeea7df07c150c06631b8e1023" category="list-text">對於內部部署 ONTAP 的不全系統、<block ref="00999886c013da85fef603135c9ef779" category="inline-link-rx"></block></block>
+  <block id="93d98288c3d4c3fe1a384ea14c84db4e" category="paragraph">您的需求系統應該已經可在BlueXP的畫版中使用。Cloud Volumes ONTAP若為內部部署ONTAP 的功能、您必須擁有<block ref="764bc5313eb3242221adb26dbbb188c9" category="inline-link-rx"></block>。</block>
+  <block id="6a79ed48a5fce7523ab5bc4c5c5c16bc" category="paragraph">或者、如果您沒有使用未指派的 Cloud Volumes ONTAP 節點型授權、您可以將其轉換為具有相同美元對等和相同到期日的 BlueXP 分類授權。<block ref="f4c32a82791cf9fc58c736c0aed05092" category="inline-link-rx"></block>。</block>
+  <block id="30fc689a9c3cd4222329fe3a4c818a33" category="paragraph">如果下拉式清單中沒有您的 NetApp 支援網站帳戶，<block ref="06a3bc9d474b5d4e44d1a2733cac785a" category="inline-link-rx"></block>。</block>
+  <block id="94a52882adfe57c5834eeba52357fc83" category="paragraph">如有需要、您可以將這些結果匯出至報告、以便查看哪些檔案因為權限而被掃描或未被掃描。<block ref="12cdeb999c26684f4f639c285d1ab42e" category="inline-link-rx"></block>。</block>
+  <block id="8d6538084049892228b105ee80ab20a7" category="paragraph">BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="ec79fe10499592bc63065061930fbb06" category="inline-link-rx"></block> 和 <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ba29241cb1ada66fbef1294aa7e1002a" category="paragraph">如果您的離線內部部署站台上尚未安裝Connector、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> 現在就在Linux主機上。</block>
+  <block id="b63ff2e2b175854ce3610e27e52a6f21" category="paragraph">如果您的離線內部部署站台尚未安裝BlueXP Connector、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> 在離線站台的Linux主機上。</block>
+  <block id="772608951c3bed8c37dd30e4fa52ea7a" category="list-text">確保 Connector 擁有部署資源的權限、並為 BlueXP 分類執行個體建立安全性群組。您可以在中找到最新的BlueXP權限<block ref="12017b43c12237092f4f947467fd170e" category="inline-link-rx"></block>。</block>
+  <block id="ffb0ab76f2bfaab3dafdcb157116a7ea" category="list-text">確認您的 BlueXP Connector 軟體已升級至最新的可用版本。<block ref="1189728130fe33c2fb7adb2d97a83d35" category="inline-link-rx"></block>。</block>
+  <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">「資料探索評估報告」會針對您所掃描的環境提供高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。本報告的目標是提高對資料治理疑慮、資料安全性曝露及資料集資料合規性缺口的認知度。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
+  <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">在 AWS 環境中從 BlueXP Connector 部署 BlueXP 分類時、現在您可以從兩種比預設執行個體可用的執行個體類型更小的執行個體類型中進行選擇。如果您掃描的是小型環境、這有助於節省雲端成本。不過、使用較小的執行個體時會有一些限制。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
+  <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">如果您想驗證 Linux 系統是否符合所有先決條件、而不需執行 BlueXP 分類安裝、您可以下載一個獨立的指令碼、只測試先決條件。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
+  <block id="75e47d62ba360614f8cdea86c229c321" category="paragraph">BlueXP 分類現在可讓您新增自己的自訂類別、以便 BlueXP 分類能識別符合這些類別的檔案。BlueXP 分類有許多<block ref="7587255274ad12f237a14fbd5f47a14a" category="inline-link-rx"></block>因此，此功能可讓您新增自訂類別，以識別在資料中找到組織專屬的資訊。</block>
+  <block id="740f66f04097135a7846557949061bf8" category="paragraph"><block ref="e14cfeac39419a4a8a842fd3611a27db" category="inline-link-rx"></block>。</block>
+  <block id="8f031c80211d08a2fc3d24c73c826e4b" category="paragraph"><block ref="d597807e5ef4bec605cdd823cfc707e7" category="inline-link-rx"></block>。</block>
+  <block id="b81005c38cb0963c694c4f17fdffdda5" category="paragraph"><block ref="6a34fff85e918ca0361628bb33e44cc4" category="inline-link-rx"></block>。</block>
+  <block id="7e1e73ad7e6d01345f57dc84d7cd2c47" category="paragraph"><block ref="8ab3022f8d373945c172f9e89b554e84" category="inline-link-rx"></block>。</block>
+  <block id="c51401ffdfb1031aea6f8a59f0b12ac5" category="paragraph"><block ref="364c24684858aaf9cf725ae1ec404c5d" category="inline-link-rx"></block>。</block>
+  <block id="75dbbfa0c63b5452f1dab4062180db11" category="paragraph"><block ref="096bf81f435bf11200f532bd4759e1e0" category="inline-link-rx"></block>。</block>
+  <block id="882ecc5b644de8aa6bd8f8ae2a69ef91" category="paragraph">過去、 BlueXP 分類最多可將 100 、 000 個來源檔案移至任何 NFS 共用區。現在您一次最多可以搬移1500萬個檔案。<block ref="9bbad7a61d2ec2ac2169dcc43ec22874" category="inline-link-rx"></block>。</block>
+  <block id="451e723f277a39328c39e790b3d47ebc" category="paragraph">新的「部分成功」狀態表示 BlueXP 分類動作已完成、有些項目失敗、有些項目成功、例如當您移動或刪除 100 個檔案時。此外、「已完成」狀態已重新命名為「成功」。過去、「已完成」狀態可能會列出成功及失敗的動作。現在「成功」狀態代表所有項目的所有行動都成功。<block ref="81392bd70242cc4257015d9eb2f1d43a" category="inline-link-rx"></block>。</block>
+  <block id="fccd9d5627e0ea943a2decbcedc75caf" category="paragraph">「治理」儀表板新增了「敏感資料」和「廣泛權限」區域、提供內含敏感資料（包括敏感和敏感個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料的風險所在。<block ref="7c90c3d5fe3f2a4e9ca8ce0d84318210" category="inline-link-rx"></block>。</block>
+  <block id="256d4a07e31924bad219936ee7fbe092" category="paragraph"><block ref="6cbac5d82b5b6979376ae555290ffa96" category="inline-link-rx"></block>。</block>
+  <block id="e5047cfc3a021db29e30390a5a0de3c1" category="paragraph">BlueXP 分類可識別及分類包含日文個人編號（也稱為「我的號碼」）的檔案。這包括「個人」和「公司我的號碼」。<block ref="902797e77ffbfd681f1fc19dad4fefbc" category="inline-link-rx"></block>。</block>
+  <block id="70ef9f0f001698901fc7782c85efbd22" category="paragraph"><block ref="d164dabede0c4e6f2317947d0f40a4c9" category="inline-link-rx"></block>。</block>
+  <block id="b218ff5e02da9d35096238a32166dde5" category="paragraph">Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。<block ref="f9677d6768fea140fb85ff23d7983a85" category="inline-link-rx"></block>。</block>
+  <block id="96c123ab6f4734112bc50bc214494621" category="paragraph">現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="30c54ee6e02a85bc7c1713b7a90e6ed8" category="inline-link-rx"></block>。</block>
+  <block id="0226172c9b936ddaa203e083a4b9cc81" category="paragraph">如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。<block ref="838641529bd2d9079ec09cedca69b267" category="inline-link-rx"></block>。</block>
+  <block id="cd0d9671e6080c26297795b009cbbdce" category="paragraph">如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="30c54ee6e02a85bc7c1713b7a90e6ed8" category="inline-link-rx"></block>。</block>
+  <block id="394e72d8b35ee4d082653107b57db524" category="paragraph"><block ref="0036173f4fe5a5d22b0f2328a28ebcbb" category="inline-link-rx"></block>。</block>
+  <block id="82f7cb5359fda2db7066d505c282baf6" category="paragraph">Data Sense現在將階層連結檔案視為「符合性儀表板」中顯示的類別的一部分。將檔案從來源位置移至NFS共用時、會建立這些檔案Data Sense。<block ref="333cd23a73253379d4dadb8212365c81" category="inline-link-rx"></block>。</block>
+  <block id="9602c54aa4fcdb34c3d9e86a7d890ea2" category="paragraph">當您使用「資料感應」功能將來源檔案移至NFS共用時、現在您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在名為的來源位置建立階層連結檔案<block ref="e5b81a76aedb2ddb1da7aba12de3e20b" prefix=" " category="inline-code"></block> 可顯示文件的移動位置和移動文件的用戶。<block ref="2ccef004fdad5fd0d9cdb8ce1d569434" category="inline-link-rx"></block>。</block>
+  <block id="0aec8167e209c9b773de640809bb2ffe" category="paragraph">「資料調查」頁面現在會顯示您目錄（資料夾和共用）內的個人資料和敏感個人資料結果。<block ref="838b4ac121a236248619da49a65d1710" category="inline-link-rx"></block>。</block>
+  <block id="f1454006c2b84f6126900ebe59c31558" category="paragraph">檢視Data Sense正在掃描的個別儲存庫（Volume、儲存區等）時、您現在可以看到「對應」的儲存庫數量、以及「分類」的儲存庫數量。在所有資料上執行完整AI識別時、分類所需時間會更長。<block ref="2a13251a6fe881bbd1315d595f667f8b" category="inline-link-rx"></block>。</block>
+  <block id="b37b0bfc35cb447c84138ba82441ec4f" category="paragraph">這些關鍵字和模式會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="a38b2261878a3d41c0abfc69bd23b15e" category="inline-link-rx"></block>。</block>
+  <block id="54adf2468bc376e6a2826273aa432d26" category="paragraph">過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。<block ref="c924bafb5fe96f1f013565e3ebb31e47" category="inline-link-rx"></block>。</block>
+  <block id="3b572d9c05ed055da6459f3e2b6bea84" category="paragraph">暫停掃描表示「Data Sense」（資料感測）將不會在任何新增或變更磁碟區或儲存區的情況下執行未來掃描、但系統仍會提供所有目前的結果。<block ref="fba52941eb2875e9ea6da4ed2fe28022" category="inline-link-rx"></block>。</block>
+  <block id="03b10003577e8d37f10edbb62ef2ee5c" category="paragraph">過去當您建立自訂原則時、結果會顯示符合搜尋條件的檔案。結果也會顯示符合查詢的目錄（資料夾和檔案共用）。<block ref="ccb93d8e566e1e038edf17d92ae50d0d" category="inline-link-rx"></block>。</block>
+  <block id="eaca269100e6cf0779ac7a4fcd678906" category="paragraph">如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。<block ref="5a5ecc63e9c44abe629f0e448f245359" category="inline-link-rx"></block>。</block>
+  <block id="2861f70af3b42e90eec7e285c70a9c8d" category="paragraph">在「資料調查」頁面中篩選資料之後、除了將資料儲存至本機系統上的.CSV檔案之外、現在您還可以將資料另存為.Json檔案、以便匯出至NFS共用。確認Data合理擁有正確的匯出存取權限。<block ref="7afde6877e2ae4e967ec248e30653d66" category="inline-link-rx"></block>。</block>
+  <block id="478f08fe5b5fe809c6b21f13651500da" category="paragraph">您可以解除安裝Data Sense、將軟體從主機中永久移除、如果是雲端部署、請刪除部署Data Sense的虛擬機器/執行個體。刪除執行個體會永久刪除所有已建立索引的資訊Data Sense已掃描。<block ref="bdca54d6bf3eebba0728d5a1d7eb236c" category="inline-link-rx"></block>。</block>
+  <block id="cd86045a347ee0d8457de102c22a7fdf" category="paragraph"><block ref="5c757199826793147ff22b567458314b" category="inline-link-rx"></block>。</block>
+  <block id="59bf226793c8978b0bab2ae77843401d" category="paragraph"><block ref="7a7e187b1204a0f471af3266bca88524" category="inline-link-rx"></block>。</block>
+  <block id="53736873f529dad7bd7046cb7661c6a9" category="paragraph">如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。<block ref="e3bc30380d421ea397691bfc976eb397" category="inline-link-rx"></block>。</block>
+  <block id="fea76c790acd43cf50315716dc8913b1" category="paragraph">現在您可以將Google雲端硬碟帳戶新增至Data Sense、以便從這些Google雲端硬碟帳戶掃描文件和檔案。<block ref="7a1afe123dfdc25a0ad9a0e77396e331" category="inline-link-rx"></block>。</block>
+  <block id="5d453722647d508b47c2cac8119abeed" category="paragraph">Data Sense可從Google Docs套件（文件、工作表和投影片）中識別下列Google檔案類型中的個人識別資訊（PII）、以及<block ref="aae50f4bf2d5955e33e4448cfc2446cf" category="inline-link-rx"></block>。</block>
+  <block id="7a7144f5247ce7406c8787806665c592" category="paragraph">除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。系統會為已掃描的CIFS和NFS共用、以及OneDrive、SharePoint和Google Drive資料夾建立目錄索引。現在您可以在目錄層級檢視權限並管理資料。<block ref="f2a55e31f0ac3e171d1e45b8e3eb2c50" category="inline-link-rx"></block>。</block>
+  <block id="019559d3bd068962cb59afee4e2967d5" category="paragraph">身為Data Sense權限功能的一部分、您現在可以檢視擁有檔案存取權的使用者和群組清單。每個群組都可展開以顯示群組中的使用者清單。<block ref="70d54ddc5877b170257ba4130e65b17c" category="inline-link-rx"></block>。</block>
+  <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">您可以<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
+  <block id="1b01b1e09dd0c52ed6a6d8b4ca2a0568" category="paragraph">若要在雲端供應商環境中建立 Connector 、請參閱<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>或<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
+  <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f6cac2f77150840994f84044fc1b12b" category="list-text">按一下以變更表格中顯示的欄 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
+  <block id="e65065c4fd326b9f3a1eeb9453c30d73" category="paragraph"><block ref="e65065c4fd326b9f3a1eeb9453c30d73" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6ba7d68d8b3ef0f3398afb9d3ea96172" category="list-text">按一下即可管理現有案例 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
+  <block id="2ea260929e27ffcb623c8aa35689bd18" category="paragraph"><block ref="2ea260929e27ffcb623c8aa35689bd18" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bb928959b278e9a5a488494ff139d0d9" category="paragraph">如果您還沒有連接器、<block ref="8635e4adecf532f5cc2442da36c54c5a" category="inline-link-rx"></block> 在網路中的Linux主機上、或是在雲端的Linux主機上。</block>
+  <block id="7b80abc0703fcbc544c0ea34a81361df" category="paragraph">您也可以與雲端供應商建立Connector。請參閱<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>或<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
+  <block id="3653af7cc7cb7ab4c2f891348a1090c6" category="paragraph">安裝和使用 BlueXP 分類之前、需要 BlueXP Connector 。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因<block ref="18bff1b9b8925e72393530e6d5a3b8f3" category="inline-link-rx"></block>但有些情況下您需要立即設定一個。</block>
+  <block id="36d24108dd8c0c7c0e1f81fdf8c0ca74" category="paragraph">若要在雲端供應商環境中建立一個、請參閱<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>或<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
+  <block id="5bda7e03f132a23ba4a10fd78c5bec54" category="paragraph">請注意、您也可以<block ref="8635e4adecf532f5cc2442da36c54c5a" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
+  <block id="d9807c3141689bddbb5c97208880a55c" category="admonition">當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 儲存區、 Azure NetApp Files 或適用於 ONTAP 的 FSX 。在這些情況下、您需要在雲端和中部署個別的 Connector 和 BlueXP 分類執行個體<block ref="c0d2361eca5545ed28b62c643a054bb3" category="inline-link-rx"></block> 適用於不同的資料來源。</block>
 </blocks>

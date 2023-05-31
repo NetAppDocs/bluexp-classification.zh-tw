@@ -85,7 +85,7 @@ NetApp自帶授權、提供1年、2年或3年期限。BYOL BlueXP 分類（ Data
 * 按一下BlueXP右下角的聊天圖示、申請授權。
 
 
-或者、如果您沒有使用未指派的 Cloud Volumes ONTAP 節點型授權、您可以將其轉換為具有相同美元對等和相同到期日的 BlueXP 分類授權。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["如需詳細資料、請前往此處"^]。
+或者、如果您沒有使用未指派的 Cloud Volumes ONTAP 節點型授權、您可以將其轉換為具有相同美元對等和相同到期日的 BlueXP 分類授權。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["如需詳細資料、請前往此處"^]。
 
 您可以使用 BlueXP 中的 BlueXP 數位錢包頁面來管理 BlueXP 分類 BYOL 授權。您可以新增授權並更新現有授權。
 
@@ -126,7 +126,7 @@ image:screenshot_cloud_tiering_license_step2.gif["螢幕擷取畫面會顯示「
 +
 ** 如果您有 BlueXP 分類授權序號、而且知道您的 NSS 帳戶、請選取 * 輸入序號 * 選項、然後輸入該資訊。
 +
-如果下拉式清單中沒有您的 NetApp 支援網站帳戶， https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["將新增至BlueXP的NSS帳戶"^]。
+如果下拉式清單中沒有您的 NetApp 支援網站帳戶， https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["將新增至BlueXP的NSS帳戶"^]。
 
 ** 如果您有 BlueXP 分類授權檔案（安裝在黑暗的網站中時需要）、請選取 * 上傳授權檔案 * 選項、然後依照提示附加檔案。
 +

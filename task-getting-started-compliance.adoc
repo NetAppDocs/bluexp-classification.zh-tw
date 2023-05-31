@@ -28,7 +28,7 @@ summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描您的 Cloud
 
 [role="quick-margin-list"]
 * 對於供應系統、這些工作環境應該已經可在BlueXP中使用Cloud Volumes ONTAP
-* 對於內部部署 ONTAP 的不全系統、 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXP必須探索ONTAP 整個叢集"^]
+* 對於內部部署 ONTAP 的不全系統、 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["BlueXP必須探索ONTAP 整個叢集"^]
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
@@ -69,7 +69,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 如果您要掃描的資料來源尚未在您的BlueXP環境中、您可以將其新增至繪圖。
 
-您的需求系統應該已經可在BlueXP的畫版中使用。Cloud Volumes ONTAP若為內部部署ONTAP 的功能、您必須擁有 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["BlueXP會探索這些叢集"^]。
+您的需求系統應該已經可在BlueXP的畫版中使用。Cloud Volumes ONTAP若為內部部署ONTAP 的功能、您必須擁有 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["BlueXP會探索這些叢集"^]。
 
 
 

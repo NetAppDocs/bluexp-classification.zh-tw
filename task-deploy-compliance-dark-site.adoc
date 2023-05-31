@@ -48,7 +48,7 @@ BlueXP 分類安裝指令碼會先檢查系統和環境是否符合必要的先�
 * 接收使用者意見反應
 * 從BlueXP自動升級軟體
 +
-BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 link:whats-new.html["BlueXP 分類版本資訊"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["升級BlueXP Connector"^] 和 <<升級 BlueXP 分類軟體,升級 BlueXP 分類軟體>>。
+BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 link:whats-new.html["BlueXP 分類版本資訊"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["升級BlueXP Connector"^] 和 <<升級 BlueXP 分類軟體,升級 BlueXP 分類軟體>>。
 
 
 
@@ -60,7 +60,7 @@ BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 安裝BlueXP Connector
 [role="quick-margin-para"]
-如果您的離線內部部署站台上尚未安裝Connector、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 現在就在Linux主機上。
+如果您的離線內部部署站台上尚未安裝Connector、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 現在就在Linux主機上。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 檢閱 BlueXP 分類先決條件
 [role="quick-margin-para"]
@@ -78,7 +78,7 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。NetApp需要BYOL�
 
 == 安裝BlueXP Connector
 
-如果您的離線內部部署站台尚未安裝BlueXP Connector、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 在離線站台的Linux主機上。
+如果您的離線內部部署站台尚未安裝BlueXP Connector、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 在離線站台的Linux主機上。
 
 
 
@@ -171,7 +171,7 @@ TIP: 安裝後無法變更 BlueXP 分類主機系統的 IP 位址。
 
 在部署 BlueXP 分類之前、請先檢閱下列先決條件、確定您擁有支援的組態。
 
-* 確保 Connector 擁有部署資源的權限、並為 BlueXP 分類執行個體建立安全性群組。您可以在中找到最新的BlueXP權限 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
+* 確保 Connector 擁有部署資源的權限、並為 BlueXP 分類執行個體建立安全性群組。您可以在中找到最新的BlueXP權限 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
 * 確保您可以繼續執行 BlueXP 分類。BlueXP 分類執行個體必須持續運作、才能持續掃描資料。
 * 確保網頁瀏覽器連線至 BlueXP 分類。啟用 BlueXP 分類後、請確定使用者從連線至 BlueXP 分類執行個體的主機存取 BlueXP 介面。
 +
@@ -408,7 +408,7 @@ BlueXP 分類安裝程式會完成套件的安裝、並註冊安裝。安裝可�
 
 .開始之前
 * BlueXP 分類軟體可一次升級一個主要版本。例如、如果您已安裝版本 1.2.x 、則只能升級至 1.21.x如果您落後幾個主要版本、就必須多次升級軟體。
-* 確認您的 BlueXP Connector 軟體已升級至最新的可用版本。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["請參閱連接器升級步驟"^]。
+* 確認您的 BlueXP Connector 軟體已升級至最新的可用版本。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["請參閱連接器升級步驟"^]。
 
 
 .步驟

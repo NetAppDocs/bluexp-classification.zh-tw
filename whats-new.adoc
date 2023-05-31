@@ -24,19 +24,19 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 === 新的資料探索評估報告
 
-「資料探索評估報告」會針對您所掃描的環境提供高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。本報告的目標是提高對資料治理疑慮、資料安全性曝露及資料集資料合規性缺口的認知度。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-discovery-assessment-report["瞭解如何產生及使用資料探索評估報告"]。
+「資料探索評估報告」會針對您所掃描的環境提供高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。本報告的目標是提高對資料治理疑慮、資料安全性曝露及資料集資料合規性缺口的認知度。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-discovery-assessment-report["瞭解如何產生及使用資料探索評估報告"]。
 
 
 
 === 能夠在雲端的較小執行個體上部署 BlueXP 分類
 
-在 AWS 環境中從 BlueXP Connector 部署 BlueXP 分類時、現在您可以從兩種比預設執行個體可用的執行個體類型更小的執行個體類型中進行選擇。如果您掃描的是小型環境、這有助於節省雲端成本。不過、使用較小的執行個體時會有一些限制。 https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html#using-a-smaller-instance-type["請參閱可用的執行個體類型和限制"]。
+在 AWS 環境中從 BlueXP Connector 部署 BlueXP 分類時、現在您可以從兩種比預設執行個體可用的執行個體類型更小的執行個體類型中進行選擇。如果您掃描的是小型環境、這有助於節省雲端成本。不過、使用較小的執行個體時會有一些限制。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["請參閱可用的執行個體類型和限制"]。
 
 
 
 === 獨立指令碼現已推出、可在安裝 BlueXP 分類之前驗證您的 Linux 系統
 
-如果您想驗證 Linux 系統是否符合所有先決條件、而不需執行 BlueXP 分類安裝、您可以下載一個獨立的指令碼、只測試先決條件。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-test-linux-system.html["瞭解如何檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類"]。
+如果您想驗證 Linux 系統是否符合所有先決條件、而不需執行 BlueXP 分類安裝、您可以下載一個獨立的指令碼、只測試先決條件。 https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["瞭解如何檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類"]。
 
 
 
@@ -46,9 +46,9 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 === 新功能可從 BlueXP 分類 UI 新增您自己的自訂類別
 
-BlueXP 分類現在可讓您新增自己的自訂類別、以便 BlueXP 分類能識別符合這些類別的檔案。BlueXP 分類有許多 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-categories["預先定義的類別"]因此，此功能可讓您新增自訂類別，以識別在資料中找到組織專屬的資訊。
+BlueXP 分類現在可讓您新增自己的自訂類別、以便 BlueXP 分類能識別符合這些類別的檔案。BlueXP 分類有許多 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories["預先定義的類別"]因此，此功能可讓您新增自訂類別，以識別在資料中找到組織專屬的資訊。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-categories["深入瞭解"^]。
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-categories["深入瞭解"^]。
 
 
 
@@ -56,7 +56,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 
 BlueXP 分類已能夠新增自訂關鍵字、 BlueXP 分類將在未來的掃描中識別這些關鍵字。不過、您需要登入 BlueXP 分類 Linux 主機、並使用命令列介面來新增關鍵字。在此版本中、新增自訂關鍵字的功能位於 BlueXP 分類 UI 中、因此很容易新增及編輯這些關鍵字。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["深入瞭解如何從 BlueXP 分類 UI 新增自訂關鍵字"^]。
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-keywords-from-a-list-of-words["深入瞭解如何從 BlueXP 分類 UI 新增自訂關鍵字"^]。
 
 
 
@@ -66,7 +66,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 
 結合這項功能、新增了名為「掃描分析事件」的篩選器、讓您可以檢視未分類的檔案、因為 BlueXP 分類無法還原上次存取的時間、或是即使 BlueXP 分類無法還原上次存取的時間、也無法還原已分類的檔案。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-collected-metadata.html#last-access-time-timestamp["深入瞭解「上次存取時間戳記」和 BlueXP 分類所需的權限"]。
+https://docs.netapp.com/us-en/bluexp-classification/reference-collected-metadata.html#last-access-time-timestamp["深入瞭解「上次存取時間戳記」和 BlueXP 分類所需的權限"]。
 
 
 
@@ -79,7 +79,7 @@ BlueXP 分類可識別及分類包含下列資料類型的檔案：
 * 新加坡國家註冊身分證（NRIC）
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["查看 BlueXP 分類可在資料中識別的所有個人資料類型"]。
+https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["查看 BlueXP 分類可在資料中識別的所有個人資料類型"]。
 
 
 
@@ -108,7 +108,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-ca
 
 在 BlueXP 分類的舊版中、當某些關鍵原則傳回結果時、您可以傳送電子郵件警示給帳戶中的 BlueXP 使用者。此功能可讓您取得通知、在您不在線上時保護資料。現在、您也可以將原則的電子郵件警示傳送給任何其他使用者（最多20個電子郵件地址）、而這些使用者不在您的BlueXP帳戶中。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["深入瞭解如何根據原則結果傳送電子郵件警示"]。
+https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html#sending-email-alerts-when-non-compliant-data-is-found["深入瞭解如何根據原則結果傳送電子郵件警示"]。
 
 
 
@@ -116,13 +116,13 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-using-policies.html#
 
 BlueXP 分類已能夠新增自訂的「個人資料」、 BlueXP 分類將在未來的掃描中識別這些資料。不過、您需要登入 BlueXP 分類 Linux 主機、並使用命令列來新增自訂模式。在此版本中、使用 regex 新增個人模式的功能位於 BlueXP 分類 UI 中、因此新增及編輯這些自訂模式非常容易。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["深入瞭解如何從 BlueXP 分類 UI 新增自訂模式"^]。
+https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["深入瞭解如何從 BlueXP 分類 UI 新增自訂模式"^]。
 
 
 
 === 能夠使用 BlueXP 分類來移動 1500 萬個檔案
 
-過去、 BlueXP 分類最多可將 100 、 000 個來源檔案移至任何 NFS 共用區。現在您一次最多可以搬移1500萬個檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["深入瞭解如何使用 BlueXP 分類來移動來源檔案"]。
+過去、 BlueXP 分類最多可將 100 、 000 個來源檔案移至任何 NFS 共用區。現在您一次最多可以搬移1500萬個檔案。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["深入瞭解如何使用 BlueXP 分類來移動來源檔案"]。
 
 
 
@@ -134,7 +134,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 
 === 新的「部分成功」狀態已新增至「行動狀態」面板
 
-新的「部分成功」狀態表示 BlueXP 分類動作已完成、有些項目失敗、有些項目成功、例如當您移動或刪除 100 個檔案時。此外、「已完成」狀態已重新命名為「成功」。過去、「已完成」狀態可能會列出成功及失敗的動作。現在「成功」狀態代表所有項目的所有行動都成功。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-view-compliance-actions.html["請參閱如何檢視「動作狀態」面板"]。
+新的「部分成功」狀態表示 BlueXP 分類動作已完成、有些項目失敗、有些項目成功、例如當您移動或刪除 100 個檔案時。此外、「已完成」狀態已重新命名為「成功」。過去、「已完成」狀態可能會列出成功及失敗的動作。現在「成功」狀態代表所有項目的所有行動都成功。 https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html["請參閱如何檢視「動作狀態」面板"]。
 
 
 
@@ -144,7 +144,7 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 
 === 能夠檢視含有敏感資料且過於許可的檔案圖表
 
-「治理」儀表板新增了「敏感資料」和「廣泛權限」區域、提供內含敏感資料（包括敏感和敏感個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料的風險所在。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["深入瞭解"]。
+「治理」儀表板新增了「敏感資料」和「廣泛權限」區域、提供內含敏感資料（包括敏感和敏感個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料的風險所在。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["深入瞭解"]。
 
 
 
@@ -157,13 +157,13 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion
 * 「檔案路徑」篩選現在可讓您指定要從篩選查詢結果中排除的路徑。如果您輸入包含和排除某些資料的路徑、 BlueXP 分類會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-investigate-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"]。
+https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"]。
 
 
 
 === BlueXP 分類可識別日本個人號碼
 
-BlueXP 分類可識別及分類包含日文個人編號（也稱為「我的號碼」）的檔案。這包括「個人」和「公司我的號碼」。 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-personal-data["查看 BlueXP 分類可在資料中識別的所有個人資料類型"]。
+BlueXP 分類可識別及分類包含日文個人編號（也稱為「我的號碼」）的檔案。這包括「個人」和「公司我的號碼」。 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["查看 BlueXP 分類可在資料中識別的所有個人資料類型"]。
 
 
 
@@ -185,7 +185,7 @@ BlueXP 分類可識別及分類包含日文個人編號（也稱為「我的號�
 * 此外、在「組態」頁面中、會有一個新區段顯示您已設定的掃描器群組、以及每個群組中的掃描器節點。
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html["深入瞭解如何在單一主機伺服器和多個主機上安裝Data Sense"]。
+https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["深入瞭解如何在單一主機伺服器和多個主機上安裝Data Sense"]。
 
 
 
@@ -195,13 +195,13 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-on
 
 === 支援掃描SharePoint內部部署帳戶
 
-Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["深入瞭解"^]。
+Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。 https://docs.netapp.com/us-en/bluexp-classification/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["深入瞭解"^]。
 
 
 
 === 能夠重新掃描多個目錄（資料夾或共用）
 
-現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["請參閱如何重新掃描目錄"^]。
+現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["請參閱如何重新掃描目錄"^]。
 
 
 
@@ -209,7 +209,7 @@ Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳�
 
 如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。
 
-如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["瞭解如何安裝掃描器節點來掃描其他資料來源"^]。
+如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["瞭解如何安裝掃描器節點來掃描其他資料來源"^]。
 
 
 
@@ -225,7 +225,7 @@ Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳�
 
 === 能夠立即重新掃描儲存庫、以反映檔案中的變更
 
-如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先重新掃描特定資料、然後再處理其他資料。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["請參閱如何重新掃描目錄"^]。
+如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先重新掃描特定資料、然後再處理其他資料。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["請參閱如何重新掃描目錄"^]。
 
 
 
@@ -233,7 +233,7 @@ Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳�
 
 「分析狀態」篩選器可讓您列出處於「資料感應」掃描特定階段的檔案。您可以選取一個選項來顯示*擱置第一次掃描*、*完成*正在掃描、*擱置重新掃描*或*失敗*要掃描的檔案清單。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"^]。
+https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"^]。
 
 
 
@@ -245,7 +245,7 @@ Data Sense現已將資料主體視為「法規遵循儀表板」中所顯示之�
 
 === 資料感測階層連結檔案現在被視為掃描中「類別」的一部分
 
-Data Sense現在將階層連結檔案視為「符合性儀表板」中顯示的類別的一部分。將檔案從來源位置移至NFS共用時、會建立這些檔案Data Sense。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["深入瞭解如何建立階層連結檔案"^]。
+Data Sense現在將階層連結檔案視為「符合性儀表板」中顯示的類別的一部分。將檔案從來源位置移至NFS共用時、會建立這些檔案Data Sense。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["深入瞭解如何建立階層連結檔案"^]。
 
 此外、在「調查」頁面中執行搜尋時、您可以選取「類別」下的「資料感測Breadcrumbs」、以僅檢視「資料感測階層連結」檔案。
 
@@ -272,19 +272,19 @@ link:reference-private-data-categories.html#types-of-personal-data["查看Data S
 
 === 能夠新增階層連結檔案、以指出檔案移動的原因
 
-當您使用「資料感應」功能將來源檔案移至NFS共用時、現在您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在來源位置建立一個名為「<fileName（檔案名稱）>-breadcrumbsum-<date（日期）>.txt'的階層連結檔案、以顯示檔案的移動位置和移動檔案的使用者。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["深入瞭解"^]。
+當您使用「資料感應」功能將來源檔案移至NFS共用時、現在您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在名為的來源位置建立階層連結檔案 `<filename>-breadcrumb-<date>.txt` 可顯示文件的移動位置和移動文件的用戶。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["深入瞭解"^]。
 
 
 
 === 您目錄中的個人資料和敏感個人資料會顯示在調查結果中
 
-「資料調查」頁面現在會顯示您目錄（資料夾和共用）內的個人資料和敏感個人資料結果。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-files-that-contain-personal-data["請參閱此處的範例"^]。
+「資料調查」頁面現在會顯示您目錄（資料夾和共用）內的個人資料和敏感個人資料結果。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#viewing-files-that-contain-personal-data["請參閱此處的範例"^]。
 
 
 
 === 檢視已成功分類的磁碟區、儲存區等數量狀態
 
-檢視Data Sense正在掃描的個別儲存庫（Volume、儲存區等）時、您現在可以看到「對應」的儲存庫數量、以及「分類」的儲存庫數量。在所有資料上執行完整AI識別時、分類所需時間會更長。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#viewing-the-scan-status-for-your-repositories["請參閱如何檢視此資訊"^]。
+檢視Data Sense正在掃描的個別儲存庫（Volume、儲存區等）時、您現在可以看到「對應」的儲存庫數量、以及「分類」的儲存庫數量。在所有資料上執行完整AI識別時、分類所需時間會更長。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#viewing-the-scan-status-for-your-repositories["請參閱如何檢視此資訊"^]。
 
 
 
@@ -296,7 +296,7 @@ link:reference-private-data-categories.html#types-of-personal-data["查看Data S
 * 您可以使用規則運算式（regex）新增個人模式。
 
 
-這些關鍵字和模式會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-data-fusion.html["深入瞭解"^]。
+這些關鍵字和模式會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html["深入瞭解"^]。
 
 
 
@@ -306,13 +306,13 @@ link:reference-private-data-categories.html#types-of-personal-data["查看Data S
 
 === 現在您可以檢視擁有目錄存取權的使用者和群組
 
-過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files-and-directories["瞭解如何檢視可存取您資料夾和檔案共用的使用者和群組"]。
+過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#viewing-permissions-for-files-and-directories["瞭解如何檢視可存取您資料夾和檔案共用的使用者和群組"]。
 
 
 
 === 您可以「暫停」掃描儲存庫、暫時停止掃描特定內容
 
-暫停掃描表示「Data Sense」（資料感測）將不會在任何新增或變更磁碟區或儲存區的情況下執行未來掃描、但系統仍會提供所有目前的結果。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository["瞭解如何暫停和繼續掃描"]。
+暫停掃描表示「Data Sense」（資料感測）將不會在任何新增或變更磁碟區或儲存區的情況下執行未來掃描、但系統仍會提供所有目前的結果。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository["瞭解如何暫停和繼續掃描"]。
 
 
 
@@ -324,13 +324,13 @@ Data Sense可識別及分類包含來自印第安納州、紐約州和德州的�
 
 === 原則現在會傳回符合搜尋條件的目錄
 
-過去當您建立自訂原則時、結果會顯示符合搜尋條件的檔案。結果也會顯示符合查詢的目錄（資料夾和檔案共用）。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#creating-custom-policies["深入瞭解如何建立原則"]。
+過去當您建立自訂原則時、結果會顯示符合搜尋條件的檔案。結果也會顯示符合查詢的目錄（資料夾和檔案共用）。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#creating-custom-policies["深入瞭解如何建立原則"]。
 
 
 
 === Data Sense現在一次最多可移動100、000個檔案
 
-如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-managing-highlights.html#moving-source-files-to-an-nfs-share["瞭解如何使用Data Sense移動檔案"]。
+如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["瞭解如何使用Data Sense移動檔案"]。
 
 
 
@@ -340,13 +340,13 @@ Data Sense可識別及分類包含來自印第安納州、紐約州和德州的�
 
 === 現在您可以從「資料調查」頁面下載結果、做為.Json報告
 
-在「資料調查」頁面中篩選資料之後、除了將資料儲存至本機系統上的.CSV檔案之外、現在您還可以將資料另存為.Json檔案、以便匯出至NFS共用。確認Data合理擁有正確的匯出存取權限。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-generating-compliance-reports.html#data-investigation-report["請參閱如何從「資料調查」頁面建立報告"]。
+在「資料調查」頁面中篩選資料之後、除了將資料儲存至本機系統上的.CSV檔案之外、現在您還可以將資料另存為.Json檔案、以便匯出至NFS共用。確認Data合理擁有正確的匯出存取權限。 https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#data-investigation-report["請參閱如何從「資料調查」頁面建立報告"]。
 
 
 
 === 能夠從Data Sense UI解除安裝Data Sense
 
-您可以解除安裝Data Sense、將軟體從主機中永久移除、如果是雲端部署、請刪除部署Data Sense的虛擬機器/執行個體。刪除執行個體會永久刪除所有已建立索引的資訊Data Sense已掃描。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-uninstall-data-sense.html["瞭解方法"]。
+您可以解除安裝Data Sense、將軟體從主機中永久移除、如果是雲端部署、請刪除部署Data Sense的虛擬機器/執行個體。刪除執行個體會永久刪除所有已建立索引的資訊Data Sense已掃描。 https://docs.netapp.com/us-en/bluexp-classification/task-uninstall-data-sense.html["瞭解方法"]。
 
 
 
@@ -354,7 +354,7 @@ Data Sense可識別及分類包含來自印第安納州、紐約州和德州的�
 
 稽核日誌會追蹤Data Sense對所有工作環境中的檔案所執行的管理活動、以及Data Sense正在掃描的資料來源。活動可以是使用者產生的（刪除檔案、建立原則等）或產生的原則（自動新增標籤至檔案、自動刪除檔案等）。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-actions.html["如需稽核記錄的詳細資料、請參閱"]。
+https://docs.netapp.com/us-en/bluexp-classification/task-audit-data-sense-actions.html["如需稽核記錄的詳細資料、請參閱"]。
 
 
 
@@ -362,13 +362,13 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-audit-data-sense-act
 
 「識別碼數量」篩選器可讓您列出具有特定數量敏感識別碼的檔案、包括個人資料和敏感個人資料。您可以選取1到10或1到1000等範圍、只檢視含有該敏感識別碼數目的檔案。
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"]。
+https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"]。
 
 
 
 === 現在您可以編輯所建立的現有原則
 
-如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-org-private-data.html#editing-policies["瞭解如何編輯原則"]。
+如果您需要變更過去建立的自訂原則、現在您可以編輯原則、而非建立新原則。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#editing-policies["瞭解如何編輯原則"]。
 
 
 
@@ -378,21 +378,21 @@ https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-
 
 === 新增支援在Google雲端硬碟帳戶中掃描資料
 
-現在您可以將Google雲端硬碟帳戶新增至Data Sense、以便從這些Google雲端硬碟帳戶掃描文件和檔案。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-scanning-google-drive.html["瞭解如何掃描Google雲端硬碟帳戶"]。
+現在您可以將Google雲端硬碟帳戶新增至Data Sense、以便從這些Google雲端硬碟帳戶掃描文件和檔案。 https://docs.netapp.com/us-en/bluexp-classification/task-scanning-google-drive.html["瞭解如何掃描Google雲端硬碟帳戶"]。
 
-Data Sense可從Google Docs套件（文件、工作表和投影片）中識別下列Google檔案類型中的個人識別資訊（PII）、以及 https://docs.netapp.com/us-en/cloud-manager-data-sense/reference-private-data-categories.html#types-of-files["現有檔案類型"]。
+Data Sense可從Google Docs套件（文件、工作表和投影片）中識別下列Google檔案類型中的個人識別資訊（PII）、以及 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-files["現有檔案類型"]。
 
 
 
 === 目錄層級檢視已新增至「資料調查」頁面
 
-除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。系統會為已掃描的CIFS和NFS共用、以及OneDrive、SharePoint和Google Drive資料夾建立目錄索引。現在您可以在目錄層級檢視權限並管理資料。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["瞭解如何選取掃描資料的「目錄」檢視"]。
+除了檢視及篩選所有檔案和資料庫的資料、現在您還可以根據資料調查頁面中資料夾和共用區內的所有資料來檢視及篩選資料。系統會為已掃描的CIFS和NFS共用、以及OneDrive、SharePoint和Google Drive資料夾建立目錄索引。現在您可以在目錄層級檢視權限並管理資料。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["瞭解如何選取掃描資料的「目錄」檢視"]。
 
 
 
 === 展開群組以顯示具有存取檔案權限的使用者/成員
 
-身為Data Sense權限功能的一部分、您現在可以檢視擁有檔案存取權的使用者和群組清單。每個群組都可展開以顯示群組中的使用者清單。 https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#viewing-permissions-for-files["瞭解如何檢視具有檔案讀取和/或寫入權限的使用者和群組"]。
+身為Data Sense權限功能的一部分、您現在可以檢視擁有檔案存取權的使用者和群組清單。每個群組都可展開以顯示群組中的使用者清單。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#viewing-permissions-for-files["瞭解如何檢視具有檔案讀取和/或寫入權限的使用者和群組"]。
 
 
 
@@ -402,7 +402,7 @@ Data Sense可從Google Docs套件（文件、工作表和投影片）中識別�
 * 「使用者/群組權限」篩選器可讓您列出特定使用者或群組具有讀取和/或寫入權限的檔案、資料夾和共用。您可以選取多個使用者和/或群組名稱、或輸入部分名稱。
 
 
-https://docs.netapp.com/us-en/cloud-manager-data-sense/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"]。
+https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#filtering-data-in-the-data-investigation-page["請參閱所有篩選器清單、以供您調查資料"]。
 
 
 
