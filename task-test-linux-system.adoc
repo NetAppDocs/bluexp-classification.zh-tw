@@ -97,9 +97,9 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 
 * * 作業系統 * ：作業系統必須能夠安裝泊塢視窗引擎。
 +
-** Red Hat Enterprise Linux 8.0 至 8.7 版
-** CentOS 8.0 至 8.7 版
-** CentOS Stream 8.
+** Ubuntu 22.04
+** Red Hat Enterprise Linux 8.0 至 8.5 版
+** CentOS 8.0 至 8.5 版
 ** 可以使用 RHEL 或 CentOS 版本 7.8 或 7.9 、但 Linux 核心版本必須為 4.0 或更新版本
 
 
@@ -165,6 +165,10 @@ TIP: 如果站台中安裝的主機系統沒有網際網路連線、則不需要
 
 
 | http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | 提供 CentOS 安裝的必要套件。 
+
+
+| \http://packages.ubuntu.com/
+\http://archive.ubuntu.com | 提供 Ubuntu 安裝的必要套件。 
 |===
 
 

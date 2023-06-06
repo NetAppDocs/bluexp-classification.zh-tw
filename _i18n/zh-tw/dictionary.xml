@@ -477,7 +477,6 @@
   <block id="b6d9bc7bd8d7f42a7f70429316f4c5a8" category="section-title">搜尋資料主題並下載報告</block>
   <block id="95fbc0e5629d1a6565b155bfc1a72f1f" category="inline-link-macro">任何個人資訊類型</block>
   <block id="22f358540a8137fabaf166237bf90665" category="paragraph">搜尋資料主旨的完整名稱或已知識別碼、然後下載檔案清單報告或 DSAR 報告。您可以搜尋 <block ref="15f0bc476b1c646a9bfee9ca0397f926" category="inline-link-macro-rx"></block>。</block>
-  <block id="c5928463d331d08a07fbb5b6452d32f7" category="admonition">搜尋資料主題名稱時、支援英文、德文和西班牙文。稍後將新增更多語言支援。</block>
   <block id="c9edde725bcfb1c133b505d4d1320784" category="list-text">按一下 * 資料主題 * 。</block>
   <block id="f1c85eaf16c9599d4afcc94f0e5efb53" category="list-text">搜尋資料主旨的完整名稱或已知識別碼。</block>
   <block id="6cb73fb6662a2fc29c22c33577236835" category="paragraph">以下範例顯示名稱 _John doe_ 的搜尋：</block>
@@ -928,10 +927,7 @@
   <block id="29ee5d1ebcc033234938a5234f1f2075" category="cell">識別碼</block>
   <block id="ed82815cd7c9b16e760f312718a9a3d3" category="cell">鄰近驗證？</block>
   <block id="0db377921f4ce762c62526131097968f" category="cell">一般</block>
-  <block id="b357b524e740bc85b9790a0712d84a30" category="cell">電子郵件地址</block>
   <block id="707f0c56eea47eff25f0e4c8755d5434" category="cell">信用卡號碼</block>
-  <block id="c1113e338802baf316f93fb02544b32e" category="cell">IBAN 編號（國際銀行帳戶號碼）</block>
-  <block id="75ba8d70e3692ba200f0e0df37b4d2ae" category="cell">IP 位址</block>
   <block id="dc647eb65e6711e155375218212b3964" category="cell">密碼</block>
   <block id="89212175aaa6a47307131ef3a6bbaa3c" category="cell">國家識別碼</block>
   <block id="9ffceb20e382df6e4587add0d24af321" category="cell">澳洲（TFN）（稅務檔案編號）</block>
@@ -1237,7 +1233,6 @@
   <block id="f31705a3bb2f2507f4803c1d996c4887" category="list-text">_proxy_host_ = 代理伺服器的 IP 或主機名稱（如果主機位於 Proxy 伺服器之後）。</block>
   <block id="580d63944c0010bfed9db7cc082666bf" category="list-text">_proxy_port_ = 連接到 Proxy 伺服器的連接埠（預設值 80 ）。</block>
   <block id="382110a0400b590f5d4cf18a43519ec9" category="list-text">_proxy_schap_=連線配置：HTTPS或http（預設http）。</block>
-  <block id="1f44ba4e0ef93bb540e2527fff0546e4" category="list-text">_proxy_user_ = 驗證的使用者、如果需要基本驗證、則可連線至 Proxy 伺服器。</block>
   <block id="10e9c25445ddccd5fc8e39fb121f25f2" category="list-text">_proxy_password_ = 您指定之使用者名稱的密碼。</block>
   <block id="2f22ab4135a481a1450cf28cb5f05c26" category="list-text">請依照中的步驟1至7進行 <block ref="ca10c193ae29117fbfb6ce9e3e248e8b" category="inline-xref-macro-rx"></block> 在管理器節點上。</block>
   <block id="48e1e343989571ace6bf404a680635d8" category="list-text">如步驟8所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。</block>
@@ -1595,9 +1590,7 @@
   <block id="78ed85a2b36b215d69761df3caf130df" category="cell">選取工作環境類型。OneDrive、SharePoint和Google雲端硬碟的分類為「應用程式」。</block>
   <block id="6195c7a1534de8abb0c4706e15d24a3c" category="sidebar">變更掃描設定</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">除了上述的自我支援選項、您也可以在啟動支援之後、與NetApp支援專家合作解決任何問題。</block>
-  <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">瞭解如何註冊以取得支援</block>
   <block id="383133cb6f7207b1c65c3ace94aa5e95" category="list-text">如果您想與電話上的其他人通話、請按一下*「呼叫我們*」。您將會被導向netapp.com上的頁面、其中列出您可以撥打的電話號碼。</block>
-  <block id="b53e0a259f4a0c8e7da80d6c94e26c84" category="list-text">*《支援帳戶*》：選取與開立支援案例的人員相關的適用的NSS帳戶。NetApp 支援網站除了以下提供的其他電子郵件之外、此人將是NetApp聯絡的主要聯絡人。</block>
   <block id="2e50c5f85523f0aba9ff2db10f18279c" category="list-text">*工作環境*：如果適用於儲存設備、請選取* Cloud Volumes ONTAP 《*》或*《內部部署*》、然後選取相關的工作環境。</block>
   <block id="e6f29fb3c7636dc0040600dd0e84bb79" category="list-text">*案例優先順序*：選擇案例的優先順序、可以是低、中、高或嚴重。</block>
   <block id="835eb4008e97c2a7f69bbb2725285e34" category="paragraph">若要深入瞭解這些優先順序、請將滑鼠游標暫留在欄位名稱旁的資訊圖示上。</block>
@@ -1613,22 +1606,11 @@
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">支援登錄總覽</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">有兩種登錄形式可啟動支援服務權利：</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">在Cloud Volumes ONTAP 雲端供應商的市場中註冊與訂閱相關的支援服務序號（這些序號為20位數909601xxxxxxxx序號）。</block>
-  <block id="98bc603dcb6d5a57d540b13b541fa41a" category="paragraph">您的註冊方式取決於您是新客戶或現有客戶或合作夥伴。</block>
-  <block id="e5646198d2e01aab2cec9ef946f9c53a" category="list-text">現有客戶或合作夥伴</block>
-  <block id="4e6af37fb81d50483d832d4de6e2b26a" category="inline-xref">瞭解如何新增您的NSS帳戶</block>
-  <block id="1c91f3adc957364cb01d33e100ee1ea3" category="list-text">NetApp新推出</block>
-  <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">瞭解如何向NetApp註冊</block>
-  <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">如果您有客戶層級的帳戶、可以新增一或多個NSS帳戶。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">請注意下列事項：</block>
   <block id="1dcb63fd55c4d22e87cb32275b8cc808" category="inline-image-macro">三個橫點的圖示</block>
-  <block id="ad56c7289bc13dcf4f78c285f7f03878" category="section-title">向NetApp註冊</block>
-  <block id="f1bac79c2c71fbd93863b9fbd718094c" category="paragraph">您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
   <block id="bf4c731c0ee7f60c8018ad8f96828dda" category="section-title">現有的客戶、擁有一個新服務客戶帳戶</block>
-  <block id="819aff12752b7e6a1828e755c7664de7" category="list-text">在*資源*頁面上、按一下*註冊以取得支援*。</block>
-  <block id="e8a3d9970b8fc1d92caaf33d9e116bd4" category="inline-image-macro">顯示帳戶序號和「Register for Support」（註冊支援）選項的快照</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶、但無NSS.帳戶</block>
-  <block id="cc1d3c161bcf25e6445c2fc771647849" category="paragraph">如果您是現有的NetApp客戶、擁有現有授權和序號、但_否_ nss_帳戶、您只需要建立一個nss.帳戶。</block>
   <block id="5b2b7f628f804bcb786a097c7e45aa41" category="inline-link">《使用者登錄表》NetApp 支援網站</block>
   <block id="0c4a8b62da9473fbd5401273c4f85ee0" category="list-text">完成建立NetApp 支援網站 一個不完善的帳戶<block ref="041bcb6d9bdf91f7d6ac92ae3a196e12" category="inline-link-rx"></block></block>
   <block id="d61c9f72493817776f392db42ac446a2" category="list-text">請務必選擇適當的使用者層級、通常為* NetApp客戶/終端使用者*。</block>
@@ -1656,33 +1638,22 @@
   <block id="a5b37e45ed042a9bf7c09bfcc25c3211" category="list-text">GCP：使用為BlueXP執行個體建立的使用者</block>
   <block id="23c0e03df230b1dfa0e16b9d275b80ea" category="list-text">在BlueXP左側導覽功能表中、按一下*管理&gt;分類*。</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">在您透過NetApp技術支援開啟支援案例之前、您必須先在NetApp 支援網站 BlueXP中新增一個支援帳戶、然後註冊以取得支援。</block>
-  <block id="8bf30fadf784022b073adb9233678a71" category="paragraph">在您透過NetApp技術支援開啟支援案例之前、您必須先在NetApp 支援網站 BlueXP中新增一個支援（NSS）帳戶、然後註冊以取得支援。</block>
   <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">註冊您的BlueXP帳戶ID支援訂閱（您的20位數960xxxxxxx序號位於BlueXP的「Support Resources（支援資源）」頁面）。</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">這是您在BlueXP內任何服務的單一支援訂閱ID。每個BlueXP帳戶層級的支援訂閱都必須註冊。</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">這些序號通常稱為「_PAYGO」序號、並在Cloud Volumes ONTAP 部署時由BlueXP產生。</block>
-  <block id="9d4125dc88bb9db6eb4be939905761ce" category="paragraph">註冊這兩種類型的序號、即可開啟支援服務單和自動建立個案。</block>
-  <block id="76928f97884b4332b83c5be9b99d93d3" category="paragraph">身為現有的NetApp客戶或合作夥伴、您可以使用NetApp 支援網站 您的畫面（NSS）SSO帳戶執行上述登錄。在「支援儀表板」中、BlueXP提供一個* nssn*管理*頁面、您可以在其中新增您的nssa帳戶。新增您的NSS帳戶後、BlueXP會自動為您註冊這些序號。</block>
-  <block id="8d80298f51b7ff2da78e26e60195c7a3" category="paragraph"><block ref="cbec7c1a4a2acff5e84457dd449ac01d" category="inline-xref-macro-rx"></block>。</block>
-  <block id="679f2cae4657f177cc89458d49c97e5f" category="paragraph">如果您是NetApp的新客戶、您必須在NetApp的支援註冊網站上完成一次性註冊您的BlueXP帳戶ID序號。完成此註冊並建立新的NSS帳戶之後、您就可以在BlueXP中使用此帳戶自動註冊、以便繼續進行。</block>
-  <block id="a92ec860f505b318fd0f0eba6165d607" category="section-title">新增一個NSS帳戶至藍圖XP</block>
   <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">在BlueXP主控台右上角、按一下「說明」圖示、然後選取「*支援*」。</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">這些行動可讓BlueXP將您的nssa帳戶用於授權下載、軟體升級驗證、以及未來的支援註冊等項目。</block>
   <block id="7e177185e7eddff33dd8f3aeb7551132" category="paragraph">如果您是擁有NSS帳戶的NetApp客戶、您只需透過BlueXP註冊即可獲得支援。</block>
-  <block id="25b94e7b58140f12be91fa8fd935fa59" category="list-text">如果您尚未這麼做、請將您的NSS帳戶新增至藍圖XP。</block>
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">請務必複製上述序號欄位使用的BlueXP帳戶序號（960xxxx）。這將加速帳戶處理。</block>
-  <block id="1c0e45ef07d0dbc13ca2394d5e285fd7" category="paragraph">一旦擁有NetApp 支援網站 您的不二帳戶、您就可以瀏覽至BlueXP、新增此新的NSS-帳戶以供日後登錄。</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp以多種方式提供對BlueXP的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="9a3db1abe5491d0eb9bb5d125981356c" category="paragraph">請搜尋BlueXP知識庫、找出有助於疑難排解問題的文章。</block>
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">歡迎加入BlueXP社群、以追蹤後續討論或建立新討論。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">您目前正在檢視的BlueXP文件。</block>
   <block id="6702efec14563f45f1ee2f8c613b8ad8" category="paragraph">我們非常重視您的意見。提交意見反應、協助我們改善藍圖。</block>
-  <block id="1012a287397c66025d7748edf06a36e2" category="paragraph">若要使用*建立案例*功能、您必須先執行一次性註冊您的BlueXP帳戶ID序號（例如960xxxx）。 <block ref="3349e4b3d05f646f2f1421bee7c2ad26" category="inline-link-macro-rx"></block>。</block>
   <block id="6254a4afeeb76765a127fe74d31c1b3d" category="list-text">在BlueXP中、按一下*「說明」&gt;「支援」*。</block>
-  <block id="d950fb930d7f7e6bfdda1b91b4639a02" category="paragraph">如果您看不到您的NSS帳戶、可以瀏覽至BlueXP「Support（支援）」區段中的「* nssn* Management（* nssnss管理*）」索引標籤、將其新增至該處。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*服務*：選取問題相關的服務。例如、特定於服務工作流程或功能的技術支援問題的BlueXP。</block>
   <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">工作環境清單位於您在服務的最上層橫幅中所選的BlueXP帳戶、工作區和Connector範圍內。</block>
-  <block id="fa6b601b2fb4e3e5c7b466ecb8bd70ac" category="paragraph">此錯誤可能表示、與該帳戶相關聯的NSS帳戶及記錄公司與BlueXP帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以在「建立案例*」表單頂端查看您的NSS帳戶清單、以找出最適合的項目、或使用下列其中一個選項尋求協助：</block>
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">下列問題與BlueXP Connector有關。</block>
   <block id="629fc635e3b0007019bd6fe0cb5a386c" category="list-text">將自訂標記新增至檔案（例如「需要搬移」）、並指派一個BlueXP使用者、讓該人員擁有檔案的更新。</block>
   <block id="78e53b124783e106b07d5599c5ff16c3" category="inline-link">深入瞭解BlueXP角色</block>
@@ -1827,7 +1798,6 @@
   <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。</block>
   <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">內部部署安裝程式現在會在開始安裝之前執行預先檢查</block>
   <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">在Linux系統上安裝Data Sense時、安裝程式會先檢查系統是否符合所有必要的需求（CPU、RAM、容量、網路等）、然後再開始實際安裝。這有助於您在*之前*花時間進行安裝。</block>
-  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">「支援儀表板」可讓您新增及管理NetApp 支援網站 搭配BlueXP使用的支援帳戶。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。</block>
@@ -1860,7 +1830,6 @@
   <block id="0ade297321b9ef21e8713a6dcb596f85" category="list-text">連接器主機必須允許透過連接埠 443 進行傳出 HTTPS 存取。如果 Connector 位於雲端、則預先定義的安全性群組會允許所有傳出通訊。</block>
   <block id="68a31aee6ed17baf7f680ccc49bda595" category="list-text">這個支援叢集必須允許透過連接埠 443 進行傳入 HTTPS 存取。 ONTAP預設的「管理」防火牆原則允許從所有 IP 位址進行傳入 HTTPS 存取。如果您修改此預設原則、或是建立自己的防火牆原則、則必須將 HTTPS 傳輸協定與該原則建立關聯、並啟用從 Connector 主機存取。</block>
   <block id="241ba9ff87f0666e68fc0cc21f19a8dc" category="list-text">NFS：111（TCP\udp）和2049（TCP\udp）</block>
-  <block id="e1a888256fda414af1e7d195ee9bedbb" category="list-text">適用於CIFS - 139（TCP\udp）和445（TCP\udp）</block>
   <block id="ad7298bcd89281d83eddb3e633b2d082" category="list-text">NFS：111和2049</block>
   <block id="a48f4e223524f9629ce5ecfebce7e768" category="list-text">適用於CIFS - 139和445</block>
   <block id="1b7ccf3735aab9407a71052e40136f7e" category="cell">389（TCP與udp）、636（TCP）、3268（TCP）和3269（TCP）</block>
@@ -2013,7 +1982,6 @@
   <block id="46bd1bd2277d77e6f044cdb7a6983fc6" category="inline-image-macro">「更多」按鈕</block>
   <block id="9098e762df6423155c77747444ce3402" category="list-text">請依照中的步驟1至8進行 <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> 在管理器節點上。</block>
   <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支援雲端供應商解決方案</block>
-  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">如需您已整合至BlueXP的下列雲端供應商解決方案的技術支援、請參閱該產品的藍圖XP文件中的「取得協助」。</block>
   <block id="0b95409e38fd76ec71d03e3e14b83763" category="paragraph">所有語言均支援所有這些新增自訂掃描準則的機制。</block>
   <block id="e1a196cfa9a98106e5ba102887a0c95d" category="paragraph">可辨識這些項目的語言列於表格中。</block>
   <block id="ad225f707802ba118c22987186dd38e8" category="cell">法文</block>
@@ -2086,16 +2054,11 @@
   <block id="4e7da840816931928beff62cd45584f2" category="cell">* CIFS *</block>
   <block id="b4ccd4984cce17a35c772737cf9415b1" category="cell">* NFS*</block>
   <block id="a045f318999c936720f61814bf4d2c2e" category="cell">*時間戳記*</block>
-  <block id="9b0d69d83b07284ebc53ba3f530c7818" category="cell">*建立時間*</block>
   <block id="78945de8de090e90045d299651a68a9b" category="cell">可用</block>
   <block id="f9b9ab70f8d1cbd522aba5cea3dbb026" category="cell">無法使用（Linux不支援）</block>
-  <block id="9aa1da50f6c826dbf3b0d1376205e7f9" category="cell">*上次存取時間*</block>
-  <block id="3d798bb38c846d1b3c39cb17b1521285" category="cell">*上次修改時間*</block>
   <block id="06d8b12cf1272ab914790a8734a08c8e" category="cell">*權限*</block>
-  <block id="5c26435b3fa9562233b3bd9a81a6cb31" category="cell">*開放權限*</block>
   <block id="fbd9c4028bea4c13eb992144e5923bc4" category="cell">如果「每個人」群組都能存取該檔案、則會被視為「開放給組織」</block>
   <block id="9dda3af696aa0c88f8922f7a00c87baf" category="cell">如果「其他人」可以存取該檔案、則會被視為「開放給組織」</block>
-  <block id="681c5f54dfb3915a426bb79691c3ab11" category="cell">*使用者/群組存取*</block>
   <block id="63f19f489bdf8010eb6fc8ee363b3569" category="cell">使用者和群組資訊取自LDAP</block>
   <block id="bcead494d002e9572dc3500b60795eec" category="cell">不可用（NFS使用者通常在伺服器本機管理、因此同一位使用者在每個伺服器上可以有不同的UID）</block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="doc">調查組織中儲存的資料</block>
@@ -2450,7 +2413,6 @@
   <block id="a9ec5ce178b0bf158cc0b058a75222be" category="list-text">出現提示時、請將 IAM 角色指派給具有的 BlueXP 分類執行個體 <block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>。</block>
   <block id="9d71010686428b63401d21389a87983b" category="inline-image-macro">輸入 AWS IAM 角色進行 BlueXP 分類的螢幕快照</block>
   <block id="d6024ec0f0750e8f3ff480afef31e8a6" category="paragraph"><block ref="d6024ec0f0750e8f3ff480afef31e8a6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f6f506d119e38348c2c81e414085aec0" category="admonition">您也可以按一下「組態」頁面、針對工作環境啟用法規遵循掃描 <block ref="a5c9b85c9e509567688aed8106bc419c" category="inline-image-macro-rx" type="image"></block> 按鈕並選擇 * 啟動 BlueXP 分類 * 。</block>
   <block id="a09f1d7b84a96466ba7bd8852ed92c89" category="paragraph">BlueXP 在 Amazon S3 上啟用 BlueXP 分類之後、下一步是設定您要掃描的儲存區。</block>
   <block id="0ff611ad811c3e01355e8c03e26e1e93" category="paragraph">BlueXP 分類也可以 <block ref="fbc7d1e2817308c6eddf1c4eb56ce78c" category="inline-xref-macro-rx"></block>。</block>
   <block id="0e81c961936f603622e3c73e904829ff" category="paragraph">BlueXP 分類會開始掃描您啟用的 S3 儲存區。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。</block>
@@ -2514,7 +2476,6 @@
   <block id="2cc6e87dfb5a6f87bc1fcbd217a498de" category="paragraph"><block ref="2cc6e87dfb5a6f87bc1fcbd217a498de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d5e967f01610f01cb30183e6b342e630" category="list-text">在確認對話方塊中、按一下 * 核准 * 、讓 BlueXP 分類開始掃描您的磁碟區。</block>
   <block id="b0dab6dc992c93096b218e009d2afb00" category="paragraph">BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 BlueXP 分類完成初始掃描、就會在法規遵循儀表板中提供結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。</block>
-  <block id="972e2a8ce03816519a790c52519af6f1" category="admonition">根據預設、如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統將不會掃描磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。您可以啟用該頁面的設定、以便 BlueXP 分類無論權限為何、都能掃描磁碟區。</block>
   <block id="5276878b0a17edd0ad3fbee3380d1635" category="section-title">驗證 BlueXP 分類是否有權存取磁碟區</block>
   <block id="6bc94b69811d2b0b701e915104066612" category="paragraph">請檢查您的網路、安全性群組和匯出原則、確保 BlueXP 分類能夠存取磁碟區。</block>
   <block id="24f2d84d2538ae621015886e3ec8b0c0" category="paragraph">您必須提供具備 CIFS 認證的 BlueXP 分類、才能存取 CIFS 磁碟區。</block>
@@ -2558,9 +2519,6 @@
   <block id="34c6b12ec99e0004de549a9d1fd9589c" category="list-text">在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從三種系統大小中進行選擇。</block>
   <block id="d5c832490c0ab9dcb105acd9ee7b4709" category="list-text">在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：</block>
   <block id="f36c8c3dc40ab9521c9078ec5894a47c" category="list-text">* 作業系統 * ：作業系統必須能夠安裝泊塢視窗引擎。</block>
-  <block id="4585e4a4eb923c98011a45c75e24090a" category="list-text">Red Hat Enterprise Linux 8.0 至 8.7 版</block>
-  <block id="3f9fe8f7187c1830389e9c7ee4426649" category="list-text">CentOS 8.0 至 8.7 版</block>
-  <block id="2f305242577378bffaf65a957ab9682c" category="list-text">CentOS Stream 8.</block>
   <block id="f2183b09e54e4aa491c008ea8ca08bbc" category="list-text">* Red Hat Subscription Management* ：主機必須向 Red Hat Subscription Management 註冊。如果系統尚未註冊、則無法在安裝期間存取儲存庫以更新所需的協力廠商軟體。</block>
   <block id="7299a589db31a0bc8b28dedaafe896cd" category="list-text">* 其他軟體 * ：安裝 BlueXP 分類之前、您必須在主機上安裝下列軟體：</block>
   <block id="786452cdc534ba8395eb7a26c9ab3efc" category="summary">您可以在「資料調查」頁面中檢視詳細資料、以調查組織的資料。您可以從 BlueXP 分類 UI 的許多區域瀏覽到此頁面、包括 Governance 和 Compliance 儀表板。</block>
@@ -2670,9 +2628,7 @@
   <block id="1aedaece9cd7b51146f8247dbb10998f" category="list-text">在 AWS 、 Amazon FSX for ONTAP 或 AWS S3 儲存區中掃描 Cloud Volumes ONTAP 中的資料時、您會在 AWS 中使用 Connector 。</block>
   <block id="3c4d86937393bb95a8eb9deff91fdca3" category="list-text">在 Azure 或 Azure NetApp Files 中掃描 Cloud Volumes ONTAP 資料時、您會使用 Azure 中的 Connector 。</block>
   <block id="434f7377ad007c7085d3489daef770a7" category="paragraph">當 Connector 部署在政府區域（ AWS GovCloud 、 Azure Gov 或 Azure DoD ）時、就支援 BlueXP 分類。以這種方式部署時、 BlueXP 分類具有下列限制：</block>
-  <block id="5e23930d439e0ac55d03b274d7f2a1f8" category="paragraph">在雲端部署 BlueXP 分類之前、請先檢閱下列先決條件、確定您擁有支援的組態。</block>
   <block id="a3c7cd542dbae9813f2f591e1d616bf8" category="list-text">從 BlueXP 分類啟用輸出網際網路存取</block>
-  <block id="6b737aec4f07a3063a27b81b5e76ff62" category="list-text">BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路使用 Proxy 伺服器進行網際網路存取、請確定 BlueXP 分類執行個體具有傳出網際網路存取權、以聯絡下列端點。當您在雲端部署 BlueXP 分類時、它與 Connector 位於相同的子網路中。</block>
   <block id="6a942fef40095cafe3b15d4e4f2a1ab3" category="paragraph">根據您是在 AWS 、 Azure 或 GCP 中部署 BlueXP 分類、請檢閱下表。</block>
   <block id="4ea85be63fc1085d8a7d469d21ced42a" category="open-title">AWS 所需的端點</block>
   <block id="d1bc8972c7e9ec9b764ec46ec4949ad8" category="cell">啟用 BlueXP 分類、以存取及下載資訊清單和範本、以及傳送記錄和計量。</block>
@@ -2910,7 +2866,6 @@
   <block id="9422d01ffeaf90b54d512834d7e52972" category="section-title">BlueXP 分類可識別三種新的個人資料類型</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXP 分類可識別及分類包含下列資料類型的檔案：</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link">查看 BlueXP 分類可在資料中識別的所有個人資料類型</block>
-  <block id="c2e0848a220b82c9650399e6f13e1421" category="list-text">BlueXP 分類可安裝在執行 CentOS Stream 8 的 Linux 主機上。</block>
   <block id="27bfd524829d2f58c611b9380403face" category="list-text">對於無法存取網際網路的網站（黑暗網站）、 BlueXP 分類安裝程式現在會執行預先檢查、以確保您的系統和網路需求已就緒、以便順利安裝。</block>
   <block id="af415967f6e10a35f69e4fdddc729da2" category="paragraph">在 BlueXP 分類的舊版中、當某些關鍵原則傳回結果時、您可以傳送電子郵件警示給帳戶中的 BlueXP 使用者。此功能可讓您取得通知、在您不在線上時保護資料。現在、您也可以將原則的電子郵件警示傳送給任何其他使用者（最多20個電子郵件地址）、而這些使用者不在您的BlueXP帳戶中。</block>
   <block id="110171733cad0cc9610f24012ccf6ee1" category="section-title">現在您可以從 BlueXP 分類 UI 新增個人模式</block>
@@ -3265,7 +3220,6 @@
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">這是系統產生的ID、會對應至您的電子郵件。在「* nssn*管理*」頁面上、您可以從顯示電子郵件 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要重新整理登入認證憑證權杖、也可以在中使用*更新認證*選項 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 功能表。</block>
-  <block id="1bb5620ed3998fd776980cad36e22c9a" category="paragraph"><block ref="1bb5620ed3998fd776980cad36e22c9a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="379f9cd57d97013f3f7fdd24f692a0b1" category="paragraph"><block ref="379f9cd57d97013f3f7fdd24f692a0b1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9b9f3b644051dc45eee1cdd195c832fd" category="paragraph">當 BlueXP 分類安裝在無法存取網際網路的網站上時、 BlueXP Connector 也必須安裝在同一個網站上、而無需存取網際網路。<block ref="151d636b52c90572a7410cd729808024" category="inline-link-rx"></block>。</block>
   <block id="ae32f6accb2b2a18892af4e654e3ac00" category="paragraph">當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。初始複本之後、服務會根據您設定的排程同步任何變更的資料。此動作使用<block ref="d9f5c10edef42cff18580599262fd784" category="inline-link-rx"></block> 將資料從來源複製及同步至目標的功能。</block>
@@ -3286,7 +3240,6 @@
   <block id="ba29241cb1ada66fbef1294aa7e1002a" category="paragraph">如果您的離線內部部署站台上尚未安裝Connector、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> 現在就在Linux主機上。</block>
   <block id="b63ff2e2b175854ce3610e27e52a6f21" category="paragraph">如果您的離線內部部署站台尚未安裝BlueXP Connector、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> 在離線站台的Linux主機上。</block>
   <block id="772608951c3bed8c37dd30e4fa52ea7a" category="list-text">確保 Connector 擁有部署資源的權限、並為 BlueXP 分類執行個體建立安全性群組。您可以在中找到最新的BlueXP權限<block ref="12017b43c12237092f4f947467fd170e" category="inline-link-rx"></block>。</block>
-  <block id="ffb0ab76f2bfaab3dafdcb157116a7ea" category="list-text">確認您的 BlueXP Connector 軟體已升級至最新的可用版本。<block ref="1189728130fe33c2fb7adb2d97a83d35" category="inline-link-rx"></block>。</block>
   <block id="4da25d5e326dac4c0bb3865e69dd3325" category="paragraph">「資料探索評估報告」會針對您所掃描的環境提供高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。本報告的目標是提高對資料治理疑慮、資料安全性曝露及資料集資料合規性缺口的認知度。<block ref="34e879e713683b8352bb56b59c6078e2" category="inline-link-rx"></block>。</block>
   <block id="38e8bfeb390cec6e72d97323084e18cc" category="paragraph">在 AWS 環境中從 BlueXP Connector 部署 BlueXP 分類時、現在您可以從兩種比預設執行個體可用的執行個體類型更小的執行個體類型中進行選擇。如果您掃描的是小型環境、這有助於節省雲端成本。不過、使用較小的執行個體時會有一些限制。<block ref="d8ef680ce45b86e2a6afe2805a7e5562" category="inline-link-rx"></block>。</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">如果您想驗證 Linux 系統是否符合所有先決條件、而不需執行 BlueXP 分類安裝、您可以下載一個獨立的指令碼、只測試先決條件。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
@@ -3341,4 +3294,99 @@
   <block id="36d24108dd8c0c7c0e1f81fdf8c0ca74" category="paragraph">若要在雲端供應商環境中建立一個、請參閱<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>或<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
   <block id="5bda7e03f132a23ba4a10fd78c5bec54" category="paragraph">請注意、您也可以<block ref="8635e4adecf532f5cc2442da36c54c5a" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
   <block id="d9807c3141689bddbb5c97208880a55c" category="admonition">當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 儲存區、 Azure NetApp Files 或適用於 ONTAP 的 FSX 。在這些情況下、您需要在雲端和中部署個別的 Connector 和 BlueXP 分類執行個體<block ref="c0d2361eca5545ed28b62c643a054bb3" category="inline-link-rx"></block> 適用於不同的資料來源。</block>
+  <block id="7e06380ecab9614af588d8a05ba6d6b0" category="cell">_ 建立時間 _</block>
+  <block id="32e6470f56de0e5ebf534668812bd960" category="cell">上次存取時間 _</block>
+  <block id="c843b01ef48f3bd79d5d3521fbfa6125" category="cell">上次修改時間 _</block>
+  <block id="e9349d6c7fc3f860e75fd091e850b861" category="cell">_ 開啟權限 _</block>
+  <block id="44f76dcd3cb66939e2cbdab782c8314f" category="cell">_ 使用者 / 群組存取 _</block>
+  <block id="770ad37e7b6dccf816f59000b32376eb" category="list-text">BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 。</block>
+  <block id="846ac2b072f7b636a6e9eec4c3e71fe1" category="list-text">較舊版本的 Windows 作業系統（例如 Windows 7 和 Windows 8 ）預設會停用「上次存取時間」屬性的集合、因為它可能會影響系統效能。如果未收集此屬性、則以「上次存取時間」為基礎的 BlueXP 分類分析將受到影響。如果需要、您可以在這些舊版 Windows 系統上啟用上次存取時間的集合。</block>
+  <block id="e636b4a892ea62f67be639b3661d6897" category="list-text">根據預設、如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統將不會掃描磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。產生的頁面有一個您可以啟用的設定、以便 BlueXP 分類無論權限為何、都能掃描磁碟區。</block>
+  <block id="dbc6be69ce4e1e10bc890167fa46f18b" category="inline-link-macro">請參閱更多關於此 BlueXP 分類限制的詳細資料</block>
+  <block id="9b39a17b00cb629e1990cbdcbad1001d" category="list-text">BlueXP 分類只會掃描一個磁碟區下的一個檔案共用區。如果您的磁碟區中有多個共享區、則需要以共用群組的形式分別掃描這些其他共用區。 <block ref="5dac6ccd725a941d49a9e107a98eb409" category="inline-link-macro-rx"></block>。</block>
+  <block id="643a860f992333b8600ea264aca7c4fc" category="cell">電子郵件地址</block>
+  <block id="52d854882d971396b8b17f8ac787c3c5" category="cell">IBAN 號碼（國際銀行帳戶號碼）</block>
+  <block id="5b8c99dad1893a85076709b2d3c2d2d0" category="cell">IP位址</block>
+  <block id="e5051949dc3a37f9077e85df0f1c8a21" category="list-text">Ubuntu 22.04</block>
+  <block id="bfb5ca6a1be7e27bafb8e663408b453a" category="list-text">Red Hat Enterprise Linux 8.0 至 8.5 版</block>
+  <block id="0d424e96e4117758c3bc3268ab82bacf" category="list-text">CentOS 8.0 至 8.5 版</block>
+  <block id="3dac7b81357a4f4b160a2d842c8e7348" category="list-text">適用於 CIFS - 139 （ TCP\UDP ）和 445 （ TCP\UDP ）</block>
+  <block id="130c9b78c071186d7e3d61f1c4eb4c60" category="list-text">我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。<block ref="1189728130fe33c2fb7adb2d97a83d35" category="inline-link-rx"></block>。</block>
+  <block id="78b65cf97b25c47011081025c212c7c0" category="paragraph">在雲端部署 BlueXP 分類之前、請先檢閱下列先決條件、確定您擁有支援的組態。當您在雲端部署 BlueXP 分類時、它與 Connector 位於相同的子網路中。</block>
+  <block id="a215e2fc4fb56a1de009d0523096d557" category="list-text">BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路使用 Proxy 伺服器進行網際網路存取、請確定 BlueXP 分類執行個體具有傳出網際網路存取權、以聯絡下列端點。Proxy 必須是非透明的、我們目前不支援透明的 Proxy 。</block>
+  <block id="920fe1428c19533eda6222fe7e58efbe" category="inline-link">瞭解如何管理與 BlueXP 登入相關的認證</block>
+  <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">若要使用 * 建立案例 * 功能、您必須先將 NetApp 支援網站 認證與 BlueXP 登入建立關聯。<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>。</block>
+  <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">如果您要為具有序號的 ONTAP 系統開啟案例、則您的 NSS 帳戶必須與該系統的序號相關聯。</block>
+  <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">此錯誤可能表示、與該帳戶相關聯的NSS帳戶及記錄公司與BlueXP帳戶序號的記錄公司不同（例如960xxxx)或工作環境序號。您可以使用下列其中一個選項尋求協助：</block>
+  <block id="1cafe37522033ef4db580aa7479649f6" category="cell">\http://packages.ubuntu.com/
+\http://archive.ubuntu.com</block>
+  <block id="3e104a45d1e7094d4e4412e744a2ed28" category="cell">提供 Ubuntu 安裝的必要套件。</block>
+  <block id="3fb31cc8efb6a784adfa36f5dcbd6dcb" category="admonition">搜尋資料主題名稱時、支援英文、德文、日文和西班牙文。稍後將新增更多語言支援。</block>
+  <block id="5d8aef9555e5438ddeff623786db2956" category="summary">已知限制指出本產品版本不支援的功能、或是無法與產品正確互通的功能。請仔細檢閱這些限制。</block>
+  <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
+  <block id="b36af7206dcf373bd9775c24677a5fc3" category="section-title">BlueXP 分類掃描限制</block>
+  <block id="38e601196e9a43492efa5f85f3672de2" category="section-title">BlueXP 分類只會掃描一個磁碟區下的一個共用區</block>
+  <block id="831362c8f190190a797ae86ca7a487e2" category="paragraph">如果單一磁碟區下有多個檔案共用、 BlueXP 分類會以最高階層掃描共用。例如、如果您有類似下列的共用：</block>
+  <block id="e62fb7061d96488f28377b9b7c87a5f3" category="list-text">/a</block>
+  <block id="dad5a0a365c61f8a86cad9dfc25f8b3a" category="list-text">/A/B</block>
+  <block id="d5343bbc43034721eddff6ba04503653" category="list-text">/C</block>
+  <block id="597702d739dab1871c93af7fab02812e" category="list-text">/D/E</block>
+  <block id="fcd814b0d6047e85c49b02424cb204bc" category="paragraph">然後將掃描 /a 中的資料。/C 和 /D 中的資料將不會被掃描。</block>
+  <block id="7aebfa1e2291377e040de92d7f7f335f" category="paragraph-title">因應措施</block>
+  <block id="14776bef68fe86f58d1665f68b865288" category="paragraph">有一種因應措施可確保您掃描的資料來自 Volume 中的所有共用區。請遵循下列步驟：</block>
+  <block id="07ac6c7be4fcc2c3e85390641ca1f547" category="list-text">在工作環境中、新增要掃描的 Volume 。</block>
+  <block id="4246bf7edec387ea5212cff7b1dbe300" category="list-text">BlueXP 分類完成掃描磁碟區後、請前往 _Data Investigation 頁面並建立篩選器、查看要掃描的共用區：</block>
+  <block id="460ff5a5e64ec3903817c107c3cb45f7" category="paragraph">您將依「工作環境名稱」和「目錄類型 = 共用」篩選資料、以查看要掃描的共用。</block>
+  <block id="2094d1ac9663a79b428d9e79aedd0f59" category="list-text">取得 Volume 中存在的完整共用清單、以便查看哪些共用未被掃描。</block>
+  <block id="316879df6c55d2fcb2fbb99ae1421271" category="inline-link-macro">將剩餘的共用新增至共用群組</block>
+  <block id="6365c8ecbac772805c308b501098968e" category="list-text"><block ref="3c14a300450508449fa4ac656dc2d2d2" category="inline-link-macro-rx"></block>。</block>
+  <block id="312913ed4c4493306983760e524a18bf" category="paragraph">您需要個別新增所有共用、例如：</block>
+  <block id="5bf592857864b6327e9f9e7ac8b12e7e" category="list-text">針對工作環境中具有多個共用區的每個磁碟區執行這些步驟。</block>
+  <block id="96828273826a07fdc4f42f4998e536b2" category="section-title">2023 年 6 月 6 日（版本 1.23 ）</block>
+  <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="section-title">搜尋資料主體名稱時、現在支援日文</block>
+  <block id="931c126009c96d8f8ce9770df003478d" category="inline-link">「資料調查」頁面中的「資料主旨」篩選器</block>
+  <block id="8b33a4571db736cc278b213820df9c13" category="paragraph">現在可以在搜尋受試者名稱以回應資料主體存取要求（ DSAR ）時輸入日文名稱。您可以產生<block ref="8ff27ad1e3f1d885a2f0c0f257501bb1" category="inline-link-rx"></block> 以及產生的資訊。您也可以在中輸入日文名稱<block ref="615fae5bff7ec48fe0ed5c47e50f199a" category="inline-link-rx"></block> 識別包含主體名稱的檔案。</block>
+  <block id="988e5d1ef231d33d94784c928261f0aa" category="section-title">Ubuntu 現在是支援的 Linux 套裝作業系統、您可以在其中安裝 BlueXP 分類</block>
+  <block id="bf62ea0cc2aa2f5ecb7f712ffcdafc64" category="inline-link">瞭解如何在安裝 Ubuntu 的主機上安裝 BlueXP 分類</block>
+  <block id="e79851962ec44d8c7ccd2a63f0c4e92c" category="paragraph">Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在網路中的 Ubuntu Linux 主機或雲端中的 Linux 主機上安裝 BlueXP 分類。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
+  <block id="eba7ad27f2a236389ef88102ad7e8e2e" category="section-title">新的 BlueXP 分類安裝不再支援 Red Hat Enterprise Linux 8.6 和 8.7</block>
+  <block id="5b1dc8e5b7717b205bb516bc41f51da7" category="paragraph">新部署不支援這些版本、因為 Red Hat 不再支援 Docker 、這是必要條件。如果您現有的 BlueXP 分類機器在 RHEL 8.6 或 8.7 上執行、 NetApp 將繼續支援您的組態。</block>
+  <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">BlueXP 分類可設定為 FPolicy 收集器、以從 ONTAP 系統接收 FPolicy 事件</block>
+  <block id="88b2049c35386070297462047bca71cf" category="inline-link">瞭解如何監控及管理檔案存取事件</block>
+  <block id="1c6f2c46440d2da9ff124f2379388cf8" category="paragraph">您可以啟用在 BlueXP 分類系統上收集檔案存取稽核記錄、以便在工作環境中的磁碟區上偵測到檔案存取事件。BlueXP 分類可擷取下列類型的 FPolicy 事件、以及對檔案執行動作的使用者：建立、讀取、寫入、刪除、重新命名、 變更擁有者 / 權限、並變更 SACL/DACL 。<block ref="e525234fcf42827b85ebd3e0f842cd71" category="inline-link-rx"></block>。</block>
+  <block id="e1161f065b10936afc930fd3d9d0c76f" category="section-title">Data Sense BYOL 授權現在支援 Dark 站台</block>
+  <block id="1ab65443ec0af7e5e1aee32a3cf59dcc" category="inline-link">瞭解如何取得及上傳您的 Data Sense BYOL 授權</block>
+  <block id="645f5675426bc396b45b524635e93bc7" category="paragraph">現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 BlueXP 數位錢包、以便在授權即將到期時收到通知。<block ref="bd823f9b4dce457c0ea2a8dcca6e749f" category="inline-link-rx"></block>。</block>
+  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">您的 BlueXP 帳戶和個別 Cloud Volumes ONTAP 系統都需要註冊支援。</block>
+  <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">註冊這兩種類型的序號、即可開啟支援服務單和自動建立個案。如下列所述、將 NetApp 支援網站 （ NSS ）帳戶新增至 BlueXP 即可完成登錄。</block>
+  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">如需下列雲端供應商解決方案的技術支援、請參閱該產品 BlueXP 文件中的「取得說明」。</block>
+  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">註冊您的 BlueXP 帳戶以取得 NetApp 支援</block>
+  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">若要註冊以取得支援並啟動支援授權、 BlueXP 帳戶中的一位使用者必須將 NetApp 支援網站 帳戶與其 BlueXP 登入建立關聯。您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
+  <block id="41e1e3cff4a07ce2ecc08e6c09f11092" category="list-text">按一下*使用者認證*。</block>
+  <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。</block>
+  <block id="8c916e828e9e5a3592c8cac4e25928be" category="list-text">若要確認註冊程序是否成功、請按一下「說明」圖示、然後選取 * 「支援 * 」。</block>
+  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">「 * 資源 * 」頁面應顯示您的帳戶已註冊以取得支援。</block>
+  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。</block>
+  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">請注意、如果其他 BlueXP 使用者尚未將 NetApp 支援網站 帳戶與 BlueXP 登入建立關聯、則不會看到此相同的支援登錄狀態。不過、這並不表示您的 BlueXP 帳戶尚未註冊支援。只要帳戶中有一位使用者已遵循這些步驟、您的帳戶就已登錄。</block>
+  <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是現有的 NetApp 客戶、擁有現有的授權和序號、但沒有 NSS_ 帳戶、則需要建立一個 NSS 帳戶、並將其與您的 BlueXP 登入建立關聯。</block>
+  <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">完成下的步驟、將新的 NSS 帳戶與 BlueXP 登入建立關聯 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">擁有 NetApp 支援網站 帳戶後、請完成下的步驟、將帳戶與 BlueXP 登入建立關聯 <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">建立 NSS 認證的關聯、以取得 Cloud Volumes ONTAP 支援</block>
+  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">若要為 Cloud Volumes ONTAP 啟用下列關鍵工作流程、必須將 NetApp 支援網站 認證與 BlueXP 帳戶建立關聯：</block>
+  <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">註冊隨用隨付 Cloud Volumes ONTAP 系統以取得支援</block>
+  <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">您必須提供您的NSS帳戶、才能啟動系統支援、並取得NetApp技術支援資源的存取權。</block>
+  <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">自帶授權（Cloud Volumes ONTAP BYOL）即可部署</block>
+  <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">您必須提供您的NSS帳戶、才能讓BlueXP上傳授權金鑰、並啟用您所購買期間的訂閱。這包括定期續約的自動更新。</block>
+  <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">升級Cloud Volumes ONTAP 更新版的更新版</block>
+  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">將 NSS 認證與 BlueXP 帳戶建立關聯、與 BlueXP 使用者登入相關的 NSS 帳戶不同。</block>
+  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">這些 NSS 認證會與您的特定 BlueXP 帳戶 ID 相關聯。屬於BlueXP帳戶的使用者可以從*支援&gt; nss管理*存取這些認證資料。</block>
+  <block id="48439ae905464923337d7464952d3315" category="list-text">Proxy 必須是非透明的、我們目前不支援透明的 Proxy 。</block>
+  <block id="b9a11b90960ff803269429887ab4cff3" category="list-text">使用者必須是本機使用者。不支援網域使用者。</block>
+  <block id="fae80424c022f4f6a5863e7a9e007154" category="list-text">_proxy_user_ = 驗證的使用者、如果需要基本驗證、則可連線至 Proxy 伺服器。使用者必須是本機使用者、不支援網域使用者。</block>
+  <block id="e0f8faa1f60bb9ad057dbed0ae3366cd" category="inline-link-macro">請參閱如何存取 Classification 執行個體的資料</block>
+  <block id="a9420bec80d413a65a75f5b930ab95d6" category="paragraph">如果報告大於 1 MB 、則 PDF 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 PDF 檔案。當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體、才能下載 PDF 檔案。 <block ref="deb8a567236e3a33c0e546690f1ec883" category="inline-link-macro-rx"></block>。</block>
+  <block id="0fe1279b28d533b32c08d839691ef653" category="inline-image-macro">三點</block>
+  <block id="e56ef2e2348492a4f0e1e9513b068cc4" category="admonition">您也可以按一下「組態」頁面、針對工作環境啟用法規遵循掃描 <block ref="a759a567ce9a72b21fd45f48f1f358c8" category="inline-image-macro-rx" type="image"></block> 按鈕並選擇 * 啟動 BlueXP 分類 * 。</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
 </blocks>

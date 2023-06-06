@@ -14,7 +14,11 @@ sidebar:
   - title: BlueXP 分類文件
     url: "/index.html"
   - title: 版本資訊
-    url: "/whats-new.html"
+    entries:
+    - title: 新增功能
+      url: "/whats-new.html"
+    - title: 已知限制
+      url: "/reference-limitations.html"
   - title: 開始使用
     entries:
     - title: 瞭解 BlueXP 分類
@@ -73,6 +77,8 @@ sidebar:
       url: "/task-using-policies.html"
     - title: 管理您的私有資料
       url: "/task-managing-highlights.html"
+    - title: 監控及管理檔案存取事件
+      url: "/task-manage-file-access-events.html"
     - title: 變更掃描設定
       url: task-managing-repo-scanning.html
     - title: 產生法規遵循報告

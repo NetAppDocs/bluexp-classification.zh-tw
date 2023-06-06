@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations.html 
+keywords: limitations, data sense, classification, scan shares 
+summary: 已知限制指出本產品版本不支援的功能、或是無法與產品正確互通的功能。請仔細檢閱這些限制。 
+---
+= 已知限制
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+已知限制指出本產品版本不支援的功能、或是無法與產品正確互通的功能。請仔細檢閱這些限制。
+
+
+
+== BlueXP 分類掃描限制
+
+
+
+=== BlueXP 分類只會掃描一個磁碟區下的一個共用區
+
+如果單一磁碟區下有多個檔案共用、 BlueXP 分類會以最高階層掃描共用。例如、如果您有類似下列的共用：
+
+* /a
+* /A/B
+* /C
+* /D/E
+
+
+然後將掃描 /a 中的資料。/C 和 /D 中的資料將不會被掃描。
+
+.因應措施
+有一種因應措施可確保您掃描的資料來自 Volume 中的所有共用區。請遵循下列步驟：
+
+. 在工作環境中、新增要掃描的 Volume 。
+. BlueXP 分類完成掃描磁碟區後、請前往 _Data Investigation 頁面並建立篩選器、查看要掃描的共用區：
++
+您將依「工作環境名稱」和「目錄類型 = 共用」篩選資料、以查看要掃描的共用。
+
+. 取得 Volume 中存在的完整共用清單、以便查看哪些共用未被掃描。
+. link:task-scanning-file-shares.html["將剩餘的共用新增至共用群組"]。
++
+您需要個別新增所有共用、例如：
+
++
+....
+/C
+/D
+....
+. 針對工作環境中具有多個共用區的每個磁碟區執行這些步驟。
+

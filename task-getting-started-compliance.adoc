@@ -109,9 +109,13 @@ image:screenshot_cloud_compliance_we_scan_config.png["部署 BlueXP 分類執行
 .結果
 BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 BlueXP 分類完成初始掃描、就會在法規遵循儀表板中提供結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。
 
+[NOTE]
+====
+* 根據預設、如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統將不會掃描磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。產生的頁面有一個您可以啟用的設定、以便 BlueXP 分類無論權限為何、都能掃描磁碟區。
+* BlueXP 分類只會掃描一個磁碟區下的一個檔案共用區。如果您的磁碟區中有多個共享區、則需要以共用群組的形式分別掃描這些其他共用區。 link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["請參閱更多關於此 BlueXP 分類限制的詳細資料"^]。
 
-NOTE: 根據預設、如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統將不會掃描磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。您可以啟用該頁面的設定、以便 BlueXP 分類無論權限為何、都能掃描磁碟區。
 
+====
 
 
 == 驗證 BlueXP 分類是否有權存取磁碟區

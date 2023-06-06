@@ -142,9 +142,9 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 
 * * 作業系統 * ：作業系統必須能夠安裝泊塢視窗引擎。
 +
-** Red Hat Enterprise Linux 8.0 至 8.7 版
-** CentOS 8.0 至 8.7 版
-** CentOS Stream 8.
+** Ubuntu 22.04
+** Red Hat Enterprise Linux 8.0 至 8.5 版
+** CentOS 8.0 至 8.5 版
 ** 可以使用 RHEL 或 CentOS 版本 7.8 或 7.9 、但 Linux 核心版本必須為 4.0 或更新版本
 
 
@@ -210,6 +210,10 @@ BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路�
 
 
 | http://mirror.centos.org \http://mirrorlist.centos.org \http://mirror.centos.org/centos/7/extras/x86_64/Packages/container-selinux-2.107-3.el7.noarch.rpm | 提供 CentOS 安裝的必要套件。 
+
+
+| \http://packages.ubuntu.com/
+\http://archive.ubuntu.com | 提供 Ubuntu 安裝的必要套件。 
 |===
 
 
@@ -236,7 +240,7 @@ BlueXP會使用ONTAP HTTPS探索叢集。如果使用自訂防火牆原則、則
 
 | BlueXP 分類 <> ONTAP 叢集  a| 
 * NFS：111（TCP\udp）和2049（TCP\udp）
-* 適用於CIFS - 139（TCP\udp）和445（TCP\udp）
+* 適用於 CIFS - 139 （ TCP\UDP ）和 445 （ TCP\UDP ）
 
  a| 
 BlueXP 分類需要與每個 Cloud Volumes ONTAP 子網路或內部 ONTAP 系統建立網路連線。Cloud Volumes ONTAP 的防火牆或路由規則必須允許來自 BlueXP 分類執行個體的傳入連線。
@@ -299,6 +303,8 @@ NOTE: 當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 �
 +
 ** 您需要Proxy伺服器資訊（IP位址或主機名稱、連線連接埠、連線配置：HTTPS或http、使用者名稱和密碼）。
 ** 如果 Proxy 正在執行 TLS 攔截、您必須知道儲存 TLS CA 憑證的 BlueXP 分類 Linux 系統路徑。
+** Proxy 必須是非透明的、我們目前不支援透明的 Proxy 。
+** 使用者必須是本機使用者。不支援網域使用者。
 
 
 * 確認您的離線環境符合所需 <<從 BlueXP 分類啟用輸出網際網路存取,權限與連線能力>>。
@@ -359,7 +365,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在雲端或
 ** _proxy_host_ = 代理伺服器的 IP 或主機名稱（如果主機位於 Proxy 伺服器之後）。
 ** _proxy_port_ = 連接到 Proxy 伺服器的連接埠（預設值 80 ）。
 ** _proxy_schap_=連線配置：HTTPS或http（預設http）。
-** _proxy_user_ = 驗證的使用者、如果需要基本驗證、則可連線至 Proxy 伺服器。
+** _proxy_user_ = 驗證的使用者、如果需要基本驗證、則可連線至 Proxy 伺服器。使用者必須是本機使用者、不支援網域使用者。
 ** _proxy_password_ = 您指定之使用者名稱的密碼。
 ** _ca_cert 目錄 _ = BlueXP 分類 Linux 系統上包含額外 TLS CA 憑證套件的路徑。僅當Proxy執行TLS攔截時才需要。
 
