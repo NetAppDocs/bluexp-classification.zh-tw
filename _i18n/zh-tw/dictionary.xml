@@ -2877,7 +2877,6 @@
   <block id="4b273eb22f0e890dce8d8a73dba2425e" category="section-title">BlueXP 分類可識別日本個人號碼</block>
   <block id="f5055886b0ed4db432221d378f3730c1" category="paragraph">您可以變更的部分項目包括是否掃描儲存庫、以及 BlueXP 分類是否正在執行 <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。例如、如果您需要停止掃描某個Volume一段時間、也可以暫停和繼續掃描。</block>
   <block id="06f4c04dbf4f6e1007102feb5e139b5f" category="paragraph">您可以檢視 BlueXP 分類正在針對每個工作環境和資料來源掃描的個別儲存庫（磁碟區、貯體等）。此外、您也可以查看「對應」的數量、以及「分類」的數量。在所有資料上執行完整AI識別時、分類需要較長的時間。</block>
-  <block id="1653ff09a832461934f62b062bb49a8f" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。這與「關閉」掃描不同。關閉掃描時、系統會移除該磁碟區的所有索引和相關資訊。暫停掃描表示 BlueXP 分類不會在未來執行任何變更或儲存庫新增的掃描、但所有目前的結果仍會顯示在系統中。</block>
   <block id="e9ef05a76f2eb11216d8bcec1c8a1ee1" category="paragraph">BlueXP 分類會持續掃描您的資料、以偵測您新增的儲存庫中的遞增變更。不過、系統掃描所有環境需要時間、而且沒有方法可以控制掃描儲存庫的順序。如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先掃描特定資料、然後再掃描其他資料。重新掃描動作之後、所選的儲存庫會根據正常的 BlueXP 分類排程返回掃描狀態。</block>
   <block id="c07dbec3e7acd472789625d35a7563da" category="paragraph">BlueXP 分類支援掃描所有資料來源類型的目錄、 Amazon S3 和資料庫除外。目前我們支援重新掃描單一目錄（資料夾或共用）或多個目錄。未來支援將包括重新掃描其他儲存庫類型（檔案、資料庫等）。</block>
   <block id="eb069b124d02b06908e1071cc2edae80" category="summary">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響很小、您可以設定 BlueXP 分類來執行「慢速」掃描。</block>
@@ -3150,11 +3149,9 @@
   <block id="ae99dae6f6384006aeadebbab894f370" category="list-text">行動詳細資料 - 已完成的工作：取決於行動</block>
   <block id="e4e81dbf5cdcb72e814265ea01d1f3eb" category="paragraph">例如、記錄檔中的下列行顯示「 Create 」（建立）動作已發生在「 fpolicy_CIFS 」磁碟區中、磁碟區中已建立新的檔案「 F14 」。</block>
   <block id="e5f8c207227297bb2868689eb39d6520" category="paragraph">您可以使用 BlueXP 分類調查頁面來搜尋磁碟區（使用「儲存儲存庫」篩選器）或檔案（使用「檔案 / 目錄路徑」篩選器）、以查看受影響磁碟區和檔案的詳細資料。</block>
-  <block id="f78abbcec2f9ea5bc3fa03b36826fc43" category="paragraph">檔案存取稽核記錄檔位於 BlueXP 分類機器上的：<block ref="fec957882759a1b449bd1dfc164a64e6" prefix=" " category="inline-code"></block></block>
   <block id="d83435d800785132bce0e54bcaa13373" category="paragraph">依預設、每個檔案最多可包含 50 、 000 個事件。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> 達到此上限後、記錄檔中較舊的項目會被覆寫。</block>
   <block id="55b3e20fcb82b08c30a902311468d3c8" category="paragraph">預設會將目錄中所有記錄檔的總大小設為最大 50 GB 。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> 達到此限制時、會在新增記錄檔時刪除最舊的記錄檔。此外、任何超過 14 天的記錄檔都會被覆寫、因為這是最大保留時間。</block>
   <block id="a0381bb8e5ebb77d0c9d2d40db0d1fe3" category="list-text">&lt;datasense_ip&gt; = BlueXP 分類虛擬機器執行個體的 IP 位址</block>
-  <block id="5c3750f0826de99975f78125d81ce638" category="cell">該位置目前已經過硬編碼、可將記錄檔寫入<block ref="fec957882759a1b449bd1dfc164a64e6" prefix=" " category="inline-code"></block></block>
   <block id="190e59fe3d6a787439b4b5c2c989f6bf" category="cell">每個檔案目前已經過硬編碼、最多可包含 50 、 000 個事件。達到此上限後、新增新事件時會刪除舊事件。</block>
   <block id="a1c4e88cdf8e157dbb344fe556f58d28" category="paragraph">如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="6af032d0de89339877509ae11ea19c63" category="paragraph">在SharePoint帳戶中新增您要掃描的SharePoint網站URL清單、然後選取掃描類型。您可以一次新增多達 100 個 URL 、每個帳戶最多可新增 1 、 000 個站台。</block>
@@ -3348,7 +3345,6 @@
   <block id="8b33a4571db736cc278b213820df9c13" category="paragraph">現在可以在搜尋受試者名稱以回應資料主體存取要求（ DSAR ）時輸入日文名稱。您可以產生<block ref="8ff27ad1e3f1d885a2f0c0f257501bb1" category="inline-link-rx"></block> 以及產生的資訊。您也可以在中輸入日文名稱<block ref="615fae5bff7ec48fe0ed5c47e50f199a" category="inline-link-rx"></block> 識別包含主體名稱的檔案。</block>
   <block id="988e5d1ef231d33d94784c928261f0aa" category="section-title">Ubuntu 現在是支援的 Linux 套裝作業系統、您可以在其中安裝 BlueXP 分類</block>
   <block id="bf62ea0cc2aa2f5ecb7f712ffcdafc64" category="inline-link">瞭解如何在安裝 Ubuntu 的主機上安裝 BlueXP 分類</block>
-  <block id="e79851962ec44d8c7ccd2a63f0c4e92c" category="paragraph">Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在網路中的 Ubuntu Linux 主機或雲端中的 Linux 主機上安裝 BlueXP 分類。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
   <block id="eba7ad27f2a236389ef88102ad7e8e2e" category="section-title">新的 BlueXP 分類安裝不再支援 Red Hat Enterprise Linux 8.6 和 8.7</block>
   <block id="5b1dc8e5b7717b205bb516bc41f51da7" category="paragraph">新部署不支援這些版本、因為 Red Hat 不再支援 Docker 、這是必要條件。如果您現有的 BlueXP 分類機器在 RHEL 8.6 或 8.7 上執行、 NetApp 將繼續支援您的組態。</block>
   <block id="b5ba343fa4469021dbdf64181a67e909" category="section-title">BlueXP 分類可設定為 FPolicy 收集器、以從 ONTAP 系統接收 FPolicy 事件</block>
@@ -3389,4 +3385,9 @@
   <block id="0fe1279b28d533b32c08d839691ef653" category="inline-image-macro">三點</block>
   <block id="e56ef2e2348492a4f0e1e9513b068cc4" category="admonition">您也可以按一下「組態」頁面、針對工作環境啟用法規遵循掃描 <block ref="a759a567ce9a72b21fd45f48f1f358c8" category="inline-image-macro-rx" type="image"></block> 按鈕並選擇 * 啟動 BlueXP 分類 * 。</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
+  <block id="967ed7b18cc2e131fa8fe860d4e4f18d" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。這與「關閉」掃描不同。當掃描關閉時、系統會移除該磁碟區的所有索引和資訊、並停止為掃描資料充電。暫停掃描表示 BlueXP 分類不會在未來執行任何變更或儲存庫新增的掃描、但所有目前的結果仍會顯示在系統中。暫停掃描並不會停止充電以掃描資料、因為資料仍存在。</block>
+  <block id="218b1b5040dd27f37c3fab6adea21bff" category="paragraph">資料來源移除時、掃描資料的充電會停止。</block>
+  <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在網路中的 Ubuntu Linux 主機上安裝 BlueXP 分類、或在雲端的 Linux 主機上使用 1.23 版的安裝程式。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
+  <block id="3e102feedd861186d57f6a85de9de541" category="paragraph">檔案存取稽核記錄檔位於 BlueXP 分類機器上的：<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
+  <block id="7f16356d7b675ed76686e591ad5dc661" category="cell">該位置目前已經過硬編碼、可將記錄檔寫入<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
 </blocks>

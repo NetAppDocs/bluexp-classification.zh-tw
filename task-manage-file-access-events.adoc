@@ -111,7 +111,7 @@ image:screenshot_compliance_file_access_audit_done.png["螢幕擷取畫面顯示
 
 == 存取檔案存取稽核記錄檔
 
-檔案存取稽核記錄檔位於 BlueXP 分類機器上的： `/opt/netapp/file_access_audit_logs/`
+檔案存取稽核記錄檔位於 BlueXP 分類機器上的： `/opt/netapp/fpolicy/logs`
 
 依預設、每個檔案最多可包含 50 、 000 個事件。 <<設定檔案存取稽核記錄檔設定,您可以在「檔案存取稽核記錄組態」頁面中自訂此值。>> 達到此上限後、記錄檔中較舊的項目會被覆寫。
 
@@ -153,7 +153,7 @@ image:screenshot_compliance_file_access_audit_config.png["顯示 BlueXP 分類�
 | 稽核記錄選項 | 說明 
 
 
-| 記錄檔位置 | 該位置目前已經過硬編碼、可將記錄檔寫入 `/opt/netapp/file_access_audit_logs/` 
+| 記錄檔位置 | 該位置目前已經過硬編碼、可將記錄檔寫入 `/opt/netapp/fpolicy/logs` 
 
 
 | 稽核記錄的最大儲存分配 | 目錄中所有記錄檔的總大小目前已硬編碼為預設值 50 GB 。達到此限制時、會自動刪除最舊的記錄檔。 

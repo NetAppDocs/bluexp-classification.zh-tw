@@ -16,6 +16,8 @@ summary: 如有需要、您可以停止 BlueXP 分類、不掃描一或多個工
 [role="lead"]
 如有需要、您可以停止 BlueXP 分類、不掃描一或多個工作環境、資料庫、檔案共用群組、 OneDrive 帳戶、 Google Drive 帳戶、 或 SharePoint 帳戶。
 
+資料來源移除時、掃描資料的充電會停止。
+
 
 
 == 停用工作環境的法規遵循掃描
