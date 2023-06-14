@@ -2297,11 +2297,8 @@
   <block id="088be43867eaac29f74142859d1e2a13" category="paragraph">執行 Prerequisites 指令碼時、您需要 Connector 系統的 IP 位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">驗證主機需求</block>
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">* 大 *</block>
-  <block id="f73b260a6cb60f48bc6d018192dfb51b" category="cell">500 GiB SSD on / 、 or - 100 GiB 可在 /opt - 395 GiB 上取得、位於 /tmp 的 /var/-5 GiB 上</block>
   <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">* 中 *</block>
-  <block id="63d284249a11c1390977c2b197c85419" category="cell">200 GiB SSD on / 、 or - 50 GiB 可在 /opt - 145 GiB 上取得、位於 /tmp 的 /var/-5 GiB 上</block>
   <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">* 小 *</block>
-  <block id="6798decba048766a66cd22d4442d7ec0" category="cell">100 GiB SSD on / 、 or - 50 GiB 可在 /opt - 45 GiB 取得、位於 /tmp 的 /var/-5 GiB</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">請參閱其他 AWS 執行個體類型</block>
   <block id="07c511fd0ad633d44d9e71cb0c9eaba9" category="list-text">* AWS EC2 執行個體類型 * ：我們建議使用「 m6i.4xlarge 」。 <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>。</block>
   <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">請參閱其他 Azure 執行個體類型</block>
@@ -3042,7 +3039,6 @@
   <block id="bfd2c96cae6d29697ceac4feda921426" category="inline-image-macro">顯示使用部署在內部部署且可存取網際網路的多個 BlueXP 分類執行個體時、可掃描之資料來源位置的圖表。</block>
   <block id="b1030a584c34dcb45c3a231937109e48" category="paragraph"><block ref="b1030a584c34dcb45c3a231937109e48" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0eb32e59a3574faaca63218c3f5922f" category="paragraph">請參閱 <block ref="dc1d236e8ef0d554549faeaffd48b8b2" category="inline-xref-macro-rx"></block> 和 <block ref="2360c56931bf3d2d23fb74a3dc780c78" category="inline-xref-macro-rx"></block> 以取得部署 BlueXP 分類之前的完整需求清單。</block>
-  <block id="86bb25ae4391f2558f38a5358121ae0d" category="paragraph">在單一內部部署主機上安裝 BlueXP 分類軟體時、請遵循下列步驟。</block>
   <block id="60e3e1e8b520c28183ebe86bd433deda" category="list-text">如果 Proxy 正在執行 TLS 攔截、您必須知道儲存 TLS CA 憑證的 BlueXP 分類 Linux 系統路徑。</block>
   <block id="d66d1b16789175829b23ed7e745d66dd" category="list-text">確認您的離線環境符合所需 <block ref="9eb48ce3a280aa134b4c3aab7ed78a68" category="inline-xref-macro-rx"></block>。</block>
   <block id="2fdc544d6ce29e3a29dd3b9cb532c792" category="list-text">從下載 BlueXP 分類軟體<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。您應該選取的檔案名稱為* datASENSE-installer-ze.tar.gz*&lt;version&gt; 。</block>
@@ -3390,4 +3386,20 @@
   <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在網路中的 Ubuntu Linux 主機上安裝 BlueXP 分類、或在雲端的 Linux 主機上使用 1.23 版的安裝程式。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
   <block id="3e102feedd861186d57f6a85de9de541" category="paragraph">檔案存取稽核記錄檔位於 BlueXP 分類機器上的：<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
   <block id="7f16356d7b675ed76686e591ad5dc661" category="cell">該位置目前已經過硬編碼、可將記錄檔寫入<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
+  <block id="34c688a0843dc19a0624e151973b37a7" category="cell">500 GiB SSD on / 、 or
+-100 GiB 可在 /opt 上取得
+-395 GiB 可在 /var/lib/Docker 上取得
+/tmp 上 5 GiB</block>
+  <block id="7c2e343b426a44deea2cb9e6eb69e8af" category="cell">200 GiB SSD on / 、 or
+-50 GiB 可在 /opt 上取得
+-145 GiB 可在 /var/lib/泊 塢視窗中取得
+/tmp 上 5 GiB</block>
+  <block id="a8ec707d3d7dc0af4b9cce44343387b0" category="cell">100 GiB SSD on / 、 or
+-50 GiB 可在 /opt 上取得
+-45 GiB 可在 /var/lib/泊 塢視窗中取得
+/tmp 上 5 GiB</block>
+  <block id="0a10409b2f38332b7a7c8f820fc0edd5" category="inline-link">觀看此影片</block>
+  <block id="404a8e21de3fe2bfdd2e77b81889e5cb" category="paragraph"><block ref="21e1c490f7e7bc90ffb6dabbc263e6f2" category="inline-link-rx"></block> 快速示範如何在 CentOS 上安裝 Docker 。</block>
+  <block id="d56adb545fe9309fc7a4cfd339798344" category="paragraph">在單一內部部署主機上安裝 BlueXP 分類軟體時、請檢閱需求並遵循這些步驟。</block>
+  <block id="cf3d087ad95f213d839f606d398101ee" category="paragraph"><block ref="501f73c9c42bcec313b07a4d01108ec0" category="inline-link-rx"></block> 以瞭解如何安裝 BlueXP 分類。</block>
 </blocks>

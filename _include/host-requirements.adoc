@@ -3,8 +3,6 @@
 
 
 * 與其他應用程式共用的主機不支援 BlueXP 分類、主機必須是專用主機。
-
-
 * 在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從三種系統大小中進行選擇。
 +
 [cols="18,18,26,30"]
@@ -12,13 +10,22 @@
 | 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
 
 
-| * 大 * | 16個CPU | 64 GB RAM | 500 GiB SSD on / 、 or - 100 GiB 可在 /opt - 395 GiB 上取得、位於 /tmp 的 /var/-5 GiB 上 
+| * 大 * | 16個CPU | 64 GB RAM | 500 GiB SSD on / 、 or
+-100 GiB 可在 /opt 上取得
+-395 GiB 可在 /var/lib/Docker 上取得
+/tmp 上 5 GiB 
 
 
-| * 中 * | 8個CPU | 32 GB RAM | 200 GiB SSD on / 、 or - 50 GiB 可在 /opt - 145 GiB 上取得、位於 /tmp 的 /var/-5 GiB 上 
+| * 中 * | 8個CPU | 32 GB RAM | 200 GiB SSD on / 、 or
+-50 GiB 可在 /opt 上取得
+-145 GiB 可在 /var/lib/泊 塢視窗中取得
+/tmp 上 5 GiB 
 
 
-| * 小 * | 8個CPU | 16 GB RAM | 100 GiB SSD on / 、 or - 50 GiB 可在 /opt - 45 GiB 取得、位於 /tmp 的 /var/-5 GiB 
+| * 小 * | 8個CPU | 16 GB RAM | 100 GiB SSD on / 、 or
+-50 GiB 可在 /opt 上取得
+-45 GiB 可在 /var/lib/泊 塢視窗中取得
+/tmp 上 5 GiB 
 |===
 +
 請注意、使用這些較小的系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
@@ -60,6 +67,9 @@
 * * 其他軟體 * ：安裝 BlueXP 分類之前、您必須在主機上安裝下列軟體：
 +
 ** Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
++
+https://youtu.be/H1WS_-85pWA["觀看此影片"] 快速示範如何在 CentOS 上安裝 Docker 。
+
 ** Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 
 
