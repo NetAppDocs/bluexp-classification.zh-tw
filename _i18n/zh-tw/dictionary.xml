@@ -2555,7 +2555,6 @@
   <block id="2875279e7093015cd8ccf93240c548e9" category="paragraph"><block ref="2875279e7093015cd8ccf93240c548e9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e7fa07083790a8112d00af542356ec88" category="paragraph">根據預設、資料保護（ DP ）磁碟區不會被掃描、因為它們不會暴露在外部、而且 BlueXP 分類無法存取它們。這些都是從內部部署 ONTAP 的 SnapMirror 系統或 Cloud Volumes ONTAP 從某個系統進行 SnapMirror 作業的目的地 Volume 。</block>
   <block id="7c0a9b3e555cf595d3d01d33df76df82" category="list-text">最初在來源 ONTAP 系統中建立為 CIFS Volume 的磁碟區、需要輸入 CIFS 認證資料才能掃描這些 DP 磁碟區。如果您已經輸入 Active Directory 認證、以便 BlueXP 分類能夠掃描 CIFS 磁碟區、您可以使用這些認證、或是指定不同的管理認證集。</block>
-  <block id="fbf1d4f9e395daa419609b8d5b9705f7" category="summary">您可以設定 BlueXP 分類、以便在存取或變更您要掃描的其中一個檔案時、將事件記錄到檔案中。然後、您可以檢視此檔案的內容（檔案存取稽核記錄）、或下載此檔案、以查看發生了哪些檔案變更、以及由誰進行變更。</block>
   <block id="52887b7fa084c02e609d7372dfab4740" category="paragraph">BlueXP 分類目前會擷取檔案和目錄上下列動作的事件：</block>
   <block id="f8a450637ddb6668a04ea30131e3a1e2" category="paragraph">當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至記錄檔。</block>
   <block id="c025349cd3a26a699951f8e578938046" category="paragraph">當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：</block>
@@ -3123,11 +3122,9 @@
   <block id="c3e36333a4a6733ccd92dafc9d8c17b5" category="sidebar">在內部部署安裝 BlueXP 分類、無需網際網路</block>
   <block id="c0b7cbffdfa6fa18059367f2045ac22c" category="sidebar">BlueXP 分類使用案例</block>
   <block id="44b48aa0d2158361e53832315034f513" category="paragraph">例如、如果您想要追蹤對敏感人事檔案或薪資檔案所做的任何變更、您可以在這些檔案所在的磁碟區上啟用此功能。接著您可以檢視檔案存取稽核記錄、查看這些檔案是否已變更。如果變更了這些項目、您就能看到進行變更的人員的安全識別碼（ SID ）、以及變更的時間。</block>
-  <block id="f8877f183813ba08abe0b73b3b1c1a0a" category="paragraph">您可以在工作環境中執行 ONTAP 軟體的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。</block>
   <block id="c7f8db8434f3e3057bca29922b597e31" category="paragraph">BlueXP 分類可記錄位於下列資料來源中 ONTAP 磁碟區上之檔案的檔案存取事件：</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX for NetApp ONTAP 產品</block>
   <block id="64067288b8531fcd99186eba6a8c23b0" category="paragraph">資料來源必須執行 ONTAP 9.11 版或更新版本的軟體。</block>
-  <block id="e409723ead2999f7cf6579d5cdaa079c" category="admonition">您目前可以在每個資料來源上最多 5 個磁碟區上設定檔案存取稽核。</block>
   <block id="266321178f48dd580597ebe11b4ed93e" category="list-text">您應該為資料來源設定 Active Directory 、以便 BlueXP 分類可以列出存取檔案的人員 ID 。</block>
   <block id="c59b99fd4a78f457a5e94a037bb88563" category="list-text">必須開啟連接埠 5018 、才能從 BlueXP 分類系統進行輸出存取。</block>
   <block id="4d2cf95eb79434a26117b70f40109d70" category="paragraph">系統會為您設定用來追蹤檔案存取事件的每個磁碟區建立記錄檔。記錄檔的名稱為「 &lt;volume_name&gt; _ &lt;volume_uuid&gt; _ .log 」、例如「 fpolicy_CIFS_838c1727-dd2d-11ed-a3ec-590ce4991.log 」。稽核記錄中的每一行都包含下列格式的資訊：</block>
@@ -3402,4 +3399,7 @@
   <block id="404a8e21de3fe2bfdd2e77b81889e5cb" category="paragraph"><block ref="21e1c490f7e7bc90ffb6dabbc263e6f2" category="inline-link-rx"></block> 快速示範如何在 CentOS 上安裝 Docker 。</block>
   <block id="d56adb545fe9309fc7a4cfd339798344" category="paragraph">在單一內部部署主機上安裝 BlueXP 分類軟體時、請檢閱需求並遵循這些步驟。</block>
   <block id="cf3d087ad95f213d839f606d398101ee" category="paragraph"><block ref="501f73c9c42bcec313b07a4d01108ec0" category="inline-link-rx"></block> 以瞭解如何安裝 BlueXP 分類。</block>
+  <block id="7273543485153af36bd67d8d37fe08b3" category="summary">您可以設定 BlueXP 分類、以便在存取或變更您要掃描的其中一個檔案時、將事件記錄到檔案中。然後、您可以檢視此記錄檔的內容（檔案存取稽核記錄）、或下載該記錄檔、以查看發生了哪些檔案變更、以及由誰進行變更。</block>
+  <block id="145ca78924109b125fb405dc2644ebba" category="paragraph">您可以在工作環境中執行 ONTAP 軟體的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。BlueXP 分類可處理 ONTAP 每秒約 990 個事件。</block>
+  <block id="7a6df57d74a900c4b9e956add6358c97" category="paragraph">請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。<block ref="4ca4cc07e57f7afbeb1dff6c98bd6092" category="inline-link-rx"></block> 瞭解預先檢查的訊息和影響。</block>
 </blocks>

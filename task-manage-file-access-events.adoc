@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-manage-file-access-events.html 
 keywords: compliance, actions, view progress, audit, logs, installation 
-summary: 您可以設定 BlueXP 分類、以便在存取或變更您要掃描的其中一個檔案時、將事件記錄到檔案中。然後、您可以檢視此檔案的內容（檔案存取稽核記錄）、或下載此檔案、以查看發生了哪些檔案變更、以及由誰進行變更。 
+summary: 您可以設定 BlueXP 分類、以便在存取或變更您要掃描的其中一個檔案時、將事件記錄到檔案中。然後、您可以檢視此記錄檔的內容（檔案存取稽核記錄）、或下載該記錄檔、以查看發生了哪些檔案變更、以及由誰進行變更。 
 ---
 = 監控及管理檔案存取事件
 :hardbreaks:
@@ -14,11 +14,11 @@ summary: 您可以設定 BlueXP 分類、以便在存取或變更您要掃描的
 
 
 [role="lead"]
-您可以設定 BlueXP 分類、以便在存取或變更您要掃描的其中一個檔案時、將事件記錄到檔案中。然後、您可以檢視此檔案的內容（檔案存取稽核記錄）、或下載此檔案、以查看發生了哪些檔案變更、以及由誰進行變更。
+您可以設定 BlueXP 分類、以便在存取或變更您要掃描的其中一個檔案時、將事件記錄到檔案中。然後、您可以檢視此記錄檔的內容（檔案存取稽核記錄）、或下載該記錄檔、以查看發生了哪些檔案變更、以及由誰進行變更。
 
 例如、如果您想要追蹤對敏感人事檔案或薪資檔案所做的任何變更、您可以在這些檔案所在的磁碟區上啟用此功能。接著您可以檢視檔案存取稽核記錄、查看這些檔案是否已變更。如果變更了這些項目、您就能看到進行變更的人員的安全識別碼（ SID ）、以及變更的時間。
 
-您可以在工作環境中執行 ONTAP 軟體的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy 功能"^] 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。
+您可以在工作環境中執行 ONTAP 軟體的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy 功能"^] 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。BlueXP 分類可處理 ONTAP 每秒約 990 個事件。
 
 BlueXP 分類目前會擷取檔案和目錄上下列動作的事件：
 
@@ -52,9 +52,6 @@ BlueXP 分類可記錄位於下列資料來源中 ONTAP 磁碟區上之檔案的
 == 設定磁碟區以進行檔案存取稽核記錄
 
 您可以在個別磁碟區上啟用檔案存取稽核記錄、以追蹤檔案和目錄的變更。
-
-
-TIP: 您目前可以在每個資料來源上最多 5 個磁碟區上設定檔案存取稽核。
 
 .開始之前
 * 您應該為資料來源設定 Active Directory 、以便 BlueXP 分類可以列出存取檔案的人員 ID 。
