@@ -41,7 +41,6 @@ BlueXP 分類可記錄位於下列資料來源中 ONTAP 磁碟區上之檔案的
 
 * 內部部署 ONTAP
 * Cloud Volumes ONTAP
-* Azure NetApp Files
 * Amazon FSX for NetApp ONTAP 產品
 
 
@@ -52,6 +51,9 @@ BlueXP 分類可記錄位於下列資料來源中 ONTAP 磁碟區上之檔案的
 == 設定磁碟區以進行檔案存取稽核記錄
 
 您可以在個別磁碟區上啟用檔案存取稽核記錄、以追蹤檔案和目錄的變更。
+
+
+TIP: 您目前可以在每個資料來源上最多 8 個磁碟區上設定檔案存取稽核。
 
 .開始之前
 * 您應該為資料來源設定 Active Directory 、以便 BlueXP 分類可以列出存取檔案的人員 ID 。

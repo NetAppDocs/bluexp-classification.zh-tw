@@ -251,7 +251,7 @@ BlueXP 分類支援 NFS 3.x 、 4.0 和 4.1 版、以及 CIFS 1.x 、 2.0 、 2.
 
 === 在政府區域部署時、是否有任何限制？
 
-當 Connector 部署在政府區域（ AWS GovCloud 、 Azure Gov 或 Azure DoD ）時、就支援 BlueXP 分類。以這種方式部署時、 BlueXP 分類具有下列限制：
+當 Connector 部署於政府區域（ AWS GovCloud 、 Azure Gov 或 Azure DoD ）時、即稱為「受限模式」、即支援 BlueXP 分類。以這種方式部署時、 BlueXP 分類具有下列限制：
 
 * 無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。
 * Microsoft Azure資訊保護（AIP）標籤功能無法整合。
@@ -261,7 +261,7 @@ BlueXP 分類支援 NFS 3.x 、 4.0 和 4.1 版、以及 CIFS 1.x 、 2.0 、 2.
 
 === 如果我在沒有網際網路存取的站台中安裝 BlueXP 分類、可以掃描哪些資料來源？
 
-BlueXP 分類只能掃描內部部署站台本機資料來源的資料。此時、 BlueXP 分類可掃描「暗」網站中的下列本機資料來源：
+BlueXP 分類只能掃描內部部署站台本機資料來源的資料。目前、 BlueXP 分類可以在「私有模式」中掃描下列本機資料來源、也稱為「暗」網站：
 
 * 內部部署ONTAP 的作業系統
 * 資料庫架構
@@ -360,7 +360,7 @@ Connector是在雲端帳戶內或內部部署的運算執行個體上執行的�
 
 === 沒有網際網路存取的安全網站又如何？
 
-是的、這也受到支援。您可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["在無法存取網際網路的內部部署Linux主機上部署Connector"^]。然後、您可以探索內部部署的 ONTAP 叢集和其他本機資料來源、並使用 BlueXP 分類來掃描資料。
+是的、這也受到支援。您可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["在無法存取網際網路的內部部署Linux主機上部署Connector"^]。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["這也稱為「私有模式」"^]。然後、您可以探索內部部署的 ONTAP 叢集和其他本機資料來源、並使用 BlueXP 分類來掃描資料。
 
 
 

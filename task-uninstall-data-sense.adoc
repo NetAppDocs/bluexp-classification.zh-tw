@@ -22,16 +22,18 @@ summary: 您可以解除安裝 BlueXP 分類軟體來疑難排解問題、或從
 
 == 從雲端部署解除安裝 BlueXP 分類
 
-如果您不想再使用 BlueXP 分類、可以從雲端供應商解除安裝和刪除 BlueXP 分類執行個體。
+如果您不想再使用 BlueXP 分類、可以從雲端供應商環境中解除安裝和刪除 BlueXP 分類執行個體。
 
 . 在 BlueXP 分類頁面頂端、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 然後按一下*解除安裝Data檢測*。
 +
 image:screenshot_compliance_uninstall.png["用於解除安裝 BlueXP 分類軟體的按鈕螢幕擷取畫面。"]
 
-. 在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要刪除執行個體及所有相關資料、然後按一下「*解除安裝*」。
+. 在 _ 解除安裝 Data Sense _ 對話方塊中、輸入 * uninstall* 以確認您要中斷 BlueXP 分類執行個體與 BlueXP Connector 的連線、然後按一下 * 解除安裝 * 。
+. 前往雲端供應商的主控台、刪除 BlueXP 分類執行個體。此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_
++
+這會刪除 BlueXP 分類所收集的執行個體和所有相關資料。
 
 
-請注意、您可以前往雲端供應商的主控台、同時從該處刪除 BlueXP 分類執行個體。此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 
 
 
@@ -43,11 +45,11 @@ image:screenshot_compliance_uninstall.png["用於解除安裝 BlueXP 分類軟�
 +
 image:screenshot_compliance_uninstall.png["用於解除安裝 BlueXP 分類軟體的按鈕螢幕擷取畫面。"]
 
-. 在「解除安裝Data Sense _」對話方塊中、輸入* uninstall*以確認您要清除所有組態資訊、然後按一下「*解除安裝*」。
-. 若要從主機完成解除安裝、請在主機上執行解除安裝指令碼、例如：
+. 在 _ 解除安裝 Data Sense _ 對話方塊中、輸入 * uninstall* 以確認您要中斷 BlueXP 分類執行個體與 BlueXP Connector 的連線、然後按一下 * 解除安裝 * 。
+. 若要從主機解除安裝軟體、請執行 `cleanup.sh` 主機上的指令碼、例如：
 +
 [source, cli]
 ----
-uninstall.sh
+cleanup.sh
 ----
 

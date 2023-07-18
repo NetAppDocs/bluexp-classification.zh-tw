@@ -62,15 +62,12 @@ image:screenshot_compliance_add_data_fusion.png["識別資料 Fusion 來源的�
 
 . 按一下「 * 新增資料 Fusion 來源 * 」。
 +
-「 Data Fusion 詳細目錄」頁面會顯示您已設定要掃描的 BlueXP 分類的資料庫來源欄。
-
-+
 image:screenshot_compliance_data_fusion_list.png["您已設定資料 Fusion 功能的所有資料來源參考資料的快照。"]
 
 
 
 .結果
-下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。您新增的每個來源欄都會以「Table.column」格式顯示在篩選清單中、例如「Customer.CustomerID」。
+下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。例如、您用於分類器的名稱會出現在篩選器清單中 `Customers.CustomerID`。
 
 image:screenshot_add_data_fusion_result.png["「Fusion 調查結果」窗格中顯示資料實例的快照。"]
 
@@ -116,7 +113,7 @@ image:screenshot_select_classifier_tool_keywords.png["螢幕擷取畫面會顯�
 以下螢幕快照顯示內部產品名稱（不同類型的貓頭鷹）。這些項目的 BlueXP 分類搜尋不區分大小寫。
 
 +
-image:screenshot_select_classifier_create_logic_keyword.png["輸入客戶分類器關鍵字的快照。"]
+image:screenshot_select_classifier_create_logic_keyword.png["輸入自訂類別器關鍵字的螢幕擷取畫面。"]
 
 . 按一下 * 完成 * 、 BlueXP 分類就會開始重新掃描您的資料。
 
@@ -138,7 +135,10 @@ image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示�
 
 新增 regex 之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類法規遵循儀表板的「個人結果」區段下方、以及「個人資料」篩選器的「調查」頁面中。
 
-請參閱 https://regex101.com/[] 如果您需要協助建立所需的規則運算式、
+請參閱 https://regex101.com/[] 如果您需要協助建立所需的規則運算式、選擇 *Python* 以查看結果類型 BlueXP 分類將與規則運算式相符。
+
+
+NOTE: 目前我們不允許在建立 regex 時使用模式旗標、這表示您不應該使用「 / 」。
 
 .步驟
 . 從「_Classification settings」（_分類設定_）索引標籤中、按一下「* Add New Classifier*」（*新增分類器*）以啟動「_Add Custom Classifier.
@@ -161,7 +161,7 @@ image:screenshot_select_classifier_tool_regex.png["顯示「自訂規則運算�
 .. 您可以輸入任何合法的規則運算式。按一下「 * 驗證 * 」按鈕、讓 BlueXP 分類驗證規則運算式是否有效、且其範圍不太廣、表示它會傳回太多結果。
 .. 您也可以輸入一些鄰近詞彙、以協助精簡結果的準確度。這些詞彙通常會在您要搜尋的模式300個字元內找到（在找到的模式之前或之後）。在單獨一行輸入每個字詞或片語。
 +
-image:screenshot_select_classifier_create_logic_regex.png["為您的客戶類別者輸入regex和近接字的快照。"]
+image:screenshot_select_classifier_create_logic_regex.png["輸入自訂類別器的 regex 和鄰近字詞的螢幕擷取畫面。"]
 
 
 
@@ -241,6 +241,9 @@ image:screenshot_custom_classifier_top_5.png["根據傳回的結果顯示前3大
 == 管理自訂分類器
 
 您可以使用*編輯分類器*按鈕來變更您所建立的任何自訂分類器。
+
+
+TIP: 您目前無法編輯 Data Fusion 分類器。
 
 如果您稍後決定不需要 BlueXP 分類來識別您新增的自訂模式、您可以使用 * 刪除分類器 * 按鈕來移除每個項目。
 

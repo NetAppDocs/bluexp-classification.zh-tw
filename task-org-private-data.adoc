@@ -226,6 +226,9 @@ image:screenshot_compliance_tag_multi_files.png["顯示如何從「資料調查�
 +
 ** 若要選取個別檔案、請核取每個檔案的方塊（image:button_backup_1_volume.png[""]）。
 ** 若要選取目前頁面上的所有檔案、請核取標題列中的方塊（image:button_select_all_files.png[""]）。
++
+此時、您可以一次套用最多 20 個檔案的標記、一頁在「資料調查」結果頁面上。
+
 
 
 . 在按鈕列中、按一下* Tag*（標記）、就會顯示目前指派的標記。

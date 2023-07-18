@@ -16,6 +16,8 @@ summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描資料庫架
 [role="lead"]
 請完成幾個步驟、開始使用 BlueXP 分類來掃描資料庫架構。
 
+請注意、啟用資料庫掃描之後、您可以根據資料庫中的特定欄位、新增 BlueXP 分類可在所有資料來源中識別的唯一識別碼。這稱為 _Data Fusion 功能。 link:task-managing-data-fusion.html#add-custom-personal-data-identifiers-from-your-databases["瞭解如何從資料庫新增自訂的個人資料識別碼"^]。
+
 
 
 == 快速入門

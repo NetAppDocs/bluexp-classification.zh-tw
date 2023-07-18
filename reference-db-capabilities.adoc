@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: reference-db-capabilities.html 
+keywords: database actions, database filters, supported, unsupported 
+summary: 在掃描資料庫架構時、 BlueXP 分類無法使用某些功能。 
+---
+= 支援和不支援的資料庫功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在掃描資料庫架構時、 BlueXP 分類無法使用某些功能。請參閱下列清單。
+
+您可以將資料庫架構新增至要掃描的 BlueXP 分類 link:task-scanning-databases.html["如此處所述"^]。
+
+[cols="12,25,9,9,9,9,9,9,9"]
+|===
+| 類型 | 說明 | MongoDB | SQL Server | MySQL | Oracle | PostgreSQL | SAP HANA | Amazon RDS 
+
+
+.9+| 行動 | 建立原則 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 標記 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 指派給 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 匯出資料 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 重新掃描 | x | x | x | x | x | x | x 
+
+
+| 刪除 | x | x | x | x | x | x | x 
+
+
+| 移動 | x | x | x | x | x | x | x 
+
+
+| 複本 | x | x | x | x | x | x | x 
+
+
+| 標籤 | x | x | x | x | x | x | x 
+
+
+.25+| 篩選器 | 原則 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 掃描分析狀態 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 工作環境類型 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 工作環境 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 儲存儲存庫 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 敏感度等級 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 敏感的個人資料 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 類別 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 個人資料 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 資料主旨 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 檔案類型 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 檔案大小 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 探索到的時間 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 標記 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 指派給 | ✓ | ✓ | ✓ | ✓ | ✓ |  |  
+
+
+| 掃描分析事件 | x | x | x | x | x | x | x 
+
+
+| 檔案 / 目錄路徑 | x | x | x | x | x | x | x 
+
+
+| 權限篩選器 | x | x | x | x | x | x | x 
+
+
+| 標籤 | x | x | x | x | x | x | x 
+
+
+| 識別碼數目 | x | x | x | x | x | x | x 
+
+
+| 目錄類型 | x | x | x | x | x | x | x 
+
+
+| 建立時間 | x | x | x | x | x | x | x 
+
+
+| 上次修改時間 | x | x | x | x | x | x | x 
+
+
+| 上次存取 | x | x | x | x | x | x | x 
+
+
+| 重複項目 | x | x | x | x | x | x | x 
+|===

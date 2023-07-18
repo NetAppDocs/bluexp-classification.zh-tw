@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade 
-summary: 請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類。這類安裝最適合安全的站台。 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode 
+summary: 請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為「私有模式」。這類安裝最適合安全的站台。 
 ---
 = 在無法存取網際網路的主機上安裝 BlueXP 分類
 :hardbreaks:
@@ -14,7 +14,9 @@ summary: 請完成幾個步驟、在內部部署網站上無法存取網際網�
 
 
 [role="lead"]
-請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類。這類安裝最適合安全的站台。
+請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為「私有模式」。這類安裝最適合安全的站台。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解 BlueXP Connector 和 BlueXP 分類的不同部署模式"^]。
 
 請注意、您也可以 link:task-deploy-compliance-onprem.html["將 BlueXP 分類部署在可存取網際網路的內部部署網站上"]。
 
@@ -24,7 +26,7 @@ BlueXP 分類安裝指令碼會先檢查系統和環境是否符合必要的先�
 
 == 支援的資料來源
 
-以這種方式安裝（有時稱為「離線」或「暗」站台）時、 BlueXP 分類只能掃描內部部署站台本機資料來源的資料。目前、 BlueXP 分類可以掃描下列 * 本機 * 資料來源：
+安裝私有模式（有時稱為「離線」或「暗」站台）時、 BlueXP 分類只能掃描內部部署站台本機資料來源的資料。目前、 BlueXP 分類可以掃描下列 * 本機 * 資料來源：
 
 * 內部部署ONTAP 的作業系統
 * 資料庫架構
@@ -33,7 +35,7 @@ BlueXP 分類安裝指令碼會先檢查系統和環境是否符合必要的先�
 * 使用簡易儲存服務（S3）傳輸協定的物件儲存設備
 
 
-目前不支援掃描 Cloud Volumes ONTAP 、 Azure NetApp Files 、適用於 ONTAP 的 FSX 、 AWS S3 或 Google Drive 、 當 BlueXP 分類部署於黑暗的網站時、 OneDrive 或 SharePoint Online 帳戶。
+目前不支援掃描 Cloud Volumes ONTAP 、 Azure NetApp Files 、適用於 ONTAP 的 FSX 、 AWS S3 或 Google Drive 、 以私有模式部署 BlueXP 分類時的 OneDrive 或 SharePoint Online 帳戶。
 
 
 
@@ -60,7 +62,7 @@ BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 安裝BlueXP Connector
 [role="quick-margin-para"]
-如果您的離線內部部署站台上尚未安裝Connector、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 現在就在Linux主機上。
+如果您尚未以私有模式安裝 Connector 、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 現在就在Linux主機上。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 檢閱 BlueXP 分類先決條件
 [role="quick-margin-para"]
@@ -78,7 +80,7 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。NetApp需要BYOL�
 
 == 安裝BlueXP Connector
 
-如果您的離線內部部署站台尚未安裝BlueXP Connector、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 在離線站台的Linux主機上。
+如果您尚未在私有模式中安裝 BlueXP Connector 、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["部署Connector"^] 在離線站台的Linux主機上。
 
 
 
@@ -141,10 +143,10 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 
 * * 作業系統 * ：作業系統必須能夠安裝泊塢視窗引擎。
 +
-** Ubuntu 22.04
-** Red Hat Enterprise Linux 8.0 至 8.5 版
-** CentOS 8.0 至 8.5 版
-** 可以使用 RHEL 或 CentOS 版本 7.8 或 7.9 、但 Linux 核心版本必須為 4.0 或更新版本
+** Red Hat Enterprise Linux 7.8 和 7.9 版 - Linux 核心版本必須為 4.0 或更新版本
+** CentOS 7.8 和 7.9 版 - Linux 核心版本必須為 4.0 或更新版本
+** Rocky Linux 9 （需要 BlueXP 分級版本 1.24 以上）
+** Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 以上）
 
 
 * * Red Hat Subscription Management* ：主機必須向 Red Hat Subscription Management 註冊。如果系統尚未註冊、則無法在安裝期間存取儲存庫以更新所需的協力廠商軟體。
@@ -262,6 +264,8 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["顯示您可以在內部
 
 在離線環境中的單一內部部署主機上安裝 BlueXP 分類軟體時、請遵循下列步驟。
 
+請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它是寫入的 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html#access-the-log-file["請參閱此處的更多詳細資料"]。
+
 .您需要的產品
 * 確認您的Linux系統符合 <<準備Linux主機系統,主機需求>>。
 * 確認您已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
@@ -271,12 +275,12 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["顯示您可以在內部
 
 .步驟
 . 在網際網路設定的系統上、從下載 BlueXP 分類軟體 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選取的檔案名稱為* DataSense-offline bund-<版本>.tar.gz*。
-. 將安裝程式套件複製到您打算在黑暗站台中使用的Linux主機。
+. 將安裝程式套件複製到您打算在私有模式中使用的 Linux 主機。
 . 在主機上解壓縮安裝程式套件、例如：
 +
 [source, cli]
 ----
-tar -xzf DataSense-offline-bundle-v1.21.0.tar.gz
+tar -xzf DataSense-offline-bundle-v1.22.0.tar.gz
 ----
 +
 這會擷取所需的軟體和實際安裝檔案* cc_OnPrem_installer.tar。gz*。
@@ -418,7 +422,10 @@ BlueXP 分類安裝程式會完成套件的安裝、並註冊安裝。安裝可�
 
 .開始之前
 * 我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["請參閱連接器升級步驟"^]。
-* BlueXP 分類軟體可一次升級一個主要版本。例如、如果您已安裝版本 1.2.x 、則只能升級至 1.21.x如果您落後幾個主要版本、就必須多次升級軟體。
+* 從 BlueXP 分級版本 1.24 開始、您可以升級至任何未來版本的軟體。
++
+如果您的 BlueXP 分類軟體執行的版本早於 1.24 、您一次只能升級一個主要版本。例如、如果您已安裝 1.21.x 版、則只能升級至 1.22.x如果您落後幾個主要版本、就必須多次升級軟體。
+
 
 
 .步驟
@@ -428,7 +435,7 @@ BlueXP 分類安裝程式會完成套件的安裝、並註冊安裝。安裝可�
 +
 [source, cli]
 ----
-tar -xvf DataSense-offline-bundle-v1.22.0.tar.gz
+tar -xvf DataSense-offline-bundle-v1.23.0.tar.gz
 ----
 +
 這會擷取安裝檔案* cc_OnPrem_installer.tar.gz*。
