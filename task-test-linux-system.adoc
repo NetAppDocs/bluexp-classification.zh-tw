@@ -115,7 +115,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 ** Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
 +
-https://youtu.be/H1WS_-85pWA["觀看此影片"] 快速示範如何在 CentOS 上安裝 Docker 。
+https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS 上安裝 Docker 。
 
 ** Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 

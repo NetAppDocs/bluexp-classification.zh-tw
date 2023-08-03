@@ -52,6 +52,16 @@ BlueXP 分類現在已在沒有網際網路存取（私有模式）和限制外�
 
 
 
+=== BlueXP 分類 API 現已推出
+
+BlueXP 分類 API 可讓您執行動作、建立查詢、以及匯出所掃描資料的相關資訊。可使用 Swagger 取得互動式文件。文件分為多個類別、包括調查、法規遵循、治理和組態。每個類別都是 BlueXP 分類 UI 中標籤的參考資料。
+
+若要進入 Swagger 、您需要 BlueXP 分類執行個體的 IP 位址。在雲端部署中、您將使用公有 IP 位址。然後您需要進入這個端點：
+
+https://<classification_ip>/documentation[]
+
+
+
 == 2023 年 6 月 6 日（版本 1.23 ）
 
 
@@ -364,37 +374,3 @@ link:reference-private-data-categories.html#types-of-personal-data["查看Data S
 
 
 這些關鍵字和模式會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html["深入瞭解"^]。
-
-
-
-== 2022年7月6日（1.14版）
-
-
-
-=== 現在您可以檢視擁有目錄存取權的使用者和群組
-
-過去您可以檢視個別檔案所授予的開啟權限類型。現在您可以檢視所有存取目錄（資料夾和檔案共用）的使用者或群組清單、以及他們擁有的權限類型。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-private-data.html#viewing-permissions-for-files-and-directories["瞭解如何檢視可存取您資料夾和檔案共用的使用者和群組"]。
-
-
-
-=== 您可以「暫停」掃描儲存庫、暫時停止掃描特定內容
-
-暫停掃描表示「Data Sense」（資料感測）將不會在任何新增或變更磁碟區或儲存區的情況下執行未來掃描、但系統仍會提供所有目前的結果。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#pausing-and-resuming-scanning-for-a-repository["瞭解如何暫停和繼續掃描"]。
-
-
-
-=== Data Sense可識別來自其他三種狀態的美國駕駛證資料
-
-Data Sense可識別及分類包含來自印第安納州、紐約州和德州的駕駛授權資料的檔案。 link:reference-private-data-categories.html#types-of-personal-data["查看Data Sense可在您的資料中識別的所有個人資料類型"]。
-
-
-
-=== 原則現在會傳回符合搜尋條件的目錄
-
-過去當您建立自訂原則時、結果會顯示符合搜尋條件的檔案。結果也會顯示符合查詢的目錄（資料夾和檔案共用）。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#creating-custom-policies["深入瞭解如何建立原則"]。
-
-
-
-=== Data Sense現在一次最多可移動100、000個檔案
-
-如果您打算使用Data Sense將檔案從掃描的資料來源移至NFS共用區、則檔案的最大數量已增加至100、000個檔案。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#moving-source-files-to-an-nfs-share["瞭解如何使用Data Sense移動檔案"]。
