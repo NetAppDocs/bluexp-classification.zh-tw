@@ -821,15 +821,11 @@
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律聲明提供版權聲明、商標、專利等存取權限。</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版權</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商標</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 標誌及 NetApp 商標頁面上列出的標章均為 NetApp 、 Inc. 的商標。其他公司與產品名稱可能為其各自所有者的商標。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">專利</block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">如需最新的 NetApp 擁有專利清單、請參閱：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看Data Sense可在您的資料中識別的所有個人資料類型</block>
@@ -1420,7 +1416,6 @@
   <block id="b3478a494adde25715314b14559dd6a4" category="list-text">無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。</block>
   <block id="d1f03114b8fef49b0f0cb0a28049ecdf" category="list-text">Microsoft Azure資訊保護（AIP）標籤功能無法整合。</block>
   <block id="d022b1f14ebf8b0b397ff02f8b6bfe78" category="section-title">在政府區域部署時、是否有任何限制？</block>
-  <block id="3f1d923e5a351dcc541f10e98f5da114" category="summary">您可以管理每個工作環境和資料來源中所掃描的資料。您可以在「儲存庫」基礎上進行變更、也就是說、您可以針對每個磁碟區、儲存區、共用區、架構、使用者、 等等、視您要掃描的資料來源類型而定。</block>
   <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">對應掃描或對應&amp;amp;分類掃描</block>
   <block id="86cfaa233cd6203ca98aec701f702508" category="list-text">在「組態」索引標籤中、按一下工作環境的*組態*按鈕。</block>
   <block id="c220e333c84311a5247ea56021c7f9af" category="inline-image-macro">顯示如何按一下工作環境的「組態」按鈕的快照。</block>
@@ -1428,7 +1423,6 @@
   <block id="d572e0d4b826c4aedc53e9ebf7b16a8f" category="list-text">在「掃描組態」頁面中、您可以檢視所有儲存庫的掃描設定。</block>
   <block id="dbb0dfda8b378050531f81450c4bc33e" category="section-title">變更儲存庫的掃描類型</block>
   <block id="80442a9b9f6c43539008be8521ce5283" category="paragraph">您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。</block>
-  <block id="e2fd7fccc8e37c687bd3d80bafb4e9fd" category="list-text">在「掃描組態」頁面中、您可以變更任何儲存庫（本範例中的儲存庫）以執行*地圖*或*地圖與分類*掃描、或選取*關閉*以停止掃描特定儲存庫。</block>
   <block id="d2c070afb22765e227addc428b9bb43d" category="inline-image-macro">螢幕快照顯示如何選取儲存區的掃描類型。</block>
   <block id="8d501a2dffff147be5f9997f70b34348" category="paragraph"><block ref="8d501a2dffff147be5f9997f70b34348" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a4bff1a8423db1d5e3d7178be9560749" category="paragraph">某些類型的工作環境可讓您使用頁面頂端的按鈕列、變更所有儲存庫的全域掃描類型。此功能僅適用於Cloud Volumes ONTAP 內部部署ONTAP 的不支援功能、不支援使用的功能僅供Azure NetApp Files 支援部分系統的功能之用。ONTAP</block>
@@ -1459,7 +1453,6 @@
   <block id="e947d88fc82f247e554cf80e35ff0831" category="list-text">在「_Move Files_」（移動檔案_）對話方塊中、輸入NFS共用的名稱、所有選取的檔案將以「&lt;host_name&gt;//&lt;share_path&gt;'的格式移動。</block>
   <block id="9bf85e569c6ef93411e4ce74471413a0" category="list-text">如果您要保留階層連結檔案、請核取「保留階層連結」方塊。您可以在對話方塊中輸入文字、以指出檔案的移動位置、移動檔案的使用者、以及任何其他資訊、例如檔案移動的原因。</block>
   <block id="b91992584de04476d486c6819d26aaf3" category="list-text">按一下*移動檔案*。</block>
-  <block id="e023ca0db491fe9b0e7722609710e69b" category="doc">變更儲存庫的掃描設定</block>
   <block id="cc044854b72a7b1c98c22253b0aaedcd" category="section-title">檢視儲存庫的掃描狀態</block>
   <block id="bf3aeefcdd65b55f2612004f45b7257f" category="inline-image-macro">螢幕快照顯示您的儲存區是否正在掃描、以及目前的掃描狀態。</block>
   <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
@@ -2807,7 +2800,6 @@
   <block id="94b91c8b97a54caa51b5a272c3ed5e69" category="inline-link">深入瞭解如何使用 BlueXP 分類來移動來源檔案</block>
   <block id="b862b7d304eea679b5f35e8257c465f6" category="list-text">「檔案路徑」篩選現在可讓您指定要從篩選查詢結果中排除的路徑。如果您輸入包含和排除某些資料的路徑、 BlueXP 分類會先尋找包含路徑中的所有檔案、然後從排除路徑中移除檔案、然後顯示結果。</block>
   <block id="4b273eb22f0e890dce8d8a73dba2425e" category="section-title">BlueXP 分類可識別日本個人號碼</block>
-  <block id="f5055886b0ed4db432221d378f3730c1" category="paragraph">您可以變更的部分項目包括是否掃描儲存庫、以及 BlueXP 分類是否正在執行 <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。例如、如果您需要停止掃描某個Volume一段時間、也可以暫停和繼續掃描。</block>
   <block id="06f4c04dbf4f6e1007102feb5e139b5f" category="paragraph">您可以檢視 BlueXP 分類正在針對每個工作環境和資料來源掃描的個別儲存庫（磁碟區、貯體等）。此外、您也可以查看「對應」的數量、以及「分類」的數量。在所有資料上執行完整AI識別時、分類需要較長的時間。</block>
   <block id="e9ef05a76f2eb11216d8bcec1c8a1ee1" category="paragraph">BlueXP 分類會持續掃描您的資料、以偵測您新增的儲存庫中的遞增變更。不過、系統掃描所有環境需要時間、而且沒有方法可以控制掃描儲存庫的順序。如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先掃描特定資料、然後再掃描其他資料。重新掃描動作之後、所選的儲存庫會根據正常的 BlueXP 分類排程返回掃描狀態。</block>
   <block id="c07dbec3e7acd472789625d35a7563da" category="paragraph">BlueXP 分類支援掃描所有資料來源類型的目錄、 Amazon S3 和資料庫除外。目前我們支援重新掃描單一目錄（資料夾或共用）或多個目錄。未來支援將包括重新掃描其他儲存庫類型（檔案、資料庫等）。</block>
@@ -3284,7 +3276,6 @@
   <block id="0fe1279b28d533b32c08d839691ef653" category="inline-image-macro">三點</block>
   <block id="e56ef2e2348492a4f0e1e9513b068cc4" category="admonition">您也可以按一下「組態」頁面、針對工作環境啟用法規遵循掃描 <block ref="a759a567ce9a72b21fd45f48f1f358c8" category="inline-image-macro-rx" type="image"></block> 按鈕並選擇 * 啟動 BlueXP 分類 * 。</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
-  <block id="967ed7b18cc2e131fa8fe860d4e4f18d" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。這與「關閉」掃描不同。當掃描關閉時、系統會移除該磁碟區的所有索引和資訊、並停止為掃描資料充電。暫停掃描表示 BlueXP 分類不會在未來執行任何變更或儲存庫新增的掃描、但所有目前的結果仍會顯示在系統中。暫停掃描並不會停止充電以掃描資料、因為資料仍存在。</block>
   <block id="218b1b5040dd27f37c3fab6adea21bff" category="paragraph">資料來源移除時、掃描資料的充電會停止。</block>
   <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在網路中的 Ubuntu Linux 主機上安裝 BlueXP 分類、或在雲端的 Linux 主機上使用 1.23 版的安裝程式。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
   <block id="3e102feedd861186d57f6a85de9de541" category="paragraph">檔案存取稽核記錄檔位於 BlueXP 分類機器上的：<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
@@ -3418,7 +3409,6 @@
   <block id="a39ca37fb6314be500ea6c4e6028aad1" category="paragraph">API 是安全的、它使用與 UI 相同的驗證方法。您可以在下列位置找到驗證資訊：<block ref="86100a8a51cdb9259081132b7d91c690" category="inline-link-rx"></block></block>
   <block id="6bb2320a7f7d5e941653039f26a38ad9" category="section-title">存取 Swagger API 參考</block>
   <block id="af16b996606b35cb0f77fe07ba2e556a" category="paragraph">若要進入 Swagger 、您需要 BlueXP 分類執行個體的 IP 位址。在雲端部署中、您將使用公有 IP 位址。然後您需要進入這個端點：</block>
-  <block id="254092d1402121eb76375744912fcb31" category="paragraph"><block ref="76abae69818f3dbdee10e3bc86ddf426" category="inline-link-rx"></block></block>
   <block id="645d03e996949262e33f39d07370b668" category="paragraph"><block ref="e90064c25feae6986ca59b019f3b7da5" category="inline-link-rx"></block> 以瞭解如何安裝 BlueXP 分類。</block>
   <block id="2dfd5907ae1f7e0e308562b6add41f1d" category="paragraph">請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。<block ref="e374801a81d4dcec84b3740adf868110" category="inline-link-rx"></block> 瞭解預先檢查的訊息和影響。</block>
   <block id="0307a12e5749f8dd930472ee78f69d2c" category="list-text">在 BlueXP 主控台的右上角、選取「設定」圖示、然後選取 * 認證 * 。</block>
@@ -3430,4 +3420,36 @@
   <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">BlueXP 分類 API 現已推出</block>
   <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">BlueXP 分類 API 可讓您執行動作、建立查詢、以及匯出所掃描資料的相關資訊。可使用 Swagger 取得互動式文件。文件分為多個類別、包括調查、法規遵循、治理和組態。每個類別都是 BlueXP 分類 UI 中標籤的參考資料。</block>
   <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">BlueXP 分類影片</block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="b096d4ea7a8d51978fe48f490785e86a" category="list-text">刪除、複製、標記及指派使用者至資料</block>
+  <block id="c61b92a36eb48c5d3300779a62372cd3" category="list-text">複製及複製檔案</block>
+  <block id="49ef162b6621f970581074315940ec6c" category="paragraph">https ： &lt;classification_ip&gt; / 文件</block>
+  <block id="b62dbbecd6533f9627427d34160e7d75" category="section-title">使用API的範例</block>
+  <block id="b7fd2e4068e2c6cc68317c7892c5290c" category="paragraph">下列範例顯示要複製檔案的 API 呼叫。</block>
+  <block id="7d9faab09c1d85e60360dfca30ab77cc" category="paragraph-title">API要求</block>
+  <block id="54b8a71f80c197c6f71c9b29df4f53a8" category="paragraph">您一開始需要取得工作環境的所有相關欄位和選項、才能檢視「調查」索引標籤中的所有篩選條件。</block>
+  <block id="d64ed3e9c10229648e069f56e32f4c8e" category="listing-title">回應</block>
+  <block id="de47d5ffc03a894916b0d9b2eab236ab" category="paragraph">我們會在要求參數中使用該回應來篩選我們要複製的所需檔案。</block>
+  <block id="dfd434a5421b4a63696b02416f668581" category="paragraph">您可以對多個項目套用動作。支援的行動類型包括：移動、刪除、複製、指派、 FlexClone 、 匯出資料、重新掃描和標籤。</block>
+  <block id="0ac331cece7c559ed07957dfa637e510" category="paragraph">我們將建立複本動作：</block>
+  <block id="8ad0c8a225121bfff89f847893f0d610" category="paragraph">下一個 API 是行動 API 、可讓您建立多個動作。</block>
+  <block id="87d1cd52d2ec66c4978b4d90f9069a04" category="paragraph">回應會傳回動作物件、因此您可以使用取得和刪除 API 來取得動作的狀態、或是取消該動作。</block>
+  <block id="fda538fb93989725ef231d5f156d3ee9" category="summary">您可以管理資料在每個工作環境和資料來源中的掃描方式。您可以在「儲存庫」基礎上進行變更、也就是說、您可以針對每個磁碟區、儲存區、共用區、架構、使用者、 等等、視您要掃描的資料來源類型而定。</block>
+  <block id="43ec96609274e10e69e4ef1f50473aba" category="doc">變更儲存庫的掃描設定</block>
+  <block id="926f6a4e85f1593fffa7270c143e3ddb" category="paragraph">您可以變更的部分項目包括是否掃描儲存庫、以及 BlueXP 分類是否正在執行 <block ref="9c20ac53e6a16bb1a8678a8405359003" category="inline-link-macro-rx"></block>。您也可以暫停和繼續掃描、例如、如果您需要停止掃描某個 Volume 一段時間。</block>
+  <block id="5c7952df3d9c0233217acae5c6f1153d" category="list-text">在「掃描組態」頁面中、您可以變更任何儲存庫（本範例中的儲存庫）、以執行 * 地圖 * 或 * 地圖與分類 * 掃描。</block>
+  <block id="fa11512af60e80dd5cda30d6a494a8cd" category="section-title">停止掃描儲存庫</block>
+  <block id="fbadcaa7267ae823837aff45d0dd7135" category="paragraph">如果您不再需要監控儲存庫是否符合法規要求、可以停止掃描儲存庫（例如、 Volume ）。您可以「關閉」掃描功能來執行此動作。當掃描關閉時、系統會移除該磁碟區的所有索引和資訊、並停止為掃描資料充電。</block>
+  <block id="565a8976f79d6c76ecebff0fff08e98a" category="list-text">在「掃描組態」頁面中、選取 * 關 * 以停止掃描特定貯體。</block>
+  <block id="935638dd063f7f7f75feaf9c1efed37e" category="paragraph"><block ref="935638dd063f7f7f75feaf9c1efed37e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="12b0af2e5ea89b04eb9606c50747a466" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。暫停掃描表示 BlueXP 分類不會在未來執行任何變更或儲存庫新增的掃描、但所有目前的結果仍會顯示在系統中。暫停掃描並不會停止為掃描的資料充電、因為資料仍存在。</block>
+  <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">深入瞭解 BlueXP 分類 API</block>
+  <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
 </blocks>

@@ -47,6 +47,9 @@ API 可讓您執行下列功能：
 ** 更新 CIFS 認證
 ** 檢視及取消動作
 ** 重新掃描目錄
+** 刪除、複製、標記及指派使用者至資料
+** 複製及複製檔案
+** 匯出資料
 
 
 
@@ -59,4 +62,417 @@ API 是安全的、它使用與 UI 相同的驗證方法。您可以在下列位
 
 若要進入 Swagger 、您需要 BlueXP 分類執行個體的 IP 位址。在雲端部署中、您將使用公有 IP 位址。然後您需要進入這個端點：
 
-https://<classification_ip>/documentation[]
+https ： <classification_ip> / 文件
+
+
+
+== 使用API的範例
+
+下列範例顯示要複製檔案的 API 呼叫。
+
+.API要求
+您一開始需要取得工作環境的所有相關欄位和選項、才能檢視「調查」索引標籤中的所有篩選條件。
+
+[source, http]
+----
+curl -X GET "http://{classification_ip}/api/{classification_version} /search/options?data_mode=ALL_EXTRACTABLE" -H "accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR……… " -H "x-agent-id: hOXsZNvnA5LsthwMILtjL9xZFYBQxAwMclients"
+----
+.回應
+[source, text]
+----
+{
+  "options": [
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_SCANNED",
+      "field": "string",
+      "is_rulable": true,
+      "name": "string",
+      "operators": [
+        "EQUALS"
+      ],
+      "optional_values": [
+        {}
+      ],
+      "secondary": {},
+      "server_data": false,
+      "type": "TEXT"
+    }
+  ]
+}
+{
+  "options": [
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "POLICIES",
+      "name": "Policies",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "EXTRACTION_STATUS_RANGE",
+      "name": "Scan Analysis Status",
+      "operators": [
+        "IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "SCAN_ANALYSIS_ERROR",
+      "name": "Scan Analysis Event",
+      "operators": [
+        "IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "PUBLIC_ACCESS",
+      "name": "Open Permissions",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": true,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "USERS_PERMISSIONS_COUNT_RANGE",
+      "name": "Number of Users with Access",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": true,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "USER_GROUP_PERMISSIONS",
+      "name": "User / Group Permissions",
+      "operators": [
+        "IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "FILE_OWNER",
+      "name": "File Owner",
+      "operators": [
+        "EQUALS",
+        "CONTAINS"
+      ],
+      "server_data": true,
+      "type": "TEXT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "ENVIRONMENT_TYPE",
+      "name": "Working Environment Type",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "ENVIRONMENT",
+      "name": "Working Environment",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_SCANNED",
+      "field": "SCAN_TASK",
+      "name": "Storage Repository",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "FILE_PATH",
+      "name": "File / Directory Path",
+      "operators": [
+        "MULTI_CONTAINS",
+        "MULTI_EXCLUDE"
+      ],
+      "server_data": true,
+      "type": "MULTI_TEXT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_DASHBOARD_EXTRACTABLE",
+      "field": "CATEGORY",
+      "name": "Category",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "PATTERN_SENSITIVITY_LEVEL",
+      "name": "Sensitivity Level",
+      "operators": [
+        "IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "NUMBER_OF_IDENTIFIERS",
+      "name": "Number of identifiers",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "PATTERN_PERSONAL",
+      "name": "Personal Data",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "PATTERN_SENSITIVE",
+      "name": "Sensitive Personal Data",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "DATA_SUBJECT",
+      "name": "Data Subject",
+      "operators": [
+        "EQUALS",
+        "CONTAINS"
+      ],
+      "server_data": true,
+      "type": "TEXT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "DIRECTORIES",
+      "field": "DIRECTORY_TYPE",
+      "name": "Directory Type",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "FILE_TYPE",
+      "name": "File Type",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "FILE_SIZE_RANGE",
+      "name": "File Size",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "FILE_CREATION_RANGE_RETENTION",
+      "name": "Created Time",
+      "operators": [
+        "IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "DISCOVERED_TIME_RANGE",
+      "name": "Discovered Time",
+      "operators": [
+        "IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "FILE_LAST_MODIFICATION_RETENTION",
+      "name": "Last Modified",
+      "operators": [
+        "IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_FILESYSTEM_EXTRACTABLE",
+      "field": "FILE_LAST_ACCESS_RANGE_RETENTION",
+      "name": "Last Accessed",
+      "operators": [
+        "IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "FILES",
+      "field": "IS_DUPLICATE",
+      "name": "Duplicates",
+      "operators": [
+        "EQUALS",
+        "IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "FILES",
+      "field": "FILE_HASH",
+      "name": "File Hash",
+      "operators": [
+        "EQUALS",
+        "IN"
+      ],
+      "server_data": true,
+      "type": "TEXT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "USER_DEFINED_STATUS",
+      "name": "Tags",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    },
+    {
+      "active_directory_affected": false,
+      "data_mode": "ALL_EXTRACTABLE",
+      "field": "ASSIGNED_TO",
+      "name": "Assigned to",
+      "operators": [
+        "IN",
+        "NOT_IN"
+      ],
+      "server_data": true,
+      "type": "SELECT"
+    }
+  ]
+}
+----
+我們會在要求參數中使用該回應來篩選我們要複製的所需檔案。
+
+您可以對多個項目套用動作。支援的行動類型包括：移動、刪除、複製、指派、 FlexClone 、 匯出資料、重新掃描和標籤。
+
+我們將建立複本動作：
+
+.API要求
+下一個 API 是行動 API 、可讓您建立多個動作。
+
+[source, http]
+----
+curl -X POST "http:// {classification_ip}/api//{classification_version}/actions" -H "accept: application/json" -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR……… " -H "x-agent-id: hOXsZNvnA5LsthwMILtjL9xZFYBQxAwMclients " -H "Content-Type: application/json" -d "{ \"action_type\": \"COPY\", \"data_mode\": \"FILES\", \"policy_id\": 0, \"request_params\": { destination_nfs_path: "{ontap_ip}:/{share_name} " }, \"requested_query\":{"condition":"AND","rules":[{"field":"ENVIRONMENT_TYPE","operator":"IN","value":["ONPREM"]},{"field":"CATEGORY","operator":"IN","value":["21"]}]}}"
+----
+.回應
+回應會傳回動作物件、因此您可以使用取得和刪除 API 來取得動作的狀態、或是取消該動作。
+
+[source, text]
+----
+{
+  "action_type": "COPY",
+  "creation_time": "2023-08-08T12:37:21.705Z",
+  "data_mode": "FILES",
+  "end_time": "2023-08-08T12:37:21.705Z",
+  "estimated_time_to_complete": 0,
+  "id": 0,
+  "policy_id": 0,
+  "policy_name": "string",
+  "priority": 0,
+  "request_params": {},
+  "requested_query": {},
+  "result": {
+    "error_message": "string",
+    "failed": 0,
+    "in_progress": 0,
+    "succeeded": 0,
+    "total": 0
+  },
+  "start_time": "2023-08-08T12:37:21.705Z",
+  "status": "QUEUED",
+  "title": "string",
+  "user_id": "string"
+}
+----

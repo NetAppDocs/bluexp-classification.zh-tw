@@ -56,9 +56,7 @@ BlueXP 分類現在已在沒有網際網路存取（私有模式）和限制外�
 
 BlueXP 分類 API 可讓您執行動作、建立查詢、以及匯出所掃描資料的相關資訊。可使用 Swagger 取得互動式文件。文件分為多個類別、包括調查、法規遵循、治理和組態。每個類別都是 BlueXP 分類 UI 中標籤的參考資料。
 
-若要進入 Swagger 、您需要 BlueXP 分類執行個體的 IP 位址。在雲端部署中、您將使用公有 IP 位址。然後您需要進入這個端點：
-
-https://<classification_ip>/documentation[]
+https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["深入瞭解 BlueXP 分類 API"]。
 
 
 

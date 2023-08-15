@@ -104,6 +104,8 @@ sidebar:
       url: "/reference-instance-types.html"
     - title: 從資料來源收集的中繼資料
       url: "/reference-collected-metadata.html"
+    - title: BlueXP 分類 API
+      url: "/api-classification.html"
   - title: 知識與支援
     entries:
     - title: 註冊以取得支援
