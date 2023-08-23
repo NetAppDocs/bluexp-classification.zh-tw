@@ -2462,7 +2462,6 @@
   <block id="84c1068a68e2f96982851954838c2d5b" category="list-text">如果您已將 AIP 標籤與 BlueXP 分類整合、您可以將標籤指派給此檔案、或變更為其他標籤（如果已經存在）。請參閱 <block ref="1d610d8b86b5e1441346aa765100c237" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="50cdf86b563a0d781f053c4a23d816c2" category="paragraph">請注意、如果您看到 SID （安全性識別碼）而非使用者和群組名稱、則應該將 Active Directory 整合到 BlueXP 分類中。 <block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>。</block>
   <block id="bcd3dc09170e331762d1f098247c3974" category="paragraph">BlueXP 分類使用雜湊技術來判斷重複的檔案。如果任何檔案的雜湊代碼與其他檔案相同、我們可以100%確定檔案確實重複、即使檔案名稱不同。</block>
-  <block id="fd1d98039043f82f0635dcf86849024a" category="paragraph">您可以將報告儲存至本機機器、做為.CSV檔案（最多可包含5、000列資料）、或匯出至NFS共用的.Json檔案（可包含無限列數）。如果 BlueXP 分類是掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）、則最多可下載三個報告檔案。</block>
   <block id="c67419f269df3afdc5c4ea77c6a74cef" category="paragraph">匯出至檔案共用時、請確定 BlueXP 分類具有正確的匯出存取權限。</block>
   <block id="c3e3558057a47a586b2936491602503e" category="summary">BlueXP 分類（ Cloud Data Sense ）可讓您在組織的混合式多雲端環境中掃描及分類資料。BlueXP 分類採用 AI 驅動的自然語言處理（ NLP ）來進行內容相關的資料分析和分類、讓您對資料進行可據以行動的洞見、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。</block>
   <block id="44b34442167c9611792529867ee76d90" category="doc">BlueXP 分類文件</block>
@@ -3452,4 +3451,9 @@
   <block id="12b0af2e5ea89b04eb9606c50747a466" category="paragraph">如果您想要暫時停止掃描特定內容、可以在儲存庫上「暫停」掃描。暫停掃描表示 BlueXP 分類不會在未來執行任何變更或儲存庫新增的掃描、但所有目前的結果仍會顯示在系統中。暫停掃描並不會停止為掃描的資料充電、因為資料仍存在。</block>
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">深入瞭解 BlueXP 分類 API</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
+  <block id="90ca6bd84833f8a6659f7ea02a7649ba" category="list-text">您可以將 DFS （分散式檔案系統）共用新增為一般 CIFS 共用。然而、由於 BlueXP 分類並不知道共享區是以多個伺服器 / 磁碟區合併為單一 CIFS 共用而建置、因此當訊息只適用於位於不同伺服器 / 磁碟區的其中一個資料夾 / 共用時、您可能會收到有關共用區的權限或連線錯誤。</block>
+  <block id="1cf7463413ea994be95c0189c2bb57a5" category="paragraph">您可以使用兩種不同的格式儲存報告：</block>
+  <block id="d9c89ee38491bdb679829f426faea2ef" category="list-text">以 .CSV 檔案形式傳送至本機機器、最多可包含 5 、 000 列資料。</block>
+  <block id="8909a1f3cdd58859743896107e545477" category="list-text">做為 .JSON 檔案、匯出至 NFS 共用、最多可包含 100,000 列資料。如果資料列超過 10 、 000 列、則會建立其他 .JSON 檔案。</block>
+  <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">如果 BlueXP 分類正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）和資料庫（結構化資料）、則最多可下載三個報告檔案。</block>
 </blocks>
