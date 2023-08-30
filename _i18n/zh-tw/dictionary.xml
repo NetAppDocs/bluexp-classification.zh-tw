@@ -2823,7 +2823,6 @@
   <block id="976ad3f2a7f2faaf2e337cc8f2c2ff8d" category="list-text">確保您可以繼續執行 BlueXP 分類。BlueXP 分類執行個體必須持續運作、才能持續掃描資料。</block>
   <block id="1b3e958cf9a7fe344e74aa95f30a09f3" category="list-text">確保網頁瀏覽器連線至 BlueXP 分類。啟用 BlueXP 分類後、請確定使用者從連線至 BlueXP 分類執行個體的主機存取 BlueXP 介面。</block>
   <block id="0886f35745ad179bc8c862cc1f35560d" category="paragraph">BlueXP 分類執行個體使用私有 IP 位址來確保其他人無法存取索引資料。因此、您用來存取BlueXP的網頁瀏覽器必須連線至該私有IP位址。該連線可能來自與 BlueXP 分類執行個體位於同一個網路內的主機。</block>
-  <block id="357e290720f6835d0225e4c266e5fca5" category="cell">Connector 的安全性群組必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。</block>
   <block id="e47c11f521d98557641f18f4c041fad3" category="cell">BlueXP 分類 &lt;&gt; ONTAP 叢集</block>
   <block id="40e4506c6bd794b594435aa3037f3a4e" category="paragraph">BlueXP 分類需要與每個 Cloud Volumes ONTAP 子網路或內部 ONTAP 系統建立網路連線。Cloud Volumes ONTAP 的安全性群組必須允許來自 BlueXP 分類執行個體的傳入連線。</block>
   <block id="6000c544d001c3491f4169e31bbf0604" category="cell">BlueXP 分類 &lt;&gt; Active Directory</block>
@@ -3456,4 +3455,8 @@
   <block id="d9c89ee38491bdb679829f426faea2ef" category="list-text">以 .CSV 檔案形式傳送至本機機器、最多可包含 5 、 000 列資料。</block>
   <block id="8909a1f3cdd58859743896107e545477" category="list-text">做為 .JSON 檔案、匯出至 NFS 共用、最多可包含 100,000 列資料。如果資料列超過 10 、 000 列、則會建立其他 .JSON 檔案。</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">如果 BlueXP 分類正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）和資料庫（結構化資料）、則最多可下載三個報告檔案。</block>
+  <block id="abfab9fcbcf9c983c6fcb0efced8edc6" category="cell">8080 （ TCP ）、 6000 （ TCP ）、 443 （ TCP ）和 80</block>
+  <block id="31bf187a1f6ba9a21c24893034392c45" category="cell">Connector 的安全性群組必須允許透過連接埠 6000 和 443 的傳入和傳出流量進出 BlueXP 分類執行個體。
+
+請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。</block>
 </blocks>

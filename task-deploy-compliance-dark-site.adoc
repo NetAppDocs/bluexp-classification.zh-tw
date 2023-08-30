@@ -202,7 +202,9 @@ BlueXP 分類執行個體使用私有 IP 位址來確保其他人無法存取索
 | 連線類型 | 連接埠 | 說明 
 
 
-| Connector <> BlueXP 分類 | 8080（TCP）、443（TCP）及80 | Connector 的安全性群組必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。 
+| Connector <> BlueXP 分類 | 8080 （ TCP ）、 6000 （ TCP ）、 443 （ TCP ）和 80 | Connector 的安全性群組必須允許透過連接埠 6000 和 443 的傳入和傳出流量進出 BlueXP 分類執行個體。
+
+請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。 
 
 
 | 連接器<> ONTAP -叢集（NAS） | 443（TCP）  a| 
