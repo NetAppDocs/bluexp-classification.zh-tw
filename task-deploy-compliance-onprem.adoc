@@ -122,6 +122,13 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 請注意、使用這些較小的系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
 
+* 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
++
+** * AWS EC2 執行個體類型 * ：我們建議使用「 m6i.4xlarge 」。 link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
+** * Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。 link:reference-instance-types.html#azure-instance-types["請參閱其他 Azure 執行個體類型"^]。
+** * GCP 機器類型 * ：我們建議使用「 n2-Standard-16 」。 link:reference-instance-types.html#gcp-instance-types["請參閱其他 GCP 執行個體類型"^]。
+
+
 * * UNIX 資料夾權限 * ：需要下列最低 UNIX 權限：
 +
 [cols="25,25"]
@@ -140,29 +147,32 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 
 | /user/lib/systemd/system | `rwxr-xr-x` 
 |===
-* 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
+* * 作業系統 * ：
 +
-** * AWS EC2 執行個體類型 * ：我們建議使用「 m6i.4xlarge 」。 link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
-** * Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。 link:reference-instance-types.html#azure-instance-types["請參閱其他 Azure 執行個體類型"^]。
-** * GCP 機器類型 * ：我們建議使用「 n2-Standard-16 」。 link:reference-instance-types.html#gcp-instance-types["請參閱其他 GCP 執行個體類型"^]。
+** 下列作業系統需要使用 Docker Container 引擎：
++
+*** Red Hat Enterprise Linux 7.8 和 7.9 版 - Linux 核心版本必須為 4.0 或更新版本
+*** CentOS 7.8 和 7.9 版 - Linux 核心版本必須為 4.0 或更新版本
+*** Rocky Linux 9 （需要 BlueXP 分級版本 1.24 或更新版本）
+*** Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 或更新版本）
 
 
-* * 作業系統 * ：作業系統必須能夠安裝泊塢視窗引擎。
-+
-** Red Hat Enterprise Linux 7.8 和 7.9 版 - Linux 核心版本必須為 4.0 或更新版本
-** CentOS 7.8 和 7.9 版 - Linux 核心版本必須為 4.0 或更新版本
-** Rocky Linux 9 （需要 BlueXP 分級版本 1.24 以上）
-** Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 以上）
+
+
 
 
 * * Red Hat Subscription Management* ：主機必須向 Red Hat Subscription Management 註冊。如果系統尚未註冊、則無法在安裝期間存取儲存庫以更新所需的協力廠商軟體。
 * * 其他軟體 * ：安裝 BlueXP 分類之前、您必須在主機上安裝下列軟體：
 +
-** Docker Engine 19.3.1版或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
+** 視您使用的作業系統而定、您需要安裝其中一個容器引擎：
++
+*** Docker Engine 版本 19.3.1 或更新版本。 https://docs.docker.com/engine/install/["檢視安裝指示"^]。
 +
 https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS 上安裝 Docker 。
 
-** Python 3版本3.6或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
+
+
+** Python 3.6 版或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 
 
 * * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此與 BlueXP 分類相容：
@@ -186,7 +196,7 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-請注意、每當您啟用或更新時、都必須重新啟動 Docker `firewalld` 設定：
+請注意、每當您啟用或更新時、都必須重新啟動 Docker 或 Podman `firewalld` 設定：
 
 
 
@@ -311,7 +321,7 @@ https://youtu.be/rFpmekdbORc["觀看此影片"^] 以瞭解如何安裝 BlueXP �
 
 .您需要的產品
 * 確認您的Linux系統符合 <<準備Linux主機系統,主機需求>>。
-* 確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
+* 確認系統已安裝兩個必要軟體套件（ Docker Engine 和 Python 3 ）。
 * 請確定您擁有Linux系統的root權限。
 * 如果您使用Proxy存取網際網路：
 +
@@ -331,7 +341,7 @@ https://youtu.be/rFpmekdbORc["觀看此影片"^] 以瞭解如何安裝 BlueXP �
 +
 [source, cli]
 ----
-tar -xzf DATASENSE-INSTALLER-V1.22.0.tar.gz
+tar -xzf DATASENSE-INSTALLER-V1.25.0.tar.gz
 ----
 . 在BlueXP中、選取*管理>分類*。
 . 按一下「*啟動資料感應*」。
@@ -594,7 +604,7 @@ image:screenshot_scanner_groups.png["快照會列出群組中所有掃描器群�
 
 .您需要的產品
 * 確認Manager和掃描儀節點的所有Linux系統都符合 <<準備Linux主機系統,主機需求>>。
-* 確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
+* 確認系統已安裝兩個必要軟體套件（ Docker 或 Podman Engine 和 Python 3 ）。
 * 請確定您擁有Linux系統的root權限。
 * 確認您的環境符合所需 <<從 BlueXP 分類啟用輸出網際網路存取,權限與連線能力>>。
 * 您必須擁有要使用的掃描器節點主機的IP位址。

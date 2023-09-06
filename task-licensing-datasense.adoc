@@ -20,6 +20,7 @@ BlueXP 分類在 BlueXP 工作區中掃描的前 1 TB 資料可免費使用 30 �
 
 * 如果您已在雲端供應商的市場中訂閱 BlueXP 隨用隨付（ PAYGO ）訂閱、則您也會自動訂閱 BlueXP 分類。您不需要再次訂閱。
 * BlueXP 分類（ Data Sense ）自帶授權（ BYOL ）是一種 _ 浮動 _ 授權、您可以在計畫掃描的工作區中的所有工作環境和資料來源中使用。BlueXP 數位電子錢包中有有效的訂閱。
+* 掃描的資料量是根據邏輯檔案大小來計算、而沒有任何儲存效率。
 
 
 link:concept-cloud-compliance.html#cost["深入瞭解與 BlueXP 分類相關的授權與成本"]。
