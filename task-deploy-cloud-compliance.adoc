@@ -204,19 +204,7 @@ BlueXP 分類執行個體使用私有 IP 位址來確保索引資料無法存取
 image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
 
 . 按一下「*啟動資料感應*」。
-+
-image:screenshot_cloud_compliance_deploy_cloud_aws.png["選擇按鈕以在雲端部署 BlueXP 分類的螢幕擷取畫面。"]
-
 . 從 _ 安裝 _ 頁面、按一下 * 部署 > 部署 * 以使用「大型」執行個體大小、然後啟動雲端部署精靈。
-+
-如果沒有大量資料需要掃描、您也可以按一下 * 部署 > 組態 * 來選擇兩種較小的執行個體類型。使用較小的執行個體時、這可以節省一些雲端成本。「中」資源大小如下所示。
-
-+
-然後按一下 * 部署 * 以啟動雲端部署精靈。
-
-+
-image:screenshot_cloud_deploy_resource_size.png["部署頁面的螢幕擷取畫面、可選擇將部署 BlueXP 分類的執行個體大小。"]
-
 . 精靈會在執行部署步驟時顯示進度。如果發生任何問題、它會停止並提示輸入。
 +
 image:screenshot_cloud_compliance_wizard_start.png["BlueXP 分類精靈的螢幕擷取畫面、用於部署新執行個體。"]
