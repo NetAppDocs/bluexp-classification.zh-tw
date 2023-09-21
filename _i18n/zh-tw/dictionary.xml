@@ -1392,7 +1392,6 @@
   <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">複本：來源和目的地</block>
   <block id="e701a25b99aca57280ba389dd0e551c6" category="paragraph">例如、記錄檔中的下列行顯示複製作業成功、複製作業失敗。</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「行動狀態」窗格中監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。</block>
-  <block id="a5129dfbdf0dc4588d520f42de3004dd" category="paragraph">這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。</block>
   <block id="038235769c3322b247e85f9bc8d7b5da" category="list-text">選取您要下載資料的.CSV報告或.Json報告、然後按一下*下載報告*。</block>
   <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">下載調查報告頁面的快照、內含多個選項。</block>
   <block id="0b0eacf696b45d65c53ff1b5473edb39" category="paragraph"><block ref="0b0eacf696b45d65c53ff1b5473edb39" category="inline-image-macro-rx" type="image"></block></block>
@@ -1430,7 +1429,6 @@
   <block id="9b0105a4da00bc6036dcb389d0f65890" category="paragraph"><block ref="9b0105a4da00bc6036dcb389d0f65890" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dfb9b838b2fdca41edadb04c9ebbb240" category="list-text">非NetApp CIFS檔案共用（非NFS檔案共用）</block>
   <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">德州驅動程式授權</block>
-  <block id="89b56b1e048dcf0ec285e29a05d6d029" category="paragraph">如果目的地位置存在名稱相同的檔案、則不會移動該檔案。</block>
   <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">您可以建立自己的自訂原則、針對組織專屬的搜尋結果提供結果。會傳回符合搜尋條件的所有檔案和目錄（共享區和資料夾）結果。</block>
   <block id="5587c065d5a62295455b157389cd71e5" category="paragraph">請注意、根據原則結果刪除資料及指派AIP標籤的動作僅對檔案有效。無法自動刪除符合搜尋條件的目錄、或指派AIP標籤。</block>
   <block id="90915c385560094095567649cbd732aa" category="section-title">檢視檔案和目錄的權限</block>
@@ -2424,7 +2422,6 @@
   <block id="342b7ce218ad37eb58175d677e743a1d" category="paragraph">BlueXP 複本與同步 UI 會在 BlueXP 中開啟。</block>
   <block id="8ed3cff1bce3680cbecb3718361328e0" category="paragraph">系統會提示您定義同步關係。來源系統會根據您已在 BlueXP 分類中選取的儲存庫和檔案預先填入。</block>
   <block id="599b3adc06ff60709e02c3d42a15c442" category="paragraph">請注意、從 BlueXP 分類中叫用某些通常的 BlueXP 複本與同步作業時、會停用這些作業：</block>
-  <block id="0507a26254d90555779319aac2a586a6" category="paragraph">您可以將 BlueXP 分類掃描的來源檔案移至任何 NFS 共用。NFS 共用區不需要與 BlueXP 分類整合（請參閱 <block ref="29fc238c82f37afa6e56193b0cf6f5eb" category="inline-link-macro-rx"></block>）。</block>
   <block id="687c2785d0e6bcc55e7d411f98257c26" category="list-text">移動檔案需要 NFS 共用區允許從 BlueXP 分類執行個體 IP 位址存取。</block>
   <block id="ab799d9194a97ef175cc77104273ab42" category="paragraph">您需要物件儲存供應商提供的存取金鑰和秘密金鑰、以便 BlueXP 分類能夠存取這些庫位。</block>
   <block id="53ab1a83968fb0e47aaf2604fd097f22" category="paragraph">將物件儲存服務新增至 BlueXP 分類。</block>
@@ -3175,7 +3172,6 @@
   <block id="c843b01ef48f3bd79d5d3521fbfa6125" category="cell">上次修改時間 _</block>
   <block id="e9349d6c7fc3f860e75fd091e850b861" category="cell">_ 開啟權限 _</block>
   <block id="44f76dcd3cb66939e2cbdab782c8314f" category="cell">_ 使用者 / 群組存取 _</block>
-  <block id="770ad37e7b6dccf816f59000b32376eb" category="list-text">BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 。</block>
   <block id="846ac2b072f7b636a6e9eec4c3e71fe1" category="list-text">較舊版本的 Windows 作業系統（例如 Windows 7 和 Windows 8 ）預設會停用「上次存取時間」屬性的集合、因為它可能會影響系統效能。如果未收集此屬性、則以「上次存取時間」為基礎的 BlueXP 分類分析將受到影響。如果需要、您可以在這些舊版 Windows 系統上啟用上次存取時間的集合。</block>
   <block id="e636b4a892ea62f67be639b3661d6897" category="list-text">根據預設、如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統將不會掃描磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。產生的頁面有一個您可以啟用的設定、以便 BlueXP 分類無論權限為何、都能掃描磁碟區。</block>
   <block id="dbc6be69ce4e1e10bc890167fa46f18b" category="inline-link-macro">請參閱更多關於此 BlueXP 分類限制的詳細資料</block>
@@ -3466,4 +3462,8 @@
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="section-title">中小企業部署暫時無法使用</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">當您在 AWS 中部署 BlueXP 分類執行個體時、目前無法使用選擇 * 部署 &gt; 組態 * 並選擇中小型執行個體的選項。您仍然可以使用大型執行個體來部署執行個體、方法是選取 * 部署 &gt; 部署 * 。</block>
   <block id="a95484ffd76e2e97fc6d584af31d2888" category="paragraph">過去、您只能在「調查結果」頁面（ 20 個項目）中一次將標記套用至單一頁面。現在您可以在「調查結果」頁面中選取 * 所有 * 項目、並將標記套用至所有項目、一次最多可有 100,000 個項目。<block ref="3e9397a24d29fef2aa895562fb0169fb" category="inline-link-rx"></block>。</block>
+  <block id="b76d53d86b234eb61cbe1f1f8dd81414" category="paragraph">您可以將 BlueXP 分類掃描的來源檔案移至任何 NFS 共用。NFS 共用不需要與 BlueXP 分類整合。</block>
+  <block id="125161c62eedd013601db45d9716edf6" category="paragraph">請注意、當檔案移動時、來源檔案的子目錄結構會在目的地共用上重新建立、以便更容易瞭解檔案的移出位置。如果目的地位置存在名稱相同的檔案、則不會移動該檔案。</block>
+  <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。請注意、快速完成的簡短作業（例如移動單一檔案）不會出現在「動作狀態」窗格中。</block>
+  <block id="b2ed02bab90c71832a95050419f003e6" category="list-text">BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 、以及資料庫。</block>
 </blocks>
