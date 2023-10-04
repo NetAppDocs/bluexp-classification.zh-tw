@@ -1630,7 +1630,6 @@
   <block id="acdc619c23bd4363ccec733a2e8a38ae" category="list-text">您可以將檔案指派給BlueXP使用者、負責對檔案執行任何後續行動。請參閱 <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">藍圖XP注意事項</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">所有BlueXP文件</block>
   <block id="cd02721523de57441e385fc64cc693cc" category="list-text">SharePoint內部部署帳戶（SharePoint Server）</block>
   <block id="97f34c43cfd5abbd752382f17f44c9a2" category="list-text">在BlueXP功能表中、按一下*管理&gt;分類*。</block>
   <block id="4bb7a83842b1271682b6be62080707cb" category="list-text">SharePoint Online和內部部署帳戶</block>
@@ -1878,7 +1877,6 @@
   <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">「有存取權的使用者人數」篩選器會顯示哪些檔案和資料夾已對特定數量的使用者開放。您可以選擇一個數字範圍來精簡結果、例如、查看51到100位使用者可以存取哪些檔案。</block>
   <block id="142c1e7e965016b6fe04e45f8ae01209" category="list-text">「建立時間」、「探索時間」、「上次修改時間」和「上次存取時間」篩選條件現在可讓您建立自訂日期範圍、而不只是選擇預先定義的天數範圍。例如、您可以在「過去10天」內尋找「建立時間」為「6個月以上」或「上次修改日期」的檔案。</block>
   <block id="248b219562d5c677bea769543286aaf9" category="list-text">紐西蘭駕駛證號碼</block>
-  <block id="dc398b6dfc944aa53fc80c488796fb93" category="list-text">確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。</block>
   <block id="47a431ede9d263c65258e5be6ff6b2c1" category="paragraph">隱私權風險評估報告概述貴組織的隱私權風險狀態、如GDPR和CCPA等隱私權法規要求。報告包含下列資訊：</block>
   <block id="e9ebebe267d1d822cab67a314b8df765" category="section-title">每份資料調查報告中包含的內容</block>
   <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">這會擷取所需的軟體和實際安裝檔案* cc_OnPrem_installer.tar。gz*。</block>
@@ -1913,7 +1911,6 @@
   <block id="21e0d61d9e797a17767287de32bd7bef" category="list-text">HR -健全狀況類別</block>
   <block id="46bd1bd2277d77e6f044cdb7a6983fc6" category="inline-image-macro">「更多」按鈕</block>
   <block id="9098e762df6423155c77747444ce3402" category="list-text">請依照中的步驟1至8進行 <block ref="6197de1d9d65c234b52f370ea2ee31e4" category="inline-link-macro-rx"></block> 在管理器節點上。</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">支援雲端供應商解決方案</block>
   <block id="0b95409e38fd76ec71d03e3e14b83763" category="paragraph">所有語言均支援所有這些新增自訂掃描準則的機制。</block>
   <block id="e1a196cfa9a98106e5ba102887a0c95d" category="paragraph">可辨識這些項目的語言列於表格中。</block>
   <block id="ad225f707802ba118c22987186dd38e8" category="cell">法文</block>
@@ -2422,7 +2419,6 @@
   <block id="342b7ce218ad37eb58175d677e743a1d" category="paragraph">BlueXP 複本與同步 UI 會在 BlueXP 中開啟。</block>
   <block id="8ed3cff1bce3680cbecb3718361328e0" category="paragraph">系統會提示您定義同步關係。來源系統會根據您已在 BlueXP 分類中選取的儲存庫和檔案預先填入。</block>
   <block id="599b3adc06ff60709e02c3d42a15c442" category="paragraph">請注意、從 BlueXP 分類中叫用某些通常的 BlueXP 複本與同步作業時、會停用這些作業：</block>
-  <block id="687c2785d0e6bcc55e7d411f98257c26" category="list-text">移動檔案需要 NFS 共用區允許從 BlueXP 分類執行個體 IP 位址存取。</block>
   <block id="ab799d9194a97ef175cc77104273ab42" category="paragraph">您需要物件儲存供應商提供的存取金鑰和秘密金鑰、以便 BlueXP 分類能夠存取這些庫位。</block>
   <block id="53ab1a83968fb0e47aaf2604fd097f22" category="paragraph">將物件儲存服務新增至 BlueXP 分類。</block>
   <block id="a9dd30151c7008ee5251686104cfa16e" category="paragraph">如果您要掃描S3物件儲存設備的資料、而且可以透過網際網路存取 <block ref="8faa540c15177bc62b151869f0948a64" category="inline-link-macro-rx"></block> 或 <block ref="15df3adeb2abcc06430d6dc64cee819e" category="inline-link-macro-rx"></block>。</block>
@@ -3068,7 +3064,6 @@
   <block id="c3e061f64826624fb21952c760e39065" category="paragraph">請注意、 BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 。</block>
   <block id="21ed6b8b65a14c2b031742eda9665bec" category="section-title">依重複項目篩選資料</block>
   <block id="3cdb36967a02a71e0d639c6d71d16ac3" category="summary">請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存區內的資料。BlueXP 分類可以掃描使用簡易儲存服務（ S3 ）傳輸協定的任何物件儲存服務的資料。其中包括 NetApp StorageGRID 、 IBM Cloud Object Store 、 Linode 、 B2 Cloud Storage 、 Amazon S3 等。</block>
-  <block id="967e2833b7b63650ec3b8ae154cf6a53" category="paragraph">請注意、每當您啟用或更新時、都必須重新啟動 Docker<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 設定：</block>
   <block id="04b2719843afa330fd4278f18f551cc0" category="list-text">貼上您從步驟8複製的資訊：<block ref="f2d89fd6adc07cc741bd63dae759c280" prefix=" " category="inline-code"></block></block>
   <block id="a4dd9b20157e1f61ccf2fa0ae455122b" category="list-text">輸入 BlueXP 分類主機機器的 IP 位址或主機名稱、以便 Connector 系統存取。</block>
   <block id="ddc6172b757657046107ead16ab653d6" category="list-text">輸入 BlueXP Connector 主機機器的 IP 位址或主機名稱、以便 BlueXP 分類系統存取。</block>
@@ -3225,9 +3220,7 @@
   <block id="e1161f065b10936afc930fd3d9d0c76f" category="section-title">Data Sense BYOL 授權現在支援 Dark 站台</block>
   <block id="1ab65443ec0af7e5e1aee32a3cf59dcc" category="inline-link">瞭解如何取得及上傳您的 Data Sense BYOL 授權</block>
   <block id="645f5675426bc396b45b524635e93bc7" category="paragraph">現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 BlueXP 數位錢包、以便在授權即將到期時收到通知。<block ref="bd823f9b4dce457c0ea2a8dcca6e749f" category="inline-link-rx"></block>。</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">您的 BlueXP 帳戶和個別 Cloud Volumes ONTAP 系統都需要註冊支援。</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">註冊這兩種類型的序號、即可開啟支援服務單和自動建立個案。如下列所述、將 NetApp 支援網站 （ NSS ）帳戶新增至 BlueXP 即可完成登錄。</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">如需下列雲端供應商解決方案的技術支援、請參閱該產品 BlueXP 文件中的「取得說明」。</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">註冊您的 BlueXP 帳戶以取得 NetApp 支援</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">若要註冊以取得支援並啟動支援授權、 BlueXP 帳戶中的一位使用者必須將 NetApp 支援網站 帳戶與其 BlueXP 登入建立關聯。您如何註冊NetApp支援取決於您是否已擁有NetApp 支援網站 一個NetApp（NSS）帳戶。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。</block>
@@ -3439,8 +3432,6 @@
   <block id="2a2958e5280a05650587dc8d454a5f8d" category="list-text">視您使用的作業系統而定、您需要安裝其中一個容器引擎：</block>
   <block id="42b04f3730744d602d0c4b812384dce9" category="list-text">Docker Engine 版本 19.3.1 或更新版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block>。</block>
   <block id="1d7787fe4a7264402153a51d8513414f" category="list-text">Python 3.6 版或更新版本。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block>。</block>
-  <block id="b3eca644efa08065eb8c4ac6103bb98b" category="list-text">確認系統已安裝兩個必要軟體套件（ Docker Engine 和 Python 3 ）。</block>
-  <block id="b22f0c43f37aea47ed39cf9a0ab2a837" category="list-text">確認您已安裝兩個必要軟體套件（ Docker Engine 和 Python 3 ）。</block>
   <block id="66f5e7d970f0cf4b79e5b61fd2dba7c1" category="list-text">掃描的資料量是根據邏輯檔案大小來計算、而沒有任何儲存效率。</block>
   <block id="9977ca20c8bc19b052f79b784b9f28f8" category="paragraph">啟用 BlueXP 分類並選取要掃描的儲存庫（這些是磁碟區、儲存區、資料庫架構、 OneDrive 或 SharePoint 使用者資料）之後、系統會立即開始掃描資料、以識別個人和敏感資料。您應該專注於在大多數情況下掃描線上即時資料、而非備份、鏡像或災難恢復站台。然後 BlueXP 分類會對應您的組織資料、對每個檔案進行分類、並識別及擷取資料中的實體和預先定義的模式。掃描結果是個人資訊、敏感個人資訊、資料類別和檔案類型的索引。</block>
   <block id="ab7a4d49b4e814b44fcc2e4e34cdc29b" category="paragraph">請注意、每當您啟用或更新時、都必須重新啟動 Docker 或 Podman<block ref="7ba21652408bcade58b8719451511f2a" prefix=" " category="inline-code"></block> 設定：</block>
@@ -3466,4 +3457,26 @@
   <block id="125161c62eedd013601db45d9716edf6" category="paragraph">請注意、當檔案移動時、來源檔案的子目錄結構會在目的地共用上重新建立、以便更容易瞭解檔案的移出位置。如果目的地位置存在名稱相同的檔案、則不會移動該檔案。</block>
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。請注意、快速完成的簡短作業（例如移動單一檔案）不會出現在「動作狀態」窗格中。</block>
   <block id="b2ed02bab90c71832a95050419f003e6" category="list-text">BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 、以及資料庫。</block>
+  <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">10 月 4 日（版本 1.26 ）</block>
+  <block id="620a73262e6956695319caae21506289" category="section-title">支援使用 RHEL 第 9 版的內部部署安裝</block>
+  <block id="97e778415712a740a3bb71e9070c88c5" category="paragraph">Red Hat Enterprise Linux 第 8 版和第 9 版不支援 Docker 引擎、這是 BlueXP 分類安裝所需的。我們現在支援在 RHEL 9.0 、 9.1 和 9.2 上安裝、使用 Podman 版本 4 或更新版本做為容器基礎架構。如果您的環境需要使用最新版本的 RHEL 、現在您可以在使用 Podman 時安裝 BlueXP 分類（ 1.26 版或更新版本）。</block>
+  <block id="081ac57be4c35d4de4fc43c105089d8f" category="paragraph">目前我們不支援安裝暗點或分散式掃描環境（使用主要和遠端掃描器節點）。</block>
+  <block id="db5b005cbaaba7a23899858892848a77" category="section-title">調查頁面結果現在除了顯示項目總數之外、還會顯示總大小</block>
+  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">「調查」頁面中的篩選結果現在除了顯示檔案總數之外、還會顯示項目的總大小。這有助於移動檔案、刪除檔案等。</block>
+  <block id="4a90d7d35061a4c9e5845a989ea05db2" category="list-text">下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分級版本 1.26 或更新版本：</block>
+  <block id="59f227bced13db9b55686d58d4422b7b" category="list-text">Red Hat Enterprise Linux 9.0 、 9.1 和 9.2 版</block>
+  <block id="ca4483ba58214f8a91253985b52c976c" category="paragraph">請注意、目前使用 RHEL 9.x 時不支援下列功能：</block>
+  <block id="1b32bd564a2d99c25093d522b505880d" category="list-text">安裝在黑暗的地點</block>
+  <block id="1a81412d076e7b9aa74911a0adfb4688" category="list-text">分散式掃描；使用主要掃描器節點和遠端掃描器節點</block>
+  <block id="cf49e2a8099d82e2f5780f13362c4f6c" category="list-text">Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 <block ref="2331e8e9c17f410bdfc0aa461e9aa2b7" prefix="(" category="inline-code"></block>）、然後安裝 Podman <block ref="e831e1bb8caac0e1ff717314d00a328d" prefix="(" category="inline-code"></block>）。</block>
+  <block id="194351f6f6e0cb2f129f2a15d7f6df07" category="list-text">確認系統已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。</block>
+  <block id="70982664d9f01c2eb3895d455947c83d" category="list-text">確認系統已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">需要註冊支援、才能獲得 BlueXP 及其儲存解決方案與服務專屬的技術支援。也需要註冊支援、才能啟用 Cloud Volumes ONTAP 系統的重要工作流程。</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">註冊支援並不會啟用雲端供應商檔案服務的 NetApp 支援。如需雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的相關技術支援、請參閱該產品的 BlueXP 文件中的「取得說明」。</block>
+  <block id="71015deb6ac3269a57685acb827c23be" category="list-text">只會移動 50 MB 或更小的檔案。</block>
+  <block id="b8b9c11e2f16c4f7686b11f7596d2847" category="list-text">目的地 NFS 共用必須允許從 BlueXP 分類執行個體 IP 位址存取。</block>
+  <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">確認您已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">取得雲端供應商檔案服務的支援</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">如需雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的相關技術支援、請參閱該產品的 BlueXP 文件中的「取得說明」。</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">若要獲得 BlueXP 及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
 </blocks>

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification 
 summary: 請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為「私有模式」。這類安裝最適合安全的站台。 
 ---
 = 在無法存取網際網路的主機上安裝 BlueXP 分類
@@ -150,6 +150,17 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 *** Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 或更新版本）
 
 
+** 下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分級版本 1.26 或更新版本：
++
+*** Red Hat Enterprise Linux 9.0 、 9.1 和 9.2 版
++
+請注意、目前使用 RHEL 9.x 時不支援下列功能：
+
++
+**** 安裝在黑暗的地點
+**** 分散式掃描；使用主要掃描器節點和遠端掃描器節點
+
+
 
 
 
@@ -163,6 +174,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS 上安裝 Docker 。
 
+*** Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 (`sudo yum update -y`）、然後安裝 Podman (`sudo yum install podman -y`）。
 
 
 ** Python 3.6 版或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
@@ -179,7 +191,7 @@ firewall-cmd --permanent --add-port=443/tcp
 firewall-cmd --reload
 ....
 +
-請注意、每當您啟用或更新時、都必須重新啟動 Docker `firewalld` 設定：
+請注意、每當您啟用或更新時、都必須重新啟動 Docker 或 Podman `firewalld` 設定：
 
 
 
@@ -279,7 +291,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["顯示您可以在內部
 
 .您需要的產品
 * 確認您的Linux系統符合 <<準備Linux主機系統,主機需求>>。
-* 確認您已安裝兩個必要軟體套件（ Docker Engine 和 Python 3 ）。
+* 確認您已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
 * 請確定您擁有Linux系統的root權限。
 * 確認您的離線環境符合所需 <<驗證 BlueXP 和 BlueXP 分類先決條件,權限與連線能力>>。
 
@@ -364,7 +376,7 @@ BlueXP 分類安裝程式會安裝套件、登錄安裝、並安裝 BlueXP 分�
 
 .您需要的產品
 * 確認Manager和掃描儀節點的所有Linux系統都符合 <<準備Linux主機系統,主機需求>>。
-* 確認您已安裝兩個必要軟體套件（ Docker Engine 和 Python 3 ）。
+* 確認您已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
 * 請確定您擁有Linux系統的root權限。
 * 確認您的離線環境符合所需 <<驗證 BlueXP 和 BlueXP 分類先決條件,權限與連線能力>>。
 * 您必須擁有要使用的掃描器節點主機的IP位址。

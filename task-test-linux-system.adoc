@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy cloud BlueXP classification, cloud compliance access, compliance, on-premises, linux, test linux system 
+keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman 
 summary: 在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主機上執行指令碼、以確認安裝 BlueXP 分類的所有必要條件均已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或者主機可以位於無法存取網際網路的站台。 
 ---
 = 檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類
@@ -111,6 +111,17 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 *** Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 或更新版本）
 
 
+** 下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分級版本 1.26 或更新版本：
++
+*** Red Hat Enterprise Linux 9.0 、 9.1 和 9.2 版
++
+請注意、目前使用 RHEL 9.x 時不支援下列功能：
+
++
+**** 安裝在黑暗的地點
+**** 分散式掃描；使用主要掃描器節點和遠端掃描器節點
+
+
 
 
 
@@ -124,6 +135,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS 上安裝 Docker 。
 
+*** Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 (`sudo yum update -y`）、然後安裝 Podman (`sudo yum install podman -y`）。
 
 
 ** Python 3.6 版或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
@@ -150,7 +162,7 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-請注意、每當您啟用或更新時、都必須重新啟動 Docker `firewalld` 設定：
+請注意、每當您啟用或更新時、都必須重新啟動 Docker 或 Podman `firewalld` 設定：
 
 
 
@@ -217,7 +229,7 @@ https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["觀看此影片"^] 以瞭解�
 
 .您需要的產品
 * 確認您的Linux系統符合 <<驗證主機需求,主機需求>>。
-* 確認系統已安裝兩個必要軟體套件（ Docker Engine 和 Python 3 ）。
+* 確認系統已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
 * 請確定您擁有Linux系統的root權限。
 
 

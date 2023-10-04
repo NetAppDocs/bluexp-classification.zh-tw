@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman 
 summary: 請完成幾個步驟、在您網路中的 Linux 主機或雲端中有網際網路存取權的 Linux 主機上安裝 BlueXP 分類。您必須在網路或雲端中手動部署Linux主機、才能完成此安裝。 
 ---
 = 在可存取網際網路的主機上安裝 BlueXP 分類
@@ -156,6 +156,17 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 *** Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 或更新版本）
 
 
+** 下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分級版本 1.26 或更新版本：
++
+*** Red Hat Enterprise Linux 9.0 、 9.1 和 9.2 版
++
+請注意、目前使用 RHEL 9.x 時不支援下列功能：
+
++
+**** 安裝在黑暗的地點
+**** 分散式掃描；使用主要掃描器節點和遠端掃描器節點
+
+
 
 
 
@@ -169,6 +180,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS 上安裝 Docker 。
 
+*** Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 (`sudo yum update -y`）、然後安裝 Podman (`sudo yum install podman -y`）。
 
 
 ** Python 3.6 版或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
@@ -320,7 +332,7 @@ https://youtu.be/rFpmekdbORc["觀看此影片"^] 以瞭解如何安裝 BlueXP �
 
 .您需要的產品
 * 確認您的Linux系統符合 <<準備Linux主機系統,主機需求>>。
-* 確認系統已安裝兩個必要軟體套件（ Docker Engine 和 Python 3 ）。
+* 確認系統已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
 * 請確定您擁有Linux系統的root權限。
 * 如果您使用Proxy存取網際網路：
 +
@@ -450,7 +462,7 @@ BlueXP 分類掃描器群組可定義為儲存資料的個別地理區域。您�
 
 .您需要的產品
 * 請確認適用於掃描儀節點的所有Linux系統均符合 <<準備Linux主機系統,主機需求>>。
-* 確認系統已安裝兩個必要的軟體套件（Docker Engine和Python 3）。
+* 確認系統已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
 * 請確定您擁有Linux系統的root權限。
 * 確認您的環境符合所需 <<從 BlueXP 分類啟用輸出網際網路存取,權限與連線能力>>。
 * 您必須擁有要新增的掃描儀節點主機的IP位址。
@@ -495,7 +507,7 @@ firewall-cmd --permanent --add-port=4789/udp
 firewall-cmd --reload
 ....
 +
-請注意、每當您啟用或更新時、都必須重新啟動 Docker `firewalld` 設定：
+請注意、每當您啟用或更新時、都必須重新啟動 Docker 或 Podman `firewalld` 設定：
 
 
 
