@@ -329,6 +329,7 @@ image:screenshot_compliance_investigation_report.png["下載調查報告頁面�
 * 建立時間
 * 上次修改時間
 * 上次存取
+* 開放式權限
 * 檔案擁有者
 * 類別
 * 個人資訊

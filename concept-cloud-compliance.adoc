@@ -211,7 +211,7 @@ BlueXP 分類透過掛載 NFS 和 CIFS 磁碟區、與任何其他用戶端一�
 
 image:diagram_cloud_compliance_scan.png["顯示在雲端供應商中執行的 BlueXP 執行個體和 BlueXP 分類執行個體的圖表。BlueXP 分類執行個體會連線至 NFS 和 CIFS 磁碟區、 S3 貯體、 OneDrive 帳戶和資料庫、以進行掃描。"]
 
-初始掃描之後、 BlueXP 分類會持續掃描您的資料、以偵測遞增變更（這就是保持執行個體正常運作的重要原因）。
+初始掃描之後、 BlueXP 分類會以循環方式持續掃描您的資料、以偵測遞增變更（這就是保持執行個體正常運作的重要原因）。
 
 您可以在磁碟區層級、儲存庫層級、資料庫架構層級、OneDrive使用者層級和SharePoint網站層級啟用和停用掃描。
 

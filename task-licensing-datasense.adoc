@@ -96,7 +96,7 @@ NetApp自帶授權、提供1年、2年或3年期限。BYOL BlueXP 分類（ Data
 
 購買 BlueXP 分類（ Data Sense ）授權後、您可以輸入 BlueXP 分類序號和 NSS 帳戶、或上傳 NLF 授權檔案、在 BlueXP 中啟動授權。下列步驟說明如果您打算使用NLF授權檔案、該如何取得該檔案。
 
-如果您已在內部部署網站中沒有網際網路存取權的主機上部署 BlueXP 分類、則必須從連線網際網路的系統取得授權檔案。無法使用序號和NSS帳戶啟動使用許可、進行暗色站台安裝。
+如果您已在內部部署網站中沒有網際網路存取權的主機上部署 BlueXP 分類、表示您已在中部署 BlueXP Connector https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["私有模式"^]、您必須從連線網際網路的系統取得授權檔案。無法使用序號和NSS帳戶啟動使用許可、進行暗色站台安裝。
 
 .開始之前
 開始之前、您必須先取得下列資訊：
@@ -107,7 +107,7 @@ NetApp自帶授權、提供1年、2年或3年期限。BYOL BlueXP 分類（ Data
 
 * BlueXP 帳戶 ID
 +
-您可以從BlueXP頂端選取「*帳戶*」下拉式清單、然後按一下帳戶旁的「*管理帳戶*」、即可找到您的BlueXP帳戶ID。您的帳戶ID位於「總覽」索引標籤。
+您可以從BlueXP頂端選取「*帳戶*」下拉式清單、然後按一下帳戶旁的「*管理帳戶*」、即可找到您的BlueXP帳戶ID。您的帳戶ID位於「總覽」索引標籤。若為無法存取網際網路的私人模式網站、請使用 *account-DARKSITE1* 。
 
 
 
