@@ -3454,11 +3454,6 @@
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。請注意、快速完成的簡短作業（例如移動單一檔案）不會出現在「動作狀態」窗格中。</block>
   <block id="b2ed02bab90c71832a95050419f003e6" category="list-text">BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 、以及資料庫。</block>
   <block id="4b9f4d0e463502904f138e1d9f0014a4" category="section-title">10 月 4 日（版本 1.26 ）</block>
-  <block id="620a73262e6956695319caae21506289" category="section-title">支援使用 RHEL 第 9 版的內部部署安裝</block>
-  <block id="97e778415712a740a3bb71e9070c88c5" category="paragraph">Red Hat Enterprise Linux 第 8 版和第 9 版不支援 Docker 引擎、這是 BlueXP 分類安裝所需的。我們現在支援在 RHEL 9.0 、 9.1 和 9.2 上安裝、使用 Podman 版本 4 或更新版本做為容器基礎架構。如果您的環境需要使用最新版本的 RHEL 、現在您可以在使用 Podman 時安裝 BlueXP 分類（ 1.26 版或更新版本）。</block>
-  <block id="081ac57be4c35d4de4fc43c105089d8f" category="paragraph">目前我們不支援安裝暗點或分散式掃描環境（使用主要和遠端掃描器節點）。</block>
-  <block id="db5b005cbaaba7a23899858892848a77" category="section-title">調查頁面結果現在除了顯示項目總數之外、還會顯示總大小</block>
-  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">「調查」頁面中的篩選結果現在除了顯示檔案總數之外、還會顯示項目的總大小。這有助於移動檔案、刪除檔案等。</block>
   <block id="4a90d7d35061a4c9e5845a989ea05db2" category="list-text">下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分級版本 1.26 或更新版本：</block>
   <block id="59f227bced13db9b55686d58d4422b7b" category="list-text">Red Hat Enterprise Linux 9.0 、 9.1 和 9.2 版</block>
   <block id="ca4483ba58214f8a91253985b52c976c" category="paragraph">請注意、目前使用 RHEL 9.x 時不支援下列功能：</block>
@@ -3481,4 +3476,7 @@
   <block id="5325380bce88952998c2cad273cdef5b" category="paragraph">雖然資料的初始掃描可能需要一點時間、但後續掃描只會檢查增量變更、進而縮短系統掃描時間。BlueXP 分類會以循環方式持續掃描您的資料、一次六個儲存庫、以便快速分類所有變更的資料。</block>
   <block id="098df4b7dbd64ba9dbd496df653f27b4" category="paragraph">請注意、 BlueXP 分類每天只掃描一次資料庫、不會像其他資料來源一樣持續掃描資料庫。</block>
   <block id="9c8736affefce89efb819f7f63f5a237" category="paragraph">初始掃描之後、 BlueXP 分類會以循環方式持續掃描您的資料、以偵測遞增變更（這就是保持執行個體正常運作的重要原因）。</block>
+  <block id="74246010013353726bd9ff99866fa7d4" category="section-title">支援在 RHEL 第 9 版上內部部署安裝 BlueXP 分類</block>
+  <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linux 第 8 版和第 9 版不支援 Docker 引擎、這是 BlueXP 分類安裝所需的。我們現在支援在 RHEL 9.0 、 9.1 和 9.2 上安裝 BlueXP 分類、並使用 Podman 版本 4 或更新版本做為容器基礎架構。如果您的環境需要使用最新版本的 RHEL 、現在您可以在使用 Podman 時安裝 BlueXP 分類（ 1.26 版或更新版本）。</block>
+  <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">目前、我們不支援使用 RHEL 9.x 進行暗點安裝或分散式掃描環境（使用主要和遠端掃描器節點）</block>
 </blocks>
