@@ -3479,4 +3479,8 @@
   <block id="74246010013353726bd9ff99866fa7d4" category="section-title">支援在 RHEL 第 9 版上內部部署安裝 BlueXP 分類</block>
   <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linux 第 8 版和第 9 版不支援 Docker 引擎、這是 BlueXP 分類安裝所需的。我們現在支援在 RHEL 9.0 、 9.1 和 9.2 上安裝 BlueXP 分類、並使用 Podman 版本 4 或更新版本做為容器基礎架構。如果您的環境需要使用最新版本的 RHEL 、現在您可以在使用 Podman 時安裝 BlueXP 分類（ 1.26 版或更新版本）。</block>
   <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">目前、我們不支援使用 RHEL 9.x 進行暗點安裝或分散式掃描環境（使用主要和遠端掃描器節點）</block>
+  <block id="abff2804f60c6da51fe02e78167abad1" category="section-title">11 月 6 日（版本 1.26.3 ）</block>
+  <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">本版本已修正下列問題</block>
+  <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">修正在儀表板中顯示系統掃描的檔案數量時出現不一致的情況。</block>
+  <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">處理和報告名稱和中繼資料中含有特殊字元的檔案和目錄、以改善掃描行為。</block>
 </blocks>
