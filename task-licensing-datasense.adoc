@@ -27,13 +27,21 @@ link:concept-cloud-compliance.html#cost["深入瞭解與 BlueXP 分類相關的�
 
 
 
-== 使用 BlueXP 分類 PAYGO 訂閱
+== 30 天免費試用
 
-雲端供應商的隨用隨付訂閱可讓您授權使用 Cloud Volumes ONTAP 系統和許多雲端資料服務、例如 BlueXP 分類。
+BlueXP 分類可在 BlueXP 工作區中掃描高達 1 TB 的資料、並可免費試用 30 天。您必須向 NetApp 購買 BYOL 授權、或向雲端供應商的市場註冊訂閱、才能在該點之後繼續掃描資料。
 
 您可以隨時訂閱、而且在30天試用結束或資料量超過1 TB之前、將不會向您收取任何費用。您可以隨時從 BlueXP 分類治理儀表板查看掃描的資料總量。而且「立即訂閱」按鈕可讓您在準備就緒時輕鬆訂閱。
 
 image:screenshot_compliance_subscribe.png["螢幕快照顯示正在掃描多少資料、以及訂閱服務的「訂閱」按鈕。"]
+
+
+
+== 使用 BlueXP 分類 PAYGO 訂閱
+
+雲端供應商的隨用隨付訂閱可讓您授權使用 Cloud Volumes ONTAP 系統和許多 BlueXP 服務、例如 BlueXP 分類。您將向雲端供應商支付單一訂閱中每小時掃描的資料 BlueXP 分類金額。
+
+訂閱可確保在免費試用結束後、服務不會中斷。試用結束時、您將根據掃描的資料量、每小時收取一次費用。在免費試用期間、您將不會從訂閱中收取費用。
 
 .步驟
 這些步驟必須由擁有 _Account Admin_ 角色的使用者完成。
@@ -42,23 +50,23 @@ image:screenshot_compliance_subscribe.png["螢幕快照顯示正在掃描多少�
 +
 image:screenshot_settings_icon.gif["BlueXP右上方橫幅的快照、您可在其中選取「設定」圖示。"]
 
-. 尋找AWS執行個體設定檔、Azure託管服務身分識別或Google Project的認證資料。
+. 按一下 * 認證 * 、然後尋找 AWS 執行個體設定檔、 Azure 託管服務識別或 Google Project 的認證。
 +
 訂閱必須新增至執行個體設定檔、託管服務識別或Google Project。否則無法充電。
 
 +
-如果您已經訂閱了BlueXP（如下所示、適用於AWS）、那麼您就已經設定好了、沒有其他需要做的事了。
+如果您已經有 BlueXP 訂閱（如下所示適用於 AWS ）、那麼您就已經設定好了、別無所需。
 
 +
 image:screenshot_profile_subscription.gif["「認證」頁面的快照、顯示使用中訂閱的執行個體設定檔。"]
 
-. 如果您尚未訂閱、請將游標移至認證上方、按一下動作功能表、然後按一下*建立訂閱關聯*。
+. 如果您尚未訂閱、請按一下動作功能表、然後按一下 * 關聯訂閱 * 。
 +
 image:screenshot_add_subscription.gif["認證頁面中功能表的快照。它會顯示一個按鈕、用於將訂閱與認證相關聯。"]
 
 . 選取現有的訂閱、然後按一下「*經銷*」、或按一下「*新增訂閱*」、然後依照步驟進行。
 +
-下列影片說明如何建立關聯 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^] 訂閱AWS訂閱：
+下列影片說明如何建立關聯 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["AWS Marketplace"^] 訂閱AWS訂閱：
 
 +
 video::video_subscribing_aws.mp4[width=848,height=480]
@@ -68,10 +76,23 @@ video::video_subscribing_aws.mp4[width=848,height=480]
 +
 video::video_subscribing_azure.mp4[width=848,height=480]
 +
-下列影片說明如何建立關聯 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP 市場"^] 訂購GCP：
+下列影片說明如何建立關聯 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud Marketplace"^] 訂購GCP：
 
 +
 video::video_subscribing_gcp.mp4[width=848,height=480]
+
+
+
+
+== 使用年度合約
+
+購買年度合約、每年支付 BlueXP 分類費用。提供 1 年、 2 年或 3 年的條款。
+
+如果您有市場的年度合約、則所有 BlueXP 分類資料掃描都會根據該合約收費。您無法與BYOL混搭一年一度的市場合約。
+
+* AWS ： https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["如需價格詳細資料、請前往BlueXP Marketplace產品"^]。
+* Azure ： https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["如需價格詳細資料、請前往BlueXP Marketplace產品"^]。
+* Google Cloud ：請聯絡您的 NetApp 銷售代表以購買年度合約。合約可在Google Cloud Marketplace以私人優惠形式提供。NetApp 與您分享私人優惠後、您可以在 BlueXP 分類啟動期間、從 Google Cloud Marketplace 訂閱年度方案。
 
 
 
@@ -88,15 +109,15 @@ NetApp自帶授權、提供1年、2年或3年期限。BYOL BlueXP 分類（ Data
 
 或者、如果您沒有使用未指派的 Cloud Volumes ONTAP 節點型授權、您可以將其轉換為具有相同美元對等和相同到期日的 BlueXP 分類授權。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["如需詳細資料、請前往此處"^]。
 
-您可以使用 BlueXP 中的 BlueXP 數位錢包頁面來管理 BlueXP 分類 BYOL 授權。您可以新增授權並更新現有授權。
+您可以使用 BlueXP 數位錢包來管理 BlueXP 分類 BYOL 授權。您可以新增授權、更新現有授權、以及從 BlueXP 數位錢包檢視授權狀態。
 
 
 
 === 取得 BlueXP 分類授權檔案
 
-購買 BlueXP 分類（ Data Sense ）授權後、您可以輸入 BlueXP 分類序號和 NSS 帳戶、或上傳 NLF 授權檔案、在 BlueXP 中啟動授權。下列步驟說明如果您打算使用NLF授權檔案、該如何取得該檔案。
+購買 BlueXP 分類（ Data Sense ）授權後、您可以輸入 BlueXP 分類序號和 NetApp 支援網站 （ NSS ）帳戶、或上傳 NetApp 授權檔案（ NLF ）、在 BlueXP 中啟動授權。下列步驟說明如果您打算使用NLF授權檔案、該如何取得該檔案。
 
-如果您已在內部部署網站中沒有網際網路存取權的主機上部署 BlueXP 分類、表示您已在中部署 BlueXP Connector https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["私有模式"^]、您必須從連線網際網路的系統取得授權檔案。無法使用序號和NSS帳戶啟動使用許可、進行暗色站台安裝。
+如果您已在內部部署網站中沒有網際網路存取權的主機上部署 BlueXP 分類、表示您已在中部署 BlueXP Connector https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html#private-mode["私有模式"^]、您必須從連線網際網路的系統取得授權檔案。使用序號啟動授權、而 NSS 帳戶無法用於私有模式安裝。
 
 .開始之前
 開始之前、您必須先取得下列資訊：
@@ -118,7 +139,7 @@ NetApp自帶授權、提供1年、2年或3年期限。BYOL BlueXP 分類（ Data
 image:screenshot_cloud_tiering_license_step1.gif["顯示依序號搜尋後授權表格的快照。"]
 
 . 在 * 授權金鑰 * 欄下、按一下 * 取得 NetApp 授權檔案 * 。
-. 輸入您的租戶 ID （ BlueXP 帳戶 ID ）、然後按一下 * 提交 * 以下載授權檔案。
+. 輸入您的BlueXP帳戶ID（在支援網站上稱為「租戶ID」）、然後按一下*提交*下載授權檔案。
 +
 image:screenshot_cloud_tiering_license_step2.gif["螢幕擷取畫面會顯示「Get license（取得授權）」對話方塊、您可在此輸入租戶ID、然後按一下「Submit（提交）」下載授權檔案。"]
 
@@ -154,11 +175,11 @@ BlueXP 會新增授權、讓 BlueXP 分類服務處於作用中狀態。
 
 === 更新 BlueXP 分類 BYOL 授權
 
-如果您的授權期限即將到期、或是您的授權容量已達到上限、您將會收到 BlueXP 分類的通知。
+如果您的授權期限即將到期、或您的授權容量已達到上限、則會在「分類 UI 」中通知您。
 
 image:screenshot_services_license_expire_cc1.png["在 BlueXP 分類頁面中顯示過期授權的螢幕擷取畫面。"]
 
-此狀態也會出現在 BlueXP 數位錢包中。
+此狀態也會出現在 BlueXP 數位錢包和中 https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#monitoring-operations-status-using-the-notification-center["通知"^]。
 
 image:screenshot_services_license_expire_cc2.png["BlueXP 數位錢包頁面中顯示過期授權的螢幕擷取畫面。"]
 

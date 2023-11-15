@@ -698,20 +698,15 @@
   <block id="8e8f343d4d11cb796ed5e3db94f54fe3" category="inline-image-macro">螢幕快照顯示正在掃描多少資料、以及訂閱服務的「訂閱」按鈕。</block>
   <block id="a503bdaee5c948e64f10ac7ae38b987f" category="paragraph"><block ref="a503bdaee5c948e64f10ac7ae38b987f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2f44b30cb7b59e6531b838d2b079d16" category="paragraph">這些步驟必須由擁有 _Account Admin_ 角色的使用者完成。</block>
-  <block id="bea1f499527daa402d9417b6befca37e" category="list-text">尋找AWS執行個體設定檔、Azure託管服務身分識別或Google Project的認證資料。</block>
   <block id="8071861b8e3a5d88d5457ddd1596427a" category="paragraph">訂閱必須新增至執行個體設定檔、託管服務識別或Google Project。否則無法充電。</block>
   <block id="62e5878faab04822cdc1e0afde654b25" category="inline-image-macro">「認證」頁面的快照、顯示使用中訂閱的執行個體設定檔。</block>
   <block id="960eb5524321a41f4a846cf6d41aa4ba" category="paragraph"><block ref="960eb5524321a41f4a846cf6d41aa4ba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a1127f6d49115a82bf6a8108eed8e2e9" category="list-text">如果您尚未訂閱、請將游標移至認證上方、按一下動作功能表、然後按一下*建立訂閱關聯*。</block>
   <block id="94364b77769acea99c5c0293eafd1ffd" category="inline-image-macro">認證頁面中功能表的快照。它會顯示一個按鈕、用於將訂閱與認證相關聯。</block>
   <block id="9be07eb065783de7ad65baf9740aa00d" category="paragraph"><block ref="9be07eb065783de7ad65baf9740aa00d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="84c405fea7c680f546bababbfc931ebf" category="list-text">選取現有的訂閱、然後按一下「*經銷*」、或按一下「*新增訂閱*」、然後依照步驟進行。</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link">AWS Marketplace</block>
-  <block id="20ab59a0708de3be77d4437c45bb5ba9" category="paragraph">下列影片說明如何建立關聯<block ref="d668c832ccb70eb717d6736e1082df78" category="inline-link-rx"></block> 訂閱AWS訂閱：</block>
   <block id="21e74b3c28d006317f38a2bc8eb1da3b" category="inline-link">Azure Marketplace</block>
   <block id="dac3b58a31768279a775cce1a0aec055" category="paragraph">下列影片說明如何建立關聯<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block> 訂閱Azure：</block>
-  <block id="12a896df7cf6cd5b5e5dcf4a46c0cebc" category="inline-link">GCP 市場</block>
-  <block id="f2691cf601a725d19154e55e111873bc" category="paragraph">下列影片說明如何建立關聯<block ref="92655de6fae7d07ed3897ce19d51b88d" category="inline-link-rx"></block> 訂購GCP：</block>
   <block id="f6b0b01ee34208ec2e76e1fb8b0c7faf" category="list-text">mailto：ng-contact-data-sense@netapp.com？Subject =授權[傳送電子郵件以購買授權]。</block>
   <block id="6aa300e24ddf3ee5a99bbb1cf5bb4a72" category="inline-link">如需詳細資料、請前往此處</block>
   <block id="80c4b6e3dfa1d4f33033585b7c74e7e9" category="list-text">登入<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block> 然後按一下*系統&gt;軟體授權*。</block>
@@ -1726,7 +1721,6 @@
   <block id="21315205ba34163a83853c5526e534c1" category="list-text">一次最多可重新掃描1000個項目。</block>
   <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
   <block id="79bd49250e598bf53655f50c83b04044" category="list-text">行動類型（刪除、複製、移動、建立原則、更新原則、 重新掃描檔案、下載Json報告等）</block>
-  <block id="f6d56db241e1b67ea15f2bcfc6d58cee" category="paragraph">如果您已經訂閱了BlueXP（如下所示、適用於AWS）、那麼您就已經設定好了、沒有其他需要做的事了。</block>
   <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">您可以在中檢視Json報告產生的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
   <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日（1.17版）</block>
   <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。</block>
@@ -2490,12 +2484,10 @@
   <block id="1fe75a0ab5171136a5ec6503ed9e85d1" category="inline-link-macro">深入瞭解與 BlueXP 分類相關的授權與成本</block>
   <block id="e01ae5b37a34fb436f617365e020721a" category="paragraph"><block ref="5547e182cd4b08f09049a0606997f4a9" category="inline-link-macro-rx"></block>。</block>
   <block id="46fe365a0513be6d3c89adc689d2a78f" category="section-title">使用 BlueXP 分類 PAYGO 訂閱</block>
-  <block id="d48817aec3b8da37323be922a244969c" category="paragraph">雲端供應商的隨用隨付訂閱可讓您授權使用 Cloud Volumes ONTAP 系統和許多雲端資料服務、例如 BlueXP 分類。</block>
   <block id="defd0f223a0cf4f1e58e88bd1721d45e" category="paragraph">您可以隨時訂閱、而且在30天試用結束或資料量超過1 TB之前、將不會向您收取任何費用。您可以隨時從 BlueXP 分類治理儀表板查看掃描的資料總量。而且「立即訂閱」按鈕可讓您在準備就緒時輕鬆訂閱。</block>
   <block id="a64334705690e391576da973a9b22ed9" category="section-title">使用 BlueXP 分類 BYOL 授權</block>
   <block id="c9532f19df489d117c681943ff72b47e" category="paragraph">NetApp自帶授權、提供1年、2年或3年期限。BYOL BlueXP 分類（ Data Sense ）授權是一個 _ 浮動 _ 授權、其總容量由 * 所有 * 的工作環境和資料來源共享、讓初始授權和續約變得更簡單。</block>
   <block id="5bae938f4e490a5e1f1b65254d8e3ef5" category="paragraph">如果您沒有 BlueXP 分類授權、請聯絡我們購買：</block>
-  <block id="4c7c3836e9f902c5159464ae2ebf8187" category="paragraph">您可以使用 BlueXP 中的 BlueXP 數位錢包頁面來管理 BlueXP 分類 BYOL 授權。您可以新增授權並更新現有授權。</block>
   <block id="656e076fbf2897c36a85dea0c00f2ddf" category="section-title">取得 BlueXP 分類授權檔案</block>
   <block id="91be63c0508d6a7954379847241750fe" category="list-text">輸入您的 BlueXP 分類授權序號。</block>
   <block id="ab75085a52c32bc4b667115d2ca1861b" category="section-title">將 BlueXP 分類 BYOL 授權新增至您的帳戶</block>
@@ -2506,10 +2498,8 @@
   <block id="d6a2ea8b4137bd407e96f8425a463067" category="paragraph"><block ref="d6a2ea8b4137bd407e96f8425a463067" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2a1bc71dc01f495b56f0abaa74f037c9" category="paragraph">BlueXP 會新增授權、讓 BlueXP 分類服務處於作用中狀態。</block>
   <block id="aeeaa2e73e02b9dcec81e87c55fe939e" category="section-title">更新 BlueXP 分類 BYOL 授權</block>
-  <block id="b96ddb25fd60a3a6e47b81d1dd00d82a" category="paragraph">如果您的授權期限即將到期、或是您的授權容量已達到上限、您將會收到 BlueXP 分類的通知。</block>
   <block id="fda03e39c339d6d7b96a67b975fb9d35" category="inline-image-macro">在 BlueXP 分類頁面中顯示過期授權的螢幕擷取畫面。</block>
   <block id="085d74f778426c6b55cefb26f0da08db" category="paragraph"><block ref="085d74f778426c6b55cefb26f0da08db" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c3c45920a3de8783cdd853295a19c2b3" category="paragraph">此狀態也會出現在 BlueXP 數位錢包中。</block>
   <block id="0553876f11122be0920f9fa9c803d152" category="inline-image-macro">BlueXP 數位錢包頁面中顯示過期授權的螢幕擷取畫面。</block>
   <block id="8a3fa7f55e818c5876f14bd9da4cabf0" category="paragraph"><block ref="8a3fa7f55e818c5876f14bd9da4cabf0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d039bd2d493e18dac3e687d097f645c3" category="paragraph">您可以在 BlueXP 分類授權過期前更新、使您不中斷存取掃描資料的能力。</block>
@@ -3343,13 +3333,11 @@
   <block id="cdf14d2156528231a5dbd12ad5c95d3f" category="list-text">選取以變更表格中顯示的欄 <block ref="b574dd55d604ddb721d869a0fc302007" category="inline-image-macro-rx" type="image"></block> 然後選擇您要顯示的欄。</block>
   <block id="348552521b849746260fe8d296d34c15" category="list-text">選取以管理現有案例 <block ref="566c029d89e7d5421080767a37bf443e" category="inline-image-macro-rx" type="image"></block> 並選擇其中一個可用選項：</block>
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">* 結案案例 * ：提供結案原因的詳細資料、並選取 * 結案案例 * 。</block>
-  <block id="7c85b55967124dd0c8b4e648a4555ba3" category="paragraph">購買 BlueXP 分類（ Data Sense ）授權後、您可以輸入 BlueXP 分類序號和 NSS 帳戶、或上傳 NLF 授權檔案、在 BlueXP 中啟動授權。下列步驟說明如果您打算使用NLF授權檔案、該如何取得該檔案。</block>
   <block id="e3286b69a705d4ed944e904722ab7c8f" category="paragraph">開始之前、您必須先取得下列資訊：</block>
   <block id="9a0032efa4fb526fb96562269c928b44" category="list-text">BlueXP 分類序號</block>
   <block id="079aeecf06b109e4316b0a68ea943f2b" category="paragraph">請從您的銷售訂單中找出此號碼、或聯絡客戶團隊以取得此資訊。</block>
   <block id="bcbbd9a155e07caa8b31001adc835c79" category="list-text">BlueXP 帳戶 ID</block>
   <block id="450f374ea7faf8a2818e9556a4ab9a8a" category="list-text">在 * 授權金鑰 * 欄下、按一下 * 取得 NetApp 授權檔案 * 。</block>
-  <block id="b543b3b4d3f21d79c2c8bf601ea5d45d" category="list-text">輸入您的租戶 ID （ BlueXP 帳戶 ID ）、然後按一下 * 提交 * 以下載授權檔案。</block>
   <block id="af8d3a18d6425ec49a99c09691466f39" category="summary">透過 Web UI 提供的 BlueXP 分類功能也可透過 Swagger API 取得。</block>
   <block id="3e70aaa0489a8fa1d39b16943a3f0844" category="doc">BlueXP 分類 API</block>
   <block id="8b2aa55ee7b70ec31ec11bb4537186f7" category="paragraph">BlueXP 分類中定義了四種類別、對應於 UI 中的標籤：</block>
@@ -3471,7 +3459,6 @@
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">如需雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的相關技術支援、請參閱該產品的 BlueXP 文件中的「取得說明」。</block>
   <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">若要獲得 BlueXP 及其儲存解決方案與服務的專屬技術支援、請使用下列支援選項。</block>
   <block id="f3cd3d23d33dfe26418bbc5243171a69" category="inline-link">私有模式</block>
-  <block id="040827df4818cd49af8851daf98180cd" category="paragraph">如果您已在內部部署網站中沒有網際網路存取權的主機上部署 BlueXP 分類、表示您已在中部署 BlueXP Connector<block ref="6426a8a427a5eadce24d979d317c10cc" category="inline-link-rx"></block>、您必須從連線網際網路的系統取得授權檔案。無法使用序號和NSS帳戶啟動使用許可、進行暗色站台安裝。</block>
   <block id="3013e5a381c02243fda59b6191eacc44" category="paragraph">您可以從BlueXP頂端選取「*帳戶*」下拉式清單、然後按一下帳戶旁的「*管理帳戶*」、即可找到您的BlueXP帳戶ID。您的帳戶ID位於「總覽」索引標籤。若為無法存取網際網路的私人模式網站、請使用 *account-DARKSITE1* 。</block>
   <block id="5325380bce88952998c2cad273cdef5b" category="paragraph">雖然資料的初始掃描可能需要一點時間、但後續掃描只會檢查增量變更、進而縮短系統掃描時間。BlueXP 分類會以循環方式持續掃描您的資料、一次六個儲存庫、以便快速分類所有變更的資料。</block>
   <block id="098df4b7dbd64ba9dbd496df653f27b4" category="paragraph">請注意、 BlueXP 分類每天只掃描一次資料庫、不會像其他資料來源一樣持續掃描資料庫。</block>
@@ -3483,4 +3470,28 @@
   <block id="e25bae53fb1951841531279fa78ee63a" category="section-title">本版本已修正下列問題</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">修正在儀表板中顯示系統掃描的檔案數量時出現不一致的情況。</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">處理和報告名稱和中繼資料中含有特殊字元的檔案和目錄、以改善掃描行為。</block>
+  <block id="5ef05167488611c5bd4ff0f410595ce4" category="section-title">30 天免費試用</block>
+  <block id="ebca662192a78887713c7cdcbabfe424" category="paragraph">BlueXP 分類可在 BlueXP 工作區中掃描高達 1 TB 的資料、並可免費試用 30 天。您必須向 NetApp 購買 BYOL 授權、或向雲端供應商的市場註冊訂閱、才能在該點之後繼續掃描資料。</block>
+  <block id="f9f1f4a9346cc2a4c14af1d77fcdfb80" category="paragraph">雲端供應商的隨用隨付訂閱可讓您授權使用 Cloud Volumes ONTAP 系統和許多 BlueXP 服務、例如 BlueXP 分類。您將向雲端供應商支付單一訂閱中每小時掃描的資料 BlueXP 分類金額。</block>
+  <block id="271ba7bc995d38d02a867af6769bc051" category="paragraph">訂閱可確保在免費試用結束後、服務不會中斷。試用結束時、您將根據掃描的資料量、每小時收取一次費用。在免費試用期間、您將不會從訂閱中收取費用。</block>
+  <block id="ea3d8cbacee1cddcca231123adb34272" category="list-text">按一下 * 認證 * 、然後尋找 AWS 執行個體設定檔、 Azure 託管服務識別或 Google Project 的認證。</block>
+  <block id="dc2c7fe826170a31dcc530a37d1f3de8" category="paragraph">如果您已經有 BlueXP 訂閱（如下所示適用於 AWS ）、那麼您就已經設定好了、別無所需。</block>
+  <block id="a8d4bff09d9888aaa5a199e8654f95b5" category="list-text">如果您尚未訂閱、請按一下動作功能表、然後按一下 * 關聯訂閱 * 。</block>
+  <block id="b954c3e60e010888d90a5bb99fb15f27" category="paragraph">下列影片說明如何建立關聯<block ref="60fa25c896f0169de9e5a75989c9f27f" category="inline-link-rx"></block> 訂閱AWS訂閱：</block>
+  <block id="98ad2c075d2fb10da4cf15c985c3f43f" category="inline-link">Google Cloud Marketplace</block>
+  <block id="f926c07d4bfaf1359371adb1adb67d14" category="paragraph">下列影片說明如何建立關聯<block ref="82ddec44156571798c68c5bde2400da5" category="inline-link-rx"></block> 訂購GCP：</block>
+  <block id="66145e361f72b54aa011f59d543dfb08" category="section-title">使用年度合約</block>
+  <block id="5eaba7c2dc62e15a7621fd6721ea170d" category="paragraph">購買年度合約、每年支付 BlueXP 分類費用。提供 1 年、 2 年或 3 年的條款。</block>
+  <block id="5d88ecbc0b3e3130da7993534c150ab6" category="paragraph">如果您有市場的年度合約、則所有 BlueXP 分類資料掃描都會根據該合約收費。您無法與BYOL混搭一年一度的市場合約。</block>
+  <block id="8ceedd80ab3ad72f595a01a7d5ea8d33" category="inline-link">如需價格詳細資料、請前往BlueXP Marketplace產品</block>
+  <block id="bd433a8ffac0add0e12c4270b960de4b" category="list-text">AWS ：<block ref="acdf2fddcae41b5d9e2a00300f214a12" category="inline-link-rx"></block>。</block>
+  <block id="f3688be07a05c277e8cb7dcec2630b7e" category="list-text">Azure ：<block ref="1f8e94c7a027569b83a80d73b2d9761d" category="inline-link-rx"></block>。</block>
+  <block id="dae6b2941afcce1328dee9f363e692e3" category="list-text">Google Cloud ：請聯絡您的 NetApp 銷售代表以購買年度合約。合約可在Google Cloud Marketplace以私人優惠形式提供。NetApp 與您分享私人優惠後、您可以在 BlueXP 分類啟動期間、從 Google Cloud Marketplace 訂閱年度方案。</block>
+  <block id="bc4b68566420a250ac774580fe4c63ac" category="paragraph">您可以使用 BlueXP 數位錢包來管理 BlueXP 分類 BYOL 授權。您可以新增授權、更新現有授權、以及從 BlueXP 數位錢包檢視授權狀態。</block>
+  <block id="bbffe9d9bab8f2f862116a36d9e1e226" category="paragraph">購買 BlueXP 分類（ Data Sense ）授權後、您可以輸入 BlueXP 分類序號和 NetApp 支援網站 （ NSS ）帳戶、或上傳 NetApp 授權檔案（ NLF ）、在 BlueXP 中啟動授權。下列步驟說明如果您打算使用NLF授權檔案、該如何取得該檔案。</block>
+  <block id="aaf2f102dd6df6f644ec8a4989bbaa59" category="paragraph">如果您已在內部部署網站中沒有網際網路存取權的主機上部署 BlueXP 分類、表示您已在中部署 BlueXP Connector<block ref="6426a8a427a5eadce24d979d317c10cc" category="inline-link-rx"></block>、您必須從連線網際網路的系統取得授權檔案。使用序號啟動授權、而 NSS 帳戶無法用於私有模式安裝。</block>
+  <block id="f68bf28051d836364652b5a91d1bcd3a" category="list-text">輸入您的BlueXP帳戶ID（在支援網站上稱為「租戶ID」）、然後按一下*提交*下載授權檔案。</block>
+  <block id="ee28dd0aeae91008620b667fd834dc53" category="paragraph">如果您的授權期限即將到期、或您的授權容量已達到上限、則會在「分類 UI 」中通知您。</block>
+  <block id="a274f4d4670213a9045ce258c6c56b80" category="inline-link">通知</block>
+  <block id="697511e8d7a1e79b59a32ea4cdfd567a" category="paragraph">此狀態也會出現在 BlueXP 數位錢包和中<block ref="5ed52bf872a49314e95419b00a21b97c" category="inline-link-rx"></block>。</block>
 </blocks>
