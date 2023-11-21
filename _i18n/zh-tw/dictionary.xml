@@ -817,7 +817,6 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隱私權政策</block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開放原始碼</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
-  <block id="8900e436e6a12ce71aa703bf1c8be02c" category="inline-link">查看Data Sense可在您的資料中識別的所有個人資料類型</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
   <block id="8e6b2e179301ba8e4086645fd738ff9d" category="paragraph">按一下「 * Compliance * （ * 符合性 * ）」、選取「 * Configuration * （ * 組態 * ）」索引標籤、然後針對特定工作環境中的磁碟區啟動法規遵循掃描。</block>
   <block id="2e9f6b00a7a0f1c26bc47bb134eae6d9" category="section-title">探索Azure NetApp Files 您要掃描的整個系統</block>
@@ -1448,16 +1447,6 @@
   <block id="1ce92447664cc42f3e2c04aaf8570862" category="cell">紐西蘭銀行帳戶</block>
   <block id="2be885677b02540592a1f44b87ee5fb9" category="cell">紐西蘭IRD編號（稅金ID）</block>
   <block id="3c266b4db1bf588305e19eddcef36116" category="cell">紐西蘭護照號碼</block>
-  <block id="6006377785b7aa3dfed8795e05fbc569" category="section-title">2022年8月7日（1.15版）</block>
-  <block id="afae08b9f3014d73a3bf7e0c201b2b36" category="section-title">來自紐西蘭的五種新型個人資料是由Data Sense所識別</block>
-  <block id="3b4b0faa54186ef002c6026e97e51a10" category="paragraph">Data Sense可識別及分類包含下列資料類型的檔案：</block>
-  <block id="c189819be34e41f0ac712261c4bb10b0" category="list-text">紐西蘭銀行帳戶號碼</block>
-  <block id="c8c8337bd5f0527c7ba4b08117f3d96f" category="paragraph"><block ref="44b442fb31109b9e2fdef6fe3589adf6" category="inline-link-macro-rx"></block>。</block>
-  <block id="8d3dd83a131924f6dd08fdea2d8e7828" category="section-title">能夠新增階層連結檔案、以指出檔案移動的原因</block>
-  <block id="13cd21aa095db4c5e2c5cd12303ecc97" category="section-title">您目錄中的個人資料和敏感個人資料會顯示在調查結果中</block>
-  <block id="6b473faf5fc253b69b173e6b8b87f726" category="inline-link">請參閱此處的範例</block>
-  <block id="76013a8e1044d1903752927bac2c2799" category="section-title">檢視已成功分類的磁碟區、儲存區等數量狀態</block>
-  <block id="046e94b126bcddc4303664d7f72819a5" category="inline-link">請參閱如何檢視此資訊</block>
   <block id="992e3ca84c2944a0dbcaf7e99231a50e" category="inline-link-macro">瞭解對應與分類掃描之間的差異</block>
   <block id="5e27c5cc9f66f543d963585b42d1709d" category="section-title">維持法規遵循</block>
   <block id="3a1ce1b3df0ddd54818235c5f83820d9" category="list-text">根據GDPR、CCPA、PCI及HIPAA隱私權法規的要求、識別範圍廣泛的敏感個人資訊。</block>
@@ -1495,17 +1484,7 @@
   <block id="0bac9ec0256a9fd2858c7836245c9025" category="list-text">對於AWS：使用&lt;EC2-user&gt;</block>
   <block id="5e0b61460f50f9b62d95b060b2f3f8d2" category="inline-image-macro">在「調查結果」窗格中顯示自訂regex結果範例的快照。</block>
   <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8b4506c76e97dc4cbdfa92467d581a0a" category="section-title">現在、您可以在資料中新增Data Sense將識別的自訂模式</block>
-  <block id="331a3f3aa511b1c438e9c58674f70985" category="section-title">2022年9月6日（1.16版）</block>
-  <block id="d59aefa3621ff4109ce747758711c46c" category="section-title">能夠立即重新掃描儲存庫、以反映檔案中的變更</block>
   <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">請參閱如何重新掃描目錄</block>
-  <block id="24a7d06e1fe90aca0c0301d12fadc686" category="section-title">在「資料調查」頁面中、新篩選「資料偵測掃描」狀態</block>
-  <block id="e2e0734ca474deb38b2c13f526832e06" category="paragraph">「分析狀態」篩選器可讓您列出處於「資料感應」掃描特定階段的檔案。您可以選取一個選項來顯示*擱置第一次掃描*、*完成*正在掃描、*擱置重新掃描*或*失敗*要掃描的檔案清單。</block>
-  <block id="9d771bf7f3ed0f2d7cd7bbf827bab0a2" category="section-title">資料主體現在被視為掃描中「個人資料」的一部分</block>
-  <block id="76eab5fecba3164354032ddcdc0feb3d" category="paragraph">Data Sense現已將資料主體視為「法規遵循儀表板」中所顯示之「個人結果」的一部分。此外、在「調查」頁面中執行搜尋時、您可以選取「個人資料」下方的「資料主旨」、以僅檢視包含資料主旨的檔案。</block>
-  <block id="6d3ab1cb3139d4416e111272db779d6d" category="section-title">資料感測階層連結檔案現在被視為掃描中「類別」的一部分</block>
-  <block id="d6933caaf62074fc0c3e63f604181712" category="inline-link">深入瞭解如何建立階層連結檔案</block>
-  <block id="636d406982c471ea6a3e9f3a5d5f7f1f" category="paragraph">此外、在「調查」頁面中執行搜尋時、您可以選取「類別」下的「資料感測Breadcrumbs」、以僅檢視「資料感測階層連結」檔案。</block>
   <block id="88ce972549d8b67ad56bc9e681818ca2" category="section-title">新增SharePoint Online帳戶</block>
   <block id="8b7071c98b3d8a3e43ecfa77bab75857" category="paragraph">新增使用者檔案所在的SharePoint Online帳戶。</block>
   <block id="c5545572ea4069cfaa50e205fd80e522" category="inline-image-macro">「組態」頁面的快照、您可以在其中按一下「新增SharePoint Online」按鈕。</block>
@@ -1714,8 +1693,6 @@
   <block id="8cc577dbce4245d15abad6f3b1dfc995" category="paragraph">每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統最多可保留100個記錄檔-在達到上限後、會自動刪除舊的記錄檔。</block>
   <block id="fbda64f06352e44a4e6523dbdd6b039e" category="paragraph">請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：</block>
   <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">瞭解如何安裝掃描器節點來掃描其他資料來源</block>
-  <block id="095466eeefcbabc811ab5e2a672ee877" category="paragraph">您可以使用兩種方法新增自訂的「個人資料」、以便Data Sense在未來的掃描中識別。如此一來、您就能完整瞭解所有組織檔案中潛在敏感資料所在的位置。</block>
-  <block id="3fb1605dea41a1022e020f895acc727f" category="list-text">您可以使用規則運算式（regex）新增個人模式。</block>
   <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。</block>
   <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">向您的雲端供應商訂閱BlueXP Marketplace清單、或</block>
   <block id="21315205ba34163a83853c5526e534c1" category="list-text">一次最多可重新掃描1000個項目。</block>
@@ -1869,7 +1846,6 @@
   <block id="a05ecd168005e0205e52b540a66b4208" category="paragraph">我們提供新的篩選條件、以精簡「資料調查」頁面中顯示的結果：</block>
   <block id="d40d8569fcb40c761c8217de218391ba" category="list-text">「有存取權的使用者人數」篩選器會顯示哪些檔案和資料夾已對特定數量的使用者開放。您可以選擇一個數字範圍來精簡結果、例如、查看51到100位使用者可以存取哪些檔案。</block>
   <block id="142c1e7e965016b6fe04e45f8ae01209" category="list-text">「建立時間」、「探索時間」、「上次修改時間」和「上次存取時間」篩選條件現在可讓您建立自訂日期範圍、而不只是選擇預先定義的天數範圍。例如、您可以在「過去10天」內尋找「建立時間」為「6個月以上」或「上次修改日期」的檔案。</block>
-  <block id="248b219562d5c677bea769543286aaf9" category="list-text">紐西蘭駕駛證號碼</block>
   <block id="47a431ede9d263c65258e5be6ff6b2c1" category="paragraph">隱私權風險評估報告概述貴組織的隱私權風險狀態、如GDPR和CCPA等隱私權法規要求。報告包含下列資訊：</block>
   <block id="e9ebebe267d1d822cab67a314b8df765" category="section-title">每份資料調查報告中包含的內容</block>
   <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">這會擷取所需的軟體和實際安裝檔案* cc_OnPrem_installer.tar。gz*。</block>
@@ -3128,13 +3104,6 @@
   <block id="b218ff5e02da9d35096238a32166dde5" category="paragraph">Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。<block ref="f9677d6768fea140fb85ff23d7983a85" category="inline-link-rx"></block>。</block>
   <block id="96c123ab6f4734112bc50bc214494621" category="paragraph">現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="30c54ee6e02a85bc7c1713b7a90e6ed8" category="inline-link-rx"></block>。</block>
   <block id="0226172c9b936ddaa203e083a4b9cc81" category="paragraph">如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。<block ref="838641529bd2d9079ec09cedca69b267" category="inline-link-rx"></block>。</block>
-  <block id="cd0d9671e6080c26297795b009cbbdce" category="paragraph">如果您需要立即重新掃描特定儲存庫、使變更反映在系統中、您可以選取儲存庫並重新掃描。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="30c54ee6e02a85bc7c1713b7a90e6ed8" category="inline-link-rx"></block>。</block>
-  <block id="394e72d8b35ee4d082653107b57db524" category="paragraph"><block ref="0036173f4fe5a5d22b0f2328a28ebcbb" category="inline-link-rx"></block>。</block>
-  <block id="82f7cb5359fda2db7066d505c282baf6" category="paragraph">Data Sense現在將階層連結檔案視為「符合性儀表板」中顯示的類別的一部分。將檔案從來源位置移至NFS共用時、會建立這些檔案Data Sense。<block ref="333cd23a73253379d4dadb8212365c81" category="inline-link-rx"></block>。</block>
-  <block id="9602c54aa4fcdb34c3d9e86a7d890ea2" category="paragraph">當您使用「資料感應」功能將來源檔案移至NFS共用時、現在您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案、系統會在名為的來源位置建立階層連結檔案<block ref="e5b81a76aedb2ddb1da7aba12de3e20b" prefix=" " category="inline-code"></block> 可顯示文件的移動位置和移動文件的用戶。<block ref="2ccef004fdad5fd0d9cdb8ce1d569434" category="inline-link-rx"></block>。</block>
-  <block id="0aec8167e209c9b773de640809bb2ffe" category="paragraph">「資料調查」頁面現在會顯示您目錄（資料夾和共用）內的個人資料和敏感個人資料結果。<block ref="838b4ac121a236248619da49a65d1710" category="inline-link-rx"></block>。</block>
-  <block id="f1454006c2b84f6126900ebe59c31558" category="paragraph">檢視Data Sense正在掃描的個別儲存庫（Volume、儲存區等）時、您現在可以看到「對應」的儲存庫數量、以及「分類」的儲存庫數量。在所有資料上執行完整AI識別時、分類所需時間會更長。<block ref="2a13251a6fe881bbd1315d595f667f8b" category="inline-link-rx"></block>。</block>
-  <block id="b37b0bfc35cb447c84138ba82441ec4f" category="paragraph">這些關鍵字和模式會新增至Data Sense已使用的現有預先定義模式、結果會顯示在「個人模式」區段下方。<block ref="a38b2261878a3d41c0abfc69bd23b15e" category="inline-link-rx"></block>。</block>
   <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">您可以<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
   <block id="1b01b1e09dd0c52ed6a6d8b4ca2a0568" category="paragraph">若要在雲端供應商環境中建立 Connector 、請參閱<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>或<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -3407,9 +3376,6 @@
   <block id="8909a1f3cdd58859743896107e545477" category="list-text">做為 .JSON 檔案、匯出至 NFS 共用、最多可包含 100,000 列資料。如果資料列超過 10 、 000 列、則會建立其他 .JSON 檔案。</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">如果 BlueXP 分類正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）和資料庫（結構化資料）、則最多可下載三個報告檔案。</block>
   <block id="abfab9fcbcf9c983c6fcb0efced8edc6" category="cell">8080 （ TCP ）、 6000 （ TCP ）、 443 （ TCP ）和 80</block>
-  <block id="31bf187a1f6ba9a21c24893034392c45" category="cell">Connector 的安全性群組必須允許透過連接埠 6000 和 443 的傳入和傳出流量進出 BlueXP 分類執行個體。
-
-請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。</block>
   <block id="17308c76959fcb971603b7274a57c128" category="list-text">* 作業系統 * ：</block>
   <block id="3e91b710997d720d3e069e8c923eb206" category="list-text">下列作業系統需要使用 Docker Container 引擎：</block>
   <block id="156e173d1de86766f5cb22a057c779e9" category="list-text">Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 或更新版本）</block>
@@ -3494,4 +3460,7 @@
   <block id="ee28dd0aeae91008620b667fd834dc53" category="paragraph">如果您的授權期限即將到期、或您的授權容量已達到上限、則會在「分類 UI 」中通知您。</block>
   <block id="a274f4d4670213a9045ce258c6c56b80" category="inline-link">通知</block>
   <block id="697511e8d7a1e79b59a32ea4cdfd567a" category="paragraph">此狀態也會出現在 BlueXP 數位錢包和中<block ref="5ed52bf872a49314e95419b00a21b97c" category="inline-link-rx"></block>。</block>
+  <block id="13d4946175fa2baa511a3731aec3cf3d" category="paragraph">Connector 的安全性群組必須允許透過連接埠 6000 和 443 的傳入和傳出流量進出 BlueXP 分類執行個體。</block>
+  <block id="ba66ea25533ed21d178a828c4ca4e652" category="list-text">需要連接埠 6000 、才能讓 BlueXP 等級 BYOL 授權在黑暗的站台中運作。</block>
+  <block id="1f883a560be0732076f2237a57c5195f" category="list-text">應開啟連接埠 8080 、以便在 BlueXP 中查看安裝進度。</block>
 </blocks>
