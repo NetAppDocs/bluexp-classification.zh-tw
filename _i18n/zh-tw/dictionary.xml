@@ -3235,8 +3235,6 @@
   <block id="d2a2c5ad694a196d91103a3db366503f" category="paragraph">目前不支援掃描 Cloud Volumes ONTAP 、 Azure NetApp Files 、適用於 ONTAP 的 FSX 、 AWS S3 或 Google Drive 、 以私有模式部署 BlueXP 分類時的 OneDrive 或 SharePoint Online 帳戶。</block>
   <block id="548a75d789202d935a1a2f04740b1caf" category="paragraph">如果您尚未以私有模式安裝 Connector 、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> 現在就在Linux主機上。</block>
   <block id="958f4b7cbe550d6d49b31bbeff50f3a9" category="paragraph">如果您尚未在私有模式中安裝 BlueXP Connector 、<block ref="11f86544d4f60d001e494bbafd1f2548" category="inline-link-rx"></block> 在離線站台的Linux主機上。</block>
-  <block id="ebd8af30c2bd1f5614199bd389919de2" category="list-text">Red Hat Enterprise Linux 7.8 和 7.9 版 - Linux 核心版本必須為 4.0 或更新版本</block>
-  <block id="067032f0b3420d92b7bee458a84f9cb8" category="list-text">CentOS 7.8 和 7.9 版 - Linux 核心版本必須為 4.0 或更新版本</block>
   <block id="5c2d28b4f3a99b0fe3968b98ea7d88e5" category="inline-link-macro">請參閱此處的更多詳細資料</block>
   <block id="92b051108aff71c86d91cfa5338016b1" category="paragraph">請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它是寫入的<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>。 <block ref="d63cd9daf9e428da9929248a998d6b79" category="inline-link-macro-rx"></block>。</block>
   <block id="e441d0b06845e470533ecf90d990663b" category="list-text">將安裝程式套件複製到您打算在私有模式中使用的 Linux 主機。</block>
@@ -3463,4 +3461,6 @@
   <block id="13d4946175fa2baa511a3731aec3cf3d" category="paragraph">Connector 的安全性群組必須允許透過連接埠 6000 和 443 的傳入和傳出流量進出 BlueXP 分類執行個體。</block>
   <block id="ba66ea25533ed21d178a828c4ca4e652" category="list-text">需要連接埠 6000 、才能讓 BlueXP 等級 BYOL 授權在黑暗的站台中運作。</block>
   <block id="1f883a560be0732076f2237a57c5195f" category="list-text">應開啟連接埠 8080 、以便在 BlueXP 中查看安裝進度。</block>
+  <block id="3834cda66b40129353aaded5673c3634" category="list-text">Red Hat Enterprise Linux 版本 7.8 和 7.9</block>
+  <block id="05b80f267d8929f809fe86d91268bc94" category="list-text">CentOS 版本 7.8 和 7.9</block>
 </blocks>
