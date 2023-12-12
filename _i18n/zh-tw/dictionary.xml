@@ -1393,7 +1393,6 @@
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">對話方塊會顯示正在下載報告的訊息。</block>
   <block id="8cb8a6e0c4d4366f74cd4f0b6f61a0f6" category="paragraph">*非結構化目錄資料報告*包含下列資料夾與檔案共用的相關資訊：</block>
   <block id="76cbd87b5322b897c255d541785ad658" category="list-text">儲存儲存庫（例如資料夾或檔案共用）</block>
-  <block id="45fe1c24aae6844389ce04f26df40a13" category="list-text">檔案路徑（目錄名稱）</block>
   <block id="eed7cc7f64269eb19a98b58ae0d79b6f" category="list-text">探索到的時間</block>
   <block id="e1b1adec6acf239fb7bfb9f392edd34d" category="list-text">開放式權限</block>
   <block id="c24fc9c3402e7cb47c72d71cf6d864be" category="list-text">目錄類型</block>
@@ -3370,7 +3369,6 @@
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">深入瞭解 BlueXP 分類 API</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
   <block id="90ca6bd84833f8a6659f7ea02a7649ba" category="list-text">您可以將 DFS （分散式檔案系統）共用新增為一般 CIFS 共用。然而、由於 BlueXP 分類並不知道共享區是以多個伺服器 / 磁碟區合併為單一 CIFS 共用而建置、因此當訊息只適用於位於不同伺服器 / 磁碟區的其中一個資料夾 / 共用時、您可能會收到有關共用區的權限或連線錯誤。</block>
-  <block id="8909a1f3cdd58859743896107e545477" category="list-text">做為 .JSON 檔案、匯出至 NFS 共用、最多可包含 100,000 列資料。如果資料列超過 10 、 000 列、則會建立其他 .JSON 檔案。</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">如果 BlueXP 分類正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）和資料庫（結構化資料）、則最多可下載三個報告檔案。</block>
   <block id="abfab9fcbcf9c983c6fcb0efced8edc6" category="cell">8080 （ TCP ）、 6000 （ TCP ）、 443 （ TCP ）和 80</block>
   <block id="17308c76959fcb971603b7274a57c128" category="list-text">* 作業系統 * ：</block>
@@ -3385,7 +3383,6 @@
   <block id="0cc4457720b5fe0dd1b8dc6667280ebb" category="list-text">確認系統已安裝兩個必要軟體套件（ Docker 或 Podman Engine 和 Python 3 ）。</block>
   <block id="bfd42c156b2ca871cd12ee8e72e55e95" category="paragraph">會比較所有大小為 1 MB 或更大且包含個人或敏感個人資訊的檔案（不包括資料庫）、以查看是否有重複的檔案。您可以使用「調查」頁面篩選「檔案大小」和「重複」、來查看環境中要複製哪些特定大小範圍的檔案。</block>
   <block id="285a3049428c6b155fde44a18621f551" category="paragraph">所有重複的檔案都會顯示在「結果」頁面中。</block>
-  <block id="d4c414c875c5535df32b9c04f15b398d" category="paragraph">您可以使用兩種不同的格式儲存報告：</block>
   <block id="9d1bf1e07d6563a578988a0916d686ff" category="section-title">9 月 5 日（ 1.25 版）</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="section-title">從「調查結果」頁面、最多可在 100 、 000 個項目上套用標記</block>
   <block id="22f62cdf0824b945602b7808b1cb329f" category="inline-link">瞭解方法</block>
@@ -3462,5 +3459,14 @@
   <block id="1f883a560be0732076f2237a57c5195f" category="list-text">應開啟連接埠 8080 、以便在 BlueXP 中查看安裝進度。</block>
   <block id="3834cda66b40129353aaded5673c3634" category="list-text">Red Hat Enterprise Linux 版本 7.8 和 7.9</block>
   <block id="05b80f267d8929f809fe86d91268bc94" category="list-text">CentOS 版本 7.8 和 7.9</block>
-  <block id="7d389403e7b93ff8a467567b0e19cd8a" category="list-text">以 .CSV 檔案形式傳送至本機機器、最多可包含 10 、 000 列資料。</block>
+  <block id="875fbf0a91ad95e1c95e1ac6fd492bc2" category="paragraph">報告有兩種不同格式：</block>
+  <block id="238112e6876034d2f424b96b637afe8a" category="list-text">做為 .CSV 檔案、您可以儲存至本機機器。</block>
+  <block id="604cde1447e130e4655296bd7bafa56a" category="paragraph">此報告最多可包含 10 、 000 列資料。</block>
+  <block id="0bcb699578dbf297d1eb8bc55c1d5ae8" category="list-text">以 .JSON 檔案的形式匯出至 NFS 共用。</block>
+  <block id="9b90713ae6cde3bdbdd15b3cc3deed4f" category="paragraph">如果有超過 250,000 列資料、則會建立其他 .JSON 檔案。</block>
+  <block id="96a4e4d64dfcd958a53c9d27cb6f9c81" category="list-text">儲存庫類型</block>
+  <block id="8d41341b04800c9b0f9269d35caefe50" category="list-text">檔案大小（ MB ）</block>
+  <block id="12863c4f3d21d132902517901137f0ce" category="list-text">掃描分析錯誤</block>
+  <block id="c0796e6eb525f9f4fe2a9d96a28d314a" category="list-text">目錄名稱</block>
+  <block id="ea36f55b106d5d1443d6a1e80c18df3d" category="list-text">目錄擁有者</block>
 </blocks>
