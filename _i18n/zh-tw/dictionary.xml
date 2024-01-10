@@ -3469,4 +3469,28 @@
   <block id="12863c4f3d21d132902517901137f0ce" category="list-text">掃描分析錯誤</block>
   <block id="c0796e6eb525f9f4fe2a9d96a28d314a" category="list-text">目錄名稱</block>
   <block id="ea36f55b106d5d1443d6a1e80c18df3d" category="list-text">目錄擁有者</block>
+  <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。</block>
+  <block id="9ada56a36c98a6592b93aac97b759b65" category="doc">將其他群組 ID 定義為「開放給組織」</block>
+  <block id="54f4d6ea6929f3157249a7232005ba31" category="paragraph">當群組 ID （ GID ）附加至 NFS 檔案中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。</block>
+  <block id="85755c2c4a65adf46f4aed267e145acd" category="paragraph">進行此變更並重新掃描檔案和資料夾後、任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示此權限、而且這些權限也會出現在您顯示檔案權限的報告中。</block>
+  <block id="5b2ef9bd1232e63caf3da28133ca8a3d" category="paragraph">您必須登入 BlueXP 分類系統、才能編輯組態檔並執行指令碼、才能使用此功能。</block>
+  <block id="c079e3a087379d135bc6228cdbf4538d" category="section-title">登入 BlueXP 分類系統</block>
+  <block id="3e6039a3c9f368f407b293a4cae886e2" category="paragraph">當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接存取組態檔案和指令碼。</block>
+  <block id="aea796c551760c123249c98597ef5dab" category="section-title">將「開放組織」權限新增至群組 ID</block>
+  <block id="cab0d8189f1383e6633abad2d8bb10e2" category="paragraph">您必須先擁有群組 ID 編號（ GID ）、才能開始執行此工作。</block>
+  <block id="2783de23499f1b6912284079950af328" category="list-text">在 BlueXP 分類系統上、移至「 /opt/NetApp/config/custom_configuration 」、然後開啟「 data_provider.yaml 」檔案。</block>
+  <block id="f81b0bf85bf2ac124c8235722fd5953b" category="list-text">在「 groupy_group_ids: [] 」一行中新增群組 ID 。例如：</block>
+  <block id="98ab797cb238cc535772dce1663baf49" category="paragraph">請勿變更此檔案中的任何其他內容。</block>
+  <block id="fb448d942cb14f250d9497a3bb5f49dc" category="list-text">前往「 /opt/NetApp/Datasense 」並執行下列指令碼：</block>
+  <block id="8a9190ee1ce170537f2281a1fd3efbf8" category="paragraph">此命令會將修訂後的群組 ID 權限提交給分類引擎。</block>
+  <block id="fa72d06a2d710ef92a76614af32ec1f7" category="paragraph">所有後續資料掃描都會識別附加這些群組 ID 為「開放給組織」的檔案或資料夾。</block>
+  <block id="3ef472518560fb1d514f802f7b78520c" category="paragraph">您可以編輯群組 ID 清單、並使用這些相同步驟刪除過去新增的任何群組 ID 。執行指令碼以提交變更後、將會更新修訂版的群組 ID 清單。</block>
+  <block id="547ea5f0fcc4aedf35c256e9b5b85845" category="paragraph">若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense 」執行下列命令：</block>
+  <block id="81c60fb26d30a0a1fa208bc6b7d14e6f" category="section-title">1 月 10 日（版本 1.27 ）</block>
+  <block id="be8658cdca9524eb49f00560785f3ab7" category="section-title">調查頁面結果現在除了顯示項目總數之外、還會顯示總大小</block>
+  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">「調查」頁面中的篩選結果現在除了顯示檔案總數之外、還會顯示項目的總大小。這有助於移動檔案、刪除檔案等。</block>
+  <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="section-title">將其他群組 ID 設定為「開放給組織」</block>
+  <block id="617de59f0823cef046ababc40408cb92" category="inline-link">新增其他群組 ID 為「開放給組織」</block>
+  <block id="883dea14e891e466e8184cc34b65bd17" category="paragraph">現在、您可以在 NFS 中設定群組 ID 、使其在 BlueXP 分類中直接被視為「開放組織」、前提是這些 ID 一開始並未設定為具有該權限。瞭解如何操作<block ref="d0c1b51f12c2e361f70a1ff7d6038c44" category="inline-link-rx"></block>。</block>
+  <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">將現有的群組 ID 定義為「開放給組織」</block>
 </blocks>

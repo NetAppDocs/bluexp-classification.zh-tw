@@ -1,0 +1,78 @@
+---
+sidebar: sidebar 
+permalink: task-add-group-id-as-open.html 
+keywords: permissions, open to organization, file access 
+summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。 
+---
+= 將其他群組 ID 定義為「開放給組織」
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+當群組 ID （ GID ）附加至 NFS 檔案中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。
+
+進行此變更並重新掃描檔案和資料夾後、任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示此權限、而且這些權限也會出現在您顯示檔案權限的報告中。
+
+您必須登入 BlueXP 分類系統、才能編輯組態檔並執行指令碼、才能使用此功能。
+
+
+
+== 登入 BlueXP 分類系統
+
+當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接存取組態檔案和指令碼。
+
+當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：
+
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path_to_the_ssh驗證金鑰>= ssh驗證金鑰的位置
+* <machine_user>：
++
+** 對於AWS：使用<EC2-user>
+** Azure：使用為BlueXP執行個體建立的使用者
+** GCP：使用為BlueXP執行個體建立的使用者
+
+
+* <datasense_ip>=虛擬機器執行個體的IP位址
+
+
+請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
+
+
+
+
+== 將「開放組織」權限新增至群組 ID
+
+您必須先擁有群組 ID 編號（ GID ）、才能開始執行此工作。
+
+.步驟
+. 在 BlueXP 分類系統上、移至「 /opt/NetApp/config/custom_configuration 」、然後開啟「 data_provider.yaml 」檔案。
+. 在「 groupy_group_ids: [] 」一行中新增群組 ID 。例如：
++
+ organization_group_ids: [1014, 1015, 21, 2021, 1013, 2020, 1018, 1019]
++
+請勿變更此檔案中的任何其他內容。
+
+. 前往「 /opt/NetApp/Datasense 」並執行下列指令碼：
++
+ update_data_providers_from_config_file.sh
++
+此命令會將修訂後的群組 ID 權限提交給分類引擎。
+
+
+
+所有後續資料掃描都會識別附加這些群組 ID 為「開放給組織」的檔案或資料夾。
+
+您可以編輯群組 ID 清單、並使用這些相同步驟刪除過去新增的任何群組 ID 。執行指令碼以提交變更後、將會更新修訂版的群組 ID 清單。
+
+若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense 」執行下列命令：
+
+ get_data_providers_configuration.sh

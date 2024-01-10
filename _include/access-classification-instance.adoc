@@ -1,0 +1,24 @@
+= 
+:allow-uri-read: 
+
+
+當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：
+
+ ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
+* <path_to_the_ssh驗證金鑰>= ssh驗證金鑰的位置
+* <machine_user>：
++
+** 對於AWS：使用<EC2-user>
+** Azure：使用為BlueXP執行個體建立的使用者
+** GCP：使用為BlueXP執行個體建立的使用者
+
+
+* <datasense_ip>=虛擬機器執行個體的IP位址
+
+
+請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
+

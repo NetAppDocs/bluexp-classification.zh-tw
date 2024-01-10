@@ -90,6 +90,8 @@ sidebar:
       url: "/task-managing-data-fusion.html"
     - title: 檢視 BlueXP 分類動作的狀態
       url: "/task-view-compliance-actions.html"
+    - title: 將現有的群組 ID 定義為「開放給組織」
+      url: "/task-add-group-id-as-open.html"
     - title: 稽核 BlueXP 分類動作的歷史記錄
       url: "/task-audit-data-sense-actions.html"
     - title: 降低 BlueXP 分類掃描速度
