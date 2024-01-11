@@ -61,7 +61,7 @@ summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、�
 +
 請勿變更此檔案中的任何其他內容。
 
-. 前往「 /opt/NetApp/Datasense 」並執行下列指令碼：
+. 請移至「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」、然後執行下列指令碼：
 +
  update_data_providers_from_config_file.sh
 +
@@ -73,6 +73,6 @@ summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、�
 
 您可以編輯群組 ID 清單、並使用這些相同步驟刪除過去新增的任何群組 ID 。執行指令碼以提交變更後、將會更新修訂版的群組 ID 清單。
 
-若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense 」執行下列命令：
+若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
 
  get_data_providers_configuration.sh

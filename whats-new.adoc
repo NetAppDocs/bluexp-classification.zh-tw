@@ -30,7 +30,7 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 === 將其他群組 ID 設定為「開放給組織」
 
-現在、您可以在 NFS 中設定群組 ID 、使其在 BlueXP 分類中直接被視為「開放組織」、前提是這些 ID 一開始並未設定為具有該權限。瞭解如何操作 https://task-add-group-id-as-open["新增其他群組 ID 為「開放給組織」"]。
+現在、您可以在 NFS 中設定群組 ID 、使其在 BlueXP 分類中直接被視為「開放組織」、前提是這些 ID 一開始並未設定為具有該權限。瞭解如何操作 https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["新增其他群組 ID 為「開放給組織」"]。
 
 
 
