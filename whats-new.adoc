@@ -30,7 +30,7 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 === 將其他群組 ID 設定為「開放給組織」
 
-現在、您可以在 NFS 中設定群組 ID 、使其在 BlueXP 分類中直接被視為「開放組織」、前提是這些 ID 一開始並未設定為具有該權限。瞭解如何操作 https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open["新增其他群組 ID 為「開放給組織」"]。
+現在您可以在 NFS 中設定群組 ID 、以便直接從 BlueXP 分類中將其視為「開放組織」、如果群組一開始沒有設定該權限。任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示為「開放給組織」。瞭解如何操作 https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["新增其他群組 ID 為「開放給組織」"]。
 
 
 
@@ -317,33 +317,3 @@ BlueXP 分類可識別及分類包含日文個人編號（也稱為「我的號�
 
 
 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["深入瞭解如何在單一主機伺服器和多個主機上安裝Data Sense"]。
-
-
-
-== 2022年11月13日（1.17版）
-
-
-
-=== 支援掃描SharePoint內部部署帳戶
-
-Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。 https://docs.netapp.com/us-en/bluexp-classification/task-scanning-sharepoint.html#adding-a-sharepoint-on-premise-account["深入瞭解"^]。
-
-
-
-=== 能夠重新掃描多個目錄（資料夾或共用）
-
-現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#rescanning-data-for-an-existing-repository["請參閱如何重新掃描目錄"^]。
-
-
-
-=== 能夠新增額外的內部部署「掃描器」節點、以掃描特定的資料來源
-
-如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。
-
-如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#add-scanner-nodes-to-an-existing-deployment["瞭解如何安裝掃描器節點來掃描其他資料來源"^]。
-
-
-
-=== 內部部署安裝程式現在會在開始安裝之前執行預先檢查
-
-在Linux系統上安裝Data Sense時、安裝程式會先檢查系統是否符合所有必要的需求（CPU、RAM、容量、網路等）、然後再開始實際安裝。這有助於您在*之前*花時間進行安裝。

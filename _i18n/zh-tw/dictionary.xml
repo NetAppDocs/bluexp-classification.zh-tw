@@ -1482,7 +1482,6 @@
   <block id="0bac9ec0256a9fd2858c7836245c9025" category="list-text">對於AWS：使用&lt;EC2-user&gt;</block>
   <block id="5e0b61460f50f9b62d95b060b2f3f8d2" category="inline-image-macro">在「調查結果」窗格中顯示自訂regex結果範例的快照。</block>
   <block id="f0957a103fdf829c95e6748bbaec5b4a" category="paragraph"><block ref="f0957a103fdf829c95e6748bbaec5b4a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a6277013831bd0ba5dd8499592e6d67b" category="inline-link">請參閱如何重新掃描目錄</block>
   <block id="88ce972549d8b67ad56bc9e681818ca2" category="section-title">新增SharePoint Online帳戶</block>
   <block id="8b7071c98b3d8a3e43ecfa77bab75857" category="paragraph">新增使用者檔案所在的SharePoint Online帳戶。</block>
   <block id="c5545572ea4069cfaa50e205fd80e522" category="inline-image-macro">「組態」頁面的快照、您可以在其中按一下「新增SharePoint Online」按鈕。</block>
@@ -1658,9 +1657,6 @@
   <block id="8dd42ed78b27180f93de7913ecab156f" category="paragraph">在所有掃描儀節點上完成安裝、並已加入管理器節點之後、「add_bers_node.sh」指令碼也會完成。安裝可能需要10到20分鐘。</block>
   <block id="ced90f42fe9747f4578603471ea454a3" category="list-text">如果將任何掃描儀節點新增至掃描儀群組、請返回Manager節點並執行下列2項工作：</block>
   <block id="b77072323352dd1724df6d20002eb9f2" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：<block ref="f484d7848213083a72fafef02f452b57" prefix=" " category="inline-code"></block></block>
-  <block id="0198cdca4033ab7a459e75dac29fa28e" category="section-title">支援掃描SharePoint內部部署帳戶</block>
-  <block id="9793f1d7484adebeb64fb621258edfaf" category="section-title">能夠重新掃描多個目錄（資料夾或共用）</block>
-  <block id="feec7c47e3e7cb8ab71bbb29acd13ee0" category="section-title">能夠新增額外的內部部署「掃描器」節點、以掃描特定的資料來源</block>
   <block id="cbcceb43df0c94c9cc9e38ba4b9389c1" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於CIFS共用、SharePoint Online、SharePoint內部部署及OneDrive中的資料。</block>
   <block id="aadddcc55c6a2a76a433b97a4366f53f" category="list-text">您可以從文字檔新增自訂關鍵字、這些文字會在您的資料中識別。</block>
   <block id="a2c1b5d018e20e258024bece4a2d254e" category="section-title">從資料庫新增自訂的個人資料識別碼</block>
@@ -1689,17 +1685,12 @@
   <block id="00fde4d5ca4e0124dccf8017bb92fc4e" category="list-text">電子郵件警示：電子郵件地址/帳戶</block>
   <block id="8cc577dbce4245d15abad6f3b1dfc995" category="paragraph">每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統最多可保留100個記錄檔-在達到上限後、會自動刪除舊的記錄檔。</block>
   <block id="fbda64f06352e44a4e6523dbdd6b039e" category="paragraph">請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：</block>
-  <block id="c490178f4142a4c06caeff7c04e922f8" category="inline-link">瞭解如何安裝掃描器節點來掃描其他資料來源</block>
   <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。</block>
   <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">向您的雲端供應商訂閱BlueXP Marketplace清單、或</block>
   <block id="21315205ba34163a83853c5526e534c1" category="list-text">一次最多可重新掃描1000個項目。</block>
   <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
   <block id="79bd49250e598bf53655f50c83b04044" category="list-text">行動類型（刪除、複製、移動、建立原則、更新原則、 重新掃描檔案、下載Json報告等）</block>
   <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">您可以在中檢視Json報告產生的進度 <block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>。</block>
-  <block id="bd975c5b95d2c7b6d2e124201b98445c" category="section-title">2022年11月13日（1.17版）</block>
-  <block id="5e5b753fd04f1adde694471a50221a49" category="paragraph">如果您已在內部部署位置安裝Data Sense、而且發現掃描特定資料來源需要更多掃描處理能力、您可以新增更多「掃描」節點、並指派它們來掃描這些資料來源。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。</block>
-  <block id="b76fbb180664dd4ccd169f21a4abcfa6" category="section-title">內部部署安裝程式現在會在開始安裝之前執行預先檢查</block>
-  <block id="8ac32533918ec230d2ec5bb2821a3378" category="paragraph">在Linux系統上安裝Data Sense時、安裝程式會先檢查系統是否符合所有必要的需求（CPU、RAM、容量、網路等）、然後再開始實際安裝。這有助於您在*之前*花時間進行安裝。</block>
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">如果您有合作夥伴或經銷商帳戶、您可以新增一或多個NSS帳戶、但這些帳戶無法與客戶層級帳戶一起新增。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">從「Support Registration（支援註冊）」頁面找到您的帳戶ID序號。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">複製上述步驟2的帳戶序號、完成安全性檢查、然後確認您已閱讀NetApp的全球資料隱私權政策。</block>
@@ -3098,9 +3089,6 @@
   <block id="256d4a07e31924bad219936ee7fbe092" category="paragraph"><block ref="6cbac5d82b5b6979376ae555290ffa96" category="inline-link-rx"></block>。</block>
   <block id="e5047cfc3a021db29e30390a5a0de3c1" category="paragraph">BlueXP 分類可識別及分類包含日文個人編號（也稱為「我的號碼」）的檔案。這包括「個人」和「公司我的號碼」。<block ref="902797e77ffbfd681f1fc19dad4fefbc" category="inline-link-rx"></block>。</block>
   <block id="70ef9f0f001698901fc7782c85efbd22" category="paragraph"><block ref="d164dabede0c4e6f2317947d0f40a4c9" category="inline-link-rx"></block>。</block>
-  <block id="b218ff5e02da9d35096238a32166dde5" category="paragraph">Data Sense現在可以掃描SharePoint Online帳戶和SharePoint內部部署帳戶（SharePoint Server）。如果您需要在自己的伺服器上安裝SharePoint、或是在無法存取網際網路的站台上安裝SharePoint、現在您可以讓Data Sense掃描這些帳戶中的使用者檔案。<block ref="f9677d6768fea140fb85ff23d7983a85" category="inline-link-rx"></block>。</block>
-  <block id="96c123ab6f4734112bc50bc214494621" category="paragraph">現在、您可以立即重新掃描多個目錄（資料夾或共用）、使變更反映在系統中。這可讓您優先重新掃描特定資料、然後再處理其他資料。<block ref="30c54ee6e02a85bc7c1713b7a90e6ed8" category="inline-link-rx"></block>。</block>
-  <block id="0226172c9b936ddaa203e083a4b9cc81" category="paragraph">如有必要、可將掃描器節點安裝在實體靠近您要掃描之資料來源的主機系統上。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。<block ref="838641529bd2d9079ec09cedca69b267" category="inline-link-rx"></block>。</block>
   <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">您可以<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
   <block id="1b01b1e09dd0c52ed6a6d8b4ca2a0568" category="paragraph">若要在雲端供應商環境中建立 Connector 、請參閱<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>或<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -3471,7 +3459,6 @@
   <block id="9ada56a36c98a6592b93aac97b759b65" category="doc">將其他群組 ID 定義為「開放給組織」</block>
   <block id="54f4d6ea6929f3157249a7232005ba31" category="paragraph">當群組 ID （ GID ）附加至 NFS 檔案中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。</block>
   <block id="85755c2c4a65adf46f4aed267e145acd" category="paragraph">進行此變更並重新掃描檔案和資料夾後、任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示此權限、而且這些權限也會出現在您顯示檔案權限的報告中。</block>
-  <block id="5b2ef9bd1232e63caf3da28133ca8a3d" category="paragraph">您必須登入 BlueXP 分類系統、才能編輯組態檔並執行指令碼、才能使用此功能。</block>
   <block id="c079e3a087379d135bc6228cdbf4538d" category="section-title">登入 BlueXP 分類系統</block>
   <block id="3e6039a3c9f368f407b293a4cae886e2" category="paragraph">當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接存取組態檔案和指令碼。</block>
   <block id="aea796c551760c123249c98597ef5dab" category="section-title">將「開放組織」權限新增至群組 ID</block>
@@ -3490,5 +3477,6 @@
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">將現有的群組 ID 定義為「開放給組織」</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">請移至「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」、然後執行下列指令碼：</block>
   <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：</block>
-  <block id="f51c5ae20e9943d0b0e6e5c5fff847e4" category="paragraph">現在、您可以在 NFS 中設定群組 ID 、使其在 BlueXP 分類中直接被視為「開放組織」、前提是這些 ID 一開始並未設定為具有該權限。瞭解如何操作<block ref="a69630de08e764820516472e7391212c" category="inline-link-rx"></block>。</block>
+  <block id="4103104f589e62a63d3d9cfb58c764f2" category="paragraph">若要啟動此功能、您需要登入 BlueXP 分類系統、以便編輯組態檔案並執行指令碼。</block>
+  <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">現在您可以在 NFS 中設定群組 ID 、以便直接從 BlueXP 分類中將其視為「開放組織」、如果群組一開始沒有設定該權限。任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示為「開放給組織」。瞭解如何操作<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
 </blocks>
