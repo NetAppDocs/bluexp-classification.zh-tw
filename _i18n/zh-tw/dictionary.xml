@@ -2569,7 +2569,6 @@
   <block id="a0ae0e32ddfd7ab74e020981760f58f8" category="paragraph">BlueXP 分類可在雲端或內部部署單一伺服器或叢集、無論您選擇哪一種。伺服器透過標準傳輸協定連線至資料來源、並在Elasticsearch叢集中建立結果索引、該叢集也部署在相同的伺服器上。這可支援多個雲端、跨雲端、私有雲和內部部署環境。</block>
   <block id="ff5134b8822856ebcc5677de01bc300f" category="paragraph">BlueXP 分類是 BlueXP 的一部分、支援 AWS 、 Azure 和 GCP 。如此一來、您的組織便能在不同的雲端供應商之間統一化隱私權可見度。</block>
   <block id="43fb0be49307beaaf607049cdcec4e54" category="section-title">BlueXP 分類是否有 REST API 、是否能搭配協力廠商工具使用？</block>
-  <block id="477e2dc63bdbee29f0ad2ab4fbe572fc" category="paragraph">BlueXP支援其服務的REST API功能。如果 BlueXP 不是首選的管理點、則 BlueXP 分類等服務也可以透過 REST API 使用。每個使用者動作都有REST API、可與協力廠商系統整合。</block>
   <block id="f08123eb9486c940f0187f02090476ae" category="section-title">BlueXP 分類是否可透過市場取得？</block>
   <block id="064545628e27cedb51462f11c151eea0" category="paragraph">是的、 BlueXP 和 BlueXP 分類可從 AWS 、 Azure 和 GCP 市集取得。</block>
   <block id="ff33a1d5662bade5069e8522071a3ff9" category="section-title">BlueXP 分類掃描與分析</block>
@@ -3479,4 +3478,7 @@
   <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：</block>
   <block id="4103104f589e62a63d3d9cfb58c764f2" category="paragraph">若要啟動此功能、您需要登入 BlueXP 分類系統、以便編輯組態檔案並執行指令碼。</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">現在您可以在 NFS 中設定群組 ID 、以便直接從 BlueXP 分類中將其視為「開放組織」、如果群組一開始沒有設定該權限。任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示為「開放給組織」。瞭解如何操作<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
+  <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXP支援其服務的REST API功能。如果 BlueXP 不是首選的管理點、則 BlueXP 分類等服務也可以透過 REST API 使用。每個使用者動作都有REST API、可與協力廠商系統整合。請參閱 <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
+  <block id="da4874b0888a9dafc160c24905184d23" category="section-title">是否掃描駐留在 ONTAP 磁碟區上的 Snapshot 複本？</block>
+  <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">不可以BlueXP 分類不會掃描快照、因為內容與磁碟區中的內容相同。</block>
 </blocks>

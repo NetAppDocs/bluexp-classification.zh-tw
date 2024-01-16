@@ -70,7 +70,7 @@ BlueXP 分類是 BlueXP 的一部分、支援 AWS 、 Azure 和 GCP 。如此一
 
 === BlueXP 分類是否有 REST API 、是否能搭配協力廠商工具使用？
 
-BlueXP支援其服務的REST API功能。如果 BlueXP 不是首選的管理點、則 BlueXP 分類等服務也可以透過 REST API 使用。每個使用者動作都有REST API、可與協力廠商系統整合。
+BlueXP支援其服務的REST API功能。如果 BlueXP 不是首選的管理點、則 BlueXP 分類等服務也可以透過 REST API 使用。每個使用者動作都有REST API、可與協力廠商系統整合。請參閱 link:api-classification.html["BlueXP 分類 API"^] 以取得詳細資料。
 
 
 
@@ -178,6 +178,20 @@ link:task-managing-data-fusion.html["深入瞭解"^]。
 
 
 
+=== 如果在您的功能區上啟用資料分層、會發生什麼情況ONTAP ？
+
+當 BlueXP 分類掃描冷資料分層到物件儲存的磁碟區時、它會掃描本機磁碟上的所有資料、以及分層到物件儲存的冷資料。對於實作分層的非 NetApp 產品來說、也是如此。
+
+掃描不會使冷資料變熱、因為它會保持冷、並留在物件儲存區中。
+
+
+
+=== 是否掃描駐留在 ONTAP 磁碟區上的 Snapshot 複本？
+
+不可以BlueXP 分類不會掃描快照、因為內容與磁碟區中的內容相同。
+
+
+
 === 我可以將 BlueXP 分類資訊限制在特定使用者嗎？
 
 是的、 BlueXP 分類與 BlueXP 完全整合。BlueXP使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。
@@ -191,14 +205,6 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["深入
 === 是否有人可以存取在我的瀏覽器和 BlueXP 分類之間傳送的私有資料？
 
 不可以在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料會以端點對端點加密來保護、這表示 NetApp 和第三方無法讀取資料。除非您要求並核准存取權限、否則 BlueXP 分類不會與 NetApp 分享任何資料或結果。
-
-
-
-=== 如果在您的功能區上啟用資料分層、會發生什麼情況ONTAP ？
-
-當 BlueXP 分類掃描冷資料分層到物件儲存的磁碟區時、它會掃描本機磁碟上的所有資料、以及分層到物件儲存的冷資料。對於實作分層的非 NetApp 產品來說、也是如此。
-
-掃描不會使冷資料變熱、因為它會保持冷、並留在物件儲存區中。
 
 
 
