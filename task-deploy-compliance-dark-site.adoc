@@ -139,7 +139,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 | /var/lib/泊 塢視窗 | `rwx------` 
 
 
-| /user/lib/systemd/system | `rwxr-xr-x` 
+| /usr/lib/systemd/system | `rwxr-xr-x` 
 |===
 * * 作業系統 * ：
 +

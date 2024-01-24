@@ -53,7 +53,7 @@
 | /var/lib/泊 塢視窗 | `rwx------` 
 
 
-| /user/lib/systemd/system | `rwxr-xr-x` 
+| /usr/lib/systemd/system | `rwxr-xr-x` 
 |===
 * * 作業系統 * ：
 +

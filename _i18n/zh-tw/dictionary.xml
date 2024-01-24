@@ -1275,26 +1275,7 @@
   <block id="3e51e074f12d2c873310422bb9c8cb50" category="sidebar">管理您的私有資料</block>
   <block id="b243b08794c870ea91d13357c677102f" category="sidebar">新增自訂個人資料識別碼</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識與支援</block>
-  <block id="7a1ecd84a5a121cd176d1d7c8945c20b" category="sidebar">資料量Cloud Volumes ONTAP</block>
-  <block id="8d097e38d6920ece5917d57da5699e5c" category="sidebar">內部部署ONTAP 的功能</block>
-  <block id="c7596ffa8d20a8a14d1f631c94185f72" category="sidebar">資料量 Azure NetApp Files</block>
-  <block id="fd2fd9101d9dde8ab7090da05f8117ff" category="sidebar">Amazon FSX for ONTAP Sf6 Volume</block>
-  <block id="1dc03133d25c1924f8604133a6fa7f0a" category="sidebar">一般S3儲存桶</block>
-  <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="sidebar">使用AIP標籤將資料分類</block>
-  <block id="40af1406afc061038f5851961a636714" category="sidebar">找到不合規的資料時、請建立電子郵件警示</block>
-  <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">新增您自己的自訂個人資料識別碼</block>
-  <block id="514f916b25444f3ec0ab113c2706f83a" category="sidebar">將標記和擁有者套用至需要注意的檔案</block>
-  <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">回應資料主旨存取要求</block>
-  <block id="503c49a3ccf62894992dc5b2f108ca21" category="sidebar">複製來源檔案</block>
-  <block id="2987f20ce906ae32ec7e3e192413377f" category="sidebar">移動來源檔案</block>
-  <block id="865eee83e350aaa1f9bf0c9f0c4adef0" category="sidebar">刪除來源檔案</block>
-  <block id="3305adbdafef990b45e1b0ded7f5a486" category="sidebar">檢視資料的詳細資料</block>
-  <block id="ca60961cf2d876d600daca4a1ad60001" category="sidebar">建立原則以檢視您的熱門搜尋</block>
-  <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">檢視包含私人資訊的檔案</block>
-  <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">檢視儲存設備中重複的檔案</block>
   <block id="becce430afb103abe05ad66b3e6cde8a" category="sidebar">產生法規遵循報告</block>
-  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格社群</block>
-  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
   <block id="c6bcf4a88b4c531d404128df1f1ad3a8" category="list-text">Google雲端硬碟帳戶</block>
   <block id="dc3d679737d761f6e72564d962617ffa" category="paragraph">許多使用者之所以喜歡這項功能、是因為他們想要快速掃描資料、找出需要更多研究的資料來源、然後只能針對需要的資料來源或磁碟區進行分類掃描。</block>
   <block id="a29f21b4143f28dd101eaaa1fe82fd69" category="inline-xref">請參閱下列完整清單</block>
@@ -1352,9 +1333,6 @@
   <block id="37c9303e988a90a91e5799c6d881439b" category="paragraph">內部ONTAP 系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端硬碟帳戶均可使用下列任何一種Cloud Connector進行掃描。</block>
   <block id="68c4a78a67d74510c65b916751c96b07" category="list-text">Google雲端硬碟帳戶的資料目前無法使用這些功能。</block>
   <block id="9c471504c4f66f275b7d110c46622118" category="paragraph">使用ONTAP 上述任何雲端連接器時、均可掃描內部系統、非NetApp檔案共用、一般S3物件儲存設備、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶。</block>
-  <block id="1692b32d79b99cfb5a1277f8c49a23af" category="sidebar">掃描您的工作環境</block>
-  <block id="0dcbed0ed443cc2be8b28a4bd6ea0b84" category="sidebar">掃描其他資料來源</block>
-  <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">篩選資料以檢視特定檔案</block>
   <block id="bc80eb794f149fca6a16076a0e09247f" category="list-text">最上層的索引標籤可讓您檢視檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料。</block>
   <block id="d5ef18883c38c2dd1dffc30e93610cde" category="paragraph">新增使用者檔案所在的Google雲端硬碟帳戶。如果您想要掃描多位使用者的檔案、您必須為每位使用者執行此步驟。</block>
   <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">您可以按一下 <block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block> 可讓任何群組查看屬於群組的使用者清單。</block>
@@ -1598,7 +1576,6 @@
   <block id="7aeae51930f9c356f9f8611d740f88b8" category="list-text">在BlueXP左側導覽功能表中、按一下「*管理&gt;分類*」、然後按一下「*法規遵循*」索引標籤。</block>
   <block id="acdc619c23bd4363ccec733a2e8a38ae" category="list-text">您可以將檔案指派給BlueXP使用者、負責對檔案執行任何後續行動。請參閱 <block ref="aae7319c920bbcb541f7fa3a1a1db120" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">藍圖XP注意事項</block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="cd02721523de57441e385fc64cc693cc" category="list-text">SharePoint內部部署帳戶（SharePoint Server）</block>
   <block id="97f34c43cfd5abbd752382f17f44c9a2" category="list-text">在BlueXP功能表中、按一下*管理&gt;分類*。</block>
   <block id="4bb7a83842b1271682b6be62080707cb" category="list-text">SharePoint Online和內部部署帳戶</block>
@@ -1920,7 +1897,6 @@
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">n2-Standard-16</block>
   <block id="610e28574a4dbf2d34e497e3ed7bd822" category="list-text">新增節點以協助掃描特定資料來源或特定資料來源群組（通常是根據位置）</block>
   <block id="3fe624f4914417740fe3cf68a4327554" category="list-text">您必須擁有連接器系統的IP位址或主機名稱、NetApp帳戶ID、連接器用戶端ID和使用者存取權杖。如果您打算使用掃描器群組、則必須知道帳戶中每個資料來源的工作環境ID。請參閱下方的*先決條件步驟_*以取得此資訊。</block>
-  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新增功能</block>
   <block id="a9cb7c21103eb81a473453f19f0d7b20" category="list-text">*重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。 <block ref="440fccf34bc4c2a440d9bf3f906df06d" category="inline-link-macro-rx"></block>。</block>
   <block id="c79d6ed12c6347fc1bdd0dd91ef85ff7" category="paragraph">按一下 <block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block> 以深入瞭解原則。</block>
   <block id="f7e44fd8c27ddf80c242fb3dae245422" category="paragraph">「_Data Overview」（資料概覽）區段提供所有正在掃描資料的快速概覽。按一下按鈕、即可下載完整的資料對應報告、其中包含所有工作環境和資料來源的使用容量、資料存留時間、資料大小和檔案類型。請參閱 <block ref="53e5c76c1fe1c6ab36aa624f6960e384" category="inline-xref-macro-rx"></block> 以取得此報告的完整詳細資料。</block>
@@ -2965,9 +2941,6 @@
   <block id="3304fa5a3260dac4f8f51ddd7ca9e5f3" category="sidebar">降低 BlueXP 分類掃描速度</block>
   <block id="54892fa61b1eb6050fbd342fbf8e2218" category="sidebar">從 BlueXP 分類中移除資料來源</block>
   <block id="997bc9ee8834fdaee5b662f9a2bd743f" category="sidebar">解除安裝 BlueXP 分類</block>
-  <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">在具有網際網路的 Linux 主機上安裝 BlueXP 分類</block>
-  <block id="c3e36333a4a6733ccd92dafc9d8c17b5" category="sidebar">在內部部署安裝 BlueXP 分類、無需網際網路</block>
-  <block id="c0b7cbffdfa6fa18059367f2045ac22c" category="sidebar">BlueXP 分類使用案例</block>
   <block id="44b48aa0d2158361e53832315034f513" category="paragraph">例如、如果您想要追蹤對敏感人事檔案或薪資檔案所做的任何變更、您可以在這些檔案所在的磁碟區上啟用此功能。接著您可以檢視檔案存取稽核記錄、查看這些檔案是否已變更。如果變更了這些項目、您就能看到進行變更的人員的安全識別碼（ SID ）、以及變更的時間。</block>
   <block id="c7f8db8434f3e3057bca29922b597e31" category="paragraph">BlueXP 分類可記錄位於下列資料來源中 ONTAP 磁碟區上之檔案的檔案存取事件：</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX for NetApp ONTAP 產品</block>
@@ -3006,7 +2979,6 @@
   <block id="5cbcaeca0f98bea3f5714fbeb859b1f8" category="cell"><block ref="a39d05df186d1deb03343bf4f79e6b17" prefix="" category="inline-code"></block></block>
   <block id="2e1a4e3f55001820560b237188c70bc3" category="cell">/var/lib/泊 塢視窗</block>
   <block id="651ffe70d1da174ca6955ceb139ab71c" category="cell"><block ref="20218561600e990c68a725b6b98ae569" prefix="" category="inline-code"></block></block>
-  <block id="361e697d946a0a8473f2bda1979090c3" category="cell">/user/lib/systemd/system</block>
   <block id="9997b2ae11cbffd6fe1a6e9f683ed24a" category="paragraph">+ 如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、我們建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="ae4d468f55febeccb4eff973d9b635ff" category="inline-link-macro">在此深入瞭解資料主題</block>
   <block id="1a7107cbf75ccf5399b80fbafd0ee649" category="cell">輸入資料主旨的完整名稱或已知識別碼。 <block ref="dbe06c006d2f67629a75e1ec088edbea" category="inline-link-macro-rx"></block>。</block>
@@ -3028,7 +3000,6 @@
   <block id="8a7af24665c107d42e27bf9f85872742" category="cell">或者、您也可以預先建立完整命令、提供必要的主機和 Proxy 參數：<block ref="3b4bbf213dadbeb10421530a3d8a245b" prefix=" " category="inline-code"></block></block>
   <block id="79dad5af8e7ba04bd45d58a3d10d4209" category="list-text">_client_id_ = Connector Client ID （將字尾「 Clients 」新增至您在先決條件步驟中複製的用戶端 ID ）</block>
   <block id="800fbb2e9f1063caafe6917c236f24a6" category="paragraph">例如、此命令會新增 3 個掃描器節點：<block ref="ba1da14563d546c370f034861b50d8f8" prefix=" " category="inline-code"></block></block>
-  <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP 網路研討會</block>
   <block id="c1560b054493db03cae97adece148673" category="list-text"><block ref="c1560b054493db03cae97adece148673" category="inline-link-rx"></block></block>
   <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
   <block id="9d7d457b861dcdf8b4b7f28f3a120c36" category="list-text"><block ref="9d7d457b861dcdf8b4b7f28f3a120c36" category="inline-link-rx"></block></block>
@@ -3320,7 +3291,6 @@
   <block id="85b9386ed443776127e099931d73448a" category="list-text">系統提示時、請選取 * 繼續 * 以重新導向至 Microsoft 登入頁面。</block>
   <block id="c77d5103bf67167dd667762d984e1e14" category="section-title">BlueXP 分類 API 現已推出</block>
   <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">BlueXP 分類 API 可讓您執行動作、建立查詢、以及匯出所掃描資料的相關資訊。可使用 Swagger 取得互動式文件。文件分為多個類別、包括調查、法規遵循、治理和組態。每個類別都是 BlueXP 分類 UI 中標籤的參考資料。</block>
-  <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">BlueXP 分類影片</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -3481,4 +3451,5 @@
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXP支援其服務的REST API功能。如果 BlueXP 不是首選的管理點、則 BlueXP 分類等服務也可以透過 REST API 使用。每個使用者動作都有REST API、可與協力廠商系統整合。請參閱 <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">是否掃描駐留在 ONTAP 磁碟區上的 Snapshot 複本？</block>
   <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">不可以BlueXP 分類不會掃描快照、因為內容與磁碟區中的內容相同。</block>
+  <block id="dce2a9642217836d54f614dfd625b753" category="cell">/usr/lib/systemd/system</block>
 </blocks>
