@@ -50,33 +50,16 @@ BlueXP 分類記錄在 BlueXP 分類所掃描的所有工作環境和資料來�
 ....
 
 
-== 存取記錄檔
+== 記錄檔位置
 
 管理稽核記錄檔位於以下位置的 BlueXP 分類機器： `/opt/netapp/audit_logs/`
 
 安裝稽核記錄檔會寫入 `/opt/netapp/install_logs/`
 
-每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統最多可保留100個記錄檔-在達到上限後、會自動刪除舊的記錄檔。
-
-當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至記錄檔。
-
-當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：
-
- ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>
-* <path_to_the_ssh驗證金鑰>= ssh驗證金鑰的位置
-* <machine_user>：
-+
-** 對於AWS：使用<EC2-user>
-** Azure：使用為BlueXP執行個體建立的使用者
-** GCP：使用為BlueXP執行個體建立的使用者
+每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統上最多保留 100 個記錄檔 - 在達到最大值之後、會自動刪除較舊的記錄檔。
 
 
-* <datasense_ip>=虛擬機器執行個體的IP位址
 
+== 存取記錄檔
 
-請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS中的安全群組規則"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure中的安全性群組規則"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud中的防火牆規則"^]
-
+您必須登入 BlueXP 分類系統才能存取記錄檔。瞭解如何操作 link:reference-log-in-to-instance.html["登入 BlueXP 分類系統"] 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。

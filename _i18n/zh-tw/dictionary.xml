@@ -1660,7 +1660,6 @@
   <block id="8022db3692364177695fce2a133b526b" category="list-text">用於標記-標記名稱</block>
   <block id="91f93253b1daa7f572477e6f8dc4f163" category="list-text">指派給-使用者名稱</block>
   <block id="00fde4d5ca4e0124dccf8017bb92fc4e" category="list-text">電子郵件警示：電子郵件地址/帳戶</block>
-  <block id="8cc577dbce4245d15abad6f3b1dfc995" category="paragraph">每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統最多可保留100個記錄檔-在達到上限後、會自動刪除舊的記錄檔。</block>
   <block id="fbda64f06352e44a4e6523dbdd6b039e" category="paragraph">請注意、您需要修改安全群組傳入規則、才能存取雲端中的系統。如需詳細資料、請參閱：</block>
   <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">請注意、安裝程式會執行預先檢查、以確保您的系統和網路需求已準備就緒、以便順利安裝。</block>
   <block id="0cf39354f7edfa15dd84075131e27804" category="list-text">向您的雲端供應商訂閱BlueXP Marketplace清單、或</block>
@@ -2187,7 +2186,6 @@
   <block id="1848496efeb9b0561b54c93d4ca7403e" category="list-text">按一下 * 治理 * 、然後按一下 * 資料探索評估報告 * 按鈕。</block>
   <block id="d3cfc5adb7d762b3824a7c02a95765b9" category="inline-image-macro">Governance Dashboard 的螢幕擷取畫面、顯示如何啟動 Data Discovery 評估報告。</block>
   <block id="6e54901f5113f24a64a46275f84c34da" category="paragraph"><block ref="6e54901f5113f24a64a46275f84c34da" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="95d360d4c70cbbf05116206b4e5edd67" category="section-title">存取記錄檔</block>
   <block id="8b4cc0616cd3112ce97c78446249e336" category="inline-link-macro">替代執行個體類型</block>
   <block id="b4628b43616bed69627de3b91fe817d0" category="paragraph">只有在沒有網際網路存取權的主機上執行指令碼時、才新增選項「 ---變 暗站台」。當主機未連線至網際網路時、會略過某些必要測試。</block>
   <block id="1bb79e71fe1463a15c91ab711e20a6ac" category="list-text">指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成時、它會將工作階段的記錄寫入名為的檔案<block ref="7bca4c3da1c027ba15644b115a5e9fd9" prefix=" " category="inline-code"></block> 在目錄中<block ref="8a788ac11c9bfeaba837d43d9090ac97" prefix=" " category="inline-code"></block>。</block>
@@ -2677,7 +2675,6 @@
   <block id="fc82aea02743067d55a199569cd61d50" category="doc">稽核 BlueXP 分類動作的歷史記錄</block>
   <block id="323141f17dc965b7894c3fede5810589" category="paragraph">您可以檢視 BlueXP 分類稽核記錄檔的內容、或是下載這些檔案、查看發生了哪些檔案變更、以及何時發生變更。例如、您可以查看發出的要求、要求時間、以及檔案刪除時的來源位置、或檔案移動時的來源和目的地位置等詳細資料。</block>
   <block id="c1e0b6a06406fd162de0635cd20ac657" category="paragraph">管理稽核記錄檔位於以下位置的 BlueXP 分類機器：<block ref="737f0a89396f6d78b87820109de683eb" prefix=" " category="inline-code"></block></block>
-  <block id="ce0fbdf83a7ac5995d4c903ac0745a09" category="paragraph">當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至記錄檔。</block>
   <block id="2970783922bde0b77210901329267de0" category="paragraph">當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：</block>
   <block id="08aececdd8070f547d2aa65ea8c35446" category="summary">瞭解 BlueXP 分類的新功能。</block>
   <block id="406ca16c022fe122c7920a69664a84f2" category="doc">BlueXP 分類的新功能</block>
@@ -3446,10 +3443,19 @@
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">將現有的群組 ID 定義為「開放給組織」</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">請移至「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」、然後執行下列指令碼：</block>
   <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：</block>
-  <block id="4103104f589e62a63d3d9cfb58c764f2" category="paragraph">若要啟動此功能、您需要登入 BlueXP 分類系統、以便編輯組態檔案並執行指令碼。</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">現在您可以在 NFS 中設定群組 ID 、以便直接從 BlueXP 分類中將其視為「開放組織」、如果群組一開始沒有設定該權限。任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示為「開放給組織」。瞭解如何操作<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXP支援其服務的REST API功能。如果 BlueXP 不是首選的管理點、則 BlueXP 分類等服務也可以透過 REST API 使用。每個使用者動作都有REST API、可與協力廠商系統整合。請參閱 <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">是否掃描駐留在 ONTAP 磁碟區上的 Snapshot 複本？</block>
   <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">不可以BlueXP 分類不會掃描快照、因為內容與磁碟區中的內容相同。</block>
   <block id="dce2a9642217836d54f614dfd625b753" category="cell">/usr/lib/systemd/system</block>
+  <block id="31af9dbc59d95015ad9e14c7d979d66b" category="summary">有時候您可能需要登入 BlueXP 分類系統、以便存取記錄檔或編輯組態檔。</block>
+  <block id="d4b72b40125aaee8335dc145cdc6e2f1" category="inline-link-macro">登入 BlueXP 分類系統</block>
+  <block id="5b40d5baf253a6d11974d57a0890fe5a" category="paragraph">若要啟動此功能、您需要登入 BlueXP 分類系統、以便編輯組態檔案並執行指令碼。瞭解如何操作 <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。</block>
+  <block id="dd2a68717d555f6a974eca51868e4e97" category="list-text">* NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP 連接器系統之間同步時間。</block>
+  <block id="bc43ce46ec2d6fbf9c8f6da8a4306dd8" category="section-title">記錄檔位置</block>
+  <block id="4f2ff1b367ff3e36e64a9ae197aa8277" category="paragraph">每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統上最多保留 100 個記錄檔 - 在達到最大值之後、會自動刪除較舊的記錄檔。</block>
+  <block id="8d62d7d8c4e5247ff9d832d971c73356" category="section-title">存取記錄檔</block>
+  <block id="1adc1bcbca14587886f0722f89d1238c" category="paragraph">您必須登入 BlueXP 分類系統才能存取記錄檔。瞭解如何操作 <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。</block>
+  <block id="2556206d42384bb829190e0aafdb0def" category="inline-link-macro">登入 BlueXP 分類主機</block>
+  <block id="3d156543c6fce54302812044d96a7f13" category="paragraph">瞭解如何操作 <block ref="4d88ed2399fdae83afcc83672f5b6c79" category="inline-link-macro-rx"></block>。</block>
 </blocks>

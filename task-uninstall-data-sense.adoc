@@ -53,3 +53,5 @@ image:screenshot_compliance_uninstall.png["用於解除安裝 BlueXP 分類軟�
 cleanup.sh
 ----
 
+
+瞭解如何操作 link:reference-log-in-to-instance.html["登入 BlueXP 分類主機"]。
