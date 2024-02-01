@@ -1218,7 +1218,6 @@
   <block id="3f0a4de61ad13ce65d1a7332a726eb8d" category="list-text">貼上並執行您在步驟3中複製的命令。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">註冊以取得支援</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">「說明」功能表的快照、其中「支援」是第一個列出的選項</block>
-  <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">NetApp使用Microsoft Azure Active Directory做為身分識別供應商、提供專為支援與授權所設計的驗證服務。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">在登入頁面上、提供您的NetApp支援網站註冊電子郵件地址和密碼、以執行驗證程序。</block>
   <block id="ce41a706cd7d768f91deb7b6d30a53a6" category="doc">正在掃描資料庫架構</block>
   <block id="6ba6f62eaa922e3764dfb0e34527892f" category="paragraph">請確定您的資料庫受到支援、而且您擁有連線至資料庫所需的資訊。</block>
@@ -3451,11 +3450,22 @@
   <block id="31af9dbc59d95015ad9e14c7d979d66b" category="summary">有時候您可能需要登入 BlueXP 分類系統、以便存取記錄檔或編輯組態檔。</block>
   <block id="d4b72b40125aaee8335dc145cdc6e2f1" category="inline-link-macro">登入 BlueXP 分類系統</block>
   <block id="5b40d5baf253a6d11974d57a0890fe5a" category="paragraph">若要啟動此功能、您需要登入 BlueXP 分類系統、以便編輯組態檔案並執行指令碼。瞭解如何操作 <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。</block>
-  <block id="dd2a68717d555f6a974eca51868e4e97" category="list-text">* NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP 連接器系統之間同步時間。</block>
   <block id="bc43ce46ec2d6fbf9c8f6da8a4306dd8" category="section-title">記錄檔位置</block>
   <block id="4f2ff1b367ff3e36e64a9ae197aa8277" category="paragraph">每個記錄檔的大小上限為10 MB。達到該限制時、會啟動新的記錄檔。記錄檔的名稱為「DataSense_nap稽 核.log」、「DataSense_nap稽 核.log.1」、「DataSense_nap審查.log.2」等。系統上最多保留 100 個記錄檔 - 在達到最大值之後、會自動刪除較舊的記錄檔。</block>
   <block id="8d62d7d8c4e5247ff9d832d971c73356" category="section-title">存取記錄檔</block>
   <block id="1adc1bcbca14587886f0722f89d1238c" category="paragraph">您必須登入 BlueXP 分類系統才能存取記錄檔。瞭解如何操作 <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。</block>
   <block id="2556206d42384bb829190e0aafdb0def" category="inline-link-macro">登入 BlueXP 分類主機</block>
   <block id="3d156543c6fce54302812044d96a7f13" category="paragraph">瞭解如何操作 <block ref="4d88ed2399fdae83afcc83672f5b6c79" category="inline-link-macro-rx"></block>。</block>
+  <block id="dfd993077bb353282906702dc3143ec7" category="list-text">* NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP Connector 系統之間同步時間。</block>
+  <block id="0d7b5294055876bf358044259606856f" category="paragraph">BlueXP 分類會擷取中繼資料、例如：檔案名稱、權限、建立時間、上次存取和上次修改。這包括出現在「資料調查詳細資料」頁面和「資料調查報告」中的所有中繼資料。</block>
+  <block id="829d8d2f641dd9e58ec1a7d5e605ae21" category="inline-link">BlueXP 分類掃描的私有資料類別</block>
+  <block id="3db00327e72827118e6c677e24f6a704" category="paragraph">BlueXP 分類可識別許多類型的私人資料、例如個人資料和敏感的個人資料。如需私有資料的詳細資訊、請參閱<block ref="56427cf32f2481dc2470f5e57414e198" category="inline-link-rx"></block>。</block>
+  <block id="74d4d96e624f192d4ebed96b99d9cedd" category="paragraph">掃描的資料會保留在您的環境中。</block>
+  <block id="b39079257432aa2e0ea1ac3e4e36cdf8" category="section-title">如何處理敏感資料？</block>
+  <block id="35a8814c3eaa26f66ca3a0eea1193f70" category="paragraph">NetApp 無法存取敏感資料、也無法在 UI 中顯示。例如、系統會遮罩敏感資料、顯示最後四個數字作為信用卡資訊。</block>
+  <block id="a6b6381d05f6dc9530f37099c9feb5cf" category="section-title">資料儲存在何處？</block>
+  <block id="efe4cf854e0017e5c35b4f8fb03e5a1b" category="paragraph">掃描結果會儲存在 BlueXP 分類執行個體的 Elast搜尋 中。</block>
+  <block id="dbe9d1b278184da6355700a9d5f9c0e6" category="section-title">如何存取資料？</block>
+  <block id="9e52028c48600512f13df2884f1ec709" category="paragraph">BlueXP 分類透過 API 呼叫存取儲存在 Elasticsearch 中的資料、這需要驗證、並使用 AES-128 加密。直接存取 Elasticsearch 需要 root 存取權。</block>
+  <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetApp 使用 Microsoft Entra ID 做為身分識別提供者、提供專為支援與授權所設計的驗證服務。</block>
 </blocks>

@@ -141,7 +141,7 @@ https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS �
 ** Python 3.6 版或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 
 
-* * NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP 連接器系統之間同步時間。
+* * NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP Connector 系統之間同步時間。
 * * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此與 BlueXP 分類相容：
 +
 ....

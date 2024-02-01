@@ -192,22 +192,6 @@ link:task-managing-data-fusion.html["深入瞭解"^]。
 
 
 
-=== 我可以將 BlueXP 分類資訊限制在特定使用者嗎？
-
-是的、 BlueXP 分類與 BlueXP 完全整合。BlueXP使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。
-
-此外、如果您想讓特定使用者只檢視 BlueXP 分類掃描結果、而無法管理 BlueXP 分類設定、您可以將 Cloud Compliance Viewer 角色指派給這些使用者。
-
-link:concept-cloud-compliance.html#user-access-to-compliance-information["深入瞭解"^]。
-
-
-
-=== 是否有人可以存取在我的瀏覽器和 BlueXP 分類之間傳送的私有資料？
-
-不可以在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料會以端點對端點加密來保護、這表示 NetApp 和第三方無法讀取資料。除非您要求並核准存取權限、否則 BlueXP 分類不會與 NetApp 分享任何資料或結果。
-
-
-
 === BlueXP 分類是否可以傳送通知給我的組織？
 
 是的。搭配原則功能、您可以在原則傳回結果時、將電子郵件警示傳送給BlueXP使用者（每日、每週或每月）或任何其他電子郵件地址、以便取得通知來保護資料。深入瞭解 link:task-using-policies.html["原則"^]。
@@ -309,6 +293,46 @@ BlueXP 分類掃描會使用標準通訊協定、並在整個環境中使用唯�
 完成完整掃描後、您可以套用許多其他 BlueXP 分類功能至資料、例如在「資料調查」頁面中檢視及精簡資料、搜尋檔案中的名稱、複製、移動及刪除來源檔案等。
 
 
+
+BlueXP 分類會擷取中繼資料、例如：檔案名稱、權限、建立時間、上次存取和上次修改。這包括出現在「資料調查詳細資料」頁面和「資料調查報告」中的所有中繼資料。
+
+BlueXP 分類可識別許多類型的私人資料、例如個人資料和敏感的個人資料。如需私有資料的詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["BlueXP 分類掃描的私有資料類別"]。
+
+
+
+=== 我可以將 BlueXP 分類資訊限制在特定使用者嗎？
+
+是的、 BlueXP 分類與 BlueXP 完全整合。BlueXP使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。
+
+此外、如果您想讓特定使用者只檢視 BlueXP 分類掃描結果、而無法管理 BlueXP 分類設定、您可以將 Cloud Compliance Viewer 角色指派給這些使用者。
+
+link:concept-cloud-compliance.html#user-access-to-compliance-information["深入瞭解"^]。
+
+
+
+=== 是否有人可以存取在我的瀏覽器和 BlueXP 分類之間傳送的私有資料？
+
+不可以在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料會以端點對端點加密來保護、這表示 NetApp 和第三方無法讀取資料。除非您要求並核准存取權限、否則 BlueXP 分類不會與 NetApp 分享任何資料或結果。
+
+掃描的資料會保留在您的環境中。
+
+
+
+=== 如何處理敏感資料？
+
+NetApp 無法存取敏感資料、也無法在 UI 中顯示。例如、系統會遮罩敏感資料、顯示最後四個數字作為信用卡資訊。
+
+
+
+=== 資料儲存在何處？
+
+掃描結果會儲存在 BlueXP 分類執行個體的 Elast搜尋 中。
+
+
+
+=== 如何存取資料？
+
+BlueXP 分類透過 API 呼叫存取儲存在 Elasticsearch 中的資料、這需要驗證、並使用 AES-128 加密。直接存取 Elasticsearch 需要 root 存取權。
 
 
 
