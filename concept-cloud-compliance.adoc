@@ -177,7 +177,10 @@ TIP: 由於 BlueXP 分類會持續掃描資料、因此執行個體應該隨時�
 | 系統大小 | 規格 | 限制 
 
 
-| 大型（預設） | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | 無 
+| 超大 | 32 個 CPU 、 128 GB RAM 、 1 個 TiB SSD | 最多可掃描 5 億個檔案。 
+
+
+| 大型（預設） | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | 最多可掃描 2.5 億個檔案。 
 
 
 | 中 | 8 個 CPU 、 32 GB RAM 、 200 GB SSD | 掃描速度較慢、最多只能掃描100萬個檔案。 
@@ -185,9 +188,9 @@ TIP: 由於 BlueXP 分類會持續掃描資料、因此執行個體應該隨時�
 
 | 小 | 8 個 CPU 、 16 GB RAM 、 100 GB SSD | 與「中」相同的限制、加上識別能力 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["資料主旨名稱"] 內部檔案已停用。 
 |===
-在 AWS 上的雲端部署 BlueXP 分類時、您可以選擇大型 / 中型 / 小型執行個體。在 Azure 或 GCP 中部署 BlueXP 分類時、如果您想要使用其中一個較小的系統、請寄送電子郵件至 ng-contact-data-sense@netapp.com 以取得協助。我們需要與您合作、以部署這些較小型的雲端組態。
+在 AWS 上的雲端部署 BlueXP 分類時、您可以選擇大型 / 中型 / 小型執行個體。在 Azure 或 GCP 中部署 BlueXP 分類時、如果您想要使用其中一種替代系統、請寄送電子郵件至 ng-contact-data-sense@netapp.com 以取得協助。我們需要與您一起部署這些其他雲端組態。
 
-在內部部署 BlueXP 分類時、只要使用規格較小的 Linux 主機即可。您不需要聯絡NetApp尋求協助。
+在內部部署 BlueXP 分類時、只要使用具有替代規格的 Linux 主機即可。您不需要聯絡NetApp尋求協助。
 
 
 
@@ -281,10 +284,10 @@ link:task-deploy-compliance-onprem.html#install-bluexp-classification-on-the-lin
 BlueXP 分類會收集、索引及指派類別給您的資料（檔案）。BlueXP 分類索引的資料包括：
 
 標準中繼資料:: BlueXP 分類會收集檔案的標準中繼資料：檔案類型、檔案大小、建立和修改日期等。
-個人資料:: 個人識別資訊、例如電子郵件地址、識別號碼或信用卡號碼。 link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["深入瞭解個人資料"^]。
-敏感的個人資料:: GDPR 及其他隱私權法規所定義的特殊敏感資訊類型、例如健康資料、族群來源或政治見解。 link:task-controlling-private-data.html#viewing-files-that-contain-sensitive-personal-data["深入瞭解敏感的個人資料"^]。
-類別:: BlueXP 分類會將掃描的資料分成不同類型的類別。類別是以 AI 分析每個檔案的內容和中繼資料為基礎的主題。 link:task-controlling-private-data.html#viewing-files-by-categories["深入瞭解類別"^]。
-類型:: BlueXP 分類會根據檔案類型來記錄掃描的資料、並加以細分。 link:task-controlling-private-data.html#viewing-files-by-file-types["深入瞭解類型"^]。
+個人資料:: 個人識別資訊、例如電子郵件地址、識別號碼或信用卡號碼。 link:task-controlling-private-data.html#view-files-that-contain-personal-data["深入瞭解個人資料"^]。
+敏感的個人資料:: GDPR 及其他隱私權法規所定義的特殊敏感資訊類型、例如健康資料、族群來源或政治見解。 link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["深入瞭解敏感的個人資料"^]。
+類別:: BlueXP 分類會將掃描的資料分成不同類型的類別。類別是以 AI 分析每個檔案的內容和中繼資料為基礎的主題。 link:task-controlling-private-data.html#view-files-by-categories["深入瞭解類別"^]。
+類型:: BlueXP 分類會根據檔案類型來記錄掃描的資料、並加以細分。 link:task-controlling-private-data.html#view-files-by-file-types["深入瞭解類型"^]。
 名稱實體辨識:: BlueXP 分類使用 AI 從文件中擷取自然人姓名。 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["瞭解如何回應資料主體存取要求"^]。
 
 

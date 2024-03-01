@@ -91,9 +91,15 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 * 與其他應用程式共用的主機不支援 BlueXP 分類、主機必須是專用主機。
 * 在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從三種系統大小中進行選擇。
 +
-[cols="18,18,26,30"]
+[cols="17,17,27,31"]
 |===
 | 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
+
+
+| * 超大 * | 32 個 CPU | 128 GB RAM | 1 TiB SSD on / 、 or
+-100 GiB 可在 /opt 上取得
+-895 GiB 可在 /var/lib/泊 塢視窗中取得
+/tmp 上 5 GiB 
 
 
 | * 大 * | 16個CPU | 64 GB RAM | 500 GiB SSD on / 、 or
@@ -114,7 +120,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 /tmp 上 5 GiB 
 |===
 +
-請注意、使用這些較小的系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
+請注意、使用較小系統時會有限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
 
 * 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
 +
@@ -292,7 +298,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["顯示您可以在內部
 
 在離線環境中的單一內部部署主機上安裝 BlueXP 分類軟體時、請遵循下列步驟。
 
-請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它是寫入的 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html#access-the-log-file["請參閱此處的更多詳細資料"]。
+請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它是寫入的 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html#access-the-log-files["請參閱此處的更多詳細資料"]。
 
 .您需要的產品
 * 確認您的Linux系統符合 <<準備Linux主機系統,主機需求>>。

@@ -4,7 +4,7 @@ permalink: task-scanning-databases.html
 keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
 summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描資料庫架構。 
 ---
-= 正在掃描資料庫架構
+= 掃描資料庫架構
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -121,7 +121,7 @@ image:screenshot_compliance_add_db_server_dialog.png["「新增資料庫伺服�
 
 
 
-== 啟用及停用資料庫架構的法規遵循掃描
+== 啟用及停用資料庫架構的規範掃描
 
 您可以隨時停止或開始完整掃描架構。
 

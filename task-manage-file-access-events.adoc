@@ -20,6 +20,9 @@ summary: 您可以設定 BlueXP 分類、以便在存取或變更您要掃描的
 
 您可以在工作環境中執行 ONTAP 軟體的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎 https://docs.netapp.com/us-en/ontap/nas-audit/two-parts-fpolicy-solution-concept.html["FPolicy 功能"^] 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。BlueXP 分類可處理 ONTAP 每秒約 990 個事件。
 
+
+NOTE: 2023 年 12 月（版本 1.26.6 ）版本暫時移除啟動稽核記錄收集的選項。
+
 BlueXP 分類目前會擷取檔案和目錄上下列動作的事件：
 
 * 建立

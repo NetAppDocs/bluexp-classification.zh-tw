@@ -44,7 +44,7 @@ image:screenshot_compliance_governance_dashboard.png["BlueXP 分類治理儀表�
 ** 雜項（一般「其他」類別）
 
 
-* *重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。 link:task-investigate-data.html#viewing-all-duplicated-files["查看顯示哪些類型的重複檔案"]。
+* *重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。 link:task-investigate-data.html#view-all-duplicated-files["查看顯示哪些類型的重複檔案"]。
 +
 附註:: 如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 過時資料 _ 類別中進行識別。
 
@@ -131,7 +131,7 @@ TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔�
 
 === 最常識別的資料分類
 
-「_Classification」區域提供最能辨識的清單 link:task-controlling-private-data.html#viewing-files-by-categories["類別"^]、 link:task-controlling-private-data.html#viewing-files-by-file-types["檔案類型"^]和 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP標籤"^] 在掃描資料中。
+「_Classification」區域提供最能辨識的清單 link:task-controlling-private-data.html#view-files-by-categories["類別"^]、 link:task-controlling-private-data.html#view-files-by-file-types["檔案類型"^]和 link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP標籤"^] 在掃描資料中。
 
 
 
@@ -139,7 +139,7 @@ TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔�
 
 類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、「恢復」或「員工合約」等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。
 
-請參閱 link:task-controlling-private-data.html#viewing-files-by-categories["依類別檢視檔案"^] 以取得更多資訊。
+請參閱 link:task-controlling-private-data.html#view-files-by-categories["依類別檢視檔案"^] 以取得更多資訊。
 
 
 
@@ -147,7 +147,7 @@ TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔�
 
 檢閱檔案類型有助於控制敏感資料、因為您可能會發現某些檔案類型儲存不正確。
 
-請參閱 link:task-controlling-private-data.html#viewing-files-by-file-types["檢視檔案類型"^] 以取得更多資訊。
+請參閱 link:task-controlling-private-data.html#view-files-by-file-types["檢視檔案類型"^] 以取得更多資訊。
 
 
 
@@ -155,7 +155,7 @@ TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔�
 
 如果您已訂閱Azure資訊保護（AIP）、您可以將標籤套用至內容、以分類及保護文件與檔案。檢閱指派給檔案的最常用AIP標籤、即可查看檔案中最常用的標籤。
 
-請參閱 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP標籤"^] 以取得更多資訊。
+請參閱 link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP標籤"^] 以取得更多資訊。
 
 
 
@@ -198,7 +198,7 @@ image:screenshot_compliance_data_mapping_report_button.png["「管理儀表板�
 .結果
 BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
 
-如果報告大於 1 MB 、則 PDF 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 PDF 檔案。當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體、才能下載 PDF 檔案。 link:task-audit-data-sense-actions.html#access-the-log-file["請參閱如何存取 Classification 執行個體的資料"^]。
+如果報告大於 1 MB 、則 PDF 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 PDF 檔案。當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體、才能下載 PDF 檔案。 link:task-audit-data-sense-actions.html#access-the-log-files["請參閱如何存取 Classification 執行個體的資料"^]。
 
 請注意、您可以按一下、從 BlueXP 分類頁面頂端自訂顯示在報告第一頁上的公司名稱 image:screenshot_gallery_options.gif["「更多」按鈕"] 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。
 

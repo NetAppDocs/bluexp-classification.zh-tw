@@ -17,6 +17,10 @@ summary: BlueXP 分類提供多種方法來管理及組織您的私有資料。�
 BlueXP 分類提供多種方法來管理及組織您的私有資料。如此一來、您就能更輕鬆地查看最重要的資料。
 
 * 如果您已訂閱 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^] 若要分類及保護檔案、您可以使用 BlueXP 分類來管理這些 AIP 標籤。
++
+
+NOTE: 2023 年 12 月（ v1.26.6 ）版本暫時移除使用 Azure Information Protection （ AIP ）標籤整合資料的選項。
+
 * 您可以將標記新增至您要標記為組織或某種後續追蹤的檔案。
 * 您可以將BlueXP使用者指派給特定檔案或多個檔案、以便該人員負責管理檔案。
 * 使用「原則」功能、您可以建立自己的自訂搜尋查詢、只要按一下按鈕、就能輕鬆查看結果。
@@ -53,7 +57,7 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 |===
 
 
-== 使用AIP標籤分類資料
+== 使用AIP標籤將資料分類
 
 如果您已訂閱、您可以在 BlueXP 分類正在掃描的檔案中管理 AIP 標籤 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。AIP可讓您將標籤套用至內容、以分類及保護文件與檔案。BlueXP 分類可讓您檢視已指派給檔案的標籤、新增標籤至檔案、以及在標籤已存在時變更標籤。
 
@@ -69,7 +73,7 @@ BlueXP 分類支援下列檔案類型中的 AIP 標籤： .DOC 、 .DOCX 、 .PD
 ====
 
 
-=== 將AIP標籤整合到工作區中
+=== 將 AIP 標籤整合到您的工作空間中
 
 在管理 AIP 標籤之前、您必須先登入現有的 Azure 帳戶、將 AIP 標籤功能整合至 BlueXP 分類。一旦啟用、您就能在檔案中管理所有人的AIP標籤 link:concept-cloud-compliance.html#supported-data-sources["資料來源"^] 在您的BlueXP工作區中。
 
@@ -98,7 +102,7 @@ image:screenshot_compliance_aip_labels_int.png["顯示AIP標籤的快照已成�
 
 
 
-=== 檢視檔案中的AIP標籤
+=== 檢視檔案中的 AIP 標籤
 
 您可以檢視指派給檔案的目前AIP標籤。
 
@@ -108,7 +112,7 @@ image:screenshot_compliance_show_label.png["快照顯示單一檔案的中繼資
 
 
 
-=== 手動指派AIP標籤
+=== 手動指派 AIP 標籤
 
 您可以使用 BlueXP 分類新增、變更及移除檔案中的 AIP 標籤。
 
@@ -148,7 +152,7 @@ AIP標籤會新增至所有選取檔案的中繼資料。
 
 
 
-=== 移除AIP整合
+=== 移除 AIP 整合
 
 如果您不再想要管理檔案中的 AIP 標籤、可以從 BlueXP 分類介面中移除 AIP 帳戶。
 
@@ -164,7 +168,7 @@ image:screenshot_compliance_un_integrate_aip_labels.png["顯示如何移除與 B
 
 
 
-== 套用標記來管理掃描的檔案
+== 套用標記以管理掃描的檔案
 
 您可以新增標記至您要標記某種後續追蹤類型的檔案。例如、您可能找到一些重複的檔案、想要刪除其中一個、但您需要檢查一下該刪除哪些檔案。您可以在檔案中新增「Check to DELETE」標記、以便知道此檔案需要進行一些研究、以及未來的某種行動。
 
@@ -193,7 +197,7 @@ image:screenshot_compliance_filter_status.png["顯示如何從「篩選」窗格
 
 
 
-=== 指派標記給檔案
+=== 將標記指派給檔案
 
 您可以將標記新增至單一檔案或一組檔案。
 

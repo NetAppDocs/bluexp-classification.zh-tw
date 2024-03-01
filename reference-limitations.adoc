@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations.html 
-keywords: limitations, data sense, classification, scan shares 
+keywords: limitations, data sense, classification, bluexp, scan shares 
 summary: 已知限制指出本產品版本不支援的功能、或是無法與產品正確互通的功能。請仔細檢閱這些限制。 
 ---
 = 已知限制
@@ -15,6 +15,17 @@ summary: 已知限制指出本產品版本不支援的功能、或是無法與�
 
 [role="lead"]
 已知限制指出本產品版本不支援的功能、或是無法與產品正確互通的功能。請仔細檢閱這些限制。
+
+
+
+== BlueXP 分類版本會暫時移除選項
+
+2023 年 12 月（版本 1.26.6 ）版本暫時移除下列選項：
+
+* 啟用稽核記錄集合的選項已停用。
+* 在目錄調查期間、無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。
+* 已停用使用 Azure Information Protection （ AIP ）標籤整合資料的選項。
+
 
 
 

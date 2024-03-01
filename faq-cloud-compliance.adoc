@@ -204,7 +204,7 @@ link:task-managing-data-fusion.html["深入瞭解"^]。
 
 是的。如果您已訂閱、您可以在 BlueXP 分類正在掃描的檔案中管理 AIP 標籤 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。
 
-link:task-org-private-data.html#categorizing-your-data-using-aip-labels["深入瞭解"^]。
+link:task-org-private-data.html#categorize-your-data-using-aip-labels["深入瞭解"^]。
 
 
 
@@ -326,7 +326,7 @@ NetApp 無法存取敏感資料、也無法在 UI 中顯示。例如、系統會
 
 === 資料儲存在何處？
 
-掃描結果會儲存在 BlueXP 分類執行個體的 Elast搜尋 中。
+掃描結果會儲存在 BlueXP 分類執行個體的 Elasticsearch 中。
 
 
 

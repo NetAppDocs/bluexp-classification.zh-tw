@@ -21,7 +21,7 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 
 
 
-== 篩選資料調查頁面中的資料
+== 在「資料調查」頁面中篩選資料
 
 您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。
 
@@ -29,8 +29,8 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 
 image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整結果時可用篩選器的快照。"]
 
-* 最上層的索引標籤可讓您檢視檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料。
-* 每欄頂端的控制項可讓您依照數字或字母順序來排序結果。
+* 頂層索引標籤可讓您檢視檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料。
+* 每一欄頂端的控制項可讓您依數字或字母順序排序結果。
 * 左窗格篩選器可讓您選取下一節所述的屬性、以精簡結果。
 
 
@@ -51,7 +51,9 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 敏感度等級 | 選取敏感度等級：個人、敏感個人或不敏感。 
 
 
-| 識別碼數目 | 選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。在目錄中篩選時、 BlueXP 分類會將每個資料夾（和子資料夾）中所有檔案的相符項目總計。 
+| 識別碼數目 | 選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。在目錄中篩選時、 BlueXP 分類會將每個資料夾（和子資料夾）中所有檔案的相符項目總計。
+
+附註： 2023 年 12 月（ 1.26.6 版）的版本暫時移除了依目錄計算個人識別資訊（ PII ）資料數量的選項。 
 
 
 | 個人資料 | 選取 link:reference-private-data-categories.html#types-of-personal-data["個人資料類型"^]。 
@@ -60,7 +62,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 敏感個人資料 | 選取 link:reference-private-data-categories.html#types-of-sensitive-personal-data["敏感個人資料的類型"^]。 
 
 
-| 資料主旨 | 輸入資料主旨的完整名稱或已知識別碼。 link:task-generating-compliance-reports.html#searching-for-data-subjects-and-downloading-reports["在此深入瞭解資料主題"^]。 
+| 資料主旨 | 輸入資料主旨的完整名稱或已知識別碼。 link:task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports["在此深入瞭解資料主題"^]。 
 |===
 
 
@@ -168,10 +170,10 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 原則 | 選取原則。行動 link:task-using-policies.html["請按這裡"^] 可查看現有策略列表並創建您自己的自定義策略。 
 
 
-| 標籤 | 選取 link:task-org-private-data.html#categorizing-your-data-using-aip-labels["AIP標籤"] 指派給您的檔案。 
+| 標籤 | 選取 link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP標籤"] 指派給您的檔案。 
 
 
-| 標記 | 選取 link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["標記"] 指派給您的檔案。 
+| 標記 | 選取 link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["標記"] 指派給您的檔案。 
 
 
 | 指派給 | 選取指派檔案的人員名稱。 
@@ -215,17 +217,17 @@ link:reference-collected-metadata.html#last-access-time-timestamp["請參閱「�
 
 image:screenshot_compliance_file_details.png["快照顯示資料調查頁面中檔案的中繼資料詳細資料。"]
 
-除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、是否有此檔案的重複項目、以及指派的AIP標籤（如果有） link:task-org-private-data.html#categorizing-your-data-using-aip-labels["BlueXP 分類中的整合式 AIP"^]）。如果您打算使用、這項資訊很實用 link:task-using-policies.html#creating-custom-policies["建立原則"] 因為您可以看到用來篩選資料的所有資訊。
+除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、是否有此檔案的重複項目、以及指派的AIP標籤（如果有） link:task-org-private-data.html#categorize-your-data-using-aip-labels["BlueXP 分類中的整合式 AIP"^]）。如果您打算使用、這項資訊很實用 link:task-using-policies.html#create-custom-policies["建立原則"] 因為您可以看到用來篩選資料的所有資訊。
 
 請注意、並非所有資料來源都能取得所有資訊、只是適合該資料來源的資訊而已。例如、Volume名稱、權限和AIP標籤與資料庫檔案無關。
 
 檢視單一檔案的詳細資料時、您可以對該檔案採取幾項行動：
 
-* 您可以將檔案移動或複製到任何NFS共用區。請參閱 link:task-managing-highlights.html#moving-source-files-to-an-nfs-share["將來源檔案移至NFS共用區"] 和 link:task-managing-highlights.html#copying-source-files["將來源檔案複製到NFS共用區"] 以取得詳細資料。
-* 您可以刪除檔案。請參閱 link:task-managing-highlights.html#deleting-source-files["正在刪除來源檔案"] 以取得詳細資料。
-* 您可以將特定狀態指派給檔案。請參閱 link:task-org-private-data.html#applying-tags-to-manage-your-scanned-files["套用標記"] 以取得詳細資料。
-* 您可以將檔案指派給BlueXP使用者、負責對檔案執行任何後續行動。請參閱 link:task-org-private-data.html#assigning-users-to-manage-certain-files["指派使用者至檔案"] 以取得詳細資料。
-* 如果您已將 AIP 標籤與 BlueXP 分類整合、您可以將標籤指派給此檔案、或變更為其他標籤（如果已經存在）。請參閱 link:task-org-private-data.html#assigning-aip-labels-manually["手動指派AIP標籤"] 以取得詳細資料。
+* 您可以將檔案移動或複製到任何NFS共用區。請參閱 link:task-managing-highlights.html#move-source-files-to-an-nfs-share["將來源檔案移至NFS共用區"] 和 link:task-managing-highlights.html#copy-source-files["將來源檔案複製到NFS共用區"] 以取得詳細資料。
+* 您可以刪除檔案。請參閱 link:task-managing-highlights.html#delete-source-files["正在刪除來源檔案"] 以取得詳細資料。
+* 您可以將特定狀態指派給檔案。請參閱 link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["套用標記"] 以取得詳細資料。
+* 您可以將檔案指派給BlueXP使用者、負責對檔案執行任何後續行動。請參閱 link:task-org-private-data.html#assign-users-to-manage-certain-files["指派使用者至檔案"] 以取得詳細資料。
+* 如果您已將 AIP 標籤與 BlueXP 分類整合、您可以將標籤指派給此檔案、或變更為其他標籤（如果已經存在）。請參閱 link:task-org-private-data.html#assign-aip-labels-manually["手動指派AIP標籤"] 以取得詳細資料。
 
 
 
@@ -244,7 +246,7 @@ image:screenshot_compliance_permissions.png["顯示詳細檔案權限的快照�
 
 
 
-== 正在檢查儲存系統中的重複檔案
+== 檢查儲存系統中是否有重複的檔案
 
 您可以檢視儲存系統中是否儲存了重複的檔案。如果您想要找出可節省儲存空間的區域、此功能非常實用。此外、確保儲存系統中不會不必要地複製具有特定權限或敏感資訊的特定檔案、也很有幫助。
 
@@ -252,7 +254,7 @@ image:screenshot_compliance_permissions.png["顯示詳細檔案權限的快照�
 
 BlueXP 分類使用雜湊技術來判斷重複的檔案。如果任何檔案的雜湊代碼與其他檔案相同、我們可以100%確定檔案確實重複、即使檔案名稱不同。
 
-您可以下載重複檔案清單、並將其傳送給儲存設備管理員、讓他們決定可以刪除哪些檔案（如果有）。您也可以 link:task-managing-highlights.html#deleting-source-files["刪除檔案"] 如果您確信不需要特定版本的檔案、請自行設定。
+您可以下載重複檔案清單、並將其傳送給儲存設備管理員、讓他們決定可以刪除哪些檔案（如果有）。您也可以 link:task-managing-highlights.html#delete-source-files["刪除檔案"] 如果您確信不需要特定版本的檔案、請自行設定。
 
 
 
@@ -264,7 +266,7 @@ BlueXP 分類使用雜湊技術來判斷重複的檔案。如果任何檔案的�
 
 
 
-=== 檢視特定檔案是否重複
+=== 檢視是否有重複的特定檔案
 
 如果您想要查看單一檔案是否有重複項目、請在「資料調查結果」窗格中按一下 image:button_down_caret.png["減少需求"] 用於檢視檔案中繼資料的任何單一檔案。如果某個檔案有重複項目、此資訊會顯示在「_重複項目_」欄位旁。
 

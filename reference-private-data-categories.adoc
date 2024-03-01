@@ -23,7 +23,7 @@ TIP: 如果您需要 BlueXP 分類來識別其他私人資料類型、例如額�
 
 == 個人資料類型
 
-檔案中的個人資料可以是一般個人資料或國家識別碼。下表第三欄會指出 BlueXP 分類是否使用 link:task-controlling-private-data.html#viewing-files-that-contain-personal-data["鄰近驗證"^] 驗證識別碼的發現。
+檔案中的個人資料可以是一般個人資料或國家識別碼。下表第三欄會指出 BlueXP 分類是否使用 link:task-controlling-private-data.html#view-files-that-contain-personal-data["鄰近驗證"^] 驗證識別碼的發現。
 
 可辨識這些項目的語言列於表格中。
 

@@ -1,0 +1,96 @@
+---
+indexpage:
+  title: BlueXP 分類文件
+  summary: BlueXP 分類（ Cloud Data Sense ）可讓您在組織的混合式多雲端環境中掃描及分類資料。BlueXP 分類利用 AI 驅動的自然語言處理（
+    NLP ）進行內容相關的資料分析和分類、讓您能夠以可據以行動的方式深入瞭解資料、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。
+  keywords: classification, cloud data sense, data sense, compliance, security
+  lead: BlueXP 分類可讓您在組織的混合式多雲端環境中掃描及分類資料。分類利用 AI 驅動的自然語言處理（ NLP ）進行關聯式資料分析和分類、讓您對資料進行可據以行動的深入分析、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。
+  tiles:
+  - title: 開始使用
+    links:
+    - title: 瞭解 BlueXP 分類
+      url: concept-cloud-compliance.html
+    - title: 新增功能
+      url: whats-new.html
+    - title: 使用 BlueXP 在雲端部署 BlueXP 分類
+      url: task-deploy-cloud-compliance.html
+    - title: 在具有網際網路的 Linux 主機上安裝 BlueXP 分類
+      url: task-deploy-compliance-onprem.html
+    - title: 在內部部署安裝 BlueXP 分類、無需網際網路
+      url: task-deploy-compliance-dark-site.html
+    - title: 整合Active Directory
+      url: task-add-active-directory-datasense.html
+    - title: 設定授權
+      url: task-licensing-datasense.html
+  - title: 掃描您的工作環境
+    links:
+    - title: 資料量Cloud Volumes ONTAP
+      url: task-getting-started-compliance.html
+    - title: 內部部署ONTAP 的功能
+      url: task-getting-started-compliance.html
+    - title: 資料量 Azure NetApp Files
+      url: task-scanning-anf.html
+    - title: Amazon FSX for ONTAP Sf6 Volume
+      url: task-scanning-fsx.html
+    - title: Amazon S3 儲存桶
+      url: task-scanning-s3.html
+  - title: 掃描其他資料來源
+    links:
+    - title: 一般S3儲存桶
+      url: task-scanning-object-storage.html
+    - title: 非NetApp檔案共用
+      url: task-scanning-file-shares.html
+    - title: 資料庫架構
+      url: task-scanning-databases.html
+    - title: OneDrive 帳戶
+      url: task-scanning-onedrive.html
+    - title: SharePoint帳戶
+      url: task-scanning-sharepoint.html
+    - title: Google雲端硬碟帳戶
+      url: task-scanning-google-drive.html
+  - title: 檢視資料的詳細資料
+    links:
+    - title: 檢視包含私人資訊的檔案
+      url: task-controlling-private-data.html
+    - title: 檢視儲存設備中重複的檔案
+      url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
+    - title: 篩選資料以檢視特定檔案
+      url: task-investigate-data.html
+    - title: 建立原則以檢視您的熱門搜尋
+      url: task-using-policies.html
+    - title: 產生法規遵循報告
+      url: task-generating-compliance-reports.html
+  - title: 組織您的私有資料
+    links:
+    - title: 將標記和擁有者套用至需要注意的檔案
+      url: task-org-private-data.html#apply-tags-to-manage-your-scanned-files
+    - title: 使用AIP標籤將資料分類
+      url: task-org-private-data.html#categorize-your-data-using-aip-labels
+    - title: 新增您自己的自訂個人資料識別碼
+      url: task-managing-data-fusion.html
+  - title: 管理您的私有資料
+    links:
+    - title: 複製來源檔案
+      url: task-managing-highlights.html#copy-source-files
+    - title: 移動來源檔案
+      url: task-managing-highlights.html#move-source-files-to-an-nfs-share
+    - title: 刪除來源檔案
+      url: task-managing-highlights.html#delete-source-files
+    - title: 找到不合規的資料時、請建立電子郵件警示
+      url: task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found
+    - title: 監控及管理檔案存取事件
+      url: task-manage-file-access-events.html
+    - title: 回應資料主旨存取要求
+      url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
+  - title: 部落格與社群
+    links:
+    - title: NetApp社群
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP 分類使用案例
+      url: https://bluexp.netapp.com/netapp-cloud-data-sense
+    - title: BlueXP 分類影片
+      url: https://youtube.com/playlist?list=PLdXI3bZJEw7m0dFDhu3w6Yqt71Zqyl2Pw
+    - title: BlueXP部落格
+      url: https://bluexp.netapp.com/blog
+    - title: BlueXP 網路研討會
+      url: https://bluexp.netapp.com/events

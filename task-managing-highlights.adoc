@@ -32,7 +32,7 @@ BlueXP 分類提供多種方法來管理您的私有資料。有些功能可讓�
 ====
 
 
-== 正在複製來源檔案
+== 複製來源檔案
 
 您可以複製 BlueXP 分類正在掃描的任何來源檔案。複本作業有三種類型、取決於您要完成的作業：
 
@@ -52,7 +52,7 @@ BlueXP 分類提供多種方法來管理您的私有資料。有些功能可讓�
 
 
 
-=== 將來源檔案複製到NFS共用區
+=== 將來源檔案複製到 NFS 共用
 
 您可以將 BlueXP 分類掃描的來源檔案複製到任何 NFS 共用。NFS 共用不需要與 BlueXP 分類整合、您只需要知道 NFS 共用的名稱、所有選取的檔案都會以該格式複製 `<host_name>:/<share_path>`。
 
@@ -94,7 +94,7 @@ image:screenshot_compliance_copy_file.png["快照顯示從「資料調查」頁�
 
 
 
-=== 將Volume資料複製到新Volume
+=== 將 Volume 資料複製到新的 Volume
 
 您可以使用 NetApp _FlexClone _ 功能、複製 BlueXP 分類正在掃描的現有 ONTAP Volume 。這可讓您快速複製磁碟區、同時只包含您選取的檔案。如果您正在移轉資料、但想要從原始Volume中排除特定檔案、或是想要建立用於測試的磁碟區複本、則此功能非常實用。
 
@@ -203,7 +203,7 @@ BlueXP 複本與同步 UI 會在 BlueXP 中開啟。
 
 
 
-== 將來源檔案移至NFS共用區
+== 將來源檔案移至 NFS 共用
 
 您可以將 BlueXP 分類掃描的來源檔案移至任何 NFS 共用。NFS 共用不需要與 BlueXP 分類整合。
 
@@ -248,11 +248,11 @@ image:screenshot_compliance_move_file.png["顯示「資料調查」頁面中檔�
 
 
 
-== 正在刪除來源檔案
+== 刪除來源檔案
 
 您可以永久移除看起來不安全或風險太高的來源檔案、使其留在儲存系統中、或是您已識別為重複檔案。此動作是永久性的、而且不會復原或還原。
 
-您可以從「調查」窗格手動刪除檔案、或 link:task-using-policies.html#deleting-source-files-automatically-using-policies["自動使用原則"^]。
+您可以從「調查」窗格手動刪除檔案、或 link:task-using-policies.html#delete-source-files-automatically-using-policies["自動使用原則"^]。
 
 
 TIP: 您無法刪除位於資料庫中的檔案。支援所有其他資料來源。

@@ -40,7 +40,7 @@ image:diagram_compliance_data_fusion.png["圖表顯示如何使用資料庫的�
 請注意、由於您正在掃描自己的資料庫、因此在未來的 BlueXP 分類掃描中、無論資料儲存在哪種語言、都會用來識別資料。
 
 .步驟
-您必須擁有 link:task-scanning-databases.html#adding-the-database-server["新增至少一個資料庫伺服器"^] 至 BlueXP 分類、然後再新增資料 Fusion 來源。
+您必須擁有 link:task-scanning-databases.html#add-the-database-server["新增至少一個資料庫伺服器"^] 至 BlueXP 分類、然後再新增資料 Fusion 來源。
 
 . 在「組態」頁面中、按一Fusion 下來源資料所在資料庫中的*管理Data S還原*。
 +
@@ -184,7 +184,7 @@ BlueXP 分類會將它掃描的資料分成不同類型的類別。類別是以�
 
 例如、您可能想要查看.gz格式的壓縮安裝檔案在檔案中的位置、以便視需要加以移除。
 
-更新自訂類別之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類規範儀表板的「類別」區段下方、以及「類別」篩選器的「調查」頁面中。 link:task-controlling-private-data.html#viewing-files-by-categories["瞭解如何依類別檢視檔案"]。
+更新自訂類別之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類規範儀表板的「類別」區段下方、以及「類別」篩選器的「調查」頁面中。 link:task-controlling-private-data.html#view-files-by-categories["瞭解如何依類別檢視檔案"]。
 
 .您需要的產品
 您至少需要建立 25 個訓練檔案、其中包含您希望 BlueXP 分類識別的資料類別範例。支援下列檔案類型：

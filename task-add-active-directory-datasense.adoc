@@ -20,8 +20,8 @@ summary: 您可以將全域 Active Directory 與 BlueXP 分類整合、以強化
 
 這項整合在 BlueXP 分類的下列位置提供其他資訊：
 
-* 您可以使用「檔案擁有者」 link:task-investigate-data.html#filtering-data-in-the-data-investigation-page["篩選器"] 並在「調查」窗格中查看檔案中繼資料中的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。
-* 您可以看到 link:task-investigate-data.html#viewing-permissions-for-files-and-directories["完整檔案權限"] 按一下「檢視所有權限」按鈕、即可查看每個檔案和目錄。
+* 您可以使用「檔案擁有者」 link:task-investigate-data.html#filter-data-in-the-data-investigation-page["篩選器"] 並在「調查」窗格中查看檔案中繼資料中的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。
+* 您可以看到 link:task-investigate-data.html#view-permissions-for-files-and-directories["完整檔案權限"] 按一下「檢視所有權限」按鈕、即可查看每個檔案和目錄。
 * 在中 link:task-controlling-governance-data.html["治理儀表板"]、「開啟權限」面板會顯示更多資料的詳細資料。
 
 
@@ -47,7 +47,7 @@ Active Directory 與 BlueXP 分類的整合可從下列資料來源識別資料�
 
 
 
-== 連線至Active Directory伺服器
+== 連線至 Active Directory 伺服器
 
 部署 BlueXP 分類並在資料來源上啟動掃描之後、您可以將 BlueXP 分類與 Active Directory 整合。Active Directory可使用DNS伺服器IP位址或LDAP伺服器IP位址來存取。
 
@@ -114,7 +114,7 @@ image:screenshot_compliance_active_directory_added.png["顯示 BlueXP 分類中�
 
 
 
-== 管理Active Directory整合
+== 管理 Active Directory 整合
 
 如果您需要修改Active Directory整合中的任何值、請按一下*編輯*按鈕進行變更。
 
