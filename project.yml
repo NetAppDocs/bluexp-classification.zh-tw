@@ -88,6 +88,8 @@ sidebar:
     entries:
     - title: 新增自訂個人資料識別碼
       url: "/task-managing-data-fusion.html"
+    - title: 將目錄排除在掃描之外
+      url: "/task-exclude-scan-paths.html"
     - title: 檢視 BlueXP 分類動作的狀態
       url: "/task-view-compliance-actions.html"
     - title: 將現有的群組 ID 定義為「開放給組織」

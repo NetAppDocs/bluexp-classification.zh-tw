@@ -4,7 +4,7 @@ permalink: task-add-group-id-as-open.html
 keywords: permissions, open to organization, file access 
 summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。 
 ---
-= 將其他群組 ID 定義為「開放給組織」
+= 將其他群組 ID 定義為開放給組織使用
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -27,13 +27,14 @@ summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、�
 您必須先擁有群組 ID 編號（ GID ）、才能開始執行此工作。
 
 .步驟
-. 在 BlueXP 分類系統上、移至「 /opt/NetApp/config/custom_configuration 」、然後開啟「 data_provider.yaml 」檔案。
+. 在 BlueXP 分類系統上、前往「 /opt/NetApp/config/custom_configuration 」並開啟檔案 `data_provider.yaml`。
 . 在「 groupy_group_ids: [] 」一行中新增群組 ID 。例如：
 +
  organization_group_ids: [1014, 1015, 21, 2021, 1013, 2020, 1018, 1019]
 +
 請勿變更此檔案中的任何其他內容。
 
+. 將變更儲存至檔案。
 . 請移至「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」、然後執行下列指令碼：
 +
  update_data_providers_from_config_file.sh
@@ -42,10 +43,15 @@ summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、�
 
 
 
+.結果
 所有後續資料掃描都會識別附加這些群組 ID 為「開放給組織」的檔案或資料夾。
 
 您可以編輯群組 ID 清單、並使用這些相同步驟刪除過去新增的任何群組 ID 。執行指令碼以提交變更後、將會更新修訂版的群組 ID 清單。
 
-若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
+
+
+== 檢視目前的群組 ID 清單
+
+的內容是可能的 `data_provider.yaml` 組態檔案與執行後實際認可的檔案不同 `update_data_providers_from_config_file.sh` 指令碼：若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
 
  get_data_providers_configuration.sh

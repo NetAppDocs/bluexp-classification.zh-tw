@@ -56,7 +56,7 @@ indexpage:
       url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
     - title: 篩選資料以檢視特定檔案
       url: task-investigate-data.html
-    - title: 建立原則以檢視您的熱門搜尋
+    - title: 建立原則以檢視您的熱門搜尋結果
       url: task-using-policies.html
     - title: 產生法規遵循報告
       url: task-generating-compliance-reports.html
@@ -68,6 +68,8 @@ indexpage:
       url: task-org-private-data.html#categorize-your-data-using-aip-labels
     - title: 新增您自己的自訂個人資料識別碼
       url: task-managing-data-fusion.html
+    - title: 將某些目錄排除在掃描之外
+      url: task-exclude-scan-paths.html
   - title: 管理您的私有資料
     links:
     - title: 複製來源檔案

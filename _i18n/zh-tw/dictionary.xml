@@ -1654,13 +1654,6 @@
   <block id="6187258d3b87228cf977d535a5db1ea0" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 選取使用者檔案的掃描類型</block>
   <block id="1a7c4f8acb1e42cdd7c2f34894fc2a2a" category="cell">大型（預設）</block>
   <block id="9868eea85c69d464c823a4c7e185121a" category="section-title">對應掃描與分類掃描之間有何差異</block>
-  <block id="c3828ad11edf9a8e2a0d7bd8910b2ad3" category="section-title">2022年12月11日（版本1.18）</block>
-  <block id="329171a5c817ab7ae03a1497aa6d59fa" category="section-title">內部部署安裝增強功能</block>
-  <block id="500b30285e1a741b658bc533a0a125a1" category="paragraph">內部部署Data Sense安裝新增下列增強功能：</block>
-  <block id="bacf3e82e48abd0e39c6a162b4aa7191" category="list-text">在內部部署主機上開始安裝之前、現在會先檢查其他一些先決條件。這有助於確保主機系統100%準備好安裝Data Sense軟體：</block>
-  <block id="8e3833fdafa0cd3a63d1fae40cbd74e9" category="list-text">測試所有必要資料夾的相關權限</block>
-  <block id="36cbb51c271d3c68a01a8599c0fbd2b8" category="list-text">在「組態」頁面中、「工作環境」區段現在會顯示_工作環境ID_和_掃描器群組_名稱。如果您打算使用多個Data Sense主機來提供額外的處理能力來掃描資料來源、則必須知道工作環境ID。</block>
-  <block id="73e22396c6474ab27832098f1351b823" category="inline-link">深入瞭解如何在單一主機伺服器和多個主機上安裝Data Sense</block>
   <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">開始之前</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完成後</block>
   <block id="9c2468c732c2a3c37f5718ed3927f188" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 檢閱物件儲存先決條件</block>
@@ -1672,8 +1665,6 @@
   <block id="23dcbd39a65a485d50a0307dbfaed624" category="list-text">執行下列指令碼、將此對應資訊登錄至所有掃描器節點：<block ref="095075046e7ff767d3fd56d02f6fdfdb" prefix=" " category="inline-code"></block></block>
   <block id="a27db93614949e38a138b99356391903" category="paragraph-title">必要步驟</block>
   <block id="ddeaea1d2d5cacbe438413e4143bca6e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 在雲端環境中設定 S3 需求</block>
-  <block id="c73eb1c0478b9ea7f0699ac7b64d4214" category="list-text">測試上是否有足夠的空間<block ref="2e1a4e3f55001820560b237188c70bc3" prefix=" " category="inline-code"></block>、<block ref="d42b9c57d24cf5db3bd8d332dc35437f" prefix=" " category="inline-code"></block>和<block ref="68ab1268abb7e5f5688810968df97d6b" prefix=" " category="inline-code"></block></block>
-  <block id="da8fda88af08dfa86e6c1895e629a7a5" category="list-text">此外、在「組態」頁面中、會有一個新區段顯示您已設定的掃描器群組、以及每個群組中的掃描器節點。</block>
   <block id="a0bc8fee488c4982eb9cac7b4cd30c5d" category="list-text">連接器主機必須允許透過連接埠 443 進行傳出 HTTPS 存取。如果連接器位於雲端、則預先定義的防火牆或路由規則會允許所有傳出通訊。</block>
   <block id="be8e8316109467c39dd04940dda55d9c" category="list-text">開啟檔案「/opt/netapp/Datasense/siting_Environ_to _bANer_Group_config.yml」、然後輸入掃描程式群組掃描特定工作環境的對應。您需要為每個資料來源設定_工作環境ID_。例如、下列項目會將2個工作環境新增至「Europe」掃描器群組、將2個新增至「US_USEY」掃描器群組：</block>
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。</block>
@@ -2957,7 +2948,6 @@
   <block id="451e723f277a39328c39e790b3d47ebc" category="paragraph">新的「部分成功」狀態表示 BlueXP 分類動作已完成、有些項目失敗、有些項目成功、例如當您移動或刪除 100 個檔案時。此外、「已完成」狀態已重新命名為「成功」。過去、「已完成」狀態可能會列出成功及失敗的動作。現在「成功」狀態代表所有項目的所有行動都成功。<block ref="81392bd70242cc4257015d9eb2f1d43a" category="inline-link-rx"></block>。</block>
   <block id="fccd9d5627e0ea943a2decbcedc75caf" category="paragraph">「治理」儀表板新增了「敏感資料」和「廣泛權限」區域、提供內含敏感資料（包括敏感和敏感個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料的風險所在。<block ref="7c90c3d5fe3f2a4e9ca8ce0d84318210" category="inline-link-rx"></block>。</block>
   <block id="e5047cfc3a021db29e30390a5a0de3c1" category="paragraph">BlueXP 分類可識別及分類包含日文個人編號（也稱為「我的號碼」）的檔案。這包括「個人」和「公司我的號碼」。<block ref="902797e77ffbfd681f1fc19dad4fefbc" category="inline-link-rx"></block>。</block>
-  <block id="70ef9f0f001698901fc7782c85efbd22" category="paragraph"><block ref="d164dabede0c4e6f2317947d0f40a4c9" category="inline-link-rx"></block>。</block>
   <block id="9aeb191a0aa6c1027436d873f00b71c9" category="paragraph">您可以<block ref="1f636e96c754f54f3e3b5b9bf17177fa" category="inline-link-rx"></block> 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。</block>
   <block id="1b01b1e09dd0c52ed6a6d8b4ca2a0568" category="paragraph">若要在雲端供應商環境中建立 Connector 、請參閱<block ref="43c354a9e10c487e79b72ac55319f506" category="inline-link-rx"></block>、<block ref="f57cc468ab9bea4198c876368a971c60" category="inline-link-rx"></block>或<block ref="4ed2379781d8ba33fa9fe0959039a8e2" category="inline-link-rx"></block>。</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
@@ -3317,14 +3307,12 @@
   <block id="c0796e6eb525f9f4fe2a9d96a28d314a" category="list-text">目錄名稱</block>
   <block id="ea36f55b106d5d1443d6a1e80c18df3d" category="list-text">目錄擁有者</block>
   <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。</block>
-  <block id="9ada56a36c98a6592b93aac97b759b65" category="doc">將其他群組 ID 定義為「開放給組織」</block>
   <block id="54f4d6ea6929f3157249a7232005ba31" category="paragraph">當群組 ID （ GID ）附加至 NFS 檔案中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。</block>
   <block id="85755c2c4a65adf46f4aed267e145acd" category="paragraph">進行此變更並重新掃描檔案和資料夾後、任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示此權限、而且這些權限也會出現在您顯示檔案權限的報告中。</block>
   <block id="c079e3a087379d135bc6228cdbf4538d" category="section-title">登入 BlueXP 分類系統</block>
   <block id="3e6039a3c9f368f407b293a4cae886e2" category="paragraph">當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接存取組態檔案和指令碼。</block>
   <block id="aea796c551760c123249c98597ef5dab" category="section-title">將「開放組織」權限新增至群組 ID</block>
   <block id="cab0d8189f1383e6633abad2d8bb10e2" category="paragraph">您必須先擁有群組 ID 編號（ GID ）、才能開始執行此工作。</block>
-  <block id="2783de23499f1b6912284079950af328" category="list-text">在 BlueXP 分類系統上、移至「 /opt/NetApp/config/custom_configuration 」、然後開啟「 data_provider.yaml 」檔案。</block>
   <block id="f81b0bf85bf2ac124c8235722fd5953b" category="list-text">在「 groupy_group_ids: [] 」一行中新增群組 ID 。例如：</block>
   <block id="98ab797cb238cc535772dce1663baf49" category="paragraph">請勿變更此檔案中的任何其他內容。</block>
   <block id="8a9190ee1ce170537f2281a1fd3efbf8" category="paragraph">此命令會將修訂後的群組 ID 權限提交給分類引擎。</block>
@@ -3336,7 +3324,6 @@
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">新增其他群組 ID 為「開放給組織」</block>
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">將現有的群組 ID 定義為「開放給組織」</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">請移至「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」、然後執行下列指令碼：</block>
-  <block id="d16189c10d4d8a98db7b1b99d883a1fd" category="paragraph">若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">現在您可以在 NFS 中設定群組 ID 、以便直接從 BlueXP 分類中將其視為「開放組織」、如果群組一開始沒有設定該權限。任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示為「開放給組織」。瞭解如何操作<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
   <block id="3fa1e4aec3c930accd20ae2a1e354a79" category="paragraph">BlueXP支援其服務的REST API功能。如果 BlueXP 不是首選的管理點、則 BlueXP 分類等服務也可以透過 REST API 使用。每個使用者動作都有REST API、可與協力廠商系統整合。請參閱 <block ref="6cf6f695e0ddd2cc536783d6e0951a10" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="da4874b0888a9dafc160c24905184d23" category="section-title">是否掃描駐留在 ONTAP 磁碟區上的 Snapshot 複本？</block>
@@ -3465,7 +3452,6 @@
   <block id="117276e96b89d072e0a833596332ef29" category="section-title">新增資料庫伺服器</block>
   <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">啟用及停用資料庫架構的規範掃描</block>
   <block id="402607c1b30a68385dcfbd12111327c1" category="section-title">2024 年 1 月 10 日（版本 1.27 ）</block>
-  <block id="c0aa452130abaadece0c71d90274bb8e" category="section-title">2023 年 12 月（版本 1.26.6 ）</block>
   <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">此版本包含一些小的增強功能。</block>
   <block id="176a42de7f70d82ff8506b6739d7b290" category="paragraph">此版本也會暫時移除下列選項：</block>
   <block id="39b6848535d4f2679ee032ca465bba8c" category="list-text">啟用稽核記錄集合的選項已停用。請參閱 <block ref="01ac4154b50639da0a94f22ce7059c7f" category="inline-link-macro-rx"></block>。</block>
@@ -3512,7 +3498,6 @@
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">檢視包含私人資訊的檔案</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">檢視儲存設備中重複的檔案</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">篩選資料以檢視特定檔案</block>
-  <block id="ca60961cf2d876d600daca4a1ad60001" category="sidebar">建立原則以檢視您的熱門搜尋</block>
   <block id="514f916b25444f3ec0ab113c2706f83a" category="sidebar">將標記和擁有者套用至需要注意的檔案</block>
   <block id="b33a306cb7abd3790ba4311eb102a667" category="sidebar">新增您自己的自訂個人資料識別碼</block>
   <block id="2987f20ce906ae32ec7e3e192413377f" category="sidebar">移動來源檔案</block>
@@ -3524,4 +3509,68 @@
   <block id="ca37e37afe1d388be7dabea9f8f09ba3" category="sidebar">BlueXP 分類影片</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP部落格</block>
   <block id="f93e4e0ba0745745e36a3b67b14a8a5b" category="sidebar">BlueXP 網路研討會</block>
+  <block id="8180cc16c2c6f5d6b650c76944d52252" category="summary">如果您想要 BlueXP 分類排除位於特定資料來源目錄中的掃描資料、您可以將這些目錄名稱新增至組態檔。套用此變更後、 BlueXP 分類引擎將排除這些目錄中的掃描資料。</block>
+  <block id="f6af5e23cd22bc5f1b7833ad602a5c38" category="doc">從 BlueXP 分類掃描中排除特定目錄</block>
+  <block id="bea0fd574e5a5abde1c8262dbd6e2370" category="paragraph">請注意、根據預設、 BlueXP 分類設定為排除掃描磁碟區快照資料、因為該內容與磁碟區中的內容相同。</block>
+  <block id="efebf801e240ae82ed1c434305548b38" category="paragraph">BlueXP 分級版本 1.29 及更高版本（從 2024 年 3 月開始）提供此功能。</block>
+  <block id="0abc7ce542155915b82311c6450bea62" category="paragraph">下列資料來源中的 NFS 和 CIFS 共用支援排除 BlueXP 分類掃描中的特定目錄：</block>
+  <block id="49fe103d0a39e5feeddf772106a8122e" category="list-text">一般檔案共用</block>
+  <block id="cf2e31e61b9c0d3547f54fc506e4b383" category="section-title">定義要從掃描中排除的目錄</block>
+  <block id="78e986fa820c103dbcc45ed24bd2f383" category="paragraph">您必須先登入 BlueXP 分類系統、才能從分類掃描中排除目錄、以便編輯組態檔案並執行指令碼。瞭解如何操作 <block ref="fee7c33f779340beee212bd52ff12fd0" category="inline-link-macro-rx"></block> 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。</block>
+  <block id="bc6218284832af039faeb4c497e97a18" category="list-text">每個 BlueXP 分類系統最多可排除 50 個目錄路徑。</block>
+  <block id="66a7b6ae1af91171aaf4ecc7afd0b7d0" category="list-text">排除目錄路徑可能會影響掃描時間。</block>
+  <block id="2e19c6096e07e117219780aee7f88c45" category="list-text">在 BlueXP 分類系統上、前往「 /opt/NetApp/config/custom_configuration 」並開啟檔案<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block>。</block>
+  <block id="6e0803e8653caacbe1a019f32eda00bb" category="list-text">在「 data_providers 」區段的「 exclin: 」行下方、輸入要排除的目錄路徑。例如：</block>
+  <block id="5a0dfd405c0424a01f42cdb7e596d91c" category="list-text">將變更儲存至檔案。</block>
+  <block id="d661ab86a14960e8bcf6cdfa727299d1" category="paragraph">此命令會將要排除的目錄提交至分類引擎。</block>
+  <block id="21f183efd2dff70b58a99d83fc4f0ce7" category="paragraph">所有後續的資料掃描都會排除掃描這些指定目錄的功能。</block>
+  <block id="a495b8035b743d8b7dea2d9d0918de77" category="paragraph">您可以使用這些相同步驟、從排除清單新增、編輯或刪除項目。執行指令碼以提交變更後、修訂後的排除清單將會更新。</block>
+  <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">範例</block>
+  <block id="0440227581515c72236de5a764242d5c" category="paragraph-title">組態 1 ：</block>
+  <block id="8c0f7ed2eea737d19ff087745c78f4ae" category="paragraph">名稱中任何位置包含「 folder1 」的每個資料夾都會從所有資料來源中排除。</block>
+  <block id="d6d0a43c6c69d1f785258f09797e96a2" category="list-title">將排除的路徑預期結果：</block>
+  <block id="0d30977fecaa90640135943496e20863" category="list-text">/CVO1/folder1</block>
+  <block id="8eb7d336cfc030df3afe89d5c289514d" category="list-text">/CVO1/folder1name</block>
+  <block id="9f2d1aa2824b0506dd1e80da3eaebd63" category="list-text">/CVO1/folder10</block>
+  <block id="15fb383027ef8fbe15d374b2efc33994" category="list-text">/CVO1/* 文件夾 1</block>
+  <block id="569806d3b5250620ff0f137d85df73c4" category="list-text">/CVO1/+folder1name</block>
+  <block id="d6f23bc30d0950bf24b440de3579ee1f" category="list-text">/CVO1/notfolder10</block>
+  <block id="7e3057c60782470bd7f0c765e4d614b9" category="list-text">/CVO22/folder1.</block>
+  <block id="b18ea64bfd5aa27240193320e354bfeb" category="list-text">/CVO22/folder1name</block>
+  <block id="6fdf0a8d667f474107a56d7566260558" category="list-text">/CVO22/folder10</block>
+  <block id="7c9e22babb20d95a6ccacbc12c6e72db" category="list-title">不排除的路徑範例：</block>
+  <block id="ec2b190a955f29720921cc8e6a67731d" category="list-text">/CVO1/* 資料夾</block>
+  <block id="0856e33548ceb338ab56d993d8281098" category="list-text">/CVO1/foldername</block>
+  <block id="14b8fac51101a115be8405f9d25adf0c" category="list-text">/CVO22/* 文件夾 20</block>
+  <block id="ce6c202454d84db0a51ee3b673259d76" category="paragraph-title">組態 2 ：</block>
+  <block id="cd10b67d6b72e9152aca54085862e630" category="paragraph">只有名稱開頭才包含 "*folder1" 的每個資料夾都會被排除。</block>
+  <block id="33114d8cd4f5562094ea8f71798fab0c" category="list-text">/CVO/*folder1.</block>
+  <block id="07099186c5910fc2467ae1b4757b70f3" category="list-text">/CVO/*folder1name</block>
+  <block id="b96768cc207dc3d7940a06aed4482e49" category="list-text">/CVO/* 文件夾 10.</block>
+  <block id="129853dc73d0231d5c812823e2480cba" category="list-text">/CVO/folder1</block>
+  <block id="c855f79110a45e3cf4ee4a2e9f07d01c" category="list-text">/CVO/folder1name</block>
+  <block id="5b6734714cb7b0ac3b7b695994d18616" category="list-text">/CVO/Not * 文件夾 10.</block>
+  <block id="d3b9102bc3b45248bbfec3ec65c81ffd" category="paragraph-title">組態 3 ：</block>
+  <block id="c962d247f3d6cbb96db748ddbc8947d0" category="paragraph">資料來源「 CVO22 」中的每個資料夾都會排除名稱中任何位置包含「 folder1 」的資料夾。</block>
+  <block id="85aafa7a10a33b1a6b3edd3a981f3e09" category="section-title">在資料夾名稱中逸出特殊字元</block>
+  <block id="555e1283533f2fd2406da22eb7c48543" category="paragraph">如果您的資料夾名稱包含下列其中一個特殊字元、而您想要排除該資料夾中的資料、則必須在資料夾名稱之前使用轉義順序 \\ 。</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例如：</block>
+  <block id="f6b342a69edf320338b3f72b95931768" category="paragraph">來源路徑：<block ref="4cd339ff39aca9d50d4472947a989dc1" prefix=" " category="inline-code"></block></block>
+  <block id="457d08b230361da11684b35702d5d114" category="paragraph">排除檔案中的語法：<block ref="656c9e12809cee621e2abce3032674d0" prefix=" " category="inline-code"></block></block>
+  <block id="3d704d8a7dea04055fa8e435fb3ba4a4" category="section-title">檢視目前的排除清單</block>
+  <block id="ce591271bee64e6f1ef9a4585a8a1142" category="paragraph">的內容是可能的<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> 組態檔案與執行後實際認可的檔案不同<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> 指令碼：若要檢視您從 BlueXP 分類掃描中排除的目前目錄清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：</block>
+  <block id="75377d4edffa6c8df90ec35a6c2955ae" category="section-title">我可以指示服務排除某些目錄中的掃描資料嗎？</block>
+  <block id="140079c23bf99666acb52cc8f9b453cb" category="paragraph">是的。如果您想要 BlueXP 分類排除位於特定資料來源目錄中的掃描資料、您可以將該清單提供給分類引擎。套用該變更後、 BlueXP 分類將排除指定目錄中的掃描資料。</block>
+  <block id="cccdbfa223764cc2c6bbdf979c65ac39" category="paragraph"><block ref="8704cac21d49e5e6ff202bcfdaf0dcb0" category="inline-link-macro-rx"></block>。</block>
+  <block id="71dc9fd1ff423f10c9820171aaeabf3c" category="section-title">2024 年 3 月 4 日（版本 1.29 ）</block>
+  <block id="2155776a968fa3c23d5147a57832435f" category="section-title">現在您可以排除位於特定資料來源目錄中的掃描資料</block>
+  <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">如果您想要 BlueXP 分類排除位於特定資料來源目錄中的掃描資料、您可以將這些目錄名稱新增至 BlueXP 分類處理的組態檔。此功能可讓您避免掃描不必要的目錄、或是導致傳回誤判的個人資料結果。</block>
+  <block id="1566e9c70755185a01fd5ae6296dca7b" category="paragraph"><block ref="2b616ef681b794b63b03f66a13723ff8" category="inline-link-rx"></block>。</block>
+  <block id="7cda33697c25a4972bdbfab414004cc2" category="section-title">2023 年 12 月 14 日（版本 1.26.6 ）</block>
+  <block id="a1663078538acf931413c4667ee4dc32" category="doc">將其他群組 ID 定義為開放給組織使用</block>
+  <block id="14262b7b54453519cfa73f76b2652616" category="section-title">檢視目前的群組 ID 清單</block>
+  <block id="30e7ed02f97ac1e08032a6f980412c4b" category="paragraph">的內容是可能的<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> 組態檔案與執行後實際認可的檔案不同<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> 指令碼：若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：</block>
+  <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">建立原則以檢視您的熱門搜尋結果</block>
+  <block id="3e01ecaa94897c14b8a0c8eb76bf0c93" category="sidebar">將某些目錄排除在掃描之外</block>
+  <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">將目錄排除在掃描之外</block>
 </blocks>

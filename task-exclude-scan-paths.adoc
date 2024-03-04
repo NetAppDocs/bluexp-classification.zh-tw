@@ -1,0 +1,164 @@
+---
+sidebar: sidebar 
+permalink: task-exclude-scan-paths.html 
+keywords: exclude scans, folders, directories 
+summary: 如果您想要 BlueXP 分類排除位於特定資料來源目錄中的掃描資料、您可以將這些目錄名稱新增至組態檔。套用此變更後、 BlueXP 分類引擎將排除這些目錄中的掃描資料。 
+---
+= 從 BlueXP 分類掃描中排除特定目錄
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您想要 BlueXP 分類排除位於特定資料來源目錄中的掃描資料、您可以將這些目錄名稱新增至組態檔。套用此變更後、 BlueXP 分類引擎將排除這些目錄中的掃描資料。
+
+請注意、根據預設、 BlueXP 分類設定為排除掃描磁碟區快照資料、因為該內容與磁碟區中的內容相同。
+
+BlueXP 分級版本 1.29 及更高版本（從 2024 年 3 月開始）提供此功能。
+
+
+
+== 支援的資料來源
+
+下列資料來源中的 NFS 和 CIFS 共用支援排除 BlueXP 分類掃描中的特定目錄：
+
+* 內部部署 ONTAP
+* Cloud Volumes ONTAP
+* Amazon FSX for NetApp ONTAP 產品
+* Azure NetApp Files
+* 一般檔案共用
+
+
+
+
+== 定義要從掃描中排除的目錄
+
+您必須先登入 BlueXP 分類系統、才能從分類掃描中排除目錄、以便編輯組態檔案並執行指令碼。瞭解如何操作 link:reference-log-in-to-instance.html["登入 BlueXP 分類系統"] 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。
+
+[NOTE]
+====
+* 每個 BlueXP 分類系統最多可排除 50 個目錄路徑。
+* 排除目錄路徑可能會影響掃描時間。
+
+
+====
+.步驟
+. 在 BlueXP 分類系統上、前往「 /opt/NetApp/config/custom_configuration 」並開啟檔案 `data_provider.yaml`。
+. 在「 data_providers 」區段的「 exclin: 」行下方、輸入要排除的目錄路徑。例如：
++
+....
+exclude:
+- "folder1"
+- "folder2"
+....
++
+請勿變更此檔案中的任何其他內容。
+
+. 將變更儲存至檔案。
+. 請移至「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」、然後執行下列指令碼：
++
+ update_data_providers_from_config_file.sh
++
+此命令會將要排除的目錄提交至分類引擎。
+
+
+
+.結果
+所有後續的資料掃描都會排除掃描這些指定目錄的功能。
+
+您可以使用這些相同步驟、從排除清單新增、編輯或刪除項目。執行指令碼以提交變更後、修訂後的排除清單將會更新。
+
+
+
+== 範例
+
+.組態 1 ：
+名稱中任何位置包含「 folder1 」的每個資料夾都會從所有資料來源中排除。
+
+....
+data_providers:
+   exclude:
+   - "folder1"
+....
+.將排除的路徑預期結果：
+* /CVO1/folder1
+* /CVO1/folder1name
+* /CVO1/folder10
+* /CVO1/* 文件夾 1
+* /CVO1/+folder1name
+* /CVO1/notfolder10
+* /CVO22/folder1.
+* /CVO22/folder1name
+* /CVO22/folder10
+
+
+.不排除的路徑範例：
+* /CVO1/* 資料夾
+* /CVO1/foldername
+* /CVO22/* 文件夾 20
+
+
+.組態 2 ：
+只有名稱開頭才包含 "*folder1" 的每個資料夾都會被排除。
+
+....
+data_providers:
+   exclude:
+   - "\\*folder1"
+....
+.將排除的路徑預期結果：
+* /CVO/*folder1.
+* /CVO/*folder1name
+* /CVO/* 文件夾 10.
+
+
+.不排除的路徑範例：
+* /CVO/folder1
+* /CVO/folder1name
+* /CVO/Not * 文件夾 10.
+
+
+.組態 3 ：
+資料來源「 CVO22 」中的每個資料夾都會排除名稱中任何位置包含「 folder1 」的資料夾。
+
+....
+data_providers:
+   exclude:
+   - "CVO22/folder1"
+....
+.將排除的路徑預期結果：
+* /CVO22/folder1.
+* /CVO22/folder1name
+* /CVO22/folder10
+
+
+.不排除的路徑範例：
+* /CVO1/folder1
+* /CVO1/folder1name
+* /CVO1/folder10
+
+
+
+
+== 在資料夾名稱中逸出特殊字元
+
+如果您的資料夾名稱包含下列其中一個特殊字元、而您想要排除該資料夾中的資料、則必須在資料夾名稱之前使用轉義順序 \\ 。
+
+ ., +, *, ?, ^, $, (, ), [, ], {, }, |
+例如：
+
+來源路徑： `/project/*not_to_scan`
+
+排除檔案中的語法： `"\\*not_to_scan"`
+
+
+
+== 檢視目前的排除清單
+
+的內容是可能的 `data_provider.yaml` 組態檔案與執行後實際認可的檔案不同 `update_data_providers_from_config_file.sh` 指令碼：若要檢視您從 BlueXP 分類掃描中排除的目前目錄清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
+
+ get_data_providers_configuration.sh
