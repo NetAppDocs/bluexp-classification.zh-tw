@@ -30,6 +30,14 @@ https://docs.netapp.com/us-en/bluexp-classification/task-exclude-scan-paths.html
 
 
 
+=== 超大型執行個體支援現已符合資格
+
+如果您需要 BlueXP 分類來掃描超過 2.5 億個檔案、您可以在雲端部署或內部部署安裝中使用超大型執行個體。這類系統最多可掃描 5 億個檔案。
+
+https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["深入瞭解"]。
+
+
+
 == 2024 年 1 月 10 日（版本 1.27 ）
 
 
