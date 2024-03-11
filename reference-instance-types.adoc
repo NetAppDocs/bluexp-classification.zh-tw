@@ -49,7 +49,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 | 系統大小 | 規格 | 執行個體類型 
 
 
-| 超大 | 32 個 CPU 、 128 GB RAM 、 1 個 TiB SSD （最小處理量為 750MB/s ） | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^] （預設） 
+| 超大 | 32 個 CPU 、 128 GB RAM 、作業系統磁碟（ 2 、 048 GiB 、最低 250 MB/s 處理量）和資料磁碟（ 1 個 TiB SSD 、最低 750 MB/s 處理量） | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^] （預設） 
 
 
 | 大 | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^] （預設） 
