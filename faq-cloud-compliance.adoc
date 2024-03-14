@@ -320,7 +320,7 @@ link:concept-cloud-compliance.html#user-access-to-compliance-information["深入
 
 === 是否有人可以存取在我的瀏覽器和 BlueXP 分類之間傳送的私有資料？
 
-不可以在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料會以端點對端點加密來保護、這表示 NetApp 和第三方無法讀取資料。除非您要求並核准存取權限、否則 BlueXP 分類不會與 NetApp 分享任何資料或結果。
+不可以在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料、都是使用 TLS 1.2 來保護端點對端點加密、這表示 NetApp 和協力廠商無法讀取。除非您要求並核准存取權限、否則 BlueXP 分類不會與 NetApp 分享任何資料或結果。
 
 掃描的資料會保留在您的環境中。
 
