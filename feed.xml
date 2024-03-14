@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bluexp-classification | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/zh-tw/bluexp-classification/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/zh-tw/bluexp-classification</link>
+    <description>The latest updates from NetApp Documentation</description>
+    <language>zh-tw</language>
+    <ttl>60</ttl>
+    <pubDate>Thu, 14 Mar 2024 23:42:57 +0000</pubDate>
+    <lastBuildDate>Thu, 14 Mar 2024 23:42:57 +0000</lastBuildDate>
+    
+    
+    
+    <item>
+      <title>BlueXP 分類的新功能 (7 Mar 2024)</title>
+      <pubDate>Thu, 07 Mar 2024 15:17:07 +0000</pubDate>
+      <link>https://docs.netapp.com/zh-tw/bluexp-classification/whats-new.html?time=1709824627</link>
+      <guid isPermaLink="false">Thu, 07 Mar 2024 15:17:07 +0000</guid>
+      <description><![CDATA[ 瞭解 BlueXP 分類的新功能。 ]]></description>
+    </item>
+    
+    
+  </channel>
+</rss>
