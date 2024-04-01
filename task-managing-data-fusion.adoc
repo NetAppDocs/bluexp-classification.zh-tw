@@ -135,7 +135,7 @@ image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示�
 
 新增 regex 之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類法規遵循儀表板的「個人結果」區段下方、以及「個人資料」篩選器的「調查」頁面中。
 
-請參閱 https://regex101.com/[] 如果您需要協助建立所需的規則運算式、選擇 *Python* 以查看結果類型 BlueXP 分類將與規則運算式相符。
+如果您需要建置規則運算式的協助、請參閱 https://regex101.com/["規則運算式 101."^]。選擇 *Python* 以查看結果類型 BlueXP 分類將與規則運算式相符。。 https://pythonium.net/regex["Python Regex 測試器頁面"^] 也可透過顯示圖樣的圖形表示方式來使用。
 
 
 NOTE: 目前我們不允許在建立 regex 時使用模式旗標、這表示您不應該使用「 / 」。

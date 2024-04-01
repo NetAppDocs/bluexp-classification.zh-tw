@@ -26,11 +26,13 @@ sidebar:
       url: "/concept-cloud-compliance.html"
     - title: 部署 BlueXP 分類
       entries:
+      - title: 您應該使用哪種部署
+        url: "/task-deploy-overview.html"
       - title: 使用BlueXP在雲端部署
         url: "/task-deploy-cloud-compliance.html"
       - title: 安裝在可存取網際網路的Linux主機上
         url: "/task-deploy-compliance-onprem.html"
-      - title: 在內部安裝、無需網際網路存取
+      - title: 在內部部署的 Linux 主機上安裝、無需存取網際網路
         url: "/task-deploy-compliance-dark-site.html"
       - title: 檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類
         url: "/task-test-linux-system.html"

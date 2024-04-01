@@ -35,7 +35,7 @@ image:screenshot_compliance_repo_scan_settings.png["螢幕快照顯示您的儲�
 
 
 
-您可以將游標停留在_掃描狀態_欄中的圖表上、查看每個儲存庫中仍要對應或分類的檔案數目（本範例中為儲存庫）。
+您可以將游標移到 _ 對應狀態 _ 欄中的圖表上、查看每個儲存庫（本範例中的儲存庫）中仍要對應或分類的檔案數量。
 
 
 
@@ -53,7 +53,7 @@ image:screenshot_compliance_config_button.png["顯示如何按一下工作環境
 
 . 在「掃描組態」頁面中、您可以變更任何儲存庫（本範例中的儲存庫）、以執行 * 地圖 * 或 * 地圖與分類 * 掃描。
 +
-image:screenshot_compliance_repo_scanning.png["螢幕快照顯示如何選取儲存區的掃描類型。"]
+image:screenshot_compliance_repo_scan_settings.png["螢幕快照顯示如何選取儲存區的掃描類型。"]
 
 
 

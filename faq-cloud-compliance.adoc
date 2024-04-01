@@ -245,7 +245,7 @@ BlueXP 分類可以掃描您新增至 BlueXP Canvas 的工作環境中的資料�
 * Google雲端硬碟帳戶
 
 
-BlueXP 分類支援 NFS 3.x 、 4.0 和 4.1 版、以及 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。
+BlueXP 分類支援 NFS 3.x 版和 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。
 
 
 
@@ -392,9 +392,23 @@ Connector是在雲端帳戶內或內部部署的運算執行個體上執行的�
 
 
 
+=== BlueXP 分類是否需要存取認證？
+
+BlueXP 分類本身無法擷取儲存認證。而是儲存在 BlueXP Connector 中。
+
+BlueXP 分類使用資料層級認證、例如 CIFS 認證、在掃描前掛載共用。
+
+
+
 === 我可以在自己的主機上部署Connector嗎？
 
 是的。您可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部部署連接器"^] 在您網路中的 Linux 主機或雲端中的主機上。如果您打算在內部部署部署 BlueXP 分類、則可能也想要在內部部署安裝 Connector 、但這不是必要的。
+
+
+
+=== 服務與 Connector 之間的通訊是否使用 HTTP ？
+
+是的、 BlueXP 分類使用 HTTP 與 BlueXP Connector 通訊。
 
 
 

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification, classification, install 
 summary: 請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為「私有模式」。這類安裝最適合安全的站台。 
 ---
-= 在無法存取網際網路的主機上安裝 BlueXP 分類
+= 在無法存取網際網路的 Linux 主機上安裝 BlueXP 分類
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 請完成幾個步驟、在內部部署網站上無法存取網際網�
 
 
 [role="lead"]
-請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為「私有模式」。這類安裝最適合安全的站台。
+請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這類安裝最適合安全的站台。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解 BlueXP Connector 和 BlueXP 分類的不同部署模式"^]。
 
@@ -156,11 +156,11 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 *** Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 或更新版本）
 
 
-** 下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分級版本 1.26 或更新版本：
+** 下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本：
 +
-*** Red Hat Enterprise Linux 9.0 、 9.1 和 9.2 版
+*** Red Hat Enterprise Linux 版本 8.8 、 9.0 、 9.1 、 9.2 及 9.3
 +
-請注意、目前使用 RHEL 9.x 時不支援下列功能：
+請注意、目前使用 RHEL 8.x 和 RHEL 9.x 時不支援下列功能：
 
 +
 **** 安裝在黑暗的地點
@@ -180,14 +180,17 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS 上安裝 Docker 。
 
-*** Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 (`sudo yum update -y`）、然後安裝 Podman (`sudo yum install podman -y`）。
+*** Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 (`sudo yum update -y`）、然後安裝 Podman (`sudo yum install netavark -y`）。
 
 
-** Python 3.6 版或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 
 
-* * NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP Connector 系統之間同步時間。
-* * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此與 BlueXP 分類相容：
+
+
+* Python 3.6 版或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
++
+** * NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP Connector 系統之間同步時間。
+** * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此與 BlueXP 分類相容：
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -199,6 +202,8 @@ firewall-cmd --reload
 ....
 +
 請注意、每當您啟用或更新時、都必須重新啟動 Docker 或 Podman `firewalld` 設定：
+
+
 
 
 

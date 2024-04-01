@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: whats-new.html 
-keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense' 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, bluexp, bluexp classification' 
 summary: 瞭解 BlueXP 分類的新功能。 
 ---
 = BlueXP 分類的新功能
@@ -14,7 +14,29 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 
 [role="lead"]
-瞭解 BlueXP 分類的新功能。
+瞭解 BlueXP 分類（ Cloud Data Sense ）的新功能。
+
+
+
+== 2024 年 4 月 1 日（ 1.30 版）
+
+
+
+=== 新增 RHEL v8.8 和 v9.3 BlueXP 分類支援
+
+此版本除了先前支援的 9.x 以外、也支援 Red Hat Enterprise Linux v8.8 和 v9.3 、這需要 Podman 、而非 Docker 引擎。
+
+這適用於 BlueXP 分類的任何內部部署手動安裝。
+
+下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本： Red Hat Enterprise Linux 版本 8.8 、 9.0 、 9.1 、 9.2 及 9.3 。
+
+深入瞭解 link:task-deploy-overview.html["BlueXP 分類部署總覽"]。
+
+
+
+=== 選項可啟動已移除的稽核記錄集合
+
+啟用稽核記錄集合的選項已停用。
 
 
 

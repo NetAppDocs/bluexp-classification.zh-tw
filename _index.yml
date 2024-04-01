@@ -3,8 +3,9 @@ indexpage:
   title: BlueXP 分類文件
   summary: BlueXP 分類（ Cloud Data Sense ）可讓您在組織的混合式多雲端環境中掃描及分類資料。BlueXP 分類利用 AI 驅動的自然語言處理（
     NLP ）進行內容相關的資料分析和分類、讓您能夠以可據以行動的方式深入瞭解資料、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。
-  keywords: classification, cloud data sense, data sense, compliance, security
-  lead: BlueXP 分類可讓您在組織的混合式多雲端環境中掃描及分類資料。分類利用 AI 驅動的自然語言處理（ NLP ）進行關聯式資料分析和分類、讓您對資料進行可據以行動的深入分析、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。
+  keywords: bluexp, classification, cloud data sense, data sense, compliance, security
+  lead: BlueXP 分類（ Cloud Data Sense ）可讓您在組織的混合式多雲端環境中掃描及分類資料。分類利用 AI 驅動的自然語言處理（ NLP
+    ）進行關聯式資料分析和分類、讓您對資料進行可據以行動的深入分析、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。
   tiles:
   - title: 開始使用
     links:
@@ -80,8 +81,6 @@ indexpage:
       url: task-managing-highlights.html#delete-source-files
     - title: 找到不合規的資料時、請建立電子郵件警示
       url: task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found
-    - title: 監控及管理檔案存取事件
-      url: task-manage-file-access-events.html
     - title: 回應資料主旨存取要求
       url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
   - title: 部落格與社群

@@ -1323,7 +1323,6 @@
   <block id="d572e0d4b826c4aedc53e9ebf7b16a8f" category="list-text">在「掃描組態」頁面中、您可以檢視所有儲存庫的掃描設定。</block>
   <block id="80442a9b9f6c43539008be8521ce5283" category="paragraph">您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。</block>
   <block id="d2c070afb22765e227addc428b9bb43d" category="inline-image-macro">螢幕快照顯示如何選取儲存區的掃描類型。</block>
-  <block id="8d501a2dffff147be5f9997f70b34348" category="paragraph"><block ref="8d501a2dffff147be5f9997f70b34348" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a4bff1a8423db1d5e3d7178be9560749" category="paragraph">某些類型的工作環境可讓您使用頁面頂端的按鈕列、變更所有儲存庫的全域掃描類型。此功能僅適用於Cloud Volumes ONTAP 內部部署ONTAP 的不支援功能、不支援使用的功能僅供Azure NetApp Files 支援部分系統的功能之用。ONTAP</block>
   <block id="648f292c272072450d20c88db515b454" category="paragraph">以下範例顯示Azure NetApp Files 適用於整個系統的按鈕列。</block>
   <block id="b0d05a288f1ee1691adac4ca34c54fca" category="inline-image-macro">螢幕快照顯示如何為工作環境中的所有Volume設定相同的掃描設定。</block>
@@ -1351,7 +1350,6 @@
   <block id="b91992584de04476d486c6819d26aaf3" category="list-text">按一下*移動檔案*。</block>
   <block id="bf3aeefcdd65b55f2612004f45b7257f" category="inline-image-macro">螢幕快照顯示您的儲存區是否正在掃描、以及目前的掃描狀態。</block>
   <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ecc7450cf52e0d0d89139603b07ea706" category="paragraph">您可以將游標停留在_掃描狀態_欄中的圖表上、查看每個儲存庫中仍要對應或分類的檔案數目（本範例中為儲存庫）。</block>
   <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">資料庫無法設定為僅對應掃描。資料庫掃描功能可以是關閉或開啟、其中ON等同於Map &amp;分類。</block>
   <block id="1ce92447664cc42f3e2c04aaf8570862" category="cell">紐西蘭銀行帳戶</block>
   <block id="2be885677b02540592a1f44b87ee5fb9" category="cell">紐西蘭IRD編號（稅金ID）</block>
@@ -1666,7 +1664,6 @@
   <block id="a27db93614949e38a138b99356391903" category="paragraph-title">必要步驟</block>
   <block id="ddeaea1d2d5cacbe438413e4143bca6e" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 在雲端環境中設定 S3 需求</block>
   <block id="a0bc8fee488c4982eb9cac7b4cd30c5d" category="list-text">連接器主機必須允許透過連接埠 443 進行傳出 HTTPS 存取。如果連接器位於雲端、則預先定義的防火牆或路由規則會允許所有傳出通訊。</block>
-  <block id="be8e8316109467c39dd04940dda55d9c" category="list-text">開啟檔案「/opt/netapp/Datasense/siting_Environ_to _bANer_Group_config.yml」、然後輸入掃描程式群組掃描特定工作環境的對應。您需要為每個資料來源設定_工作環境ID_。例如、下列項目會將2個工作環境新增至「Europe」掃描器群組、將2個新增至「US_USEY」掃描器群組：</block>
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。</block>
   <block id="00c5c673cfa296bce54ec77743dbf5a5" category="paragraph">您可以在「組態」頁面中查看每個工作環境的「掃描器群組」名稱。</block>
   <block id="1f3259fd3977a2467ab298df6a6d44d1" category="paragraph">您也可以在「組態」頁面底部查看所有掃描器群組的清單、以及群組中每個掃描器節點的IP位址和狀態。</block>
@@ -1968,7 +1965,6 @@
   <block id="8e477b6128906752f1b086a48c07fef7" category="list-text">在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如<block ref="2478484d96d8c17b7752fd15d3b26f12" prefix=" " category="inline-code"></block>）並將其儲存在文字檔中。</block>
   <block id="20aa1bbdb0fac9cadb849e6ab2887670" category="sidebar">使用BlueXP在雲端部署</block>
   <block id="7c454725651fa93e75c3603da01e3ae2" category="sidebar">安裝在可存取網際網路的Linux主機上</block>
-  <block id="34c631136a1ff65c0e2a718e56622097" category="sidebar">在內部安裝、無需網際網路存取</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">CPU</block>
   <block id="05289cee10f1f9057410b216de0d7e36" category="cell">RAM（交換記憶體必須停用）</block>
   <block id="380dbc8d9d2c8a17f6ebb0b2c62d3e85" category="cell">磁碟</block>
@@ -2009,38 +2005,8 @@
   <block id="04857641e7994338feb506f5b60ebeb0" category="section-title">GCP 執行個體類型</block>
   <block id="dd654e120269d83d0f32a6f695b8bab9" category="cell"><block ref="fc953708959f6784e56436278d753426" category="inline-link-rx"></block> （預設） n2d-standard-16 n1-Standard-16</block>
   <block id="aebeafb9d6b45d6e3629685737b0b510" category="doc">監控及管理檔案存取事件</block>
-  <block id="4189ddcc75f1e8d4ba9a48d4e7f2fa48" category="inline-link">FPolicy 功能</block>
-  <block id="686e697538050e4664636337cc3b834f" category="list-text">建立</block>
-  <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">讀取</block>
-  <block id="1129c0e4d43f2d121652a7302712cff6" category="list-text">寫入</block>
-  <block id="904a8304056d77e4547744781b7ceb50" category="list-text">重新命名</block>
   <block id="f2a6c498fb90ee345d997f888fce3b18" category="list-text">刪除</block>
-  <block id="f6b6083eeb29d215e1928471f349dbd8" category="list-text">變更擁有者 / 權限</block>
-  <block id="5cd5baa540f42504034e49f94c495d5b" category="list-text">變更 SACL/DACL （存取控制清單（ ACL ）變更）</block>
-  <block id="f98b8c01d34111418a2366beacd14ada" category="paragraph">具有「帳戶管理員」或「工作區管理員」角色的 BlueXP 使用者、可以設定磁碟區來進行檔案存取稽核記錄、並可檢視及下載稽核記錄。具有「 Compliance Viewer 」角色的使用者只能檢視及下載稽核記錄。</block>
   <block id="10eaa67ba3824a947cec2803e682249a" category="list-text">內部部署 ONTAP</block>
-  <block id="de7a9ded100f5ab68960785a7977419c" category="section-title">設定磁碟區以進行檔案存取稽核記錄</block>
-  <block id="80027566e31a879d1baef50d58692dc4" category="paragraph">您可以在個別磁碟區上啟用檔案存取稽核記錄、以追蹤檔案和目錄的變更。</block>
-  <block id="9d0e2b2eb032ffd4efa13096caae567a" category="list-text">從資料來源的「 _Scan 組態 _ 」頁面、按一下 <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> 針對該 Volume 、選取 * 設定檔案存取稽核 * 。</block>
-  <block id="c791f5a696fa23cbe4c6c1b76be84e2f" category="inline-image-macro">選取您要啟用檔案存取記錄的磁碟區的螢幕擷取畫面。</block>
-  <block id="df0da4611bcc736388ba21984af1f174" category="paragraph"><block ref="df0da4611bcc736388ba21984af1f174" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8e9c52df3325dfedde0e8bb4b2c520ec" category="list-text">在 _ 設定檔案存取稽核 _ 對話方塊中、按一下 * 啟用檔案存取事件記錄 * 的核取方塊、然後按一下 * 儲存 * 。</block>
-  <block id="86c7e2b4da263969c3a2b3ea5a998ce8" category="paragraph">請注意、目前預設會選取所有可能的記錄動作、這些動作不可編輯。</block>
-  <block id="c3e22ea8facda03b7f5f7e8991838e19" category="inline-image-macro">對話方塊的螢幕擷取畫面、用於啟用和停用磁碟區的記錄、以及選取要記錄的動作。</block>
-  <block id="744ed2aff35218670e523298fcffeeb2" category="paragraph"><block ref="744ed2aff35218670e523298fcffeeb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9a2c4d598beb3c9bc8e390cae73ed5e0" category="list-text">您會發現該磁碟區現在已啟用檔案存取稽核。</block>
-  <block id="760fa6a53e99af41106fb9a484537801" category="inline-image-macro">螢幕擷取畫面顯示特定磁碟區已啟用檔案存取稽核記錄功能。</block>
-  <block id="128380149729d40c8a7f08ebcf71b393" category="paragraph"><block ref="128380149729d40c8a7f08ebcf71b393" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a11ed4a6864c5bc8fd26866333740e8b" category="paragraph">為啟用的磁碟區上的檔案所產生的任何檔案存取事件都會新增至記錄檔。偶爾查看記錄檔、查看您正在接收的事件類型。</block>
-  <block id="2da4d8c5bc0edc06ac63f3c95d761c7b" category="section-title">存取檔案存取稽核記錄檔</block>
-  <block id="a02f04e5cf15eab34e36540d19d919c6" category="inline-xref">您可以在「檔案存取稽核記錄組態」頁面中自訂此值。</block>
-  <block id="f1232e8f69c85f39de4569648f81f7d8" category="section-title">設定檔案存取稽核記錄檔設定</block>
-  <block id="03dbd1b5fc01bd9510606278903a28bc" category="cell">稽核記錄選項</block>
-  <block id="d13e01ef2af0326f4f5a6e15fee2c4bc" category="cell">記錄檔位置</block>
-  <block id="00fc8ad0777a7d04155f0aea1a460364" category="cell">稽核記錄的最大儲存分配</block>
-  <block id="e78e3ddb79416e357c114831c02be2ac" category="cell">目錄中所有記錄檔的總大小目前已硬編碼為預設值 50 GB 。達到此限制時、會自動刪除最舊的記錄檔。</block>
-  <block id="b98e5f30ca3cd0f113adc1ab13a39525" category="cell">每個稽核檔案的最大稽核事件數</block>
-  <block id="5046b3bc48bd37acc83c5000548deccc" category="paragraph">請注意、這些設定目前已硬式編碼為預設設定。無法變更。</block>
   <block id="8b6c5ced74ae32d25c3f6ebff98f9529" category="inline-link">在內部部署安裝連接器</block>
   <block id="d86d903b07bcdf54c0633484d605d52a" category="inline-link">如需在政府區域部署 Connector 的詳細資訊、請參閱</block>
   <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link-macro">請參閱可用的執行個體類型和限制</block>
@@ -2303,12 +2269,6 @@
   <block id="2875279e7093015cd8ccf93240c548e9" category="paragraph"><block ref="2875279e7093015cd8ccf93240c548e9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e7fa07083790a8112d00af542356ec88" category="paragraph">根據預設、資料保護（ DP ）磁碟區不會被掃描、因為它們不會暴露在外部、而且 BlueXP 分類無法存取它們。這些都是從內部部署 ONTAP 的 SnapMirror 系統或 Cloud Volumes ONTAP 從某個系統進行 SnapMirror 作業的目的地 Volume 。</block>
   <block id="7c0a9b3e555cf595d3d01d33df76df82" category="list-text">最初在來源 ONTAP 系統中建立為 CIFS Volume 的磁碟區、需要輸入 CIFS 認證資料才能掃描這些 DP 磁碟區。如果您已經輸入 Active Directory 認證、以便 BlueXP 分類能夠掃描 CIFS 磁碟區、您可以使用這些認證、或是指定不同的管理認證集。</block>
-  <block id="52887b7fa084c02e609d7372dfab4740" category="paragraph">BlueXP 分類目前會擷取檔案和目錄上下列動作的事件：</block>
-  <block id="f8a450637ddb6668a04ea30131e3a1e2" category="paragraph">當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至記錄檔。</block>
-  <block id="c025349cd3a26a699951f8e578938046" category="paragraph">當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體。您可以輸入使用者和密碼、或使用您在安裝BlueXP Connector期間提供的SSH金鑰來SSH到系統。SSH命令是：</block>
-  <block id="cbe58906292040b6d0a07fdaf6ed1e88" category="paragraph">您可以針對檔案存取稽核檔案記錄設定三個選項。這些設定適用於在此 BlueXP 分類執行個體上設定檔案存取稽核記錄的所有資料來源。您可以在 BlueXP 分類 _Configuration_ 頁面的 _File Access Audit Log_ 區段中設定這些設定。</block>
-  <block id="1298747359e74466e6df21c2af0f081a" category="inline-image-macro">顯示 BlueXP 分類組態頁面中稽核記錄組態設定的螢幕擷取畫面。</block>
-  <block id="daf5086072abb79f9e77f3bde2069552" category="paragraph"><block ref="daf5086072abb79f9e77f3bde2069552" category="inline-image-macro-rx" type="image"></block></block>
   <block id="784e4b64058d5e48385415f461c592f1" category="summary">完成幾個步驟、開始使用 Azure NetApp Files 的 BlueXP 分類。</block>
   <block id="8c845b2820fb0d62f8438c10638d6c1d" category="doc">Azure NetApp Files BlueXP 分類入門</block>
   <block id="8d50e02b2718494115c81eb90fb74ae8" category="list-text">BlueXP 分類執行個體需要網路連線至每個 Azure NetApp Files 子網路。</block>
@@ -2483,7 +2443,6 @@
   <block id="44d5aeda44eb4d5cf4e34a77d73348a0" category="paragraph">是的。如果您已訂閱、您可以在 BlueXP 分類正在掃描的檔案中管理 AIP 標籤<block ref="dc81bb027ada9d4ecc15bb9933242e3a" category="inline-link-rx"></block>。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。</block>
   <block id="a243387e3677f17692394ce770a377f8" category="section-title">可以使用 BlueXP 分類來掃描哪些資料來源？</block>
   <block id="af0ca0f7eeb04884e0718a50bbcfb74d" category="paragraph">BlueXP 分類可以掃描您新增至 BlueXP Canvas 的工作環境中的資料、以及 BlueXP 分類可透過網路存取的許多結構化和非結構化資料來源。</block>
-  <block id="33131c83033941e511576a90476300a6" category="paragraph">BlueXP 分類支援 NFS 3.x 、 4.0 和 4.1 版、以及 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。</block>
   <block id="4f554b82a208efb281c300628a271b8e" category="section-title">如果我在沒有網際網路存取的站台中安裝 BlueXP 分類、可以掃描哪些資料來源？</block>
   <block id="bc90c1660d729d86ab10b8018a956932" category="paragraph">BlueXP 分類會掃描所有檔案、以取得類別和中繼資料的洞見、並在儀表板的檔案類型區段中顯示所有檔案類型。</block>
   <block id="6352911cc42108d1f16863e618ef84d4" category="paragraph">當 BlueXP 分類偵測到個人識別資訊（ PII ）、或執行 DSAR 搜尋時、僅支援下列檔案格式：</block>
@@ -2524,7 +2483,6 @@
   <block id="50d06b6efd74f95cfab72bc9b5d467e6" category="paragraph">在下表中、如果標記為「預設」的系統在您安裝 BlueXP 分類的地區無法使用、則表格中的下一個系統將會部署。</block>
   <block id="11f000270c03dc2a6cc3e9a5e9262aa8" category="summary">在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主機上執行指令碼、以確認安裝 BlueXP 分類的所有必要條件均已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或者主機可以位於無法存取網際網路的站台。</block>
   <block id="7c7a9443e0597003702e5cc73c6d075a" category="doc">檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類</block>
-  <block id="5be349c248e5fa17aa6ffbde157637c2" category="paragraph">在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主機上執行指令碼、以確認安裝 BlueXP 分類的所有先決條件都已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或主機位於無法存取網際網路的站台（「暗網站」）。</block>
   <block id="b739631d891333c2d4cfa4c6421ccdcb" category="paragraph">還有一個先決條件測試指令碼是 BlueXP 分類安裝指令碼的一部分。此處說明的指令碼是專為想要驗證 Linux 主機而不執行 BlueXP 分類安裝指令碼的使用者所設計。</block>
   <block id="4b764befa0cb902227f07313a78b10cd" category="list-text">或者、如果您尚未安裝 BlueXP Connector 、請安裝該連接器。您可以在不安裝 Connector 的情況下執行測試指令碼、但指令碼會檢查 Connector 和 BlueXP 分類主機之間的連線、因此建議您使用 Connector 。</block>
   <block id="5db707242c7622101c2fde4b257ef0c8" category="list-text">從 BlueXP 分類主機機器啟用輸出網際網路存取。</block>
@@ -2606,7 +2564,6 @@
   <block id="c07dbec3e7acd472789625d35a7563da" category="paragraph">BlueXP 分類支援掃描所有資料來源類型的目錄、 Amazon S3 和資料庫除外。目前我們支援重新掃描單一目錄（資料夾或共用）或多個目錄。未來支援將包括重新掃描其他儲存庫類型（檔案、資料庫等）。</block>
   <block id="eb069b124d02b06908e1071cc2edae80" category="summary">資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響很小、您可以設定 BlueXP 分類來執行「慢速」掃描。</block>
   <block id="97ef33fd9429f1df7d0c8f2bd514652f" category="doc">降低 BlueXP 分類掃描速度</block>
-  <block id="640f79fe2c11ee3747373fdc28e64b1d" category="doc">在無法存取網際網路的主機上安裝 BlueXP 分類</block>
   <block id="4f7157701d2db96edcc01457067a6771" category="inline-link-macro">將 BlueXP 分類部署在可存取網際網路的內部部署網站上</block>
   <block id="90815e3d99ff61b4887b2f941fff4e46" category="paragraph">請注意、您也可以 <block ref="1a9c56cdde8c9a93a744fbe95f12b64a" category="inline-link-macro-rx"></block>。</block>
   <block id="e883a1e45b8fba8675ed0e79f4a46200" category="paragraph">BlueXP 分類安裝指令碼會先檢查系統和環境是否符合必要的先決條件。如果所有先決條件都符合、則會開始安裝。如果您想要獨立於執行 BlueXP 分類安裝來驗證先決條件、您可以下載個別的軟體套件、只測試先決條件。 <block ref="18e558c0c5f7db863c39638301013423" category="inline-link-macro-rx"></block>。</block>
@@ -2681,8 +2638,6 @@
   <block id="2826eed8d124e5d52a95532d0b9950e8" category="paragraph">由於單一Google雲端硬碟帳戶只有單一使用者的Google雲端硬碟檔案、因此如果您想要停止掃描使用者Google雲端硬碟帳戶的檔案、您應該這樣做 <block ref="c538a591b5c01fbf9978450f780e18b6" category="inline-link-macro-rx"></block>。</block>
   <block id="bc2de28feb42e568f3e122df8d001559" category="summary">BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
   <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="doc">瞭解 BlueXP 分類</block>
-  <block id="e8790e96e4416af5e4645d1f865b0000" category="inline-link">瞭解 BlueXP 分類的使用案例</block>
-  <block id="af7129dd58c04459ae6112027e903370" category="paragraph"><block ref="5283a57d4ad95c132cb0d2b34d8f7498" category="inline-link-rx"></block>。</block>
   <block id="71e39030d4b3b241d51a6ce6c9ce8bd7" category="paragraph">BlueXP 分類使用人工智慧（ AI ）、自然語言處理（ NLP ）和機器學習（ ML ）來瞭解它所掃描的內容、以便擷取實體並據此分類內容。這可讓 BlueXP 分類提供下列功能領域。</block>
   <block id="840d233bacdf6f0129b122ee5eb8f00f" category="paragraph">BlueXP 分類提供數種工具、可協助您達成法規遵循目標。您可以使用 BlueXP 分類來：</block>
   <block id="20301ae66154125117e3007e9a481f55" category="list-text">識別您資料庫中的唯一識別碼是否位於其他儲存庫中的檔案中、基本上是製作您自己的「個人資料」清單、以在 BlueXP 分類掃描中識別。</block>
@@ -2833,31 +2788,7 @@
   <block id="3304fa5a3260dac4f8f51ddd7ca9e5f3" category="sidebar">降低 BlueXP 分類掃描速度</block>
   <block id="54892fa61b1eb6050fbd342fbf8e2218" category="sidebar">從 BlueXP 分類中移除資料來源</block>
   <block id="997bc9ee8834fdaee5b662f9a2bd743f" category="sidebar">解除安裝 BlueXP 分類</block>
-  <block id="44b48aa0d2158361e53832315034f513" category="paragraph">例如、如果您想要追蹤對敏感人事檔案或薪資檔案所做的任何變更、您可以在這些檔案所在的磁碟區上啟用此功能。接著您可以檢視檔案存取稽核記錄、查看這些檔案是否已變更。如果變更了這些項目、您就能看到進行變更的人員的安全識別碼（ SID ）、以及變更的時間。</block>
-  <block id="c7f8db8434f3e3057bca29922b597e31" category="paragraph">BlueXP 分類可記錄位於下列資料來源中 ONTAP 磁碟區上之檔案的檔案存取事件：</block>
   <block id="4d82a1ec1af02725042c8c785564ee7a" category="list-text">Amazon FSX for NetApp ONTAP 產品</block>
-  <block id="64067288b8531fcd99186eba6a8c23b0" category="paragraph">資料來源必須執行 ONTAP 9.11 版或更新版本的軟體。</block>
-  <block id="266321178f48dd580597ebe11b4ed93e" category="list-text">您應該為資料來源設定 Active Directory 、以便 BlueXP 分類可以列出存取檔案的人員 ID 。</block>
-  <block id="c59b99fd4a78f457a5e94a037bb88563" category="list-text">必須開啟連接埠 5018 、才能從 BlueXP 分類系統進行輸出存取。</block>
-  <block id="4d2cf95eb79434a26117b70f40109d70" category="paragraph">系統會為您設定用來追蹤檔案存取事件的每個磁碟區建立記錄檔。記錄檔的名稱為「 &lt;volume_name&gt; _ &lt;volume_uuid&gt; _ .log 」、例如「 fpolicy_CIFS_838c1727-dd2d-11ed-a3ec-590ce4991.log 」。稽核記錄中的每一行都包含下列格式的資訊：</block>
-  <block id="d3369c54154da78d99f4f3934bb84f8f" category="list-text">時間戳記 - 事件的日期和時間</block>
-  <block id="4fe39ce84cbfb175d3002259d9f4de1e" category="list-text">用戶端 IP - 執行檔案作業的執行個體 /PC/Proxy IP 位址</block>
-  <block id="abc097a42e084882f0b5057b088f61bd" category="list-text">Volume Name （ Volume 名稱） - Volume 的名稱</block>
-  <block id="dbad63ce70d94484137fd2bcee25dc1c" category="list-text">Volume UUID - 磁碟區的 UUID</block>
-  <block id="ff8a55161214e6aa8d081013df298e9d" category="list-text">檔案類型 - 檔案類型：檔案或 DIR</block>
-  <block id="64256f21f179e353ec3d64543426b9ac" category="list-text">檔案大小 - 檔案大小（以位元組為單位）</block>
-  <block id="69de0dc8b418fef573ebde0673a1eae6" category="list-text">路徑 - 受影響檔案或目錄的完整路徑和名稱</block>
-  <block id="3c08f92438e4ac1c4646bf56ca891fa9" category="list-text">Volume Type - Volume 類型： SMB 或 NFS</block>
-  <block id="04dad560a21879bc6d32b8e30f651a71" category="list-text">使用者 ID - 執行動作之人員的安全性識別碼（ SID ）</block>
-  <block id="cb4c145642d6cf35e5d4a33ece6b7833" category="list-text">檔案擁有者 ID - 檔案擁有者的安全性識別碼（ SID ）</block>
-  <block id="46892b1d18541880bb4ef3ee2f331f45" category="list-text">事件類型：建立、讀取、寫入、重新命名、刪除、 變更擁有者 / 權限、或變更 SACL/DACL</block>
-  <block id="ae99dae6f6384006aeadebbab894f370" category="list-text">行動詳細資料 - 已完成的工作：取決於行動</block>
-  <block id="e4e81dbf5cdcb72e814265ea01d1f3eb" category="paragraph">例如、記錄檔中的下列行顯示「 Create 」（建立）動作已發生在「 fpolicy_CIFS 」磁碟區中、磁碟區中已建立新的檔案「 F14 」。</block>
-  <block id="e5f8c207227297bb2868689eb39d6520" category="paragraph">您可以使用 BlueXP 分類調查頁面來搜尋磁碟區（使用「儲存儲存庫」篩選器）或檔案（使用「檔案 / 目錄路徑」篩選器）、以查看受影響磁碟區和檔案的詳細資料。</block>
-  <block id="d83435d800785132bce0e54bcaa13373" category="paragraph">依預設、每個檔案最多可包含 50 、 000 個事件。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> 達到此上限後、記錄檔中較舊的項目會被覆寫。</block>
-  <block id="55b3e20fcb82b08c30a902311468d3c8" category="paragraph">預設會將目錄中所有記錄檔的總大小設為最大 50 GB 。 <block ref="d1bb72137f989cabbac97be0417a83ae" category="inline-xref-macro-rx"></block> 達到此限制時、會在新增記錄檔時刪除最舊的記錄檔。此外、任何超過 14 天的記錄檔都會被覆寫、因為這是最大保留時間。</block>
-  <block id="a0381bb8e5ebb77d0c9d2d40db0d1fe3" category="list-text">&lt;datasense_ip&gt; = BlueXP 分類虛擬機器執行個體的 IP 位址</block>
-  <block id="190e59fe3d6a787439b4b5c2c989f6bf" category="cell">每個檔案目前已經過硬編碼、最多可包含 50 、 000 個事件。達到此上限後、新增新事件時會刪除舊事件。</block>
   <block id="a1c4e88cdf8e157dbb344fe556f58d28" category="paragraph">如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="6af032d0de89339877509ae11ea19c63" category="paragraph">在SharePoint帳戶中新增您要掃描的SharePoint網站URL清單、然後選取掃描類型。您可以一次新增多達 100 個 URL 、每個帳戶最多可新增 1 、 000 個站台。</block>
   <block id="ef7e50ee52c97b486ba02e2d652aeb20" category="paragraph">您可以在帳戶中新增個別的 SharePoint 網站或多達 1,000 個 SharePoint 網站、以便透過 BlueXP 分類來掃描相關檔案。無論您是新增 SharePoint Online 或 SharePoint 內部部署網站、步驟都一樣。</block>
@@ -3046,8 +2977,6 @@
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="218b1b5040dd27f37c3fab6adea21bff" category="paragraph">資料來源移除時、掃描資料的充電會停止。</block>
   <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在網路中的 Ubuntu Linux 主機上安裝 BlueXP 分類、或在雲端的 Linux 主機上使用 1.23 版的安裝程式。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
-  <block id="3e102feedd861186d57f6a85de9de541" category="paragraph">檔案存取稽核記錄檔位於 BlueXP 分類機器上的：<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
-  <block id="7f16356d7b675ed76686e591ad5dc661" category="cell">該位置目前已經過硬編碼、可將記錄檔寫入<block ref="86b82df39f08511f43d33216f4538d29" prefix=" " category="inline-code"></block></block>
   <block id="34c688a0843dc19a0624e151973b37a7" category="cell">500 GiB SSD on / 、 or
 -100 GiB 可在 /opt 上取得
 -395 GiB 可在 /var/lib/Docker 上取得
@@ -3062,8 +2991,6 @@
 /tmp 上 5 GiB</block>
   <block id="0a10409b2f38332b7a7c8f820fc0edd5" category="inline-link">觀看此影片</block>
   <block id="d56adb545fe9309fc7a4cfd339798344" category="paragraph">在單一內部部署主機上安裝 BlueXP 分類軟體時、請檢閱需求並遵循這些步驟。</block>
-  <block id="7273543485153af36bd67d8d37fe08b3" category="summary">您可以設定 BlueXP 分類、以便在存取或變更您要掃描的其中一個檔案時、將事件記錄到檔案中。然後、您可以檢視此記錄檔的內容（檔案存取稽核記錄）、或下載該記錄檔、以查看發生了哪些檔案變更、以及由誰進行變更。</block>
-  <block id="145ca78924109b125fb405dc2644ebba" category="paragraph">您可以在工作環境中執行 ONTAP 軟體的任何關鍵磁碟區上啟用此功能。在磁碟區上啟用時、會追蹤磁碟區中所有檔案和目錄的檔案存取事件。這項功能是以為基礎<block ref="215c8ae39ab5aa2af1bf0d7956d6ac15" category="inline-link-rx"></block> 從您的 ONTAP 系統、它會使用 BlueXP 分類系統做為 FPolicy 伺服器、從 ONTAP 接收通知訊息（事件）。BlueXP 分類可處理 ONTAP 每秒約 990 個事件。</block>
   <block id="809de3d4b48cba202a3e92df9b5646ca" category="paragraph">如果您不想再使用 BlueXP 分類、可以從雲端供應商環境中解除安裝和刪除 BlueXP 分類執行個體。</block>
   <block id="7b608a074398a486bc744655598680ea" category="list-text">在 _ 解除安裝 Data Sense _ 對話方塊中、輸入 * uninstall* 以確認您要中斷 BlueXP 分類執行個體與 BlueXP Connector 的連線、然後按一下 * 解除安裝 * 。</block>
   <block id="f10f83db534963d9efae7a297e100091" category="list-text">前往雲端供應商的主控台、刪除 BlueXP 分類執行個體。此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
@@ -3113,12 +3040,10 @@
   <block id="1ac31bbf670e91966ab52da26d845a13" category="paragraph">下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。例如、您用於分類器的名稱會出現在篩選器清單中<block ref="4a5be64948722957979f804944a2f3b4" prefix=" " category="inline-code"></block>。</block>
   <block id="afad61c0157650446d7dd3c6d21a14e6" category="inline-image-macro">輸入自訂類別器關鍵字的螢幕擷取畫面。</block>
   <block id="10f58dd452f46270c630a34534611bc1" category="paragraph"><block ref="10f58dd452f46270c630a34534611bc1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1d1397279bf894721deb3fa47481478d" category="paragraph">請參閱<block ref="58ff2edcee6f09ed29d8b1fa3d90f44d" category="inline-link-rx"></block> 如果您需要協助建立所需的規則運算式、選擇 *Python* 以查看結果類型 BlueXP 分類將與規則運算式相符。</block>
   <block id="c010468930979e106d9f7ed3eb1af1fb" category="admonition">目前我們不允許在建立 regex 時使用模式旗標、這表示您不應該使用「 / 」。</block>
   <block id="6fbfdb8194a5bee71195edc43d8d917c" category="inline-image-macro">輸入自訂類別器的 regex 和鄰近字詞的螢幕擷取畫面。</block>
   <block id="3d6c90f327764becd63dc600a2c87368" category="paragraph"><block ref="3d6c90f327764becd63dc600a2c87368" category="inline-image-macro-rx" type="image"></block></block>
   <block id="86eb2b827c48e5784ea52b533f562701" category="admonition">您目前無法編輯 Data Fusion 分類器。</block>
-  <block id="8b099d45c50bad711b65183f7029f3da" category="admonition">您目前可以在每個資料來源上最多 8 個磁碟區上設定檔案存取稽核。</block>
   <block id="8aa912f072a560e74be845c27c1d0978" category="paragraph">當 Connector 部署於政府區域（ AWS GovCloud 、 Azure Gov 或 Azure DoD ）時、即稱為「受限模式」、即支援 BlueXP 分類。以這種方式部署時、 BlueXP 分類具有下列限制：</block>
   <block id="d8e9d38457b0cf1fc41c4f7dc9118e28" category="paragraph">BlueXP 分類只能掃描內部部署站台本機資料來源的資料。目前、 BlueXP 分類可以在「私有模式」中掃描下列本機資料來源、也稱為「暗」網站：</block>
   <block id="3b1883650bdcd250161cbf99ce0450d4" category="inline-link">這也稱為「私有模式」</block>
@@ -3238,12 +3163,8 @@
   <block id="125161c62eedd013601db45d9716edf6" category="paragraph">請注意、當檔案移動時、來源檔案的子目錄結構會在目的地共用上重新建立、以便更容易瞭解檔案的移出位置。如果目的地位置存在名稱相同的檔案、則不會移動該檔案。</block>
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。請注意、快速完成的簡短作業（例如移動單一檔案）不會出現在「動作狀態」窗格中。</block>
   <block id="b2ed02bab90c71832a95050419f003e6" category="list-text">BlueXP 分類不會從下列資料來源擷取「上次存取時間」： SharePoint Online 、 SharePoint 內部部署（ SharePoint Server ）、 OneDrive 、 Google Drive 和 Amazon S3 、以及資料庫。</block>
-  <block id="4a90d7d35061a4c9e5845a989ea05db2" category="list-text">下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分級版本 1.26 或更新版本：</block>
-  <block id="59f227bced13db9b55686d58d4422b7b" category="list-text">Red Hat Enterprise Linux 9.0 、 9.1 和 9.2 版</block>
-  <block id="ca4483ba58214f8a91253985b52c976c" category="paragraph">請注意、目前使用 RHEL 9.x 時不支援下列功能：</block>
   <block id="1b32bd564a2d99c25093d522b505880d" category="list-text">安裝在黑暗的地點</block>
   <block id="1a81412d076e7b9aa74911a0adfb4688" category="list-text">分散式掃描；使用主要掃描器節點和遠端掃描器節點</block>
-  <block id="cf49e2a8099d82e2f5780f13362c4f6c" category="list-text">Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 <block ref="2331e8e9c17f410bdfc0aa461e9aa2b7" prefix="(" category="inline-code"></block>）、然後安裝 Podman <block ref="e831e1bb8caac0e1ff717314d00a328d" prefix="(" category="inline-code"></block>）。</block>
   <block id="194351f6f6e0cb2f129f2a15d7f6df07" category="list-text">確認系統已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。</block>
   <block id="70982664d9f01c2eb3895d455947c83d" category="list-text">確認系統已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。</block>
   <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">需要註冊支援、才能獲得 BlueXP 及其儲存解決方案與服務專屬的技術支援。也需要註冊支援、才能啟用 Cloud Volumes ONTAP 系統的重要工作流程。</block>
@@ -3444,7 +3365,6 @@
   <block id="8a5ea9dc53c4c86f4aed7ef4b4da982c" category="section-title">依類別檢視檔案</block>
   <block id="ecb953672f3305298a86f0569c18d178" category="section-title">依檔案類型檢視檔案</block>
   <block id="303b0a57019c624c482fb5d775729281" category="section-title">檢視特定工作環境的儀表板資料</block>
-  <block id="0ed24c69d85b53c201d924087682efef" category="admonition">2023 年 12 月（版本 1.26.6 ）版本暫時移除啟動稽核記錄收集的選項。</block>
   <block id="50c07d396e4bf402b72ebf82cfaadea1" category="doc">掃描資料庫架構</block>
   <block id="846eb83e821481bdeafbcc34c9138401" category="section-title">部署 BlueXP 分類執行個體</block>
   <block id="117276e96b89d072e0a833596332ef29" category="section-title">新增資料庫伺服器</block>
@@ -3480,7 +3400,6 @@
   <block id="74a477b7e0bb4c7103127e1c4536e606" category="section-title">停止掃描儲存庫</block>
   <block id="3ea62d70182e6d0c238badaaf224dff9" category="section-title">暫停並繼續掃描儲存庫</block>
   <block id="86e9fad25d6f638eb7f7e437763b425e" category="section-title">重新掃描現有儲存庫的資料</block>
-  <block id="592eb07fa38cd17123bbb06a297c20fe" category="sidebar">BlueXP 分類可讓您在組織的混合式多雲端環境中掃描及分類資料。分類利用 AI 驅動的自然語言處理（ NLP ）進行關聯式資料分析和分類、讓您對資料進行可據以行動的深入分析、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。</block>
   <block id="e3a146b1e8e087acabb6e5959293dcd8" category="sidebar">BlueXP 分類（ Cloud Data Sense ）可讓您在組織的混合式多雲端環境中掃描及分類資料。BlueXP 分類利用 AI 驅動的自然語言處理（ NLP ）進行內容相關的資料分析和分類、讓您能夠以可據以行動的方式深入瞭解資料、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。</block>
   <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新增功能</block>
   <block id="daf1be80b90f9f38eccbf069ac08640c" category="sidebar">在具有網際網路的 Linux 主機上安裝 BlueXP 分類</block>
@@ -3582,4 +3501,46 @@
   <block id="7c6b159592aa05d7d8934685f5b0c4c8" category="cell">32 個 CPU 、 128 GB RAM 、作業系統磁碟（ 2 、 048 GiB 、最低 250 MB/s 處理量）和資料磁碟（ 1 個 TiB SSD 、最低 750 MB/s 處理量）</block>
   <block id="f3c46003464601608d44d2644affcce1" category="paragraph">在 SaaS 模式中使用 BlueXP 時、會透過 HTTPS 提供與 BlueXP 的連線、而在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料則會使用 TLS 1.2 來保護端點對端加密、這表示 NetApp 和協力廠商無法讀取。</block>
   <block id="522910fcbd37d9f1fe242ff7c7cde8db" category="paragraph">不可以在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料、都是使用 TLS 1.2 來保護端點對端點加密、這表示 NetApp 和協力廠商無法讀取。除非您要求並核准存取權限、否則 BlueXP 分類不會與 NetApp 分享任何資料或結果。</block>
+  <block id="f943db85a7c2edd799890ddb18f29cab" category="doc">在無法存取網際網路的 Linux 主機上安裝 BlueXP 分類</block>
+  <block id="e920147793c6514a998387c74226605b" category="paragraph">請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這類安裝最適合安全的站台。</block>
+  <block id="8e75bb9e135d127903c8df1b4d72574d" category="list-text">下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本：</block>
+  <block id="17809026adc94f6c0d618b91e6379bec" category="list-text">Red Hat Enterprise Linux 版本 8.8 、 9.0 、 9.1 、 9.2 及 9.3</block>
+  <block id="57da374715d9745b4dd1b2494e49b1c4" category="paragraph">請注意、目前使用 RHEL 8.x 和 RHEL 9.x 時不支援下列功能：</block>
+  <block id="555c829e9c93dc526a387388830a8e53" category="list-text">Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 <block ref="2331e8e9c17f410bdfc0aa461e9aa2b7" prefix="(" category="inline-code"></block>）、然後安裝 Podman <block ref="f93cc32458404a89e1885eee2d68276f" prefix="(" category="inline-code"></block>）。</block>
+  <block id="bf9330c0401cb1794286325e86e14bc1" category="paragraph">BlueXP 分類支援 NFS 3.x 版和 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。</block>
+  <block id="8da041e8fe3c0d961b0ec560416bc9a4" category="section-title">BlueXP 分類是否需要存取認證？</block>
+  <block id="e54c52f3a3c545fc2e2f82026ac5945f" category="paragraph">BlueXP 分類本身無法擷取儲存認證。而是儲存在 BlueXP Connector 中。</block>
+  <block id="7add4f4508f6a065e3f94f770f4bac2d" category="paragraph">BlueXP 分類使用資料層級認證、例如 CIFS 認證、在掃描前掛載共用。</block>
+  <block id="6ff26ca67814a870d6ad78d3687ba1a9" category="section-title">服務與 Connector 之間的通訊是否使用 HTTP ？</block>
+  <block id="421bab1ab5399669513b071e1e856dca" category="paragraph">是的、 BlueXP 分類使用 HTTP 與 BlueXP Connector 通訊。</block>
+  <block id="5f0111c9b1c6f9cd6124c008eaaa60d2" category="paragraph">在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主機上執行指令碼、以確認安裝 BlueXP 分類的所有先決條件都已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或主機可以位於無法存取網際網路的站台（暗站台）。</block>
+  <block id="3b78d440a5ebfde1b671393949a4e52a" category="list-text">開啟檔案「 /opt/NetApp/config/custom_configuration/job_ford_to_掃描器 _group_config.yml 」、然後輸入掃描儀群組要掃描特定工作環境的對應。您需要為每個資料來源設定_工作環境ID_。例如、下列項目會將2個工作環境新增至「Europe」掃描器群組、將2個新增至「US_USEY」掃描器群組：</block>
+  <block id="0acb6de298fd251ec0fab09f46d78a47" category="summary">規劃哪種 BlueXP 分類部署符合您的需求。</block>
+  <block id="7ac7bc027539aa6045c98c020acd30a2" category="doc">您應該使用哪種 BlueXP 分類部署？</block>
+  <block id="6f3a66c40c100d6b6795bf6321152c15" category="paragraph">您可以以不同的方式部署 BlueXP 分類。瞭解哪種方法符合您的需求。</block>
+  <block id="b335b8e0c79afc046cc019e0ba9e9622" category="paragraph">BlueXP 分類可透過下列方式部署：</block>
+  <block id="b723c5ee7facb4d3bb0af0a7d2f3d7ab" category="list-text"><block ref="cf6b836a5ed0d1fcbc1d079fcc9d0736" category="inline-link-macro-rx"></block>。BlueXP 將在與 BlueXP Connector 相同的雲端供應商網路中部署 BlueXP 分類執行個體。</block>
+  <block id="112a4fbc92b6e9c424407aa2efa54779" category="list-text"><block ref="953e3010369667b8110edc0847a61543" category="inline-link-macro-rx"></block>。在網路中的 Linux 主機或雲端中有網際網路存取的 Linux 主機上安裝 BlueXP 分類。如果您偏好使用內部部署的 BlueXP 分類執行個體來掃描內部部署的 ONTAP 系統、這種安裝類型可能是一個很好的選擇、但這並不是一項要求。</block>
+  <block id="5be81ee840734d5fff39d8fb451e87de" category="inline-link-macro">在內部部署站台的 Linux 主機上安裝、無需存取網際網路</block>
+  <block id="7c5fdd74ce4770d435a4270b4817294a" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>也稱為 _private 模式。 _ 這種安裝類型使用安裝指令碼、非常適合您的安全站台。</block>
+  <block id="a59f7e9514f364f5b3574b8ad02f202d" category="paragraph">在可存取網際網路的 Linux 主機上進行安裝、以及在沒有網際網路存取的 Linux 主機上進行內部部署安裝、都需要使用安裝指令碼。指令碼會先檢查系統和環境是否符合先決條件。如果符合先決條件、則會開始安裝。如果您想要獨立於執行 BlueXP 分類安裝來驗證先決條件、您可以下載個別的軟體套件、只測試先決條件。</block>
+  <block id="1e4c9e5b4eb9656593e357ac3f61cdc1" category="paragraph">請參閱 <block ref="a838f62b35f046b790a8a32eff3e63b6" category="inline-link-macro-rx"></block>。</block>
+  <block id="b05347ded7555dfe4b18afd3dfa678f3" category="paragraph">瞭解 BlueXP 分類（ Cloud Data Sense ）的新功能。</block>
+  <block id="1e3ff9766d4708d7de4568322138b5f8" category="section-title">2024 年 4 月 1 日（ 1.30 版）</block>
+  <block id="1f2986b833ebc6f322deb045aeee0ad8" category="section-title">新增 RHEL v8.8 和 v9.3 BlueXP 分類支援</block>
+  <block id="91e323b860fc9af090c33fd0be441816" category="paragraph">此版本除了先前支援的 9.x 以外、也支援 Red Hat Enterprise Linux v8.8 和 v9.3 、這需要 Podman 、而非 Docker 引擎。</block>
+  <block id="07dc3e2055cac820c8885923e98b8e76" category="paragraph">這適用於 BlueXP 分類的任何內部部署手動安裝。</block>
+  <block id="2c435ff16ae089dc2d457e7776588268" category="paragraph">下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本： Red Hat Enterprise Linux 版本 8.8 、 9.0 、 9.1 、 9.2 及 9.3 。</block>
+  <block id="fae29fbaffa78fbfd6537b0feec1a925" category="inline-link-macro">BlueXP 分類部署總覽</block>
+  <block id="729b0325b4dca702948987b756d6c4dd" category="paragraph">深入瞭解 <block ref="203983d50efda661e0fb2921922583cd" category="inline-link-macro-rx"></block>。</block>
+  <block id="efdeb6220b979140e56f16caceb1d7e9" category="section-title">選項可啟動已移除的稽核記錄集合</block>
+  <block id="677b8eea0d783418318883e36c4858cc" category="paragraph">您可以將游標移到 _ 對應狀態 _ 欄中的圖表上、查看每個儲存庫（本範例中的儲存庫）中仍要對應或分類的檔案數量。</block>
+  <block id="cdf1bf05ba65b107bb0cbe2a4303f966" category="paragraph"><block ref="cdf1bf05ba65b107bb0cbe2a4303f966" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="87fce6273ae6270f06beebf56898bc70" category="paragraph">BlueXP 分類（ Cloud Data Sense ）是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
+  <block id="d4da00138f887427e0760f21c97fa0cf" category="inline-link">規則運算式 101.</block>
+  <block id="f535e41ec22971f3dc912b4a0c3e1502" category="inline-link">Python Regex 測試器頁面</block>
+  <block id="2858913580d22c83f2ed3c5bf98afa04" category="paragraph">如果您需要建置規則運算式的協助、請參閱<block ref="44042c0043421e388aa50c9206936192" category="inline-link-rx"></block>。選擇 *Python* 以查看結果類型 BlueXP 分類將與規則運算式相符。。<block ref="16efc9dbee1da4ffa610197a33616f3b" category="inline-link-rx"></block> 也可透過顯示圖樣的圖形表示方式來使用。</block>
+  <block id="e7695799ba8bc92bb08a6949b8326571" category="sidebar">BlueXP 分類（ Cloud Data Sense ）可讓您在組織的混合式多雲端環境中掃描及分類資料。分類利用 AI 驅動的自然語言處理（ NLP ）進行關聯式資料分析和分類、讓您對資料進行可據以行動的深入分析、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。</block>
+  <block id="23b8d81b3767810f42dfbd7dcd9bd760" category="sidebar">您應該使用哪種部署</block>
+  <block id="fca1d82780afb1668b61925e8a0b964a" category="sidebar">在內部部署的 Linux 主機上安裝、無需存取網際網路</block>
 </blocks>

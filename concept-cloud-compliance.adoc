@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
 summary: BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。 
 ---
 = 瞭解 BlueXP 分類
@@ -14,15 +14,15 @@ summary: BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部�
 
 
 [role="lead"]
-BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。
-
-https://bluexp.netapp.com/netapp-cloud-data-sense["瞭解 BlueXP 分類的使用案例"^]。
+BlueXP 分類（ Cloud Data Sense ）是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。
 
 
 
 == 功能
 
 BlueXP 分類使用人工智慧（ AI ）、自然語言處理（ NLP ）和機器學習（ ML ）來瞭解它所掃描的內容、以便擷取實體並據此分類內容。這可讓 BlueXP 分類提供下列功能領域。
+
+https://bluexp.netapp.com/netapp-cloud-data-sense["深入瞭解 BlueXP 分類的使用案例"^]。
 
 
 
@@ -118,7 +118,7 @@ BlueXP 分類可掃描及分析下列類型資料來源的結構化和非結構�
 * SQL Server （ MSSQL ）
 
 
-BlueXP 分類支援 NFS 3.x 、 4.0 和 4.1 版、以及 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。
+BlueXP 分類支援 NFS 3.x 版和 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。
 
 
 
