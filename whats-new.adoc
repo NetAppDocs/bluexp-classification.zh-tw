@@ -24,19 +24,31 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 === 新增 RHEL v8.8 和 v9.3 BlueXP 分類支援
 
-此版本除了先前支援的 9.x 以外、也支援 Red Hat Enterprise Linux v8.8 和 v9.3 、這需要 Podman 、而非 Docker 引擎。
-
-這適用於 BlueXP 分類的任何內部部署手動安裝。
+此版本除了先前支援的 9.x 以外、也支援 Red Hat Enterprise Linux v8.8 和 v9.3 、這需要 Podman 、而非 Docker 引擎。這適用於 BlueXP 分類的任何內部部署手動安裝。
 
 下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本： Red Hat Enterprise Linux 版本 8.8 、 9.0 、 9.1 、 9.2 及 9.3 。
 
-深入瞭解 link:task-deploy-overview.html["BlueXP 分類部署總覽"]。
+深入瞭解 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP 分類部署總覽"]。
 
 
 
 === 選項可啟動已移除的稽核記錄集合
 
 啟用稽核記錄集合的選項已停用。
+
+
+
+=== 掃描速度更快
+
+二次掃描儀節點上的掃描效能已改善。如果您需要額外的處理能力來進行掃描、您可以新增更多掃描器節點。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["在可存取網際網路的主機上安裝 BlueXP 分類"]。
+
+
+
+=== 自動升級
+
+如果您在可存取網際網路的系統上部署 BlueXP 分類、系統會自動升級。之前、升級是在上次使用者活動之後經過一段特定時間之後進行。在此版本中、如果當地時間介於上午 1 ： 00 至上午 5 ： 00 之間、 BlueXP 分類會自動升級。如果本地時間超出這些時間、則升級會在上次使用者活動之後經過一段特定時間後進行。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["安裝在可存取網際網路的Linux主機上"]。
+
+如果您部署的 BlueXP 分類沒有網際網路存取、則需要手動升級。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["在無法存取網際網路的 Linux 主機上安裝 BlueXP 分類"]。
 
 
 

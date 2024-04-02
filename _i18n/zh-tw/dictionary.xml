@@ -3528,11 +3528,8 @@
   <block id="b05347ded7555dfe4b18afd3dfa678f3" category="paragraph">瞭解 BlueXP 分類（ Cloud Data Sense ）的新功能。</block>
   <block id="1e3ff9766d4708d7de4568322138b5f8" category="section-title">2024 年 4 月 1 日（ 1.30 版）</block>
   <block id="1f2986b833ebc6f322deb045aeee0ad8" category="section-title">新增 RHEL v8.8 和 v9.3 BlueXP 分類支援</block>
-  <block id="91e323b860fc9af090c33fd0be441816" category="paragraph">此版本除了先前支援的 9.x 以外、也支援 Red Hat Enterprise Linux v8.8 和 v9.3 、這需要 Podman 、而非 Docker 引擎。</block>
-  <block id="07dc3e2055cac820c8885923e98b8e76" category="paragraph">這適用於 BlueXP 分類的任何內部部署手動安裝。</block>
   <block id="2c435ff16ae089dc2d457e7776588268" category="paragraph">下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本： Red Hat Enterprise Linux 版本 8.8 、 9.0 、 9.1 、 9.2 及 9.3 。</block>
   <block id="fae29fbaffa78fbfd6537b0feec1a925" category="inline-link-macro">BlueXP 分類部署總覽</block>
-  <block id="729b0325b4dca702948987b756d6c4dd" category="paragraph">深入瞭解 <block ref="203983d50efda661e0fb2921922583cd" category="inline-link-macro-rx"></block>。</block>
   <block id="efdeb6220b979140e56f16caceb1d7e9" category="section-title">選項可啟動已移除的稽核記錄集合</block>
   <block id="677b8eea0d783418318883e36c4858cc" category="paragraph">您可以將游標移到 _ 對應狀態 _ 欄中的圖表上、查看每個儲存庫（本範例中的儲存庫）中仍要對應或分類的檔案數量。</block>
   <block id="cdf1bf05ba65b107bb0cbe2a4303f966" category="paragraph"><block ref="cdf1bf05ba65b107bb0cbe2a4303f966" category="inline-image-macro-rx" type="image"></block></block>
@@ -3543,4 +3540,11 @@
   <block id="e7695799ba8bc92bb08a6949b8326571" category="sidebar">BlueXP 分類（ Cloud Data Sense ）可讓您在組織的混合式多雲端環境中掃描及分類資料。分類利用 AI 驅動的自然語言處理（ NLP ）進行關聯式資料分析和分類、讓您對資料進行可據以行動的深入分析、以因應法規遵循要求、偵測安全漏洞、最佳化成本、並加速移轉。</block>
   <block id="23b8d81b3767810f42dfbd7dcd9bd760" category="sidebar">您應該使用哪種部署</block>
   <block id="fca1d82780afb1668b61925e8a0b964a" category="sidebar">在內部部署的 Linux 主機上安裝、無需存取網際網路</block>
+  <block id="bed0a63060826a7b1ed8cba91cb12ba6" category="paragraph">此版本除了先前支援的 9.x 以外、也支援 Red Hat Enterprise Linux v8.8 和 v9.3 、這需要 Podman 、而非 Docker 引擎。這適用於 BlueXP 分類的任何內部部署手動安裝。</block>
+  <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">深入瞭解<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>。</block>
+  <block id="6cf7e053021d02a6a394c1e69f8e8352" category="section-title">掃描速度更快</block>
+  <block id="9d343bee917ed42deed4a08429d2e86f" category="paragraph">二次掃描儀節點上的掃描效能已改善。如果您需要額外的處理能力來進行掃描、您可以新增更多掃描器節點。如需詳細資訊、請參閱<block ref="bccb2247e180b6227640eec7d70d0351" category="inline-link-rx"></block>。</block>
+  <block id="747585a36be1e14a4dd3ff25c4bf1e48" category="section-title">自動升級</block>
+  <block id="5908128f01988745be85a67845195980" category="paragraph">如果您在可存取網際網路的系統上部署 BlueXP 分類、系統會自動升級。之前、升級是在上次使用者活動之後經過一段特定時間之後進行。在此版本中、如果當地時間介於上午 1 ： 00 至上午 5 ： 00 之間、 BlueXP 分類會自動升級。如果本地時間超出這些時間、則升級會在上次使用者活動之後經過一段特定時間後進行。如需詳細資訊、請參閱<block ref="ec7f7d5f354f2c39e4e863a85c31a7f9" category="inline-link-rx"></block>。</block>
+  <block id="7adcca7abf8ead9407a9511a195904c3" category="paragraph">如果您部署的 BlueXP 分類沒有網際網路存取、則需要手動升級。如需詳細資訊、請參閱<block ref="9aedc51770264f0d93a81417a0d08768" category="inline-link-rx"></block>。</block>
 </blocks>
