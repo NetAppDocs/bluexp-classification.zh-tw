@@ -1,0 +1,89 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-multi-host-install-dark-site.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification, classification, install 
+summary: 請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為「私有模式」。這類安裝最適合安全的站台。 
+---
+= 在多部主機上安裝 BlueXP 分類、以進行大型組態、但無法存取網際網路
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+請完成幾個步驟、在內部部署站台中無法存取網際網路的多部主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這類安裝最適合安全的站台。
+
+對於大型組態而言、如果您要在沒有網際網路存取的站台中掃描 PB 的資料、您可以包含多部主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。
+
+在離線環境中的多部內部部署主機上安裝 BlueXP 分類軟體時、請遵循下列步驟。
+
+[]
+====
+* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+
+====
+.您需要的產品
+* 確認所有適用於 Manager 和掃描儀節點的 Linux 系統均符合主機需求。
+* 確認您已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
+* 請確定您擁有Linux系統的root權限。
+* 確認您的離線環境符合所需的權限和連線能力。
+* 您必須擁有要使用的掃描器節點主機的IP位址。
+* 必須在所有主機上啟用下列連接埠和傳輸協定：
++
+[cols="15,20,55"]
+|===
+| 連接埠 | 通訊協定 | 說明 
+
+
+| 2377 | TCP | 叢集管理通訊 
+
+
+| 7946 | TCP、udp | 節點間通訊 
+
+
+| 4789 | UDP | 重疊網路流量 
+
+
+| 50 | 電子穩定程序 | 加密的IPsec覆疊網路（ESP）流量 
+
+
+| 111. | TCP、udp | NFS伺服器、用於在主機之間共用檔案（從每個掃描儀節點到管理器節點都需要） 
+
+
+| 2049 | TCP、udp | NFS伺服器、用於在主機之間共用檔案（從每個掃描儀節點到管理器節點都需要） 
+|===
+
+
+.步驟
+. 請依照中的步驟1至8進行 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["單一主機安裝"] 在管理器節點上。
+. 如步驟9所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。
++
+除了可用於單一主機安裝的變數之外、還會使用新的選項*- n <node_ip>*來指定掃描儀節點的IP位址。多個節點IP之間以一個逗號分隔。
+
++
+例如、此命令會新增 3 個掃描器節點：
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --no-proxy --darksite`
+
+. 在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`）並將其儲存在文字檔中。
+. 在*每個*掃描儀節點主機上：
++
+.. 將Data Sense安裝程式檔案（* cc_OnPrem_installer.tar.gz*）複製到主機機器。
+.. 解壓縮安裝程式檔案。
+.. 貼上並執行您在步驟3中複製的命令。
++
+在所有掃描儀節點上完成安裝、並已加入管理器節點之後、管理器節點的安裝也會完成。
+
+
+
+
+
+.結果
+BlueXP 分類安裝程式會完成套件的安裝、並註冊安裝。安裝可能需要15至25分鐘。
+
+.下一步
+在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和本機 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
+
+您也可以 link:task-licensing-datasense.html["設定 BlueXP 分類的 BYOL 授權"] 目前從 BlueXP 數位錢包頁面。即使 30 天免費試用期結束、您也不會被收取費用。

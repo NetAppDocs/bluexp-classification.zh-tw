@@ -16,6 +16,11 @@ summary: BlueXP 分類提供多種方法來管理您的私有資料。有些功�
 [role="lead"]
 BlueXP 分類提供多種方法來管理您的私有資料。有些功能可讓您更輕鬆地準備資料移轉、而其他功能則可讓您變更資料。
 
+[]
+====
+* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+
+====
 * 如果您想要複製特定資料並將其移至不同的NFS位置、可以將檔案複製到目的地NFS共用。
 * 您可以將ONTAP 某個實體磁碟區複製到新的磁碟區、但只能在新的複製磁碟區中包含來自來源磁碟區的選定檔案。如果您要移轉資料、而且想要從原始Volume中排除某些檔案、這項功能非常實用。
 * 您可以將檔案從來源儲存庫複製並同步處理至特定目的地位置的目錄。當您將資料從一個來源系統移轉至另一個來源系統、但來源檔案仍有一些最終活動時、此功能非常實用。
@@ -143,7 +148,7 @@ image:screenshot_compliance_clone_files_dialog.png["顯示「複製檔案」對�
 
 您可以在中檢視複製作業的進度 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
 
-如果您在原始磁碟區所在的工作環境中啟用 BlueXP 分類時、一開始選取 * 對應所有磁碟區 * 或 * 對應並分類所有磁碟區 * 、則 BlueXP 分類會自動掃描新的複製磁碟區。如果您一開始並未使用上述任一選項、則如果您想要掃描此新Volume、就必須執行此操作 link:task-getting-started-compliance.html#enabling-and-disabling-compliance-scans-on-volumes["手動在磁碟區上啟用掃描"]。
+如果您在原始磁碟區所在的工作環境中啟用 BlueXP 分類時、一開始選取 * 對應所有磁碟區 * 或 * 對應並分類所有磁碟區 * 、則 BlueXP 分類會自動掃描新的複製磁碟區。如果您一開始並未使用上述任一選項、則如果您想要掃描此新Volume、就必須執行此操作 link:task-getting-started-compliance.html["手動在磁碟區上啟用掃描"]。
 
 
 
@@ -252,7 +257,7 @@ image:screenshot_compliance_move_file.png["顯示「資料調查」頁面中檔�
 
 您可以永久移除看起來不安全或風險太高的來源檔案、使其留在儲存系統中、或是您已識別為重複檔案。此動作是永久性的、而且不會復原或還原。
 
-您可以從「調查」窗格手動刪除檔案、或 link:task-using-policies.html#delete-source-files-automatically-using-policies["自動使用原則"^]。
+您可以從「調查」窗格手動刪除檔案、或 link:task-using-policies.html["自動使用原則"^]。
 
 
 TIP: 您無法刪除位於資料庫中的檔案。支援所有其他資料來源。

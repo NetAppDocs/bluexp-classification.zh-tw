@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: task-investigate-data-deprecated.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+summary: 您可以在「資料調查」頁面中檢視詳細資料、以調查組織的資料。您可以從 BlueXP 分類 UI 的許多區域瀏覽到此頁面、包括 Governance 和 Compliance 儀表板。 
+---
+= 調查儲存在「資料調查」頁面的資料
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以在「資料調查」頁面中檢視詳細資料、以調查組織的資料。您可以從 BlueXP 分類 UI 的許多區域瀏覽到此頁面、包括 Governance 和 Compliance 儀表板。
+
+
+NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃描時可用。只有對應掃描的資料來源不會顯示檔案層級的詳細資料。
+
+
+
+== 在「資料調查」頁面中篩選資料
+
+您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。
+
+
+
+=== 依標記、標籤、指派的使用者和原則篩選資料
+
+使用下列篩選條件、依標籤、 AIP 標籤、指派的使用者或原則檢視資料。
+
+[]
+====
+* 注意 * 按標籤、標籤及指派的使用者篩選功能僅適用於 BlueXP 分類 1.30 版及更早版本。
+
+====
+[cols="30,60"]
+|===
+| 篩選器 | 詳細資料 
+
+
+| 原則 | 選取原則。行動 link:task-using-policies.html["請按這裡"^] 可查看現有策略列表並創建您自己的自定義策略。 
+
+
+| 標籤 | 選取 link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP標籤"] 指派給您的檔案。 
+
+
+| 標記 | 選取 link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["標記"] 指派給您的檔案。 
+
+
+| 指派給 | 選取指派檔案的人員名稱。 
+|===
+
+
+== 建立資料調查報告
+
+「資料調查報告」是「資料調查」頁面篩選內容的下載檔案。
+
+報告有兩種不同格式：
+
+* 做為 .CSV 檔案、您可以儲存至本機機器。
++
+此報告最多可包含 10 、 000 列資料。
+
+* 以 .JSON 檔案的形式匯出至 NFS 共用。
++
+如果有超過 250,000 列資料、則會建立其他 .JSON 檔案。
+
++
+匯出至檔案共用時、請確定 BlueXP 分類具有正確的匯出存取權限。
+
++
+[]
+====
+* 注意 * 中產生報告的能力。 JSON 格式僅適用於 BlueXP 分類版本 1.30 及更早版本。
+
+====
+
+
+如果 BlueXP 分類正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）和資料庫（結構化資料）、則最多可下載三個報告檔案。
+
+.步驟
+. 在「Data Investigation（資料調查）」頁面中、按一下 image:button_download.png["下載按鈕"] 按鈕。
+. 選取您要下載資料的.CSV報告或.Json報告、然後按一下*下載報告*。
++
+選取.Json報告時、請以「<host_name>//<share_path>'的格式輸入要下載報告的NFS共用名稱。
+
++
+您可以在中檢視Json報告產生的進度 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
+
++
+[]
+====
+* 注意 * 按標籤、標籤及指派的使用者篩選功能僅適用於 BlueXP 分類 1.30 版及更早版本。
+
+====
+

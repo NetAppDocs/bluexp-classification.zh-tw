@@ -1,0 +1,206 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-add-scanner-nodes.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification 
+summary: 請完成幾個步驟、在具有網際網路存取權的 Linux 主機上新增掃描器節點。 
+---
+= 將掃描器節點新增至現有部署
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以將掃描器節點新增至可存取網際網路的 Linux 主機上現有部署。
+
+如果您發現需要更多掃描處理能力來掃描資料來源、可以新增更多掃描器節點。您可以在安裝管理節點之後立即新增掃描儀節點、也可以稍後新增掃描儀節點。例如、如果您發現其中一個資料來源的資料量在6個月後增加了兩倍或三倍、您可以新增一個掃描器節點來協助資料掃描。
+
+[]
+====
+* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+
+====
+有兩種方法可以新增其他掃描器節點：
+
+* 新增節點以協助掃描所有資料來源
+* 新增節點以協助掃描特定資料來源或特定資料來源群組（通常是根據位置）
+
+
+根據預設、您新增的任何新掃描器節點都會新增至一般掃描資源池。這稱為「預設掃描器群組」。在下圖中、「預設」群組中有1個Manager節點和3個掃描儀節點、全部都是來自所有6個資料來源的掃描資料。
+
+image:diagram_onprem_scanner_groups_default.png["BlueXP 分類掃描器在預設掃描器群組中掃描資料來源的圖表。"]
+
+如果您有特定的資料來源需要由實體靠近資料來源的掃描儀節點進行掃描、您可以定義掃描儀節點或掃描儀節點群組、以掃描特定的資料來源或資料來源群組。在下圖中、有1個Manager節點和3個掃描儀節點。
+
+* Manager節點位於「預設」群組中、正在掃描1個資料來源
+* 掃描器節點1位於「United _States」群組中、正在掃描2個資料來源
+* 掃描儀節點2和3位於「Europe」群組中、它們共用3個資料來源的掃描工作
+
+
+image:diagram_onprem_scanner_groups.png["BlueXP 分類掃描器如何在指派給不同掃描器群組時掃描資料來源的圖表。"]
+
+BlueXP 分類掃描器群組可定義為儲存資料的個別地理區域。您可以在全球各地部署多個 BlueXP 分類掃描器節點、並為每個節點選擇一個掃描器群組。如此一來、每個掃描儀節點都會掃描最靠近它的資料。掃描儀節點越靠近資料、越好、因為掃描資料時會盡可能減少網路延遲。
+
+您可以選擇要新增至 BlueXP 分類的掃描器群組、並選擇其名稱。BlueXP 分類無法強制在歐洲部署對應至名為「 Europe 」的掃描器群組的節點。
+
+您將依照下列步驟安裝其他 BlueXP 分類掃描程式節點：
+
+. 準備將做為掃描儀節點的Linux主機系統
+. 將Data Sense軟體下載到這些Linux系統
+. 在Manager節點上執行命令、以識別掃描儀節點
+. 請依照步驟在掃描儀節點上部署軟體（並選擇性地為某些掃描儀節點定義「掃描儀群組」）。
+. 如果您定義了掃描器群組、請在Manager節點上：
++
+.. 開啟檔案「jobing_for_banner_group_config.yml」、並定義每個掃描器群組要掃描的工作環境
+.. 執行下列指令碼、將此對應資訊登錄至所有掃描器節點： `update_we_scanner_group_from_config_file.sh`
+
+
+
+
+.您需要的產品
+* 驗證您所有的 Linux 掃瞄機節點系統是否都符合主機需求。
+* 確認系統已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
+* 請確定您擁有Linux系統的root權限。
+* 確認您的環境符合所需的權限和連線能力。
+* 您必須擁有要新增的掃描儀節點主機的IP位址。
+* 您必須擁有 BlueXP 分類管理器節點主機系統的 IP 位址
+* 您必須擁有連接器系統的IP位址或主機名稱、NetApp帳戶ID、連接器用戶端ID和使用者存取權杖。如果您打算使用掃描器群組、則必須知道帳戶中每個資料來源的工作環境ID。請參閱下方的*先決條件步驟_*以取得此資訊。
+* 必須在所有主機上啟用下列連接埠和傳輸協定：
++
+[cols="15,20,55"]
+|===
+| 連接埠 | 通訊協定 | 說明 
+
+
+| 2377 | TCP | 叢集管理通訊 
+
+
+| 7946 | TCP、udp | 節點間通訊 
+
+
+| 4789 | UDP | 重疊網路流量 
+
+
+| 50 | 電子穩定程序 | 加密的IPsec覆疊網路（ESP）流量 
+
+
+| 111. | TCP、udp | NFS伺服器、用於在主機之間共用檔案（從每個掃描儀節點到管理器節點都需要） 
+
+
+| 2049 | TCP、udp | NFS伺服器、用於在主機之間共用檔案（從每個掃描儀節點到管理器節點都需要） 
+|===
+* 如果您使用 `firewalld` 在您的 BlueXP 分類機器上、建議您先啟用它、再安裝 BlueXP 分類。執行下列命令進行設定 `firewalld` 因此與 BlueXP 分類相容：
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --permanent --add-port=2377/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
+firewall-cmd --permanent --add-port=4789/udp
+firewall-cmd --reload
+....
++
+請注意、每當您啟用或更新時、都必須重新啟動 Docker 或 Podman `firewalld` 設定：
+
+
+
+.必要步驟
+請依照下列步驟取得新增掃描器節點所需的NetApp帳戶ID、Connector用戶端ID、Connector伺服器名稱及使用者存取權杖。
+
+. 在BlueXP功能表列中、按一下*帳戶>管理帳戶*。
++
+image:screenshot_account_id.png["藍圖XP帳戶詳細資料的快照。"]
+
+. 複製_Account ID_。
+. 在BlueXP功能表列中、按一下*「說明」>「支援」>「藍圖XP Connector*」。
++
+image:screenshot_connector_client_id.png["BlueXP Connector組態設定的快照。"]
+
+. 複製連接器_Client ID_和_Server Name_。
+. 如果您打算使用掃描器群組、請從 BlueXP 分類組態索引標籤、針對您打算新增至掃描器群組的每個工作環境、複製工作環境 ID 。
++
+image:screenshot_work_env_id.png["BlueXP 分類組態頁面中工作環境 ID 的螢幕擷取畫面。"]
+
+. 前往 https://services.cloud.netapp.com/developer-hub["API文件開發人員中樞"^] 然後按一下*瞭解如何驗證*。
++
+image:screenshot_client_access_token.png["API說明文件頁面的快照、其中包含驗證指示的連結。"]
+
+. 請遵循驗證指示、在「使用者名稱」和「密碼」參數中使用帳戶管理員的使用者名稱和密碼。
+. 然後從回應複製 _access token-.
+
+
+.步驟
+. 在 BlueXP 分類管理程式節點上、執行指令碼「 add_nimer_node.sh 」。例如、此命令會新增2個掃描儀節點：
++
+`sudo ./add_scanner_node.sh -a <account_id> -c <client_id> -m <cm_host> -h <ds_manager_ip> *-n <node_private_ip_1,node_private_ip_2>* -t <user_token>`
+
++
+變數值：
+
++
+** _Account_id_ = NetApp 帳戶 ID
+** _client_id_ = Connector Client ID （將字尾「 Clients 」新增至您在先決條件步驟中複製的用戶端 ID ）
+** _cm_host_=連接器系統的IP位址或主機名稱
+** _DS_manager_IP_ = BlueXP 分類管理器節點系統的私有 IP 位址
+** _node_private IP = BlueXP 分類掃描程式節點系統的 IP 位址（多個掃瞄器節點 IP 以逗號分隔）
+** _user_tokon_= JWT使用者存取權杖
+
+
+. 在ADD_SCIER_nodes指令碼完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF1s35212 -u red95467j`）並將其儲存在文字檔中。
+. 在*每個*掃描儀節點主機上：
++
+.. 將Data Sense安裝程式檔案（* datASENSE-installer-ze.tar.gz*<version> ）複製到主機機器（使用「scp」或其他方法）。
+.. 解壓縮安裝程式檔案。
+.. 貼上並執行您在步驟2中複製的命令。
+.. 如果您想要將掃描器節點新增至「掃描器群組」、請將參數*- r <掃描 儀群組名稱>*新增至命令。否則、掃描儀節點會新增至「預設」群組。
++
+在所有掃描儀節點上完成安裝、並已加入管理器節點之後、「add_bers_node.sh」指令碼也會完成。安裝可能需要10到20分鐘。
+
+
+
+. 如果將任何掃描儀節點新增至掃描儀群組、請返回Manager節點並執行下列2項工作：
++
+.. 開啟檔案「 /opt/NetApp/config/custom_configuration/job_ford_to_掃描器 _group_config.yml 」、然後輸入掃描儀群組要掃描特定工作環境的對應。您需要為每個資料來源設定_工作環境ID_。例如、下列項目會將2個工作環境新增至「Europe」掃描器群組、將2個新增至「US_USEY」掃描器群組：
++
+....
+scanner_groups:
+ europe:
+   working_environments:
+     - "working_environment_id1"
+     - "working_environment_id2"
+ united_states:
+   working_environments:
+     - "working_environment_id3"
+     - "working_environment_id4"
+....
++
+任何未新增至清單的工作環境都會由「預設」群組掃描、您必須在「預設」群組中至少有一個管理程式或掃描器節點。
+
+.. 執行下列指令碼、將此對應資訊登錄至所有掃描器節點：
+`/opt/netapp/Datasense/tools/update_we_scanner_group_from_config_file.sh`
+
+
+
+
+.結果
+BlueXP 分類是透過 Manager 和掃描程式節點來設定、以掃描所有資料來源。
+
+.下一步
+從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。
+
+您可以在「組態」頁面中查看每個工作環境的「掃描器群組」名稱。
+
+image:screenshot_work_env_id.png["BlueXP 分類組態頁面中工作環境 ID 的螢幕擷取畫面。"]
+
+您也可以在「組態」頁面底部查看所有掃描器群組的清單、以及群組中每個掃描器節點的IP位址和狀態。
+
+image:screenshot_scanner_groups.png["快照會列出群組中所有掃描器群組、以及每個掃描器節點的IP位址。"]
+
+您可以 link:task-licensing-datasense.html["設定 BlueXP 分類的授權"] 目前。30天免費試用期結束前、您將不需付費。

@@ -23,6 +23,9 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解 Blue
 BlueXP 分類安裝指令碼會先檢查系統和環境是否符合必要的先決條件。如果所有先決條件都符合、則會開始安裝。如果您想要獨立於執行 BlueXP 分類安裝來驗證先決條件、您可以下載個別的軟體套件、只測試先決條件。 link:task-test-linux-system.html["瞭解如何檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類"]。
 
 
+NOTE: 若為舊版 1.30 及更早版本、如果您需要在多部主機上安裝 BlueXP 分類、請參閱 link:task-deploy-multi-host-install-dark-site.html["在無法存取網際網路的多部主機上安裝 BlueXP 分類"]。
+
+
 
 == 支援的資料來源
 
@@ -30,12 +33,10 @@ BlueXP 分類安裝指令碼會先檢查系統和環境是否符合必要的先�
 
 * 內部部署ONTAP 的作業系統
 * 資料庫架構
-* SharePoint內部部署帳戶（SharePoint Server）
 * 非NetApp NFS或CIFS檔案共用
-* 使用簡易儲存服務（S3）傳輸協定的物件儲存設備
 
 
-目前不支援掃描 Cloud Volumes ONTAP 、 Azure NetApp Files 、適用於 ONTAP 的 FSX 、 AWS S3 或 Google Drive 、 以私有模式部署 BlueXP 分類時的 OneDrive 或 SharePoint Online 帳戶。
+目前不支援在私有模式下部署 BlueXP 分類時、掃描 Cloud Volumes ONTAP 、 Azure NetApp Files 或 FSX for ONTAP 帳戶。
 
 
 
@@ -43,14 +44,11 @@ BlueXP 分類安裝指令碼會先檢查系統和環境是否符合必要的先�
 
 大多數 BlueXP 分類功能在部署於無法存取網際網路的網站時都能正常運作。不過、某些需要網際網路存取的功能則不受支援、例如：
 
-* 管理Microsoft Azure資訊保護（AIP）標籤
-* 當某些關鍵原則傳回結果時、會傳送電子郵件警示給BlueXP使用者
 * 為不同的使用者設定BlueXP角色（例如帳戶管理員或法規遵循檢視器）
 * 使用 BlueXP 複製與同步處理來複製及同步處理來源檔案
-* 接收使用者意見反應
 * 從BlueXP自動升級軟體
 +
-BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 link:whats-new.html["BlueXP 分類版本資訊"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["升級BlueXP Connector"^] 和 <<升級 BlueXP 分類軟體,升級 BlueXP 分類軟體>>。
+BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 link:whats-new.html["BlueXP 分類版本資訊"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["升級BlueXP Connector"^] 和 <<升級 BlueXP 分類軟體,升級 BlueXP 分類軟體>>。
 
 
 
@@ -74,7 +72,7 @@ BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 訂閱 BlueXP 分類服務
 [role="quick-margin-para"]
-BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。NetApp需要BYOL授權、才能在該點之後繼續掃描資料。
+BlueXP 分類掃描的前 500 TB 資料可免費使用 30 天。NetApp需要BYOL授權、才能在該點之後繼續掃描資料。BlueXP 核心版本 1.31 免費。
 
 
 
@@ -283,17 +281,15 @@ NFS Volume 匯出原則必須允許從 BlueXP 分類執行個體存取。
 
 
 |===
-如果您使用多個 BlueXP 分類主機來提供額外的處理能力來掃描資料來源、則需要啟用其他連接埠 / 通訊協定。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["請參閱其他連接埠需求"]。
+如果您使用多個 BlueXP 分類主機來提供額外的處理能力來掃描資料來源、則需要啟用其他連接埠 / 通訊協定。 link:task-deploy-compliance-dark-site.html["請參閱其他連接埠需求"]。
 
 
 
 == 在內部部署 Linux 主機上安裝 BlueXP 分類
 
-對於一般組態、您將在單一主機系統上安裝軟體。 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["請參閱此處的步驟"]。
+對於一般組態、您將在單一主機系統上安裝軟體。
 
 image:diagram_deploy_onprem_single_host_no_internet.png["圖表顯示在內部部署的單一 BlueXP 分類執行個體、在沒有網際網路存取的情況下、您可以掃描的資料來源位置。"]
-
-對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。 link:task-deploy-compliance-dark-site.html#multi-host-installation-for-large-configurations["請參閱此處的步驟"]。
 
 image:diagram_deploy_onprem_multi_host_no_internet.png["顯示您可以在內部部署多個 BlueXP 分類執行個體、但無法存取網際網路時、掃描之資料來源位置的圖表。"]
 
@@ -303,7 +299,7 @@ image:diagram_deploy_onprem_multi_host_no_internet.png["顯示您可以在內部
 
 在離線環境中的單一內部部署主機上安裝 BlueXP 分類軟體時、請遵循下列步驟。
 
-請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它是寫入的 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html#access-the-log-files["請參閱此處的更多詳細資料"]。
+請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它是寫入的 `/opt/netapp/install_logs/`。 link:task-audit-data-sense-actions.html["請參閱此處的更多詳細資料"]。
 
 .您需要的產品
 * 確認您的Linux系統符合 <<準備Linux主機系統,主機需求>>。
@@ -380,78 +376,7 @@ BlueXP 分類安裝程式會安裝套件、登錄安裝、並安裝 BlueXP 分�
 .下一步
 在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
 
-您也可以 link:task-licensing-datasense.html#use-a-bluexp-classification-byol-license["設定 BlueXP 分類的 BYOL 授權"] 目前從 BlueXP 數位錢包頁面。30天免費試用期結束前、您將不需付費。
-
-
-
-=== 適用於大型組態的多主機安裝
-
-對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。
-
-在離線環境中的多部內部部署主機上安裝 BlueXP 分類軟體時、請遵循下列步驟。
-
-.您需要的產品
-* 確認Manager和掃描儀節點的所有Linux系統都符合 <<準備Linux主機系統,主機需求>>。
-* 確認您已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
-* 請確定您擁有Linux系統的root權限。
-* 確認您的離線環境符合所需 <<驗證 BlueXP 和 BlueXP 分類先決條件,權限與連線能力>>。
-* 您必須擁有要使用的掃描器節點主機的IP位址。
-* 必須在所有主機上啟用下列連接埠和傳輸協定：
-+
-[cols="15,20,55"]
-|===
-| 連接埠 | 通訊協定 | 說明 
-
-
-| 2377 | TCP | 叢集管理通訊 
-
-
-| 7946 | TCP、udp | 節點間通訊 
-
-
-| 4789 | UDP | 重疊網路流量 
-
-
-| 50 | 電子穩定程序 | 加密的IPsec覆疊網路（ESP）流量 
-
-
-| 111. | TCP、udp | NFS伺服器、用於在主機之間共用檔案（從每個掃描儀節點到管理器節點都需要） 
-
-
-| 2049 | TCP、udp | NFS伺服器、用於在主機之間共用檔案（從每個掃描儀節點到管理器節點都需要） 
-|===
-
-
-.步驟
-. 請依照中的步驟1至8進行 link:task-deploy-compliance-dark-site.html#single-host-installation-for-typical-configurations["單一主機安裝"] 在管理器節點上。
-. 如步驟9所示、當安裝程式提示時、您可以在一系列提示中輸入所需的值、也可以將所需的參數作為命令列引數提供給安裝程式。
-+
-除了可用於單一主機安裝的變數之外、還會使用新的選項*- n <node_ip>*來指定掃描儀節點的IP位址。多個節點IP之間以一個逗號分隔。
-
-+
-例如、此命令會新增 3 個掃描器節點：
-`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> *-n <node_ip1>,<node_ip2>,<node_ip3>* --no-proxy --darksite`
-
-. 在管理器節點安裝完成之前、會有一個對話方塊顯示掃描儀節點所需的安裝命令。複製命令（例如： `sudo ./node_install.sh -m 10.11.12.13 -t ABCDEF-1-3u69m1-1s35212`）並將其儲存在文字檔中。
-. 在*每個*掃描儀節點主機上：
-+
-.. 將Data Sense安裝程式檔案（* cc_OnPrem_installer.tar.gz*）複製到主機機器。
-.. 解壓縮安裝程式檔案。
-.. 貼上並執行您在步驟3中複製的命令。
-+
-在所有掃描儀節點上完成安裝、並已加入管理器節點之後、管理器節點的安裝也會完成。
-
-
-
-
-
-.結果
-BlueXP 分類安裝程式會完成套件的安裝、並註冊安裝。安裝可能需要15至25分鐘。
-
-.下一步
-在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和本機 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
-
-您也可以 link:task-licensing-datasense.html#use-a-bluexp-classification-byol-license["設定 BlueXP 分類的 BYOL 授權"] 目前從 BlueXP 數位錢包頁面。30天免費試用期結束前、您將不需付費。
+您也可以 link:task-licensing-datasense.html["設定 BlueXP 分類的 BYOL 授權"] 目前從 BlueXP 數位錢包頁面。30天免費試用期結束前、您將不需付費。
 
 
 
@@ -460,7 +385,7 @@ BlueXP 分類安裝程式會完成套件的安裝、並註冊安裝。安裝可�
 由於 BlueXP 分類軟體定期更新新功能、因此您應該定期檢查新版本、以確保您使用的是最新的軟體和功能。您需要手動升級 BlueXP 分類軟體、因為沒有網際網路連線功能可自動執行升級。
 
 .開始之前
-* 我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#upgrade-the-connector-when-using-private-mode["請參閱連接器升級步驟"^]。
+* 我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["請參閱連接器升級步驟"^]。
 * 從 BlueXP 分級版本 1.24 開始、您可以升級至任何未來版本的軟體。
 +
 如果您的 BlueXP 分類軟體執行的版本早於 1.24 、您一次只能升級一個主要版本。例如、如果您已安裝 1.21.x 版、則只能升級至 1.22.x如果您落後幾個主要版本、就必須多次升級軟體。

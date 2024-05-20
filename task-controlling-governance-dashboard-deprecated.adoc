@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-controlling-governance-dashboard-deprecated.html 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
+summary: 控制與組織儲存資源資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。 
+---
+= 使用 Governance 儀表板檢視資料的治理詳細資料
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+控制與組織儲存資源資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。
+
+此外、如果您計畫將資料從內部部署位置移轉至雲端、您可以在移動資料之前、先檢視資料大小、以及是否有任何資料包含敏感資訊。
+
+[]
+====
+* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+
+====
+
+
+== 治理儀表板上依敏感度和廣泛權限列出的資料
+
+Governance 儀表板上的 _ 敏感資料和寬頻權限 _ 區域提供內含敏感資料（包括敏感和敏感個人資料）且過於寬鬆的檔案熱圖。這有助於您瞭解敏感資料的風險所在。
+
+
+NOTE: 這適用於 BlueXP 分類版本 1.30 及更早版本。
+
+檔案的評分是根據具有X軸存取檔案權限的使用者人數（最低至最高）、以及Y軸上檔案中的敏感識別碼數量（最低至最高）。區塊代表與X和Y軸項目相符的檔案數量。較淺的色塊很好；使用者較少、每個檔案的機密識別碼較少。較暗的區塊是您可能想要調查的項目。例如、下方畫面顯示深藍色區塊的暫留文字。這表示您有1、500個檔案、其中751-100個使用者可以存取、其中每個檔案有501-100個敏感識別碼。
+
+image:screenshot_compliance_sensitive_data.png["當您將游標置於此面板中的元素上時、會顯示所顯示的資料快照。"]
+
+您可以按一下您感興趣的區塊、在「調查」頁面中檢視受影響檔案的篩選結果、以便進一步調查。
+
+如果您尚未將身分識別服務與 BlueXP 分類整合、則此面板不會顯示任何資料。 link:task-add-active-directory-datasense.html["瞭解如何將 Active Directory 服務與 BlueXP 分類整合"^]。
+
+
+TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔案。目前不支援資料庫、 Google Drive 、 Amazon S3 和一般物件儲存。
+
+
+
+== 儀表板上顯示 AIP 標籤的分類區域
+
+儀表板上的 _Classification_ 區域提供掃描資料中識別最多的 Azure 資訊保護（ AIP ）標籤清單。
+
+如果您已訂閱Azure資訊保護（AIP）、您可以將標籤套用至內容、以分類及保護文件與檔案。檢閱指派給檔案的最常用AIP標籤、即可查看檔案中最常用的標籤。
+
+請參閱 link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP標籤"^] 以取得更多資訊。

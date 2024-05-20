@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, cloud data sense, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
 summary: BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。 
 ---
 = 瞭解 BlueXP 分類
@@ -16,6 +16,17 @@ summary: BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部�
 [role="lead"]
 BlueXP 分類（ Cloud Data Sense ）是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。
 
+[]
+====
+重要
+
+從 2024 年 5 月開始、 BlueXP 分類為 BlueXP 的核心功能、無需額外付費。不需要分類授權或訂閱。我們也將 BlueXP 分類功能集中在 NetApp 儲存系統上、因此部分未使用或未充分使用的功能已被淘汰。
+
+link:reference-free-paid.html["請參閱過時功能的清單"]。
+
+使用舊版 1.30 或更早版本的使用者將繼續使用該版本、直到其訂閱到期為止。
+
+====
 
 
 == 功能
@@ -33,8 +44,6 @@ BlueXP 分類提供數種工具、可協助您達成法規遵循目標。您可�
 * 識別個人識別資訊（ PII ）。
 * 根據GDPR、CCPA、PCI及HIPAA隱私權法規的要求、識別範圍廣泛的敏感個人資訊。
 * 根據名稱或電子郵件地址回應資料主旨存取要求（DSAR）。
-* 識別您資料庫中的唯一識別碼是否位於其他儲存庫中的檔案中、基本上是製作您自己的「個人資料」清單、以在 BlueXP 分類掃描中識別。
-* 當檔案包含特定PII時、透過電子郵件通知特定使用者（您使用定義此條件 link:task-using-policies.html["原則"^]）以便決定行動計畫。
 
 
 
@@ -46,9 +55,7 @@ BlueXP 分類可識別出可能因犯罪目的而面臨存取風險的資料。�
 * 識別所有具有開放權限的檔案和目錄（共享區和資料夾）、這些檔案和目錄都會公開給整個組織或大眾使用。
 * 識別位於初始專屬位置之外的敏感資料。
 * 遵守資料保留政策。
-* 使用_policies自動通知安全員工新的安全問題、以便他們立即採取行動。
-* 將自訂標記新增至檔案（例如「需要搬移」）、並指派一個BlueXP使用者、讓該人員擁有檔案的更新。
-* 檢視及修改 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）標籤"^] 在您的檔案中。
+* 使用 _policies _ 自動偵測新的安全性問題、讓安全人員可以立即採取行動。
 
 
 
@@ -57,20 +64,8 @@ BlueXP 分類可識別出可能因犯罪目的而面臨存取風險的資料。�
 
 BlueXP 分類提供的工具可協助您處理儲存設備的總體擁有成本（ TCO ）。您可以使用 BlueXP 分類來：
 
-* 識別重複或非業務相關的資料、以提高儲存效率。您可以使用此資訊來決定要移動或刪除特定檔案。
-* 刪除看起來不安全或風險太高、無法留在儲存系統中、或是您已識別為重複的檔案。您可以使用_policies自動刪除符合特定條件的檔案。
+* 識別重複或非業務相關的資料、以提高儲存效率。
 * 識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["深入瞭解Cloud Volumes ONTAP 從NetApp系統分層的相關資訊"^]。 https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["深入瞭解內部部署ONTAP 的資訊系統分層"^]。
-
-
-
-
-=== 加速資料移轉
-
-BlueXP 分類可用於掃描內部部署資料、然後再將其移轉至公有雲或私有雲。您可以使用 BlueXP 分類來：
-
-* 在移動資料之前、請先檢視資料大小、以及是否有任何資料包含敏感資訊。
-* 篩選來源資料（根據超過25種準則）、以便只將所需檔案移至目的地、不必要的資料不會移動。
-* 自動且持續地將所需的資料移動、複製或同步至雲端儲存庫。
 
 
 
@@ -79,43 +74,23 @@ BlueXP 分類可用於掃描內部部署資料、然後再將其移轉至公有�
 
 BlueXP 分類可掃描及分析下列類型資料來源的結構化和非結構化資料：
 
-* NetApp：*
-
 * （部署於AWS、Azure或GCP）Cloud Volumes ONTAP
 * 內部部署 ONTAP 的叢集
-* StorageGRID
 * Azure NetApp Files
 * Amazon FSX for ONTAP Sf
-* 適用於 Google Cloud Cloud Volumes Service
+* Google Cloud NetApp Volumes
+* 檔案共用（例如 Dell EMC Isilon 、 Pure Storage 、 Nutanix 等）
+* 資料庫：
++
+** Amazon關係資料庫服務（Amazon RDS）
+** MongoDB
+** MySQL
+** Oracle
+** PostgreSQL
+** SAP HANA
+** SQL Server （ MSSQL ）
 
 
-*非NetApp：*
-
-* Dell EMC Isilon
-* Pure Storage
-* Nutanix
-* 任何其他儲存設備廠商
-
-
-*雲端：*
-
-* Amazon S3
-* Google Cloud Storage
-* OneDrive
-* SharePoint Online
-* SharePoint內部部署（SharePoint Server）
-* Google雲端硬碟
-
-
-*資料庫：*
-
-* Amazon關係資料庫服務（Amazon RDS）
-* MongoDB
-* MySQL
-* Oracle
-* PostgreSQL
-* SAP HANA
-* SQL Server （ MSSQL ）
 
 
 BlueXP 分類支援 NFS 3.x 版和 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。
@@ -124,9 +99,11 @@ BlueXP 分類支援 NFS 3.x 版和 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。
 
 == 成本
 
-* 使用 BlueXP 分類的成本取決於您正在掃描的資料量。BlueXP 分類在 BlueXP 工作區中掃描的前 1 TB 資料可免費使用 30 天。這包括所有工作環境和資料來源的所有資料。必須訂閱AWS、Azure或GCP Marketplace、或NetApp的BYOL授權、才能在該點之後繼續掃描資料。請參閱 https://bluexp.netapp.com/netapp-cloud-data-sense["定價"^] 以取得詳細資料。
-+
-link:task-licensing-datasense.html["瞭解如何授權 BlueXP 分類"^]。
+BlueXP 分類現在可免費使用多達 500 TiB 的資料。不需要分類授權或付費訂閱。如果您想要掃描的資料數量超過 500 TiB 、您可以停用部分原始系統的掃描功能、並掃描新系統、否則將超過 500 TiB 限制。
+
+
+
+=== 基礎架構成本
 
 * 在雲端中安裝 BlueXP 分類需要部署雲端執行個體、這會導致部署雲端的雲端供應商收取費用。請參閱 <<BlueXP 分類執行個體,為每個雲端供應商部署的執行個體類型>>。如果您在內部部署系統上安裝 BlueXP 分類、則不需支付任何費用。
 * BlueXP 分類要求您已部署 BlueXP Connector 。在許多情況下、由於您在BlueXP中使用的其他儲存設備和服務、您已經擁有Connector。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["為每個雲端供應商部署的執行個體類型"^]。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。
@@ -136,7 +113,7 @@ link:task-licensing-datasense.html["瞭解如何授權 BlueXP 分類"^]。
 
 === 資料傳輸成本
 
-資料傳輸成本取決於您的設定。如果 BlueXP 分類執行個體和資料來源位於相同的可用性區域和區域、則不會產生資料傳輸成本。但是如果Cloud Volumes ONTAP 資料來源（例如、不支援的系統或S3時段）位於_不同_可用度區域或區域、則您的雲端供應商會向您收取資料傳輸成本。如需詳細資料、請參閱以下連結：
+資料傳輸成本取決於您的設定。如果 BlueXP 分類執行個體和資料來源位於相同的可用性區域和區域、則不會產生資料傳輸成本。但是、如果資料來源（例如 Cloud Volumes ONTAP 系統）位於 _ 不同 _ 的可用性區域或區域、則您的雲端供應商會向您收取資料傳輸成本。如需詳細資料、請參閱以下連結：
 
 * https://aws.amazon.com/ec2/pricing/on-demand/["AWS ： Amazon EC2 定價"^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure ：頻寬定價詳細資料"^]
@@ -208,15 +185,15 @@ TIP: 由於 BlueXP 分類會持續掃描資料、因此執行個體應該隨時�
 
 == 掃描的運作方式
 
-啟用 BlueXP 分類並選取要掃描的儲存庫（這些是磁碟區、儲存區、資料庫架構、 OneDrive 或 SharePoint 使用者資料）之後、系統會立即開始掃描資料、以識別個人和敏感資料。您應該專注於在大多數情況下掃描線上即時資料、而非備份、鏡像或災難恢復站台。然後 BlueXP 分類會對應您的組織資料、對每個檔案進行分類、並識別及擷取資料中的實體和預先定義的模式。掃描結果是個人資訊、敏感個人資訊、資料類別和檔案類型的索引。
+啟用 BlueXP 分類並選取要掃描的儲存庫（這些是磁碟區、資料庫架構或其他使用者資料）之後、系統會立即開始掃描資料、以識別個人和敏感資料。您應該專注於在大多數情況下掃描線上即時資料、而非備份、鏡像或災難恢復站台。然後 BlueXP 分類會對應您的組織資料、對每個檔案進行分類、並識別及擷取資料中的實體和預先定義的模式。掃描結果是個人資訊、敏感個人資訊、資料類別和檔案類型的索引。
 
 BlueXP 分類透過掛載 NFS 和 CIFS 磁碟區、與任何其他用戶端一樣連線至資料。NFS 磁碟區會自動以唯讀方式存取、而您需要提供 Active Directory 認證來掃描 CIFS 磁碟區。
 
-image:diagram_cloud_compliance_scan.png["顯示在雲端供應商中執行的 BlueXP 執行個體和 BlueXP 分類執行個體的圖表。BlueXP 分類執行個體會連線至 NFS 和 CIFS 磁碟區、 S3 貯體、 OneDrive 帳戶和資料庫、以進行掃描。"]
+image:diagram_cloud_compliance_scan.png["顯示在雲端供應商中執行的 BlueXP 執行個體和 BlueXP 分類執行個體的圖表。BlueXP 分類執行個體會連線至 NFS 和 CIFS 磁碟區和資料庫、以進行掃描。"]
 
 初始掃描之後、 BlueXP 分類會以循環方式持續掃描您的資料、以偵測遞增變更（這就是保持執行個體正常運作的重要原因）。
 
-您可以在磁碟區層級、儲存庫層級、資料庫架構層級、OneDrive使用者層級和SharePoint網站層級啟用和停用掃描。
+您可以在磁碟區層級或資料庫架構層級啟用和停用掃描。
 
 
 
@@ -257,12 +234,6 @@ BlueXP 分類可讓您在選定的資料來源上執行一般的「對應」掃�
 | 建立 link:task-using-policies.html["原則"] 提供自訂搜尋結果 | 是的 | 否 
 
 
-| 使用AIP標籤和狀態標籤來分類資料 | 是的 | 否 
-
-
-| 複製、刪除及移動來源檔案 | 是的 | 否 
-
-
 | 執行其他報告的能力 | 是的 | 否 
 |===
 
@@ -271,11 +242,9 @@ BlueXP 分類可讓您在選定的資料來源上執行一般的「對應」掃�
 
 掃描速度會受到網路延遲、磁碟延遲、網路頻寬、環境大小和檔案發佈大小的影響。
 
-* 執行對應掃描時、 BlueXP 分類可在每天每個掃描器節點掃描 100 至 150 Tibs 的資料。
-* 執行分類掃描時、 BlueXP 分類可在每天每個掃描器節點掃描 15-40 Tibs 的資料。
+* 執行對應掃描時、 BlueXP 分類每天可掃描 100-150 Tibs 的資料。
+* 執行分類掃描時、 BlueXP 分類每天可掃描 15-40 Tibs 的資料。
 
-
-link:task-deploy-compliance-onprem.html#install-bluexp-classification-on-the-linux-host["深入瞭解如何部署多個掃描器節點來掃描資料"^]。
 
 
 

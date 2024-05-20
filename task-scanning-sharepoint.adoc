@@ -4,7 +4,7 @@ permalink: task-scanning-sharepoint.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, sharepoint online, sharepoint on-premises, data sense 
 summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描 SharePoint Online 和 SharePoint 內部部署帳戶中的檔案。 
 ---
-= 掃描SharePoint帳戶
+= 掃描 SharePoint 帳戶
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,6 +16,11 @@ summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描 SharePoint 
 [role="lead"]
 請完成幾個步驟、開始使用 BlueXP 分類來掃描 SharePoint Online 和 SharePoint 內部部署帳戶中的檔案。
 
+[]
+====
+* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+
+====
 
 
 == 快速入門
@@ -40,7 +45,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 
 
-== 檢閱SharePoint需求
+== 檢閱 SharePoint 需求
 
 請檢閱下列先決條件、確定您已準備好在 SharePoint 帳戶上啟動 BlueXP 分類。
 
@@ -69,7 +74,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 
 
-== 新增SharePoint Online帳戶
+== 新增 SharePoint Online 帳戶
 
 新增使用者檔案所在的SharePoint Online帳戶。
 
@@ -86,7 +91,7 @@ SharePoint Online帳戶會新增至工作環境清單。
 
 
 
-== 新增SharePoint內部部署帳戶
+== 新增 SharePoint 內部部署帳戶
 
 新增使用者檔案所在的SharePoint內部部署帳戶。
 
@@ -111,7 +116,7 @@ SharePoint內部部署帳戶會新增至工作環境清單。
 
 
 
-== 將SharePoint網站新增至法規遵循掃描
+== 將 SharePoint 網站新增至法規遵循掃描
 
 您可以在帳戶中新增個別的 SharePoint 網站或多達 1,000 個 SharePoint 網站、以便透過 BlueXP 分類來掃描相關檔案。無論您是新增 SharePoint Online 或 SharePoint 內部部署網站、步驟都一樣。
 
@@ -163,10 +168,10 @@ BlueXP 分類會開始掃描您新增之 SharePoint 網站中的檔案、結果�
 
 
 
-== 將SharePoint網站從法規遵循掃描中移除
+== 從法規遵循掃描中移除 SharePoint 網站
 
 如果您日後移除SharePoint網站、或決定不掃描SharePoint網站中的檔案、您可以隨時移除個別SharePoint網站的檔案掃描功能。只要按一下「組態」頁面中的「*移除SharePoint Site*」即可。
 
 image:screenshot_compliance_sharepoint_remove_site.png["螢幕擷取畫面顯示如何移除單一SharePoint網站、使其檔案無法掃描。"]
 
-請注意、您可以 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["從 BlueXP 分類中刪除整個 SharePoint 帳戶"] 如果您不想再從SharePoint帳戶掃描任何使用者資料。
+請注意、您可以 link:task-managing-compliance.html["從 BlueXP 分類中刪除整個 SharePoint 帳戶"] 如果您不想再從SharePoint帳戶掃描任何使用者資料。

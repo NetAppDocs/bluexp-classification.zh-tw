@@ -45,11 +45,10 @@ image:screenshot_compliance_governance_dashboard.png["BlueXP 分類治理儀表�
 
 
 * *重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。 link:task-investigate-data.html#view-all-duplicated-files["查看顯示哪些類型的重複檔案"]。
-+
-附註:: 如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 過時資料 _ 類別中進行識別。
 
 
 
+NOTE: 如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 過時資料 _ 類別中進行識別。
 
 
 
@@ -82,23 +81,6 @@ image:screenshot_compliance_governance_dashboard.png["BlueXP 分類治理儀表�
 
 
 
-=== 依敏感度和廣泛權限列出的資料
-
-「敏感資料」和「寬權限」區域提供內含敏感資料（包括敏感和敏感的個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料的風險所在。
-
-檔案的評分是根據具有X軸存取檔案權限的使用者人數（最低至最高）、以及Y軸上檔案中的敏感識別碼數量（最低至最高）。區塊代表與X和Y軸項目相符的檔案數量。較淺的色塊很好；使用者較少、每個檔案的機密識別碼較少。較暗的區塊是您可能想要調查的項目。例如、下方畫面顯示深藍色區塊的暫留文字。這表示您有1、500個檔案、其中751-100個使用者可以存取、其中每個檔案有501-100個敏感識別碼。
-
-image:screenshot_compliance_sensitive_data.png["當您將游標置於此面板中的元素上時、會顯示所顯示的資料快照。"]
-
-您可以按一下您感興趣的區塊、在「調查」頁面中檢視受影響檔案的篩選結果、以便進一步調查。
-
-如果您尚未將身分識別服務與 BlueXP 分類整合、則此面板不會顯示任何資料。 link:task-add-active-directory-datasense.html["瞭解如何將 Active Directory 服務與 BlueXP 分類整合"^]。
-
-
-TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔案。目前不支援資料庫、 Google Drive 、 Amazon S3 和一般物件儲存。
-
-
-
 === 依開放權限類型列出的資料
 
 「_開啟權限_」區域會顯示所有要掃描之檔案所存在的每種權限類型的百分比。此圖表顯示下列權限類型：
@@ -121,17 +103,16 @@ TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔�
 
 * *資料圖表的存留期*：根據資料建立時間、上次存取時間或上次修改時間來分類資料。
 * *資料圖表大小*：根據大小來分類資料。
-+
-附註:: 如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 資料存留期 _ 圖表中加以識別。
 
 
 
+NOTE: 如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 資料存留期 _ 圖表中加以識別。
 
 
 
 === 最常識別的資料分類
 
-「_Classification」區域提供最能辨識的清單 link:task-controlling-private-data.html#view-files-by-categories["類別"^]、 link:task-controlling-private-data.html#view-files-by-file-types["檔案類型"^]和 link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP標籤"^] 在掃描資料中。
+「_Classification」區域提供最能辨識的清單 link:task-controlling-private-data.html#view-files-by-categories["類別"^] 和 link:task-controlling-private-data.html#view-files-by-file-types["檔案類型"^] 在掃描資料中。
 
 
 
@@ -148,14 +129,6 @@ TIP: 此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔�
 檢閱檔案類型有助於控制敏感資料、因為您可能會發現某些檔案類型儲存不正確。
 
 請參閱 link:task-controlling-private-data.html#view-files-by-file-types["檢視檔案類型"^] 以取得更多資訊。
-
-
-
-==== AIP標籤
-
-如果您已訂閱Azure資訊保護（AIP）、您可以將標籤套用至內容、以分類及保護文件與檔案。檢閱指派給檔案的最常用AIP標籤、即可查看檔案中最常用的標籤。
-
-請參閱 link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP標籤"^] 以取得更多資訊。
 
 
 
@@ -244,5 +217,3 @@ image:screenshot_compliance_data_discovery_report_button.png["Governance Dashboa
 
 .結果
 BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
-
-請注意、您可以按一下、從 BlueXP 分類頁面頂端自訂顯示在報告第一頁上的公司名稱 image:screenshot_gallery_options.gif["「更多」按鈕"] 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。

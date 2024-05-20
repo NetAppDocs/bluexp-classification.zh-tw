@@ -1,0 +1,161 @@
+---
+sidebar: sidebar 
+permalink: reference-free-paid.html 
+keywords: bluexp, classification, cloud data sense, data sense, compliance, security 
+summary: BlueXP 分類的免費版本中有一些功能無法使用。 
+---
+= BlueXP 分類過時功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+BlueXP 分類是 BlueXP 中的核心功能、無需額外付費。NetApp 將 BlueXP 分類為所有客戶都能使用的核心 BlueXP 功能、讓您能夠使用核心功能來存取量身打造的資料管理功能。
+
+BlueXP 核心版本從 1.31 版及更新版本開始、有些功能已經過時、但舊版 1.30 及更早版本仍支援這些功能。
+
+
+
+== 支援的資料來源
+
+[cols="60,20,20"]
+|===
+| 資料來源 | 舊版 1.30 及更早版本 | BlueXP 核心版本 1.31 及更新版本 
+
+
+| （部署於AWS、Azure或GCP）Cloud Volumes ONTAP | 是的 | 是的 
+
+
+| 內部部署 ONTAP 的叢集 | 是的 | 是的 
+
+
+| StorageGRID | 是的 | 否 
+
+
+| Azure NetApp Files | 是的 | 是的 
+
+
+| Amazon FSX for ONTAP Sf | 是的 | 是的 
+
+
+| Google Cloud NetApp Volumes | 是的 | 是的 
+
+
+| 適用於 Google Cloud Cloud Volumes Service | 是的 | 是的 
+
+
+| 資料庫 | 是的 | 是的 
+
+
+| Amazon S3 | 是的 | 否 
+
+
+| Google Cloud Storage | 是的 | 否 
+
+
+| OneDrive | 是的 | 否 
+
+
+| SharePoint Online | 是的 | 否 
+
+
+| SharePoint內部部署（SharePoint Server） | 是的 | 否 
+
+
+| Google雲端硬碟 | 是的 | 否 
+|===
+
+
+== 法規遵循功能
+
+[cols="60,20,20"]
+|===
+| 功能 | 舊版 1.30 及更早版本 | BlueXP 核心版本 1.31 及更新版本 
+
+
+| 識別個人識別資訊（ PII ） | 是的 | 是的 
+
+
+| 識別敏感的個人資訊 | 是的 | 是的 
+
+
+| 回應資料主體存取要求（ DSAR ） | 是的 | 是的 
+
+
+| 建立已識別的「個人資料」自訂清單 | 是的 | 否 
+
+
+| 檔案包含特定 PII 時、透過電子郵件通知使用者。（您可以使用定義此準則 link:task-using-policies.html["原則"^]） | 是的 | 是的 
+
+
+| 使用目錄層級篩選器 | 是的 | 是的 
+
+
+| 使用目錄層級 PII 分析 | 是的 | 否 
+|===
+
+
+== 管理資料的功能
+
+[cols="60,20,20"]
+|===
+| 功能 | 舊版 1.30 及更早版本 | BlueXP 核心版本 1.31 及更新版本 
+
+
+| 移動、複製及刪除來源檔案 | 是的 | 否 
+
+
+| 使用狀態標記來分類資料 | 是的 | 否 
+
+
+| 使用 AIP 標籤分類資料 | 是的 | 否 
+
+
+| 指派檔案給使用者 | 是的 | 否 
+
+
+| 隨需重新掃描資料 | 是的 | 否 
+
+
+| 建立自訂分類器 | 是的 | 否 
+
+
+| 將目錄排除在掃描之外 | 是的 | 是的 
+
+
+| 在檔案中搜尋名稱 | 是的 | 是的 
+
+
+| 從調查匯出資料至 NFS | 是的 | 否 
+
+
+| 支援多台掃描器 | 是的 | 否 
+
+
+| 整合Active Directory | 是的 | 是的 
+
+
+| 使用權限分析和篩選 | 是的 | 是的 
+
+
+| 使用檔案卡 | 是的 | 是的 
+
+
+| 請使用熱圖 | 是的 | 是的 
+
+
+| 使用儀表板和檔案卡上的動作 | 是的 | 否 
+
+
+| 使用檔案存取稽核記錄 | 是的 | 否 
+
+
+| 從「組態」頁面啟用檔案存取 | 是的 | 否 
+
+
+| 使用某些預先定義的原則 | 是的 | 否 
+|===

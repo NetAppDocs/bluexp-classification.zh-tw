@@ -13,17 +13,13 @@ indexpage:
       url: concept-cloud-compliance.html
     - title: 新增功能
       url: whats-new.html
+    - title: 提供免費與付費版本的功能
+      url: reference-free-paid.html
     - title: 使用 BlueXP 在雲端部署 BlueXP 分類
       url: task-deploy-cloud-compliance.html
     - title: 在具有網際網路的 Linux 主機上安裝 BlueXP 分類
       url: task-deploy-compliance-onprem.html
-    - title: 在內部部署安裝 BlueXP 分類、無需網際網路
-      url: task-deploy-compliance-dark-site.html
-    - title: 整合Active Directory
-      url: task-add-active-directory-datasense.html
-    - title: 設定授權
-      url: task-licensing-datasense.html
-  - title: 掃描您的工作環境
+  - title: 掃描資料來源
     links:
     - title: 資料量Cloud Volumes ONTAP
       url: task-getting-started-compliance.html
@@ -33,22 +29,10 @@ indexpage:
       url: task-scanning-anf.html
     - title: Amazon FSX for ONTAP Sf6 Volume
       url: task-scanning-fsx.html
-    - title: Amazon S3 儲存桶
-      url: task-scanning-s3.html
-  - title: 掃描其他資料來源
-    links:
-    - title: 一般S3儲存桶
-      url: task-scanning-object-storage.html
     - title: 非NetApp檔案共用
       url: task-scanning-file-shares.html
     - title: 資料庫架構
       url: task-scanning-databases.html
-    - title: OneDrive 帳戶
-      url: task-scanning-onedrive.html
-    - title: SharePoint帳戶
-      url: task-scanning-sharepoint.html
-    - title: Google雲端硬碟帳戶
-      url: task-scanning-google-drive.html
   - title: 檢視資料的詳細資料
     links:
     - title: 檢視包含私人資訊的檔案
@@ -61,28 +45,14 @@ indexpage:
       url: task-using-policies.html
     - title: 產生法規遵循報告
       url: task-generating-compliance-reports.html
-  - title: 組織您的私有資料
-    links:
-    - title: 將標記和擁有者套用至需要注意的檔案
-      url: task-org-private-data.html#apply-tags-to-manage-your-scanned-files
-    - title: 使用AIP標籤將資料分類
-      url: task-org-private-data.html#categorize-your-data-using-aip-labels
-    - title: 新增您自己的自訂個人資料識別碼
-      url: task-managing-data-fusion.html
-    - title: 將某些目錄排除在掃描之外
-      url: task-exclude-scan-paths.html
-  - title: 管理您的私有資料
-    links:
-    - title: 複製來源檔案
-      url: task-managing-highlights.html#copy-source-files
-    - title: 移動來源檔案
-      url: task-managing-highlights.html#move-source-files-to-an-nfs-share
-    - title: 刪除來源檔案
-      url: task-managing-highlights.html#delete-source-files
     - title: 找到不合規的資料時、請建立電子郵件警示
-      url: task-using-policies.html#send-email-alerts-when-non-compliant-data-is-found
+      url: task-using-policies.html
     - title: 回應資料主旨存取要求
       url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
+  - title: 過時的功能
+    links:
+    - title: 過時的功能清單
+      url: reference-free-paid.html
   - title: 部落格與社群
     links:
     - title: NetApp社群

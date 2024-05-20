@@ -4,7 +4,7 @@ permalink: task-scanning-onedrive.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, onedrive, data sense 
 summary: 完成幾個步驟、開始使用 BlueXP 分類、掃描使用者 OneDrive 資料夾中的檔案。 
 ---
-= 正在掃描 OneDrive 帳戶
+= 掃描 OneDrive 帳戶
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,6 +16,11 @@ summary: 完成幾個步驟、開始使用 BlueXP 分類、掃描使用者 OneDr
 [role="lead"]
 完成幾個步驟、開始使用 BlueXP 分類、掃描使用者 OneDrive 資料夾中的檔案。
 
+[]
+====
+* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+
+====
 
 
 == 快速入門
@@ -133,5 +138,3 @@ BlueXP 分類會開始掃描您新增之使用者的檔案、結果會顯示在�
 如果使用者離開公司或變更其電子郵件地址、您可以隨時將個別 OneDrive 使用者的檔案掃描完畢。只要按一下「組態」頁面中的「 * 移除 OneDrive 使用者 * 」即可。
 
 image:screenshot_compliance_onedrive_remove_user.png["顯示如何移除單一使用者檔案的快照。"]
-
-請注意、您可以 link:task-managing-compliance.html#removing-a-onedrive-sharepoint-or-google-drive-account-from-bluexp-classification["從 BlueXP 分類中刪除整個 OneDrive 帳戶"] 如果您不想再從OneDrive帳戶掃描任何使用者資料、

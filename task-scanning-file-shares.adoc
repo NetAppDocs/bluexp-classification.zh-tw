@@ -17,6 +17,9 @@ summary: 請完成幾個步驟、開始直接掃描非 NetApp NFS 或 CIFS 檔�
 請完成幾個步驟、開始直接掃描非 NetApp NFS 或 CIFS 檔案與 BlueXP 分類共用。這些檔案共用區可位於內部部署或雲端。
 
 
+TIP: 新增檔案共用是從 Google Cloud NetApp Volumes 掃描資料的唯一方法。
+
+
 
 == 快速入門
 

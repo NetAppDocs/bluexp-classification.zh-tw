@@ -39,8 +39,7 @@ Active Directory 與 BlueXP 分類的整合可從下列資料來源識別資料�
 * Azure NetApp Files
 * FSX ONTAP
 * 非NetApp CIFS檔案共用（非NFS檔案共用）
-* OneDrive 帳戶
-* SharePoint帳戶
+* OneDrive 帳戶和 SharePoint 帳戶（適用於舊版 1.30 及更早版本）
 
 
 不支援識別資料庫架構、 Google Drive 帳戶、 Amazon S3 帳戶或使用簡易儲存服務（ S3 ）傳輸協定的物件儲存設備中的使用者和權限資訊。

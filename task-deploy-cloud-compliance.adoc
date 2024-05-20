@@ -41,7 +41,7 @@ summary: 完成幾個步驟、在雲端中部署 BlueXP 分類。BlueXP 將在�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 訂閱 BlueXP 分類服務
 [role="quick-margin-para"]
-BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。
+BlueXP 分類掃描的前 500 TB 資料可免費使用 30 天。您必須透過雲端供應商Marketplace訂閱BlueXP、或取得NetApp BYOL授權、才能在該時間點之後繼續掃描資料。
 
 
 
@@ -51,7 +51,7 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須透過雲
 
 有些情況下、您必須使用部署在特定雲端供應商中的Connector：
 
-* 在 AWS 、 Amazon FSX for ONTAP 或 AWS S3 儲存區中掃描 Cloud Volumes ONTAP 中的資料時、您會在 AWS 中使用 Connector 。
+* 在 AWS 或 Amazon FSX 中掃描 Cloud Volumes ONTAP 中的資料以取得 ONTAP 貯體時、您會在 AWS 中使用 Connector 。
 * 在 Azure 或 Azure NetApp Files 中掃描 Cloud Volumes ONTAP 資料時、您會使用 Azure 中的 Connector 。
 +
 ** 若為Sfor Same、則必須將其部署在您要掃描的磁碟區所在的相同區域。Azure NetApp Files
@@ -60,7 +60,7 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須透過雲
 * 在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。
 
 
-使用ONTAP 上述任何雲端連接器時、均可掃描內部系統、非NetApp檔案共用、一般S3物件儲存設備、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶。
+使用這些雲端連接器時、可以掃描內部部署 ONTAP 系統、非 NetApp 檔案共用、一般 S3 物件儲存設備和資料庫。
 
 請注意、您也可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在網路或雲端的Linux主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
 
@@ -71,10 +71,6 @@ BlueXP 分類掃描的前 1 TB 資料可免費使用 30 天。您必須透過雲
 === 政府區域支援
 
 當 Connector 部署在政府區域（ AWS GovCloud 、 Azure Gov 或 Azure DoD ）時、就支援 BlueXP 分類。以這種方式部署時、 BlueXP 分類具有下列限制：
-
-* 無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。
-* Microsoft Azure資訊保護（AIP）標籤功能無法整合。
-
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["如需在政府區域部署 Connector 的詳細資訊、請參閱"^]。
 
