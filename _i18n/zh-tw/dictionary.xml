@@ -3544,4 +3544,5 @@
   <block id="77811a66f12d1085614f313861555339" category="sidebar">管理資料</block>
   <block id="08a8e0f5e4c7d91e565955cb7f30b215" category="sidebar">在 Governance 儀表板上檢視有關資料的治理詳細資料</block>
   <block id="aeb69ebcaffd7e18cd55db906e582bf5" category="sidebar">移除 OneDrive 、 SharePoint 或 Google Drive 帳戶</block>
+  <block id="b6417b62aacc6d16c1ae7a79d851d413" category="paragraph">如果您在內部部署的 RHEL 8 或 9 主機上安裝 Connector 、則支援 BlueXP 分類。如果 RHEL 8 或 9 主機位於 AWS 、 Azure 或 Google Cloud 、則不支援此功能。</block>
 </blocks>

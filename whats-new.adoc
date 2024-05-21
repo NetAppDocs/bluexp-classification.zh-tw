@@ -42,6 +42,8 @@ link:reference-free-paid.html["深入瞭解過時的功能"]。
 
 深入瞭解 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP 分類部署總覽"]。
 
+如果您在內部部署的 RHEL 8 或 9 主機上安裝 Connector 、則支援 BlueXP 分類。如果 RHEL 8 或 9 主機位於 AWS 、 Azure 或 Google Cloud 、則不支援此功能。
+
 
 
 === 選項可啟動已移除的稽核記錄集合
