@@ -38,7 +38,6 @@ Active Directory 與 BlueXP 分類的整合可從下列資料來源識別資料�
 * Cloud Volumes ONTAP
 * Azure NetApp Files
 * FSX ONTAP
-* 非NetApp CIFS檔案共用（非NFS檔案共用）
 * OneDrive 帳戶和 SharePoint 帳戶（適用於舊版 1.30 及更早版本）
 
 

@@ -84,7 +84,7 @@ sidebar:
     entries:
     - title: 過時功能清單
       url: "/reference-free-paid.html"
-    - title: 部署 BlueXP 分類
+    - title: 部署 BlueXP 分類棄用
       entries:
       - title: 在無法存取網際網路的多部主機上安裝 BlueXP 分類
         url: "/task-deploy-multi-host-install-dark-site.html"
@@ -92,7 +92,7 @@ sidebar:
         url: "/task-deploy-add-scanner-nodes.html"
       - title: 設定免費試用版或自帶授權
         url: "/task-licensing-byol-freetrial.html"
-    - title: 掃描資料
+    - title: 掃描資料過時
       entries:
       - title: 掃描 Amazon S3 儲存區
         url: "/task-scanning-s3.html"
@@ -104,7 +104,7 @@ sidebar:
         url: "/task-scanning-google-drive.html"
       - title: 掃描使用 S3 傳輸協定的物件儲存設備
         url: "/task-scanning-object-storage.html"
-    - title: 管理資料
+    - title: 管理資料過時
       entries:
       - title: 在 Governance 儀表板上檢視有關資料的治理詳細資料
         url: "/task-controlling-governance-dashboard-deprecated.html"

@@ -70,16 +70,22 @@ BlueXP 分類提供的工具可協助您處理儲存設備的總體擁有成本�
 
 
 
-== 支援的資料來源
+== 支援的工作環境和資料來源
 
-BlueXP 分類可掃描及分析下列類型資料來源的結構化和非結構化資料：
+BlueXP 分類可以掃描及分析下列工作環境和資料來源類型的結構化和非結構化資料：
+
+* 工作環境 *
 
 * （部署於AWS、Azure或GCP）Cloud Volumes ONTAP
 * 內部部署 ONTAP 的叢集
 * Azure NetApp Files
 * Amazon FSX for ONTAP Sf
 * Google Cloud NetApp Volumes
-* 檔案共用（例如 Dell EMC Isilon 、 Pure Storage 、 Nutanix 等）
+
+
+* 資料來源 *
+
+* NetApp 檔案共用
 * 資料庫：
 +
 ** Amazon關係資料庫服務（Amazon RDS）
@@ -99,7 +105,7 @@ BlueXP 分類支援 NFS 3.x 版和 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。
 
 == 成本
 
-BlueXP 分類現在可免費使用多達 500 TiB 的資料。不需要分類授權或付費訂閱。如果您想要掃描的資料數量超過 500 TiB 、您可以停用部分原始系統的掃描功能、並掃描新系統、否則將超過 500 TiB 限制。
+BlueXP 分類現在可以免費使用。不需要分類授權或付費訂閱。
 
 
 
@@ -280,7 +286,7 @@ BlueXP 會使用安全性群組來部署 BlueXP 分類執行個體、以便從 C
 
 * *帳戶管理員*可管理所有工作環境的法規遵循設定及檢視法規遵循資訊。
 * *工作區管理*只能管理具有存取權限的系統的法規遵循設定及檢視法規遵循資訊。如果工作空間管理員無法存取 BlueXP 中的工作環境、則他們無法在 BlueXP 分類索引標籤中看到工作環境的任何法規遵循資訊。
-* 具有* Compliance Viewer*角色的使用者只能檢視法規遵循資訊、並針對擁有存取權限的系統產生報告。這些使用者無法啟用 / 停用掃描磁碟區、儲存區或資料庫架構。這些使用者也無法複製、移動或刪除檔案。
+* 具有* Compliance Viewer*角色的使用者只能檢視法規遵循資訊、並針對擁有存取權限的系統產生報告。這些使用者無法啟用 / 停用掃描磁碟區、儲存區或資料庫架構。
 
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["深入瞭解BlueXP角色"^] 以及使用方法 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html#adding-users["新增具有特定角色的使用者"^]。

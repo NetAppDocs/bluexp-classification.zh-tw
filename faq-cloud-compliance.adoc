@@ -70,7 +70,7 @@ BlueXP 分類是 BlueXP 的一部分、支援 AWS 、 Azure 和 GCP 。如此一
 
 === BlueXP 分類是否有 REST API 、是否能搭配協力廠商工具使用？
 
-BlueXP支援其服務的REST API功能。如果 BlueXP 不是首選的管理點、則 BlueXP 分類等服務也可以透過 REST API 使用。每個使用者動作都有REST API、可與協力廠商系統整合。請參閱 link:api-classification.html["BlueXP 分類 API"^] 以取得詳細資料。
+否、 BlueXP 分類沒有 REST API 。
 
 
 
@@ -200,22 +200,6 @@ link:task-exclude-scan-paths.html["深入瞭解"^]。
 
 
 
-=== BlueXP 分類是否可以傳送通知給我的組織？
-
-是的。搭配原則功能、您可以在原則傳回結果時、將電子郵件警示傳送給BlueXP使用者（每日、每週或每月）或任何其他電子郵件地址、以便取得通知來保護資料。深入瞭解 link:task-using-policies.html["原則"^]。
-
-您也可以從「治理」頁面和「調查」頁面下載狀態報告、以便在組織內部分享。
-
-
-
-=== BlueXP 分類是否能與我的檔案中內嵌的 AIP 標籤搭配使用？
-
-是的。如果您已訂閱、您可以在 BlueXP 分類正在掃描的檔案中管理 AIP 標籤 https://azure.microsoft.com/en-us/services/information-protection/["Azure資訊保護（AIP）"^]。您可以檢視已指派給檔案的標籤、新增標籤至檔案、以及變更現有的標籤。
-
-link:task-org-private-data.html#categorize-your-data-using-aip-labels["深入瞭解"^]。
-
-
-
 == 來源系統和資料類型的類型
 
 下列問題與可掃描的儲存設備類型及掃描的資料類型有關。
@@ -226,26 +210,7 @@ link:task-org-private-data.html#categorize-your-data-using-aip-labels["深入瞭
 
 BlueXP 分類可以掃描您新增至 BlueXP Canvas 的工作環境中的資料、以及 BlueXP 分類可透過網路存取的許多結構化和非結構化資料來源。
 
-*工作環境：*
-
-* （部署於AWS、Azure或GCP）Cloud Volumes ONTAP
-* 內部部署 ONTAP 的叢集
-* Azure NetApp Files
-* Amazon FSX for ONTAP Sf
-* Amazon S3
-
-
-*資料來源：*
-
-* 非NetApp檔案共用
-* 物件儲存（使用S3傳輸協定）
-* 資料庫（Amazon RDS、MongoDB、MySQL、Oracle、PostgreSQL、 SAP HANA、SQL Server）
-* OneDrive 帳戶
-* SharePoint Online和內部部署帳戶
-* Google雲端硬碟帳戶
-
-
-BlueXP 分類支援 NFS 3.x 版和 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。
+請參閱 link:concept-cloud-compliance.html["支援的工作環境和資料來源"]。
 
 
 
@@ -253,6 +218,11 @@ BlueXP 分類支援 NFS 3.x 版和 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。
 
 當 Connector 部署於政府區域（ AWS GovCloud 、 Azure Gov 或 Azure DoD ）時、即稱為「受限模式」、即支援 BlueXP 分類。以這種方式部署時、 BlueXP 分類具有下列限制：
 
+[]
+====
+* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+
+====
 * 無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。
 * Microsoft Azure資訊保護（AIP）標籤功能無法整合。
 
@@ -265,10 +235,10 @@ BlueXP 分類只能掃描內部部署站台本機資料來源的資料。目前�
 
 * 內部部署ONTAP 的作業系統
 * 資料庫架構
-* SharePoint內部部署帳戶（SharePoint Server）
-* 非NetApp NFS或CIFS檔案共用
 * 使用簡易儲存服務（S3）傳輸協定的物件儲存設備
 
+
+請參閱 link:concept-cloud-compliance.html["支援的工作環境和資料來源"]。
 
 
 
@@ -352,19 +322,7 @@ BlueXP 分類透過 API 呼叫存取儲存在 Elasticsearch 中的資料、這�
 
 === BlueXP 分類的成本是多少？
 
-使用 BlueXP 分類的成本取決於您正在掃描的資料量。BlueXP 分類在 BlueXP 工作區中掃描的前 1 TB 資料可免費使用 30 天。達到任一上限後、您需要下列其中一項才能繼續掃描資料：
-
-* 向您的雲端供應商訂閱BlueXP Marketplace清單、或
-* NetApp的自帶授權（BYOL）
-
-
-請參閱 https://bluexp.netapp.com/pricing["定價"^] 以取得詳細資料。
-
-
-
-=== 如果我達到BYOL容量上限、會發生什麼事？
-
-如果您達到 BYOL 容量限制、 BlueXP 分類會繼續執行、但儀表板的存取會遭到封鎖、因此您無法檢視任何已掃描資料的相關資訊。只有在您想要減少所掃描的磁碟區數量、使容量使用量可能低於授權限制時、才可使用「組態」頁面。您必須續約 BYOL 授權、才能重新取得 BlueXP 分類的完整存取權。
+BlueXP 分類是 BlueXP 核心功能、無需付費。
 
 
 

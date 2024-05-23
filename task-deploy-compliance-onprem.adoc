@@ -63,7 +63,7 @@ NOTE: 如需舊版 1.30 及更早版本、若要新增掃描器節點、請參�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 訂閱 BlueXP 分類服務
 [role="quick-margin-para"]
-BlueXP 分類掃描的前 500 TB 資料可免費使用 30 天。您必須向雲端供應商Marketplace訂閱、或向NetApp訂購BYOL授權、才能在該時間點之後繼續掃描資料。
+您必須訂閱雲端供應商服務商場。
 
 
 
