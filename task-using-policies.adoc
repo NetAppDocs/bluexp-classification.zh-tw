@@ -55,7 +55,7 @@ image:screenshot_compliance_save_as_highlight.png["顯示如何將篩選查詢�
 .. 您也可以勾選方塊、以自動刪除符合原則參數的檔案。
 .. 按一下「*建立原則*」。
 +
-image:screenshot_compliance_save_highlight.png["顯示如何設定原則並加以儲存的快照。"]
+image:screenshot_compliance_save_highlight2.png["顯示如何設定原則並加以儲存的快照。"]
 
 
 

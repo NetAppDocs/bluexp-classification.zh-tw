@@ -13,7 +13,7 @@ indexpage:
       url: concept-cloud-compliance.html
     - title: 新增功能
       url: whats-new.html
-    - title: 提供免費與付費版本的功能
+    - title: BlueXP 核心與舊版的可用功能
       url: reference-free-paid.html
     - title: 使用 BlueXP 在雲端部署 BlueXP 分類
       url: task-deploy-cloud-compliance.html

@@ -150,7 +150,6 @@
   <block id="f3102e7bc4ead5e39dec820b8144d2f9" category="list-text">輸入唯一的名稱和說明。</block>
   <block id="fdc2c96185d2a7c98ab81a927c827edb" category="list-text">按一下「*建立原則*」。</block>
   <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">顯示如何設定原則並加以儲存的快照。</block>
-  <block id="23e34b6c117b6fd91abb568e48195e27" category="paragraph"><block ref="23e34b6c117b6fd91abb568e48195e27" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">新原則會出現在原則索引標籤中。</block>
   <block id="ba7f20906bacf4fde87c14d7628aaec2" category="inline-image-macro">螢幕快照顯示如何選擇要傳送給原則的電子郵件條件。</block>
   <block id="9cc0943710c206f20a91720ffe09f7bf" category="paragraph"><block ref="9cc0943710c206f20a91720ffe09f7bf" category="inline-image-macro-rx" type="image"></block></block>
@@ -3498,7 +3497,6 @@
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">此版本也移除下列選項：</block>
   <block id="cf39647f74e2ee71e92d2dcb020dab2d" category="paragraph">您可以啟用在 BlueXP 分類系統上收集檔案存取稽核記錄、以便在工作環境中的磁碟區上偵測到檔案存取事件。BlueXP 分類可擷取下列類型的 FPolicy 事件、以及對檔案執行動作的使用者：建立、讀取、寫入、刪除、重新命名、 變更擁有者 / 權限、並變更 SACL/DACL 。</block>
   <block id="06e3e3e8a40062c8a44b3bead8f60ccb" category="list-text">OneDrive 帳戶和 SharePoint 帳戶（適用於舊版 1.30 及更早版本）</block>
-  <block id="a0c44cafcacc5478c539dba887219bc9" category="sidebar">提供免費與付費版本的功能</block>
   <block id="2cb8839a5444b5db421bd5b52586dd24" category="sidebar">掃描資料來源</block>
   <block id="98f9f8a11a148aec70c39965293ea9b3" category="sidebar">過時的功能</block>
   <block id="dd6f713e594790101284e68ce9ae76f7" category="sidebar">過時的功能清單</block>
@@ -3529,4 +3527,6 @@
   <block id="ff9a5988c9084ed8f91f339a8c5730ef" category="sidebar">部署 BlueXP 分類棄用</block>
   <block id="08504eba0f24252abaffadf616e91d7c" category="sidebar">掃描資料過時</block>
   <block id="58b46c120f259bfcd0cbe13c84945204" category="sidebar">管理資料過時</block>
+  <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="39ba3e6e56f553f6665e61fc4be73bd0" category="sidebar">BlueXP 核心與舊版的可用功能</block>
 </blocks>
