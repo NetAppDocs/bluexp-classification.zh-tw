@@ -30,7 +30,8 @@ image:diagram_deploy_onprem_cloud_instance.png["所需的BlueXP和網路元件�
 
 對於掃描 PB 資料的大型組態、在 1.30 版及更早版本上、您可以包含多部主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。
 
-若為 1.30 版及更早版本、如果您需要在多部主機上安裝 BlueXP 分類、請參閱 link:task-deploy-multi-host-install-dark-site.html["在無法存取網際網路的多部主機上安裝 BlueXP 分類"]。
+
+NOTE: 若為舊版 1.30 及更早版本、如果您需要在多部主機上安裝 BlueXP 分類、請參閱 link:task-deploy-multi-host-install-dark-site.html["在無法存取網際網路的多部主機上安裝 BlueXP 分類"]。
 
 您也可以 link:task-deploy-compliance-dark-site.html["將 BlueXP 分類安裝在無法存取網際網路的內部部署網站上"] 完全安全的網站。
 
@@ -83,11 +84,9 @@ NOTE: 如需舊版 1.30 及更早版本、若要新增掃描器節點、請參�
 * 在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。
 
 
-內部部署 ONTAP 系統、非 NetApp 檔案共用和資料庫帳戶都可以使用這些雲端連接器進行掃描。
+內部部署 ONTAP 系統、 NetApp 檔案共用和資料庫帳戶都可以使用這些雲端連接器進行掃描。
 
 請注意、您也可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在內部部署連接器"^] 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
-
-如您所見、您可能需要使用某些情況 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["多個連接器"]。
 
 安裝 BlueXP 分類時、您需要 Connector 系統的 IP 位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。
 
@@ -316,8 +315,6 @@ NFS Volume 匯出原則必須允許從 BlueXP 分類執行個體存取。
 
 
 |===
-如果您使用多個 BlueXP 分類主機來提供額外的處理能力來掃描資料來源、則需要啟用其他連接埠 / 通訊協定。 link:task-deploy-compliance-onprem.html["請參閱其他連接埠需求"]。
-
 
 
 == 在 Linux 主機上安裝 BlueXP 分類

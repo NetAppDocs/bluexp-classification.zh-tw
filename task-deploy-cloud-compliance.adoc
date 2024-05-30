@@ -60,7 +60,7 @@ summary: 完成幾個步驟、在雲端中部署 BlueXP 分類。BlueXP 將在�
 * 在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。
 
 
-使用這些雲端連接器時、可以掃描內部部署 ONTAP 系統、 NetApp 檔案共用、一般 S3 物件儲存設備和資料庫。
+使用這些雲端連接器時、可以掃描內部部署的 ONTAP 系統、 NetApp 檔案共用和資料庫。
 
 請注意、您也可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在網路或雲端的Linux主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
 

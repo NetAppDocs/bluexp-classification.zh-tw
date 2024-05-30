@@ -40,18 +40,6 @@ BlueXP 分類使用 AI 提供資料的關聯式瞭解、以提供準確的偵測
 
 link:concept-cloud-compliance.html["深入瞭解 BlueXP 分類的運作方式"^]。
 
-
-
-=== BlueXP 分類的常見使用案例為何？
-
-* 識別個人識別資訊（ PII ）。
-* 根據 GDPR 、 CCPA 、 HIPAA 及其他資料隱私法規的要求、輕鬆找出特定資料並進行報告、以因應資料主題。
-* 遵守新的及即將推出的資料隱私權法規。
-* 遵守資料法規遵循與隱私權法規。
-* 將資料從舊系統移轉至雲端。
-* 遵守資料保留政策。
-
-
 https://bluexp.netapp.com/netapp-cloud-data-sense["深入瞭解 BlueXP 分類的使用案例"^]。
 
 
@@ -106,12 +94,6 @@ BlueXP 分類提供廣泛的搜尋功能、可讓您輕鬆搜尋所有連線來�
 
 
 
-=== BlueXP 分類提供何種分析？
-
-資料來源可以視覺化呈現、並以圖形方式定義和描繪關係。例如、管理員可以查看整個企業內所有資料來源（內部部署系統、資料庫、檔案共用、S3儲存區、OneDrive、 等）。然後、他們可以複製、移動、刪除及管理資料、以最佳化儲存成本並降低風險。使用者可以查看哪些敏感資料可能會外洩、藉此降低風險、並建立工作來管理強大資料保護的權限。BlueXP 分類也會將所有不同類型的資料分類、讓管理員能夠依類型調查資料、並查看資料採取了哪些行動、以及何時採取行動。
-
-
-
 === BlueXP 分類是否提供報告？
 
 是的。BlueXP 分類所提供的資訊可能與組織中的其他利益相關者有關、因此我們能讓您產生報告、以分享這些見解。以下報告可供 BlueXP 分類使用：
@@ -154,7 +136,7 @@ NOTE: 在資料來源上啟動 BlueXP 分類會立即進行初始掃描。掃描
 
 === 如何停用 BlueXP 分類？
 
-您可以從 BlueXP 分類組態頁面、停用 BlueXP 分類、以掃描個別工作環境、資料庫、檔案共用群組、 OneDrive 帳戶或 SharePoint 帳戶。
+您可以從 BlueXP 分類組態頁面、停用 BlueXP 分類、以掃描個別工作環境、資料庫或檔案共用群組。
 
 link:task-managing-compliance.html["深入瞭解"^]。
 
@@ -340,10 +322,10 @@ Connector是在雲端帳戶內或內部部署的運算執行個體上執行的�
 
 === 連接器需要安裝在何處？
 
-* 在Cloud Volumes ONTAP AWS、Amazon FSX for ONTAP Sf2或AWS S3儲存區中掃描資料時、您會在AWS中使用連接器。
+* 在 AWS 或 Amazon FSX for ONTAP 的 Cloud Volumes ONTAP 中掃描資料時、請使用 AWS 中的連接器。
 * 在 Cloud Volumes ONTAP Azure 或 Azure NetApp Files 以不一樣的方式掃描資料時、您需要使用 Azure 中的連接器。
 * 在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。
-* 在內部部署ONTAP 的支援系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶中掃描資料時、您可以在這些雲端位置中使用連接器。
+* 在內部部署 ONTAP 系統、 NetApp 檔案共用或資料庫中掃描資料時、您可以在這些雲端位置中使用連接器。
 
 
 因此、如果您在這些位置中有許多資料、您可能需要使用 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個連接器"^]。

@@ -220,7 +220,6 @@
   <block id="71802feecdbf246a5878ffd0776c9188" category="paragraph"><block ref="71802feecdbf246a5878ffd0776c9188" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e2fac2c70d1c0b8b442edf54cdc057a1" category="paragraph">如果您要將檔案共用新增至現有群組、請按一下*「Add Shares」（新增共用）*。</block>
   <block id="320628295265baf9bb69f0998f0f2fff" category="inline-image-macro">顯示「新增共用」按鈕的快照、可將更多共用新增至群組。</block>
-  <block id="35307f7c2f311ec0462c4df13d4da801" category="paragraph"><block ref="35307f7c2f311ec0462c4df13d4da801" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f1defe21c2a372d658838710c3847b34" category="list-text">選取您要新增之檔案共用的傳輸協定、新增您要掃描的檔案共用區（每行一個檔案共用區）、然後按一下*繼續*。</block>
   <block id="eb78bc82dacf7ba8a0b44a1fcffc4ddf" category="paragraph">新增CIFS（SMB）共用時、您必須輸入Active Directory認證、以提供共用的讀取存取權。首選管理認證。</block>
   <block id="ea83a70e9aaa2fe5cdb89ca736c3f60f" category="inline-image-macro">「新增檔案共用」頁面的快照、您可以在其中新增要掃描的共用。</block>
@@ -909,7 +908,6 @@
   <block id="a54d3bccf6c646c46c072ad1fc403cb6" category="inline-link">在內部部署連接器</block>
   <block id="94ee7072c2750da1997438a715efb7d4" category="section-title">建立連接器</block>
   <block id="ee9e25ed53166b2db3af20cf43c4404e" category="paragraph">有些情況下、您必須使用部署在特定雲端供應商中的Connector：</block>
-  <block id="bd36c37245d1af16de2a713e0208a229" category="list-text">在Cloud Volumes ONTAP AWS、Amazon FSX for ONTAP Sf2或AWS S3儲存區中掃描資料時、您會在AWS中使用連接器。</block>
   <block id="f19eaef4d9d109ffcf1717f49dd5d48b" category="list-text">在 Cloud Volumes ONTAP Azure 或 Azure NetApp Files 以不一樣的方式掃描資料時、您需要使用 Azure 中的連接器。</block>
   <block id="51604d985a41a8e2115db8de3eb4b40f" category="list-text">在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。</block>
   <block id="267b476717c1665614f57e91725c67ff" category="inline-link">多個連接器</block>
@@ -958,11 +956,8 @@
   <block id="ccb037c7d80d63e9af886062cbd4ad64" category="paragraph">如果您日後移除SharePoint網站、或決定不掃描SharePoint網站中的檔案、您可以隨時移除個別SharePoint網站的檔案掃描功能。只要按一下「組態」頁面中的「*移除SharePoint Site*」即可。</block>
   <block id="847f8497652f42ef7fd027f30c4dd069" category="inline-image-macro">螢幕擷取畫面顯示如何移除單一SharePoint網站、使其檔案無法掃描。</block>
   <block id="9fadb22715a72b9017d3b43a7b3177e2" category="paragraph"><block ref="9fadb22715a72b9017d3b43a7b3177e2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3cba68afa7ab7242fd51494aeb5d8d7b" category="list-text">遵守資料法規遵循與隱私權法規。</block>
   <block id="29c9ae62d38a9d393cc687207b213fa5" category="list-text">遵守資料保留政策。</block>
-  <block id="22e218023aca4f3c1af5339aa10fd3f1" category="list-text">根據 GDPR 、 CCPA 、 HIPAA 及其他資料隱私法規的要求、輕鬆找出特定資料並進行報告、以因應資料主題。</block>
   <block id="6858b5f69ec006bf6e2de7960deffea9" category="list-text">識別個人識別資訊（ PII ）。</block>
-  <block id="75561c13a7f1550c1d376b995ed2e83f" category="list-text">遵守新的及即將推出的資料隱私權法規。</block>
   <block id="cb1df3001d7e0d737bf8af8bf621fee0" category="inline-link-macro">瞭解掃描的運作方式</block>
   <block id="37f3de5c9ae041a1644d4b78c54dcf40" category="section-title">支援哪些雲端供應商？</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">何時 <block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block>：</block>
@@ -1137,7 +1132,6 @@
   <block id="becce430afb103abe05ad66b3e6cde8a" category="sidebar">產生法規遵循報告</block>
   <block id="dc3d679737d761f6e72564d962617ffa" category="paragraph">許多使用者之所以喜歡這項功能、是因為他們想要快速掃描資料、找出需要更多研究的資料來源、然後只能針對需要的資料來源或磁碟區進行分類掃描。</block>
   <block id="a29f21b4143f28dd101eaaa1fe82fd69" category="inline-xref">請參閱下列完整清單</block>
-  <block id="ddc3aba4eccf7778417b3605919f552e" category="list-text">將資料從舊系統移轉至雲端。</block>
   <block id="1e99ed6a00e6ef3956359cd96c54b66c" category="section-title">來源系統和資料類型的類型</block>
   <block id="9648ab08d5b3fccc9c9ca3160e445cda" category="paragraph">下列問題與可掃描的儲存設備類型及掃描的資料類型有關。</block>
   <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph">.CSV、.dcm、.dicom、.dDOC、.DOCX、 .Json、.PDF、.PPTX、.RTF、.TXT、 .XLS、.XLSX、文件、工作表及Slides +</block>
@@ -1148,7 +1142,6 @@
   <block id="f56912566696fa3cc8524bcac5febbeb" category="section-title">連接器部署</block>
   <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">什麼是Connector？</block>
   <block id="417cf0f3678f81efde443c4a85c2acb8" category="section-title">連接器需要安裝在何處？</block>
-  <block id="f4fb039a49b8c7eb94cbf1c2e74a625f" category="list-text">在內部部署ONTAP 的支援系統、非NetApp檔案共用、一般S3物件儲存、資料庫、OneDrive資料夾、SharePoint帳戶及Google雲端磁碟帳戶中掃描資料時、您可以在這些雲端位置中使用連接器。</block>
   <block id="0908d2929b9ac231d6e9a69ca517b2e3" category="section-title">我可以在自己的主機上部署Connector嗎？</block>
   <block id="729ba1cfab33ecb7cda6d642c21b247d" category="section-title">沒有網際網路存取的安全網站又如何？</block>
   <block id="b783177554ae1d03f46ea830d39a7822" category="section-title">資料調查報告</block>
@@ -1930,7 +1923,6 @@
   <block id="652d29fc9fdc8e0b507bb9eeecca952e" category="list-text">_Cloud 供應商 _ = 在雲端執行個體上安裝時、視雲端供應商而定、輸入「 AWS 」、「 Azure 」或「 GCP 」。</block>
   <block id="9e7ff0af4669feb5e45b838a89143e27" category="paragraph">安裝稽核記錄檔會寫入<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block></block>
   <block id="e08c39eeecbac5d5f73dff71e2512def" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 將檔案共用新增至群組</block>
-  <block id="1c23c4b7c88b3335b15ccab5f09de226" category="list-text">共享區可在任何地方代管、包括雲端或內部部署。在大多數情況下、這些是位於非 NetApp 儲存系統上的檔案共用。但是、舊型 NetApp 7-Mode 儲存系統的 CIFS 共用可以掃描為檔案共用。</block>
   <block id="a6ca0e2e27cafcb7c34af13f7d19c004" category="paragraph">掃描不會使冷資料變熱、因為它會保持冷、並留在物件儲存區中。</block>
   <block id="312ffbf4bf2c65989ebbd000c725c369" category="list-text">如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 過時資料 _ 類別中進行識別。</block>
   <block id="66d08fa5ddeba835b1d01655713b9120" category="admonition">此面板支援CIFS共用區、OneDrive和SharePoint資料來源中的檔案。目前不支援資料庫、 Google Drive 、 Amazon S3 和一般物件儲存。</block>
@@ -1950,9 +1942,7 @@
   <block id="66d6758c1474f6b831dd835dbec91562" category="paragraph">如果尚未部署執行個體、請部署 BlueXP 分類。</block>
   <block id="d040d135cea4209ef4244e9d6e171fee" category="inline-link-macro">在雲端部署 BlueXP 分類</block>
   <block id="9ee91e4270461c0df610bce432a6527d" category="inline-link-macro">在內部部署位置部署 BlueXP 分類、以便存取網際網路</block>
-  <block id="5293c70d5ea1ef3d44d61b35516c53fc" category="paragraph">如果您要掃描可透過網際網路存取的非NetApp NFS或CIFS檔案共用、您可以 <block ref="8faa540c15177bc62b151869f0948a64" category="inline-link-macro-rx"></block> 或 <block ref="15df3adeb2abcc06430d6dc64cee819e" category="inline-link-macro-rx"></block>。</block>
   <block id="b6c0a0e9e7e33313825824c0729f8062" category="inline-link-macro">在無法存取網際網路的同一個內部部署位置部署 BlueXP 分類</block>
-  <block id="be09c78e6d21282211ee75333d0774b6" category="paragraph">如果您要掃描安裝在無法存取網際網路的暗點中的非NetApp NFS或CIFS檔案共用、您必須執行 <block ref="3beeea1c5d12940092999048e1c30313" category="inline-link-macro-rx"></block>。這也需要在同一個內部部署位置部署BlueXP Connector。</block>
   <block id="6be9e736bffe3ff19cc1d1527b2af101" category="paragraph">只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。</block>
   <block id="a5847332edc397d8726675e5b89d4f7a" category="paragraph">您可以將檔案共用新增至「檔案共用群組」、以便這些共用中的檔案會由 BlueXP 分類進行掃描。您可以新增格式的共用<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block>。</block>
   <block id="81242ae208378634d2437d68837ba560" category="paragraph">預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。 <block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>。</block>
@@ -2248,7 +2238,6 @@
   <block id="ec0631d303344ddf5e8847c240ebaf7d" category="paragraph">BlueXP 分類使用 AI 提供資料的關聯式瞭解、以提供準確的偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。</block>
   <block id="f017155aed79417a0a3f81b29dd1e6dd" category="inline-link-macro">深入瞭解 BlueXP 分類的運作方式</block>
   <block id="5443d0bbbf3c65783aa8ff115d84afd8" category="paragraph"><block ref="6984153574af8acd30cf16c47f7727f6" category="inline-link-macro-rx"></block>。</block>
-  <block id="e3f6f3fc066d3be15e6a093f55c5df1a" category="section-title">BlueXP 分類的常見使用案例為何？</block>
   <block id="84869a8fd0e55b1142c336faf2aa6794" category="inline-link">深入瞭解 BlueXP 分類的使用案例</block>
   <block id="a1e79fa90d2c4d08e4e3fee15391f900" category="paragraph"><block ref="90f6ceedc5aafd07687f764c72c6fb1c" category="inline-link-rx"></block>。</block>
   <block id="dc7fadd7e7f28b26fb9ae94db1b83b8f" category="section-title">BlueXP 分類架構如何？</block>
@@ -2264,8 +2253,6 @@
   <block id="afc513a3724d36f6d8c4fc99c59325b5" category="section-title">我可以使用 BlueXP 分類來搜尋我的資料嗎？</block>
   <block id="09491c07cd2dfaa3838ed0ef6f3b7af0" category="paragraph">BlueXP 分類提供廣泛的搜尋功能、可讓您輕鬆搜尋所有連線來源的特定檔案或資料片段。BlueXP 分類可讓使用者比中繼資料所反映的內容更深入地搜尋。這項不受語言限制的服務也能讀取檔案、分析各種敏感資料類型、例如名稱和ID。例如、使用者可以搜尋結構化和非結構化的資料儲存區、找出可能從資料庫洩漏到使用者檔案的資料、違反企業原則。搜尋可儲存以供日後使用、並可建立原則以設定頻率搜尋結果並採取行動。</block>
   <block id="ce529b051aa9ebc4101b6a54911240a8" category="paragraph">找到感興趣的檔案後、即可列出特性、包括標記、工作環境帳戶、儲存庫、檔案路徑、 類別（從分類）、檔案大小、上次修改、權限狀態、重複項目、 敏感度層級、個人資料、檔案內的敏感資料類型、擁有者、檔案類型、檔案大小、建立時間、 檔案雜湊、是否將資料指派給尋求注意的人員等。篩選條件可用於篩選出不相關的特性。BlueXP 分類也有 RBAC 控制項、可在有適當權限的情況下、允許移動或刪除檔案。如果沒有適當的權限存在、則可將工作指派給組織中擁有適當權限的人員。</block>
-  <block id="87638ea8808069d9fbd32cddb1a4d4a7" category="section-title">BlueXP 分類提供何種分析？</block>
-  <block id="6a4d70c8dbf4260425fe714f100afb4e" category="paragraph">資料來源可以視覺化呈現、並以圖形方式定義和描繪關係。例如、管理員可以查看整個企業內所有資料來源（內部部署系統、資料庫、檔案共用、S3儲存區、OneDrive、 等）。然後、他們可以複製、移動、刪除及管理資料、以最佳化儲存成本並降低風險。使用者可以查看哪些敏感資料可能會外洩、藉此降低風險、並建立工作來管理強大資料保護的權限。BlueXP 分類也會將所有不同類型的資料分類、讓管理員能夠依類型調查資料、並查看資料採取了哪些行動、以及何時採取行動。</block>
   <block id="d095e6f9eb9e0116dd2770cfc6896fff" category="section-title">BlueXP 分類是否提供報告？</block>
   <block id="57bfc848a81decccc2c84f613fe93312" category="paragraph">是的。BlueXP 分類所提供的資訊可能與組織中的其他利益相關者有關、因此我們能讓您產生報告、以分享這些見解。以下報告可供 BlueXP 分類使用：</block>
   <block id="fc0325f4af61a33abeb25a3ce71542e3" category="inline-link-macro">BlueXP 分類執行個體</block>
@@ -2277,7 +2264,6 @@
   <block id="cc595e0116e3ea401ed2deba0cb5fe9f" category="paragraph">首先、您需要在 BlueXP 或內部部署系統中部署 BlueXP 分類執行個體。執行個體執行後、您可以從 * 組態 * 標籤或選取特定工作環境、在現有工作環境、資料庫及其他資料來源上啟用服務。</block>
   <block id="9c8ec203a4decddb8e9b0be1fb76ba06" category="admonition">在資料來源上啟動 BlueXP 分類會立即進行初始掃描。掃描結果會在不久後顯示。</block>
   <block id="cf10ed09d1b432e00f7d40ae089eff17" category="section-title">如何停用 BlueXP 分類？</block>
-  <block id="f4cb5ae42dd1805db0c4abe550526c1f" category="paragraph">您可以從 BlueXP 分類組態頁面、停用 BlueXP 分類、以掃描個別工作環境、資料庫、檔案共用群組、 OneDrive 帳戶或 SharePoint 帳戶。</block>
   <block id="51da61c9b4199dc02176673546f1121d" category="admonition">若要完全移除 BlueXP 分類執行個體、您可以從雲端供應商的入口網站或內部部署位置手動移除 BlueXP 分類執行個體。</block>
   <block id="65e3729b16ea2f0aa958f3b977a42b91" category="paragraph">BlueXP 分類提供現成的資料洞見。您可以擷取這些洞見、並將其用於貴組織的需求。</block>
   <block id="b2a009fe641242daa8ff4cc2e848a015" category="paragraph">此外、 BlueXP 分類提供許多方法、讓您新增自訂的「個人資料」清單、讓 BlueXP 分類在掃描中識別、讓您完整瞭解可能敏感資料位於組織檔案的位置。</block>
@@ -3356,14 +3342,10 @@
   <block id="13871df601ad6fe31ca70129438c5986" category="list-text">BlueXP 分類不會從資料庫資料來源擷取「上次存取時間」。</block>
   <block id="52c31809bdb836acfc2de3ee032c0faa" category="paragraph">對於掃描 PB 資料的大型組態、在 1.30 版及更早版本上、您可以包含多部主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。</block>
   <block id="166af9c4abcdeaeaa01f2df7fcd961a7" category="inline-link-macro">在無法存取網際網路的多部主機上安裝 BlueXP 分類</block>
-  <block id="c7b12c8155232c80e9aca6bc1eb67427" category="paragraph">若為 1.30 版及更早版本、如果您需要在多部主機上安裝 BlueXP 分類、請參閱 <block ref="94ed65ad8557cbd4dade332ad2e77a61" category="inline-link-macro-rx"></block>。</block>
   <block id="0dcde9bea70f4948a25486523fde4e97" category="paragraph">您也可以 <block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
   <block id="85aa6acd6442a61f72e7d0ea942bae6f" category="admonition">如需舊版 1.30 及更早版本、若要新增掃描器節點、請參閱 <block ref="6201a969fc4638d8cfca1139fbc49a51" category="inline-link-macro-rx"></block>。</block>
   <block id="7cc60b2d044c80070664df0b3bdf1a77" category="paragraph">安裝和使用 BlueXP 分類之前、需要 BlueXP Connector 。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因<block ref="4b65067251af1a04ab5f187e9a47f47a" category="inline-link-rx"></block>但有些情況下您需要立即設定一個。</block>
   <block id="d91ed5bff9bd13eee5c43964bbe67be4" category="list-text">在 AWS 或 Amazon FSX for ONTAP 的 Cloud Volumes ONTAP 中掃描資料時、您會在 AWS 中使用 Connector 。</block>
-  <block id="f7ddb3fae62084df9775f83831fce054" category="paragraph">內部部署 ONTAP 系統、非 NetApp 檔案共用和資料庫帳戶都可以使用這些雲端連接器進行掃描。</block>
-  <block id="b42e6291cc6a037ddc6ee554887f32db" category="paragraph">如您所見、您可能需要使用某些情況<block ref="60e68d53c84b484e2f34cc068011138d" category="inline-link-rx"></block>。</block>
-  <block id="572512a4612a49492403a6507fd8298a" category="paragraph">如果您使用多個 BlueXP 分類主機來提供額外的處理能力來掃描資料來源、則需要啟用其他連接埠 / 通訊協定。 <block ref="b9fe4b9748c1443c9180192248fc010d" category="inline-link-macro-rx"></block>。</block>
   <block id="428a85a15f039350823864cdd9f6711b" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。瞭解更多連結： task-deploy-multier-host-install-dark 網站 .html &gt; 關於在多部主機上安裝大型組態的資訊。</block>
   <block id="758de85e3f025a37293713e5735825a9" category="admonition">當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 儲存區、 Azure NetApp Files 或適用於 ONTAP 的 FSX 。在這些情況下、您需要在雲端和中部署個別的 Connector 和 BlueXP 分類執行個體<block ref="3cd9b819ecbc63be3401566b7b7cbf66" category="inline-link-rx"></block> 適用於不同的資料來源。</block>
   <block id="f221652320e994dc66aab1d5d6da5fb7" category="paragraph">請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它是寫入的<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>。 <block ref="c7911c51adef419f386feff4cec8acf6" category="inline-link-macro-rx"></block>。</block>
@@ -3432,8 +3414,6 @@
   <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">BlueXP 分類提供下列系統定義原則：</block>
   <block id="551ae439eb74eb4d9463c5592e518e13" category="doc">設定 BlueXP 分類的隨用隨付授權</block>
   <block id="bbf3f1b670e986bdd66666003ca90040" category="paragraph">掃描資料需要付費（ PAYGO ）訂閱。</block>
-  <block id="ef36f15af4b7e51baf5bf0e08d78a021" category="paragraph">* 注意 * 此資訊僅適用於 BlueXP 分類核心版本 1.31 及更新版本。</block>
-  <block id="aa03ad3837e520978aceb5f3f06e3acc" category="paragraph">BlueXP 分類可在 BlueXP 工作區中掃描高達 500 TB 的資料、提供 30 天免費試用。您必須向 NetApp 購買 BYOL 授權、或向雲端供應商的市場註冊訂閱、才能在該點之後繼續掃描資料。</block>
   <block id="bb0dfe0b54c3baac2c6710b8940b4744" category="paragraph">您可以隨時訂閱、即使 30 天試用期結束、也不會收取費用。您可以隨時從 BlueXP 分類治理儀表板查看掃描的資料總量。而且「立即訂閱」按鈕可讓您在準備就緒時輕鬆訂閱。</block>
   <block id="f5e624878bf9762aa2d37e975ce44226" category="paragraph">訂閱可確保在免費試用結束後、服務不會中斷。試用結束時、您將不會被收取 BlueXP 核心版本 1.31 或更新版本的費用。</block>
   <block id="98700edb399fd9cd3004efe19dd93686" category="doc">掃描 Google 雲端硬碟帳戶</block>
@@ -3476,7 +3456,6 @@
   <block id="b532da7497718d74daf0199075ee34b0" category="admonition">這適用於 BlueXP 分類版本 1.30 及更早版本。</block>
   <block id="87c1c448997235b59b248a48144bb882" category="section-title">儀表板上顯示 AIP 標籤的分類區域</block>
   <block id="1fb90b34e92ce998c65c8899830aa15f" category="paragraph">儀表板上的 _Classification_ 區域提供掃描資料中識別最多的 Azure 資訊保護（ AIP ）標籤清單。</block>
-  <block id="e02905cfda9904851c15f359bae91eb8" category="admonition">新增檔案共用是從 Google Cloud NetApp Volumes 掃描資料的唯一方法。</block>
   <block id="fd9e0b72c2e1965f70f191bf060f0c35" category="doc">在多部主機上安裝 BlueXP 分類、以進行大型組態、但無法存取網際網路</block>
   <block id="ff50a558849a2e68c9f240f475cf7b94" category="paragraph">請完成幾個步驟、在內部部署站台中無法存取網際網路的多部主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這類安裝最適合安全的站台。</block>
   <block id="6e154273e95ff921bb43e9896a26d6bb" category="paragraph">對於大型組態而言、如果您要在沒有網際網路存取的站台中掃描 PB 的資料、您可以包含多部主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。</block>
@@ -3511,7 +3490,6 @@
   <block id="2930994d2cff6bdaceb544c2a0169659" category="paragraph">請參閱 <block ref="fb235327a04124182aad24d53e898b94" category="inline-link-macro-rx"></block>。</block>
   <block id="3270840fec1d1272ecdf8fa5dacfe375" category="paragraph">BlueXP 分類是 BlueXP 核心功能、無需付費。</block>
   <block id="1f5565609924c19f8cc66ee9b3e5ff8b" category="paragraph">您必須透過雲端供應商 Marketplace 訂閱 BlueXP 。</block>
-  <block id="07005138abd2ab6bc21bd0ca8dd1552a" category="paragraph">使用這些雲端連接器時、可以掃描內部部署 ONTAP 系統、 NetApp 檔案共用、一般 S3 物件儲存設備和資料庫。</block>
   <block id="178bf9bf543decf7d7b3739b703708f1" category="paragraph">在管理 AIP 標籤之前、您必須先登入現有的 Azure 帳戶、將 AIP 標籤功能整合至 BlueXP 分類。一旦啟用、您就能在檔案中管理所有人的AIP標籤 <block ref="9f69f043f42f5e941f29feed1ea9caea" category="inline-link-macro-rx"></block> 在您的BlueXP工作區中。</block>
   <block id="25c24221a948a50ce66f8d4fb0f6d79c" category="paragraph">您必須訂閱雲端供應商服務商場。</block>
   <block id="147b35ab5352426bba38d99d810db4ed" category="list-text">您可以從 NetApp 支援網站 取得授權檔案。</block>
@@ -3529,4 +3507,17 @@
   <block id="58b46c120f259bfcd0cbe13c84945204" category="sidebar">管理資料過時</block>
   <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="39ba3e6e56f553f6665e61fc4be73bd0" category="sidebar">BlueXP 核心與舊版的可用功能</block>
+  <block id="0110688ab0278eb10777e6346a3407b7" category="paragraph">您可以從 BlueXP 分類組態頁面、停用 BlueXP 分類、以掃描個別工作環境、資料庫或檔案共用群組。</block>
+  <block id="fd3479aa2412da82a5c0ec56898d7547" category="list-text">在 AWS 或 Amazon FSX for ONTAP 的 Cloud Volumes ONTAP 中掃描資料時、請使用 AWS 中的連接器。</block>
+  <block id="4ed8051d33f972fa0cc6d75e4ab1b870" category="list-text">在內部部署 ONTAP 系統、 NetApp 檔案共用或資料庫中掃描資料時、您可以在這些雲端位置中使用連接器。</block>
+  <block id="7d6fb1ca0011c57644b1d2a7f6e4b92f" category="paragraph">使用這些雲端連接器時、可以掃描內部部署的 ONTAP 系統、 NetApp 檔案共用和資料庫。</block>
+  <block id="45c3f94e2c6cdec1b996f63c1e4f35d4" category="paragraph">內部部署 ONTAP 系統、 NetApp 檔案共用和資料庫帳戶都可以使用這些雲端連接器進行掃描。</block>
+  <block id="66bad41fed356683067822a39c0f9de3" category="paragraph">* 注意 * 此資訊僅適用於 BlueXP 分類核心版本 1.31 及更新版本。對於舊版 1.30 及更早版本、您也可以使用 BYOL 授權。</block>
+  <block id="354edbe327cd09667a9ea94c49b976f7" category="paragraph">BlueXP 分類可在 BlueXP 工作區中掃描高達 500 TB 的資料、提供 30 天免費試用。您必須向雲端供應商的市場註冊訂閱、才能在該點之後繼續掃描資料。</block>
+  <block id="e134a6a7927c694ae4d422caedd41a01" category="section-title">為舊版更新 BlueXP 分類 BYOL 授權</block>
+  <block id="3001385112718c67b07ae5d62555bd7e" category="section-title">舊版的 BYOL 授權考量事項</block>
+  <block id="12a96925a3b6ebd1419915c8b0bfada9" category="paragraph">請完成幾個步驟、從 Google Cloud NetApp Volumes 和舊版 NetApp 7-mode 系統開始掃描 NFS 或 CIFS 檔案共用。這些檔案共用區可位於內部部署或雲端。</block>
+  <block id="f146ec0537a829117da7d3ce3e588d3b" category="admonition">BlueXP 分類核心版本不支援從非 NetApp 檔案共用掃描資料。</block>
+  <block id="d809bb142c0a96aef201dfc891e977e3" category="list-text">共享區可在任何地方代管、包括雲端或內部部署。舊版 NetApp 7-Mode 儲存系統的 CIFS 共用可掃描為檔案共用。</block>
+  <block id="8fedda70275ec7ba2bbf1cf099d2a559" category="paragraph"><block ref="8fedda70275ec7ba2bbf1cf099d2a559" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
