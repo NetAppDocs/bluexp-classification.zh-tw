@@ -20,17 +20,14 @@
   <block id="5054e48efbd7d7a23b39d5c48f13943f" category="section-title">依資料敏感度列出的主要資料儲存庫</block>
   <block id="6370c5a9859b827de2be9d30ec4b997e" category="list-text">個人資料</block>
   <block id="0f0be2946f647a34d438bb34323fd30e" category="list-text">敏感的個人資料</block>
-  <block id="43ec9a8f95b41a9a8648d4df5db2c7f1" category="paragraph">您可以將游標停留在每個區段上、查看每個類別中的項目總數。</block>
   <block id="9f3ca55177a9cff0208b29196f6a269a" category="paragraph">按一下每個區域、即可在「調查」頁面中檢視篩選後的結果、以便進一步調查。</block>
   <block id="645e4f0b71c92a4a3810668742adff95" category="section-title">依開放權限類型列出的資料</block>
   <block id="140692ffca26cf04b2ffe208e40614b6" category="paragraph">「_開啟權限_」區域會顯示所有要掃描之檔案所存在的每種權限類型的百分比。此圖表顯示下列權限類型：</block>
   <block id="a1803d6c124292f91b3806ee4c46b406" category="list-text">開放給組織使用</block>
   <block id="8c8bc01ad66acc46ad4db72461de09d9" category="list-text">開放給大眾使用</block>
   <block id="77660481bdb77bcf47202315fe7e0d51" category="list-text">不明存取</block>
-  <block id="78c332986dbd1952b5fedb1405ea7ea1" category="paragraph">您可以將游標移到每個區段上、查看每個類別中的檔案總數。按一下每個區域、即可在「調查」頁面中檢視篩選後的結果、以便進一步調查。</block>
   <block id="f7610c6f6e541c5a2364ba4e2af4b7b2" category="section-title">資料的存留期和資料圖表的大小</block>
   <block id="3ec606c48dc49534660f77920d3af604" category="paragraph">您可能想要調查_age_和_Siz__圖表中的項目、看看是否有任何您應該刪除的資料、或將其分層以降低物件儲存成本。</block>
-  <block id="ede4d419502ce502a02eed2521b13f7f" category="paragraph">您可以將游標停留在圖表中的某個點上、以查看該類別中資料的年齡或大小詳細資料。按一下以檢視根據該年齡或大小範圍篩選的所有檔案。</block>
   <block id="cbeed5582d295effbe84db6394c89a55" category="list-text">*資料圖表的存留期*：根據資料建立時間、上次存取時間或上次修改時間來分類資料。</block>
   <block id="1c7e3b4981e1a369ab27fd559df0e974" category="list-text">*資料圖表大小*：根據大小來分類資料。</block>
   <block id="adb18f5fb34b742716a832a865f1d8e2" category="section-title">最常識別的資料分類</block>
@@ -514,7 +511,6 @@
   <block id="8d94a2a96b8e10bd08c2af725fb9a422" category="inline-image-macro">敏感個人檔案對話方塊的快照、您可以在其中按一下個人資料類型旁的調查結果圖示。</block>
   <block id="74186caba3373d78db8333ee67330575" category="paragraph"><block ref="74186caba3373d78db8333ee67330575" category="inline-image-macro-rx" type="image"></block></block>
   <block id="47b347a1f7b1686950802bcaa8f089d4" category="inline-link-macro">請參閱類別清單</block>
-  <block id="91f604faaf2806916a0c893987a95a74" category="paragraph">類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、簡歷或員工合約等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。</block>
   <block id="768ab8a6971014c8ffceeccf0f73db14" category="admonition">類別支援英文、德文和西班牙文。稍後將新增更多語言支援。</block>
   <block id="9aa9abf60f82df3e21d796f9168c36b0" category="list-text">直接從主畫面按一下前 4 大類別之一的 * 調查結果 * 圖示、或按一下 * 檢視全部 * 、然後按一下任何類別的圖示。</block>
   <block id="613f07741bbd9071b1b79a6196853b30" category="inline-image-macro">類別對話方塊的快照、您可在其中按一下類別旁的調查結果圖示。</block>
@@ -643,8 +639,6 @@
   <block id="73e82d6326f541ace82886b5c0cd44eb" category="inline-xref">為每個雲端供應商部署的執行個體類型</block>
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">為每個雲端供應商部署的執行個體類型</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">資料傳輸成本</block>
-  <block id="9dfcb55e7b0aaa04660a96ede4a3458f" category="inline-link">AWS ： Amazon EC2 定價</block>
-  <block id="865fef30627e082f6460395b15ac714b" category="list-text"><block ref="865fef30627e082f6460395b15ac714b" category="inline-link-rx"></block></block>
   <block id="ec41ccef0058f3bdb78fe38313b87456" category="inline-link">Microsoft Azure ：頻寬定價詳細資料</block>
   <block id="3be19ebc8415f831f4fbfc27b3e37f8e" category="list-text"><block ref="3be19ebc8415f831f4fbfc27b3e37f8e" category="inline-link-rx"></block></block>
   <block id="3b33b762bb5216176a14f853b1d711f2" category="inline-link">Google Cloud：儲存傳輸服務定價</block>
@@ -1543,8 +1537,6 @@
   <block id="1d4c3c5a59e200a8cf6bd280a00b8b39" category="paragraph">從「組態」頁面中、選取您要掃描的資料來源（如果您尚未掃描）。如果您建立了掃描儀群組、則每個資料來源都會由個別群組中的掃描儀節點掃描。</block>
   <block id="00c5c673cfa296bce54ec77743dbf5a5" category="paragraph">您可以在「組態」頁面中查看每個工作環境的「掃描器群組」名稱。</block>
   <block id="1f3259fd3977a2467ab298df6a6d44d1" category="paragraph">您也可以在「組態」頁面底部查看所有掃描器群組的清單、以及群組中每個掃描器節點的IP位址和狀態。</block>
-  <block id="e046fe016499c2584ccbc85ec4b21f9d" category="inline-image-macro">快照會列出群組中所有掃描器群組、以及每個掃描器節點的IP位址。</block>
-  <block id="dace7436ca5a83360d9bbd7d056c44bd" category="paragraph"><block ref="dace7436ca5a83360d9bbd7d056c44bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">深入瞭解Cloud Volumes ONTAP 從NetApp系統分層的相關資訊</block>
   <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">深入瞭解內部部署ONTAP 的資訊系統分層</block>
   <block id="a33f1b61e65aad9cca86d3578cf3028a" category="cell">選取資料內及資料夾/共用內的權限類型。</block>
@@ -1606,16 +1598,13 @@
   <block id="657428712375fa5789abe7c6de9782a7" category="inline-image-macro">關於選取所有檔案</block>
   <block id="f4b007384ec89845c9935758ba0063c6" category="list-text">若要選取所有頁面上的所有檔案、請核取標題列中的方塊（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）、然後在快顯訊息中顯示 <block ref="a340f0047d2dd8cefeca9fd0bc9a1c6d" category="inline-image-macro-rx" type="image"></block>，單擊* Select all items in list（xxx items）*（選擇列表中的所有項目（xxx項）*</block>
   <block id="78f57849bdbd66782ef9877d36177fcb" category="list-text">在「調查結果」窗格中、勾選標題列中的方塊、以選取所有頁面上的所有檔案（<block ref="240ed779654c3f6cf32843800cecc801" category="inline-image-macro-rx" type="image"></block>）、然後在快顯訊息中 <block ref="a340f0047d2dd8cefeca9fd0bc9a1c6d" category="inline-image-macro-rx" type="image"></block> 按一下「*選取清單中的所有項目（xxx個項目）*」、然後按一下「*複製*」。</block>
-  <block id="17dca911bcce42574615a9d04b2c26cd" category="paragraph">此外、如果您計畫將資料從內部部署位置移轉至雲端、您可以在移動資料之前、先檢視資料大小、以及是否有任何資料包含敏感資訊。</block>
   <block id="8eb1fec334dabbaf8e8ce1c5c57d9629" category="paragraph">在_policies區域中、結果最多的原則會顯示在清單頂端。按一下原則名稱、即可在「調查」頁面中顯示結果。按一下*檢視全部*以檢視所有可用原則的清單。</block>
   <block id="c84e7df5fd818e5aa11d03239984b3bd" category="paragraph">「_Top Data儲存庫依敏感度等級_」區域列出前四大資料儲存庫（工作環境和資料來源）、其中包含最敏感的項目。每個工作環境的長條圖分為：</block>
   <block id="c2587967478c7df25fe839d6f619f443" category="list-text">非敏感資料</block>
-  <block id="e0247fb281ffe9cb88e8d27a1d7db85b" category="paragraph">檔案的評分是根據具有X軸存取檔案權限的使用者人數（最低至最高）、以及Y軸上檔案中的敏感識別碼數量（最低至最高）。區塊代表與X和Y軸項目相符的檔案數量。較淺的色塊很好；使用者較少、每個檔案的機密識別碼較少。較暗的區塊是您可能想要調查的項目。例如、下方畫面顯示深藍色區塊的暫留文字。這表示您有1、500個檔案、其中751-100個使用者可以存取、其中每個檔案有501-100個敏感識別碼。</block>
   <block id="baf19cb0f888989db2710471a613fbd9" category="inline-image-macro">當您將游標置於此面板中的元素上時、會顯示所顯示的資料快照。</block>
   <block id="84bb65a316fae3e8d82ea950dc220467" category="paragraph"><block ref="84bb65a316fae3e8d82ea950dc220467" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c09a51a41728880502cacff404ad64e8" category="paragraph">您可以按一下您感興趣的區塊、在「調查」頁面中檢視受影響檔案的篩選結果、以便進一步調查。</block>
   <block id="4f7b4b702c17bca954d2d186aaea71c0" category="list-text">無開放權限</block>
-  <block id="e5ffd57c8ceca007705d9700419ab52a" category="paragraph">類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、「恢復」或「員工合約」等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。</block>
   <block id="13e71bc7a750dcb909f7b6e859dba7aa" category="paragraph">請確定您擁有登入SharePoint帳戶的合格認證、而且您有要掃描之SharePoint網站的URL。</block>
   <block id="6d3bb929d06fa3023ab7239f4567ed1a" category="paragraph">使用合格的使用者認證、登入您要存取的SharePoint帳戶、以便將其新增為新的資料來源/工作環境。</block>
   <block id="7a8c400460fcd57ab61e646f8f7222ff" category="list-text">您必須擁有SharePoint帳戶的管理員使用者登入認證、才能提供所有SharePoint網站的讀取存取權。</block>
@@ -1754,7 +1743,6 @@
   <block id="6d9dd74e7709ef802d299966f7898f6b" category="list-text">*檢視案例*：檢視特定案例的完整詳細資料。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">螢幕擷取畫面、顯示您在表格最後一欄選取功能表後可以採取的動作。</block>
   <block id="99d97930418935683e2b318283d0dfe1" category="section-title">上次存取時間時間戳記</block>
-  <block id="b2d4384c1deeeb5068a47d9c4f7fecae" category="paragraph">此功能適用於內部部署ONTAP 的不間斷支援、Cloud Volumes ONTAP 例如：支援Azure NetApp Files 功能的內部系統、支援功能、支援功能、支援ONTAP 功能、以及非NetApp檔案共享。</block>
   <block id="2e9bf0fba1b77a1da35499a6b728c5e6" category="inline-image-macro">篩選器的螢幕快照、可根據是否具有寫入權限、來查看哪些檔案已掃描而非掃描。</block>
   <block id="ee9a6cd4eeadce3c62fa7db3af1981ac" category="paragraph"><block ref="ee9a6cd4eeadce3c62fa7db3af1981ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">篩選選項包括：</block>
@@ -1879,7 +1867,6 @@
   <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">* 中 *</block>
   <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">* 小 *</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">請參閱其他 AWS 執行個體類型</block>
-  <block id="07c511fd0ad633d44d9e71cb0c9eaba9" category="list-text">* AWS EC2 執行個體類型 * ：我們建議使用「 m6i.4xlarge 」。 <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>。</block>
   <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">請參閱其他 Azure 執行個體類型</block>
   <block id="d713d26696157989a3e54d75e186ddb9" category="list-text">* Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。 <block ref="600a0a16acacbb97202eae2cd680ce79" category="inline-link-macro-rx"></block>。</block>
   <block id="02a3b057fd8df2afe74574d8ba4929b5" category="inline-link-macro">請參閱其他 GCP 執行個體類型</block>
@@ -1898,10 +1885,8 @@
   <block id="f42926ae5eb2834453e4706e43354d5c" category="section-title">2023 年 4 月 3 日（版本 1.22 ）</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="section-title">新的資料探索評估報告</block>
   <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">瞭解如何產生及使用資料探索評估報告</block>
-  <block id="5e4569f52e263bc5988dd871099065f5" category="paragraph">資料對應報告概述儲存在企業資料來源中的資料、協助您做出移轉、備份、安全性及法規遵循程序等決策。報告會先列出概述、總結您所有的工作環境和資料來源、然後提供每個工作環境的詳細資料。</block>
   <block id="2d948e473e2d70b037f0549e51ba2a9d" category="list-text">按一下 * Governance * 、然後按一下 * Data Mapping Report* 按鈕。</block>
   <block id="7ddeaa5e00e834742bed79816a143502" category="section-title">資料探索評估報告</block>
-  <block id="d40936cf7a3a0b1e1def94efecb41182" category="paragraph">「資料探索評估報告」提供對掃描環境的高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。結果是根據資料的對應和分類而定。本報告的目標是提高對資料集三個重要層面的認知度：</block>
   <block id="4fc6419c6a12af16883e770d99dbf849" category="cell">資料治理問題</block>
   <block id="29682fe2b70e1decc5fcddf7dc56bb80" category="cell">詳細瞭解您擁有的所有資料、以及您可以減少資料量以節省成本的領域。</block>
   <block id="e26970e3266bdd73a6217ce7b8af4c3e" category="cell">資料安全性曝險</block>
@@ -2077,7 +2062,6 @@
   <block id="5f7d2531317684863a8928345cd2c72a" category="paragraph">在物件儲存服務上啟用 BlueXP 分類之後、下一步是設定您要掃描的儲存區。BlueXP 分類會探索這些貯體、並在您建立的工作環境中顯示這些貯體。</block>
   <block id="37e611c0f6034e9d39537aca9c9331a7" category="paragraph">BlueXP 分類會開始掃描您啟用的儲存區。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。</block>
   <block id="264b044bf416a5337d28443921b46791" category="list-text">與其他應用程式共用的主機不支援 BlueXP 分類、主機必須是專用主機。</block>
-  <block id="34c6b12ec99e0004de549a9d1fd9589c" category="list-text">在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從三種系統大小中進行選擇。</block>
   <block id="d5c832490c0ab9dcb105acd9ee7b4709" category="list-text">在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：</block>
   <block id="f2183b09e54e4aa491c008ea8ca08bbc" category="list-text">* Red Hat Subscription Management* ：主機必須向 Red Hat Subscription Management 註冊。如果系統尚未註冊、則無法在安裝期間存取儲存庫以更新所需的協力廠商軟體。</block>
   <block id="7299a589db31a0bc8b28dedaafe896cd" category="list-text">* 其他軟體 * ：安裝 BlueXP 分類之前、您必須在主機上安裝下列軟體：</block>
@@ -2203,12 +2187,10 @@
   <block id="59ebdcac794eeda1621f09a3ecc27439" category="inline-link-macro">從 BlueXP 分類中刪除整個 SharePoint 帳戶</block>
   <block id="6f59ca5f245fc8c3519e5b1002026165" category="summary">您可以將全域 Active Directory 與 BlueXP 分類整合、以強化 BlueXP 分類報告的檔案擁有者、以及哪些使用者和群組可以存取您的檔案的結果。</block>
   <block id="0f4b94b9c8f266d8f84728edf8666d68" category="doc">將 Active Directory 與 BlueXP 分類整合</block>
-  <block id="c06c60ce3256abb2eeb5ee0ee7195c2c" category="paragraph">設定某些資料來源（如下所列）時、您需要輸入 Active Directory 認證、以便 BlueXP 分類掃描 CIFS 磁碟區。這項整合可提供 BlueXP 分類、其中包含檔案擁有者和位於這些資料來源中資料的權限詳細資料。針對這些資料來源輸入的Active Directory可能與您在此輸入的全域Active Directory認證不同。BlueXP 分類將在所有整合式 Active Directory 中查看使用者和權限詳細資料。</block>
   <block id="7e7d69dec0250fdcf96317ada370e511" category="paragraph">這項整合在 BlueXP 分類的下列位置提供其他資訊：</block>
   <block id="b4ec1c14ab4bd386dfefef45aa353ede" category="paragraph">Active Directory 與 BlueXP 分類的整合可從下列資料來源識別資料：</block>
   <block id="161492e147f9953ea294f077d7f3093b" category="paragraph">部署 BlueXP 分類並在資料來源上啟動掃描之後、您可以將 BlueXP 分類與 Active Directory 整合。Active Directory可使用DNS伺服器IP位址或LDAP伺服器IP位址來存取。</block>
   <block id="f6713c69bf16489b9255768e1e4aa54b" category="paragraph">Active Directory 認證可以是唯讀的、但提供管理認證可確保 BlueXP 分類能夠讀取任何需要提高權限的資料。認證會儲存在 BlueXP 分類執行個體上。</block>
-  <block id="abee1c7ea617ac0486284783521e443b" category="paragraph">對於 CIFS 磁碟區 / 檔案共用、如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、我們建議使用者擁有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="4b05a60d6cd8813d76fd85958d02d2dc" category="list-text">BlueXP 分類執行個體必須開啟下列連接埠才能進行輸出通訊：</block>
   <block id="6ba5ae96727e23ab610dbb43f5eba89c" category="list-text">在 BlueXP 分類組態頁面中、按一下 * 新增 Active Directory* 。</block>
   <block id="b2514742bc1fd53a05e15ba5d54bf10e" category="inline-image-macro">螢幕擷取畫面顯示按一下按鈕、將 Active Directory 伺服器新增至 BlueXP 分類。</block>
@@ -2265,7 +2247,6 @@
   <block id="9c8ec203a4decddb8e9b0be1fb76ba06" category="admonition">在資料來源上啟動 BlueXP 分類會立即進行初始掃描。掃描結果會在不久後顯示。</block>
   <block id="cf10ed09d1b432e00f7d40ae089eff17" category="section-title">如何停用 BlueXP 分類？</block>
   <block id="51da61c9b4199dc02176673546f1121d" category="admonition">若要完全移除 BlueXP 分類執行個體、您可以從雲端供應商的入口網站或內部部署位置手動移除 BlueXP 分類執行個體。</block>
-  <block id="65e3729b16ea2f0aa958f3b977a42b91" category="paragraph">BlueXP 分類提供現成的資料洞見。您可以擷取這些洞見、並將其用於貴組織的需求。</block>
   <block id="b2a009fe641242daa8ff4cc2e848a015" category="paragraph">此外、 BlueXP 分類提供許多方法、讓您新增自訂的「個人資料」清單、讓 BlueXP 分類在掃描中識別、讓您完整瞭解可能敏感資料位於組織檔案的位置。</block>
   <block id="3e54663a2ffb430b0a951b91fab46029" category="section-title">我可以將 BlueXP 分類資訊限制在特定使用者嗎？</block>
   <block id="b1cfb802271338af5bae746aee65d68f" category="paragraph">是的、 BlueXP 分類與 BlueXP 完全整合。BlueXP使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。</block>
@@ -2484,7 +2465,6 @@
   <block id="737ab30d4451f7b971d756cdcc6b7d6b" category="section-title">BlueXP 分類索引的資訊</block>
   <block id="28e66615c1e04c19b63a24061d462220" category="paragraph">BlueXP 分類會收集、索引及指派類別給您的資料（檔案）。BlueXP 分類索引的資料包括：</block>
   <block id="e1c6fd17dccbebfc440207f27d59459b" category="list-text">BlueXP 分類會收集檔案的標準中繼資料：檔案類型、檔案大小、建立和修改日期等。</block>
-  <block id="8546288939f901d3a1276b7f9e394f46" category="list-text">BlueXP 分類使用 AI 從文件中擷取自然人姓名。 <block ref="3e345053a8e9ce1c3eacafd31ce8d78d" category="inline-link-macro-rx"></block>。</block>
   <block id="6baaa35b9d6c708af7920a94de9f3951" category="paragraph">BlueXP 會使用安全性群組來部署 BlueXP 分類執行個體、以便從 Connector 執行個體進行傳入 HTTP 連線。</block>
   <block id="b7753345b24c98f72b73e9e641a456d7" category="paragraph">傳出規則已完全開啟。安裝和升級 BlueXP 分類軟體、以及傳送使用量指標、都需要網際網路存取。</block>
   <block id="def03cca1b6cd44fc1ef14e712a6c792" category="inline-link-macro">瞭解 BlueXP 分類所接觸的端點</block>
@@ -2766,18 +2746,6 @@
   <block id="e56ef2e2348492a4f0e1e9513b068cc4" category="admonition">您也可以按一下「組態」頁面、針對工作環境啟用法規遵循掃描 <block ref="a759a567ce9a72b21fd45f48f1f358c8" category="inline-image-macro-rx" type="image"></block> 按鈕並選擇 * 啟動 BlueXP 分類 * 。</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
   <block id="32bb143fdc5ad46423876511f8c73c77" category="paragraph">Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在網路中的 Ubuntu Linux 主機上安裝 BlueXP 分類、或在雲端的 Linux 主機上使用 1.23 版的安裝程式。<block ref="cc16f95732fa73dc357dabce46e4c311" category="inline-link-rx"></block>。</block>
-  <block id="34c688a0843dc19a0624e151973b37a7" category="cell">500 GiB SSD on / 、 or
--100 GiB 可在 /opt 上取得
--395 GiB 可在 /var/lib/Docker 上取得
-/tmp 上 5 GiB</block>
-  <block id="7c2e343b426a44deea2cb9e6eb69e8af" category="cell">200 GiB SSD on / 、 or
--50 GiB 可在 /opt 上取得
--145 GiB 可在 /var/lib/泊 塢視窗中取得
-/tmp 上 5 GiB</block>
-  <block id="a8ec707d3d7dc0af4b9cce44343387b0" category="cell">100 GiB SSD on / 、 or
--50 GiB 可在 /opt 上取得
--45 GiB 可在 /var/lib/泊 塢視窗中取得
-/tmp 上 5 GiB</block>
   <block id="0a10409b2f38332b7a7c8f820fc0edd5" category="inline-link">觀看此影片</block>
   <block id="d56adb545fe9309fc7a4cfd339798344" category="paragraph">在單一內部部署主機上安裝 BlueXP 分類軟體時、請檢閱需求並遵循這些步驟。</block>
   <block id="809de3d4b48cba202a3e92df9b5646ca" category="paragraph">如果您不想再使用 BlueXP 分類、可以從雲端供應商環境中解除安裝和刪除 BlueXP 分類執行個體。</block>
@@ -3026,7 +2994,6 @@
   <block id="7823cdf226bddeed3789b41cce9f2f73" category="sidebar">將現有的群組 ID 定義為「開放給組織」</block>
   <block id="c994485ccd2b31a48f2ec01a7e6462e0" category="list-text">請移至「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」、然後執行下列指令碼：</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">現在您可以在 NFS 中設定群組 ID 、以便直接從 BlueXP 分類中將其視為「開放組織」、如果群組一開始沒有設定該權限。任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示為「開放給組織」。瞭解如何操作<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
-  <block id="da4874b0888a9dafc160c24905184d23" category="section-title">是否掃描駐留在 ONTAP 磁碟區上的 Snapshot 複本？</block>
   <block id="a35301b044a7bc259b579edebe42bff3" category="paragraph">不可以BlueXP 分類不會掃描快照、因為內容與磁碟區中的內容相同。</block>
   <block id="dce2a9642217836d54f614dfd625b753" category="cell">/usr/lib/systemd/system</block>
   <block id="31af9dbc59d95015ad9e14c7d979d66b" category="summary">有時候您可能需要登入 BlueXP 分類系統、以便存取記錄檔或編輯組態檔。</block>
@@ -3055,7 +3022,6 @@
   <block id="1841518caa387e4e9bb9d49c95609785" category="paragraph">請參閱 <block ref="624739c32d4b253a90da8dd449f98632" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="181332a3540aa1ea82fa85f6dc6f6625" category="paragraph">請參閱 <block ref="831f3d64e1800ca5ef8e2c817b5a43b2" category="inline-link-macro-rx"></block> 以取得更多資訊。</block>
   <block id="1ec26f1d39a398158aea4e2d5e31e150" category="section-title">產生資料對應報告</block>
-  <block id="69bf5c037f5606f34aefc52d8ef3628b" category="paragraph">如果報告大於 1 MB 、則 PDF 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 PDF 檔案。當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體、才能下載 PDF 檔案。 <block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>。</block>
   <block id="1f409051045abcc9fdb719d7f375ac7a" category="section-title">產生資料探索評估報告</block>
   <block id="8d2b3a00bc0d44767cf3d5dfed11884d" category="section-title">在「資料調查」頁面中篩選資料</block>
   <block id="31d2b3f1b10e9877e365a14d5f9212e4" category="list-text">頂層索引標籤可讓您檢視檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料。</block>
@@ -3236,7 +3202,6 @@
   <block id="7cda33697c25a4972bdbfab414004cc2" category="section-title">2023 年 12 月 14 日（版本 1.26.6 ）</block>
   <block id="a1663078538acf931413c4667ee4dc32" category="doc">將其他群組 ID 定義為開放給組織使用</block>
   <block id="14262b7b54453519cfa73f76b2652616" category="section-title">檢視目前的群組 ID 清單</block>
-  <block id="30e7ed02f97ac1e08032a6f980412c4b" category="paragraph">的內容是可能的<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> 組態檔案與執行後實際認可的檔案不同<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> 指令碼：若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：</block>
   <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">建立原則以檢視您的熱門搜尋結果</block>
   <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="sidebar">將目錄排除在掃描之外</block>
   <block id="6505788c29b47651fe2e94f0607a2ef7" category="section-title">超大型執行個體支援現已符合資格</block>
@@ -3249,7 +3214,6 @@
   <block id="f15da40a9b4a1b9d1900476ba761ddf8" category="cell"><block ref="98fbfccb7d937f28be2761c9fd869045" category="inline-link-rx"></block> （預設）</block>
   <block id="7c6b159592aa05d7d8934685f5b0c4c8" category="cell">32 個 CPU 、 128 GB RAM 、作業系統磁碟（ 2 、 048 GiB 、最低 250 MB/s 處理量）和資料磁碟（ 1 個 TiB SSD 、最低 750 MB/s 處理量）</block>
   <block id="f3c46003464601608d44d2644affcce1" category="paragraph">在 SaaS 模式中使用 BlueXP 時、會透過 HTTPS 提供與 BlueXP 的連線、而在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料則會使用 TLS 1.2 來保護端點對端加密、這表示 NetApp 和協力廠商無法讀取。</block>
-  <block id="522910fcbd37d9f1fe242ff7c7cde8db" category="paragraph">不可以在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料、都是使用 TLS 1.2 來保護端點對端點加密、這表示 NetApp 和協力廠商無法讀取。除非您要求並核准存取權限、否則 BlueXP 分類不會與 NetApp 分享任何資料或結果。</block>
   <block id="f943db85a7c2edd799890ddb18f29cab" category="doc">在無法存取網際網路的 Linux 主機上安裝 BlueXP 分類</block>
   <block id="e920147793c6514a998387c74226605b" category="paragraph">請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這類安裝最適合安全的站台。</block>
   <block id="8e75bb9e135d127903c8df1b4d72574d" category="list-text">下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本：</block>
@@ -3520,4 +3484,97 @@
   <block id="f146ec0537a829117da7d3ce3e588d3b" category="admonition">BlueXP 分類核心版本不支援從非 NetApp 檔案共用掃描資料。</block>
   <block id="d809bb142c0a96aef201dfc891e977e3" category="list-text">共享區可在任何地方代管、包括雲端或內部部署。舊版 NetApp 7-Mode 儲存系統的 CIFS 共用可掃描為檔案共用。</block>
   <block id="8fedda70275ec7ba2bbf1cf099d2a559" category="paragraph"><block ref="8fedda70275ec7ba2bbf1cf099d2a559" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1f976f12c87e7d413491bc2ea717ca3" category="inline-image-macro">螢幕擷取畫面顯示群組中每個掃描器節點的所有掃描器群組和 IP 位址。</block>
+  <block id="254be716f61cb4173917688092391cd9" category="paragraph"><block ref="254be716f61cb4173917688092391cd9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d287499aa4821b39ee4c1fbee3fb8bf" category="paragraph">BlueXP 分類可提供您資料的深入見解。您可以擷取這些洞見、並將其用於貴組織的需求。</block>
+  <block id="7d3c06dd12cabb9dbaf2d41b93d148c7" category="section-title">是否掃描駐留在 ONTAP 磁碟區上的快照？</block>
+  <block id="d041b324ecbc035762393b90f89e331b" category="paragraph">不可以在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料、都是使用 TLS 1.2 來確保端點對端加密的安全、這表示 NetApp 和非 NetApp 廠商無法讀取。除非您要求並核准存取權限、否則 BlueXP 分類不會與 NetApp 分享任何資料或結果。</block>
+  <block id="94f9509960db4da7c33e447627040c36" category="paragraph">類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、簡歷或員工合約等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。</block>
+  <block id="b01528e1880fb637601a6af0e12e237f" category="paragraph">此外、如果您計畫將資料從內部部署位置移轉至雲端、您可以在移動資料之前檢視資料大小、以及其中是否有任何資料包含敏感資訊。</block>
+  <block id="0d6f87888ce8ecaae88101ac2ce74b99" category="paragraph">您可以將游標放在每個區段上、以查看每個類別中的項目總數。</block>
+  <block id="6dddb9855aff5ba938a803fad44cc45e" category="paragraph">您可以將游標放在每個區段上、以查看每個類別中的檔案總數。按一下每個區域、即可在「調查」頁面中檢視篩選後的結果、以便進一步調查。</block>
+  <block id="7ae4efbbdd2f74c778120cfafe0d43a2" category="paragraph">您可以將游標放在圖表中的某個點上、以查看該類別中資料的存留期或大小的詳細資料。按一下以檢視根據該年齡或大小範圍篩選的所有檔案。</block>
+  <block id="9a5f838c2dd7ef4d943b30889f557531" category="paragraph">類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、「恢復」或「員工合約」等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。</block>
+  <block id="781de2ced798a15ae10aba6c21cb05e7" category="paragraph">資料對應報告概述儲存在企業資料來源中的資料、協助您做出移轉、備份、安全性及法規遵循程序等決策。報告會先列出概述、總結您所有的工作環境和資料來源、然後針對每個工作環境提供分析。</block>
+  <block id="9fdf01a1261d4a4e788383c1af9adaf2" category="paragraph">BlueXP 分類會產生 .pdf 報告、您可以視需要檢閱並傳送給其他群組。</block>
+  <block id="7478ade8cfb34d944424b511227fdfa2" category="paragraph">如果報告大於 1 MB 、 .pdf 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 .pdf 檔案。當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體、才能下載 .pdf 檔案。 <block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>。</block>
+  <block id="a271d225cad25b912ce5858124897ffe" category="paragraph">「資料探索評估報告」提供對掃描環境的高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。結果是根據資料的對應和分類而定。本報告的目標是提高對資料集三個重要層面的認知度：</block>
+  <block id="a5c44a10e9c98a0d20204951c490574b" category="paragraph">此功能適用於內部部署的 ONTAP 系統、 Cloud Volumes ONTAP 、 Azure NetApp Files 、適用於 ONTAP 的 FSX 、以及協力廠商檔案共用。</block>
+  <block id="cd0e4d172a3c3cc49c7d48effd234198" category="list-text">在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從三種系統大小中選擇。</block>
+  <block id="30786f70a10900b6a9d4fd46363a55cb" category="cell">500 GiB SSD on / 、 or
+-100 GiB 可在 /opt 上取得
+-395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/containers 或 Podman /var/lib/containers 上取得
+/tmp 上 5 GiB</block>
+  <block id="fb7aa8c3ffe50126e6eca8378926faad" category="cell">200 GiB SSD on / 、 or
+-50 GiB 可在 /opt 上取得
+-145 GiB 可在 /var/lib/泊 塢或 Podman /var/lib/container 上取得
+/tmp 上 5 GiB</block>
+  <block id="276dee9bc704113bddf51474d12b15ff" category="cell">100 GiB SSD on / 、 or
+-50 GiB 可在 /opt 上取得
+-45 GiB 可在 /var/lib/泊 塢或 Podman /var/lib/container 上取得
+/tmp 上 5 GiB</block>
+  <block id="b5f08a168a732355a95d9acdc430dcaf" category="list-text">* Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體類型 * ：我們建議使用「 m6i.4xLarge 」。 <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>。</block>
+  <block id="797b21f4662c52d1572473764912397d" category="paragraph">的內容是可能的<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> 組態檔案、與執行後實際認可的檔案不同<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> 指令碼：若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：</block>
+  <block id="f3d1244221881043e7d38d834935042d" category="inline-link">AWS ： Amazon Elastic Compute Cloud （ Amazon EC2 ）定價</block>
+  <block id="8de1990a68818d4a3c6e1ae7c064bcf9" category="list-text"><block ref="8de1990a68818d4a3c6e1ae7c064bcf9" category="inline-link-rx"></block></block>
+  <block id="e22ac25b066b201473de7aa700ef5d92" category="cell">定價</block>
+  <block id="b24ce0cd392a5b0b8dedc66c25213594" category="cell">免費</block>
+  <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="cell">容量</block>
+  <block id="1210ad5d6a7beaf8ab7fd7d0808a95ca" category="cell">限 500 TB</block>
+  <block id="a9cec06f0851d8f2722f032a0e63c115" category="cell">能夠查看檔案中的中繼資料 *</block>
+  <block id="4f40caf952f66945a674f638c61be8d9" category="paragraph">* 下列中繼資料會在對應掃描期間從檔案中擷取：</block>
+  <block id="10fd66f5b4802aee3a88de2a537a57b4" category="list-text">已用容量</block>
+  <block id="18de356008c3efffac62590fd7849509" category="list-text">檔案數量</block>
+  <block id="50ec28434e3dc1b37a0577b6d3f9bfe6" category="list-text">檔案建立</block>
+  <block id="cc7296b3deecc7ff6216732368393311" category="list-text">檔案上次存取</block>
+  <block id="a1870449a3811abcc8d02d43cec49cf2" category="list-text">上次修改的檔案</block>
+  <block id="5752d1aca2fb066ca51eb98052561289" category="list-text">檔案探索時間</block>
+  <block id="d9dc47834e451d5a23b2dd5638b1310b" category="list-text">權限擷取</block>
+  <block id="e64f4699e3677ec83e92eb7fc517d88b" category="paragraph">* 治理儀表板差異 * ：</block>
+  <block id="c8110422ac17b8559c40c507fe0bed65" category="cell">地圖與分類</block>
+  <block id="46f3ea056caa3126b91f3f70beea068c" category="cell">地圖</block>
+  <block id="58f9985309ad441d05540492b96a7afd" category="cell">過時資料</block>
+  <block id="60ba2191f39b045b2e7dd2bc96654d1c" category="cell">非商業資料</block>
+  <block id="959cab1cb99ef2d51c2197ef17b2105b" category="cell">重複的檔案</block>
+  <block id="0b0168bee54c0e61b8aa5a962967a322" category="cell">自訂原則</block>
+  <block id="369cd14037692c6f09dcfda1b4ac8ed3" category="cell">DDA 報告</block>
+  <block id="ea8d76cdda2904dcca99873fc91b4643" category="cell">對應報告</block>
+  <block id="31b12a0b18d3e31cef5bf330060e1485" category="cell">靈敏度等級偵測</block>
+  <block id="eeb19f8ceecc074a02badf8ee06710b5" category="cell">具有廣泛權限的機密資料</block>
+  <block id="6c8173b9fd1df4291ec6a95f705c54f4" category="cell">資料存留期</block>
+  <block id="f737cdef2fd67e0953a5953ca506b30c" category="cell">資料大小</block>
+  <block id="5155139afba6f744102515d13f1c5578" category="paragraph">* 法規遵循儀表板差異 * ：</block>
+  <block id="74a8dd8ef4ee037974b7843898eabfcd" category="cell">隱私風險評估報告</block>
+  <block id="ba7cad27cdcf17f7da95938585ca2071" category="paragraph">* 調查篩選差異 * ：</block>
+  <block id="f1be55e10a484bdeb7e4eae576688474" category="cell">上次存取</block>
+  <block id="4797f8fb709b9cdf801351bca3181105" category="cell">檔案目錄路徑</block>
+  <block id="76596c862fd4cd497cf2a3ea36b26c43" category="cell">分類狀態</block>
+  <block id="fb8a04662bc42d13ae8a2d1bddbc05b3" category="cell">狀態永遠是「有限見解」</block>
+  <block id="29344a3c58cf84dcf0144a3627f021d1" category="cell">檔案雜湊</block>
+  <block id="4df26807127a67f2d98166e4384eea07" category="cell">使用者 / 群組權限</block>
+  <block id="922dab0122736d5f9b503433210903c7" category="list-text">BlueXP 分類使用 AI 從文件中擷取人員的自然名稱。 <block ref="3e345053a8e9ce1c3eacafd31ce8d78d" category="inline-link-macro-rx"></block>。</block>
+  <block id="c1de1b0548f24874b79874a91bd0f05a" category="paragraph">檔案的評分是根據具有X軸存取檔案權限的使用者人數（最低至最高）、以及Y軸上檔案中的敏感識別碼數量（最低至最高）。區塊代表與X和Y軸項目相符的檔案數量。較淺的色塊很好；使用者較少、每個檔案的機密識別碼較少。較暗的區塊是您可能想要調查的項目。例如、下方畫面會顯示深藍色區塊的工具提示文字。這表示您有1、500個檔案、其中751-100個使用者可以存取、其中每個檔案有501-100個敏感識別碼。</block>
+  <block id="d4af8d75643e49d82b42b7eb654ed0c7" category="summary">您可以在 BlueXP 分類中管理資料在每個工作環境和資料來源中的掃描方式。您可以在「儲存庫」基礎上進行變更、也就是說、您可以針對每個磁碟區、儲存區、共用區、架構、使用者、 等等、視您要掃描的資料來源類型而定。</block>
+  <block id="e415c7da5280de793049e6b59816274d" category="paragraph">您可以在「組態」頁面上檢視每個工作環境的掃描狀態：</block>
+  <block id="209f3dabc722accc7b4db77a133ef209" category="list-text">* 初始化 * （淺藍色點）：地圖或分類組態已啟動。這會在開始「擱置佇列」狀態之前顯示數秒。</block>
+  <block id="fbbc6bcf9c53aaad4b5476065f315bb1" category="list-text">* 擱置佇列 * （橘色點）：掃描工作正在等待列在掃描佇列中。</block>
+  <block id="ea7971f9c02e5fa9234d7af5cd0b34c7" category="list-text">* 佇列 * （橘色點）：工作已成功新增至掃描佇列。當磁碟區在佇列中的轉彎到達時、系統會開始對其進行對應或分類。</block>
+  <block id="863f25b6c394057a4286fa671cfd048b" category="list-text">* 執行中 * （綠點）：目前正在選取的儲存儲存儲存庫上執行佇列中的掃描工作。</block>
+  <block id="1110cfca2e7c6a5f3e560597c03abeab" category="list-text">* 完成 * （綠點）：儲存儲存儲存庫的掃描已完成。</block>
+  <block id="da30b4408b5e1540ac02763204c943ad" category="list-text">* 暫停 * （灰點）：您選擇了「暫停」選項來暫停掃描。雖然系統中不會顯示 Volume 的變更、但仍會顯示掃描的深入資訊。</block>
+  <block id="7eac8ad7bb67a204924dcc6a4113f103" category="list-text">* 錯誤 * （紅點）：掃描無法完成、因為發生問題。如果您需要完成某項動作、錯誤會出現在工具提示的「必要動作」欄下方。  否則、系統會顯示「錯誤」狀態並嘗試恢復。完成時、狀態會變更。</block>
+  <block id="4c5b4656410d347cf852f162490f2e15" category="list-text">* 不掃描 * ：已選取「關閉」的磁碟區組態、系統並未掃描磁碟區。</block>
+  <block id="bf5237098b7bb15bc07f1d47863a9b8a" category="section-title">2024 年 6 月 5 日（版本 1.32 ）</block>
+  <block id="b9620e9aadf9827ac9bb29001772b3f0" category="paragraph">此版本包含下列更新。</block>
+  <block id="b83927d03444ee961e834ea1c3b0581b" category="section-title">對應掃描會收集中繼資料</block>
+  <block id="6c7aa72b096dc637dbeefccf15ca45f8" category="paragraph">下列中繼資料會在對應掃描期間從檔案中擷取、並顯示在 Governance 、 Compliance 和 Investigation 儀表板上：</block>
+  <block id="240625d3ff2ba7b1a3949f7ddfb468d3" category="section-title">儀表板中的其他資料</block>
+  <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">此版本會在地圖繪製掃描期間、更新 Governance 、 Compliance 和 Investigation 儀表板中顯示的資料。</block>
+  <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">對應和分類掃描之間有何差異</block>
+  <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">如需詳細資訊、請參閱<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
+  <block id="7910c8307cac3d62eca8ac0d42301b38" category="section-title">「組態」頁面中的「新對應」狀態欄</block>
+  <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">此版本現在會在「組態」頁面中顯示新的「對應」狀態欄。新欄可協助您識別對應是否正在執行、佇列中、暫停或更多。</block>
+  <block id="2f94c0116c501abdbd5c76ddef86d94a" category="paragraph">如需狀態的說明、請參閱<block ref="cacd3972a6d9bfb8b2d3cde3ba576e77" category="inline-link-rx"></block>。</block>
+  <block id="d37bdc46b0a428edd8f0ab35c24067ea" category="paragraph">設定某些資料來源（如下所列）時、您需要輸入 Active Directory 認證、以便 BlueXP 分類掃描 CIFS 磁碟區。這項整合可提供 BlueXP 分類、其中包含檔案擁有者和位於這些資料來源中資料的權限詳細資料。為這些資料來源輸入的 Active Directory 可能與您在此處輸入的全域 Active Directory 認證不同。BlueXP 分類將在所有整合式 Active Directory 中查看使用者和權限詳細資料。</block>
+  <block id="70f05bdab0f283eaffba98f53fceb776" category="paragraph">對於 CIFS 磁碟區 / 檔案共用、如果您想要確保 BlueXP 分類掃描不會變更檔案「上次存取時間」、建議使用者擁有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
 </blocks>

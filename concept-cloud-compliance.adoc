@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept-cloud-compliance.html 
-keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning, aip labels, governance, cloud data sense, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning,  governance, cloud data sense, data sense, privacy control, classification, optimization, cloud data sense, bluexp 
 summary: BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。 
 ---
 = 瞭解 BlueXP 分類
@@ -121,7 +121,7 @@ BlueXP 分類現在可以免費使用。不需要分類授權或付費訂閱。
 
 資料傳輸成本取決於您的設定。如果 BlueXP 分類執行個體和資料來源位於相同的可用性區域和區域、則不會產生資料傳輸成本。但是、如果資料來源（例如 Cloud Volumes ONTAP 系統）位於 _ 不同 _ 的可用性區域或區域、則您的雲端供應商會向您收取資料傳輸成本。如需詳細資料、請參閱以下連結：
 
-* https://aws.amazon.com/ec2/pricing/on-demand/["AWS ： Amazon EC2 定價"^]
+* https://aws.amazon.com/ec2/pricing/on-demand/["AWS ： Amazon Elastic Compute Cloud （ Amazon EC2 ）定價"^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure ：頻寬定價詳細資料"^]
 * https://cloud.google.com/storage-transfer/pricing["Google Cloud：儲存傳輸服務定價"^]
 
@@ -219,6 +219,12 @@ BlueXP 分類可讓您在選定的資料來源上執行一般的「對應」掃�
 | 掃描速度 | 慢 | 快速 
 
 
+| 定價 | 免費 | 免費 
+
+
+| 容量 | 限 500 TB | 限 500 TB 
+
+
 | 檔案類型和已用容量的清單 | 是的 | 是的 
 
 
@@ -241,6 +247,178 @@ BlueXP 分類可讓您在選定的資料來源上執行一般的「對應」掃�
 
 
 | 執行其他報告的能力 | 是的 | 否 
+
+
+| 能夠查看檔案中的中繼資料 * | 否 | 是的 
+|===
+* 下列中繼資料會在對應掃描期間從檔案中擷取：
+
+* 工作環境
+* 工作環境類型
+* 儲存儲存庫
+* 檔案類型
+* 已用容量
+* 檔案數量
+* 檔案大小
+* 檔案建立
+* 檔案上次存取
+* 上次修改的檔案
+* 檔案探索時間
+* 權限擷取
+
+
+* 治理儀表板差異 * ：
+
+[cols="47,18,18"]
+|===
+| 功能 | 地圖與分類 | 地圖 
+
+
+| 過時資料 | 是的 | 是的 
+
+
+| 非商業資料 | 是的 | 是的 
+
+
+| 重複的檔案 | 是的 | 否 
+
+
+| 預先定義的原則 | 是的 | 否 
+
+
+| 自訂原則 | 是的 | 是的 
+
+
+| DDA 報告 | 是的 | 是的 
+
+
+| 對應報告 | 是的 | 是的 
+
+
+| 靈敏度等級偵測 | 是的 | 否 
+
+
+| 具有廣泛權限的機密資料 | 是的 | 否 
+
+
+| 開放式權限 | 是的 | 是的 
+
+
+| 資料存留期 | 是的 | 是的 
+
+
+| 資料大小 | 是的 | 是的 
+
+
+| 類別 | 是的 | 否 
+
+
+| 檔案類型 | 是的 | 是的 
+|===
+* 法規遵循儀表板差異 * ：
+
+[cols="47,18,18"]
+|===
+| 功能 | 地圖與分類 | 地圖 
+
+
+| 個人資訊 | 是的 | 否 
+
+
+| 敏感的個人資訊 | 是的 | 否 
+
+
+| 隱私風險評估報告 | 是的 | 否 
+
+
+| HIPAA 報告 | 是的 | 否 
+
+
+| PCI DSS 報告 | 是的 | 否 
+|===
+* 調查篩選差異 * ：
+
+[cols="47,18,18"]
+|===
+| 功能 | 地圖與分類 | 地圖 
+
+
+| 原則 | 是的 | 是的 
+
+
+| 工作環境類型 | 是的 | 是的 
+
+
+| 工作環境 | 是的 | 是的 
+
+
+| 儲存儲存庫 | 是的 | 是的 
+
+
+| 檔案類型 | 是的 | 是的 
+
+
+| 檔案大小 | 是的 | 是的 
+
+
+| 建立時間 | 是的 | 是的 
+
+
+| 探索到的時間 | 是的 | 是的 
+
+
+| 上次修改時間 | 是的 | 是的 
+
+
+| 上次存取 | 是的 | 是的 
+
+
+| 開放式權限 | 是的 | 是的 
+
+
+| 檔案目錄路徑 | 是的 | 是的 
+
+
+| 類別 | 是的 | 否 
+
+
+| 敏感度等級 | 是的 | 否 
+
+
+| 識別碼數目 | 是的 | 否 
+
+
+| 個人資料 | 是的 | 否 
+
+
+| 敏感的個人資料 | 是的 | 否 
+
+
+| 資料主旨 | 是的 | 否 
+
+
+| 重複項目 | 是的 | 否 
+
+
+| 分類狀態 | 是的 | 狀態永遠是「有限見解」 
+
+
+| 掃描分析事件 | 是的 | 是的 
+
+
+| 檔案雜湊 | 是的 | 是的 
+
+
+| 擁有存取權的使用者人數 | 是的 | 是的 
+
+
+| 使用者 / 群組權限 | 是的 | 是的 
+
+
+| 檔案擁有者 | 是的 | 是的 
+
+
+| 目錄類型 | 是的 | 是的 
 |===
 
 
@@ -263,7 +441,7 @@ BlueXP 分類會收集、索引及指派類別給您的資料（檔案）。Blue
 敏感的個人資料:: GDPR 及其他隱私權法規所定義的特殊敏感資訊類型、例如健康資料、族群來源或政治見解。 link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["深入瞭解敏感的個人資料"^]。
 類別:: BlueXP 分類會將掃描的資料分成不同類型的類別。類別是以 AI 分析每個檔案的內容和中繼資料為基礎的主題。 link:task-controlling-private-data.html#view-files-by-categories["深入瞭解類別"^]。
 類型:: BlueXP 分類會根據檔案類型來記錄掃描的資料、並加以細分。 link:task-controlling-private-data.html#view-files-by-file-types["深入瞭解類型"^]。
-名稱實體辨識:: BlueXP 分類使用 AI 從文件中擷取自然人姓名。 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["瞭解如何回應資料主體存取要求"^]。
+名稱實體辨識:: BlueXP 分類使用 AI 從文件中擷取人員的自然名稱。 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["瞭解如何回應資料主體存取要求"^]。
 
 
 

@@ -52,7 +52,7 @@ BlueXP 分類在對資料來源和工作環境中的資料執行分類掃描時�
 
 image:screenshot_scan_missing_permissions.png["螢幕擷取畫面會顯示您可以用來讓 BlueXP 分類掃描檔案的切換器、即使該切換器沒有正確的權限、也能將上次存取時間還原為原始時間戳記。"]
 
-此功能適用於內部部署ONTAP 的不間斷支援、Cloud Volumes ONTAP 例如：支援Azure NetApp Files 功能的內部系統、支援功能、支援功能、支援ONTAP 功能、以及非NetApp檔案共享。
+此功能適用於內部部署的 ONTAP 系統、 Cloud Volumes ONTAP 、 Azure NetApp Files 、適用於 ONTAP 的 FSX 、以及協力廠商檔案共用。
 
 請注意、「調查」頁面中有一個稱為「掃描分析事件」的篩選器、可讓您顯示未分類的檔案、因為 BlueXP 分類無法還原上次存取的時間、 或者、即使 BlueXP 分類也無法還原上次存取時間、但仍被分類的檔案。
 

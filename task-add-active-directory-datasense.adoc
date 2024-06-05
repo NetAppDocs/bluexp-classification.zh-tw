@@ -16,7 +16,7 @@ summary: 您可以將全域 Active Directory 與 BlueXP 分類整合、以強化
 [role="lead"]
 您可以將全域 Active Directory 與 BlueXP 分類整合、以強化 BlueXP 分類報告的檔案擁有者、以及哪些使用者和群組可以存取您的檔案的結果。
 
-設定某些資料來源（如下所列）時、您需要輸入 Active Directory 認證、以便 BlueXP 分類掃描 CIFS 磁碟區。這項整合可提供 BlueXP 分類、其中包含檔案擁有者和位於這些資料來源中資料的權限詳細資料。針對這些資料來源輸入的Active Directory可能與您在此輸入的全域Active Directory認證不同。BlueXP 分類將在所有整合式 Active Directory 中查看使用者和權限詳細資料。
+設定某些資料來源（如下所列）時、您需要輸入 Active Directory 認證、以便 BlueXP 分類掃描 CIFS 磁碟區。這項整合可提供 BlueXP 分類、其中包含檔案擁有者和位於這些資料來源中資料的權限詳細資料。為這些資料來源輸入的 Active Directory 可能與您在此處輸入的全域 Active Directory 認證不同。BlueXP 分類將在所有整合式 Active Directory 中查看使用者和權限詳細資料。
 
 這項整合在 BlueXP 分類的下列位置提供其他資訊：
 
@@ -51,7 +51,7 @@ Active Directory 與 BlueXP 分類的整合可從下列資料來源識別資料�
 
 Active Directory 認證可以是唯讀的、但提供管理認證可確保 BlueXP 分類能夠讀取任何需要提高權限的資料。認證會儲存在 BlueXP 分類執行個體上。
 
-對於 CIFS 磁碟區 / 檔案共用、如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、我們建議使用者擁有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
+對於 CIFS 磁碟區 / 檔案共用、如果您想要確保 BlueXP 分類掃描不會變更檔案「上次存取時間」、建議使用者擁有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
 
 .需求
 * 您必須已為公司中的使用者設定Active Directory。

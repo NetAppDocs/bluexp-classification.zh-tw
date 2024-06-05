@@ -52,6 +52,6 @@ summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、�
 
 == 檢視目前的群組 ID 清單
 
-的內容是可能的 `data_provider.yaml` 組態檔案與執行後實際認可的檔案不同 `update_data_providers_from_config_file.sh` 指令碼：若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
+的內容是可能的 `data_provider.yaml` 組態檔案、與執行後實際認可的檔案不同 `update_data_providers_from_config_file.sh` 指令碼：若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
 
  get_data_providers_configuration.sh
