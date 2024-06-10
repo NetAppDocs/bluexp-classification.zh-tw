@@ -51,8 +51,6 @@ sidebar:
         url: "/task-scanning-file-shares.html"
     - title: 整合Active Directory
       url: "/task-add-active-directory-datasense.html"
-    - title: 設定授權
-      url: "/task-licensing-datasense.html"
     - title: 常見問題集
       url: "/faq-cloud-compliance.html"
   - title: 使用 BlueXP 分類
@@ -91,8 +89,6 @@ sidebar:
         url: "/task-deploy-multi-host-install-dark-site.html"
       - title: 將掃描器節點新增至現有部署
         url: "/task-deploy-add-scanner-nodes.html"
-      - title: 設定免費試用版或自帶授權
-        url: "/task-licensing-byol-freetrial.html"
     - title: 掃描資料過時
       entries:
       - title: 掃描 Amazon S3 儲存區

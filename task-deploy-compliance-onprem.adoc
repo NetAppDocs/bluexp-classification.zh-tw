@@ -62,10 +62,6 @@ NOTE: 如需舊版 1.30 及更早版本、若要新增掃描器節點、請參�
 [role="quick-margin-para"]
 從 NetApp 支援網站 下載雲端 BlueXP 分類軟體、並將安裝程式檔案複製到您打算使用的 Linux 主機。然後啟動安裝精靈、並依照提示部署 BlueXP 分類執行個體。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 訂閱 BlueXP 分類服務
-[role="quick-margin-para"]
-您必須訂閱雲端供應商服務商場。
-
 
 
 == 建立連接器
@@ -428,5 +424,3 @@ BlueXP 分類安裝程式會安裝套件、登錄安裝、並安裝 BlueXP 分�
 
 .下一步
 您可以從「組態」頁面選取要掃描的資料來源。
-
-您也可以 link:task-licensing-datasense.html["設定 BlueXP 分類的授權"] 目前。即使 30 天免費試用期結束、您也不會被收取費用。

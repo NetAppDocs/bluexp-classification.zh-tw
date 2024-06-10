@@ -69,10 +69,6 @@ BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新�
 [role="quick-margin-para"]
 從 NetApp 支援網站 下載 BlueXP 分類軟體、並將安裝程式檔案複製到您打算使用的 Linux 主機。然後啟動安裝精靈、並依照提示部署 BlueXP 分類執行個體。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 訂閱 BlueXP 分類服務
-[role="quick-margin-para"]
-您必須訂閱雲端供應商服務商場。
-
 
 
 == 安裝BlueXP Connector
@@ -375,8 +371,6 @@ BlueXP 分類安裝程式會安裝套件、登錄安裝、並安裝 BlueXP 分�
 .下一步
 在「組態」頁面中、您可以選取本機 link:task-getting-started-compliance.html["內部ONTAP 部署的叢集"] 和 link:task-scanning-databases.html["資料庫"] 您想要掃描的。
 
-您也可以 link:task-licensing-datasense.html["設定 BlueXP 分類的 BYOL 授權"] 目前從 BlueXP 數位錢包頁面。30天免費試用期結束前、您將不需付費。
-
 
 
 == 升級 BlueXP 分類軟體
@@ -422,7 +416,5 @@ start_darksite_upgrade.sh
 
 .結果
 BlueXP 分類軟體會在您的主機上升級。更新可能需要5到10分鐘的時間。
-
-請注意、如果您已在多個主機系統上部署 BlueXP 分類來掃描非常大型的組態、則無需在掃描器節點上進行升級。
 
 您可以檢查 BlueXP 分類 UI 頁面底部的版本、以確認軟體已更新。

@@ -202,5 +202,3 @@ image:screenshot_work_env_id.png["BlueXP 分類組態頁面中工作環境 ID �
 您也可以在「組態」頁面底部查看所有掃描器群組的清單、以及群組中每個掃描器節點的IP位址和狀態。
 
 image:screenshot_scanner_groups.png["螢幕擷取畫面顯示群組中每個掃描器節點的所有掃描器群組和 IP 位址。"]
-
-您可以 link:task-licensing-datasense.html["設定 BlueXP 分類的授權"] 目前。30天免費試用期結束前、您將不需付費。
