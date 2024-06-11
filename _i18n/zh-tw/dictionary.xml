@@ -3379,10 +3379,8 @@
   <block id="3ef1f7ef6e40406c6da9ebbf30881295" category="paragraph">由於單一Google雲端硬碟帳戶只有單一使用者的Google雲端硬碟檔案、因此如果您想要停止掃描使用者Google雲端硬碟帳戶的檔案、您應該這樣做 <block ref="5f8a68577631fb4846e68096e5a718cb" category="inline-link-macro-rx"></block>。</block>
   <block id="470ff04800cc0e7e4547c6f8184436fa" category="admonition">若為舊版 1.30 及更早版本、如果您需要在多部主機上安裝 BlueXP 分類、請參閱 <block ref="94ed65ad8557cbd4dade332ad2e77a61" category="inline-link-macro-rx"></block>。</block>
   <block id="991ebd87a81ed22c3d81251fd13ad652" category="paragraph">目前不支援在私有模式下部署 BlueXP 分類時、掃描 Cloud Volumes ONTAP 、 Azure NetApp Files 或 FSX for ONTAP 帳戶。</block>
-  <block id="806f5ac1a8b4e82bb0bb458ed4a8f577" category="paragraph">BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="03a7f11cb6270c0421715ee58cbcdb85" category="inline-link-rx"></block> 和 <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="3fba2d2072ada5e4a305ed49625f7c97" category="paragraph">如果您使用多個 BlueXP 分類主機來提供額外的處理能力來掃描資料來源、則需要啟用其他連接埠 / 通訊協定。 <block ref="8ab506a6f74eff926eb35a8eb7627a1d" category="inline-link-macro-rx"></block>。</block>
   <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">對於一般組態、您將在單一主機系統上安裝軟體。</block>
-  <block id="8cf455ffbc4c9c6d2cfe61097a812701" category="list-text">我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。<block ref="bc80efc6b3afb0a245df87934f8f3cd1" category="inline-link-rx"></block>。</block>
   <block id="279ac5dd73c3a5783ebeb10e172c4f38" category="paragraph">重要</block>
   <block id="a14a0ee1284c6c34c6c0305b52963e2f" category="paragraph">從 2024 年 5 月開始、 BlueXP 分類為 BlueXP 的核心功能、無需額外付費。不需要分類授權或訂閱。我們也將 BlueXP 分類功能集中在 NetApp 儲存系統上、因此部分未使用或未充分使用的功能已被淘汰。</block>
   <block id="9b17860ccc87d28d839931769a5af6ee" category="inline-link-macro">請參閱過時功能的清單</block>
@@ -3559,4 +3557,6 @@
   <block id="bf353be94d6ba74709e3d127af6ba1a6" category="paragraph">下列問題與使用 BlueXP 分類的授權和成本有關。</block>
   <block id="b660413c1fbf79ce31a119db078401fe" category="paragraph">此版本包含下列更新。</block>
   <block id="ee817e39b08fa171d62efb8f7b4143b2" category="admonition">BlueXP 分類核心版本不支援與 Active Directory 整合。</block>
+  <block id="14aa1b744a832a1cebfb9dd4d34b809d" category="paragraph">BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="29c5c6557943f5249ffe666c6e468ce9" category="inline-link-rx"></block> 和 <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>。</block>
+  <block id="8a39158958544ff49d3dc95bad3f3a82" category="list-text">我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。<block ref="4abf459c8cfa6d4ca98cecc130eefa9a" category="inline-link-rx"></block>。</block>
 </blocks>

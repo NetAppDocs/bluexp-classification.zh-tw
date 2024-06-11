@@ -47,7 +47,7 @@ NOTE: 若為舊版 1.30 及更早版本、如果您需要在多部主機上安�
 * 使用 BlueXP 複製與同步處理來複製及同步處理來源檔案
 * 從BlueXP自動升級軟體
 +
-BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 link:whats-new.html["BlueXP 分類版本資訊"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["升級BlueXP Connector"^] 和 <<升級 BlueXP 分類軟體,升級 BlueXP 分類軟體>>。
+BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 link:whats-new.html["BlueXP 分類版本資訊"] 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行 https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["升級BlueXP Connector"^] 和 <<升級 BlueXP 分類軟體,升級 BlueXP 分類軟體>>。
 
 
 
@@ -378,7 +378,7 @@ BlueXP 分類安裝程式會安裝套件、登錄安裝、並安裝 BlueXP 分�
 由於 BlueXP 分類軟體定期更新新功能、因此您應該定期檢查新版本、以確保您使用的是最新的軟體和功能。您需要手動升級 BlueXP 分類軟體、因為沒有網際網路連線功能可自動執行升級。
 
 .開始之前
-* 我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["請參閱連接器升級步驟"^]。
+* 我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-upgrade-connector.html["請參閱連接器升級步驟"^]。
 * 從 BlueXP 分級版本 1.24 開始、您可以升級至任何未來版本的軟體。
 +
 如果您的 BlueXP 分類軟體執行的版本早於 1.24 、您一次只能升級一個主要版本。例如、如果您已安裝 1.21.x 版、則只能升級至 1.22.x如果您落後幾個主要版本、就必須多次升級軟體。
