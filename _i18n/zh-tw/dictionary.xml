@@ -1812,9 +1812,6 @@
   <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">大</block>
   <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">16個CPU</block>
   <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64 GB RAM</block>
-  <block id="bef6aed074693bd02885fa89c8b418f0" category="cell">8個CPU</block>
-  <block id="70eb72cfa1dbdb5556e79344f161d62a" category="cell">32 GB RAM</block>
-  <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB RAM</block>
   <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">如果您使用Proxy存取網際網路：</block>
   <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">您需要Proxy伺服器資訊（IP位址或主機名稱、連線連接埠、連線配置：HTTPS或http、使用者名稱和密碼）。</block>
   <block id="829124a47242d374aed9d0704a781736" category="paragraph">在內部部署的Linux主機_上的典型安裝具有下列元件和連線。</block>
@@ -1863,8 +1860,6 @@
   <block id="088be43867eaac29f74142859d1e2a13" category="paragraph">執行 Prerequisites 指令碼時、您需要 Connector 系統的 IP 位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">驗證主機需求</block>
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">* 大 *</block>
-  <block id="f3e6e184202c9901024fa409f2c24cb1" category="cell">* 中 *</block>
-  <block id="e8ae9f0392263b55e4580177a75c948e" category="cell">* 小 *</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">請參閱其他 AWS 執行個體類型</block>
   <block id="130a6b20e1175876fb22c9520aa18c8c" category="inline-link-macro">請參閱其他 Azure 執行個體類型</block>
   <block id="d713d26696157989a3e54d75e186ddb9" category="list-text">* Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。 <block ref="600a0a16acacbb97202eae2cd680ce79" category="inline-link-macro-rx"></block>。</block>
@@ -3053,7 +3048,6 @@
 -100 GiB 可在 /opt 上取得
 -895 GiB 可在 /var/lib/泊 塢視窗中取得
 /tmp 上 5 GiB</block>
-  <block id="7e6ae7e8de71f1a36043487bc45a85eb" category="paragraph">請注意、使用較小系統時會有限制。請參閱 <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="7644f60fe7823935bde3cbe9f9e82bf8" category="section-title">使用AIP標籤將資料分類</block>
   <block id="0ed54f1d736772cdfa10d041612c19cc" category="section-title">將 AIP 標籤整合到您的工作空間中</block>
   <block id="dc868ca3e5d8a2a78f0a032d630be98e" category="section-title">檢視檔案中的 AIP 標籤</block>
@@ -3126,7 +3120,6 @@
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">檢視包含私人資訊的檔案</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">檢視儲存設備中重複的檔案</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">篩選資料以檢視特定檔案</block>
-  <block id="40af1406afc061038f5851961a636714" category="sidebar">找到不合規的資料時、請建立電子郵件警示</block>
   <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">回應資料主旨存取要求</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">部落格與社群</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp社群</block>
@@ -3484,18 +3477,9 @@
   <block id="7478ade8cfb34d944424b511227fdfa2" category="paragraph">如果報告大於 1 MB 、 .pdf 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 .pdf 檔案。當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體、才能下載 .pdf 檔案。 <block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>。</block>
   <block id="a271d225cad25b912ce5858124897ffe" category="paragraph">「資料探索評估報告」提供對掃描環境的高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。結果是根據資料的對應和分類而定。本報告的目標是提高對資料集三個重要層面的認知度：</block>
   <block id="a5c44a10e9c98a0d20204951c490574b" category="paragraph">此功能適用於內部部署的 ONTAP 系統、 Cloud Volumes ONTAP 、 Azure NetApp Files 、適用於 ONTAP 的 FSX 、以及協力廠商檔案共用。</block>
-  <block id="cd0e4d172a3c3cc49c7d48effd234198" category="list-text">在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從三種系統大小中選擇。</block>
   <block id="30786f70a10900b6a9d4fd46363a55cb" category="cell">500 GiB SSD on / 、 or
 -100 GiB 可在 /opt 上取得
 -395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/containers 或 Podman /var/lib/containers 上取得
-/tmp 上 5 GiB</block>
-  <block id="fb7aa8c3ffe50126e6eca8378926faad" category="cell">200 GiB SSD on / 、 or
--50 GiB 可在 /opt 上取得
--145 GiB 可在 /var/lib/泊 塢或 Podman /var/lib/container 上取得
-/tmp 上 5 GiB</block>
-  <block id="276dee9bc704113bddf51474d12b15ff" category="cell">100 GiB SSD on / 、 or
--50 GiB 可在 /opt 上取得
--45 GiB 可在 /var/lib/泊 塢或 Podman /var/lib/container 上取得
 /tmp 上 5 GiB</block>
   <block id="b5f08a168a732355a95d9acdc430dcaf" category="list-text">* Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體類型 * ：我們建議使用「 m6i.4xLarge 」。 <block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>。</block>
   <block id="797b21f4662c52d1572473764912397d" category="paragraph">的內容是可能的<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block> 組態檔案、與執行後實際認可的檔案不同<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block> 指令碼：若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：</block>
@@ -3559,4 +3543,5 @@
   <block id="ee817e39b08fa171d62efb8f7b4143b2" category="admonition">BlueXP 分類核心版本不支援與 Active Directory 整合。</block>
   <block id="14aa1b744a832a1cebfb9dd4d34b809d" category="paragraph">BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="29c5c6557943f5249ffe666c6e468ce9" category="inline-link-rx"></block> 和 <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="8a39158958544ff49d3dc95bad3f3a82" category="list-text">我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。<block ref="4abf459c8cfa6d4ca98cecc130eefa9a" category="inline-link-rx"></block>。</block>
+  <block id="914179b3d4545ce8b8e8ba122c53f4d9" category="list-text">在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從這些系統大小中進行選擇。</block>
 </blocks>

@@ -45,8 +45,6 @@ indexpage:
       url: task-using-policies.html
     - title: 產生法規遵循報告
       url: task-generating-compliance-reports.html
-    - title: 找到不合規的資料時、請建立電子郵件警示
-      url: task-using-policies.html
     - title: 回應資料主旨存取要求
       url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
   - title: 過時的功能

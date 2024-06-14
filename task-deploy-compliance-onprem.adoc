@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense, cds 
 summary: 請完成幾個步驟、在您網路中的 Linux 主機或雲端中有網際網路存取權的 Linux 主機上安裝 BlueXP 分類。您必須在網路或雲端中手動部署Linux主機、才能完成此安裝。 
 ---
 = 在可存取網際網路的主機上安裝 BlueXP 分類
@@ -95,7 +95,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 確保您可以繼續執行 BlueXP 分類。BlueXP 分類機器必須持續運作、才能持續掃描您的資料。
 
 * 與其他應用程式共用的主機不支援 BlueXP 分類、主機必須是專用主機。
-* 在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從三種系統大小中選擇。
+* 在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從這些系統大小中進行選擇。
 +
 [cols="17,17,27,31"]
 |===
@@ -112,22 +112,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 -100 GiB 可在 /opt 上取得
 -395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/containers 或 Podman /var/lib/containers 上取得
 /tmp 上 5 GiB 
-
-
-| * 中 * | 8個CPU | 32 GB RAM | 200 GiB SSD on / 、 or
--50 GiB 可在 /opt 上取得
--145 GiB 可在 /var/lib/泊 塢或 Podman /var/lib/container 上取得
-/tmp 上 5 GiB 
-
-
-| * 小 * | 8個CPU | 16 GB RAM | 100 GiB SSD on / 、 or
--50 GiB 可在 /opt 上取得
--45 GiB 可在 /var/lib/泊 塢或 Podman /var/lib/container 上取得
-/tmp 上 5 GiB 
 |===
-+
-請注意、使用較小系統時會有限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
-
 * 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
 +
 ** * Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體類型 * ：我們建議使用「 m6i.4xLarge 」。 link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
