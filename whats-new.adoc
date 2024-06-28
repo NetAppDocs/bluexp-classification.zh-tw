@@ -18,6 +18,46 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 
 
+== 2024 年 7 月 1 日（版本 1.33 ）
+
+此版本包含下列更新。
+
+
+
+=== 支援 Ubuntu
+
+此版本支援 Ubuntu 24.04 Linux 平台。
+
+
+
+=== 對應掃描會收集中繼資料
+
+下列中繼資料會在對應掃描期間從檔案中擷取、並顯示在 Governance 、 Compliance 和 Investigation 儀表板上：
+
+* 工作環境
+* 工作環境類型
+* 儲存儲存庫
+* 檔案類型
+* 已用容量
+* 檔案數量
+* 檔案大小
+* 檔案建立
+* 檔案上次存取
+* 上次修改的檔案
+* 檔案探索時間
+* 權限擷取
+
+
+
+
+=== 儀表板中的其他資料
+
+此版本會在地圖繪製掃描期間、更新 Governance 、 Compliance 和 Investigation 儀表板中顯示的資料。
+
+如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["對應和分類掃描之間有何差異"]
+
+
+
 == 2024 年 6 月 5 日（版本 1.32 ）
 
 此版本包含下列更新。
