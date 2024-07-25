@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense, cds 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, bluexp classification, docker, podman, install bluexp classification, cloud data sense, cds, linux host 
 summary: 請完成幾個步驟、在您網路中的 Linux 主機或雲端中有網際網路存取權的 Linux 主機上安裝 BlueXP 分類。您必須在網路或雲端中手動部署Linux主機、才能完成此安裝。 
 ---
 = 在可存取網際網路的主機上安裝 BlueXP 分類
@@ -171,7 +171,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS 上安裝 Docker 。
 
-*** Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 (`sudo yum update -y`）、然後安裝 Podman (`sudo yum install netavark -y`）。
+*** Podman 版本 4 或更新版本。若要安裝 Podman 、請輸入 (`sudo yum install podman netavark -y`）。
 
 
 

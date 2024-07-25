@@ -3163,7 +3163,6 @@
   <block id="8e75bb9e135d127903c8df1b4d72574d" category="list-text">下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本：</block>
   <block id="17809026adc94f6c0d618b91e6379bec" category="list-text">Red Hat Enterprise Linux 版本 8.8 、 9.0 、 9.1 、 9.2 及 9.3</block>
   <block id="57da374715d9745b4dd1b2494e49b1c4" category="paragraph">請注意、目前使用 RHEL 8.x 和 RHEL 9.x 時不支援下列功能：</block>
-  <block id="555c829e9c93dc526a387388830a8e53" category="list-text">Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 <block ref="2331e8e9c17f410bdfc0aa461e9aa2b7" prefix="(" category="inline-code"></block>）、然後安裝 Podman <block ref="f93cc32458404a89e1885eee2d68276f" prefix="(" category="inline-code"></block>）。</block>
   <block id="bf9330c0401cb1794286325e86e14bc1" category="paragraph">BlueXP 分類支援 NFS 3.x 版和 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。</block>
   <block id="8da041e8fe3c0d961b0ec560416bc9a4" category="section-title">BlueXP 分類是否需要存取認證？</block>
   <block id="e54c52f3a3c545fc2e2f82026ac5945f" category="paragraph">BlueXP 分類本身無法擷取儲存認證。而是儲存在 BlueXP Connector 中。</block>
@@ -3542,4 +3541,5 @@
   <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">此版本會在地圖繪製掃描期間、更新 Governance 、 Compliance 和 Investigation 儀表板中顯示的資料。</block>
   <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">對應和分類掃描之間有何差異</block>
   <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">如需詳細資訊、請參閱<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
+  <block id="1e61042bc6437e79f5a1cc09c86acd1a" category="list-text">Podman 版本 4 或更新版本。若要安裝 Podman 、請輸入 <block ref="9305f04686d4e3dadce4d1e9e77d9d71" prefix="(" category="inline-code"></block>）。</block>
 </blocks>

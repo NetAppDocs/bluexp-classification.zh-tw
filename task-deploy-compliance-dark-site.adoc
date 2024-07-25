@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-deploy-compliance-dark-site.html 
-keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification, classification, install, cloud data sense, cds 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, web browser connectivity, cloud compliance access, privacy, compliance, on-premises, dark site, upgrade, private mode, docker, podman, bluexp classification, classification, install, cloud data sense, cds, linux host 
 summary: 請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為「私有模式」。這類安裝最適合安全的站台。 
 ---
 = 在無法存取網際網路的 Linux 主機上安裝 BlueXP 分類
@@ -158,7 +158,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS 上安裝 Docker 。
 
-*** Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 (`sudo yum update -y`）、然後安裝 Podman (`sudo yum install netavark -y`）。
+*** Podman 版本 4 或更新版本。若要安裝 Podman 、請輸入 (`sudo yum install podman netavark -y`）。
 
 
 

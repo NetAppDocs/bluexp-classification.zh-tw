@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-test-linux-system.html 
-keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, dark site 
+keywords: cloud compliance, data sense, get started, deploy, bluexp classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, dark site, bluexp 
 summary: 在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主機上執行指令碼、以確認安裝 BlueXP 分類的所有必要條件均已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或者主機可以位於無法存取網際網路的站台。 
 ---
 = 檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類
@@ -126,7 +126,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 +
 https://youtu.be/Ogoufel1q6c["觀看此影片"^] 快速示範如何在 CentOS 上安裝 Docker 。
 
-*** Podman 版本 4 或更新版本。若要安裝 Podman 、請更新您的系統套件 (`sudo yum update -y`）、然後安裝 Podman (`sudo yum install netavark -y`）。
+*** Podman 版本 4 或更新版本。若要安裝 Podman 、請輸入 (`sudo yum install podman netavark -y`）。
 
 
 
