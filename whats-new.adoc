@@ -18,6 +18,20 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 
 
+== 2024 年 8 月 5 日（版本 1.34 ）
+
+此 BlueXP  分類版本包含下列更新。
+
+
+
+=== 從 CentOS 變更為 Ubuntu
+
+BlueXP  分類已將適用於 Microsoft Azure 和 Google Cloud Platform （ GCP ）的 Linux 作業系統從 CentOS 7.9 更新至 Ubuntu 22.04 。
+
+如需部署詳細資料、請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html#prepare-the-linux-host-system["在可存取網際網路的 Linux 主機上安裝、並準備 Linux 主機系統"]。
+
+
+
 == 2024 年 7 月 1 日（版本 1.33 ）
 
 此版本包含下列更新。

@@ -2919,7 +2919,6 @@
   <block id="ba66ea25533ed21d178a828c4ca4e652" category="list-text">需要連接埠 6000 、才能讓 BlueXP 等級 BYOL 授權在黑暗的站台中運作。</block>
   <block id="1f883a560be0732076f2237a57c5195f" category="list-text">應開啟連接埠 8080 、以便在 BlueXP 中查看安裝進度。</block>
   <block id="3834cda66b40129353aaded5673c3634" category="list-text">Red Hat Enterprise Linux 版本 7.8 和 7.9</block>
-  <block id="05b80f267d8929f809fe86d91268bc94" category="list-text">CentOS 版本 7.8 和 7.9</block>
   <block id="875fbf0a91ad95e1c95e1ac6fd492bc2" category="paragraph">報告有兩種不同格式：</block>
   <block id="238112e6876034d2f424b96b637afe8a" category="list-text">做為 .CSV 檔案、您可以儲存至本機機器。</block>
   <block id="604cde1447e130e4655296bd7bafa56a" category="paragraph">此報告最多可包含 10 、 000 列資料。</block>
@@ -3496,7 +3495,6 @@
   <block id="70f05bdab0f283eaffba98f53fceb776" category="paragraph">對於 CIFS 磁碟區 / 檔案共用、如果您想要確保 BlueXP 分類掃描不會變更檔案「上次存取時間」、建議使用者擁有寫入屬性權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="bf353be94d6ba74709e3d127af6ba1a6" category="paragraph">下列問題與使用 BlueXP 分類的授權和成本有關。</block>
   <block id="b660413c1fbf79ce31a119db078401fe" category="paragraph">此版本包含下列更新。</block>
-  <block id="ee817e39b08fa171d62efb8f7b4143b2" category="admonition">BlueXP 分類核心版本不支援與 Active Directory 整合。</block>
   <block id="14aa1b744a832a1cebfb9dd4d34b809d" category="paragraph">BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="29c5c6557943f5249ffe666c6e468ce9" category="inline-link-rx"></block> 和 <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="8a39158958544ff49d3dc95bad3f3a82" category="list-text">我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。<block ref="4abf459c8cfa6d4ca98cecc130eefa9a" category="inline-link-rx"></block>。</block>
   <block id="914179b3d4545ce8b8e8ba122c53f4d9" category="list-text">在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從這些系統大小中進行選擇。</block>
@@ -3542,4 +3540,11 @@
   <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">對應和分類掃描之間有何差異</block>
   <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">如需詳細資訊、請參閱<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
   <block id="1e61042bc6437e79f5a1cc09c86acd1a" category="list-text">Podman 版本 4 或更新版本。若要安裝 Podman 、請輸入 <block ref="9305f04686d4e3dadce4d1e9e77d9d71" prefix="(" category="inline-code"></block>）。</block>
+  <block id="70e7e6a41e0598a3902dbaf5ca936aa0" category="list-text">Ubuntu 24.04 （需要 BlueXP 分級版本 1.23 或更新版本）</block>
+  <block id="e1de422d9b50a40fe1300cc8736bc7f0" category="section-title">2024 年 8 月 5 日（版本 1.34 ）</block>
+  <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">此 BlueXP  分類版本包含下列更新。</block>
+  <block id="44a73383773bebac3194e73bd06397a8" category="section-title">從 CentOS 變更為 Ubuntu</block>
+  <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP  分類已將適用於 Microsoft Azure 和 Google Cloud Platform （ GCP ）的 Linux 作業系統從 CentOS 7.9 更新至 Ubuntu 22.04 。</block>
+  <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">在可存取網際網路的 Linux 主機上安裝、並準備 Linux 主機系統</block>
+  <block id="e6b6c1b590b016ecf7556d1571a4309e" category="paragraph">如需部署詳細資料、請參閱<block ref="ba79134a77255d2e97755d6f7b772847" category="inline-link-rx"></block>。</block>
 </blocks>

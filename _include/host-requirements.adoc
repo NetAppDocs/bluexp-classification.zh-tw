@@ -51,8 +51,8 @@
 ** 下列作業系統需要使用 Docker Container 引擎：
 +
 *** Red Hat Enterprise Linux 版本 7.8 和 7.9
-*** CentOS 版本 7.8 和 7.9
 *** Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 或更新版本）
+*** Ubuntu 24.04 （需要 BlueXP 分級版本 1.23 或更新版本）
 
 
 ** 下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本：
