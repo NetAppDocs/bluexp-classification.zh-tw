@@ -108,7 +108,7 @@ link:task-deploy-cloud-compliance.html["在 BlueXP 中部署 BlueXP 分類"^] �
 
 * 附註： * 掃描 S3 儲存區時、目前不支援在內部部署位置部署 BlueXP 分類。
 
-只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
+只要執行個體具有網際網路連線、就會自動升級至 BlueXP  分類軟體。
 
 
 

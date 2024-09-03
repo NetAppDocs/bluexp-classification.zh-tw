@@ -213,11 +213,12 @@ BlueXP 分類執行個體使用私有 IP 位址來確保其他人無法存取索
 | 連線類型 | 連接埠 | 說明 
 
 
-| Connector <> BlueXP 分類 | 8080 （ TCP ）、 6000 （ TCP ）、 443 （ TCP ）和 80  a| 
+| Connector <> BlueXP 分類 | 8080 （ TCP ）、 6000 （ TCP ）、 443 （ TCP ）和 80 。9000  a| 
 Connector 的安全性群組必須允許透過連接埠 6000 和 443 的傳入和傳出流量進出 BlueXP 分類執行個體。
 
 * 需要連接埠 6000 、才能讓 BlueXP 等級 BYOL 授權在黑暗的站台中運作。
 * 應開啟連接埠 8080 、以便在 BlueXP 中查看安裝進度。
+* 如果在 Linux 主機上使用防火牆、則 Ubuntu 伺服器內部程序需要連接埠 9000 。
 
 
 
@@ -260,6 +261,9 @@ NFS Volume 匯出原則必須允許從 BlueXP 分類執行個體存取。
 * LDAP伺服器連接埠（LDAP一般為389、安全LDAP一般為636）
 
 
+
+
+| 如果在 Linux 主機上使用防火牆 | 9000 | Ubuntu 伺服器內部程序所需。 
 |===
 如果您使用多個 BlueXP 分類主機來提供額外的處理能力來掃描資料來源、則需要啟用其他連接埠 / 通訊協定。 link:task-deploy-compliance-dark-site.html["請參閱其他連接埠需求"]。
 

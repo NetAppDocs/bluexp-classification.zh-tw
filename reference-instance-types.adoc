@@ -16,7 +16,7 @@ summary: BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需�
 [role="lead"]
 BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟體需求等的主機上執行。在雲端部署 BlueXP 分類時、建議您使用具有「大」特性的系統、以獲得完整功能。
 
-您可以在 CPU 較少、 RAM 較少的系統上部署 BlueXP 分類、但使用這些功能較不強大的系統時會有一些限制。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["瞭解這些限制"^]。
+您可以在 CPU 較少、 RAM 較少的系統上部署 BlueXP 分類、但使用這些功能較不強大的系統時會有一些限制。link:concept-cloud-compliance.html["瞭解這些限制"^]。
 
 在下表中、如果標記為「預設」的系統在您安裝 BlueXP 分類的地區無法使用、則表格中的下一個系統將會部署。
 

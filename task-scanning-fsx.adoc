@@ -73,7 +73,7 @@ link:task-deploy-cloud-compliance.html["在 BlueXP 中部署 BlueXP 分類"^] �
 
 
 
-== 探索您ONTAP 要掃描的FSXfor Sf2檔案系統
+== 探索您要掃描的 ONTAP 檔案系統 FSX
 
 如果ONTAP 您想要掃描的FSXfor Sfelffile系統尚未在BlueXP中做為工作環境、您現在可以將其新增至繪圖。
 
@@ -93,7 +93,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 
 
-== 在您的工作環境中啟用 BlueXP 分類
+== 在您的工作環境中啟用 BlueXP  分類
 
 您可以為 ONTAP 磁碟區的 FSX 啟用 BlueXP 分類。
 
@@ -107,7 +107,7 @@ image:screenshot_fsx_scanning_activate.png["部署 BlueXP 分類執行個體之�
 ** 若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。
 ** 若要自訂每個Volume的掃描、請按一下*或選取每個Volume *的掃描類型、然後選擇您要對應和/或分類的Volume。
 +
-請參閱 <<啟用及停用磁碟區的法規遵循掃描,啟用及停用磁碟區的法規遵循掃描>> 以取得詳細資料。
+如需詳細資訊、請參閱 <<啟用和停用磁碟區上的法規遵循掃描,啟用及停用磁碟區的法規遵循掃描>> 。
 
 
 
@@ -126,7 +126,7 @@ BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 Blu
 ====
 
 
-== 驗證 BlueXP 分類是否有權存取磁碟區
+== 確認 BlueXP  分類具有磁碟區存取權
 
 請檢查您的網路、安全性群組和匯出原則、確保 BlueXP 分類能夠存取磁碟區。
 
@@ -171,7 +171,7 @@ NOTE: 對於 ONTAP 的 FSX 、 BlueXP 分類只能掃描與 BlueXP 相同區域�
 
 
 
-== 啟用及停用磁碟區的法規遵循掃描
+== 啟用和停用磁碟區上的法規遵循掃描
 
 您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。建議您掃描所有 Volume 。
 
@@ -209,7 +209,7 @@ NOTE: 只有在標題區域中設定了*地圖*或*地圖與分類*設定之後�
 
 
 
-== 正在掃描資料保護磁碟區
+== 掃描資料保護磁碟區
 
 根據預設、資料保護（ DP ）磁碟區不會被掃描、因為它們不會暴露在外部、而且 BlueXP 分類無法存取它們。這些是來自FSXfor ONTAP Sfor the Sfor the Sffile系統的SnapMirror作業目的地Volume。
 

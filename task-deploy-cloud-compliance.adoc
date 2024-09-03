@@ -173,8 +173,6 @@ BlueXP 分類執行個體使用私有 IP 位址來確保索引資料無法存取
 * https://cloud.google.com/compute/quotas["Google Cloud文件：資源配額"^]
 
 
-請注意、您可以在 AWS 雲端環境中的執行個體上部署 BlueXP 分類、但使用這些系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
-
 --
 
 

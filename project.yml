@@ -39,16 +39,18 @@ sidebar:
         url: "/task-test-linux-system.html"
     - title: 啟動資料來源的掃描
       entries:
-      - title: 不只是內部和內部的Cloud Volumes ONTAP ONTAP
-        url: "/task-getting-started-compliance.html"
       - title: Azure NetApp Files
         url: "/task-scanning-anf.html"
       - title: Amazon FSX for ONTAP Sf
         url: "/task-scanning-fsx.html"
+      - title: 不只是內部和內部的Cloud Volumes ONTAP ONTAP
+        url: "/task-getting-started-compliance.html"
       - title: 資料庫架構
         url: "/task-scanning-databases.html"
       - title: 檔案共用
         url: "/task-scanning-file-shares.html"
+      - title: StorageGRID
+        url: "/task-scanning-storagegrid.html"
     - title: 整合Active Directory
       url: "/task-add-active-directory-datasense.html"
     - title: 常見問題集

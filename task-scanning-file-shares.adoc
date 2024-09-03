@@ -4,7 +4,7 @@ permalink: task-scanning-file-shares.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
 summary: 請完成幾個步驟、開始直接掃描非 NetApp NFS 或 CIFS 檔案與 BlueXP 分類共用。這些檔案共用區可位於內部部署或雲端。 
 ---
-= 正在掃描檔案共用
+= 掃描檔案共用
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -72,7 +72,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 如果尚未部署執行個體、請部署 BlueXP 分類。
 
-只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
+只要執行個體具有網際網路連線、就會自動升級至 BlueXP  分類軟體。
 
 
 
@@ -155,7 +155,7 @@ BlueXP 分類會開始掃描您新增檔案共用中的檔案、結果會顯示�
 
 
 
-== 從法規遵循掃描移除檔案共用區
+== 從法規遵循掃描中移除檔案共用
 
 如果不再需要掃描特定檔案共用、您可以隨時將個別檔案共用區移除、使其檔案不再掃描。只要按一下「組態」頁面中的「*移除共用*」即可。
 

@@ -191,22 +191,18 @@
   <block id="c8f32db0b52a7b7e31ee04bd02eddbb6" category="cell">按一下*地圖與分類*</block>
   <block id="4e393571618393293a5ce9e7d4786f57" category="cell">停用儲存區上的掃描</block>
   <block id="a988b0977fb89f6574cfc55d252b1cf9" category="cell">按一下「*關*」</block>
-  <block id="116345e97c90251e8fb2bfe5041418b4" category="doc">正在掃描檔案共用</block>
   <block id="8b30b43b2d32f52db456a78f120bec50" category="paragraph">若為CIFS（SMB）共用、請確定您擁有存取共用的認證資料。</block>
   <block id="d2ea2bf943bb8c943367ebfd6b8aec96" category="paragraph">此群組是您要掃描之檔案共用的容器、會做為這些檔案共用的工作環境名稱。</block>
   <block id="925a5b3d46766546e19dbce83a2fefb6" category="paragraph">新增您要掃描的檔案共用清單、然後選取掃描類型。一次最多可新增100個檔案共用區。</block>
-  <block id="6f1739c829744e6585dc123d746a9106" category="section-title">檢閱檔案共用需求</block>
   <block id="c780a7831238096b62ccda3512612e65" category="list-text">NFS：連接埠111和2049。</block>
   <block id="cfbd3eaf6a26b5c0c06de5f5b3d138b9" category="list-text">適用於CIFS：連接埠139和445。</block>
   <block id="8e4ba18b85274d135925d3a46f8bbe8f" category="list-text">您需要以「&lt;host_name&gt;//&lt;share_path&gt;'格式新增的共用清單。您可以個別輸入共用、也可以提供要掃描之檔案共用的行分隔清單。</block>
-  <block id="d3f633c1be26eecfced739f558d6850a" category="section-title">建立檔案共用的群組</block>
   <block id="60d7a85c8e73898b7ffc998f747e0883" category="paragraph">您必須先新增共用「群組」的檔案、才能新增檔案共用。此群組是您要掃描之檔案共用的容器、群組名稱會做為這些檔案共用的工作環境名稱。</block>
   <block id="96fdaabb157bbdb2dbe197904f9a4dbb" category="paragraph">您可以混合使用同一個群組中的NFS和CIFS共用、不過群組中的所有CIFS檔案共用都必須使用相同的Active Directory認證。如果您打算新增使用不同認證的CIFS共用、則必須針對每組獨特的認證建立個別的群組。</block>
   <block id="859b0486d18f528c8edbdaa7f41170d0" category="list-text">在「工作環境組態」頁面中、按一下「*新增資料來源*」&gt;「*新增檔案共用群組*」。</block>
   <block id="0c3c72a2a46a4dd5c0107a9f0b07c592" category="paragraph"><block ref="0c3c72a2a46a4dd5c0107a9f0b07c592" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b5fa1ae0f2b7152c1235520708fb1af0" category="list-text">在「新增檔案共用群組」對話方塊中、輸入共用群組的名稱、然後按一下*繼續*。</block>
   <block id="69438cb2e4a059b421af50a7d06c8f93" category="paragraph">新的「檔案共用群組」會新增至工作環境清單。</block>
-  <block id="22ad4f04c485447770e99ad6c793bc18" category="section-title">新增檔案共用至群組</block>
   <block id="7f36799e4767f2e3733ee3f582eeec9d" category="paragraph">您可以新增個別檔案共用、也可以提供要掃描之檔案共用的行分隔清單。一次最多可新增100個共用。</block>
   <block id="c9ce688a21fc0a13e7a592a39d9b66de" category="paragraph">在單一群組中同時新增NFS和CIFS共用時、您需要執行兩次程序、一次新增NFS共用、然後再次新增CIFS共用。</block>
   <block id="c696377eeab0348c7bd52ac7b4a8f54f" category="list-text">在「工作環境」頁面中、按一下「檔案共用」群組的「*組態*」按鈕。</block>
@@ -227,7 +223,6 @@
   <block id="53642e15bf631c93172b796ba5a78cc2" category="cell">啟用檔案共用上的純對應掃描</block>
   <block id="80023efd80f3cd8c1fcad9523d36efb1" category="cell">啟用檔案共用區的完整掃描</block>
   <block id="ff947db636909b9c7791229bf6b5dd0a" category="cell">停用掃描檔案共用區</block>
-  <block id="696cbb94224a469268edb5eb36133c83" category="section-title">從法規遵循掃描移除檔案共用區</block>
   <block id="4de725d331cf276fac026642a5f17603" category="paragraph">如果不再需要掃描特定檔案共用、您可以隨時將個別檔案共用區移除、使其檔案不再掃描。只要按一下「組態」頁面中的「*移除共用*」即可。</block>
   <block id="90777a343fd7f5c83c97f473d59a2af2" category="inline-image-macro">螢幕快照顯示如何移除單一檔案共用區以掃描其檔案。</block>
   <block id="c8716632d7055f530ad579b6f751cf3a" category="paragraph"><block ref="c8716632d7055f530ad579b6f751cf3a" category="inline-image-macro-rx" type="image"></block></block>
@@ -240,7 +235,6 @@
   <block id="5462103113dfca7582cf43f266db09a2" category="inline-xref">主機需求</block>
   <block id="532b2291afa0585aed0b7f83e343086f" category="inline-xref">權限與連線能力</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">準備Linux主機系統</block>
-  <block id="5da9cb7e92b520a48c2475de5ec9958c" category="inline-link-macro">使用較小的執行個體類型</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">檢視安裝指示</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
   <block id="261addf78c7b2c961032b3dd08ba0b1f" category="cell">目的</block>
@@ -329,14 +323,12 @@
   <block id="0e07c8e30d5d787d70fbc93583eb3032" category="paragraph"><block ref="0e07c8e30d5d787d70fbc93583eb3032" category="inline-link-rx"></block></block>
   <block id="360c11bcd9a9bfedb1aa5353935d21cd" category="paragraph">請依照下列步驟快速入門、或向下捲動以取得完整詳細資料。</block>
   <block id="d0e7ae8581484b514e52b4bee068c4f2" category="inline-link">您必須設定一個FSX工作環境、並設定磁碟區</block>
-  <block id="bdcd2e9d167fc54f49913257386095c4" category="section-title">探索您ONTAP 要掃描的FSXfor Sf2檔案系統</block>
   <block id="dd786557a341a9cbd5fb1a642121a675" category="inline-link-macro">深入瞭解對應與分類掃描</block>
   <block id="887fd0b7f53fccc2f6d057bd14bf2612" category="list-text">選取您要在每個工作環境中掃描磁碟區的方式。 <block ref="4482921a499e3614d034b24f41c18ded" category="inline-link-macro-rx"></block>：</block>
   <block id="102692751f525192810434a5517a9248" category="list-text">若要對應所有磁碟區、請按一下*對應所有磁碟區*。</block>
   <block id="21c697bd29539f20edb6f0b4e29ca986" category="list-text">若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。</block>
   <block id="5e5a91a0ea67cf11b397b43a5c240af0" category="list-text">若要自訂每個Volume的掃描、請按一下*或選取每個Volume *的掃描類型、然後選擇您要對應和/或分類的Volume。</block>
   <block id="9fa58f0e5c00772b9262b1da0ff9f2cb" category="inline-xref">啟用及停用磁碟區的法規遵循掃描</block>
-  <block id="4976afb7a20e2ded93bcee9f4f63b5e0" category="paragraph">請參閱 <block ref="ff48588b92e5d0773f5ef04161ad7544" category="inline-xref-macro-rx"></block> 以取得詳細資料。</block>
   <block id="d7f427e021c7b93fd75b9364e170beaa" category="list-text">在「_Configuration」頁面上、按一下「*檢視詳細資料*」以檢閱狀態並修正任何錯誤。</block>
   <block id="b401c479fc7a1b8aa216a7173ee8782f" category="paragraph">輸入認證之後、您應該會看到一則訊息、指出所有 CIFS 磁碟區都已成功驗證。</block>
   <block id="4b187c79b110fb2ebf9e935170702436" category="paragraph">您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。建議您掃描所有 Volume 。</block>
@@ -355,7 +347,6 @@
   <block id="b630526833dea659599fd366bda99475" category="cell">停用所有Volume上的掃描</block>
   <block id="f7b5fb19f08d635e70f43c38cc7e0a67" category="cell">在標題區域中、按一下*關*</block>
   <block id="1456e5fc169a243504826034d14947c3" category="admonition">只有在標題區域中設定了*地圖*或*地圖與分類*設定之後、才會自動掃描新增至工作環境的磁碟區。在標題區域中設為*自訂*或*關閉*時、您必須在工作環境中新增的每個新磁碟區上啟動對應和/或完整掃描。</block>
-  <block id="09a33e27026656462be6bc592a4ed808" category="section-title">正在掃描資料保護磁碟區</block>
   <block id="cc2aceb1237f12696c6da3c671aebf3a" category="paragraph">一開始、磁碟區清單會將這些磁碟區識別為「 _Type 」 * 「 DP* 」、「 _Status 」 * 「 Not 掃描」 * 、「 _required Action 」 * 「 Enable Access to DP Volumes 」（啟用對 DP 磁碟區的存取）。</block>
   <block id="6aa3c8215593c54e1d788a94766b3ae7" category="inline-image-macro">顯示「啟用 DP 磁碟區存取」按鈕的快照、可供您選擇掃描資料保護磁碟區。</block>
   <block id="5527bf6460aac122d9350ebcc432db9e" category="paragraph"><block ref="5527bf6460aac122d9350ebcc432db9e" category="inline-image-macro-rx" type="image"></block></block>
@@ -620,7 +611,6 @@
   <block id="e95058755e821bf6cb439e37f1f068d7" category="list-text">當您正在掃描的資料量達到授權容量的80%時、當您達到限制時、也會再次顯示</block>
   <block id="d8ea74d0bc0e6f3c5be22312a953d7fb" category="list-text">授權到期前 30 天、授權到期後再一次</block>
   <block id="d98982ed425bb70925dcb326c8228f2b" category="paragraph">按一下* Compliance *&gt;* Configuration *&gt;* Edit CIFS Credential*、然後提供認證資料。</block>
-  <block id="9ad43a991a6562a94520e8bb53577c56" category="section-title">探索您要掃描的資料來源</block>
   <block id="d56c40a575de98938d6b1b6814e422d2" category="inline-link-macro">位於內部部署位置、可存取網際網路</block>
   <block id="2d680ca666fd821f3c51a507d41a26cb" category="inline-image-macro">「符合性」索引標籤的快照、顯示內容窗格右上角可用的「掃描狀態」按鈕。</block>
   <block id="0c0c3b0c55f2b5101c7ea7c5d755cabe" category="paragraph"><block ref="0c0c3b0c55f2b5101c7ea7c5d755cabe" category="inline-image-macro-rx" type="image"></block></block>
@@ -677,7 +667,6 @@
   <block id="5cb163817b0d897b166cc75827e8c477" category="inline-link-macro">深入瞭解類型</block>
   <block id="13d0a191166a1a3dc29ebcd8e3aae81f" category="inline-link-macro">瞭解如何回應資料主體存取要求</block>
   <block id="7b895b198aba9634ffec5e0ec9a3aff4" category="section-title">網路總覽</block>
-  <block id="d359ba9662c22ff5e27bf861300c6bbf" category="section-title">使用者存取法規遵循資訊</block>
   <block id="7e576e4144e56e656ad24bb096e2e6fe" category="list-text">*帳戶管理員*可管理所有工作環境的法規遵循設定及檢視法規遵循資訊。</block>
   <block id="2d4684d2aec68a0b0d987ac449846c38" category="inline-link">新增具有特定角色的使用者</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律聲明</block>
@@ -692,7 +681,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知檔案提供有關 NetApp 軟體所使用之協力廠商版權與授權的資訊。</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">深入瞭解</block>
   <block id="8e6b2e179301ba8e4086645fd738ff9d" category="paragraph">按一下「 * Compliance * （ * 符合性 * ）」、選取「 * Configuration * （ * 組態 * ）」索引標籤、然後針對特定工作環境中的磁碟區啟動法規遵循掃描。</block>
-  <block id="2e9f6b00a7a0f1c26bc47bb134eae6d9" category="section-title">探索Azure NetApp Files 您要掃描的整個系統</block>
   <block id="16a978df0c48afdfbda069f5d1b195fc" category="admonition">本節所述的報告僅在您選擇對資料來源執行完整分類掃描時可用。具有純對應掃描的資料來源只能產生資料對應報告。</block>
   <block id="216b4fc24b6fa4197a8fc2d1066a4de4" category="section-title">隱私權風險評估報告</block>
   <block id="86bb262dfb2fdc1b5bf97779c25bf74e" category="list-text">法規遵循狀態</block>
@@ -1472,7 +1460,6 @@
   <block id="5ec77a792038bab65f9bfd97af0b2704" category="section-title">確認已啟用所有必要的連接埠</block>
   <block id="e279c07f8fb282c171724e558925c858" category="cell">連線類型</block>
   <block id="407c4e9fac86b98147da49acd4fa0d01" category="cell">連接埠</block>
-  <block id="d58ea55d9425e8ef73d976d9662c2616" category="cell">8080（TCP）、443（TCP）及80</block>
   <block id="62e97b929ca433dfe61e82d128653c46" category="cell">連接器&lt;&gt; ONTAP -叢集（NAS）</block>
   <block id="3a0fddda7e650f4aa4c24cb76fb17af0" category="cell">443（TCP）</block>
   <block id="7e5d9a5421498db733ec66073d7872b4" category="paragraph">BlueXP會使用ONTAP HTTPS探索叢集。如果使用自訂防火牆原則、則必須符合下列需求：</block>
@@ -1985,13 +1972,11 @@
   <block id="08f13635125ca31ad0dd4c558af740d0" category="paragraph">選取或取消選取您要掃描的磁碟區、 BlueXP 分類將會開始或停止掃描。</block>
   <block id="be2976cf8226247a23c06d21cc561154" category="paragraph">您應該在與 Connector for AWS 和您要掃描的 FSX 磁碟區相同的 AWS 網路中部署 BlueXP 分類。</block>
   <block id="18b57e2e68f1be182173d49ffbcd4e0c" category="paragraph">* 注意： * 掃描 FSX 磁碟區時、目前不支援在內部部署位置部署 BlueXP 分類。</block>
-  <block id="518cc68a91bee96febfc5e39ff8ba745" category="section-title">在您的工作環境中啟用 BlueXP 分類</block>
   <block id="3ae736236dde2535cad4ec42745a0cbd" category="paragraph">您可以為 ONTAP 磁碟區的 FSX 啟用 BlueXP 分類。</block>
   <block id="cb3aa3f952775ea9178b718df187d59d" category="inline-image-macro">部署 BlueXP 分類執行個體之後、立即顯示「組態」索引標籤的螢幕快照。</block>
   <block id="2cc6e87dfb5a6f87bc1fcbd217a498de" category="paragraph"><block ref="2cc6e87dfb5a6f87bc1fcbd217a498de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d5e967f01610f01cb30183e6b342e630" category="list-text">在確認對話方塊中、按一下 * 核准 * 、讓 BlueXP 分類開始掃描您的磁碟區。</block>
   <block id="b0dab6dc992c93096b218e009d2afb00" category="paragraph">BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 BlueXP 分類完成初始掃描、就會在法規遵循儀表板中提供結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。</block>
-  <block id="5276878b0a17edd0ad3fbee3380d1635" category="section-title">驗證 BlueXP 分類是否有權存取磁碟區</block>
   <block id="6bc94b69811d2b0b701e915104066612" category="paragraph">請檢查您的網路、安全性群組和匯出原則、確保 BlueXP 分類能夠存取磁碟區。</block>
   <block id="24f2d84d2538ae621015886e3ec8b0c0" category="paragraph">您必須提供具備 CIFS 認證的 BlueXP 分類、才能存取 CIFS 磁碟區。</block>
   <block id="57b038ede182cd587e669c8a0afda2ca" category="paragraph">例如、下列影像顯示由於 BlueXP 分類執行個體和磁碟區之間的網路連線問題、導致 Volume BlueXP 分類無法掃描。</block>
@@ -2042,7 +2027,6 @@
   <block id="c67419f269df3afdc5c4ea77c6a74cef" category="paragraph">匯出至檔案共用時、請確定 BlueXP 分類具有正確的匯出存取權限。</block>
   <block id="44b34442167c9611792529867ee76d90" category="doc">BlueXP 分類文件</block>
   <block id="7323ab6aab1dfb48468b77bc771127f5" category="summary">請完成幾個步驟、開始使用 BlueXP 分類來掃描您的 Cloud Volumes ONTAP 和內部部署 ONTAP 磁碟區。</block>
-  <block id="968d6e0e449e2c68755e2d69920c0200" category="doc">Cloud Volumes ONTAP 和內部部署 ONTAP 的 BlueXP 分類入門</block>
   <block id="1ba0d6aa3ccd6f872c6c6e6d87024c69" category="list-text">BlueXP 分類執行個體需要網路連線至每個 Cloud Volumes ONTAP 子網路或內部 ONTAP 系統。</block>
   <block id="305e305ac52012ce5ec303cdd558523f" category="list-text">Cloud Volumes ONTAP 的安全性群組必須允許來自 BlueXP 分類執行個體的傳入連線。</block>
   <block id="084b5e624d2227ca06a3f828bced0f33" category="list-text">BlueXP 分類需要 Active Directory 認證來掃描 CIFS 磁碟區。</block>
@@ -2063,7 +2047,6 @@
   <block id="e7fa07083790a8112d00af542356ec88" category="paragraph">根據預設、資料保護（ DP ）磁碟區不會被掃描、因為它們不會暴露在外部、而且 BlueXP 分類無法存取它們。這些都是從內部部署 ONTAP 的 SnapMirror 系統或 Cloud Volumes ONTAP 從某個系統進行 SnapMirror 作業的目的地 Volume 。</block>
   <block id="7c0a9b3e555cf595d3d01d33df76df82" category="list-text">最初在來源 ONTAP 系統中建立為 CIFS Volume 的磁碟區、需要輸入 CIFS 認證資料才能掃描這些 DP 磁碟區。如果您已經輸入 Active Directory 認證、以便 BlueXP 分類能夠掃描 CIFS 磁碟區、您可以使用這些認證、或是指定不同的管理認證集。</block>
   <block id="784e4b64058d5e48385415f461c592f1" category="summary">完成幾個步驟、開始使用 Azure NetApp Files 的 BlueXP 分類。</block>
-  <block id="8c845b2820fb0d62f8438c10638d6c1d" category="doc">Azure NetApp Files BlueXP 分類入門</block>
   <block id="8d50e02b2718494115c81eb90fb74ae8" category="list-text">BlueXP 分類執行個體需要網路連線至每個 Azure NetApp Files 子網路。</block>
   <block id="8fddb983f4dfa8df2d70736053accca9" category="paragraph">掃描 Azure NetApp Files 磁碟區時、必須在雲端部署 BlueXP 分類、而且必須部署在您要掃描的磁碟區所在的相同區域。</block>
   <block id="ea6ade76b643d68393f95ac70484901e" category="paragraph">* 注意： * 掃描 Azure NetApp Files 磁碟區時、目前不支援在內部部署位置部署 BlueXP 分類。</block>
@@ -2128,7 +2111,6 @@
   <block id="d3a5131b7810b0fbf85a485b9bf39b04" category="list-text">啟用 BlueXP 分類後、請確定使用者從連線至 BlueXP 分類執行個體的主機存取 BlueXP 介面。</block>
   <block id="862b53997bb34edb297d8534c2e45934" category="paragraph">BlueXP 分類執行個體使用私有 IP 位址來確保索引資料無法存取至網際網路。因此、您用來存取BlueXP的網頁瀏覽器必須連線至該私有IP位址。該連線可能來自與雲端供應商（例如 VPN ）的直接連線、或來自與 BlueXP 分類執行個體位於相同網路內的主機。</block>
   <block id="9e354f6589446707ac0275ab903ced5e" category="list-text">確保雲端供應商的 vCPU 上限允許部署具有必要核心數的執行個體。您需要驗證執行BlueXP所在地區的相關執行個體系列的vCPU限制。 <block ref="717b51db682bab072e4faa318f683866" category="inline-link-macro-rx"></block>。</block>
-  <block id="c1a00ed1dbc30942175034375e50264e" category="paragraph">請注意、您可以在 AWS 雲端環境中的執行個體上部署 BlueXP 分類、但使用這些系統時會有一些限制。請參閱 <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="55d5a81a565b7cb4265c8c73ecd4aa37" category="section-title">在雲端部署 BlueXP 分類</block>
   <block id="bd10ebfff36e591031f9055715e81cbe" category="paragraph">請依照下列步驟、在雲端中部署 BlueXP 分類執行個體。Connector 會在雲端部署執行個體、然後在該執行個體上安裝 BlueXP 分類軟體。</block>
   <block id="1387aca3016ca34e4eefec1995b863e8" category="paragraph">請注意、在 AWS 環境中從 BlueXP Connector 部署 BlueXP 分類時、您可以選擇預設執行個體大小、也可以從兩種較小的執行個體類型中選擇。 <block ref="014512c6bb91f0e0099b18504a19e409" category="inline-link-macro-rx"></block>。在無法使用預設執行個體類型的區域中、 BlueXP 分類會在上執行 <block ref="45910d58f60ef6c6ec6de81dc1fbd5cf" category="inline-link-macro-rx"></block>。</block>
@@ -2234,7 +2216,6 @@
   <block id="16cae960f299f00958369748d3e1c51a" category="list-text">在 AWS 中、 BlueXP 分類是在 m6i.4xlarge 執行個體上執行、其中有 500 GiB GP2 磁碟。您可以在部署期間選取較小的執行個體類型。</block>
   <block id="3469d8e945dec214762a845d4c8e80d1" category="list-text">在 Azure 中、 BlueXP 分類是在標準 D16s_v3 VM 上執行、其中含有 500 GB 磁碟。</block>
   <block id="e031741655e55753c073e2b5d1093bb5" category="list-text">在 GCP 中、 BlueXP 分類是在 n2-Standard-16 VM 上執行、其中含有 500 GiB Standard 持續性磁碟。</block>
-  <block id="78b18bc5bc0e27d9091bf209445c0856" category="paragraph">請注意、您可以在 CPU 較少且 RAM 較少的系統上部署 BlueXP 分類、但使用這些系統時會有一些限制。請參閱 <block ref="0e704e23a30c6a19db4ec4aec3706681" category="inline-link-macro-rx"></block> 以取得詳細資料。</block>
   <block id="797bd364c60848e0440ffa738c32c899" category="section-title">我可以在自己的主機上部署 BlueXP 分類嗎？</block>
   <block id="95d1f5c6f18bfa7376eedb279ef5e982" category="inline-link-macro">在內部部署部署 BlueXP 分類</block>
   <block id="8be2dfe4654fe61cd966fe9bb3477f67" category="paragraph">是的。您可以在網路或雲端上具有網際網路存取權的 Linux 主機上安裝 BlueXP 分類軟體。一切運作方式都一樣、您可以透過BlueXP繼續管理掃描組態和結果。請參閱 <block ref="7d72e0176b071fa2a7928cac369f766b" category="inline-link-macro-rx"></block> 以取得系統需求和安裝詳細資料。</block>
@@ -2249,7 +2230,6 @@
   <block id="2cd45d3fb160d90a0b0fe2eed550f4de" category="paragraph">請注意、您可以按一下、從 BlueXP 分類頁面頂端自訂顯示在報告第一頁上的公司名稱 <block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block> 然後按一下*變更公司名稱*。下次產生報告時、會加入新名稱。</block>
   <block id="68676a88a8d6e6d5bf88ee02ab0819cd" category="summary">BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟體需求等的主機上執行。在雲端部署 BlueXP 分類時、建議您使用具有「大」特性的系統、以獲得完整功能。</block>
   <block id="78c4d5cab447ed4868497b1ef6cf5659" category="doc">支援的 BlueXP 分類執行個體類型</block>
-  <block id="eb17da8d69e8bc0b997cbf15ff5957c3" category="paragraph">您可以在 CPU 較少、 RAM 較少的系統上部署 BlueXP 分類、但使用這些功能較不強大的系統時會有一些限制。 <block ref="fb3c609d29fe2d540c303a8bdcc4197c" category="inline-link-macro-rx"></block>。</block>
   <block id="50d06b6efd74f95cfab72bc9b5d467e6" category="paragraph">在下表中、如果標記為「預設」的系統在您安裝 BlueXP 分類的地區無法使用、則表格中的下一個系統將會部署。</block>
   <block id="11f000270c03dc2a6cc3e9a5e9262aa8" category="summary">在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主機上執行指令碼、以確認安裝 BlueXP 分類的所有必要條件均已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或者主機可以位於無法存取網際網路的站台。</block>
   <block id="7c7a9443e0597003702e5cc73c6d075a" category="doc">檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類</block>
@@ -2263,7 +2243,6 @@
   <block id="56fe5177fa37261644d5d8d101772da7" category="paragraph">BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路使用 Proxy 伺服器進行網際網路存取、請確定 BlueXP 分類執行個體具有傳出網際網路存取權、以聯絡下列端點。</block>
   <block id="deee1d8f5a3df758bd42edb041e173a5" category="paragraph">您必須確保所有必要的連接埠都已開啟、以便在 Connector 、 BlueXP 分類、 Active Directory 和資料來源之間進行通訊。</block>
   <block id="f067a4d9a77738e1e7acac4c6780b5e2" category="cell">Connector &lt;&gt; BlueXP 分類</block>
-  <block id="67f353d2e64b17c742189c98f95b49b3" category="cell">Connector 的防火牆或路由規則必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。</block>
   <block id="a26fd5b2cbfceb82a5a56055a3eb03b2" category="section-title">執行 BlueXP 分類先決條件指令碼</block>
   <block id="b87dc210bfdadbb1715d3a2f4432d3b2" category="paragraph">請依照下列步驟執行 BlueXP 分類先決條件指令碼。</block>
   <block id="5a3c7fe5b5c81c3229ac2d26caa35ec9" category="list-text">從下載 BlueXP 分類先決條件指令碼<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。您應該選擇的檔案名稱為 * 獨立式 - 必要的 - 測試者 - &lt;version&gt; * 。</block>
@@ -2419,7 +2398,6 @@
   <block id="8bb62f2d8bb562c2448b94ddd2767086" category="paragraph">BlueXP 分類透過掛載 NFS 和 CIFS 磁碟區、與任何其他用戶端一樣連線至資料。NFS 磁碟區會自動以唯讀方式存取、而您需要提供 Active Directory 認證來掃描 CIFS 磁碟區。</block>
   <block id="c7eecba843c437de6a7f23657d755812" category="paragraph">BlueXP 分類可讓您在選定的資料來源上執行一般的「對應」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。</block>
   <block id="4aa06a2b4191eee9b59686458a3cf0e5" category="section-title">BlueXP 分類掃描資料的速度</block>
-  <block id="737ab30d4451f7b971d756cdcc6b7d6b" category="section-title">BlueXP 分類索引的資訊</block>
   <block id="28e66615c1e04c19b63a24061d462220" category="paragraph">BlueXP 分類會收集、索引及指派類別給您的資料（檔案）。BlueXP 分類索引的資料包括：</block>
   <block id="6baaa35b9d6c708af7920a94de9f3951" category="paragraph">BlueXP 會使用安全性群組來部署 BlueXP 分類執行個體、以便從 Connector 執行個體進行傳入 HTTP 連線。</block>
   <block id="b7753345b24c98f72b73e9e641a456d7" category="paragraph">傳出規則已完全開啟。安裝和升級 BlueXP 分類軟體、以及傳送使用量指標、都需要網際網路存取。</block>
@@ -2818,8 +2796,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
-  <block id="b096d4ea7a8d51978fe48f490785e86a" category="list-text">刪除、複製、標記及指派使用者至資料</block>
-  <block id="c61b92a36eb48c5d3300779a62372cd3" category="list-text">複製及複製檔案</block>
   <block id="49ef162b6621f970581074315940ec6c" category="paragraph">https ： &lt;classification_ip&gt; / 文件</block>
   <block id="b62dbbecd6533f9627427d34160e7d75" category="section-title">使用API的範例</block>
   <block id="b7fd2e4068e2c6cc68317c7892c5290c" category="paragraph">下列範例顯示要複製檔案的 API 呼叫。</block>
@@ -2843,7 +2819,6 @@
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
   <block id="90ca6bd84833f8a6659f7ea02a7649ba" category="list-text">您可以將 DFS （分散式檔案系統）共用新增為一般 CIFS 共用。然而、由於 BlueXP 分類並不知道共享區是以多個伺服器 / 磁碟區合併為單一 CIFS 共用而建置、因此當訊息只適用於位於不同伺服器 / 磁碟區的其中一個資料夾 / 共用時、您可能會收到有關共用區的權限或連線錯誤。</block>
   <block id="090f87d7b81c809aa6a6d81dcabfeeb8" category="paragraph">如果 BlueXP 分類正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）和資料庫（結構化資料）、則最多可下載三個報告檔案。</block>
-  <block id="abfab9fcbcf9c983c6fcb0efced8edc6" category="cell">8080 （ TCP ）、 6000 （ TCP ）、 443 （ TCP ）和 80</block>
   <block id="17308c76959fcb971603b7274a57c128" category="list-text">* 作業系統 * ：</block>
   <block id="3e91b710997d720d3e069e8c923eb206" category="list-text">下列作業系統需要使用 Docker Container 引擎：</block>
   <block id="156e173d1de86766f5cb22a057c779e9" category="list-text">Ubuntu 22.04 （需要 BlueXP 分級版本 1.23 或更新版本）</block>
@@ -3454,7 +3429,6 @@
   <block id="a1870449a3811abcc8d02d43cec49cf2" category="list-text">上次修改的檔案</block>
   <block id="5752d1aca2fb066ca51eb98052561289" category="list-text">檔案探索時間</block>
   <block id="d9dc47834e451d5a23b2dd5638b1310b" category="list-text">權限擷取</block>
-  <block id="e64f4699e3677ec83e92eb7fc517d88b" category="paragraph">* 治理儀表板差異 * ：</block>
   <block id="c8110422ac17b8559c40c507fe0bed65" category="cell">地圖與分類</block>
   <block id="46f3ea056caa3126b91f3f70beea068c" category="cell">地圖</block>
   <block id="58f9985309ad441d05540492b96a7afd" category="cell">過時資料</block>
@@ -3467,9 +3441,7 @@
   <block id="eeb19f8ceecc074a02badf8ee06710b5" category="cell">具有廣泛權限的機密資料</block>
   <block id="6c8173b9fd1df4291ec6a95f705c54f4" category="cell">資料存留期</block>
   <block id="f737cdef2fd67e0953a5953ca506b30c" category="cell">資料大小</block>
-  <block id="5155139afba6f744102515d13f1c5578" category="paragraph">* 法規遵循儀表板差異 * ：</block>
   <block id="74a8dd8ef4ee037974b7843898eabfcd" category="cell">隱私風險評估報告</block>
-  <block id="ba7cad27cdcf17f7da95938585ca2071" category="paragraph">* 調查篩選差異 * ：</block>
   <block id="f1be55e10a484bdeb7e4eae576688474" category="cell">上次存取</block>
   <block id="4797f8fb709b9cdf801351bca3181105" category="cell">檔案目錄路徑</block>
   <block id="76596c862fd4cd497cf2a3ea36b26c43" category="cell">分類狀態</block>
@@ -3498,10 +3470,8 @@
   <block id="14aa1b744a832a1cebfb9dd4d34b809d" category="paragraph">BlueXP Connector 和 BlueXP 分類都需要定期手動升級、才能啟用新功能。您可以在 BlueXP 分類 UI 頁面底部看到 BlueXP 分類版本。請檢查 <block ref="4cc8c968e2438af740515443c2861b36" category="inline-link-macro-rx"></block> 查看每個版本的新功能、以及您是否想要這些功能。然後您可以依照下列步驟進行<block ref="29c5c6557943f5249ffe666c6e468ce9" category="inline-link-rx"></block> 和 <block ref="b1d8f2a5489be1789530a7fc668375fb" category="inline-xref-macro-rx"></block>。</block>
   <block id="8a39158958544ff49d3dc95bad3f3a82" category="list-text">我們建議您將 BlueXP Connector 軟體升級至最新的可用版本。<block ref="4abf459c8cfa6d4ca98cecc130eefa9a" category="inline-link-rx"></block>。</block>
   <block id="914179b3d4545ce8b8e8ba122c53f4d9" category="list-text">在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從這些系統大小中進行選擇。</block>
-  <block id="6c09b1dff892b8048d63b1e31c61b814" category="section-title">在不同的執行個體類型上部署</block>
   <block id="df08805f9a68769e5aca6dccacac7494" category="paragraph">您可以在 CPU 較少且 RAM 較少的系統上部署 BlueXP 分類。</block>
   <block id="57637b2cc8a0490c839620385b595b3e" category="paragraph">在 Azure 或 GCP 中部署 BlueXP 分類時、如果您想要使用較小的執行個體類型、請寄送電子郵件至 ng-contact-data-sense@netapp.com 以取得協助。</block>
-  <block id="ac1250c44ca3735bfcf1d4592b478a30" category="list-text">* 標準中繼資料 * BlueXP 分類會收集檔案的標準中繼資料：檔案類型、檔案大小、建立和修改日期等。</block>
   <block id="e59e38f5b5a816003a773fb9f75ff139" category="list-text">* 個人資料 * ：個人識別資訊（ PII ）、例如電子郵件地址、識別號碼或信用卡號碼。 <block ref="fc496cc858c0e8dff4419012ba17c358" category="inline-link-macro-rx"></block>。</block>
   <block id="58b08b9a6ba479db4005e79f9e8bfbc2" category="list-text">* 敏感個人資料 * ： GDPR 定義的特殊類型敏感個人資訊（ SPii ）、例如健康資料、族裔來源或政治見解、以及其他隱私權法規。 <block ref="6221f6509a9900ea9a8146767340b3a8" category="inline-link-macro-rx"></block>。</block>
   <block id="e1b5177c05ab6adddb3fa94c4f67b610" category="list-text">* 類別 * ： BlueXP 分類會將掃描的資料分成不同類別。類別是以 AI 分析每個檔案的內容和中繼資料為基礎的主題。 <block ref="722783767558c868b0670a999b08f996" category="inline-link-macro-rx"></block>。</block>
@@ -3541,10 +3511,64 @@
   <block id="c7fb92ca31125e81e2a4f2982bc6a806" category="paragraph">如需詳細資訊、請參閱<block ref="4062fc8e6e6df1b01a1de644d8a7eeca" category="inline-link-rx"></block></block>
   <block id="1e61042bc6437e79f5a1cc09c86acd1a" category="list-text">Podman 版本 4 或更新版本。若要安裝 Podman 、請輸入 <block ref="9305f04686d4e3dadce4d1e9e77d9d71" prefix="(" category="inline-code"></block>）。</block>
   <block id="70e7e6a41e0598a3902dbaf5ca936aa0" category="list-text">Ubuntu 24.04 （需要 BlueXP 分級版本 1.23 或更新版本）</block>
-  <block id="e1de422d9b50a40fe1300cc8736bc7f0" category="section-title">2024 年 8 月 5 日（版本 1.34 ）</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">此 BlueXP  分類版本包含下列更新。</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="section-title">從 CentOS 變更為 Ubuntu</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP  分類已將適用於 Microsoft Azure 和 Google Cloud Platform （ GCP ）的 Linux 作業系統從 CentOS 7.9 更新至 Ubuntu 22.04 。</block>
   <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">在可存取網際網路的 Linux 主機上安裝、並準備 Linux 主機系統</block>
   <block id="e6b6c1b590b016ecf7556d1571a4309e" category="paragraph">如需部署詳細資料、請參閱<block ref="ba79134a77255d2e97755d6f7b772847" category="inline-link-rx"></block>。</block>
+  <block id="6b58a1f82ed5bb7a99f52822509a4519" category="paragraph">* 部署在不同的執行個體類型 *</block>
+  <block id="f7b33a42cbd89983b15c11673a39ebbb" category="example-title">治理儀表板差異：</block>
+  <block id="cfc520b0abc2bc5575f719562cb63734" category="example-title">法規遵循儀表板差異：</block>
+  <block id="a8489c9a413df737ca55e133eea56820" category="example-title">調查篩選差異：</block>
+  <block id="41723bb4585becfa9d2ed4726536b953" category="section-title">BlueXP  分類的資訊</block>
+  <block id="6cd355a083ac0c0abfe0db956ac0ab54" category="list-text">* 檔案的標準中繼資料 * ：檔案類型、檔案大小、建立及修改日期等。</block>
+  <block id="1e81701a0a647214aeef7f6f5b09394b" category="section-title">BlueXP  分類中的使用者角色</block>
+  <block id="eec6403f951e244b1c486300193cd34d" category="paragraph">您可以在 CPU 較少、 RAM 較少的系統上部署 BlueXP 分類、但使用這些功能較不強大的系統時會有一些限制。<block ref="1b1d000d38aaad462efbebe4f445430b" category="inline-link-macro-rx"></block>。</block>
+  <block id="d2f4e7f4455a3bda8ed865e3c82c3eb1" category="cell">8080 （ TCP ）、 6000 （ TCP ）、 443 （ TCP ）和 80 。9000</block>
+  <block id="87669b3f9ce07d9d9a218ff72c43f046" category="list-text">如果在 Linux 主機上使用防火牆、則 Ubuntu 伺服器內部程序需要連接埠 9000 。</block>
+  <block id="c29fe88a82cdd613769957d60ae7e623" category="cell">如果在 Linux 主機上使用防火牆</block>
+  <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000</block>
+  <block id="2c68446a47623409683fed996b7df333" category="cell">Ubuntu 伺服器內部程序所需。</block>
+  <block id="f0fd47ef2ed43479969d8e3e0d0df156" category="cell">8080 （ TCP ）、 443 （ TCP ）和 80 。9000</block>
+  <block id="1ed8980e59fe9f96e77c5a7b123780d1" category="cell">Connector 的防火牆或路由規則必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。如果在 Linux 主機上使用防火牆、則 Ubuntu 伺服器內部程序需要連接埠 9000 。</block>
+  <block id="b228a09a75efeade7f59510b5c5b6da0" category="doc">開始使用 Cloud Volumes ONTAP 和內部部署 ONTAP 的 BlueXP  分類</block>
+  <block id="effe342ed6fdd5b79625bb273c6f43da" category="section-title">探索您要掃描的資料來源</block>
+  <block id="3e07df694cbf4c604aed3e0514e35653" category="section-title">在您的工作環境中啟用 BlueXP  分類</block>
+  <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">啟用和停用磁碟區上的法規遵循掃描</block>
+  <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">如需詳細資訊、請參閱 <block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="5ede9806a5e8e360f81d3184f388f33b" category="section-title">確認 BlueXP  分類具有磁碟區存取權</block>
+  <block id="3f0bbcbd675537960ef9995a958d5fe0" category="section-title">掃描資料保護磁碟區</block>
+  <block id="03013e116c1ce41f3b557b2caaef3575" category="doc">開始使用 Azure NetApp Files 的 BlueXP  分類</block>
+  <block id="8c89db674531ab536128087dfb6cbe4f" category="section-title">探索您要掃描的 Azure NetApp Files 系統</block>
+  <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="doc">掃描檔案共用</block>
+  <block id="9850feff1aac1d886b7a010236318d49" category="section-title">檢閱檔案共用需求</block>
+  <block id="8324f4d6c5b9d56205261e30363b597f" category="paragraph">只要執行個體具有網際網路連線、就會自動升級至 BlueXP  分類軟體。</block>
+  <block id="763e254befdcc246f3e8569877b63340" category="section-title">建立檔案共用的群組</block>
+  <block id="8c7259d7b7f8962c22537c08f66b5e09" category="section-title">新增檔案共用至群組</block>
+  <block id="0eb30c84638dc32a52a08e70a70b2a55" category="section-title">從法規遵循掃描中移除檔案共用</block>
+  <block id="7189cf24cfe83953d8a6800deef41472" category="section-title">探索您要掃描的 ONTAP 檔案系統 FSX</block>
+  <block id="415692946bae6c6ee848f8732518a045" category="paragraph">如需詳細資訊、請參閱 <block ref="30e9b0cd02d911bb04c0ac893b6f8372" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="doc">掃描 StorageGRID 資料</block>
+  <block id="fec0b5d2f5737f21e60a6e49ddb4e55f" category="paragraph">* 注意 * 使用核心 BlueXP  的 BlueXP  分類、您現在可以掃描 StorageGRID 資料。請參閱<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。此處的其餘資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。</block>
+  <block id="c44712318b0c4e33e9d361583871c49c" category="summary">請完成幾個步驟、以 BlueXP  分類直接在 StorageGRID 中開始掃描資料。</block>
+  <block id="301b54ac16625023c7d40dcc0122ef17" category="doc">開始掃描 StorageGRID 資料</block>
+  <block id="62756ad365a0397e368bc1fff7694d09" category="paragraph">您必須擁有 StorageGRID 的存取金鑰和秘密金鑰、才能讓 BlueXP  分類存取儲存區。</block>
+  <block id="a1a191ce069b9cd9855c29e830e5edb1" category="paragraph">將 StorageGRID 服務新增至 BlueXP  分類。</block>
+  <block id="dc3fd4fe9b1bb66db60a59be3884a90c" category="section-title">檢閱 StorageGRID 需求</block>
+  <block id="75fb1719288a18e42bbcf12474e638ab" category="paragraph">如果您是從 StorageGRID 掃描可透過網際網路存取的資料、您可以<block ref="8faa540c15177bc62b151869f0948a64" category="inline-link-macro-rx"></block>或<block ref="15df3adeb2abcc06430d6dc64cee819e" category="inline-link-macro-rx"></block>。</block>
+  <block id="b7f5835679149c7ad528a93130c54fd2" category="paragraph">如果您是從安裝在無法存取網際網路的黑暗網站上的 StorageGRID 掃描資料，則需要執行<block ref="3beeea1c5d12940092999048e1c30313" category="inline-link-macro-rx"></block>。這也需要在同一個內部部署位置部署BlueXP Connector。</block>
+  <block id="8da203a5374e4d2ee4312dc1aafd619c" category="section-title">將 StorageGRID 服務新增至 BlueXP  分類</block>
+  <block id="51fd71ec3cd52fe8a3a0c2ca75ecb69e" category="paragraph">新增 StorageGRID 服務。</block>
+  <block id="d995bd148592a1e3039fe0e3deaeeafc" category="list-text">在「新增物件儲存服務」對話方塊中、輸入 StorageGRID 服務的詳細資料、然後按一下 * 繼續 * 。</block>
+  <block id="f153721d9ef26ee125af0b2bd9b6a3e4" category="list-text">輸入您要用於工作環境的名稱。此名稱應反映您要連線的 StorageGRID 服務名稱。</block>
+  <block id="9352a83c797b7c34cb58ee6504218644" category="list-text">輸入存取金鑰和秘密金鑰、讓 BlueXP  分類能夠存取 StorageGRID 中的儲存區。</block>
+  <block id="33d7a3218c026536f68e6f9eb287287c" category="paragraph">StorageGRID 會新增到工作環境清單中。</block>
+  <block id="149bb086304a69799f52fb84d5e33370" category="section-title">啟用和停用 StorageGRID 貯體的法規遵循掃描</block>
+  <block id="81959d6a19d62d0f6e5ccbbd1a01c2f0" category="paragraph">在 StorageGRID 上啟用 BlueXP  分類之後、下一步是設定您要掃描的儲存區。BlueXP 分類會探索這些貯體、並在您建立的工作環境中顯示這些貯體。</block>
+  <block id="ffc704586971ad083fdf8dd3a75b06c9" category="list-text">在「組態」頁面中、按一下 StorageGRID 工作環境中的 * 組態 * 。</block>
+  <block id="2c9810189a9662217559e6c599b47a67" category="cell">8080 （ TCP ）、 443 （ TCP ）和 80 。9000</block>
+  <block id="597f26a63507bfee99f67909c68d5354" category="section-title">2024 年 9 月 2 日（版本 1 ． 5 ）</block>
+  <block id="83bceb987dd495cde1a148944580e473" category="paragraph">BlueXP  分類現在可以掃描 StorageGRID 中的資料。</block>
+  <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">如需詳細資訊、請 <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>參閱。</block>
+  <block id="a5ac20c838605b872613985f5c302c61" category="section-title">2024 年 8 月 5 日（版本 1.34 ）</block>
 </blocks>

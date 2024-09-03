@@ -373,8 +373,6 @@ BlueXP可讓使用者在幾乎任何位置掃描及報告系統、包括內部�
 * 在 GCP 中、 BlueXP 分類是在 n2-Standard-16 VM 上執行、其中含有 500 GiB Standard 持續性磁碟。
 
 
-請注意、您可以在 CPU 較少且 RAM 較少的系統上部署 BlueXP 分類、但使用這些系統時會有一些限制。請參閱 link:concept-cloud-compliance.html#using-a-smaller-instance-type["使用較小的執行個體類型"] 以取得詳細資料。
-
 link:concept-cloud-compliance.html["深入瞭解 BlueXP 分類的運作方式"^]。
 
 
