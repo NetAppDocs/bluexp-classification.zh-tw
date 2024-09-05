@@ -260,7 +260,7 @@ BlueXP 分類可識別許多類型的私人資料、例如個人資訊（ PII �
 
 此外、如果您想讓特定使用者只檢視 BlueXP 分類掃描結果、而無法管理 BlueXP 分類設定、您可以將 Cloud Compliance Viewer 角色指派給這些使用者。
 
-link:concept-cloud-compliance.html#user-access-to-compliance-information["深入瞭解"^]。
+link:concept-cloud-compliance.html["深入瞭解"^]。
 
 
 

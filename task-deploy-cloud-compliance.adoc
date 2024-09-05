@@ -182,7 +182,7 @@ BlueXP 分類執行個體使用私有 IP 位址來確保索引資料無法存取
 
 請依照下列步驟、在雲端中部署 BlueXP 分類執行個體。Connector 會在雲端部署執行個體、然後在該執行個體上安裝 BlueXP 分類軟體。
 
-請注意、在 AWS 環境中從 BlueXP Connector 部署 BlueXP 分類時、您可以選擇預設執行個體大小、也可以從兩種較小的執行個體類型中選擇。 link:concept-cloud-compliance.html#using-a-smaller-instance-type["請參閱可用的執行個體類型和限制"]。在無法使用預設執行個體類型的區域中、 BlueXP 分類會在上執行 link:reference-instance-types.html["替代執行個體類型"]。
+在無法使用預設執行個體類型的區域中、 BlueXP  分類會在上執行link:reference-instance-types.html["替代執行個體類型"]。
 
 [role="tabbed-block"]
 ====

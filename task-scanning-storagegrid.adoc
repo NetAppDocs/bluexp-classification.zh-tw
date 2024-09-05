@@ -22,9 +22,9 @@ summary: 請完成幾個步驟、以 BlueXP  分類直接在 StorageGRID 中開
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱物件儲存先決條件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]檢閱 StorageGRID 必要條件
 [role="quick-margin-para"]
-您需要有端點URL才能連線至物件儲存服務。
+您需要有端點 URL 才能連線至 StorageGRID 服務。
 
 [role="quick-margin-para"]
 您必須擁有 StorageGRID 的存取金鑰和秘密金鑰、才能讓 BlueXP  分類存取儲存區。
@@ -33,7 +33,7 @@ summary: 請完成幾個步驟、以 BlueXP  分類直接在 StorageGRID 中開
 [role="quick-margin-para"]
 link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 新增物件儲存服務
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]新增 StorageGRID 服務
 [role="quick-margin-para"]
 將 StorageGRID 服務新增至 BlueXP  分類。
 
@@ -70,17 +70,17 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 新增 StorageGRID 服務。
 
 .步驟
-. 在「工作環境組態」頁面中、按一下「*新增資料來源*」>「*新增物件儲存服務*」。
+. 在「工作環境組態」頁面中、按一下 * 新增資料來源 * > * 新增 StorageGRID * 。
 +
-image:screenshot_compliance_add_object_storage_button.png["「掃描組態」頁面的快照、您可在其中按一下「新增檔案共用群組」按鈕。"]
+image:screenshot-scanning-add-storagegrid.png["掃描組態頁面的螢幕擷取畫面、您可以在其中按一下新增 StorageGRID 按鈕。"]
 
-. 在「新增物件儲存服務」對話方塊中、輸入 StorageGRID 服務的詳細資料、然後按一下 * 繼續 * 。
+. 在「新增 StorageGRID 服務」對話方塊中、輸入 StorageGRID 服務的詳細資料、然後按一下 * 繼續 * 。
 +
 .. 輸入您要用於工作環境的名稱。此名稱應反映您要連線的 StorageGRID 服務名稱。
 .. 輸入端點URL以存取物件儲存服務。
 .. 輸入存取金鑰和秘密金鑰、讓 BlueXP  分類能夠存取 StorageGRID 中的儲存區。
 +
-image:screenshot_compliance_add_object_storage.png["對話方塊的快照、您可在其中輸入值以存取物件儲存服務。"]
+image:screenshot-scanning-storagegrid-add.png["對話方塊的螢幕擷取畫面、您可在此輸入值以存取 StorageGRID 服務。"]
 
 
 
@@ -98,11 +98,11 @@ StorageGRID 會新增到工作環境清單中。
 .步驟
 . 在「組態」頁面中、按一下 StorageGRID 工作環境中的 * 組態 * 。
 +
-image:screenshot_compliance_object_storage_config.png["按一下工作環境的「組態」以選擇您要掃描的儲存區的快照。"]
+image:screenshot-scanning-storagegrid-configuration.png["按一下工作環境的「組態」以選擇您要掃描的儲存區的快照。"]
 
 . 在您的庫位上啟用純對應掃描、或是對應和分類掃描。
 +
-image:screenshot_compliance_object_storage_select_buckets.png["選取您要掃描之物件儲存區的快照。"]
+image:screenshot-scanning-add-storagegrid-buckets.png["選取您要掃描的 StorageGRID 儲存區的螢幕擷取畫面。"]
 
 +
 [cols="45,45"]
