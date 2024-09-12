@@ -4,7 +4,7 @@ permalink: task-scanning-file-shares.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
 summary: 請完成幾個步驟、開始直接掃描非 NetApp NFS 或 CIFS 檔案與 BlueXP 分類共用。這些檔案共用區可位於內部部署或雲端。 
 ---
-= 掃描檔案共用
+= 掃描檔案與 BlueXP  分類共用
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

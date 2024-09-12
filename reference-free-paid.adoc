@@ -33,7 +33,7 @@ BlueXP 核心版本從 1.31 版及更新版本開始、有些功能已經過時�
 | 內部部署 ONTAP 的叢集 | 是的 | 是的 
 
 
-| StorageGRID | 是的 | 否 
+| StorageGRID | 是的 | 是的 
 
 
 | Azure NetApp Files | 是的 | 是的 

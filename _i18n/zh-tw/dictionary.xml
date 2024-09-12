@@ -1945,7 +1945,6 @@
   <block id="589613ebded30ccfc7919805e48604f7" category="list-text">* 下載 DSAR 報告 * ：您可傳送至資料主旨的存取要求正式回應。此報告包含根據資料主題上的 BlueXP 分類資料自動產生的資訊、並設計為作為範本使用。您應先填寫表單並在內部審查、再將其傳送至資料主旨。</block>
   <block id="7c92d233233cf7ce5aafb02b9fc01c89" category="paragraph">您可以篩選 BlueXP 分類規範儀表板的內容、查看所有工作環境和資料庫的法規遵循資料、或僅查看特定工作環境的法規遵循資料。</block>
   <block id="65f7d3315d8640ef3d8c452f389f943f" category="summary">請完成幾個步驟、開始使用 BlueXP 分類來掃描 Amazon FSX for ONTAP Volume 。</block>
-  <block id="4639bfb0440fe9f0921957654faaa847" category="doc">開始使用 Amazon FSX for ONTAP 的 BlueXP 分類</block>
   <block id="ee226c8d12b49c169ecda644ad808139" category="list-text">您需要 AWS 中的作用中 Connector 來部署和管理 BlueXP 分類。</block>
   <block id="e8b81a0a7fb72885e122ca44791572fb" category="list-text">您在建立工作環境時選取的安全性群組必須允許來自 BlueXP 分類執行個體的流量。您可以使用ENI連線至FSX for ONTAP Sfor Sffile系統、找到相關的安全群組、然後使用AWS管理主控台進行編輯。</block>
   <block id="0a1d05c09ebe4e90b8b31f3bbb2b6119" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> 啟用 BlueXP 分類、並選取要掃描的磁碟區</block>
@@ -2991,7 +2990,6 @@
   <block id="8a5ea9dc53c4c86f4aed7ef4b4da982c" category="section-title">依類別檢視檔案</block>
   <block id="ecb953672f3305298a86f0569c18d178" category="section-title">依檔案類型檢視檔案</block>
   <block id="303b0a57019c624c482fb5d775729281" category="section-title">檢視特定工作環境的儀表板資料</block>
-  <block id="50c07d396e4bf402b72ebf82cfaadea1" category="doc">掃描資料庫架構</block>
   <block id="846eb83e821481bdeafbcc34c9138401" category="section-title">部署 BlueXP 分類執行個體</block>
   <block id="117276e96b89d072e0a833596332ef29" category="section-title">新增資料庫伺服器</block>
   <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">啟用及停用資料庫架構的規範掃描</block>
@@ -3496,16 +3494,13 @@
   <block id="2c68446a47623409683fed996b7df333" category="cell">Ubuntu 伺服器內部程序所需。</block>
   <block id="f0fd47ef2ed43479969d8e3e0d0df156" category="cell">8080 （ TCP ）、 443 （ TCP ）和 80 。9000</block>
   <block id="1ed8980e59fe9f96e77c5a7b123780d1" category="cell">Connector 的防火牆或路由規則必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。請確定連接埠8080已開啟、以便您在BlueXP中查看安裝進度。如果在 Linux 主機上使用防火牆、則 Ubuntu 伺服器內部程序需要連接埠 9000 。</block>
-  <block id="b228a09a75efeade7f59510b5c5b6da0" category="doc">開始使用 Cloud Volumes ONTAP 和內部部署 ONTAP 的 BlueXP  分類</block>
   <block id="effe342ed6fdd5b79625bb273c6f43da" category="section-title">探索您要掃描的資料來源</block>
   <block id="3e07df694cbf4c604aed3e0514e35653" category="section-title">在您的工作環境中啟用 BlueXP  分類</block>
   <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">啟用和停用磁碟區上的法規遵循掃描</block>
   <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">如需詳細資訊、請參閱 <block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block> 。</block>
   <block id="5ede9806a5e8e360f81d3184f388f33b" category="section-title">確認 BlueXP  分類具有磁碟區存取權</block>
   <block id="3f0bbcbd675537960ef9995a958d5fe0" category="section-title">掃描資料保護磁碟區</block>
-  <block id="03013e116c1ce41f3b557b2caaef3575" category="doc">開始使用 Azure NetApp Files 的 BlueXP  分類</block>
   <block id="8c89db674531ab536128087dfb6cbe4f" category="section-title">探索您要掃描的 Azure NetApp Files 系統</block>
-  <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="doc">掃描檔案共用</block>
   <block id="9850feff1aac1d886b7a010236318d49" category="section-title">檢閱檔案共用需求</block>
   <block id="8324f4d6c5b9d56205261e30363b597f" category="paragraph">只要執行個體具有網際網路連線、就會自動升級至 BlueXP  分類軟體。</block>
   <block id="763e254befdcc246f3e8569877b63340" category="section-title">建立檔案共用的群組</block>
@@ -3516,7 +3511,6 @@
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="doc">掃描 StorageGRID 資料</block>
   <block id="fec0b5d2f5737f21e60a6e49ddb4e55f" category="paragraph">* 注意 * 使用核心 BlueXP  的 BlueXP  分類、您現在可以掃描 StorageGRID 資料。請參閱<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。此處的其餘資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。</block>
   <block id="c44712318b0c4e33e9d361583871c49c" category="summary">請完成幾個步驟、以 BlueXP  分類直接在 StorageGRID 中開始掃描資料。</block>
-  <block id="301b54ac16625023c7d40dcc0122ef17" category="doc">開始掃描 StorageGRID 資料</block>
   <block id="62756ad365a0397e368bc1fff7694d09" category="paragraph">您必須擁有 StorageGRID 的存取金鑰和秘密金鑰、才能讓 BlueXP  分類存取儲存區。</block>
   <block id="a1a191ce069b9cd9855c29e830e5edb1" category="paragraph">將 StorageGRID 服務新增至 BlueXP  分類。</block>
   <block id="dc3fd4fe9b1bb66db60a59be3884a90c" category="section-title">檢閱 StorageGRID 需求</block>
@@ -3549,4 +3543,10 @@
   <block id="83a1ac14de85f87d0324d9f2a2d89105" category="paragraph"><block ref="83a1ac14de85f87d0324d9f2a2d89105" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48e1eb4f3a8c9056e5dc0d4943a84ada" category="inline-image-macro">選取您要掃描的 StorageGRID 儲存區的螢幕擷取畫面。</block>
   <block id="d63ea5297bdc582794b89a4fc7b492d8" category="paragraph"><block ref="d63ea5297bdc582794b89a4fc7b492d8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e285296eea347aa1a2f1fe8f2397693" category="doc">使用 BlueXP  分類來掃描 Cloud Volumes ONTAP 和內部部署 ONTAP 磁碟區</block>
+  <block id="cd459404fa850adef50a1d5a0b9fb8e7" category="doc">使用 BlueXP  分類掃描 Azure NetApp Files 磁碟區</block>
+  <block id="2cac5148836fcc4449c2a57f4d2f787c" category="doc">使用 BlueXP  分類掃描資料庫架構</block>
+  <block id="b5e00ff2b7559dfa6fc6fe96058ede54" category="doc">掃描檔案與 BlueXP  分類共用</block>
+  <block id="7265eae2a2b23f32087dc3e5083938a2" category="doc">使用 BlueXP  分類掃描 Amazon FSX 的 ONTAP Volume</block>
+  <block id="98e210281b17a386ae53922f3fb716a8" category="doc">使用 BlueXP  分類掃描 StorageGRID 資料</block>
 </blocks>

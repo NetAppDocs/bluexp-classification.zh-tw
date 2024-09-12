@@ -4,7 +4,7 @@ permalink: task-scanning-storagegrid.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
 summary: 請完成幾個步驟、以 BlueXP  分類直接在 StorageGRID 中開始掃描資料。 
 ---
-= 開始掃描 StorageGRID 資料
+= 使用 BlueXP  分類掃描 StorageGRID 資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-scanning-anf.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
 summary: 完成幾個步驟、開始使用 Azure NetApp Files 的 BlueXP 分類。 
 ---
-= 開始使用 Azure NetApp Files 的 BlueXP  分類
+= 使用 BlueXP  分類掃描 Azure NetApp Files 磁碟區
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
