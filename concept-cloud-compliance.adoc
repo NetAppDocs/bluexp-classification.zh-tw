@@ -448,11 +448,8 @@ BlueXP 會使用安全性群組來部署 BlueXP 分類執行個體、以便從 C
 
 == BlueXP  分類中的使用者角色
 
-指派給每位使用者的角色在 BlueXP 和 BlueXP 分類中提供不同的功能：
+指派給每位使用者的角色在 BlueXP  和 BlueXP  分類中提供不同的功能。如需詳細資料、請參閱下列內容：
 
-* *帳戶管理員*可管理所有工作環境的法規遵循設定及檢視法規遵循資訊。
-* *工作區管理*只能管理具有存取權限的系統的法規遵循設定及檢視法規遵循資訊。如果工作空間管理員無法存取 BlueXP 中的工作環境、則他們無法在 BlueXP 分類索引標籤中看到工作環境的任何法規遵循資訊。
-* 具有* Compliance Viewer*角色的使用者只能檢視法規遵循資訊、並針對擁有存取權限的系統產生報告。這些使用者無法啟用 / 停用掃描磁碟區、儲存區或資料庫架構。
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAM 角色"]（在標準模式下使用 BlueXP  時）
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["BlueXP  帳戶角色"^]（在受限模式或私人模式下使用 BlueXP  時）
 
-
-https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["深入瞭解BlueXP角色"^] 以及使用方法 https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-netapp-accounts.html#adding-users["新增具有特定角色的使用者"^]。

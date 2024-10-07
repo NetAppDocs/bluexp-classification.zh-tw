@@ -256,9 +256,9 @@ BlueXP 分類可識別許多類型的私人資料、例如個人資訊（ PII �
 
 === 我可以將 BlueXP 分類資訊限制在特定使用者嗎？
 
-是的、 BlueXP 分類與 BlueXP 完全整合。BlueXP使用者只能根據其工作區權限、查看其符合檢視資格的工作環境資訊。
+是的、 BlueXP 分類與 BlueXP 完全整合。BlueXP  使用者只能根據權限查看其符合檢視資格的工作環境資訊。
 
-此外、如果您想讓特定使用者只檢視 BlueXP 分類掃描結果、而無法管理 BlueXP 分類設定、您可以將 Cloud Compliance Viewer 角色指派給這些使用者。
+此外、如果您想讓特定使用者只檢視 BlueXP  分類掃描結果、而無法管理 BlueXP  分類設定、您可以將 * 分類檢視器 * 角色（在標準模式中使用 BlueXP  時）或 * 法規遵循檢視器 * 角色（在限制模式中使用 BlueXP  時）指派給這些使用者。
 
 link:concept-cloud-compliance.html["深入瞭解"^]。
 

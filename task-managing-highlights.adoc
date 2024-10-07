@@ -65,7 +65,7 @@ BlueXP 分類提供多種方法來管理您的私有資料。有些功能可讓�
 TIP: 您無法複製位於資料庫中的檔案。
 
 .需求
-* 您必須具有「帳戶管理」或「工作區管理」角色、才能複製檔案。
+* 您必須具有複製檔案的權限。link:concept-cloud-compliance.html#user-roles["瞭解使用者存取法規遵循資訊的相關資訊"]。
 * 複製檔案時、目的地 NFS 共用區必須允許從 BlueXP 分類執行個體存取。
 * 您一次可以複製1到100、000個檔案。
 
@@ -108,7 +108,7 @@ image:screenshot_compliance_copy_file.png["快照顯示從「資料調查」頁�
 *附註：* FlexGroup 由於FlexClone不支援、因此無法複製這些實體。
 
 .需求
-* 您必須具有「帳戶管理」或「工作區管理」角色、才能複製檔案。
+* 您必須具有複製檔案的權限。link:concept-cloud-compliance.html#user-roles["瞭解使用者存取法規遵循資訊的相關資訊"]。
 * 您必須選取至少20個檔案。
 * 所有選取的檔案都必須來自同一個磁碟區、而且磁碟區必須處於線上狀態。
 * Volume必須來自Cloud Volumes ONTAP 於一個不全或內部部署ONTAP 的不全系統。目前不支援其他資料來源。
@@ -162,7 +162,7 @@ image:screenshot_compliance_clone_files_dialog.png["顯示「複製檔案」對�
 TIP: 您無法複製及同步位於資料庫、OneDrive帳戶或SharePoint帳戶中的檔案。
 
 .需求
-* 您必須具有「帳戶管理」或「工作區管理」角色、才能複製及同步檔案。
+* 您必須具有複製和同步檔案的權限。link:concept-cloud-compliance.html#user-roles["瞭解使用者存取法規遵循資訊的相關資訊"]。
 * 您必須選取至少20個檔案。
 * 所有選取的檔案都必須來自相同的來源儲存庫（ONTAP 例如、SFC磁碟區、S3磁碟區、NFS或CIFS共用區等）。
 * 您需要啟動 BlueXP 複本與同步服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。從開始檢閱 BlueXP 複本與同步要求 https://docs.netapp.com/us-en/bluexp-copy-sync/task-quick-start.html["快速入門說明"^]。
@@ -220,7 +220,7 @@ BlueXP 複本與同步 UI 會在 BlueXP 中開啟。
 TIP: 您無法移動位於資料庫中的檔案。
 
 .需求
-* 您必須具有「帳戶管理」或「工作區管理」角色、才能移動檔案。
+* 您必須具有移動檔案的權限。link:concept-cloud-compliance.html#user-roles["瞭解使用者存取法規遵循資訊的相關資訊"]。
 * 來源檔案可在下列資料來源中找到：內部部署ONTAP 的地方使用、Cloud Volumes ONTAP 使用、不只是供參考Azure NetApp Files 、使用、還可選擇供參考、使用、或是使用SharePoint Online。
 * 一次最多可移動1500萬個檔案。
 * 只會移動 50 MB 或更小的檔案。
@@ -274,7 +274,7 @@ TIP: 您無法刪除位於資料庫中的檔案。支援所有其他資料來源
 === 手動刪除來源檔案
 
 .需求
-* 您必須具有「帳戶管理」或「工作區管理」角色、才能刪除檔案。
+* 您必須具有刪除檔案的權限。link:concept-cloud-compliance.html#user-roles["瞭解使用者存取法規遵循資訊的相關資訊"]。
 * 一次最多可刪除100、000個檔案。
 
 

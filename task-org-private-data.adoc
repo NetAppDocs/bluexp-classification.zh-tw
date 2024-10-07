@@ -74,9 +74,9 @@ BlueXP 分類支援下列檔案類型中的 AIP 標籤： .DOC 、 .DOCX 、 .PD
 ====
 
 
-=== 將 AIP 標籤整合到您的工作空間中
+=== 將 AIP 標籤整合到專案或工作區中
 
-在管理 AIP 標籤之前、您必須先登入現有的 Azure 帳戶、將 AIP 標籤功能整合至 BlueXP 分類。一旦啟用、您就能在檔案中管理所有人的AIP標籤 link:concept-cloud-compliance.html["資料來源"^] 在您的BlueXP工作區中。
+在管理 AIP 標籤之前、您必須先登入現有的 Azure 帳戶、將 AIP 標籤功能整合至 BlueXP 分類。啟用後、您就可以在 BlueXP  專案或工作區的所有檔案中管理 AIP 標籤link:concept-cloud-compliance.html["資料來源"^]。
 
 .需求
 * 您必須擁有帳戶和Azure資訊保護授權。
