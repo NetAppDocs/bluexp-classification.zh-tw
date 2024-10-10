@@ -129,8 +129,8 @@ image:diagram_cloud_compliance_instance.png["顯示在雲端供應商中執行�
 請注意下列關於預設執行個體的資訊：
 
 * 在 AWS 中、 BlueXP 分類是在上執行 https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge 執行個體"^] 搭配 500 GB GP2 磁碟。作業系統映像是Amazon Linux 2。在 AWS 中部署時、如果您要掃描少量資料、可以選擇較小的執行個體大小。
-* 在 Azure 中、 BlueXP 分類是在上執行 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^] 使用 500 GB 的 GiB 磁碟。作業系統映像是CentOS 7.9。
-* 在 GCP 中、 BlueXP 分類是在上執行 link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16 VM"^] 使用 500 GB 的 GiB Standard 持續性磁碟。作業系統映像是CentOS 7.9。
+* 在 Azure 中、 BlueXP  分類是在具有 500 GB 磁碟的 A 上執行link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^]。作業系統映像是 Ubuntu 22.04 。
+* 在 GCP 中、 BlueXP  分類是在具有 500 GiB Standard 持續性磁碟的上執行link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16 VM"^]。作業系統映像是 Ubuntu 22.04 。
 * 在無法使用預設執行個體的地區、 BlueXP 分類會在替代執行個體上執行。 link:reference-instance-types.html["請參閱替代執行個體類型"]。
 * 此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * 每個 Connector 只部署一個 BlueXP 分類執行個體。
