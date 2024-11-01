@@ -10,7 +10,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
-  langs: zh-tw,us-en,de-de,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn
+  langs: zh-tw,us-en,ja-jp,ko-kr,zh-cn,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: BlueXP 分類文件
@@ -89,8 +89,6 @@ sidebar:
       entries:
       - title: 在無法存取網際網路的多部主機上安裝 BlueXP 分類
         url: "/task-deploy-multi-host-install-dark-site.html"
-      - title: 將掃描器節點新增至現有部署
-        url: "/task-deploy-add-scanner-nodes.html"
     - title: 掃描資料過時
       entries:
       - title: 掃描 Amazon S3 儲存區

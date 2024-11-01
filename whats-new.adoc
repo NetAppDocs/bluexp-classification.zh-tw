@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
 summary: 瞭解 BlueXP 分類的新功能。 
 ---
-= BlueXP 分類的新功能
+= BlueXP  分類的新功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,17 +14,49 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 
 [role="lead"]
-瞭解 BlueXP 分類（ Cloud Data Sense ）的新功能。
+瞭解 BlueXP 分類的新功能。
 
 
 
-== 2024 年 10 月 10 日（版本 1.36 ）
+== 2024 年 11 月 4 日
+
+
+
+=== 版本 1.37
 
 此 BlueXP  分類版本包含下列更新。
 
 
 
-=== 支援 RHEL 9.4
+==== 支援 RHEL 8.10
+
+除了先前支援的版本之外、此版本還支援 Red Hat Enterprise Linux v8.10 。這適用於任何手動內部部署的 BlueXP  分類安裝、包括暗點部署。
+
+下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP  分類 1.30 版或更新版本： Red Hat Enterprise Linux 8.8 、 8.10 、 9.0 、 9.1 、 9.2 、 9.3 和 9.4 版。
+
+深入瞭解 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP 分類"]。
+
+
+
+==== 支援 NFS v4.1
+
+除了先前支援的版本之外、此版本也支援 NFS v4.1 。
+
+深入瞭解 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP 分類"]。
+
+
+
+== 2024 年 10 月 10 日
+
+
+
+=== 版本 1.36
+
+此 BlueXP  分類版本包含下列更新。
+
+
+
+==== 支援 RHEL 9.4
 
 除了先前支援的版本之外、此版本還支援 Red Hat Enterprise Linux v9.4 。這適用於任何手動內部部署的 BlueXP  分類安裝、包括暗點部署。
 
@@ -34,23 +66,27 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 
 
-=== 改善掃描效能
+==== 改善掃描效能
 
 此版本可改善掃描效能。
 
 
 
-== 2024 年 9 月 2 日（版本 1 ． 5 ）
+== 2024 年 9 月 2 日
+
+
+
+=== 版本 1.35
 
 此 BlueXP  分類版本包含下列更新。
 
 
 
-=== 掃描 StorageGRID 資料
+==== 掃描 StorageGRID 資料
 
 BlueXP  分類現在可以掃描 StorageGRID 中的資料。
 
-如需詳細資訊、請 link:task-scanning-storagegrid.html["掃描 StorageGRID 資料"]參閱。
+如需詳細資訊、請 https://docs.netapp.com/us-en/bluexp-classification/task-scanning-storagegrid.html["掃描 StorageGRID 資料"]參閱。
 
 
 
@@ -331,7 +367,7 @@ Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在�
 
 === Data Sense BYOL 授權現在支援 Dark 站台
 
-現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 BlueXP 數位錢包、以便在授權即將到期時收到通知。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["瞭解如何取得及上傳您的 Data Sense BYOL 授權"]。
+現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 BlueXP 數位錢包、以便在授權即將到期時收到通知。
 
 
 

@@ -97,8 +97,7 @@ Google雲端硬碟帳戶會新增至工作環境清單。
 
 .步驟
 . 在「_Configuration」頁面中、按一下Google雲端硬碟帳戶的*組態*按鈕。
-+
-image:screenshot_compliance_google_drive_add_sites.png["「組態」頁面的快照、您可在其中選取「組態」按鈕。"]
+
 
 . 啟用Google雲端硬碟帳戶中檔案的純對應掃描、或是對應與分類掃描。
 +

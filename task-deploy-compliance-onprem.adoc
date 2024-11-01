@@ -36,9 +36,6 @@ NOTE: 若為舊版 1.30 及更早版本、如果您需要在多部主機上安�
 您也可以 link:task-deploy-compliance-dark-site.html["將 BlueXP 分類安裝在無法存取網際網路的內部部署網站上"] 完全安全的網站。
 
 
-NOTE: 如需舊版 1.30 及更早版本、若要新增掃描器節點、請參閱 link:task-deploy-add-scanner-nodes.html["將掃描器節點新增至現有部署"]。
-
-
 
 == 快速入門
 
