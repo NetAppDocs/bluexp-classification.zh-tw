@@ -1,0 +1,12 @@
+= 版本 1.35
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.35
+
+.掃描 StorageGRID 資料
+BlueXP  分類現在可以掃描 StorageGRID 中的資料。
+
+如需詳細資訊、請 link:task-scanning-storagegrid.html["掃描 StorageGRID 資料"]參閱。

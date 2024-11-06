@@ -1,0 +1,21 @@
+= 版本 1.37
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.37
+
+此 BlueXP  分類版本包含下列更新。
+
+.支援 RHEL 8.10
+除了先前支援的版本之外、此版本還支援 Red Hat Enterprise Linux v8.10 。這適用於任何手動內部部署的 BlueXP  分類安裝、包括暗點部署。
+
+下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP  分類 1.30 版或更新版本： Red Hat Enterprise Linux 8.8 、 8.10 、 9.0 、 9.1 、 9.2 、 9.3 和 9.4 版。
+
+深入瞭解 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP 分類"]。
+
+.支援 NFS v4.1
+除了先前支援的版本之外、此版本也支援 NFS v4.1 。
+
+深入瞭解 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["BlueXP 分類"]。
