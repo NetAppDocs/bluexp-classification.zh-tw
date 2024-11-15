@@ -20,7 +20,7 @@ BlueXP 分類可透過下列方式部署：
 
 * link:task-deploy-cloud-compliance.html["使用BlueXP在雲端部署"]。BlueXP 將在與 BlueXP Connector 相同的雲端供應商網路中部署 BlueXP 分類執行個體。
 * link:task-deploy-compliance-onprem.html["安裝在可存取網際網路的Linux主機上"]。在網路中的 Linux 主機或雲端中有網際網路存取的 Linux 主機上安裝 BlueXP 分類。如果您偏好使用內部部署的 BlueXP 分類執行個體來掃描內部部署的 ONTAP 系統、這種安裝類型可能是一個很好的選擇、但這並不是一項要求。
-* link:task-deploy-compliance-dark-site.html["在內部部署站台的 Linux 主機上安裝、無需存取網際網路"]也稱為 _private 模式。 _ 這種安裝類型使用安裝指令碼、非常適合您的安全站台。
+* link:task-deploy-compliance-dark-site.html["在內部部署站台的 Linux 主機上安裝、無需存取網際網路"]也稱為 _private 模式。 _ 這種安裝類型使用安裝指令碼，無法連線至 BlueXP  SaaS 層。
 
 
 在可存取網際網路的 Linux 主機上進行安裝、以及在沒有網際網路存取的 Linux 主機上進行內部部署安裝、都需要使用安裝指令碼。指令碼會先檢查系統和環境是否符合先決條件。如果符合先決條件、則會開始安裝。如果您想要獨立於執行 BlueXP 分類安裝來驗證先決條件、您可以下載個別的軟體套件、只測試先決條件。

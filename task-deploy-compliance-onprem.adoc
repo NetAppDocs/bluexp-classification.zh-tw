@@ -28,12 +28,10 @@ Linux主機_在雲端_上的典型安裝具有下列元件和連線。
 
 image:diagram_deploy_onprem_cloud_instance.png["所需的BlueXP和網路元件、以及相關連線的圖表。"]
 
-對於掃描 PB 資料的大型組態、在 1.30 版及更早版本上、您可以包含多部主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。
-
 
 NOTE: 若為舊版 1.30 及更早版本、如果您需要在多部主機上安裝 BlueXP 分類、請參閱 link:task-deploy-multi-host-install-dark-site.html["在無法存取網際網路的多部主機上安裝 BlueXP 分類"]。
 
-您也可以 link:task-deploy-compliance-dark-site.html["將 BlueXP 分類安裝在無法存取網際網路的內部部署網站上"] 完全安全的網站。
+您也可以link:task-deploy-compliance-dark-site.html["將 BlueXP 分類安裝在無法存取網際網路的內部部署網站上"]。
 
 
 
@@ -286,10 +284,6 @@ NFS Volume 匯出原則必須允許從 BlueXP 分類執行個體存取。
 對於一般組態、您將在單一主機系統上安裝軟體。 <<一般組態的單一主機安裝,請參閱此處的步驟>>。
 
 image:diagram_deploy_onprem_single_host_internet.png["顯示使用部署在內部部署且可存取網際網路的單一 BlueXP 分類執行個體時、可掃描之資料來源位置的圖表。"]
-
-對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。瞭解更多連結： task-deploy-multier-host-install-dark 網站 .html > 關於在多部主機上安裝大型組態的資訊。
-
-image:diagram_deploy_onprem_multi_host_internet.png["顯示使用部署在內部部署且可存取網際網路的多個 BlueXP 分類執行個體時、可掃描之資料來源位置的圖表。"]
 
 請參閱 <<準備Linux主機系統,準備Linux主機系統>> 和 <<從 BlueXP 分類啟用輸出網際網路存取,檢閱先決條件>> 以取得部署 BlueXP 分類之前的完整需求清單。
 

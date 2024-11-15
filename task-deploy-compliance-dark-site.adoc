@@ -14,7 +14,7 @@ summary: 請完成幾個步驟、在內部部署網站上無法存取網際網�
 
 
 [role="lead"]
-請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這類安裝最適合安全的站台。
+請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這種使用安裝指令碼的安裝類型無法連線至 BlueXP  SaaS 層。
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解 BlueXP Connector 和 BlueXP 分類的不同部署模式"^]。
 
@@ -254,8 +254,6 @@ NFS Volume 匯出原則必須允許從 BlueXP 分類執行個體存取。
 
 | 如果在 Linux 主機上使用防火牆 | 9000 | Ubuntu 伺服器內部程序所需。 
 |===
-如果您使用多個 BlueXP 分類主機來提供額外的處理能力來掃描資料來源、則需要啟用其他連接埠 / 通訊協定。 link:task-deploy-compliance-dark-site.html["請參閱其他連接埠需求"]。
-
 
 
 == 在內部部署 Linux 主機上安裝 BlueXP 分類
@@ -263,8 +261,6 @@ NFS Volume 匯出原則必須允許從 BlueXP 分類執行個體存取。
 對於一般組態、您將在單一主機系統上安裝軟體。
 
 image:diagram_deploy_onprem_single_host_no_internet.png["圖表顯示在內部部署的單一 BlueXP 分類執行個體、在沒有網際網路存取的情況下、您可以掃描的資料來源位置。"]
-
-image:diagram_deploy_onprem_multi_host_no_internet.png["顯示您可以在內部部署多個 BlueXP 分類執行個體、但無法存取網際網路時、掃描之資料來源位置的圖表。"]
 
 
 

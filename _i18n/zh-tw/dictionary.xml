@@ -1405,7 +1405,6 @@
   <block id="1b7ccf3735aab9407a71052e40136f7e" category="cell">389（TCP與udp）、636（TCP）、3268（TCP）和3269（TCP）</block>
   <block id="4c1d159c6f87e616542feee759bfc905" category="list-text">DNS伺服器IP位址或多個IP位址</block>
   <block id="196004c131c20b6770256be1148132f8" category="list-text">伺服器的使用者名稱和密碼</block>
-  <block id="baeedc928ad10edb5cbbe96bbe80e8d0" category="inline-link-macro">請參閱其他連接埠需求</block>
   <block id="e1095ff19466581c5274f67123c95036" category="cell">\https://api.bluexp.netapp.com</block>
   <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
   <block id="ad5480f838ed67e92fecf7af3cef120d" category="paragraph-title">下一步</block>
@@ -2247,8 +2246,6 @@
   <block id="31960e3a0a5575dab07c414d0f050b5e" category="section-title">在內部部署 Linux 主機上安裝 BlueXP 分類</block>
   <block id="0698c1d2033d1d237a564aa425785c93" category="inline-image-macro">圖表顯示在內部部署的單一 BlueXP 分類執行個體、在沒有網際網路存取的情況下、您可以掃描的資料來源位置。</block>
   <block id="903ab6306b53df8d7e387c78c2dcb7e5" category="paragraph"><block ref="903ab6306b53df8d7e387c78c2dcb7e5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="95ca4827847440176f97092b65a75679" category="inline-image-macro">顯示您可以在內部部署多個 BlueXP 分類執行個體、但無法存取網際網路時、掃描之資料來源位置的圖表。</block>
-  <block id="9a796537f743745021babac25c346996" category="paragraph"><block ref="9a796537f743745021babac25c346996" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4c8ed9ed1210b4b825ecd4522c73de9" category="paragraph">在離線環境中的單一內部部署主機上安裝 BlueXP 分類軟體時、請遵循下列步驟。</block>
   <block id="c0ce9427d990ef75ad8057d3956744b1" category="list-text">確認您的離線環境符合所需 <block ref="0a0d20cd0d171f694689b851f0521135" category="inline-xref-macro-rx"></block>。</block>
   <block id="8a77259a547d85aa243c1731eb9cf4f9" category="list-text">在網際網路設定的系統上、從下載 BlueXP 分類軟體<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。您應該選取的檔案名稱為* DataSense-offline bund-&lt;版本&gt;.tar.gz*。</block>
@@ -2330,8 +2327,6 @@
   <block id="0fdf0f2278428dd8c2b92f0ddd236759" category="section-title">在 Linux 主機上安裝 BlueXP 分類</block>
   <block id="6935fb258dcaa809f3c08a4aaa082315" category="inline-image-macro">顯示使用部署在內部部署且可存取網際網路的單一 BlueXP 分類執行個體時、可掃描之資料來源位置的圖表。</block>
   <block id="ec5760b557b54a69b5d29fb05e68b8c1" category="paragraph"><block ref="ec5760b557b54a69b5d29fb05e68b8c1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bfd2c96cae6d29697ceac4feda921426" category="inline-image-macro">顯示使用部署在內部部署且可存取網際網路的多個 BlueXP 分類執行個體時、可掃描之資料來源位置的圖表。</block>
-  <block id="b1030a584c34dcb45c3a231937109e48" category="paragraph"><block ref="b1030a584c34dcb45c3a231937109e48" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c0eb32e59a3574faaca63218c3f5922f" category="paragraph">請參閱 <block ref="dc1d236e8ef0d554549faeaffd48b8b2" category="inline-xref-macro-rx"></block> 和 <block ref="2360c56931bf3d2d23fb74a3dc780c78" category="inline-xref-macro-rx"></block> 以取得部署 BlueXP 分類之前的完整需求清單。</block>
   <block id="60e3e1e8b520c28183ebe86bd433deda" category="list-text">如果 Proxy 正在執行 TLS 攔截、您必須知道儲存 TLS CA 憑證的 BlueXP 分類 Linux 系統路徑。</block>
   <block id="d66d1b16789175829b23ed7e745d66dd" category="list-text">確認您的離線環境符合所需 <block ref="9eb48ce3a280aa134b4c3aab7ed78a68" category="inline-xref-macro-rx"></block>。</block>
@@ -2988,7 +2983,6 @@
   <block id="7c6b159592aa05d7d8934685f5b0c4c8" category="cell">32 個 CPU 、 128 GB RAM 、作業系統磁碟（ 2 、 048 GiB 、最低 250 MB/s 處理量）和資料磁碟（ 1 個 TiB SSD 、最低 750 MB/s 處理量）</block>
   <block id="f3c46003464601608d44d2644affcce1" category="paragraph">在 SaaS 模式中使用 BlueXP 時、會透過 HTTPS 提供與 BlueXP 的連線、而在瀏覽器和 BlueXP 分類執行個體之間傳送的私有資料則會使用 TLS 1.2 來保護端點對端加密、這表示 NetApp 和協力廠商無法讀取。</block>
   <block id="f943db85a7c2edd799890ddb18f29cab" category="doc">在無法存取網際網路的 Linux 主機上安裝 BlueXP 分類</block>
-  <block id="e920147793c6514a998387c74226605b" category="paragraph">請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這類安裝最適合安全的站台。</block>
   <block id="8e75bb9e135d127903c8df1b4d72574d" category="list-text">下列作業系統需要使用 Podman Container 引擎、而且需要 BlueXP 分類版本 1.30 或更新版本：</block>
   <block id="8da041e8fe3c0d961b0ec560416bc9a4" category="section-title">BlueXP 分類是否需要存取認證？</block>
   <block id="e54c52f3a3c545fc2e2f82026ac5945f" category="paragraph">BlueXP 分類本身無法擷取儲存認證。而是儲存在 BlueXP Connector 中。</block>
@@ -3003,7 +2997,6 @@
   <block id="b723c5ee7facb4d3bb0af0a7d2f3d7ab" category="list-text"><block ref="cf6b836a5ed0d1fcbc1d079fcc9d0736" category="inline-link-macro-rx"></block>。BlueXP 將在與 BlueXP Connector 相同的雲端供應商網路中部署 BlueXP 分類執行個體。</block>
   <block id="112a4fbc92b6e9c424407aa2efa54779" category="list-text"><block ref="953e3010369667b8110edc0847a61543" category="inline-link-macro-rx"></block>。在網路中的 Linux 主機或雲端中有網際網路存取的 Linux 主機上安裝 BlueXP 分類。如果您偏好使用內部部署的 BlueXP 分類執行個體來掃描內部部署的 ONTAP 系統、這種安裝類型可能是一個很好的選擇、但這並不是一項要求。</block>
   <block id="5be81ee840734d5fff39d8fb451e87de" category="inline-link-macro">在內部部署站台的 Linux 主機上安裝、無需存取網際網路</block>
-  <block id="7c5fdd74ce4770d435a4270b4817294a" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>也稱為 _private 模式。 _ 這種安裝類型使用安裝指令碼、非常適合您的安全站台。</block>
   <block id="a59f7e9514f364f5b3574b8ad02f202d" category="paragraph">在可存取網際網路的 Linux 主機上進行安裝、以及在沒有網際網路存取的 Linux 主機上進行內部部署安裝、都需要使用安裝指令碼。指令碼會先檢查系統和環境是否符合先決條件。如果符合先決條件、則會開始安裝。如果您想要獨立於執行 BlueXP 分類安裝來驗證先決條件、您可以下載個別的軟體套件、只測試先決條件。</block>
   <block id="1e4c9e5b4eb9656593e357ac3f61cdc1" category="paragraph">請參閱 <block ref="a838f62b35f046b790a8a32eff3e63b6" category="inline-link-macro-rx"></block>。</block>
   <block id="1f2986b833ebc6f322deb045aeee0ad8" category="section-title">新增 RHEL v8.8 和 v9.3 BlueXP 分類支援</block>
@@ -3065,12 +3058,9 @@
   <block id="d23cdfe3be69f69baed369d543f36aa9" category="paragraph">「_Classification」區域提供最能辨識的清單 <block ref="d3b5de2fe3785a28f0b4099f30abefe6" category="inline-link-macro-rx"></block> 和 <block ref="6d5873eba480eee9411c9a14fd12e5d9" category="inline-link-macro-rx"></block> 在掃描資料中。</block>
   <block id="f754acc189a7236fe2fb4657457fcb2c" category="paragraph">* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。2023 年 12 月（ v1.26.6 ）版本移除使用 Azure Information Protection （ AIP ）標籤整合資料的選項。</block>
   <block id="13871df601ad6fe31ca70129438c5986" category="list-text">BlueXP 分類不會從資料庫資料來源擷取「上次存取時間」。</block>
-  <block id="52c31809bdb836acfc2de3ee032c0faa" category="paragraph">對於掃描 PB 資料的大型組態、在 1.30 版及更早版本上、您可以包含多部主機、以提供額外的處理能力。使用多個主機系統時、主要系統稱為_Manager節點_、而提供額外處理能力的其他系統稱為_scaliple nodes _。</block>
   <block id="166af9c4abcdeaeaa01f2df7fcd961a7" category="inline-link-macro">在無法存取網際網路的多部主機上安裝 BlueXP 分類</block>
-  <block id="0dcde9bea70f4948a25486523fde4e97" category="paragraph">您也可以 <block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block> 完全安全的網站。</block>
   <block id="7cc60b2d044c80070664df0b3bdf1a77" category="paragraph">安裝和使用 BlueXP 分類之前、需要 BlueXP Connector 。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因<block ref="4b65067251af1a04ab5f187e9a47f47a" category="inline-link-rx"></block>但有些情況下您需要立即設定一個。</block>
   <block id="d91ed5bff9bd13eee5c43964bbe67be4" category="list-text">在 AWS 或 Amazon FSX for ONTAP 的 Cloud Volumes ONTAP 中掃描資料時、您會在 AWS 中使用 Connector 。</block>
-  <block id="428a85a15f039350823864cdd9f6711b" category="paragraph">對於掃描PB資料的大型組態、您可以納入多個主機、以提供額外的處理能力。瞭解更多連結： task-deploy-multier-host-install-dark 網站 .html &gt; 關於在多部主機上安裝大型組態的資訊。</block>
   <block id="758de85e3f025a37293713e5735825a9" category="admonition">當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 儲存區、 Azure NetApp Files 或適用於 ONTAP 的 FSX 。在這些情況下、您需要在雲端和中部署個別的 Connector 和 BlueXP 分類執行個體<block ref="3cd9b819ecbc63be3401566b7b7cbf66" category="inline-link-rx"></block> 適用於不同的資料來源。</block>
   <block id="f221652320e994dc66aab1d5d6da5fb7" category="paragraph">請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它是寫入的<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>。 <block ref="c7911c51adef419f386feff4cec8acf6" category="inline-link-macro-rx"></block>。</block>
   <block id="224bbd10a45d7fdcbbb8075666b6c93a" category="cell">選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。在目錄中篩選時、 BlueXP 分類會將每個資料夾（和子資料夾）中所有檔案的相符項目總計。
@@ -3142,7 +3132,6 @@
   <block id="3ef1f7ef6e40406c6da9ebbf30881295" category="paragraph">由於單一Google雲端硬碟帳戶只有單一使用者的Google雲端硬碟檔案、因此如果您想要停止掃描使用者Google雲端硬碟帳戶的檔案、您應該這樣做 <block ref="5f8a68577631fb4846e68096e5a718cb" category="inline-link-macro-rx"></block>。</block>
   <block id="470ff04800cc0e7e4547c6f8184436fa" category="admonition">若為舊版 1.30 及更早版本、如果您需要在多部主機上安裝 BlueXP 分類、請參閱 <block ref="94ed65ad8557cbd4dade332ad2e77a61" category="inline-link-macro-rx"></block>。</block>
   <block id="991ebd87a81ed22c3d81251fd13ad652" category="paragraph">目前不支援在私有模式下部署 BlueXP 分類時、掃描 Cloud Volumes ONTAP 、 Azure NetApp Files 或 FSX for ONTAP 帳戶。</block>
-  <block id="3fba2d2072ada5e4a305ed49625f7c97" category="paragraph">如果您使用多個 BlueXP 分類主機來提供額外的處理能力來掃描資料來源、則需要啟用其他連接埠 / 通訊協定。 <block ref="8ab506a6f74eff926eb35a8eb7627a1d" category="inline-link-macro-rx"></block>。</block>
   <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">對於一般組態、您將在單一主機系統上安裝軟體。</block>
   <block id="279ac5dd73c3a5783ebeb10e172c4f38" category="paragraph">重要</block>
   <block id="a14a0ee1284c6c34c6c0305b52963e2f" category="paragraph">從 2024 年 5 月開始、 BlueXP 分類為 BlueXP 的核心功能、無需額外付費。不需要分類授權或訂閱。我們也將 BlueXP 分類功能集中在 NetApp 儲存系統上、因此部分未使用或未充分使用的功能已被淘汰。</block>
@@ -3496,4 +3485,7 @@
   <block id="4d892f9a0cb70711d12ffb41d4d77d8b" category="section-title">版本 1.20</block>
   <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">2023 年 1 月 9 日</block>
   <block id="58080b77f4121259ffde5ce32650fff6" category="section-title">版本 1.19</block>
+  <block id="d201913c731a2c485562d2197234ff40" category="paragraph">請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這種使用安裝指令碼的安裝類型無法連線至 BlueXP  SaaS 層。</block>
+  <block id="eea715e21fdd29a12f087199006074c7" category="paragraph">您也可以<block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block>。</block>
+  <block id="6ff9945c9b8d3c1700dad8f9a06d2ab2" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>也稱為 _private 模式。 _ 這種安裝類型使用安裝指令碼，無法連線至 BlueXP  SaaS 層。</block>
 </blocks>
