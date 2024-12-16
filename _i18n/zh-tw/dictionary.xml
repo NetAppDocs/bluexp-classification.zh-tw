@@ -3488,4 +3488,7 @@
   <block id="d201913c731a2c485562d2197234ff40" category="paragraph">請完成幾個步驟、在內部部署網站上無法存取網際網路的 Linux 主機上安裝 BlueXP 分類、也稱為 _ 私有模式 _ 。這種使用安裝指令碼的安裝類型無法連線至 BlueXP  SaaS 層。</block>
   <block id="eea715e21fdd29a12f087199006074c7" category="paragraph">您也可以<block ref="76c224cc80265848284829e2886db42b" category="inline-link-macro-rx"></block>。</block>
   <block id="6ff9945c9b8d3c1700dad8f9a06d2ab2" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>也稱為 _private 模式。 _ 這種安裝類型使用安裝指令碼，無法連線至 BlueXP  SaaS 層。</block>
+  <block id="5ae300808387123005a76abbd5a99f46" category="doc">版本 1.38</block>
+  <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">此 BlueXP  分類版本包含一般改良功能和錯誤修正。</block>
+  <block id="c33f35ab44944cc0d09e5bb702125592" category="section-title">2024 年 16 月 12 日</block>
 </blocks>
