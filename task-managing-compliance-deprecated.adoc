@@ -17,7 +17,7 @@ summary: 如有需要、您可以停止 BlueXP 分類、不掃描一或多個工
 如果您不想再從特定 OneDrive 帳戶、特定 SharePoint 帳戶或 Google Drive 帳戶掃描使用者檔案、您可以從 BlueXP 分類介面刪除帳戶、並停止所有掃描。
 
 .步驟
-. 在「_Configuration」頁面中、按一下 image:screenshot_gallery_options.gif["更多按鈕"] 按鈕、然後按一下「*移除OneDrive帳戶*」、「*移除SharePoint帳戶*」或「*移除Google雲端硬碟帳戶*」。
+. 在 _Configuration_ 頁面中，按一下 image:screenshot_gallery_options.gif["更多按鈕"]OneDrive ， SharePoint 或 Google Drive 帳戶列中的按鈕，然後按一下 * 移除 OneDrive 帳戶 * ， * 移除 SharePoint 帳戶 * 或 * 移除 Google Drive 帳戶 * 。
 +
 image:screenshot_compliance_remove_onedrive.png["「掃描組態」頁面中「移除 OneDrive 」按鈕的快照。"]
 

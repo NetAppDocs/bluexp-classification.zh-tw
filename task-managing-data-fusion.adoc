@@ -18,7 +18,7 @@ BlueXP 分類提供許多方法、讓您新增自訂的「個人資料」清單�
 
 []
 ====
-* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+* 注意 * 此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。
 
 ====
 * 您可以根據所掃描的資料庫中的特定欄位來新增唯一識別碼。
@@ -45,7 +45,7 @@ image:diagram_compliance_data_fusion.png["圖表顯示如何使用資料庫的�
 請注意、由於您正在掃描自己的資料庫、因此在未來的 BlueXP 分類掃描中、無論資料儲存在哪種語言、都會用來識別資料。
 
 .步驟
-您必須擁有 link:task-scanning-databases.html#add-the-database-server["新增至少一個資料庫伺服器"^] 至 BlueXP 分類、然後再新增資料 Fusion 來源。
+您必須link:task-scanning-databases.html#add-the-database-server["新增至少一個資料庫伺服器"^]先進行 BlueXP  分類，才能新增資料 Fusion 來源。
 
 . 在「組態」頁面中、按一Fusion 下來源資料所在資料庫中的*管理Data S還原*。
 +
@@ -72,7 +72,7 @@ image:screenshot_compliance_data_fusion_list.png["您已設定資料 Fusion 功�
 
 
 .結果
-下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。例如、您用於分類器的名稱會出現在篩選器清單中 `Customers.CustomerID`。
+下次掃描後、結果會將此新資訊納入「法規遵循儀表板」的「個人結果」區段、以及「個人資料」篩選器的「調查」頁面。您用於分類器的名稱會出現在篩選器清單中，例如 `Customers.CustomerID`。
 
 image:screenshot_add_data_fusion_result.png["「Fusion 調查結果」窗格中顯示資料實例的快照。"]
 
@@ -140,7 +140,7 @@ image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示�
 
 新增 regex 之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類法規遵循儀表板的「個人結果」區段下方、以及「個人資料」篩選器的「調查」頁面中。
 
-如果您需要建置規則運算式的協助、請參閱 https://regex101.com/["規則運算式 101."^]。選擇 *Python* 以查看結果類型 BlueXP 分類將與規則運算式相符。。 https://pythonium.net/regex["Python Regex 測試器頁面"^] 也可透過顯示圖樣的圖形表示方式來使用。
+如果您需要建置規則運算式的協助，請參閱 https://regex101.com/["規則運算式 101."^]。選擇 *Python* 以查看結果類型 BlueXP 分類將與規則運算式相符。也可以 https://pythonium.net/regex["Python Regex 測試器頁面"^]透過顯示圖樣的圖形表示方式來使用。
 
 
 NOTE: 目前我們不允許在建立 regex 時使用模式旗標、這表示您不應該使用「 / 」。
@@ -181,7 +181,7 @@ image:screenshot_personal_info_regex_added.png["快照顯示在掃描進行中�
 
 == 新增自訂類別
 
-BlueXP 分類會將它掃描的資料分成不同類型的類別。類別是以人工智慧分析每個檔案的內容和中繼資料為基礎的主題。 link:reference-private-data-categories.html#types-of-categories["請參閱預先定義類別清單"]。
+BlueXP 分類會將它掃描的資料分成不同類型的類別。類別是以人工智慧分析每個檔案的內容和中繼資料為基礎的主題。link:reference-private-data-categories.html#types-of-categories["請參閱預先定義類別清單"]。
 
 類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、像是_恢復_或_員工合約_的類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。
 
@@ -189,7 +189,7 @@ BlueXP 分類會將它掃描的資料分成不同類型的類別。類別是以�
 
 例如、您可能想要查看.gz格式的壓縮安裝檔案在檔案中的位置、以便視需要加以移除。
 
-更新自訂類別之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類規範儀表板的「類別」區段下方、以及「類別」篩選器的「調查」頁面中。 link:task-controlling-private-data.html#view-files-by-categories["瞭解如何依類別檢視檔案"]。
+更新自訂類別之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類規範儀表板的「類別」區段下方、以及「類別」篩選器的「調查」頁面中。link:task-controlling-private-data.html#view-files-by-categories["瞭解如何依類別檢視檔案"]。
 
 .您需要的產品
 您至少需要建立 25 個訓練檔案、其中包含您希望 BlueXP 分類識別的資料類別範例。支援下列檔案類型：
@@ -235,7 +235,7 @@ image:screenshot_category_files_added.png["顯示 BlueXP 分類將用作定義�
 
 image:screenshot_add_regex_result.png["在「調查結果」窗格中顯示自訂regex結果範例的快照。"]
 
-按一下 image:button_arrow_investigate.png["使用箭頭畫圓"] 按鈕、可在「調查」頁面中查看詳細結果。
+按一下image:button_arrow_investigate.png["使用箭頭畫圓"]按鈕，即可在「調查」頁面中查看詳細結果。
 
 此外、您的所有自訂類別器結果都會顯示在「自訂類別器」索引標籤中、前6個自訂類別器結果則會顯示在「符合性儀表板」中、如下所示。
 

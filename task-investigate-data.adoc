@@ -25,7 +25,7 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 
 您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。
 
-如果您想要在調整頁面內容之後、將其下載為報告、請按一下 image:button_download.png["下載按鈕"] 按鈕。 <<資料調查報告,如需資料調查報告的詳細資料、請前往此處>>。
+如果您想要在修改頁面內容後，將其下載為報告，請按一下image:button_download.png["下載按鈕"]按鈕。<<資料調查報告,如需資料調查報告的詳細資料、請前往此處>>。
 
 image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整結果時可用篩選器的快照。"]
 
@@ -45,24 +45,22 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 篩選器 | 詳細資料 
 
 
-| 類別 | 選取 link:reference-private-data-categories.html#types-of-categories["類別類型"^]。 
+| 類別 | 選擇。link:reference-private-data-categories.html#types-of-categories["類別類型"^] 
 
 
 | 敏感度等級 | 選取敏感度等級：個人、敏感個人或不敏感。 
 
 
-| 識別碼數目 | 選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。在目錄中篩選時、 BlueXP 分類會將每個資料夾（和子資料夾）中所有檔案的相符項目總計。
-
-附註： 2023 年 12 月（ 1.26.6 版）版本移除了依目錄計算個人識別資訊（ PII ）資料數量的選項。 
+| 識別碼數目 | 選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。在目錄中篩選時、 BlueXP 分類會將每個資料夾（和子資料夾）中所有檔案的相符項目總計。附註： 2023 年 12 月（ 1.26.6 版）版本移除了依目錄計算個人識別資訊（ PII ）資料數量的選項。 
 
 
-| 個人資料 | 選取 link:reference-private-data-categories.html#types-of-personal-data["個人資料類型"^]。 
+| 個人資料 | 選擇。link:reference-private-data-categories.html#types-of-personal-data["個人資料類型"^] 
 
 
-| 敏感個人資料 | 選取 link:reference-private-data-categories.html#types-of-sensitive-personal-data["敏感個人資料的類型"^]。 
+| 敏感個人資料 | 選擇。link:reference-private-data-categories.html#types-of-sensitive-personal-data["敏感個人資料的類型"^] 
 
 
-| 資料主旨 | 輸入資料主旨的完整名稱或已知識別碼。 link:task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports["在此深入瞭解資料主題"^]。 
+| 資料主旨 | 輸入資料主旨的完整名稱或已知識別碼。link:task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports["在此深入瞭解資料主題"^]。 
 |===
 
 
@@ -129,7 +127,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 目錄類型 | 選取目錄類型：「Share（共用）」或「Folder（資料夾）」。 
 
 
-| 檔案類型 | 選取 link:reference-private-data-categories.html#types-of-files["檔案類型"^]。 
+| 檔案類型 | 選擇。link:reference-private-data-categories.html#types-of-files["檔案類型"^] 
 
 
 | 檔案大小 | 選取檔案大小範圍。 
@@ -167,7 +165,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 | 篩選器 | 詳細資料 
 
 
-| 原則 | 選取原則。行動 link:task-using-policies.html["請按這裡"^] 可查看現有策略列表並創建您自己的自定義策略。 
+| 原則 | 選取原則。前往link:task-using-policies.html["請按這裡"^]檢視現有原則清單，並建立您自己的自訂原則。 
 |===
 
 
@@ -185,7 +183,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整
 
 | 掃描分析事件 | 選取您是否要檢視未分類的檔案、因為 BlueXP 分類無法還原上次存取的時間、或是即使 BlueXP 分類無法還原上次存取的時間、仍已分類的檔案。 
 |===
-link:reference-collected-metadata.html#last-access-time-timestamp["請參閱「上次存取時間」時間戳記的詳細資料"] 如需使用掃描分析事件進行篩選時、出現在「調查」頁面的項目相關資訊。
+link:reference-collected-metadata.html#last-access-time-timestamp["請參閱「上次存取時間」時間戳記的詳細資料"]如需使用掃描分析事件篩選時出現在「調查」頁面中項目的詳細資訊。
 
 
 
@@ -204,11 +202,11 @@ link:reference-collected-metadata.html#last-access-time-timestamp["請參閱「�
 
 == 檢視檔案中繼資料
 
-在「資料調查結果」窗格中、您可以按一下 image:button_down_caret.png["減少需求"] 用於檢視檔案中繼資料的任何單一檔案。
+在「資料調查結果」窗格中，您可以按一下image:button_down_caret.png["減少需求"]任何單一檔案來檢視檔案中繼資料。
 
 image:screenshot_compliance_file_details.png["快照顯示資料調查頁面中檔案的中繼資料詳細資料。"]
 
-除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、以及此檔案是否有重複的項目。如果您打算使用、這項資訊很實用 link:task-using-policies.html#create-custom-policies["建立原則"] 因為您可以看到用來篩選資料的所有資訊。
+除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、以及此檔案是否有重複的項目。如果您計畫使用此資訊，這項資訊非常實用link:task-using-policies.html#create-custom-policies["建立原則"]，因為您可以看到篩選資料所需的所有資訊。
 
 請注意、並非所有資料來源都能取得所有資訊、只是適合該資料來源的資訊而已。例如、磁碟區名稱和權限與資料庫檔案無關。
 
@@ -218,11 +216,11 @@ image:screenshot_compliance_file_details.png["快照顯示資料調查頁面中�
 
 若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於 CIFS 共用資料。
 
-請注意、如果您看到 SID （安全性識別碼）而非使用者和群組名稱、則應該將 Active Directory 整合到 BlueXP 分類中。 link:task-add-active-directory-datasense.html["瞭解如何做到這一點"]。
+請注意、如果您看到 SID （安全性識別碼）而非使用者和群組名稱、則應該將 Active Directory 整合到 BlueXP 分類中。link:task-add-active-directory-datasense.html["瞭解如何做到這一點"]。
 
 image:screenshot_compliance_permissions.png["顯示詳細檔案權限的快照。"]
 
-您可以按一下 image:button_down_caret.png["減少需求"] 可讓任何群組查看屬於群組的使用者清單。
+您可以按一下image:button_down_caret.png["減少需求"]任何群組以查看屬於群組的使用者清單。
 
 此外、 您可以按一下使用者或群組的名稱、「調查」頁面會顯示該使用者或群組的名稱、並填入「使用者/群組權限」篩選器中、以便查看使用者或群組可存取的所有檔案和目錄。
 
@@ -236,7 +234,7 @@ image:screenshot_compliance_permissions.png["顯示詳細檔案權限的快照�
 
 BlueXP 分類使用雜湊技術來判斷重複的檔案。如果任何檔案的雜湊代碼與其他檔案相同、我們可以100%確定檔案確實重複、即使檔案名稱不同。
 
-您可以下載重複檔案清單、並將其傳送給儲存設備管理員、讓他們決定可以刪除哪些檔案（如果有）。您也可以 link:task-managing-highlights.html#delete-source-files["刪除檔案"] 如果您確信不需要特定版本的檔案、請自行設定。
+您可以下載重複檔案清單、並將其傳送給儲存設備管理員、讓他們決定可以刪除哪些檔案（如果有）。或者，如果您確信不需要特定版本的檔案，也可以link:task-managing-highlights.html#delete-source-files["刪除檔案"]自行決定。
 
 
 
@@ -250,7 +248,7 @@ BlueXP 分類使用雜湊技術來判斷重複的檔案。如果任何檔案的�
 
 === 檢視是否有重複的特定檔案
 
-如果您想要查看單一檔案是否有重複項目、請在「資料調查結果」窗格中按一下 image:button_down_caret.png["減少需求"] 用於檢視檔案中繼資料的任何單一檔案。如果某個檔案有重複項目、此資訊會顯示在「_重複項目_」欄位旁。
+如果您想查看單一檔案是否有重複的項目，可以在「資料調查結果」窗格中按一下image:button_down_caret.png["減少需求"]任何單一檔案，以檢視檔案中繼資料。如果某個檔案有重複項目、此資訊會顯示在「_重複項目_」欄位旁。
 
 若要檢視重複檔案的清單及其所在位置、請按一下*檢視詳細資料*。在下一頁中、按一下「*檢視重複記錄*」以檢視「調查」頁面中的檔案。
 
@@ -274,7 +272,7 @@ TIP: 您可以使用本頁提供的「檔案雜湊」值、並直接在「調查
 === 產生資料調查報告
 
 .步驟
-. 在「Data Investigation（資料調查）」頁面中、按一下 image:button_download.png["下載按鈕"] 按鈕。
+. 在「資料調查」頁面上，按一下image:button_download.png["下載按鈕"]頁面右上方的按鈕。
 . 選擇下載。 資料的 CSV 報告、然後按一下 * 下載報告 * 。
 +
 image:screenshot_compliance_investigation_report.png["下載調查報告頁面的快照、內含多個選項。"]

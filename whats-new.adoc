@@ -28,7 +28,7 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 
 
-== 2024 年 11 月 4 日
+== 2024 年 4 月 11 日
 
 
 
@@ -125,11 +125,11 @@ BlueXP  分類已將適用於 Microsoft Azure 和 Google Cloud Platform （ GCP
 .儀表板中的其他資料
 此版本會在地圖繪製掃描期間、更新 Governance 、 Compliance 和 Investigation 儀表板中顯示的資料。
 
-如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["對應和分類掃描之間有何差異"]
+如需詳細資訊，請參閱 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["對應和分類掃描之間有何差異"]
 
 
 
-== 2024 年 6 月 5 日
+== 2024 年 5 月 6 日
 
 
 
@@ -138,7 +138,7 @@ BlueXP  分類已將適用於 Microsoft Azure 和 Google Cloud Platform （ GCP
 .「組態」頁面中的「新對應」狀態欄
 此版本現在會在「組態」頁面中顯示新的「對應」狀態欄。新欄可協助您識別對應是否正在執行、佇列中、暫停或更多。
 
-如需狀態的說明、請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["變更掃描設定"]。
+有關狀態的說明，請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html["變更掃描設定"]。
 
 
 
@@ -174,12 +174,12 @@ link:reference-free-paid.html["深入瞭解過時的功能"]。
 啟用稽核記錄集合的選項已停用。
 
 .掃描速度更快
-二次掃描儀節點上的掃描效能已改善。如果您需要額外的處理能力來進行掃描、您可以新增更多掃描器節點。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["在可存取網際網路的主機上安裝 BlueXP 分類"]。
+二次掃描儀節點上的掃描效能已改善。如果您需要額外的處理能力來進行掃描、您可以新增更多掃描器節點。如需詳細資訊、請 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["在可存取網際網路的主機上安裝 BlueXP 分類"]參閱。
 
 .自動升級
-如果您在可存取網際網路的系統上部署 BlueXP 分類、系統會自動升級。之前、升級是在上次使用者活動之後經過一段特定時間之後進行。在此版本中、如果當地時間介於上午 1 ： 00 至上午 5 ： 00 之間、 BlueXP 分類會自動升級。如果本地時間超出這些時間、則升級會在上次使用者活動之後經過一段特定時間後進行。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["安裝在可存取網際網路的Linux主機上"]。
+如果您在可存取網際網路的系統上部署 BlueXP 分類、系統會自動升級。之前、升級是在上次使用者活動之後經過一段特定時間之後進行。在此版本中，如果當地時間介於上午 1 ： 00 至上午 5 ： 00 之間， BlueXP  分類會自動升級。如果本地時間超出這些時間、則升級會在上次使用者活動之後經過一段特定時間後進行。如需詳細資訊、請 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["安裝在可存取網際網路的Linux主機上"]參閱。
 
-如果您部署的 BlueXP 分類沒有網際網路存取、則需要手動升級。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["在無法存取網際網路的 Linux 主機上安裝 BlueXP 分類"]。
+如果您部署的 BlueXP 分類沒有網際網路存取、則需要手動升級。如需詳細資訊、請 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-dark-site.html["在無法存取網際網路的 Linux 主機上安裝 BlueXP 分類"]參閱。
 
 
 
@@ -211,28 +211,28 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 「調查」頁面中的篩選結果現在除了顯示檔案總數之外、還會顯示項目的總大小。這有助於移動檔案、刪除檔案等。
 
 .將其他群組 ID 設定為「開放給組織」
-現在您可以在 NFS 中設定群組 ID 、以便直接從 BlueXP 分類中將其視為「開放組織」、如果群組一開始沒有設定該權限。任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示為「開放給組織」。瞭解如何操作 https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["新增其他群組 ID 為「開放給組織」"]。
+現在您可以在 NFS 中設定群組 ID 、以便直接從 BlueXP 分類中將其視為「開放組織」、如果群組一開始沒有設定該權限。任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示為「開放給組織」。請參閱如何 https://docs.netapp.com/us-en/bluexp-classification/task-add-group-id-as-open.html["新增其他群組 ID 為「開放給組織」"]。
 
 
 
-== 2023 年 12 月 14 日
+== 2023 年 14 月 12 日
 
 
 
-=== 1.26.6 版
+=== 版本 1.26.6
 
 此版本包含一些小的增強功能。
 
 此版本也移除下列選項：
 
 * 啟用稽核記錄集合的選項已停用。
-* 在目錄調查期間、無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。請參閱 link:task-investigate-data.html#filter-data-by-sensitivity-and-content["調查組織中儲存的資料"]。
+* 在目錄調查期間，無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。請參閱 link:task-investigate-data.html#filter-data-by-sensitivity-and-content["調查組織中儲存的資料"]。
 * 已停用使用 Azure Information Protection （ AIP ）標籤整合資料的選項。請參閱 link:task-org-private-data.html["組織您的私有資料"]。
 
 
 
 
-== 2023 年 11 月 6 日
+== 2023 年 6 月 11 日
 
 
 
@@ -269,7 +269,7 @@ Red Hat Enterprise Linux 第 8 版和第 9 版不支援 Docker 引擎、這是 B
 當您在 AWS 中部署 BlueXP 分類執行個體時、目前無法使用選擇 * 部署 > 組態 * 並選擇中小型執行個體的選項。您仍然可以使用大型執行個體來部署執行個體、方法是選取 * 部署 > 部署 * 。
 
 .從「調查結果」頁面、最多可在 100 、 000 個項目上套用標記
-過去、您只能在「調查結果」頁面（ 20 個項目）中一次將標記套用至單一頁面。現在您可以在「調查結果」頁面中選取 * 所有 * 項目、並將標記套用至所有項目、一次最多可有 100,000 個項目。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assign-tags-to-files["瞭解方法"]。
+過去、您只能在「調查結果」頁面（ 20 個項目）中一次將標記套用至單一頁面。現在您可以在「調查結果」頁面中選取 * 所有 * 項目，並將標記套用至所有項目，一次最多可有 100,000 個項目。 https://docs.netapp.com/us-en/bluexp-classification/task-org-private-data.html#assign-tags-to-files["瞭解方法"]。
 
 .識別檔案大小最小為 1 MB 的重複檔案
 BlueXP 分類僅在檔案大小為 50 MB 時用於識別重複的檔案。現在可以識別以 1 MB 開始的重複檔案。您可以使用「調查」頁面篩選「檔案大小」和「重複」、來查看環境中有哪些檔案大小的複本。
@@ -292,7 +292,7 @@ BlueXP 分類可識別及分類包含下列資料類型的檔案：
 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["查看 BlueXP 分類可在資料中識別的所有個人資料類型"]。
 
 .在受限模式和私有模式下、完全支援 BlueXP 分類
-BlueXP 分類現在已在沒有網際網路存取（私有模式）和限制外傳網際網路存取（限制模式）的網站中獲得完整支援。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["深入瞭解 Connector 的 BlueXP 部署模式"^]。
+BlueXP  分類現在已在沒有網際網路存取（私有模式）且輸出網際網路存取有限（限制模式）的網站中獲得完整支援。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["深入瞭解 Connector 的 BlueXP 部署模式"^]。
 
 .在升級 BlueXP 分類的私有模式安裝時、可以略過版本
 現在您可以升級至較新版本的 BlueXP 分類、即使它不是連續的。這表示目前不再需要將 BlueXP 分類一次升級一個版本的限制。從 1.24 版開始、此功能相當實用。
@@ -311,10 +311,10 @@ https://docs.netapp.com/us-en/bluexp-classification/api-classification.html["深
 === 版本 1.23
 
 .搜尋資料主體名稱時、現在支援日文
-現在可以在搜尋受試者名稱以回應資料主體存取要求（ DSAR ）時輸入日文名稱。您可以產生 https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["資料主旨存取要求報告"] 以及產生的資訊。您也可以在中輸入日文名稱 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content["「資料調查」頁面中的「資料主旨」篩選器"] 識別包含主體名稱的檔案。
+現在可以在搜尋受試者名稱以回應資料主體存取要求（ DSAR ）時輸入日文名稱。您可以使用產生的資訊來產生 https://docs.netapp.com/us-en/bluexp-classification/task-generating-compliance-reports.html#what-is-a-data-subject-access-request["資料主旨存取要求報告"]。您也可以在中輸入日文名稱 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#filter-data-by-sensitivity-and-content["「資料調查」頁面中的「資料主旨」篩選器"]，以識別包含主旨名稱的檔案。
 
 .Ubuntu 現在是支援的 Linux 套裝作業系統、您可以在其中安裝 BlueXP 分類
-Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在網路中的 Ubuntu Linux 主機上安裝 BlueXP 分類、或在雲端的 Linux 主機上使用 1.23 版的安裝程式。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["瞭解如何在安裝 Ubuntu 的主機上安裝 BlueXP 分類"]。
+Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。使用 1.23 版安裝程式時，您可以在網路中的 Ubuntu Linux 主機或雲端中的 Linux 主機上安裝 BlueXP  分類。 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-compliance-onprem.html["瞭解如何在安裝 Ubuntu 的主機上安裝 BlueXP 分類"]。
 
 .新的 BlueXP 分類安裝不再支援 Red Hat Enterprise Linux 8.6 和 8.7
 新部署不支援這些版本、因為 Red Hat 不再支援 Docker 、這是必要條件。如果您現有的 BlueXP 分類機器在 RHEL 8.6 或 8.7 上執行、 NetApp 將繼續支援您的組態。
@@ -334,13 +334,13 @@ Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在�
 === 版本 1.22
 
 .新的資料探索評估報告
-「資料探索評估報告」會針對您所掃描的環境提供高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。本報告的目標是提高對資料治理疑慮、資料安全性曝露及資料集資料合規性缺口的認知度。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-discovery-assessment-report["瞭解如何產生及使用資料探索評估報告"]。
+「資料探索評估報告」會針對您所掃描的環境提供高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。本報告的目標是提高對資料治理疑慮，資料安全性曝露及資料集資料合規性缺口的認知度。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-discovery-assessment-report["瞭解如何產生及使用資料探索評估報告"]。
 
 .能夠在雲端的較小執行個體上部署 BlueXP 分類
-在 AWS 環境中從 BlueXP Connector 部署 BlueXP 分類時、現在您可以從兩種比預設執行個體可用的執行個體類型更小的執行個體類型中進行選擇。如果您掃描的是小型環境、這有助於節省雲端成本。不過、使用較小的執行個體時會有一些限制。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["請參閱可用的執行個體類型和限制"]。
+在 AWS 環境中從 BlueXP Connector 部署 BlueXP 分類時、現在您可以從兩種比預設執行個體可用的執行個體類型更小的執行個體類型中進行選擇。如果您掃描的是小型環境、這有助於節省雲端成本。不過，使用較小的執行個體時會有一些限制。 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#using-a-smaller-instance-type["請參閱可用的執行個體類型和限制"]。
 
 .獨立指令碼現已推出、可在安裝 BlueXP 分類之前驗證您的 Linux 系統
-如果您想驗證 Linux 系統是否符合所有先決條件、而不需執行 BlueXP 分類安裝、您可以下載一個獨立的指令碼、只測試先決條件。 https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["瞭解如何檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類"]。
+如果您想驗證 Linux 系統是否符合所有先決條件，而不需執行 BlueXP  分類安裝，您可以下載一個獨立的指令碼，只測試先決條件。 https://docs.netapp.com/us-en/bluexp-classification/task-test-linux-system.html["瞭解如何檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類"]。
 
 
 
@@ -351,7 +351,7 @@ Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。您可以在�
 === 版本 1.21
 
 .新功能可從 BlueXP 分類 UI 新增您自己的自訂類別
-BlueXP 分類現在可讓您新增自己的自訂類別、以便 BlueXP 分類能識別符合這些類別的檔案。BlueXP 分類有許多 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories["預先定義的類別"]因此，此功能可讓您新增自訂類別，以識別在資料中找到組織專屬的資訊。
+BlueXP 分類現在可讓您新增自己的自訂類別、以便 BlueXP 分類能識別符合這些類別的檔案。BlueXP  分類有許多 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-categories["預先定義的類別"]種，因此此功能可讓您新增自訂類別，以識別組織特有的資訊在資料中的位置。
 
 https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-categories["深入瞭解"^]。
 
@@ -384,7 +384,7 @@ https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categ
 
 .安裝增強功能
 * 對於無法存取網際網路的網站（黑暗網站）、 BlueXP 分類安裝程式現在會執行預先檢查、以確保您的系統和網路需求已就緒、以便順利安裝。
-* 安裝稽核記錄檔現在會儲存、並寫入 `/ops/netapp/install_logs`。
+* 安裝稽核記錄檔會立即儲存；這些檔案會寫入 `/ops/netapp/install_logs`。
 
 
 
@@ -406,13 +406,13 @@ BlueXP 分類已能夠新增自訂的「個人資料」、 BlueXP 分類將在�
 https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.html#add-custom-personal-data-identifiers-using-a-regex["深入瞭解如何從 BlueXP 分類 UI 新增自訂模式"^]。
 
 .能夠使用 BlueXP 分類來移動 1500 萬個檔案
-過去、 BlueXP 分類最多可將 100 、 000 個來源檔案移至任何 NFS 共用區。現在您一次最多可以搬移1500萬個檔案。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#move-source-files-to-an-nfs-share["深入瞭解如何使用 BlueXP 分類來移動來源檔案"]。
+過去、 BlueXP 分類最多可將 100 、 000 個來源檔案移至任何 NFS 共用區。現在您一次最多可以移動 1500 萬個檔案。 https://docs.netapp.com/us-en/bluexp-classification/task-managing-highlights.html#move-source-files-to-an-nfs-share["深入瞭解如何使用 BlueXP 分類來移動來源檔案"]。
 
 .能夠查看有權存取SharePoint Online檔案的使用者人數
 篩選器「具有存取權限的使用者人數」現在支援儲存在SharePoint Online儲存庫中的檔案。過去只支援CIFS共用上的檔案。請注意、目前不以Active Directory為基礎的SharePoint群組將不會計入此篩選器。
 
 .新的「部分成功」狀態已新增至「行動狀態」面板
-新的「部分成功」狀態表示 BlueXP 分類動作已完成、有些項目失敗、有些項目成功、例如當您移動或刪除 100 個檔案時。此外、「已完成」狀態已重新命名為「成功」。過去、「已完成」狀態可能會列出成功及失敗的動作。現在「成功」狀態代表所有項目的所有行動都成功。 https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html["請參閱如何檢視「動作狀態」面板"]。
+新的「部分成功」狀態表示 BlueXP 分類動作已完成、有些項目失敗、有些項目成功、例如當您移動或刪除 100 個檔案時。此外、「已完成」狀態已重新命名為「成功」。過去、「已完成」狀態可能會列出成功及失敗的動作。現在「成功」狀態表示所有項目的所有動作都成功。 https://docs.netapp.com/us-en/bluexp-classification/task-view-compliance-actions.html["請參閱如何檢視「動作狀態」面板"]。
 
 
 
@@ -423,7 +423,7 @@ https://docs.netapp.com/us-en/bluexp-classification/task-managing-data-fusion.ht
 === 版本 1.19
 
 .能夠檢視含有敏感資料且過於許可的檔案圖表
-「治理」儀表板新增了「敏感資料」和「廣泛權限」區域、提供內含敏感資料（包括敏感和敏感個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料的風險所在。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["深入瞭解"]。
+「治理」儀表板新增了「敏感資料」和「廣泛權限」區域、提供內含敏感資料（包括敏感和敏感個人資料）且過於許可的檔案熱圖。這有助於您瞭解敏感資料可能會有哪些風險。 https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html#data-listed-by-sensitivity-and-wide-permissions["深入瞭解"]。
 
 .「資料調查」頁面提供三種新篩選條件
 我們提供新的篩選條件、以精簡「資料調查」頁面中顯示的結果：

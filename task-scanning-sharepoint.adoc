@@ -18,7 +18,7 @@ summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描 SharePoint 
 
 []
 ====
-* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+* 注意 * 此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。
 
 ====
 
@@ -27,19 +27,19 @@ summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描 SharePoint 
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱SharePoint先決條件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]檢閱 SharePoint 必要條件
 [role="quick-margin-para"]
 請確定您擁有登入SharePoint帳戶的合格認證、而且您有要掃描之SharePoint網站的URL。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 登入SharePoint帳戶
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]登入 SharePoint 帳戶
 [role="quick-margin-para"]
 使用合格的使用者認證、登入您要存取的SharePoint帳戶、以便將其新增為新的資料來源/工作環境。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 新增要掃描的SharePoint網站URL
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]新增要掃描的 SharePoint 網站 URL
 [role="quick-margin-para"]
 在SharePoint帳戶中新增您要掃描的SharePoint網站URL清單、然後選取掃描類型。您可以一次新增多達 100 個 URL 、每個帳戶最多可新增 1 、 000 個站台。
 
@@ -64,11 +64,11 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 如果尚未部署執行個體、請部署 BlueXP 分類。
 
-* 對於 SharePoint Online 、 BlueXP 分類可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^]。
-* 對於 SharePoint 內部部署、可以安裝 BlueXP 分類 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^] 或 link:task-deploy-compliance-dark-site.html["位於無法存取網際網路的內部部署位置"^]。
+* 對於 SharePoint Online ， BlueXP  分類可以是link:task-deploy-cloud-compliance.html["部署於雲端"^]。
+* 若為內部部署的 SharePoint ，則可安裝 BlueXP  分類link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]，或link:task-deploy-compliance-dark-site.html["位於無法存取網際網路的內部部署位置"^]。
 
 
-當 BlueXP 分類安裝在無法存取網際網路的網站上時、 BlueXP Connector 也必須安裝在同一個網站上、而無需存取網際網路。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["深入瞭解"^]。
+當 BlueXP  分類安裝在無法存取網際網路的站台上時， BlueXP  Connector 也必須安裝在同一個站台上，而無需存取網際網路。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["深入瞭解"^]。
 
 只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 
@@ -174,4 +174,4 @@ BlueXP 分類會開始掃描您新增之 SharePoint 網站中的檔案、結果�
 
 image:screenshot_compliance_sharepoint_remove_site.png["螢幕擷取畫面顯示如何移除單一SharePoint網站、使其檔案無法掃描。"]
 
-請注意、您可以 link:task-managing-compliance.html["從 BlueXP 分類中刪除整個 SharePoint 帳戶"] 如果您不想再從SharePoint帳戶掃描任何使用者資料。
+請注意，如果您不想再掃描 SharePoint 帳戶中的任何使用者資料，則可以link:task-managing-compliance.html["從 BlueXP 分類中刪除整個 SharePoint 帳戶"]執行此動作。

@@ -20,9 +20,9 @@ summary: 您可以將全域 Active Directory 與 BlueXP 分類整合、以強化
 
 這項整合在 BlueXP 分類的下列位置提供其他資訊：
 
-* 您可以使用「檔案擁有者」 link:task-investigate-data.html#filter-data-in-the-data-investigation-page["篩選器"] 並在「調查」窗格中查看檔案中繼資料中的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。
-* 您可以看到 link:task-investigate-data.html#view-permissions-for-files-and-directories["完整檔案權限"] 按一下「檢視所有權限」按鈕、即可查看每個檔案和目錄。
-* 在中 link:task-controlling-governance-data.html["治理儀表板"]、「開啟權限」面板會顯示更多資料的詳細資料。
+* 您可以使用「檔案擁有者」link:task-investigate-data.html#filter-data-in-the-data-investigation-page["篩選器"]，在「調查」窗格中查看檔案中繼資料的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。
+* 當您按一下「檢視所有權限」按鈕時，您可以看到link:task-investigate-data.html#view-permissions-for-files-and-directories["完整檔案權限"]每個檔案和目錄。
+* 在link:task-controlling-governance-data.html["治理儀表板"]中，「開放權限」面板會顯示更詳細的資料。
 
 
 
@@ -83,7 +83,7 @@ LDAP伺服器IP位址或多個IP位址
 | TCP | 636 | Active Directory | LDAP over SSL 
 
 
-| TCP | 3268/ | Active Directory | 全球目錄 
+| TCP | 3268 | Active Directory | 全球目錄 
 
 
 | TCP | 3269 | Active Directory | 全球目錄（透過SSL） 
@@ -116,4 +116,4 @@ image:screenshot_compliance_active_directory_added.png["顯示 BlueXP 分類中�
 
 如果您需要修改Active Directory整合中的任何值、請按一下*編輯*按鈕進行變更。
 
-如果不再需要整合、您也可以按一下來刪除整合 image:screenshot_gallery_options.gif["更多按鈕"] 按鈕、然後*移除Active Directory *。
+如果您不再需要整合功能，您也可以按一下按鈕，然後按一下 * 移除 Active Directory* 來刪除整合image:screenshot_gallery_options.gif["更多按鈕"]功能。

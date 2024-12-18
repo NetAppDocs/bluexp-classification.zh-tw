@@ -18,7 +18,7 @@ summary: 請完成幾個步驟、以 BlueXP 分類開始掃描 Google Drive 帳�
 
 []
 ====
-* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+* 注意 * 此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。
 
 ====
 
@@ -27,19 +27,19 @@ summary: 請完成幾個步驟、以 BlueXP 分類開始掃描 Google Drive 帳�
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱Google雲端硬碟的必要條件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]檢視 Google 雲端硬碟的必要條件
 [role="quick-margin-para"]
 確認您擁有登入Google雲端硬碟帳戶的管理認證資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 登入Google雲端硬碟帳戶
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]登入 Google 雲端硬碟帳戶
 [role="quick-margin-para"]
 使用管理使用者認證、登入您要存取的Google雲端硬碟帳戶、將其新增為新的資料來源。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 選取使用者檔案的掃描類型
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]選取使用者檔案的掃描類型
 [role="quick-margin-para"]
 選取您要對使用者檔案執行的掃描類型；對應或對應及分類。
 
@@ -68,7 +68,7 @@ Google Drive 檔案目前不支援下列 BlueXP 分類功能：
 
 如果尚未部署執行個體、請部署 BlueXP 分類。
 
-BlueXP 分類可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
+BlueXP  分類可以是link:task-deploy-cloud-compliance.html["部署於雲端"^]或link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
 
 只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 
@@ -126,4 +126,4 @@ BlueXP 分類會開始掃描您新增的 Google Drive 帳戶中的檔案、結�
 
 == 從法規遵循掃描中移除 Google 雲端硬碟帳戶
 
-由於單一Google雲端硬碟帳戶只有單一使用者的Google雲端硬碟檔案、因此如果您想要停止掃描使用者Google雲端硬碟帳戶的檔案、您應該這樣做 link:task-managing-compliance.html["從 BlueXP 分類中刪除 Google Drive 帳戶"]。
+由於只有單一使用者的 Google 雲端硬碟檔案屬於單一 Google 雲端硬碟帳戶的一部分，因此如果您想要停止從使用者的 Google 雲端硬碟帳戶掃描檔案link:task-managing-compliance.html["從 BlueXP 分類中刪除 Google Drive 帳戶"]，您應該。

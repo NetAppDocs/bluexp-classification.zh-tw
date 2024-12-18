@@ -20,7 +20,7 @@ BlueXP 分類記錄在 BlueXP 分類所掃描的所有工作環境和資料來�
 
 []
 ====
-* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+* 注意 * 此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。
 
 ====
 
@@ -57,7 +57,7 @@ BlueXP 分類記錄在 BlueXP 分類所掃描的所有工作環境和資料來�
 
 == 記錄檔位置
 
-管理稽核記錄檔位於以下位置的 BlueXP 分類機器： `/opt/netapp/audit_logs/`
+管理稽核記錄檔位於以下 BlueXP  分類機器上： `/opt/netapp/audit_logs/`
 
 安裝稽核記錄檔會寫入 `/opt/netapp/install_logs/`
 
@@ -67,4 +67,4 @@ BlueXP 分類記錄在 BlueXP 分類所掃描的所有工作環境和資料來�
 
 == 存取記錄檔
 
-您必須登入 BlueXP 分類系統才能存取記錄檔。瞭解如何操作 link:reference-log-in-to-instance.html["登入 BlueXP 分類系統"] 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。
+您必須登入 BlueXP 分類系統才能存取記錄檔。瞭解如何link:reference-log-in-to-instance.html["登入 BlueXP 分類系統"]視您是在 Linux 機器上手動安裝軟體，還是在雲端部署執行個體而定。

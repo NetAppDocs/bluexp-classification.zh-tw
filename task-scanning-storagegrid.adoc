@@ -29,15 +29,15 @@ summary: 請完成幾個步驟、以 BlueXP  分類直接在 StorageGRID 中開
 [role="quick-margin-para"]
 您必須擁有 StorageGRID 的存取金鑰和秘密金鑰、才能讓 BlueXP  分類存取儲存區。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]新增 StorageGRID 服務
 [role="quick-margin-para"]
 將 StorageGRID 服務新增至 BlueXP  分類。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 選取要掃描的儲存區
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]選取要掃描的貯體
 [role="quick-margin-para"]
 選擇您要掃描的貯體、 BlueXP 分類將開始掃描它們。
 

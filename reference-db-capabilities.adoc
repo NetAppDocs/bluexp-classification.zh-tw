@@ -16,7 +16,7 @@ summary: 在掃描資料庫架構時、 BlueXP 分類無法使用某些功能。
 [role="lead"]
 在掃描資料庫架構時、 BlueXP 分類無法使用某些功能。請參閱下列清單。
 
-您可以將資料庫架構新增至要掃描的 BlueXP 分類 link:task-scanning-databases.html["如此處所述"^]。
+您可以將資料庫架構新增至要掃描的 BlueXP  分類link:task-scanning-databases.html["如此處所述"^]。
 
 [cols="12,25,9,9,9,9,9,9,9"]
 |===

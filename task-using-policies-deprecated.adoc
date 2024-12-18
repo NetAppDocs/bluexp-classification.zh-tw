@@ -52,7 +52,7 @@ image:screenshot_compliance_add_email_alert_2.png["螢幕快照顯示如何選�
 NOTE: 符合原則的所有檔案將一天永久刪除一次。
 
 .步驟
-. 在「資料調查」頁面中、選取您要使用的所有篩選條件、以定義您的搜尋。請參閱 link:task-investigate-data.html["篩選資料調查頁面中的資料"^] 以取得詳細資料。
+. 在「資料調查」頁面中、選取您要使用的所有篩選條件、以定義您的搜尋。如需詳細資訊、請參閱 link:task-investigate-data.html["篩選資料調查頁面中的資料"^] 。
 . 當您以所需的方式擁有所有篩選特性之後、請按一下*從此搜尋建立原則*。
 . 命名原則並選取原則可以執行的其他動作：
 +
@@ -69,7 +69,7 @@ image:screenshot_compliance_delete_files_using_policies.png["顯示如何設定�
 .結果
 新原則會出現在原則索引標籤中。符合原則的檔案會在原則執行時每天刪除一次。
 
-您可以在中檢視已刪除的檔案清單 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
+您可以在中檢視已刪除的檔案清單link:task-view-compliance-actions.html["「行動狀態」窗格"]。
 
 
 

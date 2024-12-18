@@ -64,4 +64,4 @@ image:screenshot_scan_analysis_event_filter.png["篩選器的螢幕快照、可�
 * 「上次存取時間已分類並已更新」 - 這會顯示已分類的檔案、而 BlueXP 分類無法將上次存取時間重設回原始日期。此篩選器僅適用於您在上遺失「寫入屬性」權限*時、開啟*「掃描」的環境。
 
 
-如有需要、您可以將這些結果匯出至報告、以便查看哪些檔案因為權限而被掃描或未被掃描。 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#data-investigation-report["深入瞭解資料調查報告"^]。
+如有需要，您可以將這些結果匯出至報告，以便查看哪些檔案因為權限而被掃描或未被掃描。 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#data-investigation-report["深入瞭解資料調查報告"^]。

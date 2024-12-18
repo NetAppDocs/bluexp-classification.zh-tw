@@ -25,19 +25,19 @@ NOTE: BlueXP 分類核心版本不支援從非 NetApp 檔案共用掃描資料�
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱檔案共用先決條件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]檢閱檔案共用先決條件
 [role="quick-margin-para"]
 若為CIFS（SMB）共用、請確定您擁有存取共用的認證資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 建立一個群組以保留檔案共用
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]建立群組以保留檔案共用
 [role="quick-margin-para"]
 此群組是您要掃描之檔案共用的容器、會做為這些檔案共用的工作環境名稱。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 將檔案共用新增至群組
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]將檔案共用新增至群組
 [role="quick-margin-para"]
 新增您要掃描的檔案共用清單、然後選取掃描類型。一次最多可新增100個檔案共用區。
 
@@ -54,7 +54,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 * BlueXP 分類執行個體與共用區之間需要有網路連線。
 * 請確定這些連接埠已開放給 BlueXP 分類執行個體：
 +
-** NFS：連接埠111和2049。
+** 適用於NFS：連接埠111和2049。
 ** 適用於CIFS：連接埠139和445。
 
 
@@ -63,7 +63,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 +
 如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。
 
-* 您需要以「<host_name>//<share_path>'格式新增的共用清單。您可以個別輸入共用、也可以提供要掃描之檔案共用的行分隔清單。
+* 您需要以格式新增的共用清單 `<host_name>:/<share_path>`。您可以個別輸入共用、也可以提供要掃描之檔案共用的行分隔清單。
 
 
 
@@ -96,7 +96,7 @@ image:screenshot_compliance_add_fileshares_button.png["「掃描組態」頁面�
 
 == 新增檔案共用至群組
 
-您可以將檔案共用新增至「檔案共用群組」、以便這些共用中的檔案會由 BlueXP 分類進行掃描。您可以新增格式的共用 `<host_name>:/<share_path>`。
+您可以將檔案共用新增至「檔案共用群組」、以便這些共用中的檔案會由 BlueXP 分類進行掃描。您可以使用格式新增共用 `<host_name>:/<share_path>`。
 
 您可以新增個別檔案共用、也可以提供要掃描之檔案共用的行分隔清單。一次最多可新增100個共用。
 
@@ -146,7 +146,7 @@ image:screenshot_compliance_fileshares_add_file_shares.png["「新增檔案共�
 | 停用掃描檔案共用區 | 按一下「*關*」 
 |===
 +
-預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。 link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
+預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
 
 
 

@@ -20,7 +20,7 @@ summary: 當您從「調查結果」窗格對許多檔案執行動作時、例�
 
 []
 ====
-* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+* 注意 * 此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。
 
 ====
 狀態可以是：
@@ -36,7 +36,7 @@ summary: 當您從「調查結果」窗格對許多檔案執行動作時、例�
 請注意、您可以取消任何狀態為「佇列中」或「進行中」的動作。
 
 .步驟
-. 在 BlueXP 分類 UI 的右下角、您可以看到 * 動作狀態 * 按鈕 image:button_actions_status.png[""]。
+. 在 BlueXP  分類 UI 的右下角，您可以看到 * 操作狀態 * 按鈕image:button_actions_status.png[""]。
 . 按一下此按鈕、就會列出最近的20個動作。
 +
 image:screenshot_compliance_action_status.png["在「組態」頁面中顯示最後20個動作及其狀態的快照。"]

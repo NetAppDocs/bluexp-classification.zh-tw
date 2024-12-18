@@ -22,24 +22,24 @@ summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描您的 Cloud
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 探索您要掃描的資料來源
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]探索您要掃描的資料來源
 [role="quick-margin-para"]
 在掃描磁碟區之前、您必須先將系統新增為藍圖XP中的工作環境：
 
 [role="quick-margin-list"]
 * 對於供應系統、這些工作環境應該已經可在BlueXP中使用Cloud Volumes ONTAP
-* 對於內部部署 ONTAP 的不全系統、 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["BlueXP必須探索ONTAP 整個叢集"^]
+* 對於內部部署 ONTAP 系統， https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["BlueXP必須探索ONTAP 整個叢集"^]
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 啟用 BlueXP 分類、並選取要掃描的磁碟區
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]啟用 BlueXP  分類，然後選取要掃描的磁碟區
 [role="quick-margin-para"]
 選取 * 組態 * 索引標籤、並針對特定工作環境中的磁碟區啟動法規遵循掃描。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 確保能夠存取磁碟區
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]確保存取磁碟區
 [role="quick-margin-para"]
 現在已啟用 BlueXP 分類、請確定它可以存取所有磁碟區。
 
@@ -48,7 +48,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 * Cloud Volumes ONTAP 的安全性群組必須允許來自 BlueXP 分類執行個體的傳入連線。
 * 請確定這些連接埠已開放給 BlueXP 分類執行個體：
 +
-** NFS：連接埠111和2049。
+** 適用於NFS -連接埠111和2049。
 ** 適用於CIFS -連接埠139和445。
 
 
@@ -59,7 +59,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"] 管理您要掃描的磁碟區
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]管理您要掃描的磁碟區
 [role="quick-margin-para"]
 選取或取消選取您要掃描的磁碟區、 BlueXP 分類將會開始或停止掃描。
 
@@ -69,7 +69,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 如果您要掃描的資料來源尚未在您的BlueXP環境中、您可以將其新增至繪圖。
 
-您的需求系統應該已經可在BlueXP的畫版中使用。Cloud Volumes ONTAP若為內部部署ONTAP 的功能、您必須擁有 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["BlueXP會探索這些叢集"^]。
+您的需求系統應該已經可在BlueXP的畫版中使用。Cloud Volumes ONTAP對於內部部署的 ONTAP 系統，您必須擁有 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["BlueXP會探索這些叢集"^]。
 
 
 
@@ -77,9 +77,9 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 如果尚未部署執行個體、請部署 BlueXP 分類。
 
-如果您要掃描Cloud Volumes ONTAP 可ONTAP 透過網際網路存取的內部功能不全的功能、您可以 link:task-deploy-cloud-compliance.html["在雲端部署 BlueXP 分類"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
+如果您正在掃描可透過網際網路存取的 Cloud Volumes ONTAP 和內部部署 ONTAP 系統，您可以link:task-deploy-cloud-compliance.html["在雲端部署 BlueXP 分類"^]或link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
 
-如果您正在掃描ONTAP 安裝在沒有網際網路連線的黑暗站台上的內部部署的資訊系統、您需要 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署 BlueXP 分類"^]。這也需要在同一個內部部署位置部署BlueXP Connector。
+如果您正在掃描內部部署的 ONTAP 系統link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署 BlueXP 分類"^]，但該系統已安裝在無法存取網際網路的黑暗網站中，則您需要。這也需要在同一個內部部署位置部署BlueXP Connector。
 
 只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 
@@ -93,7 +93,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 +
 image:screenshot_cloud_compliance_we_scan_config.png["部署 BlueXP 分類執行個體之後、立即顯示「組態」索引標籤的螢幕快照。"]
 
-. 選取您要在每個工作環境中掃描磁碟區的方式。 link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["深入瞭解對應與分類掃描"]：
+. 選取您要在每個工作環境中掃描磁碟區的方式。link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["深入瞭解對應與分類掃描"]：
 +
 ** 若要對應所有磁碟區、請按一下*對應所有磁碟區*。
 ** 若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。
@@ -112,7 +112,7 @@ BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 Blu
 [NOTE]
 ====
 * 根據預設、如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統將不會掃描磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。產生的頁面有一個您可以啟用的設定、以便 BlueXP 分類無論權限為何、都能掃描磁碟區。
-* BlueXP 分類只會掃描一個磁碟區下的一個檔案共用區。如果您的磁碟區中有多個共享區、則需要以共用群組的形式分別掃描這些其他共用區。 link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["請參閱更多關於此 BlueXP 分類限制的詳細資料"^]。
+* BlueXP 分類只會掃描一個磁碟區下的一個檔案共用區。如果您的磁碟區中有多個共享區、則需要以共用群組的形式分別掃描這些其他共用區。link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["請參閱更多關於此 BlueXP 分類限制的詳細資料"^]。
 
 
 ====
@@ -130,7 +130,7 @@ BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 Blu
 
 . 確保下列連接埠已開放給 BlueXP 分類執行個體：
 +
-** NFS：連接埠111和2049。
+** 適用於NFS -連接埠111和2049。
 ** 適用於CIFS -連接埠139和445。
 
 
@@ -171,7 +171,7 @@ image:screenshot_compliance_volume_details.gif["掃描組態中「檢視詳細�
 
 您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。建議您掃描所有 Volume 。
 
-預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。 link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
+預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
 
 image:screenshot_volume_compliance_selection.png["「組態」頁面的快照、可讓您啟用或停用個別磁碟區的掃描。"]
 

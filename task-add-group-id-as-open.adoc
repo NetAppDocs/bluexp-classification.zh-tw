@@ -18,7 +18,7 @@ summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、�
 
 進行此變更並重新掃描檔案和資料夾後、任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示此權限、而且這些權限也會出現在您顯示檔案權限的報告中。
 
-若要啟動此功能、您需要登入 BlueXP 分類系統、以便編輯組態檔案並執行指令碼。瞭解如何操作 link:reference-log-in-to-instance.html["登入 BlueXP 分類系統"] 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。
+若要啟動此功能、您需要登入 BlueXP 分類系統、以便編輯組態檔案並執行指令碼。瞭解如何link:reference-log-in-to-instance.html["登入 BlueXP 分類系統"]視您是在 Linux 機器上手動安裝軟體，還是在雲端部署執行個體而定。
 
 
 
@@ -27,7 +27,7 @@ summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、�
 您必須先擁有群組 ID 編號（ GID ）、才能開始執行此工作。
 
 .步驟
-. 在 BlueXP 分類系統上、前往「 /opt/NetApp/config/custom_configuration 」並開啟檔案 `data_provider.yaml`。
+. 在 BlueXP  分類系統上，轉到“ /opt/oracle/config/custom_configuration NetApp ”並打開文件 `data_provider.yaml`。
 . 在「 groupy_group_ids: [] 」一行中新增群組 ID 。例如：
 +
  organization_group_ids: [1014, 1015, 21, 2021, 1013, 2020, 1018, 1019]
@@ -52,6 +52,6 @@ summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、�
 
 == 檢視目前的群組 ID 清單
 
-的內容是可能的 `data_provider.yaml` 組態檔案、與執行後實際認可的檔案不同 `update_data_providers_from_config_file.sh` 指令碼：若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
+組態檔的內容可能會與執行指令碼後實際提交的內容 `data_provider.yaml`有所不同 `update_data_providers_from_config_file.sh`。若要檢視您新增至 BlueXP 分類的目前群組 ID 清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
 
  get_data_providers_configuration.sh

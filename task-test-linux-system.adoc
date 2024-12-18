@@ -37,9 +37,9 @@ summary: 在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主�
 
 安裝和使用 BlueXP 分類之前、需要 BlueXP Connector 。不過、您可以在沒有 Connector 的情況下執行 Prerequisites 指令碼。
 
-您可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在您網路中的 Linux 主機或雲端中的 Linux 主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
+您可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^]在網路中的 Linux 主機或雲端中的 Linux 主機上執行。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
 
-若要在雲端供應商環境中建立 Connector 、請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。
+若要在雲端供應商環境中建立 Connector ，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在AWS中建立連接器"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。
 
 執行 Prerequisites 指令碼時、您需要 Connector 系統的 IP 位址或主機名稱。如果您在內部部署中安裝了Connector、您將會獲得這些資訊。如果連接器部署在雲端、您可以從BlueXP主控台找到這項資訊：按一下「說明」圖示、選取*「支援*」、然後按一下「* BlueXP Connector*」。
 
@@ -57,22 +57,16 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 | 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
 
 
-| * 超大 * | 32 個 CPU | 128 GB RAM | 1 TiB SSD on / 、 or
--100 GiB 可在 /opt 上取得
--895 GiB 可在 /var/lib/泊 塢視窗中取得
-/tmp 上 5 GiB 
+| * 超大 * | 32 個 CPU | 128 GB RAM | 1 TiB SSD on / ， or - 100 GiB on /opt - 895 GiB Available on /var/lib/泊 塢 - 5 GiB on /tmp 
 
 
-| * 大 * | 16個CPU | 64 GB RAM | 500 GiB SSD on / 、 or
--100 GiB 可在 /opt 上取得
--395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/containers 或 Podman /var/lib/containers 上取得
-/tmp 上 5 GiB 
+| * 大 * | 16 個 CPU | 64 GB RAM | 500 GiB SSD on / ， or - 100 GiB 可在 /opt - 395 GiB 上取得，可在 /var/lib/泊 塢或適用於 Podman /var/lib/container 或 Podman /var/lib/containers - 5 GiB on /tmp 
 |===
 * 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
 +
-** * Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體類型 * ：我們建議使用「 m6i.4xLarge 」。 link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
-** * Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。 link:reference-instance-types.html#azure-instance-types["請參閱其他 Azure 執行個體類型"^]。
-** * GCP 機器類型 * ：我們建議使用「 n2-Standard-16 」。 link:reference-instance-types.html#gcp-instance-types["請參閱其他 GCP 執行個體類型"^]。
+** * Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體類型 * ：我們建議使用「 m6i.4xLarge 」。link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
+** * Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。link:reference-instance-types.html#azure-instance-types["請參閱其他 Azure 執行個體類型"^]。
+** * GCP 機器類型 * ：我們建議使用「 n2-Standard-16 」。link:reference-instance-types.html#gcp-instance-types["請參閱其他 GCP 執行個體類型"^]。
 
 
 * * UNIX 資料夾權限 * ：需要下列最低 UNIX 權限：
@@ -125,7 +119,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 * Python 3.6 版或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 +
 ** * NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP Connector 系統之間同步時間。
-** * Firewalld考量事項*：如果您打算使用 `firewalld`、建議您在安裝 BlueXP 分類之前先啟用此功能。執行下列命令進行設定 `firewalld` 因此與 BlueXP 分類相容：
+** * Firewwalld 注意事項 * ：如果您打算使用 `firewalld`，建議您在安裝 BlueXP  分類之前先啟用。執行下列命令以進行設定 `firewalld`，使其與 BlueXP  分類相容：
 +
 ....
 firewall-cmd --permanent --add-service=http
@@ -146,7 +140,7 @@ firewall-cmd --permanent --add-port=7946/tcp
 firewall-cmd --permanent --add-port=4789/udp
 ....
 +
-請注意、每當您啟用或更新時、都必須重新啟動 Docker 或 Podman `firewalld` 設定：
+請注意，每當您啟用或更新設定時，都必須重新啟動 Docker 或 Podman `firewalld` 。
 
 
 
@@ -169,20 +163,19 @@ TIP: 如果站台中安裝的主機系統沒有網際網路連線、則不需要
 | \https://api.bluexp.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
 
 
-| \https://netapp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
+| https ： NetApp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
 
 
-| \https://support.compliance.api.bluexp.netapp.com/\https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/\https://dseasb33srnrn.cloudfront.net/\https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
+| https://support.compliance.api 。 BlueXP  。 NetApp 。 com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
 
 
-| \https://support.compliance.api.bluexp.netapp.com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
+| https://support.compliance.api 。 BlueXP  。 NetApp 。 com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
 
 
 | https://github.com/docker \https://download.docker.com | 提供泊塢視窗安裝的必要套件。 
 
 
-| \http://packages.ubuntu.com/
-\http://archive.ubuntu.com | 提供 Ubuntu 安裝的必要套件。 
+| \http://packages.ubuntu.com/ \http://archive.ubuntu.com | 提供 Ubuntu 安裝的必要套件。 
 |===
 
 
@@ -208,17 +201,17 @@ BlueXP會使用ONTAP HTTPS探索叢集。如果您使用自訂防火牆原則、
 
 請依照下列步驟執行 BlueXP 分類先決條件指令碼。
 
-https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["觀看此影片"^] 以瞭解如何執行 Prerequisites 指令碼並解譯結果。
+https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["觀看此影片"^]以瞭解如何執行 Prerequisites 指令碼並解譯結果。
 
 .您需要的產品
-* 確認您的Linux系統符合 <<驗證主機需求,主機需求>>。
+* 驗證您的 Linux 系統是否符合<<驗證主機需求,主機需求>>。
 * 確認系統已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
 * 請確定您擁有Linux系統的root權限。
 
 
 .步驟
-. 從下載 BlueXP 分類先決條件指令碼 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選擇的檔案名稱為 * 獨立式 - 必要的 - 測試者 - <version> * 。
-. 將檔案複製到您打算使用的 Linux 主機（使用 `scp` 或其他方法）。
+. 從下載 BlueXP  分類先決條件指令碼 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp 支援網站"^]。您應該選擇的檔案名稱為 * 獨立式 - 必要的 - 測試者 - <version> * 。
+. 將檔案複製到您打算使用的 Linux 主機（使用 `scp`或其他方法）。
 . 指派執行指令碼的權限。
 +
 [source, cli]
@@ -245,7 +238,7 @@ chmod +x standalone-pre-requisite-tester-v1.25.0
 ** 如果您有安裝的 Connector 、請輸入 * Y* 。然後輸入 BlueXP Connector 的 IP 位址或主機名稱、讓測試指令碼可以測試這項連線功能。
 
 
-. 指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成時、它會將工作階段的記錄寫入名為的檔案 `prerequisites-test-<timestamp>.log` 在目錄中 `/opt/netapp/install_logs`。
+. 指令碼會在系統上執行各種測試、並在執行過程中顯示結果。完成後，它會將工作階段記錄寫入目錄中的 `/opt/netapp/install_logs`檔案 `prerequisites-test-<timestamp>.log`。
 
 
 .結果

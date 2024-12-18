@@ -16,7 +16,7 @@ summary: 完成幾個步驟、在雲端中部署 BlueXP 分類。BlueXP 將在�
 [role="lead"]
 完成幾個步驟、在雲端中部署 BlueXP 分類。BlueXP 將在與 BlueXP Connector 相同的雲端供應商網路中部署 BlueXP 分類執行個體。
 
-請注意、您也可以 link:task-deploy-compliance-onprem.html["在可存取網際網路的 Linux 主機上安裝 BlueXP 分類"]。如果您偏好使用同時位於內部部署的 BlueXP 分類執行個體來掃描內部部署 ONTAP 系統、這種安裝類型可能是一個很好的選擇、但這不是一項要求。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。
+請注意link:task-deploy-compliance-onprem.html["在可存取網際網路的 Linux 主機上安裝 BlueXP 分類"]，您也可以。如果您偏好使用同時位於內部部署的 BlueXP 分類執行個體來掃描內部部署 ONTAP 系統、這種安裝類型可能是一個很好的選擇、但這不是一項要求。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。
 
 
 
@@ -24,18 +24,18 @@ summary: 完成幾個步驟、在雲端中部署 BlueXP 分類。BlueXP 將在�
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 建立連接器
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]建立連接器
 [role="quick-margin-para"]
-如果您還沒有連接器、請立即建立連接器。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。
+如果您還沒有連接器、請立即建立連接器。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在AWS中建立連接器"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。
 
 [role="quick-margin-para"]
-您也可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在您網路中的 Linux 主機或雲端中的 Linux 主機上。
+您也可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^]在網路中的 Linux 主機或雲端中的 Linux 主機上執行。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 檢閱先決條件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 審查先決條件
 [role="quick-margin-para"]
-確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與透過連接埠 443 的 BlueXP 分類之間的連線、等等。 <<檢閱先決條件,請參閱完整清單>>。
+確保您的環境符合先決條件。這包括執行個體的傳出網際網路存取、連接器與透過連接埠 443 的 BlueXP 分類之間的連線、等等。<<檢閱先決條件,請參閱完整清單>>。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 部署 BlueXP 分類
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]部署 BlueXP  分類
 [role="quick-margin-para"]
 啟動安裝精靈、在雲端部署 BlueXP 分類執行個體。
 
@@ -43,7 +43,7 @@ summary: 完成幾個步驟、在雲端中部署 BlueXP 分類。BlueXP 將在�
 
 == 建立連接器
 
-如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立連接器"^] 或 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]或 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。在大多數情況下、您可能會在嘗試啟動 BlueXP 分類之前先設定 Connector 、因為大部分的原因 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXP功能需要連接器"]但有些情況下您需要立即設定一個。
+如果您還沒有Connector、請在雲端供應商中建立Connector。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在AWS中建立連接器"^]或 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立 Connector"^]，或 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在GCP中建立連接器"^]。在大多數情況下，您可能會在嘗試啟動 BlueXP  分類之前先設定 Connector ，因為大多數的情況下，但您現在可能需要設定一個 Connector https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["BlueXP功能需要連接器"] 。
 
 有些情況下、您必須使用部署在特定雲端供應商中的Connector：
 
@@ -58,9 +58,9 @@ summary: 完成幾個步驟、在雲端中部署 BlueXP 分類。BlueXP 將在�
 
 使用這些雲端連接器時、可以掃描內部部署的 ONTAP 系統、 NetApp 檔案共用和資料庫。
 
-請注意、您也可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^] 在網路或雲端的Linux主機上。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
+請注意，您也可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在內部部署安裝連接器"^]在網路或雲端的 Linux 主機上執行。有些打算在內部部署上安裝 BlueXP 分類的使用者也可以選擇在內部部署上安裝 Connector 。
 
-如您所見、您可能需要使用某些情況 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["多個連接器"]。
+如您所見，在某些情況下可能需要使用 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["多個連接器"]。
 
 
 
@@ -96,10 +96,10 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.ht
 | \https://api.bluexp.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
 
 
-| \https://netapp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
+| https ： NetApp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
 
 
-| \https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單和範本的存取權限。 
+| https://cloud-compliance-support-NetApp.s3.us-west-2.amazonaws.com \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單和範本的存取權限。 
 
 
 | \https://kinesis.us-east-1.amazonaws.com | 讓 NetApp 能夠從稽核記錄串流資料。 
@@ -118,13 +118,13 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.ht
 | \https://api.bluexp.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
 
 
-| \https://netapp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
+| https ： NetApp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
 
 
-| \https://support.compliance.api.bluexp.netapp.com/\https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/\https://dseasb33srnrn.cloudfront.net/\https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
+| https://support.compliance.api 。 BlueXP  。 NetApp 。 com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
 
 
-| \https://support.compliance.api.bluexp.netapp.com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
+| https://support.compliance.api 。 BlueXP  。 NetApp 。 com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
 |===
 --
 .GCP 所需的端點
@@ -137,23 +137,23 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.ht
 | \https://api.bluexp.netapp.com | 與包括NetApp帳戶在內的BlueXP服務通訊。 
 
 
-| \https://netapp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
+| https ： NetApp-cloud-account.auth0.com \https://auth0.com | 與BlueXP網站通訊以進行集中式使用者驗證。 
 
 
-| \https://support.compliance.api.bluexp.netapp.com/\https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/\https://dseasb33srnrn.cloudfront.net/\https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
+| https://support.compliance.api 。 BlueXP  。 NetApp 。 com/ \https://hub.docker.com \https://auth.docker.io \https://registry-1.docker.io \https://index.docker.io/ \https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/ | 提供軟體映像、資訊清單、範本的存取、以及傳送記錄和度量資料的功能。 
 
 
-| \https://support.compliance.api.bluexp.netapp.com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
+| https://support.compliance.api 。 BlueXP  。 NetApp 。 com/ | 讓 NetApp 能夠從稽核記錄串流資料。 
 |===
 --
 ====
-確認BlueXP擁有必要的權限:: 確保 BlueXP 具有部署資源和建立 BlueXP 分類執行個體安全性群組的權限。您可以在中找到最新的BlueXP權限 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
+確認BlueXP擁有必要的權限:: 確保 BlueXP 具有部署資源和建立 BlueXP 分類執行個體安全性群組的權限。您可以在中找到最新的 BlueXP  權限 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
 確保 BlueXP Connector 能夠存取 BlueXP 分類:: 確保 Connector 與 BlueXP 分類執行個體之間的連線能力。Connector 的安全性群組必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。此連線可部署 BlueXP 分類執行個體、並可讓您在「法規遵循與治理」索引標籤中檢視資訊。AWS 和 Azure 中的政府地區均支援 BlueXP 分類。
 +
 --
-AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS 中 Connector 的規則"^] 以取得詳細資料。
+AWS和AWS GovCloud部署需要額外的傳入和傳出安全群組規則。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS 中的 Connector 規則"^]。
 
-Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure 中的 Connector 規則"^] 以取得詳細資料。
+Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。如需詳細資訊、請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure 中的 Connector 規則"^]。
 
 --
 確保您可以繼續執行 BlueXP 分類:: BlueXP 分類執行個體必須持續運作、才能持續掃描資料。
@@ -163,7 +163,7 @@ Azure和Azure政府部署需要額外的傳入和傳出安全性群組規則。�
 BlueXP 分類執行個體使用私有 IP 位址來確保索引資料無法存取至網際網路。因此、您用來存取BlueXP的網頁瀏覽器必須連線至該私有IP位址。該連線可能來自與雲端供應商（例如 VPN ）的直接連線、或來自與 BlueXP 分類執行個體位於相同網路內的主機。
 
 --
-檢查 vCPU 的限制:: 確保雲端供應商的 vCPU 上限允許部署具有必要核心數的執行個體。您需要驗證執行BlueXP所在地區的相關執行個體系列的vCPU限制。 link:concept-cloud-compliance.html#the-bluexp-classification-instance["請參閱所需的執行個體類型"]。
+檢查 vCPU 的限制:: 確保雲端供應商的 vCPU 上限允許部署具有必要核心數的執行個體。您需要驗證執行BlueXP所在地區的相關執行個體系列的vCPU限制。link:concept-cloud-compliance.html#the-bluexp-classification-instance["請參閱所需的執行個體類型"]。
 +
 --
 如需vCPU限制的詳細資料、請參閱下列連結：

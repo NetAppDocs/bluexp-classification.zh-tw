@@ -33,7 +33,7 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 
 []
 ====
-* 注意 * 按標籤、標籤及指派的使用者篩選功能僅適用於 BlueXP 分類 1.30 版及更早版本。
+* 注意 * 按標籤，標籤和指派的使用者篩選功能僅適用於 BlueXP  分類 1.30 版及更早版本。
 
 ====
 [cols="30,60"]
@@ -41,13 +41,13 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 | 篩選器 | 詳細資料 
 
 
-| 原則 | 選取原則。行動 link:task-using-policies.html["請按這裡"^] 可查看現有策略列表並創建您自己的自定義策略。 
+| 原則 | 選取原則。前往link:task-using-policies.html["請按這裡"^]檢視現有原則清單，並建立您自己的自訂原則。 
 
 
-| 標籤 | 選取 link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP標籤"] 指派給您的檔案。 
+| 標籤 | 選取link:task-org-private-data.html#categorize-your-data-using-aip-labels["AIP標籤"]指派給您檔案的項目。 
 
 
-| 標記 | 選取 link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["標記"] 指派給您的檔案。 
+| 標記 | 選取link:task-org-private-data.html#apply-tags-to-manage-your-scanned-files["標記"]指派給您檔案的項目。 
 
 
 | 指派給 | 選取指派檔案的人員名稱。 
@@ -74,7 +74,7 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 +
 []
 ====
-* 注意 * 中產生報告的能力。 JSON 格式僅適用於 BlueXP 分類版本 1.30 及更早版本。
+* 注意 * 以 .JSON 格式產生報告的能力僅適用於 BlueXP  分類 1.30 及更早版本。
 
 ====
 
@@ -82,18 +82,18 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 如果 BlueXP 分類正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）和資料庫（結構化資料）、則最多可下載三個報告檔案。
 
 .步驟
-. 在「Data Investigation（資料調查）」頁面中、按一下 image:button_download.png["下載按鈕"] 按鈕。
+. 在「資料調查」頁面上，按一下image:button_download.png["下載按鈕"]頁面右上方的按鈕。
 . 選取您要下載資料的.CSV報告或.Json報告、然後按一下*下載報告*。
 +
-選取.Json報告時、請以「<host_name>//<share_path>'的格式輸入要下載報告的NFS共用名稱。
+選擇 .JSON 報告時，請輸入要下載報告的 NFS 共用名稱，格式為 `<host_name>:/<share_path>`。
 
 +
-您可以在中檢視Json報告產生的進度 link:task-view-compliance-actions.html["「行動狀態」窗格"]。
+您可以在中檢視 JSON 報告產生link:task-view-compliance-actions.html["「行動狀態」窗格"]的進度。
 
 +
 []
 ====
-* 注意 * 按標籤、標籤及指派的使用者篩選功能僅適用於 BlueXP 分類 1.30 版及更早版本。
+* 注意 * 按標籤，標籤和指派的使用者篩選功能僅適用於 BlueXP  分類 1.30 版及更早版本。
 
 ====
 

@@ -37,7 +37,7 @@ BlueXP 分級版本 1.29 及更高版本（從 2024 年 3 月開始）提供此�
 
 == 定義要從掃描中排除的目錄
 
-您必須先登入 BlueXP 分類系統、才能從分類掃描中排除目錄、以便編輯組態檔案並執行指令碼。瞭解如何操作 link:reference-log-in-to-instance.html["登入 BlueXP 分類系統"] 視您是在 Linux 機器上手動安裝軟體、還是在雲端部署執行個體而定。
+您必須先登入 BlueXP 分類系統、才能從分類掃描中排除目錄、以便編輯組態檔案並執行指令碼。瞭解如何link:reference-log-in-to-instance.html["登入 BlueXP 分類系統"]視您是在 Linux 機器上手動安裝軟體，還是在雲端部署執行個體而定。
 
 [NOTE]
 ====
@@ -47,7 +47,7 @@ BlueXP 分級版本 1.29 及更高版本（從 2024 年 3 月開始）提供此�
 
 ====
 .步驟
-. 在 BlueXP 分類系統上、前往「 /opt/NetApp/config/custom_configuration 」並開啟檔案 `data_provider.yaml`。
+. 在 BlueXP  分類系統上，轉到“ /opt/oracle/config/custom_configuration NetApp ”並打開文件 `data_provider.yaml`。
 . 在「 data_providers 」區段的「 exclin: 」行下方、輸入要排除的目錄路徑。例如：
 +
 ....
@@ -91,7 +91,7 @@ data_providers:
 * /CVO1/* 文件夾 1
 * /CVO1/+folder1name
 * /CVO1/notfolder10
-* /CVO22/folder1.
+* /CVO22/folder1
 * /CVO22/folder1name
 * /CVO22/folder10
 
@@ -131,7 +131,7 @@ data_providers:
    - "CVO22/folder1"
 ....
 .將排除的路徑預期結果：
-* /CVO22/folder1.
+* /CVO22/folder1
 * /CVO22/folder1name
 * /CVO22/folder10
 
@@ -159,6 +159,6 @@ data_providers:
 
 == 檢視目前的排除清單
 
-的內容是可能的 `data_provider.yaml` 組態檔案與執行後實際認可的檔案不同 `update_data_providers_from_config_file.sh` 指令碼：若要檢視您從 BlueXP 分類掃描中排除的目前目錄清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
+組態檔的內容可能與執行指令碼後實際提交的內容 `data_provider.yaml`不同 `update_data_providers_from_config_file.sh`。若要檢視您從 BlueXP 分類掃描中排除的目前目錄清單、請從「 /opt/NetApp/Datasense/tools/customer_configuration_data_providers 」執行下列命令：
 
  get_data_providers_configuration.sh

@@ -16,7 +16,7 @@ summary: BlueXP 分類可在您的磁碟區、 Amazon S3 儲存區、資料庫�
 [role="lead"]
 BlueXP 分類可在您的磁碟區和資料庫中識別許多類型的私有資料。
 
-BlueXP 分類可識別兩種類型的個人資料：
+BlueXP  分類可識別兩種類型的個人資料：
 
 * * 個人識別資訊（ PII ） *
 * * 敏感個人資訊（ SPii ） *
@@ -29,7 +29,7 @@ TIP: 如果您需要 BlueXP 分類來識別其他私人資料類型、例如額�
 
 == 個人資料類型
 
-檔案中的個人資料（或 _ 個人識別資訊 _ ）可以是一般個人資料或國家識別碼。下表第三欄會指出 BlueXP 分類是否使用 link:task-controlling-private-data.html#view-files-that-contain-personal-data["鄰近驗證"^] 驗證識別碼的發現。
+檔案中的個人資料（或 _ 個人識別資訊 _ ）可以是一般個人資料或國家識別碼。下表的第三欄會指出 BlueXP  分類是否用於link:task-controlling-private-data.html#view-files-that-contain-personal-data["鄰近驗證"^]驗證其識別碼的結果。
 
 可辨識這些項目的語言列於表格中。
 
@@ -113,7 +113,7 @@ TIP: 如果您需要 BlueXP 分類來識別其他私人資料類型、例如額�
 | 法文驅動程式授權 | 是的 | ✓ | ✓ | ✓ | ✓ |  
 
 
-| 法文ID | 是的 | ✓ | ✓ | ✓ | ✓ |  
+| 法文 ID | 是的 | ✓ | ✓ | ✓ | ✓ |  
 
 
 | 法國INSEE | 是的 | ✓ | ✓ | ✓ | ✓ |  
@@ -212,7 +212,7 @@ TIP: 如果您需要 BlueXP 分類來識別其他私人資料類型、例如額�
 | 德州驅動程式授權 | 是的 | ✓ | ✓ | ✓ |  |  
 
 
-| 英國ID （ Nino ） | 是的 | ✓ | ✓ | ✓ |  |  
+| 英國 ID （ Nino ） | 是的 | ✓ | ✓ | ✓ |  |  
 
 
 | 美國加州駕駛授權 | 是的 | ✓ | ✓ | ✓ |  |  
@@ -230,7 +230,7 @@ TIP: 如果您需要 BlueXP 分類來識別其他私人資料類型、例如額�
 
 == 敏感個人資料的類型
 
-BlueXP 分類可在檔案中找到下列敏感個人資訊（ SPii ）。
+BlueXP  分類可在檔案中找到下列敏感個人資訊（ SPii ）。
 
 此類別中的項目目前只能以英文辨識。
 
@@ -325,8 +325,7 @@ BlueXP 分類將您的資料分類如下。
 * 應用程式資料
 * 歸檔檔案
 * 音訊
-* BlueXP 分類中的 Breadcrumbs
-商業應用程式資料
+* BlueXP  分類商業應用程式資料中的 Breadcrumbs
 * CAD 檔案
 * 程式碼
 * 毀損
@@ -357,7 +356,7 @@ BlueXP 分類會掃描所有檔案、以取得類別和中繼資料的洞見、�
 
 但是當 BlueXP 分類偵測到個人識別資訊（ PII ）、或執行 DSAR 搜尋時、僅支援下列檔案格式：
 
-.CSV、.dcm、.dicom、.dDOC、.DOCX、 .Json、.PDF、.PPTX、.RTF、.TXT、 .XLS、.XLSX、文件、工作表及Slides +
+`+.CSV, .DCM, .DICOM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
 
 

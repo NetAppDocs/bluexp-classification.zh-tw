@@ -18,7 +18,7 @@ BlueXP 分類可以掃描 Amazon S3 儲存區、以識別位於 S3 物件儲存�
 
 []
 ====
-* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+* 注意 * 此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。
 
 ====
 
@@ -27,19 +27,19 @@ BlueXP 分類可以掃描 Amazon S3 儲存區、以識別位於 S3 物件儲存�
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 在雲端環境中設定 S3 需求
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]在您的雲端環境中設定 S3 需求
 [role="quick-margin-para"]
-確保您的雲端環境符合 BlueXP 分類的要求、包括準備 IAM 角色、以及設定從 BlueXP 分類到 S3 的連線能力。 <<檢閱 S3 的必要條件,請參閱完整清單>>。
+確保您的雲端環境符合 BlueXP 分類的要求、包括準備 IAM 角色、以及設定從 BlueXP 分類到 S3 的連線能力。<<檢閱 S3 的必要條件,請參閱完整清單>>。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 在 S3 工作環境中啟動 BlueXP 分類
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]在 S3 工作環境中啟動 BlueXP  分類
 [role="quick-margin-para"]
 選取Amazon S3工作環境、按一下*「啟用」*、然後選取內含必要權限的IAM角色。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 選取要掃描的儲存區
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]選取要掃描的貯體
 [role="quick-margin-para"]
 選擇您要掃描的貯體、 BlueXP 分類將開始掃描它們。
 
@@ -83,12 +83,12 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 }
 ----
 --
-提供從 BlueXP 分類到 Amazon S3 的連線能力:: BlueXP 分類需要連線至 Amazon S3 。提供此連線的最佳方法是透過 VPC 端點連線至 S3 服務。如需相關指示、請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
+提供從 BlueXP 分類到 Amazon S3 的連線能力:: BlueXP 分類需要連線至 Amazon S3 。提供此連線的最佳方法是透過 VPC 端點連線至 S3 服務。有關說明，請參閱 https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpce-gateway.html#create-gateway-endpoint["AWS 文件：建立閘道端點"^]。
 +
 --
 當您建立 VPC 端點時、請務必選取對應至 BlueXP 分類執行個體的區域、 VPC 和路由表。您也必須修改安全性群組、以新增允許流量到 S3 端點的傳出 HTTPS 規則。否則、 BlueXP 分類無法連線到 S3 服務。
 
-如果您遇到任何問題、請參閱 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS支援知識中心：為什麼我無法使用閘道VPC端點連線至S3儲存區？"^]
+如果您遇到任何問題，請參閱 https://aws.amazon.com/premiumsupport/knowledge-center/connect-s3-vpc-endpoint/["AWS支援知識中心：為什麼我無法使用閘道VPC端點連線至S3儲存區？"^]
 
 另一種方法是使用 NAT 閘道來提供連線。
 
@@ -102,7 +102,7 @@ NOTE: 您無法使用 Proxy 透過網際網路連線至 S3 。
 
 == 部署 BlueXP 分類執行個體
 
-link:task-deploy-cloud-compliance.html["在 BlueXP 中部署 BlueXP 分類"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["在 BlueXP 中部署 BlueXP 分類"^]如果尚未部署執行個體，
 
 您需要使用部署在AWS中的Connector來部署執行個體、以便BlueXP自動探索此AWS帳戶中的S3儲存區、並在Amazon S3工作環境中顯示它們。
 
@@ -126,7 +126,7 @@ image:screenshot_s3_we.gif["Amazon S3 工作環境圖示的快照"]
 +
 image:screenshot_s3_enable_compliance.png["從「服務」面板啟用 BlueXP 分類服務的螢幕擷取畫面"]
 
-. 出現提示時、請將 IAM 角色指派給具有的 BlueXP 分類執行個體 <<檢閱 S3 的必要條件,必要的權限>>。
+. 出現提示時，請將 IAM 角色指派給具有<<檢閱 S3 的必要條件,必要的權限>>的BlueXP  分類執行個體。
 +
 image:screenshot_s3_compliance_iam_role.png["輸入 AWS IAM 角色進行 BlueXP 分類的螢幕快照"]
 
@@ -134,7 +134,7 @@ image:screenshot_s3_compliance_iam_role.png["輸入 AWS IAM 角色進行 BlueXP 
 
 
 
-TIP: 您也可以按一下「組態」頁面、針對工作環境啟用法規遵循掃描 image:screenshot_gallery_options.gif["三點"] 按鈕並選擇 * 啟動 BlueXP 分類 * 。
+TIP: 您也可以從「組態」頁面中，按一下按鈕並選取 * 啟動 BlueXP  分類 * ，以啟用工作環境的規範掃描image:screenshot_gallery_options.gif["三點"]。
 
 .結果
 BlueXP會將IAM角色指派給執行個體。
@@ -147,7 +147,7 @@ BlueXP 在 Amazon S3 上啟用 BlueXP 分類之後、下一步是設定您要掃
 
 當在AWS帳戶中執行的BlueXP具有您要掃描的S3儲存區時、它會探索這些儲存區、並在Amazon S3工作環境中顯示它們。
 
-BlueXP 分類也可以 <<從其他 AWS 帳戶掃描儲存區,掃描位於不同 AWS 帳戶中的 S3 儲存區>>。
+BlueXP  分類也可以<<從其他 AWS 帳戶掃描儲存區,掃描位於不同 AWS 帳戶中的 S3 儲存區>>。
 
 .步驟
 . 選取 Amazon S3 工作環境。

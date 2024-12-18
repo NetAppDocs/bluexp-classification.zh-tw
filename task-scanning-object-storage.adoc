@@ -27,22 +27,22 @@ summary: 請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱物件儲存先決條件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]檢閱物件儲存必要條件
 [role="quick-margin-para"]
 您需要有端點URL才能連線至物件儲存服務。
 
 [role="quick-margin-para"]
 您需要物件儲存供應商提供的存取金鑰和秘密金鑰、以便 BlueXP 分類能夠存取這些庫位。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 新增物件儲存服務
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]新增物件儲存服務
 [role="quick-margin-para"]
 將物件儲存服務新增至 BlueXP 分類。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 選取要掃描的儲存區
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]選取要掃描的貯體
 [role="quick-margin-para"]
 選擇您要掃描的貯體、 BlueXP 分類將開始掃描它們。
 
@@ -62,9 +62,9 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 如果尚未部署執行個體、請部署 BlueXP 分類。
 
-如果您要掃描S3物件儲存設備的資料、而且可以透過網際網路存取 link:task-deploy-cloud-compliance.html["在雲端部署 BlueXP 分類"^] 或 link:task-deploy-compliance-onprem.html["在內部部署位置部署 BlueXP 分類、以便存取網際網路"^]。
+如果您要掃描可透過網際網路存取的 S3 物件儲存設備中的資料，您可以link:task-deploy-cloud-compliance.html["在雲端部署 BlueXP 分類"^]或link:task-deploy-compliance-onprem.html["在內部部署位置部署 BlueXP 分類、以便存取網際網路"^]。
 
-如果您要掃描安裝在無法存取網際網路之黑暗站台上的S3物件儲存設備資料、則必須執行 link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署 BlueXP 分類"^]。這也需要在同一個內部部署位置部署BlueXP Connector。
+如果您正在掃描安裝在沒有網際網路存取的黑暗網站上的 S3 物件儲存設備中的資料，則需要執行link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署 BlueXP 分類"^]。這也需要在同一個內部部署位置部署BlueXP Connector。
 
 只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 

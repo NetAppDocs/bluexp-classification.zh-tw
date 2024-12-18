@@ -10,22 +10,16 @@
 | 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
 
 
-| * 超大 * | 32 個 CPU | 128 GB RAM | 1 TiB SSD on / 、 or
--100 GiB 可在 /opt 上取得
--895 GiB 可在 /var/lib/泊 塢視窗中取得
-/tmp 上 5 GiB 
+| * 超大 * | 32 個 CPU | 128 GB RAM | 1 TiB SSD on / ， or - 100 GiB on /opt - 895 GiB Available on /var/lib/泊 塢 - 5 GiB on /tmp 
 
 
-| * 大 * | 16個CPU | 64 GB RAM | 500 GiB SSD on / 、 or
--100 GiB 可在 /opt 上取得
--395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/containers 或 Podman /var/lib/containers 上取得
-/tmp 上 5 GiB 
+| * 大 * | 16 個 CPU | 64 GB RAM | 500 GiB SSD on / ， or - 100 GiB 可在 /opt - 395 GiB 上取得，可在 /var/lib/泊 塢或適用於 Podman /var/lib/container 或 Podman /var/lib/containers - 5 GiB on /tmp 
 |===
 * 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
 +
-** * Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體類型 * ：我們建議使用「 m6i.4xLarge 」。 link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
-** * Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。 link:reference-instance-types.html#azure-instance-types["請參閱其他 Azure 執行個體類型"^]。
-** * GCP 機器類型 * ：我們建議使用「 n2-Standard-16 」。 link:reference-instance-types.html#gcp-instance-types["請參閱其他 GCP 執行個體類型"^]。
+** * Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體類型 * ：我們建議使用「 m6i.4xLarge 」。link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
+** * Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。link:reference-instance-types.html#azure-instance-types["請參閱其他 Azure 執行個體類型"^]。
+** * GCP 機器類型 * ：我們建議使用「 n2-Standard-16 」。link:reference-instance-types.html#gcp-instance-types["請參閱其他 GCP 執行個體類型"^]。
 
 
 * * UNIX 資料夾權限 * ：需要下列最低 UNIX 權限：

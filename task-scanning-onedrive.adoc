@@ -18,7 +18,7 @@ summary: 完成幾個步驟、開始使用 BlueXP 分類、掃描使用者 OneDr
 
 []
 ====
-* 注意 * 此資訊僅適用於 BlueXP 分類舊版 1.30 及更早版本。
+* 注意 * 此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。
 
 ====
 
@@ -27,19 +27,19 @@ summary: 完成幾個步驟、開始使用 BlueXP 分類、掃描使用者 OneDr
 
 請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"] 檢閱 OneDrive 先決條件
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]檢閱 OneDrive 必要條件
 [role="quick-margin-para"]
 請確認您擁有登入 OneDrive 帳戶的管理認證。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"] 部署 BlueXP 分類執行個體
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
 [role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部署執行個體、
+link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"] 新增 OneDrive 帳戶
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]新增 OneDrive 帳戶
 [role="quick-margin-para"]
 使用管理使用者認證、登入您要存取的 OneDrive 帳戶、以便將其新增為新的工作環境。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"] 新增使用者並選取掃描類型
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]新增使用者並選取掃描類型
 [role="quick-margin-para"]
 從您要掃描的OneDrive帳戶新增使用者清單、然後選取掃描類型。您一次最多可新增 100 位使用者。
 
@@ -59,7 +59,7 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 如果尚未部�
 
 如果尚未部署執行個體、請部署 BlueXP 分類。
 
-BlueXP 分類可以是 link:task-deploy-cloud-compliance.html["部署於雲端"^] 或 link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
+BlueXP  分類可以是link:task-deploy-cloud-compliance.html["部署於雲端"^]或link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
 
 只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
 

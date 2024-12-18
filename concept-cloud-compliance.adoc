@@ -56,7 +56,7 @@ BlueXP 分類可識別出可能因犯罪目的而面臨存取風險的資料。�
 BlueXP 分類提供的工具可協助您處理儲存設備的總體擁有成本（ TCO ）。您可以使用 BlueXP 分類來：
 
 * 識別重複或非業務相關的資料、以提高儲存效率。
-* 識別非使用中的資料、將其分層儲存至成本較低的物件儲存設備、藉此節省儲存成本。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["深入瞭解Cloud Volumes ONTAP 從NetApp系統分層的相關資訊"^]。 https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["深入瞭解內部部署ONTAP 的資訊系統分層"^]。
+* 識別非使用中的資料，將其分層儲存至成本較低的物件儲存設備，進而節省儲存成本。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["深入瞭解Cloud Volumes ONTAP 從NetApp系統分層的相關資訊"^]。 https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["深入瞭解內部部署ONTAP 的資訊系統分層"^]。
 
 
 
@@ -103,7 +103,7 @@ BlueXP 分類現在可以免費使用。不需要分類授權或付費訂閱。
 
 === 基礎架構成本
 
-* 在雲端中安裝 BlueXP 分類需要部署雲端執行個體、這會導致部署雲端的雲端供應商收取費用。請參閱 <<BlueXP 分類執行個體,為每個雲端供應商部署的執行個體類型>>。如果您在內部部署系統上安裝 BlueXP 分類、則不需支付任何費用。
+* 在雲端中安裝 BlueXP 分類需要部署雲端執行個體、這會導致部署雲端的雲端供應商收取費用。請參閱。 <<BlueXP 分類執行個體,為每個雲端供應商部署的執行個體類型>>如果您在內部部署系統上安裝 BlueXP 分類、則不需支付任何費用。
 * BlueXP 分類要求您已部署 BlueXP Connector 。在許多情況下、由於您在BlueXP中使用的其他儲存設備和服務、您已經擁有Connector。連接器執行個體會從部署該執行個體的雲端供應商收取費用。請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["為每個雲端供應商部署的執行個體類型"^]。如果您將連接器安裝在內部部署系統上、則無需支付任何費用。
 
 
@@ -122,16 +122,16 @@ BlueXP 分類現在可以免費使用。不需要分類授權或付費訂閱。
 
 == BlueXP 分類執行個體
 
-當您在雲端部署 BlueXP 分類時、 BlueXP 會將執行個體部署在與 Connector 相同的子網路中。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["深入瞭解連接器。"^]
+當您在雲端部署 BlueXP  分類時， BlueXP  會將執行個體部署在與 Connector 相同的子網路中。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["深入瞭解連接器。"^]
 
 image:diagram_cloud_compliance_instance.png["顯示在雲端供應商中執行的 BlueXP 執行個體和 BlueXP 分類執行個體的圖表。"]
 
 請注意下列關於預設執行個體的資訊：
 
-* 在 AWS 中、 BlueXP 分類是在上執行 https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge 執行個體"^] 搭配 500 GB GP2 磁碟。作業系統映像是Amazon Linux 2。在 AWS 中部署時、如果您要掃描少量資料、可以選擇較小的執行個體大小。
+* 在 AWS 中， BlueXP  分類是在具有 500 GB GP2 磁碟的上執行 https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge 執行個體"^]。作業系統映像是Amazon Linux 2。在 AWS 中部署時、如果您要掃描少量資料、可以選擇較小的執行個體大小。
 * 在 Azure 中、 BlueXP  分類是在具有 500 GB 磁碟的 A 上執行link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^]。作業系統映像是 Ubuntu 22.04 。
 * 在 GCP 中、 BlueXP  分類是在具有 500 GiB Standard 持續性磁碟的上執行link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-Standard-16 VM"^]。作業系統映像是 Ubuntu 22.04 。
-* 在無法使用預設執行個體的地區、 BlueXP 分類會在替代執行個體上執行。 link:reference-instance-types.html["請參閱替代執行個體類型"]。
+* 在無法使用預設執行個體的地區、 BlueXP 分類會在替代執行個體上執行。link:reference-instance-types.html["請參閱替代執行個體類型"]。
 * 此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_
 * 每個 Connector 只部署一個 BlueXP 分類執行個體。
 
@@ -143,7 +143,7 @@ TIP: 由於 BlueXP 分類會持續掃描資料、因此執行個體應該隨時�
 
 * 部署在不同的執行個體類型 *
 
-您可以在 CPU 較少且 RAM 較少的系統上部署 BlueXP 分類。
+您可以在 CPU 較少且 RAM 較少的系統上部署 BlueXP  分類。
 
 [cols="18,31,51"]
 |===
@@ -155,7 +155,7 @@ TIP: 由於 BlueXP 分類會持續掃描資料、因此執行個體應該隨時�
 
 | 大型（預設） | 16 個 CPU 、 64 GB RAM 、 500 GB GiB SSD | 最多可掃描 2.5 億個檔案。 
 |===
-在 Azure 或 GCP 中部署 BlueXP 分類時、如果您想要使用較小的執行個體類型、請寄送電子郵件至 ng-contact-data-sense@netapp.com 以取得協助。
+在 Azure 或 GCP 中部署 BlueXP  分類時，如果您想要使用較小的執行個體類型，請寄送電子郵件至 ng-contact-data-Sense @ NetApp .com 以取得協助。
 
 
 
@@ -216,7 +216,7 @@ BlueXP 分類可讓您在選定的資料來源上執行一般的「對應」掃�
 | 檔案的存留時間和大小 | 是的 | 是的 
 
 
-| 執行的能力 link:task-controlling-governance-data.html#data-mapping-report["資料對應報告"] | 是的 | 是的 
+| 執行的能力link:task-controlling-governance-data.html#data-mapping-report["資料對應報告"] | 是的 | 是的 
 
 
 | 「資料調查」頁面可檢視檔案詳細資料 | 是的 | 否 
@@ -225,7 +225,7 @@ BlueXP 分類可讓您在選定的資料來源上執行一般的「對應」掃�
 | 在檔案中搜尋名稱 | 是的 | 否 
 
 
-| 建立 link:task-using-policies.html["原則"] 提供自訂搜尋結果 | 是的 | 否 
+| 建立link:task-using-policies.html["原則"]可提供自訂搜尋結果的項目 | 是的 | 否 
 
 
 | 執行其他報告的能力 | 是的 | 否 
@@ -425,11 +425,11 @@ BlueXP 分類可讓您在選定的資料來源上執行一般的「對應」掃�
 BlueXP 分類會收集、索引及指派類別給您的資料（檔案）。BlueXP 分類索引的資料包括：
 
 * * 檔案的標準中繼資料 * ：檔案類型、檔案大小、建立及修改日期等。
-* * 個人資料 * ：個人識別資訊（ PII ）、例如電子郵件地址、識別號碼或信用卡號碼。 link:task-controlling-private-data.html#view-files-that-contain-personal-data["深入瞭解個人資料"^]。
-* * 敏感個人資料 * ： GDPR 定義的特殊類型敏感個人資訊（ SPii ）、例如健康資料、族裔來源或政治見解、以及其他隱私權法規。 link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["深入瞭解敏感的個人資料"^]。
-* * 類別 * ： BlueXP 分類會將掃描的資料分成不同類別。類別是以 AI 分析每個檔案的內容和中繼資料為基礎的主題。 link:task-controlling-private-data.html#view-files-by-categories["深入瞭解類別"^]。
-* * 類型 * ： BlueXP 分類會根據檔案類型來記錄掃描的資料、並將其分解。 link:task-controlling-private-data.html#view-files-by-file-types["深入瞭解類型"^]。
-* * 名稱實體辨識 * ： BlueXP 分類使用 AI 從文件中擷取人員的自然名稱。 link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["瞭解如何回應資料主體存取要求"^]。
+* * 個人資料 * ：個人識別資訊（ PII ），例如電子郵件地址，識別號碼或信用卡號碼。link:task-controlling-private-data.html#view-files-that-contain-personal-data["深入瞭解個人資料"^]。
+* * 敏感個人資料 * ： GDPR 定義的特殊類型敏感個人資訊（ SPii ），例如健康資料，族裔來源或政治見解，以及其他隱私權法規。link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["深入瞭解敏感的個人資料"^]。
+* * 類別 * ： BlueXP  分類會將掃描的資料分成不同類別。類別是以 AI 分析每個檔案的內容和中繼資料為基礎的主題。link:task-controlling-private-data.html#view-files-by-categories["深入瞭解類別"^]。
+* * 類型 * ： BlueXP  分類會取得掃描的資料，並依檔案類型加以細分。link:task-controlling-private-data.html#view-files-by-file-types["深入瞭解類型"^]。
+* * 名稱實體辨識 * ： BlueXP  分類使用 AI 從文件中擷取人員的自然名稱。link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["瞭解如何回應資料主體存取要求"^]。
 
 
 
@@ -442,7 +442,7 @@ BlueXP 會使用安全性群組來部署 BlueXP 分類執行個體、以便從 C
 
 傳出規則已完全開啟。安裝和升級 BlueXP 分類軟體、以及傳送使用量指標、都需要網際網路存取。
 
-如果您有嚴格的網路需求、 link:task-deploy-cloud-compliance.html#review-prerequisites["瞭解 BlueXP 分類所接觸的端點"^]。
+如果您有嚴格的網路需求，請參閱link:task-deploy-cloud-compliance.html#review-prerequisites["瞭解 BlueXP 分類所接觸的端點"^]。
 
 
 
