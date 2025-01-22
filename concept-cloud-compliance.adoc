@@ -67,12 +67,11 @@ BlueXP 分類可以掃描及分析下列工作環境和資料來源類型的結�
 
 * 工作環境 *
 
+* Amazon FSX for ONTAP Sf
+* Azure NetApp Files
 * （部署於AWS、Azure或GCP）Cloud Volumes ONTAP
 * 內部部署 ONTAP 的叢集
 * StorageGRID
-* Azure NetApp Files
-* Amazon FSX for ONTAP Sf
-* Google Cloud NetApp Volumes
 
 
 * 資料來源 *

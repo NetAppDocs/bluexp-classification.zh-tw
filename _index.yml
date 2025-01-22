@@ -21,18 +21,20 @@ indexpage:
       url: task-deploy-compliance-onprem.html
   - title: 掃描資料來源
     links:
-    - title: 資料量Cloud Volumes ONTAP
-      url: task-getting-started-compliance.html
-    - title: 內部部署ONTAP 的功能
-      url: task-getting-started-compliance.html
-    - title: 資料量 Azure NetApp Files
-      url: task-scanning-anf.html
     - title: Amazon FSX for ONTAP Sf6 Volume
       url: task-scanning-fsx.html
-    - title: 非NetApp檔案共用
-      url: task-scanning-file-shares.html
+    - title: 資料量 Azure NetApp Files
+      url: task-scanning-anf.html
+    - title: 資料量Cloud Volumes ONTAP
+      url: task-getting-started-compliance.html
     - title: 資料庫架構
       url: task-scanning-databases.html
+    - title: 檔案共用（ CIFS ， NFS ）
+      url: task-scanning-file-shares.html
+    - title: 內部部署ONTAP 的功能
+      url: task-getting-started-compliance.html
+    - title: StorageGRID
+      url: task-scanning-storagegrid.html
   - title: 檢視資料的詳細資料
     links:
     - title: 檢視包含私人資訊的檔案

@@ -46,7 +46,7 @@ image:screenshot_compliance_uninstall.png["用於解除安裝 BlueXP 分類軟�
 image:screenshot_compliance_uninstall.png["用於解除安裝 BlueXP 分類軟體的按鈕螢幕擷取畫面。"]
 
 . 在 _ 解除安裝 Data Sense _ 對話方塊中、輸入 * uninstall* 以確認您要中斷 BlueXP 分類執行個體與 BlueXP Connector 的連線、然後按一下 * 解除安裝 * 。
-. 若要從主機解除安裝軟體，請在主機上執行 `cleanup.sh`指令碼，例如：
+. 若要從主機解除安裝軟體，請在 BlueXP  分類主機機器上執行 `cleanup.sh`指令碼，例如：
 +
 [source, cli]
 ----
