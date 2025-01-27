@@ -52,6 +52,9 @@ image:screenshot_compliance_uninstall.png["用於解除安裝 BlueXP 分類軟�
 ----
 cleanup.sh
 ----
++
+指令碼位於目錄中 `/install/light_probe/onprem_installer/cleanup.sh`。
+
 
 
 請參閱如何link:reference-log-in-to-instance.html["登入 BlueXP 分類主機"]。
