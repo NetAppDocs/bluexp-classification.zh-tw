@@ -18,7 +18,7 @@ summary: 請完成幾個步驟、在內部部署網站上無法存取網際網�
 
 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["瞭解 BlueXP Connector 和 BlueXP 分類的不同部署模式"^]。
 
-請注意link:task-deploy-compliance-onprem.html["將 BlueXP 分類部署在可存取網際網路的內部部署網站上"]，您也可以。
+您也可以link:task-deploy-compliance-onprem.html["將 BlueXP 分類部署在可存取網際網路的內部部署網站上"]。
 
 BlueXP 分類安裝指令碼會先檢查系統和環境是否符合必要的先決條件。如果所有先決條件都符合、則會開始安裝。如果您想要獨立於執行 BlueXP 分類安裝來驗證先決條件、您可以下載個別的軟體套件、只測試先決條件。link:task-test-linux-system.html["瞭解如何檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類"]。
 
@@ -89,10 +89,24 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 | 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
 
 
-| * 超大 * | 32 個 CPU | 128 GB RAM | 1 TiB SSD on / ， or - 100 GiB on /opt - 895 GiB Available on /var/lib/泊 塢 - 5 GiB on /tmp 
+| * 超大 * | 32 個 CPU | 128 GB RAM  a| 
+** 1 個 TiB SSD on / ，或 100 GiB 可在 /opt 上取得
+** /var/lib/泊 塢視窗上提供 895 GiB
+** 5 GiB、位於/tmp
+** * 對於播客， 5 GB 位於 /tmp* 上
+** * 對於播客， /var/tmp* 上有 30 GB
 
 
-| * 大 * | 16 個 CPU | 64 GB RAM | 500 GiB SSD on / ， or - 100 GiB 可在 /opt - 395 GiB 上取得，可在 /var/lib/泊 塢或適用於 Podman /var/lib/container 或 Podman /var/lib/containers - 5 GiB on /tmp 
+
+
+| * 大 * | 16 個 CPU | 64 GB RAM  a| 
+** 500 GiB SSD on / ，或 100 GiB 可在 /opt 上取得
+** 395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/container 或 Podman /var/lib/container 上取得
+** 5 GiB、位於/tmp
+** * 對於播客， 5 GB 位於 /tmp* 上
+** * 對於播客， /var/tmp* 上有 30 GB
+
+
 |===
 * 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
 +

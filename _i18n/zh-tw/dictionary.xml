@@ -11,11 +11,9 @@
   <block id="acff74627293e3e739a3c24e5fec03c2" category="cell">* 超大 *</block>
   <block id="8a0a1142229b3b639f68556794cbd985" category="cell">32 個 CPU</block>
   <block id="228d50520d6c2a627ecce76f2775d5e1" category="cell">128 GB RAM</block>
-  <block id="92194a80ea376740e10d5ee7343f171c" category="cell">1 TiB SSD on / ， or - 100 GiB on /opt - 895 GiB Available on /var/lib/泊 塢 - 5 GiB on /tmp</block>
   <block id="c1b7308083354b8b60760460bcce3ccc" category="cell">* 大 *</block>
   <block id="dc8179e6e72156a5578bf35cf9574540" category="cell">16 個 CPU</block>
   <block id="5a1fdf37d5cd85436f7504641d78b95f" category="cell">64 GB RAM</block>
-  <block id="30786f70a10900b6a9d4fd46363a55cb" category="cell">500 GiB SSD on / ， or - 100 GiB 可在 /opt - 395 GiB 上取得，可在 /var/lib/泊 塢或適用於 Podman /var/lib/container 或 Podman /var/lib/containers - 5 GiB on /tmp</block>
   <block id="d5c832490c0ab9dcb105acd9ee7b4709" category="list-text">在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：</block>
   <block id="e6414c92b8fa46238f4135e4d3e45674" category="inline-link-macro">請參閱其他 AWS 執行個體類型</block>
   <block id="b5f08a168a732355a95d9acdc430dcaf" category="list-text">* Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體類型 * ：我們建議使用「 m6i.4xLarge 」。<block ref="2fad631c28a07a1344ecdbaabb5084bf" category="inline-link-macro-rx"></block>。</block>
@@ -1235,7 +1233,6 @@
   <block id="05e22c2c931d6a4218f029a72eeb9206" category="inline-link">瞭解 BlueXP Connector 和 BlueXP 分類的不同部署模式</block>
   <block id="3c86f5b7f0c9db7841cc30ae9d32c2c2" category="paragraph"><block ref="a9635649936a46cf7723db5b3c00a913" category="inline-link-rx"></block>。</block>
   <block id="4f7157701d2db96edcc01457067a6771" category="inline-link-macro">將 BlueXP 分類部署在可存取網際網路的內部部署網站上</block>
-  <block id="90815e3d99ff61b4887b2f941fff4e46" category="paragraph">請注意<block ref="1a9c56cdde8c9a93a744fbe95f12b64a" category="inline-link-macro-rx"></block>，您也可以。</block>
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link-macro">瞭解如何檢查您的 Linux 主機是否已準備好安裝 BlueXP 分類</block>
   <block id="e883a1e45b8fba8675ed0e79f4a46200" category="paragraph">BlueXP 分類安裝指令碼會先檢查系統和環境是否符合必要的先決條件。如果所有先決條件都符合、則會開始安裝。如果您想要獨立於執行 BlueXP 分類安裝來驗證先決條件、您可以下載個別的軟體套件、只測試先決條件。<block ref="18e558c0c5f7db863c39638301013423" category="inline-link-macro-rx"></block>。</block>
   <block id="166af9c4abcdeaeaa01f2df7fcd961a7" category="inline-link-macro">在無法存取網際網路的多部主機上安裝 BlueXP 分類</block>
@@ -1362,7 +1359,6 @@
   <block id="c22cac5d13be450c907e1e287edd3bb0" category="paragraph">您可以檢查 BlueXP 分類 UI 頁面底部的版本、以確認軟體已更新。</block>
   <block id="7d2b76399031094bccc00e1ddb38ac56" category="summary">請完成幾個步驟、在您網路中的 Linux 主機或雲端中有網際網路存取權的 Linux 主機上安裝 BlueXP 分類。您必須在網路或雲端中手動部署Linux主機、才能完成此安裝。</block>
   <block id="0989b495229f449df36968cf973306ca" category="doc">在可存取網際網路的主機上安裝 BlueXP 分類</block>
-  <block id="945fde4f1ebdd85f6388e97e6bcab270" category="paragraph">如果您偏好使用內部部署的 BlueXP 分類執行個體來掃描內部部署的 ONTAP 系統、則內部部署安裝可能是一個很好的選擇、但這不是一項要求。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。</block>
   <block id="829124a47242d374aed9d0704a781736" category="paragraph">在內部部署的Linux主機_上的典型安裝具有下列元件和連線。</block>
   <block id="f1250c9b73cd8f5ef391e449f0b5dcb4" category="inline-image-macro">所需的BlueXP和網路元件、以及相關連線的圖表。</block>
   <block id="0b0f1899ec6aba7470224b92502a86ac" category="paragraph"><block ref="0b0f1899ec6aba7470224b92502a86ac" category="inline-image-macro-rx" type="image"></block></block>
@@ -3060,7 +3056,6 @@
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">如果您需要重新整理登入認證權杖、功能表中也有 * 更新認證 * 選項 <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> 。</block>
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">使用此選項會提示您重新登入。請注意、這些帳戶的權杖會在90天後過期。系統會張貼通知、提醒您注意此點。</block>
   <block id="11f000270c03dc2a6cc3e9a5e9262aa8" category="summary">在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主機上執行指令碼、以確認安裝 BlueXP 分類的所有必要條件均已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或者主機可以位於無法存取網際網路的站台。</block>
-  <block id="5f0111c9b1c6f9cd6124c008eaaa60d2" category="paragraph">在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主機上執行指令碼、以確認安裝 BlueXP 分類的所有先決條件都已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或主機可以位於無法存取網際網路的站台（暗站台）。</block>
   <block id="b739631d891333c2d4cfa4c6421ccdcb" category="paragraph">還有一個先決條件測試指令碼是 BlueXP 分類安裝指令碼的一部分。此處說明的指令碼是專為想要驗證 Linux 主機而不執行 BlueXP 分類安裝指令碼的使用者所設計。</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">快速入門</block>
   <block id="88a37f7fbc3214e9153d0377c4db9ded" category="paragraph">您將執行下列工作。</block>
@@ -3496,4 +3491,16 @@
   <block id="009d2060a609114df262eff04e83f241" category="section-title">2025 年 1 月 22 日</block>
   <block id="987a49b32f868f747d862315b00a6b36" category="sidebar">檔案共用（ CIFS ， NFS ）</block>
   <block id="0476d890c406400d4a4b0337b0492ab6" category="paragraph">指令碼位於目錄中<block ref="ef7bc183495180bf03292b7d03184b05" prefix=" " category="inline-code"></block>。</block>
+  <block id="74110511ebf4f8eea597c953392110f9" category="list-text">1 個 TiB SSD on / ，或 100 GiB 可在 /opt 上取得</block>
+  <block id="4056804c808441484593a6cd5998f06e" category="list-text">/var/lib/泊 塢視窗上提供 895 GiB</block>
+  <block id="f9ddd233a713e3719c7d8046ab62cc1e" category="list-text">5 GiB、位於/tmp</block>
+  <block id="79d1a6d2ec5f279b488952c279f36449" category="list-text">* 對於播客， 5 GB 位於 /tmp* 上</block>
+  <block id="0e1cb4b06a070e11230e1c8de75a1db8" category="list-text">* 對於播客， /var/tmp* 上有 30 GB</block>
+  <block id="16b9e4a3843d82aedd78ddf5568f32cc" category="list-text">500 GiB SSD on / ，或 100 GiB 可在 /opt 上取得</block>
+  <block id="7d5ad3bf21c571c611eed766c4a188c1" category="list-text">395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/container 或 Podman /var/lib/container 上取得</block>
+  <block id="155acacab86f1c55608330de83b4e05f" category="paragraph">您也可以<block ref="1a9c56cdde8c9a93a744fbe95f12b64a" category="inline-link-macro-rx"></block>。</block>
+  <block id="f9cb03d21a26b2f64053d2e527396790" category="paragraph">如果您偏好使用內部部署的 BlueXP  分類執行個體來掃描內部部署 ONTAP 系統，則內部部署安裝可能是一個很好的選擇，但這不是一項要求。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。</block>
+  <block id="ee8870d1e0595ddae329cf8ef1ee89fa" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。</block>
+  <block id="260af28d48ba051bd7cdd887380f9ece" category="paragraph">在 Linux 主機上手動安裝 BlueXP  分類之前，請選擇性地在主機上執行指令碼，以確認安裝 BlueXP  分類的所有必要條件均已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或主機可以位於無法存取網際網路的站台（暗站台）。</block>
+  <block id="b64eea97fe56778b0e28c568854873ed" category="paragraph">解除安裝 BlueXP  分類軟體以疑難排解問題，或從主機中永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟、所有已掃描的資訊 BlueXP 分類都會永久刪除。</block>
 </blocks>

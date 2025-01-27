@@ -14,7 +14,7 @@ summary: 在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主�
 
 
 [role="lead"]
-在 Linux 主機上手動安裝 BlueXP 分類之前、您可以在主機上執行指令碼、以確認安裝 BlueXP 分類的所有先決條件都已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或主機可以位於無法存取網際網路的站台（暗站台）。
+在 Linux 主機上手動安裝 BlueXP  分類之前，請選擇性地在主機上執行指令碼，以確認安裝 BlueXP  分類的所有必要條件均已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或主機可以位於無法存取網際網路的站台（暗站台）。
 
 還有一個先決條件測試指令碼是 BlueXP 分類安裝指令碼的一部分。此處說明的指令碼是專為想要驗證 Linux 主機而不執行 BlueXP 分類安裝指令碼的使用者所設計。
 
@@ -57,10 +57,24 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 | 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
 
 
-| * 超大 * | 32 個 CPU | 128 GB RAM | 1 TiB SSD on / ， or - 100 GiB on /opt - 895 GiB Available on /var/lib/泊 塢 - 5 GiB on /tmp 
+| * 超大 * | 32 個 CPU | 128 GB RAM  a| 
+** 1 個 TiB SSD on / ，或 100 GiB 可在 /opt 上取得
+** /var/lib/泊 塢視窗上提供 895 GiB
+** 5 GiB、位於/tmp
+** * 對於播客， 5 GB 位於 /tmp* 上
+** * 對於播客， /var/tmp* 上有 30 GB
 
 
-| * 大 * | 16 個 CPU | 64 GB RAM | 500 GiB SSD on / ， or - 100 GiB 可在 /opt - 395 GiB 上取得，可在 /var/lib/泊 塢或適用於 Podman /var/lib/container 或 Podman /var/lib/containers - 5 GiB on /tmp 
+
+
+| * 大 * | 16 個 CPU | 64 GB RAM  a| 
+** 500 GiB SSD on / ，或 100 GiB 可在 /opt 上取得
+** 395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/container 或 Podman /var/lib/container 上取得
+** 5 GiB、位於/tmp
+** * 對於播客， 5 GB 位於 /tmp* 上
+** * 對於播客， /var/tmp* 上有 30 GB
+
+
 |===
 * 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
 +

@@ -10,10 +10,24 @@
 | 系統大小 | CPU | RAM（交換記憶體必須停用） | 磁碟 
 
 
-| * 超大 * | 32 個 CPU | 128 GB RAM | 1 TiB SSD on / ， or - 100 GiB on /opt - 895 GiB Available on /var/lib/泊 塢 - 5 GiB on /tmp 
+| * 超大 * | 32 個 CPU | 128 GB RAM  a| 
+** 1 個 TiB SSD on / ，或 100 GiB 可在 /opt 上取得
+** /var/lib/泊 塢視窗上提供 895 GiB
+** 5 GiB、位於/tmp
+** * 對於播客， 5 GB 位於 /tmp* 上
+** * 對於播客， /var/tmp* 上有 30 GB
 
 
-| * 大 * | 16 個 CPU | 64 GB RAM | 500 GiB SSD on / ， or - 100 GiB 可在 /opt - 395 GiB 上取得，可在 /var/lib/泊 塢或適用於 Podman /var/lib/container 或 Podman /var/lib/containers - 5 GiB on /tmp 
+
+
+| * 大 * | 16 個 CPU | 64 GB RAM  a| 
+** 500 GiB SSD on / ，或 100 GiB 可在 /opt 上取得
+** 395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/container 或 Podman /var/lib/container 上取得
+** 5 GiB、位於/tmp
+** * 對於播客， 5 GB 位於 /tmp* 上
+** * 對於播客， /var/tmp* 上有 30 GB
+
+
 |===
 * 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
 +
