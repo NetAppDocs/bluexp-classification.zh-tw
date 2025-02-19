@@ -18,6 +18,48 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 
 
+== 2025 年 19 月 2 日
+
+
+
+=== 版本 1.40
+
+此 BlueXP  分類版本包含下列更新。
+
+.支援 RHEL 9.5
+除了先前支援的版本之外、此版本還支援 Red Hat Enterprise Linux v9.5 。這適用於任何手動內部部署的 BlueXP  分類安裝、包括暗點部署。
+
+下列作業系統需要使用 Podman Container 引擎，而且需要 BlueXP  分類 1.30 版或更新版本： Red Hat Enterprise Linux 8.8 ， 8.10 ， 9.0 ， 9.1 ， 9.2 ， 9.3 ， 9.4 和 9.5 版。
+
+.排定掃描的優先順序
+執行僅對應掃描時，您可以優先處理最重要的掃描。當您有許多工作環境，且想要確保先完成高優先順序掃描時，此功能會有所幫助。
+
+依預設，掃描會根據其啟動順序排入佇列。現在您可以將掃描排定優先順序，將掃描移到佇列的最前面。可以優先處理多個掃描。優先順序是以先出的順序指定，也就是您優先處理的第一次掃描會移到佇列前方；您優先處理的第二次掃描會成為佇列中的第二次掃描，依此類推。
+
+優先順序是一次性授予。自動重新掃描對應資料會依預設順序進行。
+
+優先順序僅限於link:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["僅對應掃描"]；不適用於地圖和分類掃描。
+
+若要變更優先順序：
+
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 選取您要排定優先順序的資源。
+. 從 Actions ... （操作 ... ）選項中，選擇 * 優先掃描 * 。
+
+
+.重試所有掃描
+BlueXP  分類現在支援批次重試所有失敗掃描的功能。
+
+您現在可以使用「 ** 全部重試」功能，在批次作業中重新嘗試掃描。如果分類掃描因網路中斷等暫時性問題而失敗，您可以使用單一按鈕同時重試所有掃描，而無需個別重試。掃描可視需要重試多次。
+
+若要重試所有掃描：
+
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 若要重試所有失敗的掃描，請選取 * 重試所有掃描 * 。
+
+
+
+
 == 2025 年 1 月 22 日
 
 
@@ -155,7 +197,7 @@ BlueXP  分類已將適用於 Microsoft Azure 和 Google Cloud Platform （ GCP
 .儀表板中的其他資料
 此版本會在地圖繪製掃描期間、更新 Governance 、 Compliance 和 Investigation 儀表板中顯示的資料。
 
-如需詳細資訊，請參閱 https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["對應和分類掃描之間有何差異"]
+如需詳細資訊、請參閱link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["對應和分類掃描之間有何差異"]
 
 
 
@@ -353,7 +395,7 @@ Ubuntu 22.04 已獲認證為 BlueXP 分類支援的作業系統。使用 1.23 �
 您可以啟用在 BlueXP 分類系統上收集檔案存取稽核記錄、以便在工作環境中的磁碟區上偵測到檔案存取事件。BlueXP 分類可擷取下列類型的 FPolicy 事件、以及對檔案執行動作的使用者：建立、讀取、寫入、刪除、重新命名、 變更擁有者 / 權限、並變更 SACL/DACL 。
 
 .Data Sense BYOL 授權現在支援 Dark 站台
-現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 BlueXP  數位錢包、以便在授權即將到期時收到通知。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-datasense.html#obtain-your-bluexp-classification-license-file["瞭解如何取得及上傳您的 Data Sense BYOL 授權"]。
+現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 BlueXP  數位錢包、以便在授權即將到期時收到通知。 https://docs.netapp.com/us-en/bluexp-classification/task-licensing-byol-freetrial.html#obtain-your-bluexp-classification-license-file["瞭解如何取得及上傳您的 Data Sense BYOL 授權"]。
 
 
 

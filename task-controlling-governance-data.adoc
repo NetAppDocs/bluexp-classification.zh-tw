@@ -44,7 +44,7 @@ image:screenshot_compliance_governance_dashboard.png["BlueXP 分類治理儀表�
 ** 雜項（一般「其他」類別）
 
 
-* *重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。link:task-investigate-data.html#view-all-duplicated-files["查看顯示哪些類型的重複檔案"]。
+* *重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。link:task-investigate-data.html#filter-data-by-duplicates["查看顯示哪些類型的重複檔案"]。
 
 
 

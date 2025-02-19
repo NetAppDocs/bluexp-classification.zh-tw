@@ -23,28 +23,6 @@ summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描 SharePoint 
 ====
 
 
-== 快速入門
-
-請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]檢閱 SharePoint 必要條件
-[role="quick-margin-para"]
-請確定您擁有登入SharePoint帳戶的合格認證、而且您有要掃描之SharePoint網站的URL。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]登入 SharePoint 帳戶
-[role="quick-margin-para"]
-使用合格的使用者認證、登入您要存取的SharePoint帳戶、以便將其新增為新的資料來源/工作環境。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]新增要掃描的 SharePoint 網站 URL
-[role="quick-margin-para"]
-在SharePoint帳戶中新增您要掃描的SharePoint網站URL清單、然後選取掃描類型。您可以一次新增多達 100 個 URL 、每個帳戶最多可新增 1 、 000 個站台。
-
-
-
 == 檢閱 SharePoint 需求
 
 請檢閱下列先決條件、確定您已準備好在 SharePoint 帳戶上啟動 BlueXP 分類。

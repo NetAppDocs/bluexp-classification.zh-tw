@@ -18,47 +18,6 @@ summary: 完成幾個步驟、開始使用 Azure NetApp Files 的 BlueXP 分類�
 
 
 
-== 快速入門
-
-請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]探索您要掃描的 Azure NetApp Files 系統
-[role="quick-margin-para"]
-在掃描 Azure NetApp Files Volume 之前， https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["必須設定BlueXP以探索組態"^]。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["在 BlueXP 中部署 BlueXP 分類"^]如果尚未部署執行個體，
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]啟用 BlueXP  分類，然後選取要掃描的磁碟區
-[role="quick-margin-para"]
-按一下「 * Compliance * （ * 符合性 * ）」、選取「 * Configuration * （ * 組態 * ）」索引標籤、然後針對特定工作環境中的磁碟區啟動法規遵循掃描。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]確保存取磁碟區
-[role="quick-margin-para"]
-現在已啟用 BlueXP 分類、請確定它可以存取所有磁碟區。
-
-[role="quick-margin-list"]
-* BlueXP 分類執行個體需要網路連線至每個 Azure NetApp Files 子網路。
-* 請確定這些連接埠已開放給 BlueXP 分類執行個體：
-+
-** 適用於NFS：連接埠111和2049。
-** 適用於CIFS：連接埠139和445。
-
-
-* NFS Volume 匯出原則必須允許從 BlueXP 分類執行個體存取。
-* BlueXP 分類需要 Active Directory 認證來掃描 CIFS 磁碟區。
-+
-按一下* Compliance *>* Configuration *>* Edit CIFS Credential*、然後提供認證資料。
-
-
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五"]管理您要掃描的磁碟區
-[role="quick-margin-para"]
-選取或取消選取您要掃描的磁碟區、 BlueXP 分類將會開始或停止掃描。
-
-
-
 == 探索您要掃描的 Azure NetApp Files 系統
 
 如果Azure NetApp Files 您要掃描的這個系統尚未在BlueXP中做為工作環境、您現在可以將它新增到繪圖中。
@@ -75,29 +34,28 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部�
 
 * 注意： * 掃描 Azure NetApp Files 磁碟區時、目前不支援在內部部署位置部署 BlueXP 分類。
 
-只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
-
 
 
 == 在您的工作環境中啟用 BlueXP  分類
 
 您可以在 Azure NetApp Files 磁碟區上啟用 BlueXP 分類。
 
-. 在BlueXP左側導覽功能表中、按一下*管理>分類*、然後選取*組態*索引標籤。
+. 在BlueXP左側導覽功能表中、按一下*管理>分類*。
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
 +
 image:screenshot_cloud_compliance_anf_scan_config.png["部署 BlueXP 分類執行個體之後、立即顯示「組態」索引標籤的螢幕快照。"]
 
 . 選取您要在每個工作環境中掃描磁碟區的方式。link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["深入瞭解對應與分類掃描"]：
 +
-** 若要對應所有磁碟區、請按一下*對應所有磁碟區*。
-** 若要對應及分類所有磁碟區、請按一下*對應並分類所有磁碟區*。
-** 若要自訂每個Volume的掃描、請按一下*或選取每個Volume *的掃描類型、然後選擇您要對應和/或分類的Volume。
+** 若要對應所有磁碟區，請選取 * 對應所有磁碟區 * 。
+** 若要對應並分類所有磁碟區，請選取 * 對應並分類所有磁碟區 * 。
+** 若要自訂每個 Volume 的掃描，請選取 * 或選取每個 Volume 的掃描類型 * ，然後選擇您要對應和 / 或分類的磁碟區。
 +
 如需詳細資訊、請參閱 <<啟用和停用磁碟區上的法規遵循掃描,啟用和停用磁碟區上的法規遵循掃描>> 。
 
 
 
-. 在確認對話方塊中、按一下 * 核准 * 、讓 BlueXP 分類開始掃描您的磁碟區。
+. 在確認對話方塊中，選取 * 核准 * ，讓 BlueXP  分類開始掃描您的磁碟區。
 
 
 .結果
@@ -116,12 +74,11 @@ BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 Blu
 
 請檢查您的網路、安全性群組和匯出原則、確保 BlueXP 分類能夠存取磁碟區。您必須提供具備 CIFS 認證的 BlueXP 分類、才能存取 CIFS 磁碟區。
 
-.步驟
-. 請確定 BlueXP 分類執行個體和每個包含 Azure NetApp Files Volume 的網路之間都有網路連線。
-+
 
 NOTE: 對於 Azure NetApp Files 、 BlueXP 分類只能掃描與 BlueXP 位於相同區域的磁碟區。
 
+.步驟
+. 請確定 BlueXP 分類執行個體和每個包含 Azure NetApp Files Volume 的網路之間都有網路連線。
 . 確保下列連接埠已開放給 BlueXP 分類執行個體：
 +
 ** 適用於NFS：連接埠111和2049。
@@ -131,11 +88,15 @@ NOTE: 對於 Azure NetApp Files 、 BlueXP 分類只能掃描與 BlueXP 位於�
 . 確保 NFS Volume 匯出原則包含 BlueXP 分類執行個體的 IP 位址、以便存取每個磁碟區上的資料。
 . 如果您使用 CIFS 、請提供 Active Directory 認證的 BlueXP 分類、以便掃描 CIFS 磁碟區。
 +
-.. 在BlueXP左側導覽功能表中、按一下*管理>分類*、然後選取*組態*索引標籤。
+.. 從 BlueXP  左側導覽功能表中，選取 * 治理 > 分類 * 。
+
+
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
 +
 image:screenshot_cifs_credentials.gif["「符合性」索引標籤的快照、顯示內容窗格右上角可用的「掃描狀態」按鈕。"]
 
-.. 針對每個工作環境、按一下 * 編輯 CIFS 認證 * 、然後輸入 BlueXP 分類存取系統上 CIFS 磁碟區所需的使用者名稱和密碼。
++
+.. 針對每個工作環境，選取 * 編輯 CIFS 認證 * ，然後輸入 BlueXP  分類存取系統上 CIFS 磁碟區所需的使用者名稱和密碼。
 +
 認證可以是唯讀的、但提供管理認證可確保 BlueXP 分類能夠讀取任何需要提高權限的資料。認證會儲存在 BlueXP 分類執行個體上。
 
@@ -150,7 +111,7 @@ image:screenshot_cifs_status.gif["顯示組態頁面的快照、以及Cloud Volu
 
 
 
-. 在「_Configuration」頁面上、按一下「*檢視詳細資料*」以檢閱每個CIFS和NFS磁碟區的狀態、並修正任何錯誤。
+. 在「組態」頁面上，選取 * 檢視詳細資料 * 以檢閱每個 CIFS 和 NFS 磁碟區的狀態，並修正任何錯誤。
 +
 例如、下列影像顯示四個磁碟區；其中一個因為 BlueXP 分類執行個體和磁碟區之間的網路連線問題、所以 BlueXP 分類無法掃描。
 
@@ -165,34 +126,20 @@ image:screenshot_compliance_volume_details.gif["掃描組態中「檢視詳細�
 
 您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。建議您掃描所有 Volume 。
 
+
+TIP: 只有在標題區域中設定了*地圖*或*地圖與分類*設定之後、才會自動掃描新增至工作環境的磁碟區。在標題區域中設為*自訂*或*關閉*時、您必須在工作環境中新增的每個新磁碟區上啟動對應和/或完整掃描。
+
 預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
 
 image:screenshot_volume_compliance_selection.png["「組態」頁面的快照、可讓您啟用或停用個別磁碟區的掃描。"]
 
-[cols="45,45"]
-|===
-| 至： | 請執行下列動作： 
+.步驟
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 執行下列其中一項：
++
+** 若要在磁碟區上啟用僅對應掃描，請在「 Volume 」（磁碟區）區域中選取 * Map* 。若要在所有磁碟區上啟用，請在標題區域中選取 * 地圖 * 。
+** 若要在磁碟區上啟用完整掃描，請在「 Volume 」（體積）區域中選取 * 對應與分類 * 。若要在所有磁碟區上啟用，請在標題區域中選取 * 地圖與分類 * 。
+** 若要停用磁碟區上的掃描功能，請在「 Volume 」（體積）區域中選取 * 關閉 * 。若要停用所有磁碟區的掃描功能，請在標題區域中選取 * 關閉 * 。
 
 
-| 在磁碟區上啟用純對應掃描 | 在Volume（Volume）區域中、按一下*地圖* 
 
-
-| 啟用磁碟區的完整掃描 | 在Volume（Volume）區域中、按一下*地圖與分類* 
-
-
-| 停用在Volume上掃描 | 在Volume（Volume）區域中、按一下* Off（關閉）* 
-
-
-|  |  
-
-
-| 在所有磁碟區上啟用純對應掃描 | 在標題區域中、按一下*地圖* 
-
-
-| 在所有磁碟區上啟用完整掃描 | 在標題區域中、按一下*地圖與分類* 
-
-
-| 停用所有Volume上的掃描 | 在標題區域中、按一下*關* 
-|===
-
-NOTE: 只有在標題區域中設定了*地圖*或*地圖與分類*設定之後、才會自動掃描新增至工作環境的磁碟區。在標題區域中設為*自訂*或*關閉*時、您必須在工作環境中新增的每個新磁碟區上啟動對應和/或完整掃描。

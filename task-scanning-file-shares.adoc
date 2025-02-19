@@ -21,28 +21,6 @@ NOTE: BlueXP 分類核心版本不支援從非 NetApp 檔案共用掃描資料�
 
 
 
-== 快速入門
-
-請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]檢閱檔案共用先決條件
-[role="quick-margin-para"]
-若為CIFS（SMB）共用、請確定您擁有存取共用的認證資料。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]建立群組以保留檔案共用
-[role="quick-margin-para"]
-此群組是您要掃描之檔案共用的容器、會做為這些檔案共用的工作環境名稱。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]將檔案共用新增至群組
-[role="quick-margin-para"]
-新增您要掃描的檔案共用清單、然後選取掃描類型。一次最多可新增100個檔案共用區。
-
-
-
 == 檢閱檔案共用需求
 
 在啟用 BlueXP 分類之前、請先檢閱下列先決條件、確定您已擁有支援的組態。
@@ -72,8 +50,6 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部�
 
 如果尚未部署執行個體、請部署 BlueXP 分類。
 
-只要執行個體具有網際網路連線、就會自動升級至 BlueXP  分類軟體。
-
 
 
 == 建立檔案共用的群組
@@ -83,13 +59,12 @@ link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部�
 您可以混合使用同一個群組中的NFS和CIFS共用、不過群組中的所有CIFS檔案共用都必須使用相同的Active Directory認證。如果您打算新增使用不同認證的CIFS共用、則必須針對每組獨特的認證建立個別的群組。
 
 .步驟
-. 在「工作環境組態」頁面中、按一下「*新增資料來源*」>「*新增檔案共用群組*」。
-+
-image:screenshot_compliance_add_fileshares_button.png["「掃描組態」頁面的快照、您可在其中按一下「新增檔案共用群組」按鈕。"]
-
-. 在「新增檔案共用群組」對話方塊中、輸入共用群組的名稱、然後按一下*繼續*。
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 從「組態」頁面中，選取 * 新增工作環境 * > * 新增檔案共用群組 * 。
+. 在「新增檔案共用群組」對話方塊中，輸入共用群組的名稱，然後選取 * 繼續 * 。
 
 
+.結果
 新的「檔案共用群組」會新增至工作環境清單。
 
 
@@ -103,21 +78,22 @@ image:screenshot_compliance_add_fileshares_button.png["「掃描組態」頁面�
 在單一群組中同時新增NFS和CIFS共用時、您需要執行兩次程序、一次新增NFS共用、然後再次新增CIFS共用。
 
 .步驟
-. 在「工作環境」頁面中、按一下「檔案共用」群組的「*組態*」按鈕。
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 從「組態」頁面的「工作環境」磚中，選取「檔案共用群組」的 * 組態 * 按鈕。
 +
 image:screenshot_compliance_fileshares_add_shares.png["「掃描組態」頁面的快照、您可在其中選取「組態」按鈕。"]
 
-. 如果這是第一次新增此檔案共用群組的檔案共用、請按一下*「Add Your First Shares」（新增您的第一個共用）*。
+. 如果這是第一次新增此檔案共用群組的檔案共用，請選取 * 新增您的第一個共用 * 。
 +
 image:screenshot_compliance_fileshares_add_initial_shares.png["顯示「Add Your First Shares（新增第一個共用）」按鈕的快照、可將初始共用新增至群組。"]
 
 +
-如果您要將檔案共用新增至現有群組、請按一下*「Add Shares」（新增共用）*。
+如果您要將檔案共用新增至現有群組，請選取 * 新增共用 * 。
 
 +
 image:screenshot_compliance_fileshares_add_more_shares2.png["顯示「新增共用」按鈕的快照、可將更多共用新增至群組。"]
 
-. 選取您要新增之檔案共用的傳輸協定、新增您要掃描的檔案共用區（每行一個檔案共用區）、然後按一下*繼續*。
+. 選取您要新增的檔案共用傳輸協定，新增您要掃描的檔案共用（每行一個檔案共用），然後選取 * 繼續 * 。
 +
 新增CIFS（SMB）共用時、您必須輸入Active Directory認證、以提供共用的讀取存取權。首選管理認證。
 
@@ -131,24 +107,16 @@ image:screenshot_compliance_fileshares_add_file_shares.png["「新增檔案共�
 如果對話方塊列出任何無法新增的共用、請擷取此資訊、以便您解決問題。在某些情況下、您可以使用修正後的主機名稱或共用名稱重新新增共用區。
 
 . 在每個檔案共用區上啟用純對應掃描、或是對應與分類掃描。
+. 執行下列其中一項以啟用或停用掃描：
 +
-[cols="45,45"]
-|===
-| 至： | 請執行下列動作： 
+** 若要在檔案共用上啟用僅對應掃描，請選取 * 地圖 * 。
+** 若要啟用檔案共用的完整掃描，請選取 * 地圖與分類 * 。
+** 若要停用檔案共用的掃描功能，請選取 * 關閉 * 。
 
 
-| 啟用檔案共用上的純對應掃描 | 按一下*地圖* 
 
 
-| 啟用檔案共用區的完整掃描 | 按一下*地圖與分類* 
-
-
-| 停用掃描檔案共用區 | 按一下「*關*」 
-|===
-+
 預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
-
-
 
 .結果
 BlueXP 分類會開始掃描您新增檔案共用中的檔案、結果會顯示在儀表板和其他位置。
@@ -157,6 +125,12 @@ BlueXP 分類會開始掃描您新增檔案共用中的檔案、結果會顯示�
 
 == 從法規遵循掃描中移除檔案共用
 
-如果不再需要掃描特定檔案共用、您可以隨時將個別檔案共用區移除、使其檔案不再掃描。只要按一下「組態」頁面中的「*移除共用*」即可。
+如果不再需要掃描特定檔案共用、您可以隨時將個別檔案共用區移除、使其檔案不再掃描。
 
+.步驟
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 從「組態」頁面選取 * 移除共用 * 。
++
 image:screenshot_compliance_fileshares_remove_share.png["螢幕快照顯示如何移除單一檔案共用區以掃描其檔案。"]
+
+

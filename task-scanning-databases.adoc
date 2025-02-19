@@ -18,28 +18,6 @@ summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描資料庫架
 
 
 
-== 快速入門
-
-請依照下列步驟快速入門、或向下捲動至其餘部分以取得完整詳細資料。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]檢閱資料庫必要條件
-[role="quick-margin-para"]
-請確定您的資料庫受到支援、而且您擁有連線至資料庫所需的資訊。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]部署 BlueXP  分類執行個體
-[role="quick-margin-para"]
-link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^]如果尚未部署執行個體，
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]新增資料庫伺服器
-[role="quick-margin-para"]
-新增您要存取的資料庫伺服器。
-
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四"]選取架構
-[role="quick-margin-para"]
-選取您要掃描的架構。
-
-
-
 == 檢閱先決條件
 
 在啟用 BlueXP 分類之前、請先檢閱下列先決條件、確定您已擁有支援的組態。
@@ -89,18 +67,14 @@ CAUTION: 必須在資料庫中啟用 * 統計資料收集功能。
 
 如果您正在掃描安裝在沒有網際網路存取的黑暗網站中的資料庫架構，則需要link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署 BlueXP 分類"^]。這也需要在同一個內部部署位置部署BlueXP Connector。
 
-只要執行個體具備網際網路連線能力、即可自動升級至 BlueXP 分類軟體。
-
 
 
 == 新增資料庫伺服器
 
 新增架構所在的資料庫伺服器。
 
-. 在「工作環境組態」頁面中、按一下「 * 新增資料來源 * 」 > 「 * 新增資料庫伺服器 * 」。
-+
-image:screenshot_compliance_add_db_server_button.png["「掃描組態」頁面的快照、您可以按一下「新增資料庫伺服器」按鈕。"]
-
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 在「組態」頁面中，選取 * 新增工作環境 * > * 新增資料庫伺服器 * 。
 . 輸入識別資料庫伺服器所需的資訊。
 +
 .. 選取資料庫類型。
@@ -126,7 +100,7 @@ image:screenshot_compliance_add_db_server_dialog.png["「新增資料庫伺服�
 
 TIP: 沒有選項可選取資料庫架構的純對應掃描。
 
-. 在「_Configuration」頁面中、按一下您要設定之資料庫的*組態*按鈕。
+. 在「組態」頁面中，針對您要設定的資料庫選取 * 組態 * 按鈕。
 +
 image:screenshot_compliance_db_server_config.png["「掃描組態」頁面的快照、您可在其中選取「組態」按鈕。"]
 
@@ -139,4 +113,4 @@ image:screenshot_compliance_select_schemas.png["「掃描組態」頁面的快�
 .結果
 BlueXP 分類會開始掃描您啟用的資料庫架構。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。
 
-請注意、 BlueXP 分類每天掃描一次資料庫、不會像其他資料來源一樣持續掃描資料庫。
+BlueXP  分類每天掃描一次資料庫，不會像其他資料來源一樣持續掃描資料庫。
