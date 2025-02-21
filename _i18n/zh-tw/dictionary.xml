@@ -3306,7 +3306,6 @@
   <block id="ee8870d1e0595ddae329cf8ef1ee89fa" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。</block>
   <block id="260af28d48ba051bd7cdd887380f9ece" category="paragraph">在 Linux 主機上手動安裝 BlueXP  分類之前，請選擇性地在主機上執行指令碼，以確認安裝 BlueXP  分類的所有必要條件均已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或主機可以位於無法存取網際網路的站台（暗站台）。</block>
   <block id="b64eea97fe56778b0e28c568854873ed" category="paragraph">解除安裝 BlueXP  分類軟體以疑難排解問題，或從主機中永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟、所有已掃描的資訊 BlueXP 分類都會永久刪除。</block>
-  <block id="378c20222de970dbe3321fec8e32e947" category="list-text">Red Hat Enterprise Linux 版本 8.8 ， 9.0 ， 9.1 ， 9.2 ， 9.3 ， 9.4 和 9.5</block>
   <block id="6b9d9a04ff593ff427731819f0c3618f" category="doc">版本 1.40</block>
   <block id="dc4b47101650865122105745fe8d0a2c" category="paragraph-title">支援 RHEL 9.5</block>
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">除了先前支援的版本之外、此版本還支援 Red Hat Enterprise Linux v9.5 。這適用於任何手動內部部署的 BlueXP  分類安裝、包括暗點部署。</block>
@@ -3394,4 +3393,6 @@
   <block id="79043fd5ff3b61216207b60882cd72cd" category="section-title">2025 年 19 月 2 日</block>
   <block id="5904eed2db8ef4855e1fd04bcf8b7d97" category="paragraph">如需詳細資訊、請參閱<block ref="45d8326cb72a8fa1d7ca8c887062a7ee" category="inline-link-macro-rx"></block></block>
   <block id="279961977f7de811c4eeee90a2454c87" category="paragraph">現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 BlueXP  數位錢包、以便在授權即將到期時收到通知。<block ref="3e32e5c3cf84ce7c25efff198a230761" category="inline-link-rx"></block>。</block>
+  <block id="84ea0db5b42f134872fbf35016e39cf9" category="list-text">Red Hat Enterprise Linux 版本 8.8 ， 8.10 ， 9.0 ， 9.1 ， 9.2 ， 9.3 ， 9.4 和 9.5</block>
+  <block id="e69d7b651771ff110228ddae78e71631" category="list-text">必須在主機系統上啟用進階向量擴充指令集（ AVX ）。</block>
 </blocks>
