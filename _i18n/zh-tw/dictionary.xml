@@ -3395,4 +3395,6 @@
   <block id="279961977f7de811c4eeee90a2454c87" category="paragraph">現在您可以將 Data Sense BYOL 授權上傳至黑暗網站的 BlueXP  數位錢包、以便在授權即將到期時收到通知。<block ref="3e32e5c3cf84ce7c25efff198a230761" category="inline-link-rx"></block>。</block>
   <block id="84ea0db5b42f134872fbf35016e39cf9" category="list-text">Red Hat Enterprise Linux 版本 8.8 ， 8.10 ， 9.0 ， 9.1 ， 9.2 ， 9.3 ， 9.4 和 9.5</block>
   <block id="e69d7b651771ff110228ddae78e71631" category="list-text">必須在主機系統上啟用進階向量擴充指令集（ AVX ）。</block>
+  <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">改善分類模型準確度</block>
+  <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">的機器學習模型準確度<block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block>已提升 11% 。</block>
 </blocks>
