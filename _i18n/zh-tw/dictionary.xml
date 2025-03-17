@@ -1734,7 +1734,6 @@
   <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">啟用和停用磁碟區上的法規遵循掃描</block>
   <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">如需詳細資訊、請參閱 <block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block> 。</block>
   <block id="d5e967f01610f01cb30183e6b342e630" category="list-text">在確認對話方塊中、按一下 * 核准 * 、讓 BlueXP 分類開始掃描您的磁碟區。</block>
-  <block id="b0dab6dc992c93096b218e009d2afb00" category="paragraph">BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 BlueXP 分類完成初始掃描、就會在法規遵循儀表板中提供結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。</block>
   <block id="e636b4a892ea62f67be639b3661d6897" category="list-text">根據預設、如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統將不會掃描磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。產生的頁面有一個您可以啟用的設定、以便 BlueXP 分類無論權限為何、都能掃描磁碟區。</block>
   <block id="dbc6be69ce4e1e10bc890167fa46f18b" category="inline-link-macro">請參閱更多關於此 BlueXP 分類限制的詳細資料</block>
   <block id="9b39a17b00cb629e1990cbdcbad1001d" category="list-text">BlueXP 分類只會掃描一個磁碟區下的一個檔案共用區。如果您的磁碟區中有多個共享區、則需要以共用群組的形式分別掃描這些其他共用區。<block ref="5dac6ccd725a941d49a9e107a98eb409" category="inline-link-macro-rx"></block>。</block>
@@ -1810,7 +1809,6 @@
   <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">您可以在中檢視 JSON 報告產生<block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>的進度。</block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="doc">調查組織中儲存的資料</block>
   <block id="615e6d6aa74682391d600dc61fe1090c" category="inline-xref">如需資料調查報告的詳細資料、請前往此處</block>
-  <block id="56de383365196dfaf32d315a2b4b3cae" category="paragraph">如果您想要在修改頁面內容後，將其下載為報告，請按一下<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>按鈕。<block ref="99402c37b738da126a6c16dce45a83da" category="inline-xref-macro-rx"></block>。</block>
   <block id="d3720958611294d50237fe72870e0c02" category="inline-image-macro">在調查頁面中調整結果時可用篩選器的快照。</block>
   <block id="3fd10935177bff66373986bc384c0307" category="paragraph"><block ref="3fd10935177bff66373986bc384c0307" category="inline-image-macro-rx" type="image"></block></block>
   <block id="31d2b3f1b10e9877e365a14d5f9212e4" category="list-text">頂層索引標籤可讓您檢視檔案（非結構化資料）、目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料。</block>
@@ -1888,20 +1886,16 @@
   <block id="936baf22f04cffa654fef2a2806e8fcd" category="cell">選取檔案是否在儲存庫中重複。</block>
   <block id="d9ff86959e1f6d2016c4db58114184ab" category="section-title">檢視檔案中繼資料</block>
   <block id="ddd53e8927c624ebcbf44e804dd39950" category="inline-image-macro">減少需求</block>
-  <block id="f934a72c8aa162f28cd2451333d31995" category="paragraph">在「資料調查結果」窗格中，您可以按一下<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>任何單一檔案來檢視檔案中繼資料。</block>
   <block id="04a8c17bf0b1e2cd69db6fba82b59dc0" category="inline-image-macro">快照顯示資料調查頁面中檔案的中繼資料詳細資料。</block>
   <block id="c545ce144b1f4d763f30d9b729c1590c" category="paragraph"><block ref="c545ce144b1f4d763f30d9b729c1590c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aa4ba8b621d22449a2723e4175ff5c9d" category="inline-link-macro">建立原則</block>
   <block id="d2b1e6329082b8cf29999896b3d3d744" category="paragraph">除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、以及此檔案是否有重複的項目。如果您計畫使用此資訊，這項資訊非常實用<block ref="8c7af7ec06ac1cea6800f7cd16a5f7c0" category="inline-link-macro-rx"></block>，因為您可以看到篩選資料所需的所有資訊。</block>
   <block id="9538e6335cc9662b264dd0870f2ca091" category="paragraph">請注意、並非所有資料來源都能取得所有資訊、只是適合該資料來源的資訊而已。例如、磁碟區名稱和權限與資料庫檔案無關。</block>
   <block id="fffb468d89636ef35919bda57df8f0bc" category="section-title">檢視檔案和目錄的權限</block>
-  <block id="6fa893a1485524675ae044e22dd04d02" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單、以及擁有的權限類型、請按一下*檢視所有權限*。此按鈕僅適用於 CIFS 共用資料。</block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">瞭解如何做到這一點</block>
   <block id="50cdf86b563a0d781f053c4a23d816c2" category="paragraph">請注意、如果您看到 SID （安全性識別碼）而非使用者和群組名稱、則應該將 Active Directory 整合到 BlueXP 分類中。<block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>。</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">顯示詳細檔案權限的快照。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ba7710e66e983f5d109ee54ee938f343" category="paragraph">您可以按一下<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>任何群組以查看屬於群組的使用者清單。</block>
-  <block id="b242cddbb1cb85737a2fd06f1d715934" category="paragraph">此外、 您可以按一下使用者或群組的名稱、「調查」頁面會顯示該使用者或群組的名稱、並填入「使用者/群組權限」篩選器中、以便查看使用者或群組可存取的所有檔案和目錄。</block>
   <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">檢查儲存系統中是否有重複的檔案</block>
   <block id="5180c6809f41234a64af29e1a7ad708c" category="paragraph">您可以檢視儲存系統中是否儲存了重複的檔案。如果您想要找出可節省儲存空間的區域、此功能非常實用。此外、確保儲存系統中不會不必要地複製具有特定權限或敏感資訊的特定檔案、也很有幫助。</block>
   <block id="bfd42c156b2ca871cd12ee8e72e55e95" category="paragraph">會比較所有大小為 1 MB 或更大且包含個人或敏感個人資訊的檔案（不包括資料庫）、以查看是否有重複的檔案。您可以使用「調查」頁面篩選「檔案大小」和「重複」、來查看環境中要複製哪些特定大小範圍的檔案。</block>
@@ -1910,8 +1904,6 @@
   <block id="e6bbcb2826ce1a4f58fd341c4f5ae5f3" category="paragraph">您可以下載重複檔案清單、並將其傳送給儲存設備管理員、讓他們決定可以刪除哪些檔案（如果有）。或者，如果您確信不需要特定版本的檔案，也可以<block ref="53c8cd880d15e2953a8e763d6f4dff0c" category="inline-link-macro-rx"></block>自行決定。</block>
   <block id="5b00edf3a5903017b22e268ae58998c0" category="paragraph">如果您想要在工作環境中複製的所有檔案清單、以及要掃描的資料來源、您可以在「資料調查」頁面中使用名為「*重複項目&gt;有重複項目*」的篩選條件。</block>
   <block id="285a3049428c6b155fde44a18621f551" category="paragraph">所有重複的檔案都會顯示在「結果」頁面中。</block>
-  <block id="481ee5e06ca7a72cfe4a783b39c7d0e3" category="paragraph">如果您想查看單一檔案是否有重複的項目，可以在「資料調查結果」窗格中按一下<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>任何單一檔案，以檢視檔案中繼資料。如果某個檔案有重複項目、此資訊會顯示在「_重複項目_」欄位旁。</block>
-  <block id="b478c70cc88f62deb519e4d41609fff2" category="paragraph">若要檢視重複檔案的清單及其所在位置、請按一下*檢視詳細資料*。在下一頁中、按一下「*檢視重複記錄*」以檢視「調查」頁面中的檔案。</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">顯示如何檢視重複檔案所在位置的快照。</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">您可以使用本頁提供的「檔案雜湊」值、並直接在「調查」頁面中輸入、以隨時搜尋特定的重複檔案、也可以在「原則」中使用。</block>
@@ -2465,7 +2457,6 @@
   <block id="b1f7c7e36d5ee01af131dd25c658e41f" category="list-text">將滑桿向右移動、選取您要掃描的架構。</block>
   <block id="cc939570e2fbb3d7e526d9e3e757a5f0" category="inline-image-macro">「掃描組態」頁面的快照、您可以在其中選擇要掃描的架構。</block>
   <block id="46e57bba2892a9df10ae0b7ae9e43f45" category="paragraph"><block ref="46e57bba2892a9df10ae0b7ae9e43f45" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e7161999dbadbbf09541cb6606d43f78" category="paragraph">BlueXP 分類會開始掃描您啟用的資料庫架構。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。</block>
   <block id="c4758ec8f4163fa99b08557425a59f56" category="summary">請完成幾個步驟、開始直接掃描非 NetApp NFS 或 CIFS 檔案與 BlueXP 分類共用。這些檔案共用區可位於內部部署或雲端。</block>
   <block id="b5e00ff2b7559dfa6fc6fe96058ede54" category="doc">掃描檔案與 BlueXP  分類共用</block>
   <block id="12a96925a3b6ebd1419915c8b0bfada9" category="paragraph">請完成幾個步驟、從 Google Cloud NetApp Volumes 和舊版 NetApp 7-mode 系統開始掃描 NFS 或 CIFS 檔案共用。這些檔案共用區可位於內部部署或雲端。</block>
@@ -2501,7 +2492,6 @@
   <block id="ae70ae1b93c56367429b7d2bb0ece139" category="cell">按一下*地圖*</block>
   <block id="c8f32db0b52a7b7e31ee04bd02eddbb6" category="cell">按一下*地圖與分類*</block>
   <block id="a988b0977fb89f6574cfc55d252b1cf9" category="cell">按一下「*關*」</block>
-  <block id="07ada1e73188e64ef4fd43b06b4a2a48" category="paragraph">BlueXP 分類會開始掃描您新增檔案共用中的檔案、結果會顯示在儀表板和其他位置。</block>
   <block id="0eb30c84638dc32a52a08e70a70b2a55" category="section-title">從法規遵循掃描中移除檔案共用</block>
   <block id="90777a343fd7f5c83c97f473d59a2af2" category="inline-image-macro">螢幕快照顯示如何移除單一檔案共用區以掃描其檔案。</block>
   <block id="c8716632d7055f530ad579b6f751cf3a" category="paragraph"><block ref="c8716632d7055f530ad579b6f751cf3a" category="inline-image-macro-rx" type="image"></block></block>
@@ -3288,7 +3278,6 @@
   <block id="47b72e580332bb9da872607466b406bc" category="paragraph">此報告以 .CSV 或 .JSON 檔案形式提供，您可以將其儲存至本機機器。</block>
   <block id="f257e5460f3ab87ec47290dc11518fc8" category="paragraph">* 資料調查報告 * 包含哪些內容</block>
   <block id="f3f4c1edbf92907aa9051152a36ae4cc" category="list-title">產生報告的步驟</block>
-  <block id="868f49e80cf5d3f7ac26cbec13a8d0be" category="list-text">選取以下載資料的 .CSV 或 .JSON 報告，然後按一下 * 下載報告 * 。</block>
   <block id="8b93cae59bfdd9d1f5373c4f243f1891" category="paragraph"><block ref="8b93cae59bfdd9d1f5373c4f243f1891" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1f22985ba0d865da0fb0dc1149ac8684" category="list-text">若要從主機解除安裝軟體，請在 BlueXP  分類主機機器上執行<block ref="cc561bef4dbd2996ec2b2478f3e1042d" prefix=" " category="inline-code"></block>指令碼，例如：</block>
   <block id="009d2060a609114df262eff04e83f241" category="section-title">2025 年 1 月 22 日</block>
@@ -3397,4 +3386,26 @@
   <block id="e69d7b651771ff110228ddae78e71631" category="list-text">必須在主機系統上啟用進階向量擴充指令集（ AVX ）。</block>
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">改善分類模型準確度</block>
   <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">的機器學習模型準確度<block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block>已提升 11% 。</block>
+  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="doc">版本 1.41</block>
+  <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">此 BlueXP  分類版本包含一般改良功能和錯誤修正。其中也包括：</block>
+  <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">掃描狀態</block>
+  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">BlueXP  分類現在會追蹤捲上 _initial_ 對應和分類掃描的即時進度。獨立的漸進式長條可追蹤對應和分類掃描，顯示掃描的檔案總數百分比。您也可以將游標暫留在進度列上，以檢視掃描的檔案數和檔案總數。追蹤掃描狀態可深入瞭解掃描進度，讓您更妥善地規劃掃描並瞭解資源分配。</block>
+  <block id="dea24de819351c63f66685576d21ee25" category="paragraph">若要檢視掃描的狀態，請瀏覽至 BlueXP  分類中的「 ** 組態 ** 」，然後選取「 ** 工作環境組態 ** 」。每個磁碟區的進度會以行顯示。</block>
+  <block id="801fd0ca68a5867228784d88be71f1fd" category="paragraph">BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。BlueXP  分類完成初始掃描後，即可在法規遵循儀表板中取得結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。您可以瀏覽至「 ** 組態 ** 」功能表，然後選取「 ** 工作環境組態 ** 」，以追蹤初始掃描的進度。每次掃描的進度會顯示為進度列。您也可以將游標移至進度列上，查看相對於磁碟區中檔案總數所掃描的檔案數。</block>
+  <block id="b7daace328e6741286f27d2ac5e2f47a" category="paragraph">如果您想要在修改頁面內容後，將其下載為報告，請選取<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>按鈕。<block ref="99402c37b738da126a6c16dce45a83da" category="inline-xref-macro-rx"></block>。</block>
+  <block id="126d0a183cd7ef5a42d98232cfc78c9e" category="admonition">您只能在「資料調查」頁面上檢視掃描的前 10 ， 000 個結果或 500 個頁面。</block>
+  <block id="d70c15611bfee94500d72ff7b26a3246" category="paragraph">在「資料調查結果」窗格中，針對任何單一檔案選取向下插入點<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>按鈕，以檢視檔案中繼資料。</block>
+  <block id="9fb67493aa2d989d001de2e7c4462b4e" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單，以及其擁有的權限類型，請選取 * 檢視所有權限 * 。此按鈕僅適用於 CIFS 共用資料。</block>
+  <block id="65e8d4fae364cb5c5e1a2304c301a6ad" category="paragraph">選取任何群組的向下插入<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>點按鈕，即可查看屬於群組一部分的使用者清單。</block>
+  <block id="21f378c3412ff535e51a7de907a17ad8" category="paragraph">選取使用者或群組的名稱會重新整理「調查」頁面，以便您查看使用者或群組可存取的所有檔案和目錄。</block>
+  <block id="b646744a4cb3933c62e69361ab1b0fb9" category="paragraph">如果您想要查看單一檔案是否有重複的項目，請在「資料調查結果」窗格中，針對任何單一檔案選取<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>以檢視檔案中繼資料。如果某個檔案有重複項目、此資訊會顯示在「_重複項目_」欄位旁。</block>
+  <block id="6085b17a40397d5797aee31606263dda" category="paragraph">若要檢視重複檔案的清單及其所在位置，請選取 * 檢視詳細資料 * 。在下一頁中，選取 * 檢視重複的記錄 * 以檢視「調查」頁面中的檔案。</block>
+  <block id="9dbaf2723509754918929e09594f8800" category="list-text">從「資料調查」頁面，選取<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>頁面右上方的按鈕。</block>
+  <block id="c290efd7814d022961f943c1af408a6f" category="list-text">選擇報告類型： CSV 或 JSON ，並提供 ** 報告名稱 ** 。選擇一個 ** 工作環境 ** 和 ** Volume ** ，然後提供一個 ** 目標文件夾路徑 ** 。</block>
+  <block id="8c574751ceb947fcd2a71198a9109d98" category="list-text">選擇 ** 下載報告 ** 。</block>
+  <block id="794d07bb17fcda62a163d4acc32a2c19" category="paragraph">BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 BlueXP 分類完成初始掃描、就會在法規遵循儀表板中提供結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。您可以瀏覽至「 ** 組態 ** 」功能表，然後選取「 ** 工作環境組態 ** 」，以追蹤初始掃描的進度。每次掃描的進度會顯示為進度列。您也可以將游標移至進度列上，查看相對於磁碟區中檔案總數所掃描的檔案數。</block>
+  <block id="04bcd6818aecd8c0fe46b7d49aa8b39a" category="paragraph">BlueXP 分類會開始掃描您啟用的資料庫架構。您可以瀏覽至「 ** 組態 ** 」功能表，然後選取「 ** 工作環境組態 ** 」，以追蹤初始掃描的進度。每次掃描的進度會顯示為進度列。您也可以將游標移至進度列上，查看相對於磁碟區中檔案總數所掃描的檔案數。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。</block>
+  <block id="92b3b54a8e8438f0bd12202608c4ab34" category="paragraph">BlueXP 分類會開始掃描您新增檔案共用中的檔案、結果會顯示在儀表板和其他位置。您可以瀏覽至「 ** 組態 ** 」功能表，然後選取「 ** 工作環境組態 ** 」，以追蹤初始掃描的進度。每次掃描的進度會顯示為進度列。您也可以將游標移至進度列上，查看相對於磁碟區中檔案總數所掃描的檔案數。</block>
+  <block id="ed8331881c930d67b63a6ed99c045b28" category="paragraph">BlueXP 分類會開始掃描您啟用的儲存區。您可以瀏覽至「 ** 組態 ** 」功能表，然後選取「 ** 工作環境組態 ** 」，以追蹤初始掃描的進度。每次掃描的進度會顯示為進度列。您也可以將游標移至進度列上，查看相對於磁碟區中檔案總數所掃描的檔案數。如果有任何錯誤、它們會顯示在「 Status （狀態）」欄中、以及修正錯誤所需的動作。</block>
+  <block id="f070435ef55d6c7cc1db59f0a41a4609" category="section-title">2025 年 3 月 10 日</block>
 </blocks>
