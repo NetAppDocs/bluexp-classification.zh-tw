@@ -4,7 +4,7 @@ permalink: reference-db-capabilities.html
 keywords: database actions, database filters, supported, unsupported 
 summary: 在掃描資料庫架構時、 BlueXP 分類無法使用某些功能。 
 ---
-= 支援和不支援的資料庫功能
+= BlueXP  分類中支援和不支援的資料庫功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-org-private-data.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: BlueXP 分類提供多種方法來管理及組織您的私有資料。如此一來、您就能更輕鬆地查看最重要的資料。 
 ---
-= 組織您的私有資料
+= 使用 BlueXP  分類來組織您的私人資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

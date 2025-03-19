@@ -4,7 +4,7 @@ permalink: task-controlling-private-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
 summary: 檢視組織中個人資料和敏感個人資料的詳細資料、以掌控您的私有資料。您也可以檢閱資料中的 BlueXP 分類類別和檔案類型、以獲得可見度。 
 ---
-= 檢視儲存在組織中之私有資料的法規遵循詳細資料
+= 使用 BlueXP  分類檢視儲存在組織中的私有資料相關法規遵循詳細資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

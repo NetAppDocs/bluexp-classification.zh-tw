@@ -4,7 +4,7 @@ permalink: task-using-policies.html
 keywords: compliance, privacy, filter data, highlights, policies, email alerts, notifications, aip labels, azure information protection, add labels, change labels, tags, data sense 
 summary: 原則就像是自訂篩選器的最愛清單、可在「調查」頁面中針對一般要求的法規遵循查詢提供搜尋結果。BlueXP 分類提供一組根據一般客戶要求而預先定義的原則。您可以建立自訂原則、針對組織專屬的搜尋結果提供結果。 
 ---
-= 指派原則給您的資料
+= 使用 BlueXP  分類將原則指派給您的資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

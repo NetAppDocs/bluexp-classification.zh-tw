@@ -4,7 +4,7 @@ permalink: task-view-compliance-actions.html
 keywords: compliance, actions, view progress 
 summary: 當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「行動狀態」窗格中監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。 
 ---
-= 檢視法規遵循行動的狀態
+= 在 BlueXP  分類中檢視法規遵循行動的狀態
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

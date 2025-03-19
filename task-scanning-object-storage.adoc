@@ -4,7 +4,7 @@ permalink: task-scanning-object-storage.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
 summary: 請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存區內的資料。BlueXP 分類可以掃描使用簡易儲存服務（ S3 ）傳輸協定的任何物件儲存服務的資料。其中包括 NetApp StorageGRID 、 IBM Cloud Object Store 、 Linode 、 B2 Cloud Storage 、 Amazon S3 等。 
 ---
-= 掃描 StorageGRID 資料
+= 使用 BlueXP  分類掃描 StorageGRID 資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

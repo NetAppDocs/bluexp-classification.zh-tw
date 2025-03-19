@@ -4,7 +4,7 @@ permalink: reference-collected-metadata.html
 keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
 summary: BlueXP 分類在對資料來源和工作環境中的資料執行分類掃描時、會收集某些中繼資料。BlueXP 分類可存取我們需要分類資料的大部分中繼資料、但有些來源無法存取我們需要的資料。 
 ---
-= 從資料來源收集的中繼資料
+= 從 BlueXP  分類中的資料來源收集的中繼資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

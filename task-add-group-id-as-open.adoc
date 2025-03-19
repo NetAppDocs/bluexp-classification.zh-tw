@@ -4,7 +4,7 @@ permalink: task-add-group-id-as-open.html
 keywords: permissions, open to organization, file access 
 summary: 當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。 
 ---
-= 將其他群組 ID 定義為開放給組織使用
+= 在 BlueXP  分類中定義其他群組 ID ，以供組織使用
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

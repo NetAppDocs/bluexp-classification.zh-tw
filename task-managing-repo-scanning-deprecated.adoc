@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-repo-scanning-deprecated.html 
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan 
-summary: 您可以管理資料在每個工作環境和資料來源中的掃描方式。您可以在「儲存庫」基礎上進行變更、也就是說、您可以針對每個磁碟區、儲存區、共用區、架構、使用者、 等等、視您要掃描的資料來源類型而定。 
+summary: 您可以管理資料在每個工作環境和資料來源中的掃描方式。您可以根據儲存庫進行變更，也就是說，您可以根據所掃描的資料來源類型，對每個磁碟區，儲存區，共用區，架構，使用者等進行變更。 
 ---
-= 重新掃描現有儲存庫的資料
+= 使用 BlueXP  分類重新掃描現有儲存庫的資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

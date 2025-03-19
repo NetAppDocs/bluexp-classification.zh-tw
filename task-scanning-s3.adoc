@@ -4,7 +4,7 @@ permalink: task-scanning-s3.html
 keywords: cloud compliance, amazon s3, s3 buckets, amazon s3 buckets, scan s3 buckets, scan amazon s3 buckets, enable compliance s3, enable compliance on s3, s3 working environment, data sense 
 summary: BlueXP 分類可以掃描 Amazon S3 儲存區、以識別位於 S3 物件儲存區的個人和敏感資料。BlueXP 分類可以掃描帳戶中的任何儲存庫、無論是否為 NetApp 解決方案所建立。 
 ---
-= 掃描 Amazon S3 儲存區
+= 使用 BlueXP  分類掃描 Amazon S3 儲存桶
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

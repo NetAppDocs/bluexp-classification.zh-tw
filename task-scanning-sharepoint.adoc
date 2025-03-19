@@ -4,7 +4,7 @@ permalink: task-scanning-sharepoint.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, sharepoint, sharepoint online, sharepoint on-premises, data sense 
 summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描 SharePoint Online 和 SharePoint 內部部署帳戶中的檔案。 
 ---
-= 掃描 SharePoint 帳戶
+= 使用 BlueXP  分類掃描 SharePoint 帳戶
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
