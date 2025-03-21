@@ -966,43 +966,24 @@
   <block id="fb91597bc7333ab092ccda3e2c38ed9f" category="paragraph">如果您已訂閱Azure資訊保護（AIP）、您可以將標籤套用至內容、以分類及保護文件與檔案。檢閱指派給檔案的最常用AIP標籤、即可查看檔案中最常用的標籤。</block>
   <block id="02ac28e6aac96ae29edd75daf4e929ad" category="inline-link-macro">AIP標籤</block>
   <block id="181332a3540aa1ea82fa85f6dc6f6625" category="paragraph">如需詳細資訊、請參閱 <block ref="831f3d64e1800ca5ef8e2c817b5a43b2" category="inline-link-macro-rx"></block> 。</block>
-  <block id="f7b090ae0361a33be68398c938094aa6" category="section-title">管理儀表板</block>
   <block id="e5295f0dcd9974bcca40c2b38f856a76" category="paragraph">「治理」儀表板提供相關資訊、讓您提高效率、並控制儲存在儲存資源上的資料相關成本。</block>
   <block id="fddf72145fd99d867c4069e0c4b20ad7" category="inline-image-macro">BlueXP 分類治理儀表板的螢幕擷取畫面。</block>
   <block id="6dddc0d3e2bbe7c0b8fdf2abf2454744" category="paragraph"><block ref="6dddc0d3e2bbe7c0b8fdf2abf2454744" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="137856a117db72a4c07a63ed4622372f" category="section-title">節省商機</block>
-  <block id="66828697b142b247f0ff8f5fde69fed4" category="paragraph">您可能想要調查「_儲存商機_」區域中的項目、看看是否有任何您應該刪除的資料、或是將資料分層到較便宜的物件儲存設備。按一下每個項目、即可在「調查」頁面中檢視篩選後的結果。</block>
   <block id="da7e456f74e6e77de59afc145e42d85d" category="list-text">*過時資料*：3年前上次修改的資料。</block>
   <block id="c25ad118eb89526500bf75c7b98bc13a" category="list-text">*非商業資料*：根據類別或檔案類型、被視為與商業無關的資料。這包括：</block>
   <block id="b77538c14bb334b644fd69d280cca12f" category="list-text">雜項（一般「其他」類別）</block>
   <block id="dc6d9a4419750aae3db17878ffe18e5c" category="inline-link-macro">查看顯示哪些類型的重複檔案</block>
-  <block id="312ffbf4bf2c65989ebbd000c725c369" category="admonition">如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 過時資料 _ 類別中進行識別。</block>
-  <block id="2b4d8a4ffe486173d89394fc3d6ccdb3" category="section-title">結果最多的原則</block>
-  <block id="8eb1fec334dabbaf8e8ce1c5c57d9629" category="paragraph">在_policies區域中、結果最多的原則會顯示在清單頂端。按一下原則名稱、即可在「調查」頁面中顯示結果。按一下*檢視全部*以檢視所有可用原則的清單。</block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">請按這裡</block>
-  <block id="c79d6ed12c6347fc1bdd0dd91ef85ff7" category="paragraph">按一下<block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block>以深入瞭解原則。</block>
-  <block id="b70528883a2d1dce278c3b16e0f8c608" category="section-title">資料總覽</block>
-  <block id="f7e44fd8c27ddf80c242fb3dae245422" category="paragraph">「_Data Overview」（資料概覽）區段提供所有正在掃描資料的快速概覽。按一下按鈕、即可下載完整的資料對應報告、其中包含所有工作環境和資料來源的使用容量、資料存留時間、資料大小和檔案類型。如需此報告的完整詳細資料，請參閱<block ref="53e5c76c1fe1c6ab36aa624f6960e384" category="inline-xref-macro-rx"></block>。</block>
-  <block id="5054e48efbd7d7a23b39d5c48f13943f" category="section-title">依資料敏感度列出的主要資料儲存庫</block>
   <block id="c84e7df5fd818e5aa11d03239984b3bd" category="paragraph">「_Top Data儲存庫依敏感度等級_」區域列出前四大資料儲存庫（工作環境和資料來源）、其中包含最敏感的項目。每個工作環境的長條圖分為：</block>
   <block id="c2587967478c7df25fe839d6f619f443" category="list-text">非敏感資料</block>
   <block id="0f0be2946f647a34d438bb34323fd30e" category="list-text">敏感的個人資料</block>
-  <block id="0d6f87888ce8ecaae88101ac2ce74b99" category="paragraph">您可以將游標放在每個區段上、以查看每個類別中的項目總數。</block>
-  <block id="9f3ca55177a9cff0208b29196f6a269a" category="paragraph">按一下每個區域、即可在「調查」頁面中檢視篩選後的結果、以便進一步調查。</block>
-  <block id="645e4f0b71c92a4a3810668742adff95" category="section-title">依開放權限類型列出的資料</block>
   <block id="140692ffca26cf04b2ffe208e40614b6" category="paragraph">「_開啟權限_」區域會顯示所有要掃描之檔案所存在的每種權限類型的百分比。此圖表顯示下列權限類型：</block>
   <block id="4f7b4b702c17bca954d2d186aaea71c0" category="list-text">無開放權限</block>
   <block id="a1803d6c124292f91b3806ee4c46b406" category="list-text">開放給組織使用</block>
   <block id="8c8bc01ad66acc46ad4db72461de09d9" category="list-text">開放給大眾使用</block>
   <block id="77660481bdb77bcf47202315fe7e0d51" category="list-text">不明存取</block>
-  <block id="6dddb9855aff5ba938a803fad44cc45e" category="paragraph">您可以將游標放在每個區段上、以查看每個類別中的檔案總數。按一下每個區域、即可在「調查」頁面中檢視篩選後的結果、以便進一步調查。</block>
-  <block id="f7610c6f6e541c5a2364ba4e2af4b7b2" category="section-title">資料的存留期和資料圖表的大小</block>
-  <block id="3ec606c48dc49534660f77920d3af604" category="paragraph">您可能想要調查_age_和_Siz__圖表中的項目、看看是否有任何您應該刪除的資料、或將其分層以降低物件儲存成本。</block>
-  <block id="7ae4efbbdd2f74c778120cfafe0d43a2" category="paragraph">您可以將游標放在圖表中的某個點上、以查看該類別中資料的存留期或大小的詳細資料。按一下以檢視根據該年齡或大小範圍篩選的所有檔案。</block>
   <block id="cbeed5582d295effbe84db6394c89a55" category="list-text">*資料圖表的存留期*：根據資料建立時間、上次存取時間或上次修改時間來分類資料。</block>
   <block id="1c7e3b4981e1a369ab27fd559df0e974" category="list-text">*資料圖表大小*：根據大小來分類資料。</block>
-  <block id="fd48a7c8c60d4f4ca62e7f192f27abea" category="admonition">如果您的任何資料來源都實作資料分層、則物件儲存區中已存在的舊資料可能會在 _ 資料存留期 _ 圖表中加以識別。</block>
-  <block id="adb18f5fb34b742716a832a865f1d8e2" category="section-title">最常識別的資料分類</block>
   <block id="d23cdfe3be69f69baed369d543f36aa9" category="paragraph">_Classification_ 區域提供最常識別的清單<block ref="d3b5de2fe3785a28f0b4099f30abefe6" category="inline-link-macro-rx"></block>，以及<block ref="6d5873eba480eee9411c9a14fd12e5d9" category="inline-link-macro-rx"></block>掃描的資料。</block>
   <block id="9a5f838c2dd7ef4d943b30889f557531" category="paragraph">類別可顯示您擁有的資訊類型、協助您瞭解資料的現況。例如、「恢復」或「員工合約」等類別可能包含敏感資料。調查結果時、您可能會發現員工合約儲存在不安全的位置。然後您就可以修正該問題。</block>
   <block id="f57be897cf74c2ec8ac018d90999d9ef" category="inline-link-macro">依類別檢視檔案</block>
@@ -1010,7 +991,6 @@
   <block id="cb45e879b815142e4e2cd0d22e5c6dd9" category="paragraph">檢閱檔案類型有助於控制敏感資料、因為您可能會發現某些檔案類型儲存不正確。</block>
   <block id="5e8739b0bd7e602b7f492e7398e41425" category="inline-link-macro">檢視檔案類型</block>
   <block id="1841518caa387e4e9bb9d49c95609785" category="paragraph">如需詳細資訊、請參閱 <block ref="624739c32d4b253a90da8dd449f98632" category="inline-link-macro-rx"></block> 。</block>
-  <block id="781de2ced798a15ae10aba6c21cb05e7" category="paragraph">資料對應報告概述儲存在企業資料來源中的資料、協助您做出移轉、備份、安全性及法規遵循程序等決策。報告會先列出概述、總結您所有的工作環境和資料來源、然後針對每個工作環境提供分析。</block>
   <block id="889fccf2502dc396b9b9c66885b6a093" category="paragraph">報告包含下列資訊：</block>
   <block id="03841f26d25c8d7aef0d271b79a05859" category="cell">使用容量</block>
   <block id="660bfa8882061d8f060790c38df904d6" category="cell">適用於所有工作環境：列出每個工作環境的檔案數量和使用容量。對於單一工作環境：列出使用最大容量的檔案。</block>
@@ -1020,33 +1000,19 @@
   <block id="e22f9909ed0cc14af3ae41c9e280cf13" category="cell">列出工作環境中特定大小範圍內的檔案數量。</block>
   <block id="f12b42eece54a56ffab836a42eb37488" category="cell">檔案類型</block>
   <block id="7d8121f1bc518fb0e6e184fba09d6b2b" category="cell">列出儲存在工作環境中的每種檔案類型的檔案總數和使用容量。</block>
-  <block id="1ec26f1d39a398158aea4e2d5e31e150" category="section-title">產生資料對應報告</block>
-  <block id="3ffeed0f270433c9f8f9c4d5fb1757b1" category="paragraph">您可以從 BlueXP 分類中的「治理」索引標籤產生此報告。</block>
   <block id="97f34c43cfd5abbd752382f17f44c9a2" category="list-text">在BlueXP功能表中、按一下*管理&gt;分類*。</block>
-  <block id="2d948e473e2d70b037f0549e51ba2a9d" category="list-text">按一下 * Governance * 、然後按一下 * Data Mapping Report* 按鈕。</block>
   <block id="fb5cbffc5e8f979523247654de6b0102" category="inline-image-macro">「管理儀表板」的快照、顯示如何啟動資料對應報告。</block>
-  <block id="7a9d38d1340793fbf851372aaba4270d" category="paragraph"><block ref="7a9d38d1340793fbf851372aaba4270d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9fdf01a1261d4a4e788383c1af9adaf2" category="paragraph">BlueXP 分類會產生 .pdf 報告、您可以視需要檢閱並傳送給其他群組。</block>
   <block id="e0f8faa1f60bb9ad057dbed0ae3366cd" category="inline-link-macro">請參閱如何存取 Classification 執行個體的資料</block>
   <block id="7478ade8cfb34d944424b511227fdfa2" category="paragraph">如果報告大於 1 MB 、 .pdf 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 .pdf 檔案。當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體、才能下載 .pdf 檔案。<block ref="21695d5d9eec77c608b7fe7666155715" category="inline-link-macro-rx"></block>。</block>
   <block id="46bd1bd2277d77e6f044cdb7a6983fc6" category="inline-image-macro">「更多」按鈕</block>
-  <block id="2cd45d3fb160d90a0b0fe2eed550f4de" category="paragraph">請注意，您可以從 BlueXP  分類頁面頂端，按一下並按一下 * 變更公司名稱 * ，自訂顯示在報告第一頁上的公司名稱<block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block>。下次產生報告時、會加入新名稱。</block>
-  <block id="7ddeaa5e00e834742bed79816a143502" category="section-title">資料探索評估報告</block>
-  <block id="a271d225cad25b912ce5858124897ffe" category="paragraph">「資料探索評估報告」提供對掃描環境的高層級分析、以強調系統的發現、並顯示關切領域和可能的補救步驟。結果是根據資料的對應和分類而定。本報告的目標是提高對資料集三個重要層面的認知度：</block>
   <block id="4fc6419c6a12af16883e770d99dbf849" category="cell">資料治理問題</block>
   <block id="29682fe2b70e1decc5fcddf7dc56bb80" category="cell">詳細瞭解您擁有的所有資料、以及您可以減少資料量以節省成本的領域。</block>
   <block id="e26970e3266bdd73a6217ce7b8af4c3e" category="cell">資料安全性曝險</block>
   <block id="7f63d3fd95ece72febd67545c6ea1e22" category="cell">由於存取權限廣泛、您的資料可存取至內部或外部攻擊的區域。</block>
   <block id="d5143a80246b3eadc253d2f9951f4497" category="cell">資料法規遵循漏洞</block>
   <block id="c75a625e2486681483f05951add3c0b6" category="cell">您的個人或敏感個人資訊位於安全性和 DSAR （資料主體存取要求）的位置。</block>
-  <block id="9aec4530d7d1ab984331088496677dbd" category="paragraph">評估後、本報告會指出您可以在哪些領域：</block>
-  <block id="483d6c5447c876cec7c9f20a2f16d52e" category="list-text">變更保留原則、或移動或刪除特定資料（過時、重複或非業務資料）、以降低儲存成本</block>
-  <block id="5672e2463aa066853c9eb4cf4b3e3fa8" category="list-text">修改全域群組管理原則、以保護具有廣泛權限的資料</block>
-  <block id="1f4e12eb3b2fcb4ce87b8ed675d3270c" category="list-text">將 PII 移至更安全的資料儲存區、以保護您擁有個人或敏感個人資訊的資料</block>
-  <block id="1f409051045abcc9fdb719d7f375ac7a" category="section-title">產生資料探索評估報告</block>
-  <block id="1848496efeb9b0561b54c93d4ca7403e" category="list-text">按一下 * 治理 * 、然後按一下 * 資料探索評估報告 * 按鈕。</block>
   <block id="d3cfc5adb7d762b3824a7c02a95765b9" category="inline-image-macro">Governance Dashboard 的螢幕擷取畫面、顯示如何啟動 Data Discovery 評估報告。</block>
-  <block id="6e54901f5113f24a64a46275f84c34da" category="paragraph"><block ref="6e54901f5113f24a64a46275f84c34da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="25f467812f399c77efcfc6346bef2db9" category="summary">檢視組織中個人資料和敏感個人資料的詳細資料、以掌控您的私有資料。您也可以檢閱資料中的 BlueXP 分類類別和檔案類型、以獲得可見度。</block>
   <block id="aa7740206cc512120060a1c060de9543" category="paragraph">檢視組織中個人資料（ PII ）和敏感個人（ SPii ）資料的詳細資料，以掌控您的私人資料。您也可以檢閱資料中的 BlueXP 分類類別和檔案類型、以獲得可見度。</block>
   <block id="6dd2018793ec98bc5468877b15393d0a" category="admonition">本節所述的功能僅在您選擇對資料來源執行完整分類掃描時可用。只有對應掃描的資料來源不會顯示檔案層級的詳細資料。</block>
@@ -3421,4 +3387,54 @@
   <block id="c0a6118312ef4878e08365a032d30e38" category="doc">當 BlueXP  分類發現不符合標準的資料時，請傳送電子郵件警示</block>
   <block id="d359757dd1d4d8c3ff7449e1a600e014" category="doc">使用 BlueXP  分類將原則指派給您的資料</block>
   <block id="81969dc99e0a4fcee700e3390e9e8d60" category="doc">在 BlueXP  分類中檢視法規遵循行動的狀態</block>
+  <block id="87259e291cf73ff3b26cf61342184d7a" category="section-title">檢閱 Governance 儀表板</block>
+  <block id="d930cabf64be47e8e8836a7ffce60dbd" category="list-text">從 BlueXP  功能表中，選取 * 治理 &gt; 分類 * 。</block>
+  <block id="2cb533e4202a16a29d8a35f975b18546" category="list-text">選擇 * 治理 * 。</block>
+  <block id="59fb9b8d21a1200f68a3255348e5aad7" category="paragraph">此時會出現 Governance 儀表板。</block>
+  <block id="cd44aff9043f042044d20fa9200a9168" category="section-title">檢視儲蓄商機</block>
+  <block id="64d5cdb36e33cae106a6b70c95fdc6de" category="paragraph">您可能想要調查「_儲存商機_」區域中的項目、看看是否有任何您應該刪除的資料、或是將資料分層到較便宜的物件儲存設備。</block>
+  <block id="d7fc3a438d308cfbcbd8fa3231391419" category="list-text">從 BlueXP  分類功能表中，選取 * 治理 * 。</block>
+  <block id="6135c90ca8390ee87799da32e490b107" category="list-text">在 Governance 儀表板的每個「節約機會」方塊中，選取 * 最佳化 Storage* ，即可在「調查」頁面中檢視篩選的結果。</block>
+  <block id="1902fe7d73e4e06ca6b8981aef9ff39b" category="admonition">如果您的任何資料來源都實作資料分層，則物件儲存區中已存在的舊資料可在 _ 過時資料 _ 類別中識別。</block>
+  <block id="b425c4e4b41334f19572d1e9e51d7b9a" category="section-title">審查結果最多的原則</block>
+  <block id="e026e06fb0f6082b58b19e0ae90f9015" category="paragraph">在 _policies 區域中，結果最大的原則會出現在清單頂端。</block>
+  <block id="b2baefff9b3ed0ce45ba30f59cc62cb1" category="list-text">在「 Goverance 儀表板」 &gt; 「原則」方塊中，選取中的原則名稱，以在「調查」頁面中顯示結果。</block>
+  <block id="e2981960c7200ea11e83da6a095d249b" category="list-text">選取 * 檢視全部 * 以檢視所有可用原則的清單。</block>
+  <block id="24c741c03fc84375fc7935a70023d0ac" category="paragraph">如需原則的詳細<block ref="eb4899a5ae2ad655555b425171c60bf8" category="inline-link-macro-rx"></block>資訊，請參閱。</block>
+  <block id="9da3158754790a2bd5d492ff265be3c4" category="section-title">建立資料探索評估報告</block>
+  <block id="310db9cf8ba2482b63b9ab1efe7fe48c" category="paragraph">「資料探索評估報告」提供對掃描環境的高層級分析，以顯示相關領域和可能的補救步驟。結果是根據資料的對應和分類而定。本報告的目標是提高對資料集三個重要層面的認知度：</block>
+  <block id="ba8c35e924f949589fd6e14b916db6fc" category="paragraph">使用此報告，您可以採取下列行動：</block>
+  <block id="0b41f25c79381f33f43c7337423508d5" category="list-text">變更保留原則，或移動或刪除特定資料（過時，重複或非業務資料），以降低儲存成本。</block>
+  <block id="68e72237516d47f00bd54a5b6436d24d" category="list-text">修改全域群組管理原則，以保護具有廣泛權限的資料。</block>
+  <block id="fb5a05e0fc5655d8fe4a337e5966cf54" category="list-text">將 PII 移至更安全的資料儲存區，以保護您擁有個人或敏感個人資訊的資料。</block>
+  <block id="85b1cb7e8e4481210af8dd08f7144383" category="list-text">在 Governance Dashboard &gt; Data Overview （資料總覽）區段中，選擇 * Data Discovery Assessment Report* （資料探索評估報告 * ）按鈕。</block>
+  <block id="b1d35e9ba32779b24fcef34132e15f8c" category="paragraph"><block ref="b1d35e9ba32779b24fcef34132e15f8c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="96929b0f4dead0308876154107c4bcb8" category="section-title">建立資料對應總覽報告</block>
+  <block id="bfb48ff12b1469d0b2731ba4b39d8082" category="paragraph">資料對應總覽報告提供儲存在企業資料來源中的資料總覽，協助您做出移轉，備份，安全性及法規遵循程序的決策。報告會先列出概述、總結您所有的工作環境和資料來源、然後針對每個工作環境提供分析。</block>
+  <block id="91c6b86f18254007884e6ec4802cc896" category="list-text">在治理儀表板 &gt; 資料總覽區段中，選取 * 完整資料對應總覽報告 * 按鈕。</block>
+  <block id="a1fe048fbf4d3c352f8807ca8e61a815" category="paragraph"><block ref="a1fe048fbf4d3c352f8807ca8e61a815" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35d8ebf9eb3e6fb636c2c5c3d8cddab5" category="list-text">要自定義顯示在報告第一頁上的公司名稱，請從 BlueXP  分類頁面頂部選擇<block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block>。然後選擇 * 變更公司名稱 * 。下次產生報告時，報告會包含新名稱。</block>
+  <block id="6374c84804cec753d099290142ab1465" category="section-title">檢閱依資料敏感度列出的最上層資料儲存庫</block>
+  <block id="b89e0d7e9a701dd092d61473510fba30" category="list-text">若要查看每個類別的項目總數，請在「監管」儀表板 &gt; 「資料總覽」區段中，將游標放在長條圖的每個區段上。</block>
+  <block id="6a0a0aa77d6678b0ac42141cf2b473bc" category="list-text">若要篩選將出現在「調查」頁面的結果，請選取每個區域 IB 列，然後進一步調查。</block>
+  <block id="b2c12a3831282ab991643e16075afb77" category="section-title">檢閱機密資料及廣泛權限</block>
+  <block id="12e6f66d938dc7c6568aaab98f275b1f" category="paragraph">「敏感資料」和「整體權限」區域會顯示包含敏感資料且具有廣泛權限的檔案百分比。此圖表顯示下列權限類型：</block>
+  <block id="dd0ba7576314f49b14e69d557e1760b4" category="list-text">從最嚴格的權限到最嚴格的水平 axix 限制。</block>
+  <block id="115db9a4d58348c93542384adcf071b0" category="list-text">從最不敏感的資料到垂直軸上最敏感的資料。</block>
+  <block id="24885cc260e3b19c603b0d66df075323" category="list-text">在「監管」儀表板 &gt; 「敏感資料和整體權限」區段中，若要查看每個類別的檔案總數，請將游標放在每個方塊上。</block>
+  <block id="a72b82c1583cb44d3bde15fd3b45db0a" category="list-text">若要篩選將出現在「調查」頁面的結果，請選取一個方塊，然後進一步調查。</block>
+  <block id="912072af1bc9d9c75e7bd16ebc45d2eb" category="section-title">檢閱依開啟權限類型列出的資料</block>
+  <block id="34a3b7a40173a85de5fff32ac7d16adc" category="list-text">若要查看每個類別中的檔案總數，請將游標放在每個方塊上。</block>
+  <block id="aba1ea5ecac0b70b83e6fef3deec34cf" category="section-title">檢閱資料的年齡和大小</block>
+  <block id="fc8556e6c95f991acbf5ef8610bf8c7b" category="paragraph">您可能想要調查 _age_ 和 _sizer_ 圖表中的項目，看看是否有任何您應該刪除的資料，或是將資料分層儲存至較便宜的物件儲存設備。</block>
+  <block id="b41e204625d2342ac1443afb9cd23995" category="list-text">在治理儀表板的資料存留時間圖表中，若要查看資料存留時間的詳細資料，請將游標放在圖表中的某個點上。</block>
+  <block id="163744c4505495283a600a1c9f062f51" category="list-text">若要依年齡或大小範圍篩選，請選取該年齡或大小。</block>
+  <block id="0d1f53f7df2c46c047e4cf95fc8bb8d7" category="admonition">如果您的任何資料來源都實作資料分層，則物件儲存區中已存在的舊資料可能會在 _ 資料存留期 _ 圖表中加以識別。</block>
+  <block id="d3057f8e098d72850d91f222796050a1" category="section-title">檢閱資料中識別最多的資料分類</block>
+  <block id="eff9c92efbc58be66538dbfacec6b4e0" category="section-title">檢閱最明確的分類類別</block>
+  <block id="eca4dd32f8f0367cd8e70bda21eec6b5" category="list-text">在「監管」儀表板 &gt; 「分類」區段 &gt; 「類別」方塊中，若要查看類別的詳細資料，請選取類別。「調查」頁面會提供僅針對該類別篩選的資料。</block>
+  <block id="b08b9747886b004ab2b1be414199d0dc" category="list-text">要顯示所有類別，請選擇 * 查看全部 * 。</block>
+  <block id="ca304384fad03eae82a8e99a165128d0" category="section-title">檢閱識別最多的檔案類型</block>
+  <block id="5af3bad2ce7ed86124fdaa43b19e15c1" category="list-text">在「監管」儀表板 &gt; 「分類」區段 &gt; 「檔案類型」方塊中，若要查看檔案類型的詳細資料，請在「監管」儀表板的「檔案類型」區段中選取檔案類型。「調查」頁面會提供僅針對該檔案類型篩選的資料。</block>
+  <block id="3b879833e0c35c3e97d6bcec57a9aad0" category="list-text">若要顯示所有檔案類型，請選取 * 檢視全部 * 。</block>
 </blocks>
