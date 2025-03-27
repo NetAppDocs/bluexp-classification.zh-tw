@@ -592,7 +592,6 @@
   <block id="6505506a35d1d959ffb20a74a4238de6" category="cell">隨需重新掃描資料</block>
   <block id="5f571f0f56802124061d64f7f5dac503" category="cell">建立自訂分類器</block>
   <block id="c7d804294d8fa0d1ba6bfc80ead25ca0" category="cell">將目錄排除在掃描之外</block>
-  <block id="46771ec1582c3b0b4aebfc19d6356451" category="cell">從調查匯出資料至 NFS</block>
   <block id="cfe5d63c50c4794111fa6f65b931e130" category="cell">從調查匯出資料至 CSV</block>
   <block id="5b161cf169bcf6263a5f04b0a0b391d6" category="cell">支援多台掃描器</block>
   <block id="81ef4cd6c60d70e2956f5aceef3493d2" category="cell">整合Active Directory</block>
@@ -3437,4 +3436,8 @@
   <block id="ca304384fad03eae82a8e99a165128d0" category="section-title">檢閱識別最多的檔案類型</block>
   <block id="5af3bad2ce7ed86124fdaa43b19e15c1" category="list-text">在「監管」儀表板 &gt; 「分類」區段 &gt; 「檔案類型」方塊中，若要查看檔案類型的詳細資料，請在「監管」儀表板的「檔案類型」區段中選取檔案類型。「調查」頁面會提供僅針對該檔案類型篩選的資料。</block>
   <block id="3b879833e0c35c3e97d6bcec57a9aad0" category="list-text">若要顯示所有檔案類型，請選取 * 檢視全部 * 。</block>
+  <block id="93a41f9744586b4edf90898527b71531" category="cell">從調查中匯出資料至 NFS/CIFS</block>
+  <block id="81aef4d88b3543fe7ce12740f599c026" category="paragraph">檔案會分割成具有固定列數或記錄數的檔案：</block>
+  <block id="65c07610fb212d644f234075537bbc84" category="list-text">CSV - 200,000 筆記錄</block>
+  <block id="8897cd6292ab12bb81d8704c400fca96" category="list-text">JSON - 100,000 筆記錄</block>
 </blocks>
