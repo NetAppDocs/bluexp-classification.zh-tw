@@ -24,53 +24,31 @@ summary: 如果您只是想要快速回答問題、這個常見問題集就能�
 
 
 
-=== 什麼是 BlueXP 分類？
-
-BlueXP 分類是一種雲端產品、採用人工智慧（ AI ）導向技術、協助您瞭解資料內容、並識別儲存系統中的敏感資料。這些系統可能是您新增至 BlueXP Canvas 的工作環境、以及 BlueXP 分類可透過網路存取的許多類型資料來源。link:faq-cloud-compliance.html#what-sources-of-data-can-be-scanned-with-bluexp-classification["請參閱下列完整清單"]。
-
-BlueXP 分類提供預先定義的參數（例如敏感資訊類型和類別）、以因應新的資料隱私和敏感度法規、例如 GDPR 、 CCPA 、 HIPAA 等。
-
-
-
 === BlueXP 分類如何運作？
 
-BlueXP 分類可在 BlueXP 系統和儲存系統上部署另一層人工智慧。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。BlueXP 分類採用人工智慧和自然語言處理、而非一般運算式和模式比對的替代解決方案。
+BlueXP  分類可將另一層 AI 部署在您的 BlueXP  系統和儲存系統上。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。BlueXP 分類採用人工智慧和自然語言處理、而非一般運算式和模式比對的替代解決方案。
 
 BlueXP 分類使用 AI 提供資料的關聯式瞭解、以提供準確的偵測和分類。它是由AI驅動、因為它是專為現代資料類型和規模所設計。它也瞭解資料內容、以便提供強大、準確的探索和分類功能。
 
-link:concept-cloud-compliance.html["深入瞭解 BlueXP 分類的運作方式"^]。
-
-https://bluexp.netapp.com/netapp-cloud-data-sense["深入瞭解 BlueXP 分類的使用案例"^]。
-
-
-
-=== BlueXP 分類架構如何？
-
-BlueXP 分類可在雲端或內部部署單一伺服器或叢集、無論您選擇哪一種。伺服器透過標準傳輸協定連線至資料來源、並在Elasticsearch叢集中建立結果索引、該叢集也部署在相同的伺服器上。這可支援多個雲端、跨雲端、私有雲和內部部署環境。
-
-
-
-=== 支援哪些雲端供應商？
-
-BlueXP 分類是 BlueXP 的一部分、支援 AWS 、 Azure 和 GCP 。如此一來、您的組織便能在不同的雲端供應商之間統一化隱私權可見度。
+link:concept-cloud-compliance.html["深入瞭解 BlueXP 分類的運作方式"]。
 
 
 
 === BlueXP 分類是否有 REST API 、是否能搭配協力廠商工具使用？
 
-否、 BlueXP 分類沒有 REST API 。
+是的， BlueXP  分類具有 REST API ，可用於 BlueXP  核心平台的 BlueXP  分類版本中支援的功能。請參閱。 link:api-classification.html["API 文件"]
 
 
 
-=== BlueXP 分類是否可透過市場取得？
+=== BlueXP  分類是否可透過雲端市場取得？
 
-是的、 BlueXP 和 BlueXP 分類可從 AWS 、 Azure 和 GCP 市集取得。
+BlueXP  分類是 BlueXP  核心功能的一部分，因此您不需要使用此服務的行銷地點。
 
 
 
 == BlueXP 分類掃描與分析
 
-下列問題與 BlueXP 分類掃描效能和使用者可用的分析有關。
+下列問題與 BlueXP  分類掃描效能和分析有關。
 
 
 
@@ -78,11 +56,19 @@ BlueXP 分類是 BlueXP 的一部分、支援 AWS 、 Azure 和 GCP 。如此一
 
 雖然資料的初始掃描可能需要一點時間、但後續掃描只會檢查增量變更、進而縮短系統掃描時間。BlueXP 分類會以循環方式持續掃描您的資料、一次六個儲存庫、以便快速分類所有變更的資料。
 
-link:concept-cloud-compliance.html#how-scans-work["瞭解掃描的運作方式"]。
+link:task-scanning-overview.html["瞭解掃描的運作方式"]。
 
-請注意、 BlueXP 分類每天只掃描一次資料庫、不會像其他資料來源一樣持續掃描資料庫。
+BlueXP  分類每天只掃描一次資料庫，不會像其他資料來源一樣持續掃描資料庫。
 
-資料掃描對儲存系統和資料的影響微乎其微。不過、如果您擔心影響很小、您可以設定 BlueXP 分類來執行「慢速」掃描。link:task-reduce-scan-speed.html["瞭解如何降低掃描速度"]。
+資料掃描對儲存系統和資料的影響微乎其微。
+
+
+
+=== 掃描效能是否有所差異？
+
+掃描效能可能會因網路頻寬和環境中的平均檔案大小而有所不同。也可能取決於主機系統的大小特性（無論是雲端或內部部署）。如需詳細資訊、請參閱 link:concept-cloud-compliance.html["BlueXP 分類執行個體"] 和 link:task-deploy-overview.html["部署 BlueXP 分類"] 。
+
+初次新增資料來源時，您也可以選擇僅執行「對應」（僅限對應）掃描，而非執行完整的「分類」（地圖與分類）掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。link:task-scanning-overview.html["瞭解對應與分類掃描之間的差異"]。
 
 
 
@@ -90,30 +76,9 @@ link:concept-cloud-compliance.html#how-scans-work["瞭解掃描的運作方式"]
 
 BlueXP 分類提供廣泛的搜尋功能、可讓您輕鬆搜尋所有連線來源的特定檔案或資料片段。BlueXP 分類可讓使用者比中繼資料所反映的內容更深入地搜尋。這項不受語言限制的服務也能讀取檔案、分析各種敏感資料類型、例如名稱和ID。例如、使用者可以搜尋結構化和非結構化的資料儲存區、找出可能從資料庫洩漏到使用者檔案的資料、違反企業原則。搜尋可儲存以供日後使用、並可建立原則以設定頻率搜尋結果並採取行動。
 
-找到感興趣的檔案後、即可列出特性、包括標記、工作環境帳戶、儲存庫、檔案路徑、 類別（從分類）、檔案大小、上次修改、權限狀態、重複項目、 敏感度層級、個人資料、檔案內的敏感資料類型、擁有者、檔案類型、檔案大小、建立時間、 檔案雜湊、是否將資料指派給尋求注意的人員等。篩選條件可用於篩選出不相關的特性。BlueXP 分類也有 RBAC 控制項、可在有適當權限的情況下、允許移動或刪除檔案。如果沒有適當的權限存在、則可將工作指派給組織中擁有適當權限的人員。
+找到感興趣的檔案後、即可列出特性、包括標記、工作環境帳戶、儲存庫、檔案路徑、 類別（從分類）、檔案大小、上次修改、權限狀態、重複項目、 敏感度層級、個人資料、檔案內的敏感資料類型、擁有者、檔案類型、檔案大小、建立時間、 檔案雜湊、是否將資料指派給尋求注意的人員等。篩選條件可用於篩選出不相關的特性。
 
-
-
-=== BlueXP 分類是否提供報告？
-
-是的。BlueXP 分類所提供的資訊可能與組織中的其他利益相關者有關、因此我們能讓您產生報告、以分享這些見解。以下報告可供 BlueXP 分類使用：
-
-隱私權風險評估報告:: 提供資料的隱私見解和隱私權風險分數。link:task-generating-compliance-reports.html#privacy-risk-assessment-report["深入瞭解"^]。
-資料主旨存取要求報告:: 可讓您擷取包含資料主旨特定名稱或個人識別碼相關資訊之所有檔案的報告。link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["深入瞭解"^]。
-PCI DSS 報告:: 協助您辨識信用卡資訊在檔案之間的發佈情形。link:task-generating-compliance-reports.html#pci-dss-report["深入瞭解"^]。
-HIPAA 報告:: 協助您識別檔案之間的健全狀況資訊發佈。link:task-generating-compliance-reports.html#hipaa-report["深入瞭解"^]。
-資料對應報告:: 提供有關工作環境中檔案大小和數量的資訊。這包括使用容量、資料存留時間、資料大小和檔案類型。link:task-controlling-governance-data.html#data-mapping-report["深入瞭解"^]。
-資料探索評估報告:: 提供對掃描環境的高階分析、以突顯系統的發現、並顯示關切領域和可能的補救步驟。link:task-controlling-governance-data.html#data-discovery-assessment-report["學習模式"^]。
-報告特定資訊類型:: 報告中包含有關已識別檔案的詳細資料、這些檔案包含個人資料和敏感個人資料。您也可以查看依類別和檔案類型分類的檔案。link:task-controlling-private-data.html["深入瞭解"^]。
-
-
-
-
-=== 掃描效能是否有所差異？
-
-掃描效能可能會因網路頻寬和環境中的平均檔案大小而有所不同。也可能取決於主機系統的大小特性（無論是雲端或內部部署）。如需詳細資訊、請參閱 link:concept-cloud-compliance.html#the-bluexp-classification-instance["BlueXP 分類執行個體"^] 和 link:task-deploy-cloud-compliance.html["部署 BlueXP 分類"^] 。
-
-一開始新增資料來源時、您也可以選擇只執行「對應」掃描、而非完整的「分類」掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["瞭解對應與分類掃描之間的差異"^]。
+BlueXP  分類也具有角色型存取控制（ RBAC ）功能，可在擁有適當權限的情況下，允許移動或刪除檔案。如果沒有適當的權限存在、則可將工作指派給組織中擁有適當權限的人員。
 
 
 
@@ -123,48 +88,22 @@ HIPAA 報告:: 協助您識別檔案之間的健全狀況資訊發佈。link:tas
 
 
 
-=== 如何啟用 BlueXP 分類？
+=== 如何啟用或停用 BlueXP  分類？
 
-首先、您需要在 BlueXP 或內部部署系統中部署 BlueXP 分類執行個體。執行個體執行後、您可以從 * 組態 * 標籤或選取特定工作環境、在現有工作環境、資料庫及其他資料來源上啟用服務。
-
-link:task-getting-started-compliance.html["瞭解如何開始使用"^]。
+首先、您需要在 BlueXP 或內部部署系統中部署 BlueXP 分類執行個體。執行個體執行後、您可以從 * 組態 * 標籤或選取特定工作環境、在現有工作環境、資料庫及其他資料來源上啟用服務。link:task-getting-started-compliance.html["瞭解如何開始使用"]。
 
 
 NOTE: 在資料來源上啟動 BlueXP 分類會立即進行初始掃描。掃描結果會在不久後顯示。
 
+您可以從 BlueXP 分類組態頁面、停用 BlueXP 分類、以掃描個別工作環境、資料庫或檔案共用群組。請參閱。 link:task-managing-compliance.html["從 BlueXP 分類中移除資料來源"]
 
-
-=== 如何停用 BlueXP 分類？
-
-您可以從 BlueXP 分類組態頁面、停用 BlueXP 分類、以掃描個別工作環境、資料庫或檔案共用群組。
-
-link:task-managing-compliance.html["深入瞭解"^]。
-
-
-NOTE: 若要完全移除 BlueXP 分類執行個體、您可以從雲端供應商的入口網站或內部部署位置手動移除 BlueXP 分類執行個體。
+若要完全移除 BlueXP 分類執行個體、您可以從雲端供應商的入口網站或內部部署位置手動移除 BlueXP 分類執行個體。
 
 
 
-=== 我可以根據組織的需求自訂服務嗎？
+=== 服務是否可以排除某些目錄中的掃描資料？
 
-BlueXP 分類可提供您資料的深入見解。您可以擷取這些洞見、並將其用於貴組織的需求。
-
-此外、 BlueXP 分類提供許多方法、讓您新增自訂的「個人資料」清單、讓 BlueXP 分類在掃描中識別、讓您完整瞭解可能敏感資料位於組織檔案的位置。
-
-* 您可以根據您正在掃描的資料庫中的特定欄位來新增獨特的識別碼、我們稱之為*資料Fusion S16*。
-* 您可以從文字檔新增自訂關鍵字。
-* 您可以使用規則運算式（regex）新增自訂模式。
-
-
-link:task-managing-data-fusion.html["深入瞭解"^]。
-
-
-
-=== 我可以指示服務排除某些目錄中的掃描資料嗎？
-
-是的。如果您想要 BlueXP 分類排除位於特定資料來源目錄中的掃描資料、您可以將該清單提供給分類引擎。套用該變更後、 BlueXP 分類將排除指定目錄中的掃描資料。
-
-link:task-exclude-scan-paths.html["深入瞭解"^]。
+是的。如果您想要 BlueXP 分類排除位於特定資料來源目錄中的掃描資料、您可以將該清單提供給分類引擎。套用該變更後、 BlueXP 分類將排除指定目錄中的掃描資料。link:task-exclude-scan-paths.html["深入瞭解"]。
 
 
 
@@ -176,9 +115,9 @@ link:task-exclude-scan-paths.html["深入瞭解"^]。
 
 === 如果在您的功能區上啟用資料分層、會發生什麼情況ONTAP ？
 
-當 BlueXP 分類掃描冷資料分層到物件儲存的磁碟區時、它會掃描本機磁碟上的所有資料、以及分層到物件儲存的冷資料。對於實作分層的非 NetApp 產品來說、也是如此。
+當 BlueXP  分類掃描使用「僅對應」將冷資料分層至物件儲存的磁碟區時，會掃描本機磁碟上的所有資料，以及分層至物件儲存的冷資料。對於實作分層的非 NetApp 產品來說、也是如此。
 
-掃描不會使冷資料變熱、因為它會保持冷、並留在物件儲存區中。
+僅對應掃描不會加熱冷資料，因為它會保持冷狀態，並保留在物件儲存區中。另一方面，如果您執行地圖和分類掃描，部分組態可能會使冷資料變熱。
 
 
 
@@ -188,26 +127,9 @@ link:task-exclude-scan-paths.html["深入瞭解"^]。
 
 
 
-=== 可以使用 BlueXP 分類來掃描哪些資料來源？
-
-BlueXP 分類可以掃描您新增至 BlueXP Canvas 的工作環境中的資料、以及 BlueXP 分類可透過網路存取的許多結構化和非結構化資料來源。
-
-請參閱。 link:concept-cloud-compliance.html["支援的工作環境和資料來源"]
-
-
-
 === 在政府區域部署時、是否有任何限制？
 
-當 Connector 部署於政府區域（ AWS GovCloud 、 Azure Gov 或 Azure DoD ）時、即稱為「受限模式」、即支援 BlueXP 分類。以這種方式部署時、 BlueXP 分類具有下列限制：
-
-[]
-====
-* 注意 * 此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。
-
-====
-* 無法掃描OneDrive帳戶、SharePoint帳戶和Google雲端硬碟帳戶。
-* Microsoft Azure資訊保護（AIP）標籤功能無法整合。
-
+當 Connector 部署於政府區域（ AWS GovCloud 、 Azure Gov 或 Azure DoD ）時、即稱為「受限模式」、即支援 BlueXP 分類。
 
 
 
@@ -238,11 +160,11 @@ BlueXP 分類會掃描所有檔案、以取得類別和中繼資料的洞見、�
 
 BlueXP 分類可讓您在資料來源上執行一般的「對應」掃描或完整的「分類」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。
 
-* * 資料對應掃描 * ： BlueXP  分類僅掃描中繼資料。這對整體資料管理與治理、快速專案範圍規劃、大型產業和優先順序都很有幫助。資料對應是以中繼資料為基礎、視為*快速*掃描。
+* * 資料對應掃描（僅限對應掃描） * ： BlueXP  分類僅掃描中繼資料。這對整體資料管理與治理、快速專案範圍規劃、大型產業和優先順序都很有幫助。資料對應是以中繼資料為基礎、視為*快速*掃描。
 +
 快速掃描之後、您可以產生資料對應報告。本報告概述儲存在企業資料來源中的資料、協助您做出有關資源使用率、移轉、備份、安全性及法規遵循程序的決策。
 
-* * 資料分類（深度）掃描 * ： BlueXP  分類掃描會使用標準通訊協定，並在整個環境中使用唯讀權限。針對敏感的業務相關資料、私有資訊及勒索軟體相關問題、會開啟並掃描選取的檔案。
+* * 資料分類（深度）掃描（地圖與分類掃描） * ： BlueXP  分類掃描使用標準傳輸協定，並在整個環境中使用唯讀權限。針對敏感的業務相關資料、私有資訊及勒索軟體相關問題、會開啟並掃描選取的檔案。
 +
 完成完整掃描後、您可以套用許多其他 BlueXP 分類功能至資料、例如在「資料調查」頁面中檢視及精簡資料、搜尋檔案中的名稱、複製、移動及刪除來源檔案等。
 
@@ -250,7 +172,7 @@ BlueXP 分類可讓您在資料來源上執行一般的「對應」掃描或完�
 
 BlueXP 分類會擷取中繼資料、例如：檔案名稱、權限、建立時間、上次存取和上次修改。這包括出現在「資料調查詳細資料」頁面和「資料調查報告」中的所有中繼資料。
 
-BlueXP  分類可識別許多類型的私人資料，例如個人資訊（ PII ）和敏感個人資訊（ SPii ）。如需有關私有資料的詳細資訊，請 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["BlueXP 分類掃描的私有資料類別"]參閱。
+BlueXP  分類可識別許多類型的私人資料，例如個人資訊（ PII ）和敏感個人資訊（ SPII ）。如需有關私有資料的詳細資訊，請 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["BlueXP 分類掃描的私有資料類別"]參閱。
 
 
 
@@ -258,9 +180,7 @@ BlueXP  分類可識別許多類型的私人資料，例如個人資訊（ PII 
 
 是的、 BlueXP 分類與 BlueXP 完全整合。BlueXP  使用者只能根據權限查看其符合檢視資格的工作環境資訊。
 
-此外、如果您想讓特定使用者只檢視 BlueXP  分類掃描結果、而無法管理 BlueXP  分類設定、您可以將 * 分類檢視器 * 角色（在標準模式中使用 BlueXP  時）或 * 法規遵循檢視器 * 角色（在限制模式中使用 BlueXP  時）指派給這些使用者。
-
-link:concept-cloud-compliance.html["深入瞭解"^]。
+此外、如果您想讓特定使用者只檢視 BlueXP  分類掃描結果、而無法管理 BlueXP  分類設定、您可以將 * 分類檢視器 * 角色（在標準模式中使用 BlueXP  時）或 * 法規遵循檢視器 * 角色（在限制模式中使用 BlueXP  時）指派給這些使用者。link:concept-cloud-compliance.html["深入瞭解"]。
 
 
 
@@ -316,13 +236,15 @@ Connector是在雲端帳戶內或內部部署的運算執行個體上執行的�
 
 === 連接器需要安裝在何處？
 
-* 在 AWS 或 Amazon FSX for ONTAP 的 Cloud Volumes ONTAP 中掃描資料時、請使用 AWS 中的連接器。
-* 在 Cloud Volumes ONTAP Azure 或 Azure NetApp Files 以不一樣的方式掃描資料時、您需要使用 Azure 中的連接器。
-* 在Cloud Volumes ONTAP GCP中掃描資料時、請使用GCP中的Connector。
-* 在內部部署 ONTAP 系統、 NetApp 檔案共用或資料庫中掃描資料時、您可以在這些雲端位置中使用連接器。
+掃描資料時， BlueXP  Connector 必須安裝在下列位置：
+
+* 適用於 AWS 中的 Cloud Volumes ONTAP 或適用於 ONTAP 的 Amazon FSX ：連接器位於 AWS 中。
+* 適用於 Azure 或 Azure NetApp Files 中的 Cloud Volumes ONTAP ： Connector 位於 Azure 中。
+* 對於 GCP 中的 Cloud Volumes ONTAP ：連接器位於 GCP 中。
+* 對於內部部署 ONTAP 系統：連接器為內部部署。
 
 
-因此，如果您在許多這些位置都有資料，您可能需要使用 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個連接器"^]。
+如果這些位置有資料，您可能需要使用 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個連接器"^]。
 
 
 
@@ -334,21 +256,9 @@ BlueXP 分類使用資料層級認證、例如 CIFS 認證、在掃描前掛載�
 
 
 
-=== 我可以在自己的主機上部署Connector嗎？
-
-是的。您可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["在內部部署連接器"^]在網路中的 Linux 主機或雲端中的主機上執行。如果您打算在內部部署部署 BlueXP 分類、則可能也想要在內部部署安裝 Connector 、但這不是必要的。
-
-
-
 === 服務與 Connector 之間的通訊是否使用 HTTP ？
 
 是的、 BlueXP 分類使用 HTTP 與 BlueXP Connector 通訊。
-
-
-
-=== 沒有網際網路存取的安全網站又如何？
-
-是的、這也受到支援。您可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-private-mode.html["在無法存取網際網路的內部部署Linux主機上部署Connector"^]。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["這也稱為「私有模式」"^]。然後、您可以探索內部部署的 ONTAP 叢集和其他本機資料來源、並使用 BlueXP 分類來掃描資料。
 
 
 
@@ -373,7 +283,7 @@ BlueXP可讓使用者在幾乎任何位置掃描及報告系統、包括內部�
 * 在 GCP 中、 BlueXP 分類是在 n2-Standard-16 VM 上執行、其中含有 500 GiB Standard 持續性磁碟。
 
 
-link:concept-cloud-compliance.html["深入瞭解 BlueXP 分類的運作方式"^]。
+link:concept-cloud-compliance.html["深入瞭解 BlueXP 分類的運作方式"]。
 
 
 

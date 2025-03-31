@@ -39,6 +39,8 @@ sidebar:
         url: "/task-test-linux-system.html"
     - title: 啟動資料來源的掃描
       entries:
+      - title: 掃描資料來源總覽
+        url: "/task-scanning-overview.html"
       - title: Azure NetApp Files
         url: "/task-scanning-anf.html"
       - title: Amazon FSX for ONTAP Sf

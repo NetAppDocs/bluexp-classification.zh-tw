@@ -18,54 +18,53 @@ summary: 請完成幾個步驟、開始使用 BlueXP 分類來掃描您的 Cloud
 
 
 
-== 部署 BlueXP 分類執行個體
+== 先決條件
 
-如果尚未部署執行個體、請部署 BlueXP 分類。
+啟用 BlueXP  分類之前，請確定您有支援的組態。
 
-如果您正在掃描可透過網際網路存取的 Cloud Volumes ONTAP 和內部部署 ONTAP 系統，您可以link:task-deploy-cloud-compliance.html["在雲端部署 BlueXP 分類"^]或link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"^]。
-
-如果您正在掃描內部部署的 ONTAP 系統link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署 BlueXP 分類"^]，但該系統已安裝在無法存取網際網路的黑暗網站中，則您需要。這也需要在同一個內部部署位置部署BlueXP Connector。
-
-確保下列連接埠已開放給 BlueXP 分類執行個體：
-
-* 適用於NFS -連接埠111和2049。
-* 適用於CIFS -連接埠139和445。
+* 如果您正在掃描可透過網際網路存取的 Cloud Volumes ONTAP 和內部部署 ONTAP 系統，您可以link:task-deploy-cloud-compliance.html["在雲端部署 BlueXP 分類"]或link:task-deploy-compliance-onprem.html["位於內部部署位置、可存取網際網路"]。
+* 如果您正在掃描內部部署的 ONTAP 系統link:task-deploy-compliance-dark-site.html["在無法存取網際網路的同一個內部部署位置部署 BlueXP 分類"]，但該系統已安裝在無法存取網際網路的黑暗網站中，則您需要。這也需要在同一個內部部署位置部署BlueXP Connector。
 
 
 
 
-== 在您的工作環境中啟用 BlueXP  分類
+== 在您的工作環境中啟用 BlueXP  分類掃描
 
-您可以在任何受支援雲端供應商的 Cloud Volumes ONTAP 系統、以及內部部署的 ONTAP 叢集上、啟用 BlueXP 分類。
+您可以在任何受支援雲端供應商的 Cloud Volumes ONTAP 系統，以及內部部署的 ONTAP 叢集上，啟用 BlueXP  分類掃描。
 
+.步驟
 . 從 BlueXP  左側導覽功能表中，選取 * 治理 > 分類 * 。
 . 從 BlueXP  分類功能表中，選取 * 組態 * 。
 +
-image:screenshot_cloud_compliance_we_scan_config.png["部署 BlueXP 分類執行個體之後、立即顯示「組態」索引標籤的螢幕快照。"]
+「組態」頁面會顯示多個工作環境。
+
++
+image:screen-cl-config-cvo.png["顯示 Cloud Volumes ONTAP 工作環境的「組態」索引標籤螢幕快照。"]
+
+. 選擇一個工作環境，然後選取 * 組態 * 。
++
+image:screen-cl-config-cvo-map-options.png["「組態」索引標籤的螢幕快照，顯示對應和分類儲存庫的選項。"]
+
+. 如果您不關心上次存取時間是否重設，請開啟「缺少「寫入屬性」權限時 * 掃描」，無論權限為何，都會掃描所有檔案。
++
+預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP  分類在 CIFS 中沒有寫入屬性權限，或是在 NFS 中寫入權限，則系統將不會對檔案進行分類，因為 BlueXP  分類無法將「上次存取時間」還原為原始時間戳記。link:reference-collected-metadata.html["深入瞭解"^]。
 
 . 選取您要在每個工作環境中掃描磁碟區的方式。link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["深入瞭解對應與分類掃描"]：
 +
-** 若要對應所有磁碟區，請選取 * 對應所有磁碟區 * 。
-** 若要對應並分類所有磁碟區，請選取 * 對應並分類所有磁碟區 * 。
-** 若要自訂每個 Volume 的掃描，請選取 * 或選取每個 Volume 的掃描類型 * ，然後選擇您要對應和 / 或分類的磁碟區。
-+
-如需詳細資訊、請參閱 <<啟用和停用磁碟區上的法規遵循掃描,啟用和停用磁碟區上的法規遵循掃描>> 。
+** 若要對應所有磁碟區，請選取 * 地圖 * 。
+** 要映射和分類所有卷，請選擇 * 映射和分類 * 。
+** 若要自訂每個磁碟區的掃描，請選取 * 自訂 * ，然後選擇您要對應和 / 或分類的磁碟區。
 
 
-
-. 在確認對話方塊中、按一下 * 核准 * 、讓 BlueXP 分類開始掃描您的磁碟區。
+. 在確認對話方塊中，選取 * 核准 * ，讓 BlueXP  分類開始掃描您的磁碟區。
 
 
 .結果
-BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。BlueXP  分類完成初始掃描後，即可在法規遵循儀表板中取得結果。所需時間取決於資料量、可能需要幾分鐘或幾小時。您可以瀏覽至「 ** 組態 ** 」功能表，然後選取「 ** 工作環境組態 ** 」，以追蹤初始掃描的進度。每次掃描的進度會顯示為進度列。您也可以將游標移至進度列上，查看相對於磁碟區中檔案總數所掃描的檔案數。
-
-[NOTE]
-====
-* 根據預設、如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統將不會掃描磁碟區中的檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請按一下*或選取每個Volume的掃描類型*。產生的頁面有一個您可以啟用的設定、以便 BlueXP 分類無論權限為何、都能掃描磁碟區。
-* BlueXP 分類只會掃描一個磁碟區下的一個檔案共用區。如果您的磁碟區中有多個共享區、則需要以共用群組的形式分別掃描這些其他共用區。link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["請參閱更多關於此 BlueXP 分類限制的詳細資料"^]。
+BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。一旦 BlueXP  分類開始掃描，結果就會立即出現在法規遵循儀表板中。完成所需的時間取決於資料量，可能需要幾分鐘或幾小時。
 
 
-====
+NOTE: BlueXP 分類只會掃描一個磁碟區下的一個檔案共用區。如果您的磁碟區中有多個共享區、則需要以共用群組的形式分別掃描這些其他共用區。link:reference-limitations.html#bluexp-classification-scans-only-one-share-under-a-volume["請參閱更多關於此 BlueXP 分類限制的詳細資料"^]。
+
 
 
 == 確認 BlueXP  分類具有磁碟區存取權
@@ -82,13 +81,10 @@ BlueXP 分類會開始掃描您在工作環境中選取的磁碟區。BlueXP  �
 . 如果您使用 CIFS 、請提供 Active Directory 認證的 BlueXP 分類、以便掃描 CIFS 磁碟區。
 +
 .. 從 BlueXP  左側導覽功能表中，選取 * 治理 > 分類 * 。
-
-
-. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+.. 從 BlueXP  分類功能表中，選取 * 組態 * 。
 +
-image:screenshot_cifs_credentials_cvo.png["「符合性」索引標籤的快照、顯示內容窗格右上角可用的「掃描狀態」按鈕。"]
+image:screen-cl-config-cvo-map-options.png["「組態」索引標籤的螢幕快照，顯示對應和分類儲存庫的選項。"]
 
-+
 .. 針對每個工作環境，選取 * 編輯 CIFS 認證 * ，然後輸入 BlueXP  分類存取系統上 CIFS 磁碟區所需的使用者名稱和密碼。
 +
 認證可以是唯讀的、但提供管理認證可確保 BlueXP 分類能夠讀取任何需要提高權限的資料。認證會儲存在 BlueXP 分類執行個體上。
@@ -99,74 +95,30 @@ image:screenshot_cifs_credentials_cvo.png["「符合性」索引標籤的快照�
 +
 輸入認證之後、您應該會看到一則訊息、指出所有 CIFS 磁碟區都已成功驗證。
 
-+
-image:screenshot_cifs_status.gif["顯示組態頁面的快照、以及Cloud Volumes ONTAP 成功提供CIFS認證的一個更新系統。"]
 
 
-
-. 在「組態」頁面上，選取 * 檢視詳細資料 * 以檢閱每個 CIFS 和 NFS 磁碟區的狀態，並修正任何錯誤。
-+
-例如、下列影像顯示四個磁碟區；其中一個因為 BlueXP 分類執行個體和磁碟區之間的網路連線問題、所以 BlueXP 分類無法掃描。
-
-+
-image:screenshot_compliance_volume_details.gif["掃描組態中「檢視詳細資料」頁面的螢幕擷取畫面、顯示四個磁碟區；其中一個磁碟區由於 BlueXP 分類與磁碟區之間的網路連線而未被掃描。"]
+. 在「組態」頁面上，選取 * 組態 * 以檢閱每個 CIFS 和 NFS 磁碟區的狀態，並修正任何錯誤。
 
 
 
 
-
-== 啟用和停用磁碟區上的法規遵循掃描
+== 停用磁碟區上的法規遵循掃描
 
 您可以隨時從「組態」頁面、在工作環境中啟動或停止僅對應掃描、或是對應和分類掃描。您也可以從純對應掃描變更為對應和分類掃描、反之亦然。建議您掃描所有 Volume 。
-
-預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間是否重設、請開啟開關、無論權限為何、都會掃描所有檔案。link:reference-collected-metadata.html#last-access-time-timestamp["深入瞭解"^]。
-
-image:screenshot_volume_compliance_selection.png["「組態」頁面的快照、可讓您啟用或停用個別磁碟區的掃描。"]
-
-.步驟
-. 從 BlueXP  分類功能表中，選取 * 組態 * 。
-. 執行下列其中一項：
-+
-** 若要在磁碟區上啟用僅對應掃描，請在「 Volume 」（磁碟區）區域中選取 * Map* 。或者，若要在所有磁碟區上啟用，請在標題區域中選取 * 地圖 * 。若要在磁碟區上啟用完整掃描，請在「 Volume 」（體積）區域中選取 * 對應與分類 * 。或者，若要在所有磁碟區上啟用，請在標題區域中選取 * 地圖與分類 * 。
-** 若要停用磁碟區上的掃描功能，請在「 Volume 」（體積）區域中選取 * 關閉 * 。若要停用所有磁碟區的掃描功能，請在標題區域中選取 * 關閉 * 。
-
-
-
 
 
 NOTE: 只有在標題區域中設定了*地圖*或*地圖與分類*設定之後、才會自動掃描新增至工作環境的磁碟區。當標題區域中的選項設為 * 自訂 * 或 * 關閉 * 時，您需要在工作環境中新增的每個新磁碟區上啟動對應和 / 或完整掃描。
 
-
-
-== 掃描資料保護磁碟區
-
-根據預設、資料保護（ DP ）磁碟區不會被掃描、因為它們不會暴露在外部、而且 BlueXP 分類無法存取它們。這些都是從內部部署 ONTAP 的 SnapMirror 系統或 Cloud Volumes ONTAP 從某個系統進行 SnapMirror 作業的目的地 Volume 。
-
-一開始、磁碟區清單會將這些磁碟區識別為「 _Type 」 * 「 DP* 」、「 _Status 」 * 「 Not 掃描」 * 、「 _required Action 」 * 「 Enable Access to DP Volumes 」（啟用對 DP 磁碟區的存取）。
-
-image:screenshot_cloud_compliance_dp_volumes.png["顯示「啟用 DP 磁碟區存取」按鈕的快照、可供您選擇掃描資料保護磁碟區。"]
-
 .步驟
-如果您要掃描這些資料保護磁碟區：
-
 . 從 BlueXP  分類功能表中，選取 * 組態 * 。
-. 按一下頁面頂端的*「Enable Access to DP Volumes」（啟用DP磁碟區存取）*。
-. 檢閱確認訊息，然後再次選取 * 啟用對 DP Volume 的存取 * 。
+. 針對您要變更的工作環境選取 * 組態 * 按鈕。
 +
-** 原始 ONTAP 資料來源系統中最初建立為 NFS Volume 的磁碟區將會啟用。
-** 最初在來源 ONTAP 系統中建立為 CIFS Volume 的磁碟區、需要輸入 CIFS 認證資料才能掃描這些 DP 磁碟區。如果您已經輸入 Active Directory 認證、以便 BlueXP 分類能夠掃描 CIFS 磁碟區、您可以使用這些認證、或是指定不同的管理認證集。
+image:screen-cl-config-cvo-map-options.png["「組態」索引標籤的螢幕快照，顯示對應和分類儲存庫的選項。"]
+
+. 執行下列其中一項：
 +
-image:screenshot_compliance_dp_cifs_volumes.png["這是兩個啟用 CIFS 資料保護磁碟區選項的快照。"]
+** 若要停用磁碟區上的掃描功能，請在「 Volume 」（體積）區域中選取 * 關閉 * 。
+** 若要停用所有磁碟區的掃描功能，請在標題區域中選取 * 關閉 * 。
 
 
 
-. 啟動您要掃描的每個 DP Volume 。
-
-
-.結果
-一旦啟用、 BlueXP 分類就會從每個已啟動掃描的 DP 磁碟區建立 NFS 共用區。共用匯出原則僅允許從 BlueXP 分類執行個體存取。
-
-如果您最初啟用對 DP 磁碟區的存取，後來又新增了一些，但沒有 CIFS 資料保護磁碟區，則「組態」頁面頂端會出現「啟用對 CIFS DP* 的存取」按鈕。按一下此按鈕並新增 CIFS 認證、以啟用對這些 CIFS DP 磁碟區的存取。
-
-
-NOTE: Active Directory 認證僅會在第一個 CIFS DP Volume 的儲存 VM 中登錄，因此會掃描該 SVM 上的所有 DP Volume 。任何位於其他SVM上的磁碟區都不會登錄Active Directory認證、因此不會掃描這些DP磁碟區。
