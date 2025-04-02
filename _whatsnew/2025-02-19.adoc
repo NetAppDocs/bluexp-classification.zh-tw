@@ -20,7 +20,7 @@
 
 優先順序是一次性授予。自動重新掃描對應資料會依預設順序進行。
 
-優先順序僅限於link:concept-cloud-compliance.md#whats-the-difference-between-mapping-and-classification-scans["僅對應掃描"]；不適用於地圖和分類掃描。
+優先順序僅限於link:concept-cloud-compliance.html["僅對應掃描"]；不適用於地圖和分類掃描。
 
 若要變更優先順序：
 

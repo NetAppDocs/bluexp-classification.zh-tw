@@ -201,7 +201,7 @@ BlueXP 分類會收集、索引及指派類別給您的資料（檔案）。Blue
 * * 敏感個人資料 * ： GDPR 定義的特殊類型敏感個人資訊（ SPII ），例如健康資料，族裔來源或政治見解，以及其他隱私權法規。link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["深入瞭解敏感的個人資料"^]。
 * * 類別 * ： BlueXP  分類會將掃描的資料分成不同類別。類別是以 AI 分析每個檔案的內容和中繼資料為基礎的主題。link:task-controlling-private-data.html#view-files-by-categories["深入瞭解類別"^]。
 * * 類型 * ： BlueXP  分類會取得掃描的資料，並依檔案類型加以細分。link:task-controlling-private-data.html#view-files-by-file-types["深入瞭解類型"^]。
-* * 名稱實體辨識 * ： BlueXP  分類使用 AI 從文件中擷取人員的自然名稱。link:task-generating-compliance-reports.html#what-is-a-data-subject-access-request["瞭解如何回應資料主體存取要求"^]。
+* * 名稱實體辨識 * ： BlueXP  分類使用 AI 從文件中擷取人員的自然名稱。link:task-generating-compliance-reports.html["瞭解如何回應資料主體存取要求"^]。
 
 
 
@@ -222,8 +222,4 @@ BlueXP 會使用安全性群組來部署 BlueXP 分類執行個體、以便從 C
 
 == BlueXP  分類中的使用者角色
 
-指派給每位使用者的角色在 BlueXP  和 BlueXP  分類中提供不同的功能。如需詳細資料、請參閱下列內容：
-
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAM 角色"]（在標準模式下使用 BlueXP  時）
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-user-roles.html["BlueXP  帳戶角色"^]（在受限模式或私人模式下使用 BlueXP  時）
-
+指派給每位使用者的角色在 BlueXP  和 BlueXP  分類中提供不同的功能。如需詳細資訊，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAM 角色"]（以標準模式使用 BlueXP  時）。

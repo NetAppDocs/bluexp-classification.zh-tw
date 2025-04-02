@@ -63,7 +63,7 @@ NOTE: 您只能在「資料調查」頁面上檢視掃描的前 10 ， 000 個�
 | 敏感個人資料 | 選擇。link:reference-private-data-categories.html#types-of-sensitive-personal-data["敏感個人資料的類型"^] 
 
 
-| 資料主旨 | 輸入資料主旨的完整名稱或已知識別碼。link:task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports["在此深入瞭解資料主題"^]。 
+| 資料主旨 | 輸入資料主旨的完整名稱或已知識別碼。link:task-generating-compliance-reports.html["在此深入瞭解資料主題"^]。 
 |===
 
 

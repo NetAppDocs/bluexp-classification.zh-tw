@@ -48,7 +48,7 @@ indexpage:
     - title: 產生法規遵循報告
       url: task-generating-compliance-reports.html
     - title: 回應資料主旨存取要求
-      url: task-generating-compliance-reports.html#search-for-data-subjects-and-download-reports
+      url: task-generating-compliance-reports.html
   - title: 過時的功能
     links:
     - title: 過時的功能清單
