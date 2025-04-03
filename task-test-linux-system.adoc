@@ -218,7 +218,7 @@ BlueXP會使用ONTAP HTTPS探索叢集。如果您使用自訂防火牆原則、
 
 請依照下列步驟執行 BlueXP 分類先決條件指令碼。
 
-https://youtu.be/_RCYpuLXiV0?si=QLGUw8mqPrz9qs4B["觀看此影片"^]以瞭解如何執行 Prerequisites 指令碼並解譯結果。
+https://youtu.be/5ONowfPWkFs?si=QLGUw8mqPrz9qs4B["觀看此影片"^]以瞭解如何執行 Prerequisites 指令碼並解譯結果。
 
 .您需要的產品
 * 驗證您的 Linux 系統是否符合<<驗證主機需求,主機需求>>。

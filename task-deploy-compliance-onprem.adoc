@@ -308,7 +308,7 @@ NOTE: 當軟體安裝在內部部署時、 BlueXP 分類目前無法掃描 S3 �
 
 在單一內部部署主機上安裝 BlueXP 分類軟體時、請檢閱需求並遵循這些步驟。
 
-https://youtu.be/rFpmekdbORc["觀看此影片"^]以瞭解如何安裝 BlueXP  分類。
+https://youtu.be/XiPLaJpfJEI["觀看此影片"^]以瞭解如何安裝 BlueXP  分類。
 
 請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它寫在 `/opt/netapp/install_logs/`。link:task-audit-data-sense-actions.html["請參閱此處的更多詳細資料"]。
 
@@ -348,7 +348,7 @@ image:screenshot_cloud_compliance_deploy_onprem.png["選取按鈕以在雲端或
 . 此時會顯示「部署內部部署的資料感知」對話方塊。複製提供的命令（例如： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`）並將其貼到文字檔中，以便稍後使用。然後按一下*關閉*以關閉對話方塊。
 . 在主機上、輸入您複製的命令、然後依照一系列提示操作、或者您也可以提供完整命令、包括所有必要參數做為命令列引數。
 +
-請注意，安裝程式會執行預先檢查，確保您的系統和網路需求已就緒，以便順利安裝。 https://youtu.be/_RCYpuLXiV0["觀看此影片"^]瞭解預先檢查的訊息和影響。
+請注意，安裝程式會執行預先檢查，確保您的系統和網路需求已就緒，以便順利安裝。 https://youtu.be/5ONowfPWkFs["觀看此影片"^]瞭解預先檢查的訊息和影響。
 
 +
 [cols="50a,50"]
