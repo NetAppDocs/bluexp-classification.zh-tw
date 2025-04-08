@@ -16,7 +16,7 @@ summary: 您可以在 BlueXP 分類中管理資料在每個工作環境和資料
 [role="lead"]
 您可以管理資料在每個工作環境和資料來源中的掃描方式。您可以根據「儲存庫」進行變更、也就是說、您可以根據所掃描的資料來源類型、對每個磁碟區、架構、使用者等進行變更。
 
-您可以變更的部分項目包括是否掃描儲存庫，以及 BlueXP  分類是否執行link:concept-cloud-compliance.html#whats-the-difference-between-mapping-and-classification-scans["對應掃描或對應  ；分類掃描"]。您也可以暫停和繼續掃描、例如、如果您需要停止掃描某個 Volume 一段時間。
+您可以變更的部分項目包括是否掃描儲存庫，以及 BlueXP  分類是否執行link:concept-cloud-compliance.html["對應掃描或對應  ；分類掃描"]。您也可以暫停和繼續掃描、例如、如果您需要停止掃描某個 Volume 一段時間。
 
 
 
@@ -37,17 +37,17 @@ summary: 您可以在 BlueXP 分類中管理資料在每個工作環境和資料
 
 
 .步驟
-. 在「組態」索引標籤中、按一下工作環境的*組態*按鈕。
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
 +
 image:screenshot_compliance_config_button.png["顯示如何按一下工作環境的「組態」按鈕的快照。"]
 
-. 在「掃描組態」頁面中、您可以檢視所有儲存庫的掃描設定。
+. 從 Configuration （配置）選項卡中，選擇用於工作環境的 *Configuration* （配置）按鈕。
+. 在「掃描組態」頁面中，檢視所有儲存庫的掃描設定。
 +
 image:screenshot_compliance_repo_scan_settings.png["螢幕快照顯示您的儲存區是否正在掃描、以及目前的掃描狀態。"]
 
+. 將游標移至 _ 對應狀態 _ 欄中的圖表上方，即可查看每個儲存庫（本範例中的儲存庫）中剩餘要對應或分類的檔案數。
 
-
-您可以將游標移到 _ 對應狀態 _ 欄中的圖表上、查看每個儲存庫（本範例中的儲存庫）中仍要對應或分類的檔案數量。
 
 
 
@@ -59,21 +59,25 @@ image:screenshot_compliance_repo_scan_settings.png["螢幕快照顯示您的儲�
 TIP: 資料庫無法設定為僅對應掃描。資料庫掃描功能可以是關閉或開啟、其中ON等同於Map &分類。
 
 .步驟
-. 在「組態」索引標籤中、按一下工作環境的*組態*按鈕。
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 從 Configuration （配置）選項卡中，選擇用於工作環境的 *Configuration* （配置）按鈕。
 +
 image:screenshot_compliance_config_button.png["顯示如何按一下工作環境的「組態」按鈕的快照。"]
 
-. 在「掃描組態」頁面中、您可以變更任何儲存庫（本範例中的儲存庫）、以執行 * 地圖 * 或 * 地圖與分類 * 掃描。
+. 在「掃描組態」頁面中，變更任何儲存庫（本範例中的儲存庫）以執行 * 地圖 * 或 * 地圖與分類 * 掃描。
 +
 image:screenshot_compliance_repo_scan_settings.png["螢幕快照顯示如何選取儲存區的掃描類型。"]
 
-
-
++
 某些類型的工作環境可讓您使用頁面頂端的按鈕列、變更所有儲存庫的全域掃描類型。此功能僅適用於Cloud Volumes ONTAP 內部部署ONTAP 的不支援功能、不支援使用的功能僅供Azure NetApp Files 支援部分系統的功能之用。ONTAP
 
++
 以下範例顯示Azure NetApp Files 適用於整個系統的按鈕列。
 
++
 image:screenshot_compliance_repo_scan_all.png["螢幕快照顯示如何為工作環境中的所有Volume設定相同的掃描設定。"]
+
+
 
 
 
@@ -82,13 +86,14 @@ image:screenshot_compliance_repo_scan_all.png["螢幕快照顯示如何為工作
 如果您不再需要監控儲存庫是否符合法規要求、可以停止掃描儲存庫（例如、 Volume ）。您可以「關閉」掃描功能來執行此動作。當掃描關閉時、系統會移除該磁碟區的所有索引和資訊、並停止為掃描資料充電。
 
 .步驟
-. 在「組態」索引標籤中、按一下工作環境的*組態*按鈕。
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 從 Configuration （配置）選項卡中，選擇用於工作環境的 *Configuration* （配置）按鈕。
 +
 image:screenshot_compliance_config_button.png["顯示如何按一下工作環境的「組態」按鈕的快照。"]
 
 . 在「掃描組態」頁面中、選取 * 關 * 以停止掃描特定貯體。
 +
-image:screenshot_compliance_stop_repo_scanning.png["螢幕快照顯示如何選取儲存區的掃描類型。"]
+image:screenshot_compliance_repo_scan_settings.png["螢幕快照顯示如何選取儲存區的掃描類型。"]
 
 
 
@@ -101,18 +106,11 @@ image:screenshot_compliance_stop_repo_scanning.png["螢幕快照顯示如何選�
 您可以隨時「恢復」掃描。
 
 .步驟
-. 在「組態」索引標籤中、按一下工作環境的*組態*按鈕。
+. 從 BlueXP  分類功能表中，選取 * 組態 * 。
+. 從 Configuration （配置）選項卡中，選擇用於工作環境的 *Configuration* （配置）按鈕。
 +
 image:screenshot_compliance_config_button.png["顯示如何按一下工作環境的「組態」按鈕的快照。"]
 
-. 在「Scan Configuration（掃描組態）」頁面中、按一下「Pause（暫停）」按鈕暫停掃描某個Volume、或按「恢復」按鈕繼續掃描先前暫停的Volume。
-+
-image:screenshot_compliance_repo_pause_resume.png["螢幕快照顯示如何暫停及繼續在Volume上掃描。"]
-
-+
-請注意、有些資料來源會在功能表中提供暫停與恢復功能、如下所示、適用於SharePoint網站。
-
-+
-image:screenshot_compliance_repo_pause_resume2.png["顯示如何在SharePoint網站上暫停及繼續掃描的螢幕快照。"]
-
+. 在「掃描組態」頁面中，選取「動作image:button-actions-horizontal.png["動作圖示"]」圖示。
+. 選取 * 暫停 * 以暫停掃描體積，或選取 * 恢復 * 以繼續掃描先前暫停的體積。
 

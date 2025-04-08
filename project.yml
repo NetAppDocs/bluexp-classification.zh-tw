@@ -70,7 +70,7 @@ sidebar:
     - title: 指派原則給您的資料
       url: "/task-using-policies.html"
     - title: 變更掃描設定
-      url: task-managing-repo-scanning.html
+      url: "/task-managing-repo-scanning.html"
     - title: 產生法規遵循報告
       url: "/task-generating-compliance-reports.html"
   - title: 管理 BlueXP 分類
