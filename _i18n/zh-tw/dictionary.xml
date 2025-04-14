@@ -3433,9 +3433,9 @@
   <block id="a9da1537a3e6bfb032d6a352bc5d82a7" category="paragraph">BlueXP  分類現在可讓您在僅對應掃描之外，設定地圖和分類掃描的優先順序。在掃描開始期間和之前，都支援排列地圖和分類掃描的優先順序。如果您選擇在掃描進行期間排定優先順序，則對應和分類掃描都會排定優先順序。</block>
   <block id="84acc1c8e6e80bda04b6eac437f19154" category="admonition">您可以下載 CSV 檔案的版本，以在此瀏覽器中檢視。此版本的記錄上限為 10 ， 000 筆。</block>
   <block id="05035e3bc31af3e060bb6a5ed03e7988" category="list-text">輸入一個 ** 報告名稱 ** 。</block>
-  <block id="1381344c0ad4a60786998569e040cb72" category="list-text">如果選擇 CSV 作爲報告類型，請選擇 ** 本地 ** 以在瀏覽器中下載報告。請注意，此選項會將報告限制在前 10 ， 000 列。此選項不需要其他選項。</block>
-  <block id="b73d8086c4fa1a5d2c97351fb3604a12" category="paragraph">如需完整報告，請選擇 ** 工作環境 ** ，然後從各自的下拉式功能表中選擇 ** 工作環境 ** 和 ** Volume ** 。提供一個 ** 目的地資料夾路徑 ** 。</block>
   <block id="345e1412843bf20361636f064c2a0359" category="paragraph">您可以排定最重要的掃描優先順序，亦即僅對應或地圖和分類。能夠排定掃描的優先順序，讓您確保先完成高優先順序掃描。</block>
   <block id="634cb969225c406dc49fde5e0df02409" category="list-text">從「動作」選項中<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>，選取 * 優先掃描 * 。</block>
   <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025 年 4 月 14 日</block>
+  <block id="e23f3c5ee576a6a524db07af25fc5e88" category="list-text">要下載完整報告，請選擇 ** 工作環境 ** ，然後從相應的下拉菜單中選擇 ** 工作環境 ** 和 ** Volume ** 。提供一個 ** 目的地資料夾路徑 ** 。</block>
+  <block id="b28b21b6561b4b84c07adb24f4618993" category="paragraph">要在瀏覽器中下載報告，請選擇 ** 本地 ** 。請注意，此選項會將報告限制在前 10 ， 000 列，且僅限於 ** CSV** 格式。如果選擇 ** 本地 ** ，則無需填寫任何其他字段。</block>
 </blocks>
