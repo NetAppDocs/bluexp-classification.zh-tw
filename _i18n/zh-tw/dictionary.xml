@@ -3023,11 +3023,9 @@
   <block id="8e66898002589c26f968e6fd94a57988" category="list-text">若要重試所有失敗的掃描，請選取 * 重試所有掃描 * 。</block>
   <block id="a2cf857a70e312df7b376e0516470728" category="list-text">若要重試特定掃描，請選取資源，然後從「動作 ... 」選項中選取「 * 重試掃描 * 」。</block>
   <block id="e59c558837a0bee73ac15f544f275cae" category="paragraph">掃描會以與原始掃描相同的組態重試。如果掃描再次失敗，您可以視需要重試多次。</block>
-  <block id="c05a4c0b45b0c78ba3771a3530738f78" category="paragraph">執行僅對應掃描時，您可以優先處理最重要的掃描。當您有許多工作環境，且想要確保先完成高優先順序掃描時，此功能會有所幫助。</block>
   <block id="03b61f1818fbb0c7e0a356c942abdc31" category="paragraph">依預設，掃描會根據其啟動順序排入佇列。現在您可以將掃描排定優先順序，將掃描移到佇列的最前面。可以優先處理多個掃描。優先順序是以先出的順序指定，也就是您優先處理的第一次掃描會移到佇列前方；您優先處理的第二次掃描會成為佇列中的第二次掃描，依此類推。</block>
   <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">優先順序是一次性授予。自動重新掃描對應資料會依預設順序進行。</block>
   <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">僅對應掃描</block>
-  <block id="42968807986d9cd74ea7703d63bf3408" category="paragraph">若要變更優先順序：</block>
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">重試所有掃描</block>
   <block id="06243660aeb549bac73e7c160d2d2a70" category="paragraph">BlueXP  分類現在支援批次重試所有失敗掃描的功能。</block>
   <block id="18dfe95c4c66dde6d275ff14f1c99ea9" category="paragraph">您現在可以使用「 ** 全部重試」功能，在批次作業中重新嘗試掃描。如果分類掃描因網路中斷等暫時性問題而失敗，您可以使用單一按鈕同時重試所有掃描，而無需個別重試。掃描可視需要重試多次。</block>
@@ -3411,9 +3409,6 @@
   <block id="c96bf252030be7d77f32e236939f6da2" category="list-text">若要檢視重複檔案的清單及其所在位置，請選取 * 檢視詳細資料 * 。</block>
   <block id="5e6ec4e1f88d65eaeb13fa82313d9809" category="list-text">在下一頁中，選取 * 檢視重複的記錄 * 以檢視「調查」頁面中的檔案。</block>
   <block id="b9cf7636c1458813ea2386a78b8774cd" category="list-text">選擇報告類型： CSV 或 JSON 。</block>
-  <block id="fc4f6fceccd6c5f18eabd79aacf08023" category="list-text">提供 ** 報告名稱 ** 。</block>
-  <block id="ef151ce6e85f07953f9567895b0703e3" category="list-text">選擇一個 ** 工作環境 ** 和 ** Volume **</block>
-  <block id="cb013f85229d9d37e97ad54696f24544" category="list-text">提供一個 ** 目的地資料夾路徑 ** 。</block>
   <block id="3acd7c6848524cfd6cd39d023db6c391" category="section-title">根據選取的篩選器建立原則</block>
   <block id="dbcfe39ddc3ef4e14d4b8ff904564614" category="paragraph">將您在「資料調查」頁面中選取的篩選條件儲存為原則可能會很有幫助。如此一來，您就可以隨時執行相同的篩選條件，而無需重新選取它們。</block>
   <block id="461f18298523b9780c64f7622a558e72" category="list-text">在「資料調查」頁面上，選取您要用來建立原則的篩選條件。</block>
@@ -3425,4 +3420,22 @@
   <block id="2a4930d89395c66bd221720bcaae06e3" category="list-text">* 將電子郵件傳送至每個 &lt;Day&gt; 至 &lt;email address&gt; * ：如果您想要將每個 &lt;Day&gt; 的電子郵件傳送至特定的電子郵件地址，請選取此選項。</block>
   <block id="41025e9c551610edae39a167ecbe1b73" category="list-text">選取*建立原則*。</block>
   <block id="97079a3b4a44ca52d28b2807f91a5ec0" category="admonition">結果可能需要 15 分鐘才能顯示在「原則」頁面上。</block>
+  <block id="bc19fc1fb9d36ac2eec32fb81f6e5cca" category="paragraph">執行僅對應掃描時，您可以優先處理最重要的掃描。當您有許多工作環境，且想要確保先完成高優先順序掃描時，此功能會有所幫助。</block>
+  <block id="2e41eb33226717a4730fa2131336dc5a" category="paragraph">如需更多資訊、請參閱 <block ref="9493b318b51f384796e93c6ba74f5935" category="inline-link-macro-rx"></block>。</block>
+  <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">版本 1.42</block>
+  <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">此 BlueXP  分類版本包括：</block>
+  <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">大量掃描工作環境</block>
+  <block id="57e954d06c81eea089fcb04e61b1c429" category="paragraph">BlueXP  分類現在支援工作環境的大量作業。您可以選擇啟用「對應掃描」，啟用「對應和分類掃描」，停用掃描，或在工作環境中跨磁碟區建立自訂組態。如果您為個別的 Volume 進行選擇，則會覆寫大量選擇。若要執行大量作業，請瀏覽至「 ** 組態 ** 」頁面並進行選擇。</block>
+  <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">請在本機下載調查報告</block>
+  <block id="a8539b02096aea65d2e102c01a482c71" category="paragraph">BlueXP  分類現在支援從本機下載資料調查報告，以便在瀏覽器中檢視。如果您選擇本機選項，則資料調查只能以 CSV 格式進行，而且只會顯示前 10 ， 000 列的資料。</block>
+  <block id="95403a677c140fea03f157c2edb41c85" category="paragraph">如需更多資訊、請參閱 <block ref="55ff936b35b23a6f6693627bfb444c62" category="inline-link-macro-rx"></block>。</block>
+  <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">排定分類掃描的優先順序</block>
+  <block id="a9da1537a3e6bfb032d6a352bc5d82a7" category="paragraph">BlueXP  分類現在可讓您在僅對應掃描之外，設定地圖和分類掃描的優先順序。在掃描開始期間和之前，都支援排列地圖和分類掃描的優先順序。如果您選擇在掃描進行期間排定優先順序，則對應和分類掃描都會排定優先順序。</block>
+  <block id="84acc1c8e6e80bda04b6eac437f19154" category="admonition">您可以下載 CSV 檔案的版本，以在此瀏覽器中檢視。此版本的記錄上限為 10 ， 000 筆。</block>
+  <block id="05035e3bc31af3e060bb6a5ed03e7988" category="list-text">輸入一個 ** 報告名稱 ** 。</block>
+  <block id="1381344c0ad4a60786998569e040cb72" category="list-text">如果選擇 CSV 作爲報告類型，請選擇 ** 本地 ** 以在瀏覽器中下載報告。請注意，此選項會將報告限制在前 10 ， 000 列。此選項不需要其他選項。</block>
+  <block id="b73d8086c4fa1a5d2c97351fb3604a12" category="paragraph">如需完整報告，請選擇 ** 工作環境 ** ，然後從各自的下拉式功能表中選擇 ** 工作環境 ** 和 ** Volume ** 。提供一個 ** 目的地資料夾路徑 ** 。</block>
+  <block id="345e1412843bf20361636f064c2a0359" category="paragraph">您可以排定最重要的掃描優先順序，亦即僅對應或地圖和分類。能夠排定掃描的優先順序，讓您確保先完成高優先順序掃描。</block>
+  <block id="634cb969225c406dc49fde5e0df02409" category="list-text">從「動作」選項中<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>，選取 * 優先掃描 * 。</block>
+  <block id="4409983c60e456858bb3e9ef5737f98a" category="section-title">2025 年 4 月 14 日</block>
 </blocks>

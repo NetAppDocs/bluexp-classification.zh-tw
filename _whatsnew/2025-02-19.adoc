@@ -22,12 +22,7 @@
 
 優先順序僅限於link:concept-cloud-compliance.html["僅對應掃描"]；不適用於地圖和分類掃描。
 
-若要變更優先順序：
-
-. 從 BlueXP  分類功能表中，選取 * 組態 * 。
-. 選取您要排定優先順序的資源。
-. 從 Actions ... （操作 ... ）選項中，選擇 * 優先掃描 * 。
-
+如需更多資訊、請參閱 link:task-managing-repo-scanning.html#prioritize-scans["排定掃描的優先順序"]。
 
 .重試所有掃描
 BlueXP  分類現在支援批次重試所有失敗掃描的功能。
