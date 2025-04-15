@@ -15,8 +15,3 @@ BlueXP  分類現在支援工作環境的大量作業。您可以選擇啟用�
 BlueXP  分類現在支援從本機下載資料調查報告，以便在瀏覽器中檢視。如果您選擇本機選項，則資料調查只能以 CSV 格式進行，而且只會顯示前 10 ， 000 列的資料。
 
 如需更多資訊、請參閱 link:task-investigate-data.html#create-the-data-investigation-report["使用 BlueXP  分類來調查組織中儲存的資料"]。
-
-.排定分類掃描的優先順序
-BlueXP  分類現在可讓您在僅對應掃描之外，設定地圖和分類掃描的優先順序。在掃描開始期間和之前，都支援排列地圖和分類掃描的優先順序。如果您選擇在掃描進行期間排定優先順序，則對應和分類掃描都會排定優先順序。
-
-如需更多資訊、請參閱 link:task-managing-repo-scanning.html#prioritize-scans["排定掃描的優先順序"]。
