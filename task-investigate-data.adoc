@@ -30,7 +30,7 @@ NOTE: 本節所述的功能僅在您選擇對資料來源執行完整分類掃�
 .步驟
 . 從 BlueXP  分類功能表中，選取 * 調查 * 。
 . 在 [ 資料調查 ] 頁面上，執行下列任何一項：
-. 若要在您調整頁面內容後，將其下載為報告，請選取image:button_download.png["下載按鈕"]按鈕。<<Data Investigation Report,如需資料調查報告的詳細資料、請前往此處>>。
+. 若要在您調整頁面內容後，將其下載為報告，請選取image:button_download.png["下載按鈕"]按鈕。
 +
 image:screenshot_compliance_investigation_filtered.png["在調查頁面中調整結果時可用篩選器的快照。"]
 
@@ -161,7 +161,7 @@ BlueXP 分類不會從下列資料來源擷取「上次存取時間」： ShareP
 | 篩選器 | 詳細資料 
 
 
-| 原則 | 選取原則。前往link:task-using-policies.html["請按這裡"^]檢視現有原則清單，並建立您自己的自訂原則。 
+| 原則 | 選取原則。前往link:task-using-policies.html["請按這裡"]檢視現有原則清單，並建立您自己的自訂原則。 
 |===
 * 依分析狀態篩選資料 *
 

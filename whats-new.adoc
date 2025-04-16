@@ -329,7 +329,7 @@ https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.htm
 此版本也移除下列選項：
 
 * 啟用稽核記錄集合的選項已停用。
-* 在目錄調查期間，無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。請參閱 link:task-investigate-data.html#filter-data-by-sensitivity-and-content["調查組織中儲存的資料"]。
+* 在目錄調查期間，無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。請參閱 link:task-investigate-data.html["調查組織中儲存的資料"]。
 * 已停用使用 Azure Information Protection （ AIP ）標籤整合資料的選項。請參閱 link:task-org-private-data.html["組織您的私有資料"]。
 
 

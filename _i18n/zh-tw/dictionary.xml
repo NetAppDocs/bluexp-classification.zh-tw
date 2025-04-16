@@ -285,7 +285,6 @@
   <block id="4aa06a2b4191eee9b59686458a3cf0e5" category="section-title">BlueXP 分類掃描資料的速度</block>
   <block id="9ece336caf3d2b843dafc984e27b323e" category="paragraph">掃描速度會受到網路延遲、磁碟延遲、網路頻寬、環境大小和檔案發佈大小的影響。</block>
   <block id="41723bb4585becfa9d2ed4726536b953" category="section-title">BlueXP  分類的資訊</block>
-  <block id="28e66615c1e04c19b63a24061d462220" category="paragraph">BlueXP 分類會收集、索引及指派類別給您的資料（檔案）。BlueXP 分類索引的資料包括：</block>
   <block id="6cd355a083ac0c0abfe0db956ac0ab54" category="list-text">* 檔案的標準中繼資料 * ：檔案類型、檔案大小、建立及修改日期等。</block>
   <block id="8c6847c1a3fee83b5a17b582397de2ec" category="inline-link-macro">深入瞭解個人資料</block>
   <block id="902c63c889818696415465bcf8e0b76b" category="inline-link-macro">深入瞭解敏感的個人資料</block>
@@ -762,9 +761,7 @@
   <block id="d37bdc46b0a428edd8f0ab35c24067ea" category="paragraph">設定某些資料來源（如下所列）時、您需要輸入 Active Directory 認證、以便 BlueXP 分類掃描 CIFS 磁碟區。這項整合可提供 BlueXP 分類、其中包含檔案擁有者和位於這些資料來源中資料的權限詳細資料。為這些資料來源輸入的 Active Directory 可能與您在此處輸入的全域 Active Directory 認證不同。BlueXP 分類將在所有整合式 Active Directory 中查看使用者和權限詳細資料。</block>
   <block id="7e7d69dec0250fdcf96317ada370e511" category="paragraph">這項整合在 BlueXP 分類的下列位置提供其他資訊：</block>
   <block id="b2c97ae425dd751b0e48a3acae79cf4a" category="inline-link-macro">篩選器</block>
-  <block id="13b1a6e1bb1b3f8696189ada6b422170" category="list-text">您可以使用「檔案擁有者」<block ref="8f117870d9a34eabfa5286947f602d95" category="inline-link-macro-rx"></block>，在「調查」窗格中查看檔案中繼資料的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。</block>
   <block id="5f91c0845412e72586ca4ccff087de46" category="inline-link-macro">完整檔案權限</block>
-  <block id="cd4d01ef1bbc41dd6c1a648ca6b131c3" category="list-text">當您按一下「檢視所有權限」按鈕時，您可以看到<block ref="bb7ccaeb199c0a6d94b809bfbddc428e" category="inline-link-macro-rx"></block>每個檔案和目錄。</block>
   <block id="81e5b92aee0f8f905eee80ff5eb977c0" category="inline-link-macro">治理儀表板</block>
   <block id="42489059db009c868dd8059af06dcec7" category="list-text">在<block ref="f7adeeb4ba56b793f51d27ca048d717a" category="inline-link-macro-rx"></block>中，「開放權限」面板會顯示更詳細的資料。</block>
   <block id="84f064335aeff156ccda8eb3c64109d6" category="admonition">來自未知網域的本機使用者SID和SID不會轉譯為實際的使用者名稱。</block>
@@ -1585,7 +1582,6 @@
   <block id="cc75424be9093c04dbea9cfae5ba1d31" category="inline-link-macro">「行動狀態」窗格</block>
   <block id="24a56762deabf31ff2c2a9b817d1ffbe" category="paragraph">您可以在中檢視 JSON 報告產生<block ref="4c82c0e227c501a62216c678b91b4aee" category="inline-link-macro-rx"></block>的進度。</block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="doc">調查組織中儲存的資料</block>
-  <block id="615e6d6aa74682391d600dc61fe1090c" category="inline-xref">如需資料調查報告的詳細資料、請前往此處</block>
   <block id="d3720958611294d50237fe72870e0c02" category="inline-image-macro">在調查頁面中調整結果時可用篩選器的快照。</block>
   <block id="3fd10935177bff66373986bc384c0307" category="paragraph"><block ref="3fd10935177bff66373986bc384c0307" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1be522c5c4e210c9a7f92f7f83637d7e" category="paragraph">使用下列篩選條件來檢視資料中包含多少敏感資訊。</block>
@@ -1646,7 +1642,6 @@
   <block id="ddd53e8927c624ebcbf44e804dd39950" category="inline-image-macro">減少需求</block>
   <block id="04a8c17bf0b1e2cd69db6fba82b59dc0" category="inline-image-macro">快照顯示資料調查頁面中檔案的中繼資料詳細資料。</block>
   <block id="c545ce144b1f4d763f30d9b729c1590c" category="paragraph"><block ref="c545ce144b1f4d763f30d9b729c1590c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="aa4ba8b621d22449a2723e4175ff5c9d" category="inline-link-macro">建立原則</block>
   <block id="70762168244eed6d4b30ab53961acada" category="inline-link-macro">瞭解如何做到這一點</block>
   <block id="50cdf86b563a0d781f053c4a23d816c2" category="paragraph">請注意、如果您看到 SID （安全性識別碼）而非使用者和群組名稱、則應該將 Active Directory 整合到 BlueXP 分類中。<block ref="a543108cc451095d486457d9ff215fd0" category="inline-link-macro-rx"></block>。</block>
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">顯示詳細檔案權限的快照。</block>
@@ -2812,7 +2807,6 @@
   <block id="552c9ad11d5dffc1189fa270ca015445" category="section-title">版本 1.26.6</block>
   <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">此版本包含一些小的增強功能。</block>
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">此版本也移除下列選項：</block>
-  <block id="ea2bddf8f5366e4e19e9f92e993db900" category="list-text">在目錄調查期間，無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。請參閱 <block ref="5f0cc912e1424f54004e4ab3376e7552" category="inline-link-macro-rx"></block>。</block>
   <block id="95f502d77f0f99fc7fc8414116a3b796" category="list-text">已停用使用 Azure Information Protection （ AIP ）標籤整合資料的選項。請參閱 <block ref="1f3e517a67b0b53387aa4b447bd4c674" category="inline-link-macro-rx"></block>。</block>
   <block id="c8684cf4ccd502e49d1d79ff9936bc98" category="section-title">2023 年 6 月 11 日</block>
   <block id="0778a32085af8830c408efb93cb7239f" category="section-title">版本 1.26.3</block>
@@ -3035,7 +3029,6 @@
   <block id="4ece5b80f66f48ae87ab10eeb6098ee4" category="cell">僅對應掃描</block>
   <block id="199f10f735e14c906492368f8756c40f" category="list-text">執行僅對應掃描時， BlueXP  分類每天可掃描 100-150 Tibs 的資料。</block>
   <block id="2035b28633c5d248f8b4834a49bb61e4" category="list-text">執行地圖與分類掃描時， BlueXP  分類每天可掃描 15-40 Tibs 的資料。</block>
-  <block id="f7bdd4178a7e1813735f80fdd04c8365" category="list-text">*重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。<block ref="4919d6fe6d27551fddf3eb8948477168" category="inline-link-macro-rx"></block>。</block>
   <block id="b74906233eebd14b41614d235251d36a" category="list-text">從 BlueXP  左側導覽功能表中，選取 * 治理 &gt; 分類 * 。</block>
   <block id="f3bf83f2c7aadc341ac1678567775abc" category="list-text">若要對應所有磁碟區，請選取 * 對應所有磁碟區 * 。</block>
   <block id="c854572c2f5a5368403f0ee57aa1bb29" category="list-text">若要對應並分類所有磁碟區，請選取 * 對應並分類所有磁碟區 * 。</block>
@@ -3159,8 +3152,6 @@
   <block id="80160ca28dec2acced2205422a937338" category="list-text">** 地圖與分類掃描 ** 提供深入層級的資料掃描功能。</block>
   <block id="0333308d9a0f15321e19f3c056bf0f53" category="inline-link-macro">對應掃描和分類掃描有何不同？</block>
   <block id="2483e5b7a57a542363d0099bcc6987a3" category="paragraph">如需對應掃描與分類掃描之間差異的詳細資訊<block ref="323939a2597e9b17834689d82c0946fb" category="inline-link-macro-rx"></block>，請參閱。</block>
-  <block id="84234483faf50fc9614a55cd04f072de" category="list-text">* 個人資料 * ：個人識別資訊（ PII ），例如電子郵件地址，識別號碼或信用卡號碼。<block ref="fc496cc858c0e8dff4419012ba17c358" category="inline-link-macro-rx"></block>。</block>
-  <block id="1b225330889a9259efe1962dc624d2f9" category="list-text">* 敏感個人資料 * ： GDPR 定義的特殊類型敏感個人資訊（ SPII ），例如健康資料，族裔來源或政治見解，以及其他隱私權法規。<block ref="6221f6509a9900ea9a8146767340b3a8" category="inline-link-macro-rx"></block>。</block>
   <block id="33145ff55ab3cd82966af5880e24a1e4" category="paragraph">BlueXP 分類可在雲端或內部部署單一伺服器或叢集、無論您選擇哪一種。伺服器透過標準傳輸協定連線至資料來源、並在Elasticsearch叢集中建立結果索引、該叢集也部署在相同的伺服器上。這可支援多雲端，跨雲端，私有雲和內部部署環境。</block>
   <block id="170f4a7996b0fbdd91306273246a1b86" category="paragraph">當您在 SaaS 模式中使用 BlueXP  時，會透過 HTTPS 提供 BlueXP  連線，而在瀏覽器和 BlueXP  分類執行個體之間傳送的私有資料則會使用 TLS 1.2 來保護端點對端加密，這表示 NetApp 和第三方無法讀取。</block>
   <block id="a5e2d801acd4eba6ae154178a10ef60b" category="paragraph">BlueXP  分類可將另一層 AI 部署在您的 BlueXP  系統和儲存系統上。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。BlueXP 分類採用人工智慧和自然語言處理、而非一般運算式和模式比對的替代解決方案。</block>
@@ -3371,7 +3362,6 @@
   <block id="b7f6a3bebde141b211f7f03ea94b59a0" category="paragraph">您可以從 BlueXP  分類 UI 的許多區域瀏覽到此頁面，包括已在這些頁面上選取篩選器的監管與法規遵循儀表板。您可以將資料匯出至 CSV 或 JSON 檔案，以供進一步分析或與他人共用。</block>
   <block id="503f38415f575979b1abb29789cbda50" category="list-text">從 BlueXP  分類功能表中，選取 * 調查 * 。</block>
   <block id="262bd6cb4081a4bb1d5b7bb69c91cf84" category="list-text">在 [ 資料調查 ] 頁面上，執行下列任何一項：</block>
-  <block id="9dd4d7f07b73e6aaac505f7417738860" category="list-text">若要在您調整頁面內容後，將其下載為報告，請選取<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>按鈕。<block ref="99402c37b738da126a6c16dce45a83da" category="inline-xref-macro-rx"></block>。</block>
   <block id="112a92421a821122ddfd7d3b0735b4ec" category="list-text">若要檢視檔案（非結構化資料），目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料，請選取頂端的其中一個索引標籤。</block>
   <block id="de1f3a62aada6a5e03bde4ce908b4d24" category="list-text">若要依數字或字母順序排序結果，請選取每一欄頂端的控制項。</block>
   <block id="3575ec00f80ae9ff26cf47ff8300221a" category="list-text">若要進一步精簡結果，請在左側篩選窗格中選取多個篩選器之一。</block>
@@ -3391,7 +3381,6 @@
   <block id="6926f90beadfdb901f306772787c7f05" category="paragraph">* 依分析狀態篩選資料 *</block>
   <block id="0fdacc8c067979a1926a265cd399f05a" category="paragraph"><block ref="d865d9e7da9a534ddb8c0b18eca2435c" category="inline-link-macro-rx"></block>如需使用掃描分析事件篩選時出現在「調查」頁面中項目的詳細資訊。</block>
   <block id="c2d41b84903ff9433b055cd311767824" category="paragraph">* 依重複項目篩選資料 *</block>
-  <block id="deb92d356adf2bc4203235e994269d9a" category="paragraph">除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、以及此檔案是否有重複的項目。如果您計畫使用此資訊，這項資訊非常實用<block ref="ea156c161a340e4bbece1f1483afe558" category="inline-link-macro-rx"></block>，因為您可以看到篩選資料所需的所有資訊。</block>
   <block id="1f54ce0e770f5c76ff9e305bb20ea41a" category="paragraph">並非所有資料來源都能取得所有資訊，只有適合該資料來源的資訊才行。例如、磁碟區名稱和權限與資料庫檔案無關。</block>
   <block id="efcf64fabaf1cd0d5d0c35cfea3e25d9" category="list-text">在右側的「資料調查」清單中，選取右側的下移插入記號<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>，讓任何單一檔案都能檢視檔案中繼資料。</block>
   <block id="887f8cc0eb69a50c3835261bb514ecb7" category="section-title">檢視使用者對檔案和目錄的權限</block>
@@ -3438,4 +3427,15 @@
   <block id="9340ce8741905e7d6ff4c0ca07a7a39a" category="paragraph-title">排定僅對應掃描的優先順序</block>
   <block id="9267a4a221ce8d9176ea70d45543abf5" category="paragraph">您可以排定最重要的純對映掃描的優先順序，以確保先完成高優先順序掃描。</block>
   <block id="f869ba288edefcc198633bd9bda2d3b8" category="paragraph">依預設，掃描會根據其啟動順序排入佇列。現在您可以將掃描排定優先順序，將掃描移到佇列的最前面。可以優先處理多個掃描。優先順序是以先出的順序指定，也就是您優先處理的第一次掃描會移到佇列前方；您優先處理的第二次掃描會成為佇列中的第二次掃描，依此類推。此功能僅限於僅對應掃描。無法用於地圖和分類掃描。</block>
+  <block id="038d75fbb28c2dd7e9ed9904fea7fadc" category="paragraph">BlueXP  分類會收集，建立類別索引，並將類別指派給下列資料：</block>
+  <block id="16e3e664a20bb6964ad08fde07c76933" category="list-text">* 個人資料 * ：個人識別資訊（ PII ），例如電子郵件地址，識別號碼或信用卡號碼， BlueXP  分類會使用檔案中的特定字詞，字串和模式來識別這些資訊。<block ref="fc496cc858c0e8dff4419012ba17c358" category="inline-link-macro-rx"></block>。</block>
+  <block id="e60672f803602bf222f416a6205b3b39" category="list-text">* 敏感個人資料 * ：根據一般資料保護規範（ GDPR ）及其他隱私權規範的定義，特殊類型的敏感個人資訊（ SPII ），例如健康資料，族裔來源或政治見解。<block ref="6221f6509a9900ea9a8146767340b3a8" category="inline-link-macro-rx"></block>。</block>
+  <block id="88afcfed766d9b57a4ac8bafd19ac517" category="list-text">您可以使用「檔案擁有者」<block ref="7e65b91b29e94a0af38cb668206b021e" category="inline-link-macro-rx"></block>，在「調查」窗格中查看檔案中繼資料的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。</block>
+  <block id="5c2ead81821547f3130352184807c230" category="list-text">當您按一下「檢視所有權限」按鈕時，您可以看到<block ref="3e9bb1533fcbed587af1c2c23ff12e21" category="inline-link-macro-rx"></block>每個檔案和目錄。</block>
+  <block id="5791d2ebf242b348a1cbfa550a356083" category="list-text">*重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。<block ref="4f528c73ac5ca4ef85380f36d4dccad7" category="inline-link-macro-rx"></block>。</block>
+  <block id="3cdcb2a793341ff20e0d4057a0538e49" category="list-text">若要在您調整頁面內容後，將其下載為報告，請選取<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>按鈕。</block>
+  <block id="115993abd6a23a5a17d07cec8fbc4b6e" category="cell">選取原則。前往<block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block>檢視現有原則清單，並建立您自己的自訂原則。</block>
+  <block id="b07926c5eabcf7b05f3a674e478e6b18" category="inline-link-macro">建立原則</block>
+  <block id="3ee1fee226155df3d1aec325193a3b4a" category="paragraph">除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、以及此檔案是否有重複的項目。如果您計畫使用此資訊，這項資訊非常實用<block ref="e4856c4af761ccf18001e0febd54584c" category="inline-link-macro-rx"></block>，因為您可以看到篩選資料所需的所有資訊。</block>
+  <block id="1c3cd11405c2cc34d1b337f6a930a0e5" category="list-text">在目錄調查期間，無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。請參閱 <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>。</block>
 </blocks>
