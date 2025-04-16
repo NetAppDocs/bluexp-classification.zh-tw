@@ -152,7 +152,7 @@ BlueXP 分類會掃描所有檔案、以取得類別和中繼資料的洞見、�
 
 當 BlueXP 分類偵測到個人識別資訊（ PII ）、或執行 DSAR 搜尋時、僅支援下列檔案格式：
 
-`+.CSV, .DCM, .DICOM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
+`+.CSV, .DCM, .DOC, .DOCX, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
 
 
 

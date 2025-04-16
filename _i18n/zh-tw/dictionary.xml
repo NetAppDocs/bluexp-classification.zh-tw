@@ -340,7 +340,6 @@
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">支援哪些檔案類型？</block>
   <block id="bc90c1660d729d86ab10b8018a956932" category="paragraph">BlueXP 分類會掃描所有檔案、以取得類別和中繼資料的洞見、並在儀表板的檔案類型區段中顯示所有檔案類型。</block>
   <block id="6352911cc42108d1f16863e618ef84d4" category="paragraph">當 BlueXP 分類偵測到個人識別資訊（ PII ）、或執行 DSAR 搜尋時、僅支援下列檔案格式：</block>
-  <block id="0adefa52dc5e774fb8bd1c62fec82b84" category="paragraph"><block ref="0b3e64f511542d0a580dfbeb6d666614" prefix="" category="inline-code"></block></block>
   <block id="d288c89eadda3d7c229b7316faf2209a" category="section-title">BlueXP 分類擷取哪些類型的資料和中繼資料？</block>
   <block id="724ba2aee906c26a6c05f56bbf0dd434" category="paragraph">BlueXP 分類可讓您在資料來源上執行一般的「對應」掃描或完整的「分類」掃描。對應只提供資料的高層級總覽、而分類則提供資料的深度層級掃描。您可以很快在資料來源上完成對應、因為它不會存取檔案來查看內部資料。</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">快速掃描之後、您可以產生資料對應報告。本報告概述儲存在企業資料來源中的資料、協助您做出有關資源使用率、移轉、備份、安全性及法規遵循程序的決策。</block>
@@ -3438,4 +3437,5 @@
   <block id="b07926c5eabcf7b05f3a674e478e6b18" category="inline-link-macro">建立原則</block>
   <block id="3ee1fee226155df3d1aec325193a3b4a" category="paragraph">除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、以及此檔案是否有重複的項目。如果您計畫使用此資訊，這項資訊非常實用<block ref="e4856c4af761ccf18001e0febd54584c" category="inline-link-macro-rx"></block>，因為您可以看到篩選資料所需的所有資訊。</block>
   <block id="1c3cd11405c2cc34d1b337f6a930a0e5" category="list-text">在目錄調查期間，無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。請參閱 <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>。</block>
+  <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
 </blocks>
