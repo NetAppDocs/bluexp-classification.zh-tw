@@ -660,8 +660,6 @@
   <block id="f9708a970f23f6246d00ed049441f725" category="cell">南非 ID</block>
   <block id="e2815889a4d51dfd383777dc337b2dd8" category="cell">西班牙稅務識別編號</block>
   <block id="395e62e3c06087358ff2b2d60941c49e" category="cell">瑞典文 ID</block>
-  <block id="9816532bdb11b99d3175be528e41c5b6" category="cell">德州驅動程式授權</block>
-  <block id="3b5f87032b5dd0beea89f73c7f8f64c0" category="cell">英國 ID （ Nino ）</block>
   <block id="5721a59dab5cc5d2f326b7e5464d9860" category="cell">美國加州駕駛授權</block>
   <block id="162e79a198624ab621c2e0fcd8aa5099" category="cell">美國印地安那州駕駛授權</block>
   <block id="56ee28a97ee2b5724da347257b198872" category="cell">美國紐約駕駛授權</block>
@@ -3438,4 +3436,37 @@
   <block id="3ee1fee226155df3d1aec325193a3b4a" category="paragraph">除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、以及此檔案是否有重複的項目。如果您計畫使用此資訊，這項資訊非常實用<block ref="e4856c4af761ccf18001e0febd54584c" category="inline-link-macro-rx"></block>，因為您可以看到篩選資料所需的所有資訊。</block>
   <block id="1c3cd11405c2cc34d1b337f6a930a0e5" category="list-text">在目錄調查期間，無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。請參閱 <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>。</block>
   <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
+  <block id="c70458770b484ae39f3759b69683ab6b" category="cell">加拿大銀行資訊號碼 - 帳號</block>
+  <block id="ca969715fb69ff8e6cd2406dc42a0115" category="cell">加拿大銀行資訊號碼 - 轉帳號碼</block>
+  <block id="e796d7c04041aaf21b5af715ecc91a1c" category="cell">加拿大公民 / 永久居民編號 - PR 卡編號（ UCI ）</block>
+  <block id="0e21a574f6f771c930f5b96ee62e58d2" category="cell">加拿大駕照 - Alberta</block>
+  <block id="d3d54a66bbef95b39a5bf70d16356891" category="cell">加拿大駕照 - 英屬哥倫比亞</block>
+  <block id="e6bf20a7b92554ffa4a006f36784e344" category="cell">加拿大駕照 - Manitoba</block>
+  <block id="5d6c26f97ac40514c041e668a130476c" category="cell">加拿大駕照 - New Brunswick</block>
+  <block id="1b282810fa2732305d9dc0bf289058d2" category="cell">加拿大駕照 - 紐芬蘭和拉布拉多</block>
+  <block id="9bbc6181cfb500d57438b0e72bbbbcdf" category="cell">加拿大駕照 - 西北領地</block>
+  <block id="7de39f9c0a59ccdf4714f95f71735ead" category="cell">加拿大駕照 - Nova Scotia</block>
+  <block id="248a0eecdb5ec10c7b40cee019e506e1" category="cell">加拿大駕照 - Nunavut</block>
+  <block id="d1c337f706be4d36153af2262c152dfa" category="cell">加拿大駕照 - Ontario</block>
+  <block id="c8485c054ee19100ec49442e7d3bbb73" category="cell">加拿大駕照 - 愛德華王子島（ Prince Edward Island ）</block>
+  <block id="c04fab42f5c20dc97099b923450c0105" category="cell">加拿大駕照 - Quebec</block>
+  <block id="2c6bc18ec1e34d47da15bf3c02864fcb" category="cell">加拿大駕照 - Saskatchewan</block>
+  <block id="842796c59314b42a40bc31c8dc0d5a9c" category="cell">加拿大駕照 - Yukon</block>
+  <block id="5928c27213a92b605205c5745b146789" category="cell">加拿大健康卡編號 - Alberta Phin</block>
+  <block id="9eb75aa530a0c8650bdb4d5fbfd4538e" category="cell">加拿大健康卡編號 - British Columbia Phin</block>
+  <block id="4d51f4c5ed69fb856530b63f706cac35" category="cell">加拿大健康卡編號 - Manitoba Phin</block>
+  <block id="f365a08ef7ec43a95854d32593be96ea" category="cell">加拿大健康卡編號 - Phin</block>
+  <block id="7b4ed5f6ed12ca17f52bd8165efc93eb" category="cell">加拿大健康卡編號：紐芬蘭和拉布拉多芬</block>
+  <block id="58176267daff0c93f4359a1596b2d551" category="cell">加拿大健康卡編號 - 西北領地 Phin</block>
+  <block id="58a429a15bddcd81c4d3c04d245cf0d8" category="cell">加拿大健康卡編號 - Nova Scotia Phin</block>
+  <block id="3077c0a827bbd17b01774cfb07265e45" category="cell">加拿大健康卡編號 - Nunavut Phin</block>
+  <block id="0f07d697edcf5bae7eeab112c2b7dcf7" category="cell">加拿大健康卡編號 - Ontario Phin</block>
+  <block id="d98b7ba0c906c6a8afbace7bb119c736" category="cell">加拿大健康卡編號： Edward Island Phin 王子</block>
+  <block id="37e0047daec5d1a41f67f8fdee298faf" category="cell">加拿大健康卡編號 - Quebec Phin</block>
+  <block id="f67a6db55df6462b163f29093bfc2b30" category="cell">加拿大健康卡編號 - Saskatchewan Phin</block>
+  <block id="7047dd363f6801a2bc8a7dbee707e22f" category="cell">加拿大健康卡編號 - Yukon Phin</block>
+  <block id="55ec0a8f16e4e7e1a5b3857d2be725dc" category="cell">加拿大護照號碼</block>
+  <block id="bc95bc80ebf2858c233b2627b019d9e4" category="cell">加拿大社會保險號碼（ SIN ）</block>
+  <block id="00acd555cd21235c4d1b966ed1be4a74" category="cell">英國 ID （ Nino ）</block>
+  <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">美國德州駕照</block>
 </blocks>
