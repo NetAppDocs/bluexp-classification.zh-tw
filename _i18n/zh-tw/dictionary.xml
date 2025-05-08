@@ -2676,36 +2676,24 @@
   <block id="e3cf1613fe34f89ac1f2966a0222877f" category="paragraph">規範儀表板中的 * 原則 * 索引標籤會列出此 BlueXP 分類執行個體上可用的所有預先定義和自訂原則。</block>
   <block id="967b04771a3458159d11dd8932d09129" category="inline-image-macro">BlueXP 分類儀表板中原則索引標籤的螢幕擷取畫面。</block>
   <block id="d44d997087e7d999102d47f4839b74ac" category="paragraph"><block ref="d44d997087e7d999102d47f4839b74ac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="351501516e0a13df2ed4813f5d93864d" category="paragraph">此外、原則會顯示在「調查」頁面的篩選清單中。</block>
   <block id="c939d1291c3b87bc95f09e9b4065138e" category="section-title">在「調查」頁面中檢視原則結果</block>
-  <block id="fb5c8861ae16ebacc4ef4cf4a3f9746a" category="paragraph">若要在「調查」頁面中顯示原則的結果，請按一下<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定原則的按鈕，然後選取 * 調查結果 * 。</block>
   <block id="eade099275ce51bdec585f23e50846c7" category="inline-image-macro">從「原則」索引標籤中選取特定原則的「調查結果」的螢幕擷取畫面。</block>
   <block id="b87f575df2628b12c3d997954b369392" category="paragraph"><block ref="b87f575df2628b12c3d997954b369392" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f617da6b50728500642eb376ab97b6f4" category="section-title">建立自訂原則</block>
   <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">您可以建立自己的自訂原則、針對組織專屬的搜尋結果提供結果。會傳回符合搜尋條件的所有檔案和目錄（共享區和資料夾）結果。</block>
-  <block id="96a46d654233ac39fd6e31dda8fc4dae" category="inline-image-macro">顯示如何將篩選查詢儲存為原則的快照。</block>
-  <block id="9f769a1d4cd3d0c8d7378f6050100e35" category="paragraph"><block ref="9f769a1d4cd3d0c8d7378f6050100e35" category="inline-image-macro-rx" type="image"></block></block>
   <block id="19948385b78770f8de2200aa21288a6a" category="list-text">您也可以勾選方塊、以自動刪除符合原則參數的檔案。</block>
   <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">顯示如何設定原則並加以儲存的快照。</block>
   <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">新原則會出現在原則索引標籤中。</block>
   <block id="ad3a8f7c032ad4e96e6372989c781a41" category="section-title">編輯原則</block>
-  <block id="ac8bfe24ca06e9a43f31e7975b6980a8" category="paragraph">您可以修改先前建立之現有原則的任何準則。如果您想要變更查詢（您使用「篩選器」定義的項目）以新增或移除特定參數、這項功能就特別有用。</block>
-  <block id="7037cf1f24072122891243e88abfb12e" category="paragraph">對於預先定義的原則、您只能修改是否傳送電子郵件通知、以及是否新增 AIP 標籤。無法變更其他值。</block>
-  <block id="a12113b6b49f31212d0614b3ea69ea2b" category="list-text">在「原則清單」頁面中、針對您要變更的原則按一下「*編輯*」。</block>
   <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">顯示如何對現有原則進行編輯的快照。</block>
   <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9edd844856e16adcca10bdc9965cd880" category="list-text">如果您只想變更此頁面上的項目（名稱、說明、是否傳送電子郵件通知、以及是否新增AIP標籤）、請進行變更、然後按一下「*儲存原則*」。</block>
-  <block id="d0cb19a0fd724606f26b87b211d86b49" category="paragraph">如果您要變更已儲存查詢的篩選條件、請按一下*編輯查詢*。</block>
   <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">選取「編輯原則」頁面上「編輯查詢」按鈕的快照。</block>
   <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2f83e3b5da3e9770bafefd94e5a39763" category="list-text">在定義該查詢的調查頁面中，通過添加、刪除或自定義篩選器來編輯查詢，然後單擊*保存更改*。</block>
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">顯示如何變更篩選設定來編輯查詢的快照。</block>
   <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6a5816406505d9f49c1bfa13c98461f7" category="paragraph">原則會立即變更。為該原則定義的任何傳送電子郵件、新增AIP標籤或刪除檔案的動作、都會在下一個內部發生。</block>
   <block id="5d82deb8cba9afb6516c37ca8c24a8ad" category="section-title">刪除原則</block>
   <block id="975f1d83956c13d06e3328fcb12a0a3f" category="paragraph">如果您不再需要任何自訂原則、可以刪除它。您無法刪除任何預先定義的原則。</block>
-  <block id="19d4814f3bce80460384b97290bb64be" category="paragraph">若要刪除原則，請按一下<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定原則的按鈕，按一下 * 刪除原則 * ，然後在確認對話方塊中再次按一下 * 刪除原則 * 。</block>
   <block id="91f5ccbaa42a010696c34306e0121702" category="section-title">預先定義原則清單</block>
   <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">BlueXP 分類提供下列系統定義原則：</block>
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">名稱</block>
@@ -3469,4 +3457,19 @@
   <block id="bc95bc80ebf2858c233b2627b019d9e4" category="cell">加拿大社會保險號碼（ SIN ）</block>
   <block id="00acd555cd21235c4d1b966ed1be4a74" category="cell">英國 ID （ Nino ）</block>
   <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">美國德州駕照</block>
+  <block id="1a29dcb31a65b43c01aeec2246fa49c7" category="summary">原則自訂篩選器，可在「調查」頁面中針對一般要求的法規遵循查詢提供搜尋結果。BlueXP  分類可根據一般要求提供一組預先定義的原則，您也可以自行建立。</block>
+  <block id="f83468943a92a9d70fe55b7e87c65a05" category="paragraph">原則也會出現在「調查」頁面的篩選清單中。</block>
+  <block id="b41d9199442d75740188052cd48beb29" category="paragraph">若要在「調查」頁面中顯示原則的結果，請選取<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定原則的按鈕，然後選取 * 調查結果 * 。</block>
+  <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">篩選「調查」頁面中的資料</block>
+  <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">在「調查」索引標籤中，選取您要使用的篩選條件以定義搜尋。如需詳細資訊、請參閱 <block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> 。</block>
+  <block id="e85bfe3f1de43636e78e3933cf709057" category="list-text">一旦您將所有篩選特性設定為您喜歡的類型，請從這個搜尋 * 中選取 * 建立原則。</block>
+  <block id="f9eedf2a2f5e1bb65bd48f67cc11775f" category="inline-image-macro">顯示如何將篩選查詢儲存為原則的螢幕擷取畫面。</block>
+  <block id="74f8b507d44a9c9de5bc7494adb05585" category="paragraph"><block ref="74f8b507d44a9c9de5bc7494adb05585" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e61d888eb37f48ad33d55cec612a0679" category="paragraph">您可以修改現有原則的準則，以變更查詢（使用篩選器定義的項目），以新增或移除特定參數。</block>
+  <block id="d9a6afbd4a5c10947a68b413c4cad163" category="paragraph">您無法修改預先定義的原則。</block>
+  <block id="a126111bf84a962c10c82c54b7053f09" category="list-text">在「原則清單」頁面中，針對您要變更的原則選取 * 編輯原則 * 。</block>
+  <block id="a63db0f06bb77419a1c9810effb58b9a" category="list-text">變更名稱和說明欄位。若要僅變更這些欄位，請選取 * 儲存原則 * 。</block>
+  <block id="b661e4ea30af73a913aed1e7ae647f4a" category="paragraph">若要變更儲存查詢的篩選條件，請選取 * 編輯查詢 * 。</block>
+  <block id="1c76b2a61ae25c65703ed4c7e9a61c05" category="list-text">在定義該查詢的調查頁面中，通過添加，刪除或自定義篩選器來編輯查詢，然後選擇 *Save changes * （保存更改）。</block>
+  <block id="fc0a103843396ed5e93bb76396799d13" category="paragraph">若要刪除原則，請選取<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定原則的按鈕，選取 * 刪除原則 * ，然後在確認對話方塊中再次選取 * 刪除原則 * 。</block>
 </blocks>
