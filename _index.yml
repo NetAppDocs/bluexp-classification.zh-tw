@@ -43,7 +43,7 @@ indexpage:
       url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
     - title: 篩選資料以檢視特定檔案
       url: task-investigate-data.html
-    - title: 建立原則以檢視您的熱門搜尋結果
+    - title: 建立儲存的搜尋
       url: task-using-policies.html
     - title: 產生法規遵循報告
       url: task-generating-compliance-reports.html

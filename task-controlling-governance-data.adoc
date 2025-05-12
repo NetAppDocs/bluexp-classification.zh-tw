@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies, data discovery assessment report, data mapping overview report, data repositories, data sensitivity, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: 控制與組織儲存資源資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。 
 ---
 = 使用 BlueXP  分類檢視組織中儲存資料的治理詳細資料
@@ -68,16 +68,16 @@ NOTE: 如果您的任何資料來源都實作資料分層，則已位於物件�
 
 
 
-=== 審查結果最多的原則
+=== 檢閱儲存的搜尋結果數量最多
 
-在 _policies 區域中，結果最大的原則會出現在清單頂端。
+在 _ 儲存的搜尋 _ 標籤中，搜尋結果數量最多的搜尋會顯示在清單頂端。
 
-如需原則的詳細link:task-using-policies.html["指派原則給您的資料"]資訊，請參閱。
+如需已儲存搜尋的詳細資訊，請參閱link:task-using-policies.html["建立儲存的搜尋"]。
 
 .步驟
 . 從 BlueXP  分類功能表中，選取 * 治理 * 。
-. 在「績效」儀表板 > 「原則」方塊中，選取原則名稱，以在「調查」頁面中顯示結果。
-. 選取 * 檢視全部 * 以檢視所有可用原則的清單。在 _policies 區域中，結果最大的原則會出現在清單頂端。
+. 在 Gloverance 儀表板中，找出儲存的搜尋方塊。選取儲存的搜尋名稱，以在「調查」頁面中顯示結果。
+. 選取 * 檢視全部 * 以檢視所有可用的儲存搜尋清單。在 _ 儲存的搜尋 _ 區域中，搜尋結果數量最多的搜尋會顯示在清單頂端。
 
 
 
@@ -116,7 +116,7 @@ image:screenshot-compliance-report-buttons.png["Governance Dashboard 的螢幕�
 
 
 .結果
-BlueXP 分類會產生 .pdf 報告、您可以視需要檢閱並傳送給其他群組。
+BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他群組。
 
 
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-dashboard-deprecated.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, policies 
+keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights 
 summary: 控制與組織儲存資源資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。 
 ---
 = 使用 BlueXP  分類治理儀表板檢視資料的治理詳細資料

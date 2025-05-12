@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-private-data.html 
-keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights 
 summary: 透過檢視組織中個人資料（ PII ）和敏感個人資料（ SPII ）的詳細資料，來控制您的私人資料。您也可以檢閱資料中的 BlueXP 分類類別和檔案類型、以獲得可見度。 
 ---
 = 使用 BlueXP  分類檢視儲存在組織中的私有資料相關法規遵循詳細資料
@@ -31,7 +31,7 @@ image:screenshot_compliance_dashboard.png["BlueXP 分類儀表板的螢幕擷取
 
 BlueXP 分類會自動識別資料中的特定字詞、字串和模式（ Regex ）。例如、個人識別資訊（PII）、信用卡號碼、社會安全號碼、銀行帳戶號碼、密碼、 以及更多資訊。link:reference-private-data-categories.html["請參閱完整清單"]。BlueXP 分類可在個別檔案、目錄內的檔案（共用和資料夾）、以及資料庫表格中識別這類資訊。
 
-此外，如果您新增要掃描的資料庫伺服器， _Data Fusion 功能會掃描您的檔案，以識別資料庫中的唯一識別碼是否位於這些檔案或其他資料庫中。如需詳細資訊、請參閱 link:task-managing-data-fusion.html["使用 Data Fusion 功能新增個人資料識別碼"] 。
+您也可以建立自訂搜尋字詞，以識別組織特有的個人資料。如需更多資訊、請參閱 link:task-custom-classification.html["建立自訂分類"]。
 
 對於某些類型的個人資料、 BlueXP 分類會使用鄰近驗證 _ 來驗證其結果。驗證的方式是在找到的個人資料附近尋找一或多個預先定義的關鍵字。例如，如果在其旁邊看到鄰近的特殊字詞（例如 _SSN_ 或 _Social security_ ），則 BlueXP  分類會將美國社會安全號碼（ SSN ）識別為 SSN 。link:reference-private-data-categories.html["個人資料表格"]顯示 BlueXP  分類何時使用接近驗證。
 

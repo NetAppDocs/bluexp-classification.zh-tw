@@ -1,0 +1,35 @@
+---
+sidebar: sidebar 
+permalink: task-custom-classification.html 
+keywords: custom classification, customize, regular expression, keyword, regex 
+summary: BlueXP  分類可讓您自訂敏感資訊的搜尋，根據與組織相關的個別模式和關鍵字來量身打造服務。 
+---
+= 在 BlueXP  分類中建立自訂分類
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 BlueXP  分類，您可以建立自訂的敏感資訊搜尋。搜尋範圍可以是規則運算式或一組特殊關鍵字。
+
+
+
+== 建立自訂分類
+
+自訂分類僅適用於地圖和分類掃描，不適用於僅對應的掃描。此功能目前正在預覽中。
+
+.步驟
+. 選擇「 ** 自訂分類 ** 」標籤。
+. 選擇 ** 新增分類器 ** 。
+. 新增新類別器的名稱和說明。
+. 要將自定義添加爲正則表達式，請選擇 ** 自定義正則表達式 ** ，然後選擇 ** 下一步 ** 。
++
+.. 若要使用規則運算式，請新增模式來偵測資料的特定資訊。例如，以 201 開頭的 12 位數 ID 為 \b201\f\d(9)b. 選擇 ** 驗證 ** 以確認您輸入的語法。
+
+
+
+
+新的自訂功能會在下一次排程掃描中擷取。若要檢視結果，請參閱xref:task-generating-compliance-reports.html[產生法規遵循報告]。

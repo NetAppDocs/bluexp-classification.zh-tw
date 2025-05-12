@@ -123,7 +123,6 @@
   <block id="7aa9c47f42013735e3c5573eb7004a9d" category="list-text">識別所有具有開放權限的檔案和目錄（共享區和資料夾）、這些檔案和目錄都會公開給整個組織或大眾使用。</block>
   <block id="5e27afd1e1e5a71e7aff888767d3214a" category="list-text">識別位於初始專屬位置之外的敏感資料。</block>
   <block id="29c9ae62d38a9d393cc687207b213fa5" category="list-text">遵守資料保留政策。</block>
-  <block id="c43934763319d8b34916e416e6cab93d" category="list-text">使用 _policies _ 自動偵測新的安全性問題、讓安全人員可以立即採取行動。</block>
   <block id="c5f92f73b9ea92063c2fc24f82a835d2" category="paragraph-title">最佳化儲存使用量</block>
   <block id="f9d643ab04854145a0dd7aacf4788ad5" category="paragraph">BlueXP 分類提供的工具可協助您處理儲存設備的總體擁有成本（ TCO ）。您可以使用 BlueXP 分類來：</block>
   <block id="12745f1753f4a2151c5bd9d0d7cadbd9" category="list-text">識別重複或非業務相關的資料、以提高儲存效率。</block>
@@ -221,7 +220,6 @@
   <block id="bafd7322c6e97d25b6299b5d6fe8920b" category="cell">否</block>
   <block id="142b203627d7e1032702a2d19364935b" category="cell">在檔案中搜尋名稱</block>
   <block id="94422fa6b0fe23d0ab463703c0022a63" category="inline-link-macro">原則</block>
-  <block id="45bb3a28f3aa6feb29d3e208dcf8e08c" category="cell">建立<block ref="70f775217afdc5846c2e8494b632caaf" category="inline-link-macro-rx"></block>可提供自訂搜尋結果的項目</block>
   <block id="2dfcc311be6fe47855e067cf6907780f" category="cell">執行其他報告的能力</block>
   <block id="a9cec06f0851d8f2722f032a0e63c115" category="cell">能夠查看檔案中的中繼資料 *</block>
   <block id="4f40caf952f66945a674f638c61be8d9" category="paragraph">* 下列中繼資料會在對應掃描期間從檔案中擷取：</block>
@@ -243,8 +241,6 @@
   <block id="58f9985309ad441d05540492b96a7afd" category="cell">過時資料</block>
   <block id="60ba2191f39b045b2e7dd2bc96654d1c" category="cell">非商業資料</block>
   <block id="959cab1cb99ef2d51c2197ef17b2105b" category="cell">重複的檔案</block>
-  <block id="172504408a355f366017244a5b384ba8" category="cell">預先定義的原則</block>
-  <block id="0b0168bee54c0e61b8aa5a962967a322" category="cell">自訂原則</block>
   <block id="369cd14037692c6f09dcfda1b4ac8ed3" category="cell">DDA 報告</block>
   <block id="ea8d76cdda2904dcca99873fc91b4643" category="cell">對應報告</block>
   <block id="31b12a0b18d3e31cef5bf330060e1485" category="cell">靈敏度等級偵測</block>
@@ -454,7 +450,6 @@
   <block id="a71f76c3256e4c206a4841d8eb0fed35" category="cell">SQL Server</block>
   <block id="35686630aa3baddc18c904374e570233" category="cell">Amazon RDS</block>
   <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">行動</block>
-  <block id="af4141cf3fb8179af4deac9547c01278" category="cell">建立原則</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
   <block id="c101058e7ea21bbbf2a5ac893088e90b" category="cell">標記</block>
   <block id="773ecc684d98231f8f23773727622446" category="cell">指派給</block>
@@ -588,11 +583,8 @@
   <block id="93f515959ce6187b986c42fa6959168b" category="doc">私有資料類別</block>
   <block id="dccdebfeec8fafe3af210e0af17af320" category="paragraph">BlueXP 分類可在您的磁碟區和資料庫中識別許多類型的私有資料。</block>
   <block id="3b6b18ad7909031011a3960e81ac99e4" category="paragraph">BlueXP  分類可識別兩種類型的個人資料：</block>
-  <block id="85542d81e9687ba10d962e859cdaf35a" category="list-text">* 個人識別資訊（ PII ） *</block>
-  <block id="874a594310f3c66b96cad8a1ef4af095" category="list-text">* 敏感個人資訊（ SPii ） *</block>
   <block id="10ff4e7c2ffc1fd426aa6f784a05da66" category="section-title">個人資料類型</block>
   <block id="664f12aee95db5001901ada82a66a117" category="inline-link-macro">鄰近驗證</block>
-  <block id="185a6c810ca281a80052f73d8e326953" category="paragraph">檔案中的個人資料（或 _ 個人識別資訊 _ ）可以是一般個人資料或國家識別碼。下表的第三欄會指出 BlueXP  分類是否用於<block ref="af3f1f2f9514770a1cfe0f9a422e763d" category="inline-link-macro-rx"></block>驗證其識別碼的結果。</block>
   <block id="e1a196cfa9a98106e5ba102887a0c95d" category="paragraph">可辨識這些項目的語言列於表格中。</block>
   <block id="29ee5d1ebcc033234938a5234f1f2075" category="cell">識別碼</block>
   <block id="ed82815cd7c9b16e760f312718a9a3d3" category="cell">鄰近驗證？</block>
@@ -665,7 +657,6 @@
   <block id="56ee28a97ee2b5724da347257b198872" category="cell">美國紐約駕駛授權</block>
   <block id="f5817b4cc67ee41de01a4a19fc33ef7d" category="cell">美國社會安全號碼（ SSN ）</block>
   <block id="0ff635b15f7fdd9403b351ffc3d0c2a1" category="section-title">敏感個人資料的類型</block>
-  <block id="22535a9e2a33599f897498d121038146" category="paragraph">BlueXP  分類可在檔案中找到下列敏感個人資訊（ SPii ）。</block>
   <block id="3b3e3761409ec91318d55527674759e3" category="paragraph">此類別中的項目目前只能以英文辨識。</block>
   <block id="0327f9ba6d0f4d1eac4f3812d1dcc54d" category="list-text">* 刑事訴訟程序參考資料 * ：關於自然人的刑事定罪和犯罪的資料。</block>
   <block id="5082eafb320441003f6c8b58c5b11b66" category="list-text">* 族裔參考 * ：有關自然人種族或族裔來源的資料。</block>
@@ -838,10 +829,8 @@
   <block id="a8c256c3bc4f2ab999fee3056f7bebab" category="paragraph"><block ref="5d86a8971ca34d1c831cc0be7e11109d" prefix="" category="inline-code"></block></block>
   <block id="5cd360d496831478b3f9cbc92cce8b43" category="list-text">日期與時間：事件的完整時間戳記</block>
   <block id="79480e26f983c197c4338ae916966c93" category="list-text">狀態-資訊、警告</block>
-  <block id="79bd49250e598bf53655f50c83b04044" category="list-text">行動類型（刪除、複製、移動、建立原則、更新原則、 重新掃描檔案、下載Json報告等）</block>
   <block id="eee2e3db044c9200dc614ed87a9c8fde" category="list-text">檔案名稱（如果動作與檔案相關）</block>
   <block id="01183a42bef9f9a5314d435065cfc49d" category="list-text">行動的詳細資料：做了什麼：取決於行動</block>
-  <block id="cca60f73053d584e7caacfd33a8f046e" category="list-text">原則名稱</block>
   <block id="3c14ec40364ae096849c696c3497ff60" category="list-text">用於移動-來源和目的地</block>
   <block id="c02ceb243337f566ebb5a2984a4d72eb" category="list-text">複本：來源和目的地</block>
   <block id="8022db3692364177695fce2a133b526b" category="list-text">用於標記-標記名稱</block>
@@ -915,7 +904,6 @@
   <block id="15dd93dd8e5fe369d32909872743ce92" category="inline-link-macro">篩選資料調查頁面中的資料</block>
   <block id="f9643188d49ee294212ab09521305bdd" category="section-title">檢視包含個人資料的檔案</block>
   <block id="99c411b30c0d86f95c6416318f98106b" category="inline-link-macro">請參閱完整清單</block>
-  <block id="8060d07e3adbf13c278991613997a8b6" category="inline-link-macro">使用 Data Fusion 功能新增個人資料識別碼</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">個人資料表格</block>
   <block id="8c17e3b1b4e627d4a92973aec9ef4ce0" category="inline-image-macro">個人檔案對話方塊的快照、您可以在其中按一下個人資料類型旁的調查結果圖示。</block>
   <block id="bec06ffefcc7ab6b7882b310c3c7790a" category="list-text">搜尋、排序、展開特定檔案的詳細資料、按一下 * 調查結果 * 查看遮罩資訊、或下載檔案清單、即可調查資料。</block>
@@ -1550,12 +1538,9 @@
   <block id="786452cdc534ba8395eb7a26c9ab3efc" category="summary">您可以在「資料調查」頁面中檢視詳細資料、以調查組織的資料。您可以從 BlueXP 分類 UI 的許多區域瀏覽到此頁面、包括 Governance 和 Compliance 儀表板。</block>
   <block id="8d2b3a00bc0d44767cf3d5dfed11884d" category="section-title">在「資料調查」頁面中篩選資料</block>
   <block id="5ba18772d6c4efd6fedbaf5fb29d559a" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。這是一項非常強大的功能、因為在您調整資料之後、您可以使用頁面頂端的按鈕列執行各種動作、包括複製檔案、移動檔案、新增標記或AIP標籤至檔案等。</block>
-  <block id="b3c7c4e0f0d5f23cefa1d143f9a57eb7" category="section-title">依標記、標籤、指派的使用者和原則篩選資料</block>
-  <block id="df49368049d4a11c63d1acd4766aae12" category="paragraph">使用下列篩選條件、依標籤、 AIP 標籤、指派的使用者或原則檢視資料。</block>
   <block id="3bebc15b7ececd939dbb2e1037e2bd21" category="paragraph">* 注意 * 按標籤，標籤和指派的使用者篩選功能僅適用於 BlueXP  分類 1.30 版及更早版本。</block>
   <block id="d7778d0c64b6ba21494c97f77a66885a" category="cell">篩選器</block>
   <block id="3ec365dd533ddb7ef3d1c111186ce872" category="cell">詳細資料</block>
-  <block id="b6fb796ef2b473f220b609812d519181" category="cell">選取原則。前往<block ref="578f763d599897de23ba32ec116d6451" category="inline-link-macro-rx"></block>檢視現有原則清單，並建立您自己的自訂原則。</block>
   <block id="9d85612840e00794629f6dce90aa22fa" category="inline-link-macro">AIP標籤</block>
   <block id="dd6c13315898ffef83a20b77b08aee15" category="cell">選取<block ref="9b3a58766d8c539d0ec9039695618ffe" category="inline-link-macro-rx"></block>指派給您檔案的項目。</block>
   <block id="f8a85ed4966ec4306b4e58f3bd439410" category="inline-link-macro">標記</block>
@@ -1626,7 +1611,6 @@
   <block id="c670f11fe2007eb5c3be88dd2f27af16" category="cell">選擇特定的工作環境。</block>
   <block id="5da8b466834d55ddcdf18f51655016b9" category="cell">儲存儲存庫</block>
   <block id="5bf1893d83226372ff2fad4fcb1c9ae2" category="cell">選取儲存儲存儲存庫、例如磁碟區或架構。</block>
-  <block id="19797a891bd45c541e59f0948f6e102b" category="paragraph">使用下列篩選條件、依原則檢視資料。</block>
   <block id="2cc5511704a792153e3bfc286f24901a" category="paragraph">使用下列篩選條件、依 BlueXP 分類掃描狀態檢視資料。</block>
   <block id="d55969f99169fb1ccecedd45e530342d" category="cell">分析狀態</block>
   <block id="133617814b053dc465cdc57c432b1756" category="cell">選取選項以顯示「擱置第一次掃描」、「已完成掃描」、「擱置重新掃描」或「無法掃描」的檔案清單。</block>
@@ -1649,7 +1633,6 @@
   <block id="fc9033d933e9132cc23bfe396744d214" category="inline-link-macro">刪除檔案</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">顯示如何檢視重複檔案所在位置的快照。</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f89dc042c7b1c3561acf8c224411dd1a" category="admonition">您可以使用本頁提供的「檔案雜湊」值、並直接在「調查」頁面中輸入、以隨時搜尋特定的重複檔案、也可以在「原則」中使用。</block>
   <block id="02b8107c002e6577adbfdfd6d6f1b208" category="inline-image-macro">下載調查報告頁面的快照、內含多個選項。</block>
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">對話方塊會顯示正在下載報告的訊息。</block>
   <block id="6dc6bf0d1023a1b5714c777b474cce12" category="paragraph">*非結構化檔案資料報告*包含下列檔案相關資訊：</block>
@@ -1707,7 +1690,6 @@
   <block id="bc9381c1fffa85e3370bbee2fa58936b" category="list-text">您可以新增自訂類別、以識別資料中的特定資訊類別。</block>
   <block id="0b95409e38fd76ec71d03e3e14b83763" category="paragraph">所有語言均支援所有這些新增自訂掃描準則的機制。</block>
   <block id="a2c1b5d018e20e258024bece4a2d254e" category="section-title">從資料庫新增自訂的個人資料識別碼</block>
-  <block id="e88adea3b212c154801612c8605db6d5" category="paragraph">我們稱為「Data Fusion SURE__」的功能可讓您掃描貴組織的資料、找出資料庫中的唯一識別碼是否存在於任何其他資料來源。您可以在資料庫表格中選取特定欄或欄、以選擇 BlueXP 分類在其掃描中尋找的其他識別碼。例如、下圖顯示 Fusion 如何使用資料功能來掃描您的磁碟區、儲存庫和資料庫、找出 Oracle 資料庫中所有客戶 ID 的出現情形。</block>
   <block id="dac05618fc69864a6bb4607d758eba4b" category="inline-image-macro">圖表顯示如何使用資料庫的內容做為來源、以識別包含相同資料的檔案。</block>
   <block id="272d016d013ea6f34fea95eb2490c955" category="paragraph"><block ref="272d016d013ea6f34fea95eb2490c955" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9e069456015ebd506621d5c53645d136" category="paragraph">如您所見、在兩個磁碟區和一個 S3 儲存區中找到兩個獨特的客戶 ID 。也會識別資料庫表格中的任何相符項目。</block>
@@ -1932,8 +1914,6 @@
   <block id="aea50b39bf674599cf913ca73fc8eeb2" category="paragraph"><block ref="aea50b39bf674599cf913ca73fc8eeb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="865eee83e350aaa1f9bf0c9f0c4adef0" category="section-title">刪除來源檔案</block>
   <block id="f00d1d6da069b57d87e693fce6b2fc27" category="paragraph">您可以永久移除看起來不安全或風險太高的來源檔案、使其留在儲存系統中、或是您已識別為重複檔案。此動作是永久性的、而且不會復原或還原。</block>
-  <block id="330f8b46c48484fc9016a8247fb99ba3" category="inline-link-macro">自動使用原則</block>
-  <block id="c63897b00e1bb7484e004dc2e1337d94" category="paragraph">您可以從「調查」窗格或手動刪除檔案<block ref="189dcbbb5debf653b5fc0860b1c881e2" category="inline-link-macro-rx"></block>。</block>
   <block id="a338f19adc641be98bda63cc7a5d4741" category="admonition">您無法刪除位於資料庫中的檔案。支援所有其他資料來源。</block>
   <block id="5415e45b4bcc0ac609070c6e72408406" category="paragraph">刪除檔案需要下列權限：</block>
   <block id="52cd2f737a295e43ee2f51fe52c772a4" category="list-text">對於NFS資料：匯出原則必須以寫入權限定義。</block>
@@ -1998,12 +1978,9 @@
   <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">您可以隨時「恢復」掃描。</block>
   <block id="0b139c0236cbbe51386a48380dccef80" category="summary">BlueXP 分類提供多種方法來管理及組織您的私有資料。如此一來、您就能更輕鬆地查看最重要的資料。</block>
   <block id="e87b43c3f65a9e6b5fc0f778e155e091" category="doc">組織您的私有資料</block>
-  <block id="f754acc189a7236fe2fb4657457fcb2c" category="paragraph">* 注意 * 此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。2023 年 12 月（ v1.26.6 ）版本移除使用 Azure Information Protection （ AIP ）標籤整合資料的選項。</block>
   <block id="2a03ec9e7d9aaa65371a523434cb5fb5" category="inline-link">Azure資訊保護（AIP）</block>
-  <block id="866b468ee4470d23fb5549ba61fadfa8" category="list-text">如果您已訂閱分類及保護檔案，則<block ref="dc81bb027ada9d4ecc15bb9933242e3a" category="inline-link-rx"></block>可以使用 BlueXP  分類來管理這些 AIP 標籤。</block>
   <block id="892f73595a08cb4eef7c3e6319b7f807" category="list-text">您可以將標記新增至您要標記為組織或某種後續追蹤的檔案。</block>
   <block id="4641554e9ff0ab6b08e16160ca0cf9af" category="list-text">您可以將BlueXP使用者指派給特定檔案或多個檔案、以便該人員負責管理檔案。</block>
-  <block id="f9f3ed5f443ba769e31426ba3b322b22" category="list-text">使用「原則」功能、您可以建立自己的自訂搜尋查詢、只要按一下按鈕、就能輕鬆查看結果。</block>
   <block id="042d6a5acaf1a16f91ab258697afa46c" category="list-text">當某些重要原則傳回結果時、您可以傳送電子郵件警示給BlueXP使用者或任何其他電子郵件地址。</block>
   <block id="a8d43af62606e8592f9d1aabd661626f" category="section-title">我應該使用標記或標籤嗎？</block>
   <block id="3ad72e369e1a6f6b2b9b64eb74a1d971" category="paragraph">以下是 BlueXP 分類標記與 Azure 資訊保護標籤的比較。</block>
@@ -2667,50 +2644,8 @@
   <block id="f3e4dff4900974e7d6033b16c7f75179" category="paragraph"><block ref="f3e4dff4900974e7d6033b16c7f75179" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a620f7ab4fc25849a31718c76e9d7fa1" category="list-text">按一下 * 儲存原則 * 、標籤就會出現在原則說明中。</block>
   <block id="bb59c9be972bc7568c57f54fdc257244" category="admonition">如果原則已設定標籤、但標籤已從 AIP 中移除、則標籤名稱會關閉、且標籤不會再指派。</block>
-  <block id="8ca194e9f33f192ece200a8c9ed9e621" category="doc">指派原則給您的資料</block>
-  <block id="7abddc2fd9a072ced7e028f1d716b729" category="paragraph">原則就像是自訂篩選器的最愛清單、可在「調查」頁面中針對一般要求的法規遵循查詢提供搜尋結果。BlueXP 分類提供一組根據一般客戶要求而預先定義的原則。您可以建立自訂原則、以提供組織特定搜尋結果。</block>
-  <block id="1404233f94f23148f7634e161761230b" category="paragraph">原則提供下列功能：</block>
-  <block id="223d722e1cb33bb8a31e8cc8d6efcb10" category="list-text"><block ref="3708ee7d5604e21bcf79306c2b6928c3" category="inline-xref-macro-rx"></block>根據使用者要求，從 NetApp 取得</block>
-  <block id="649da6c1fa710a382a388e465871a680" category="list-text">能夠建立您自己的自訂原則</block>
-  <block id="bee2f666032ac3e06ad966dc6a8febf4" category="list-text">只要按一下、就能啟動「調查」頁面、並取得原則的結果</block>
-  <block id="e3cf1613fe34f89ac1f2966a0222877f" category="paragraph">規範儀表板中的 * 原則 * 索引標籤會列出此 BlueXP 分類執行個體上可用的所有預先定義和自訂原則。</block>
-  <block id="967b04771a3458159d11dd8932d09129" category="inline-image-macro">BlueXP 分類儀表板中原則索引標籤的螢幕擷取畫面。</block>
-  <block id="d44d997087e7d999102d47f4839b74ac" category="paragraph"><block ref="d44d997087e7d999102d47f4839b74ac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c939d1291c3b87bc95f09e9b4065138e" category="section-title">在「調查」頁面中檢視原則結果</block>
-  <block id="eade099275ce51bdec585f23e50846c7" category="inline-image-macro">從「原則」索引標籤中選取特定原則的「調查結果」的螢幕擷取畫面。</block>
-  <block id="b87f575df2628b12c3d997954b369392" category="paragraph"><block ref="b87f575df2628b12c3d997954b369392" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f617da6b50728500642eb376ab97b6f4" category="section-title">建立自訂原則</block>
-  <block id="e6860b78555fc79d4429acb5534cf51b" category="paragraph">您可以建立自己的自訂原則、針對組織專屬的搜尋結果提供結果。會傳回符合搜尋條件的所有檔案和目錄（共享區和資料夾）結果。</block>
-  <block id="19948385b78770f8de2200aa21288a6a" category="list-text">您也可以勾選方塊、以自動刪除符合原則參數的檔案。</block>
-  <block id="ab3a166dafa7696427031860a8ba2694" category="inline-image-macro">顯示如何設定原則並加以儲存的快照。</block>
-  <block id="9b07697830dbb49b6ea67bff8f36ad42" category="paragraph"><block ref="9b07697830dbb49b6ea67bff8f36ad42" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f124f85896ac18194a54f85b2d21b888" category="paragraph">新原則會出現在原則索引標籤中。</block>
-  <block id="ad3a8f7c032ad4e96e6372989c781a41" category="section-title">編輯原則</block>
-  <block id="46cca5a0b236597ecbbc433af09a7cdd" category="inline-image-macro">顯示如何對現有原則進行編輯的快照。</block>
-  <block id="3056771597dc5384f17bbb61e33a97e3" category="paragraph"><block ref="3056771597dc5384f17bbb61e33a97e3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cc9419324ea7def41675382a6f26c64b" category="inline-image-macro">選取「編輯原則」頁面上「編輯查詢」按鈕的快照。</block>
-  <block id="1c5fef5f58eb8467fc88591877ccc7e3" category="paragraph"><block ref="1c5fef5f58eb8467fc88591877ccc7e3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">顯示如何變更篩選設定來編輯查詢的快照。</block>
   <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5d82deb8cba9afb6516c37ca8c24a8ad" category="section-title">刪除原則</block>
-  <block id="975f1d83956c13d06e3328fcb12a0a3f" category="paragraph">如果您不再需要任何自訂原則、可以刪除它。您無法刪除任何預先定義的原則。</block>
-  <block id="91f5ccbaa42a010696c34306e0121702" category="section-title">預先定義原則清單</block>
-  <block id="d1d0b0240f763b10942cc206a4f4e980" category="paragraph">BlueXP 分類提供下列系統定義原則：</block>
-  <block id="49ee3087348e8d44e1feda1917443987" category="cell">名稱</block>
-  <block id="88a8fc10a4a6b28d78fc1e400182ead7" category="cell">私有資料：7年來已過時</block>
-  <block id="0658572f595df4673d537d6a8a8b1a1a" category="cell">包含個人或敏感個人資訊的檔案、上次修改時間是 7 年前。</block>
-  <block id="2e54b6ea8f6706e7beb9350d62e23178" category="cell">包含個人或敏感個人資訊的檔案、上次修改時間是 7 年前</block>
-  <block id="85198c4138d424a195c0c9dd0b22bd8f" category="cell">資料主旨名稱：高風險</block>
-  <block id="dc33521f475dd5a7293f3917bf0af42f" category="cell">具有超過 50 個資料主體名稱的檔案。</block>
-  <block id="803f715ed99c292cad7695adc28eb9d6" category="cell">具有超過 50 個資料主體名稱的檔案</block>
-  <block id="688de20ddbb7b2207a9c3999989be28b" category="cell">電子郵件地址-高風險</block>
-  <block id="692c6580584ac112966355c5be17619f" category="cell">超過 50 個電子郵件地址的檔案、或是超過 50% 列包含電子郵件地址的資料庫欄</block>
-  <block id="d55a6a9af72cb1355db97941acafb865" category="cell">個人資料：高風險</block>
-  <block id="f01867afcb6e04d62f44ff0ba1bea1a8" category="cell">具有 20 個以上個人資料識別碼的檔案、或是含有超過 50% 的資料列包含個人資料識別碼的 DB 資料欄。</block>
-  <block id="8f08d4145d6e3a493a3fa4cd9e22247f" category="cell">擁有 20 個以上個人資料的檔案、或擁有超過 50% 的資料列包含個人資料的 DB 資料欄</block>
-  <block id="39dcf805c803eacb6e35a6ea5e8cb25d" category="cell">敏感個人資料-高風險</block>
-  <block id="9b81ccdb2be13f884e301547dfac52b2" category="cell">具有 20 個以上敏感個人資料識別碼的檔案、或是含有敏感個人資料的資料列超過 50% 的 DB 資料欄。</block>
-  <block id="d3566f9763235eb9dbff68cd1220088a" category="cell">具有 20 多個敏感個人資料的檔案、或是擁有超過 50% 的資料列包含敏感個人資料的 DB 資料欄</block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「行動狀態」窗格中監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。</block>
   <block id="c06ccfe24df0bff683583f82911916e0" category="paragraph">當您從「調查結果」窗格對許多檔案執行非同步動作時、例如移動或刪除100個檔案、程序可能需要一些時間。您可以在「_Action Status」（動作狀態）窗格中監控這些動作的狀態、以便得知何時已將其套用至所有檔案。</block>
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。請注意、快速完成的簡短作業（例如移動單一檔案）不會出現在「動作狀態」窗格中。</block>
@@ -2906,7 +2841,6 @@
   <block id="f72e4f10556fdc1e84c715407cbda16b" category="sidebar">檢視包含私人資訊的檔案</block>
   <block id="53aba5c7ba7952b6d58e9dfb83a4516e" category="sidebar">檢視儲存設備中重複的檔案</block>
   <block id="fe146c842cc64934263018d6ec158b7e" category="sidebar">篩選資料以檢視特定檔案</block>
-  <block id="2238095e02de090e407d911c0f0f1e9f" category="sidebar">建立原則以檢視您的熱門搜尋結果</block>
   <block id="becce430afb103abe05ad66b3e6cde8a" category="sidebar">產生法規遵循報告</block>
   <block id="9293f14feca10eb970a136a34ecc9d8c" category="sidebar">回應資料主旨存取要求</block>
   <block id="98f9f8a11a148aec70c39965293ea9b3" category="sidebar">過時的功能</block>
@@ -3094,7 +3028,6 @@
   <block id="6915401740d9460ed0e142b3fd0b402c" category="doc">使用 BlueXP  分類掃描 SharePoint 帳戶</block>
   <block id="df3ac8bd169a771ea350cd5cc533e873" category="doc">註冊 BlueXP  支援</block>
   <block id="c0a6118312ef4878e08365a032d30e38" category="doc">當 BlueXP  分類發現不符合標準的資料時，請傳送電子郵件警示</block>
-  <block id="d359757dd1d4d8c3ff7449e1a600e014" category="doc">使用 BlueXP  分類將原則指派給您的資料</block>
   <block id="81969dc99e0a4fcee700e3390e9e8d60" category="doc">在 BlueXP  分類中檢視法規遵循行動的狀態</block>
   <block id="87259e291cf73ff3b26cf61342184d7a" category="section-title">檢閱 Governance 儀表板</block>
   <block id="d930cabf64be47e8e8836a7ffce60dbd" category="list-text">從 BlueXP  功能表中，選取 * 治理 &gt; 分類 * 。</block>
@@ -3103,9 +3036,6 @@
   <block id="cd44aff9043f042044d20fa9200a9168" category="section-title">檢視儲蓄商機</block>
   <block id="64d5cdb36e33cae106a6b70c95fdc6de" category="paragraph">您可能想要調查「_儲存商機_」區域中的項目、看看是否有任何您應該刪除的資料、或是將資料分層到較便宜的物件儲存設備。</block>
   <block id="d7fc3a438d308cfbcbd8fa3231391419" category="list-text">從 BlueXP  分類功能表中，選取 * 治理 * 。</block>
-  <block id="b425c4e4b41334f19572d1e9e51d7b9a" category="section-title">審查結果最多的原則</block>
-  <block id="e026e06fb0f6082b58b19e0ae90f9015" category="paragraph">在 _policies 區域中，結果最大的原則會出現在清單頂端。</block>
-  <block id="24c741c03fc84375fc7935a70023d0ac" category="paragraph">如需原則的詳細<block ref="eb4899a5ae2ad655555b425171c60bf8" category="inline-link-macro-rx"></block>資訊，請參閱。</block>
   <block id="9da3158754790a2bd5d492ff265be3c4" category="section-title">建立資料探索評估報告</block>
   <block id="310db9cf8ba2482b63b9ab1efe7fe48c" category="paragraph">「資料探索評估報告」提供對掃描環境的高層級分析，以顯示相關領域和可能的補救步驟。結果是根據資料的對應和分類而定。本報告的目標是提高對資料集三個重要層面的認知度：</block>
   <block id="ba8c35e924f949589fd6e14b916db6fc" category="paragraph">使用此報告，您可以採取下列行動：</block>
@@ -3174,8 +3104,6 @@
   <block id="47f5b0791caa2598c4559bb5afa675a9" category="paragraph">這是您應該開始研究的地方。您可以從 Governance 儀表板選取一個區域以供進一步調查。</block>
   <block id="56bcd47afb74823d33fc490b9ced87a3" category="list-text">在 Governance 儀表板的每個「節約機會」方塊中，選取 * 最佳化 Storage* ，即可在「調查」頁面中檢視篩選的結果。您可能想要調查「_儲存商機_」區域中的項目、看看是否有任何您應該刪除的資料、或是將資料分層到較便宜的物件儲存設備。</block>
   <block id="dfd23906ba391609b608a93fdd40fdb2" category="admonition">如果您的任何資料來源都實作資料分層，則已位於物件儲存區的舊資料可在 _ 過時資料 _ 類別中識別。</block>
-  <block id="7c0b28ab5d3d14007833c883687fb63e" category="list-text">在「績效」儀表板 &gt; 「原則」方塊中，選取原則名稱，以在「調查」頁面中顯示結果。</block>
-  <block id="0dc58fd3e83f0422da065df1d7c6bd4e" category="list-text">選取 * 檢視全部 * 以檢視所有可用原則的清單。在 _policies 區域中，結果最大的原則會出現在清單頂端。</block>
   <block id="483d6c5447c876cec7c9f20a2f16d52e" category="list-text">變更保留原則、或移動或刪除特定資料（過時、重複或非業務資料）、以降低儲存成本</block>
   <block id="5672e2463aa066853c9eb4cf4b3e3fa8" category="list-text">修改全域群組管理原則、以保護具有廣泛權限的資料</block>
   <block id="1f4e12eb3b2fcb4ce87b8ed675d3270c" category="list-text">將 PII 移至更安全的資料儲存區、以保護您擁有個人或敏感個人資訊的資料</block>
@@ -3305,7 +3233,6 @@
   <block id="f073b9ddb57cf4112d6b8af2be152237" category="paragraph">根據預設、 BlueXP 分類儀表板會顯示所有工作環境和資料庫的法規遵循資料。若要僅查看部分工作環境的資料，請選取這些資料。</block>
   <block id="b9578c21a6204e25cdc3223630386356" category="paragraph">從「資料調查」頁面篩選結果，並將結果報告下載為 CSV 檔案。如需詳細資訊、請參閱 <block ref="70fd9e5a2e3fb16954088b6ec652d9bc" category="inline-link-macro-rx"></block> 。</block>
   <block id="2a23e42a903ba0977e9c64da39e06413" category="paragraph">BlueXP 分類會自動識別資料中的特定字詞、字串和模式（ Regex ）。例如、個人識別資訊（PII）、信用卡號碼、社會安全號碼、銀行帳戶號碼、密碼、 以及更多資訊。<block ref="b85650e1ded260986da01a502b58ab3e" category="inline-link-macro-rx"></block>。BlueXP 分類可在個別檔案、目錄內的檔案（共用和資料夾）、以及資料庫表格中識別這類資訊。</block>
-  <block id="d1823de7c38686a26a0767920238f395" category="paragraph">此外，如果您新增要掃描的資料庫伺服器， _Data Fusion 功能會掃描您的檔案，以識別資料庫中的唯一識別碼是否位於這些檔案或其他資料庫中。如需詳細資訊、請參閱 <block ref="fb1b570cbcf76e8205708b1c55761831" category="inline-link-macro-rx"></block> 。</block>
   <block id="678a3da74b0f8445758bf6169c988967" category="paragraph">對於某些類型的個人資料、 BlueXP 分類會使用鄰近驗證 _ 來驗證其結果。驗證的方式是在找到的個人資料附近尋找一或多個預先定義的關鍵字。例如，如果在其旁邊看到鄰近的特殊字詞（例如 _SSN_ 或 _Social security_ ），則 BlueXP  分類會將美國社會安全號碼（ SSN ）識別為 SSN 。<block ref="8379e1454990bf850576c11a6bba2bd5" category="inline-link-macro-rx"></block>顯示 BlueXP  分類何時使用接近驗證。</block>
   <block id="a38e6da6efb7dc004c87e00dfcfe4fc2" category="list-text">從 BlueXP  分類功能表中，選取 * 法規遵循 * 標籤。</block>
   <block id="b6ec249a34e065ff70b013a6023d50e9" category="list-text">若要調查所有個人資料的詳細資料，請選取個人資料百分比旁的圖示。</block>
@@ -3362,7 +3289,6 @@
   <block id="93df112866b7972d001a7d5a43ee807d" category="paragraph">* 依中繼資料篩選資料 *</block>
   <block id="8e1a5e11bb2fb28b8b6dcec568a360c4" category="cell">選擇。<block ref="e1626033bf44d9df7edfb5f14619672b" category="inline-link-macro-rx"></block></block>
   <block id="bf49fd74a7f1e071ae8d9037d850229b" category="paragraph">* 依儲存類型篩選資料 *</block>
-  <block id="1931b0be2f819fbc984873eab7604c0e" category="paragraph">* 依原則篩選資料 *</block>
   <block id="6926f90beadfdb901f306772787c7f05" category="paragraph">* 依分析狀態篩選資料 *</block>
   <block id="0fdacc8c067979a1926a265cd399f05a" category="paragraph"><block ref="d865d9e7da9a534ddb8c0b18eca2435c" category="inline-link-macro-rx"></block>如需使用掃描分析事件篩選時出現在「調查」頁面中項目的詳細資訊。</block>
   <block id="c2d41b84903ff9433b055cd311767824" category="paragraph">* 依重複項目篩選資料 *</block>
@@ -3383,17 +3309,7 @@
   <block id="c96bf252030be7d77f32e236939f6da2" category="list-text">若要檢視重複檔案的清單及其所在位置，請選取 * 檢視詳細資料 * 。</block>
   <block id="5e6ec4e1f88d65eaeb13fa82313d9809" category="list-text">在下一頁中，選取 * 檢視重複的記錄 * 以檢視「調查」頁面中的檔案。</block>
   <block id="b9cf7636c1458813ea2386a78b8774cd" category="list-text">選擇報告類型： CSV 或 JSON 。</block>
-  <block id="3acd7c6848524cfd6cd39d023db6c391" category="section-title">根據選取的篩選器建立原則</block>
-  <block id="dbcfe39ddc3ef4e14d4b8ff904564614" category="paragraph">將您在「資料調查」頁面中選取的篩選條件儲存為原則可能會很有幫助。如此一來，您就可以隨時執行相同的篩選條件，而無需重新選取它們。</block>
-  <block id="461f18298523b9780c64f7622a558e72" category="list-text">在「資料調查」頁面上，選取您要用來建立原則的篩選條件。</block>
-  <block id="7b3efd4315afe81c069931074b6b2bcf" category="list-text">在「篩選」窗格底部，選取 * 從此搜尋建立原則 * 。</block>
-  <block id="02732823805cfd3fcc35939ca3602379" category="list-text">輸入原則的名稱和說明。</block>
   <block id="aac46765e6c078c569d11a06fa32886b" category="list-text">請選擇下列任一選項：</block>
-  <block id="7a93f17737c434a658952da4ac61c2e7" category="list-text">* 自動刪除符合此原則的檔案（每天）：如果您要刪除符合原則的檔案，請選取此選項。</block>
-  <block id="03679c9c05b6548cd278d5dc9b22d06d" category="list-text">* 將此原則的相關電子郵件更新傳送給此帳戶上的 BlueXP  使用者 Every &lt;day/week/month&gt; * ：如果您想要將原則的相關電子郵件更新傳送給此帳戶上的 BlueXP  使用者，請選取此選項。</block>
-  <block id="2a4930d89395c66bd221720bcaae06e3" category="list-text">* 將電子郵件傳送至每個 &lt;Day&gt; 至 &lt;email address&gt; * ：如果您想要將每個 &lt;Day&gt; 的電子郵件傳送至特定的電子郵件地址，請選取此選項。</block>
-  <block id="41025e9c551610edae39a167ecbe1b73" category="list-text">選取*建立原則*。</block>
-  <block id="97079a3b4a44ca52d28b2807f91a5ec0" category="admonition">結果可能需要 15 分鐘才能顯示在「原則」頁面上。</block>
   <block id="bc19fc1fb9d36ac2eec32fb81f6e5cca" category="paragraph">執行僅對應掃描時，您可以優先處理最重要的掃描。當您有許多工作環境，且想要確保先完成高優先順序掃描時，此功能會有所幫助。</block>
   <block id="2e41eb33226717a4730fa2131336dc5a" category="paragraph">如需更多資訊、請參閱 <block ref="9493b318b51f384796e93c6ba74f5935" category="inline-link-macro-rx"></block>。</block>
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">版本 1.42</block>
@@ -3410,8 +3326,6 @@
   <block id="e23f3c5ee576a6a524db07af25fc5e88" category="list-text">要下載完整報告，請選擇 ** 工作環境 ** ，然後從相應的下拉菜單中選擇 ** 工作環境 ** 和 ** Volume ** 。提供一個 ** 目的地資料夾路徑 ** 。</block>
   <block id="b28b21b6561b4b84c07adb24f4618993" category="paragraph">要在瀏覽器中下載報告，請選擇 ** 本地 ** 。請注意，此選項會將報告限制在前 10 ， 000 列，且僅限於 ** CSV** 格式。如果選擇 ** 本地 ** ，則無需填寫任何其他字段。</block>
   <block id="9340ce8741905e7d6ff4c0ca07a7a39a" category="paragraph-title">排定僅對應掃描的優先順序</block>
-  <block id="9267a4a221ce8d9176ea70d45543abf5" category="paragraph">您可以排定最重要的純對映掃描的優先順序，以確保先完成高優先順序掃描。</block>
-  <block id="f869ba288edefcc198633bd9bda2d3b8" category="paragraph">依預設，掃描會根據其啟動順序排入佇列。現在您可以將掃描排定優先順序，將掃描移到佇列的最前面。可以優先處理多個掃描。優先順序是以先出的順序指定，也就是您優先處理的第一次掃描會移到佇列前方；您優先處理的第二次掃描會成為佇列中的第二次掃描，依此類推。此功能僅限於僅對應掃描。無法用於地圖和分類掃描。</block>
   <block id="038d75fbb28c2dd7e9ed9904fea7fadc" category="paragraph">BlueXP  分類會收集，建立類別索引，並將類別指派給下列資料：</block>
   <block id="16e3e664a20bb6964ad08fde07c76933" category="list-text">* 個人資料 * ：個人識別資訊（ PII ），例如電子郵件地址，識別號碼或信用卡號碼， BlueXP  分類會使用檔案中的特定字詞，字串和模式來識別這些資訊。<block ref="fc496cc858c0e8dff4419012ba17c358" category="inline-link-macro-rx"></block>。</block>
   <block id="e60672f803602bf222f416a6205b3b39" category="list-text">* 敏感個人資料 * ：根據一般資料保護規範（ GDPR ）及其他隱私權規範的定義，特殊類型的敏感個人資訊（ SPII ），例如健康資料，族裔來源或政治見解。<block ref="6221f6509a9900ea9a8146767340b3a8" category="inline-link-macro-rx"></block>。</block>
@@ -3419,9 +3333,6 @@
   <block id="5c2ead81821547f3130352184807c230" category="list-text">當您按一下「檢視所有權限」按鈕時，您可以看到<block ref="3e9bb1533fcbed587af1c2c23ff12e21" category="inline-link-macro-rx"></block>每個檔案和目錄。</block>
   <block id="5791d2ebf242b348a1cbfa550a356083" category="list-text">*重複檔案*：在您正在掃描的資料來源中、其他位置中重複的檔案。<block ref="4f528c73ac5ca4ef85380f36d4dccad7" category="inline-link-macro-rx"></block>。</block>
   <block id="3cdcb2a793341ff20e0d4057a0538e49" category="list-text">若要在您調整頁面內容後，將其下載為報告，請選取<block ref="776643a36a44cc5a62e686055f0484c6" category="inline-image-macro-rx" type="image"></block>按鈕。</block>
-  <block id="115993abd6a23a5a17d07cec8fbc4b6e" category="cell">選取原則。前往<block ref="6160b7a55bd427b3fb91de138d9f467e" category="inline-link-macro-rx"></block>檢視現有原則清單，並建立您自己的自訂原則。</block>
-  <block id="b07926c5eabcf7b05f3a674e478e6b18" category="inline-link-macro">建立原則</block>
-  <block id="3ee1fee226155df3d1aec325193a3b4a" category="paragraph">除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、以及此檔案是否有重複的項目。如果您計畫使用此資訊，這項資訊非常實用<block ref="e4856c4af761ccf18001e0febd54584c" category="inline-link-macro-rx"></block>，因為您可以看到篩選資料所需的所有資訊。</block>
   <block id="1c3cd11405c2cc34d1b337f6a930a0e5" category="list-text">在目錄調查期間，無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。請參閱 <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>。</block>
   <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
   <block id="c70458770b484ae39f3759b69683ab6b" category="cell">加拿大銀行資訊號碼 - 帳號</block>
@@ -3457,19 +3368,142 @@
   <block id="bc95bc80ebf2858c233b2627b019d9e4" category="cell">加拿大社會保險號碼（ SIN ）</block>
   <block id="00acd555cd21235c4d1b966ed1be4a74" category="cell">英國 ID （ Nino ）</block>
   <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">美國德州駕照</block>
-  <block id="1a29dcb31a65b43c01aeec2246fa49c7" category="summary">原則自訂篩選器，可在「調查」頁面中針對一般要求的法規遵循查詢提供搜尋結果。BlueXP  分類可根據一般要求提供一組預先定義的原則，您也可以自行建立。</block>
-  <block id="f83468943a92a9d70fe55b7e87c65a05" category="paragraph">原則也會出現在「調查」頁面的篩選清單中。</block>
-  <block id="b41d9199442d75740188052cd48beb29" category="paragraph">若要在「調查」頁面中顯示原則的結果，請選取<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定原則的按鈕，然後選取 * 調查結果 * 。</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">篩選「調查」頁面中的資料</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">在「調查」索引標籤中，選取您要使用的篩選條件以定義搜尋。如需詳細資訊、請參閱 <block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> 。</block>
-  <block id="e85bfe3f1de43636e78e3933cf709057" category="list-text">一旦您將所有篩選特性設定為您喜歡的類型，請從這個搜尋 * 中選取 * 建立原則。</block>
-  <block id="f9eedf2a2f5e1bb65bd48f67cc11775f" category="inline-image-macro">顯示如何將篩選查詢儲存為原則的螢幕擷取畫面。</block>
-  <block id="74f8b507d44a9c9de5bc7494adb05585" category="paragraph"><block ref="74f8b507d44a9c9de5bc7494adb05585" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e61d888eb37f48ad33d55cec612a0679" category="paragraph">您可以修改現有原則的準則，以變更查詢（使用篩選器定義的項目），以新增或移除特定參數。</block>
-  <block id="d9a6afbd4a5c10947a68b413c4cad163" category="paragraph">您無法修改預先定義的原則。</block>
-  <block id="a126111bf84a962c10c82c54b7053f09" category="list-text">在「原則清單」頁面中，針對您要變更的原則選取 * 編輯原則 * 。</block>
-  <block id="a63db0f06bb77419a1c9810effb58b9a" category="list-text">變更名稱和說明欄位。若要僅變更這些欄位，請選取 * 儲存原則 * 。</block>
   <block id="b661e4ea30af73a913aed1e7ae647f4a" category="paragraph">若要變更儲存查詢的篩選條件，請選取 * 編輯查詢 * 。</block>
   <block id="1c76b2a61ae25c65703ed4c7e9a61c05" category="list-text">在定義該查詢的調查頁面中，通過添加，刪除或自定義篩選器來編輯查詢，然後選擇 *Save changes * （保存更改）。</block>
-  <block id="fc0a103843396ed5e93bb76396799d13" category="paragraph">若要刪除原則，請選取<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定原則的按鈕，選取 * 刪除原則 * ，然後在確認對話方塊中再次選取 * 刪除原則 * 。</block>
+  <block id="422ba0edf6ed9e7533f09398a27021dc" category="admonition">此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。</block>
+  <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">版本 1.43</block>
+  <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">排定分類掃描的優先順序</block>
+  <block id="0dc348cb820b479010800e3c6cddc127" category="paragraph">BlueXP  分類現在可讓您在僅對應掃描之外，設定地圖和分類掃描的優先順序，讓您選擇先完成哪些掃描。在掃描開始期間和之前，都支援排列地圖和分類掃描的優先順序。如果您選擇在掃描進行期間排定優先順序，則對應和分類掃描都會排定優先順序。</block>
+  <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">支援加拿大個人識別資訊（ PII ）資料類別</block>
+  <block id="25afe4e8f395663d2442297e33aa8a20" category="paragraph">BlueXP  分類掃描現在可識別加拿大 PII 資料類別，以取得所有省 / 地區的銀行資訊，護照號碼，社會保險號碼，以及駕照號碼和健康卡號碼。</block>
+  <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">個人資料類別</block>
+  <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">如需更多詳細資訊<block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>，請參閱。</block>
+  <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">自訂分類（預覽）</block>
+  <block id="e43dc9231ca750651c1b2d09176b0bc3" category="paragraph">BlueXP  分類現在支援自訂地圖分類和分類掃描。使用自訂分類，您可以量身打造 BlueXP  掃描，以擷取組織專屬的資料，確保符合規則運算式。此功能目前正在預覽中。</block>
+  <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">新增自訂分類</block>
+  <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">如需更多資訊、請參閱 <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>。</block>
+  <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">儲存的搜尋索引標籤</block>
+  <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-xref-macro">** 儲存的搜尋 **</block>
+  <block id="619964fa6c4dc175f106697cd53cd93b" category="paragraph">**Policies ** 選項卡已重命名<block ref="57cf69bfb5ee6dec8716152c342ad94c" category="inline-xref-macro-rx"></block>。功能相同。</block>
+  <block id="260ad9aa0619e900a957ec4498a7084d" category="paragraph-title">傳送掃描事件至稽核記錄</block>
+  <block id="decaf26b476fc5aad56ba857036660b7" category="inline-link-macro">BlueXP  時間表</block>
+  <block id="7d71019726dccc04ceb52b94f892b7f6" category="inline-xref-macro">稽核日誌</block>
+  <block id="1c6653b6dfd13a16237efa3ea5c87e2a" category="paragraph">BlueXP  掃描事件現在可以傳送至<block ref="e7616c9e5375866db0d455d96b016998" category="inline-xref-macro-rx"></block>。BlueXP  分類也支援傳送分類事件（當掃描開始及結束時）至<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。只有工作環境才支援將分類掃描事件傳送至 BlueXP  時間表。</block>
+  <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">安全性更新</block>
+  <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Keras 套件已更新，可減輕資訊安全風險（ BDSA-2025-0107 和 BDSA-2025-1984 ）。</block>
+  <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">Docker Container 組態已更新。容器不再能夠存取主機的網路介面來連接原始網路封包。透過減少不必要的存取，此更新可降低潛在的安全風險。</block>
+  <block id="4a02475d909bd7464565a63664e4dc8b" category="paragraph-title">效能增強</block>
+  <block id="247e7f07f0a97b367563cc22c1a529cb" category="paragraph">已實作程式碼增強功能，以減少 RAM 使用量，並改善 BlueXP  分類的整體效能。</block>
+  <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="paragraph-title">錯誤修正</block>
+  <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">導致 StorageGRID 掃描失敗的錯誤，無法載入調查頁面篩選選項，以及無法下載大量評估的資料探索評估已修正。</block>
+  <block id="ca5877ce323984fac661618517ce77b9" category="list-text">使用 __policies __ 自動偵測新的安全性問題，讓資安人員可以立即採取行動。</block>
+  <block id="b71c2ba4a810400f9f3761ce1f55bca2" category="cell">建立儲存的搜尋</block>
+  <block id="8f539b81d82236bcc672cf86864b0879" category="cell">儲存的搜尋</block>
+  <block id="e1739395d36bb1f742ef31b1924e9399" category="list-text">* 個人識別資訊（ PII ） *</block>
+  <block id="c5c4df42720cbeb98f763efd903ab45b" category="list-text">* 敏感個人資訊（ SPII ） *</block>
+  <block id="0c9d119c9d8ada956aeab1aa6be77ebb" category="paragraph">檔案中的個人資料（或 _ 個人識別資訊 _ ）可以是一般個人資料或國家識別碼。下表的第三欄會指出 BlueXP  分類是否用於<block ref="af3f1f2f9514770a1cfe0f9a422e763d" category="inline-link-macro-rx"></block>驗證其識別碼的結果。</block>
+  <block id="b847d85a2efd08f20797ad45602e61e9" category="paragraph">BlueXP  分類可在檔案中找到下列敏感個人資訊（ SPII ）。</block>
+  <block id="16e486f23dded8263d11848df3764b93" category="list-text">動作類型（刪除，複製，移動，建立儲存的搜尋，更新儲存的搜尋，重新掃描檔案，下載 JSON 報告等）</block>
+  <block id="3c60fc446538a7e633556a56c0270a7b" category="list-text">儲存的搜尋名稱</block>
+  <block id="3d8e42b0b0efcc9caab1fb0b9309b99c" category="section-title">檢閱儲存的搜尋結果數量最多</block>
+  <block id="32362fe63acb7ffc63175566121ad596" category="paragraph">在 _ 儲存的搜尋 _ 標籤中，搜尋結果數量最多的搜尋會顯示在清單頂端。</block>
+  <block id="1a2cb7ec85630ab674f28989b04d5180" category="inline-link-macro">建立儲存的搜尋</block>
+  <block id="bb3af25bd7c0b9f324e3747796764e22" category="paragraph">如需已儲存搜尋的詳細資訊，請參閱<block ref="c97fce4c2b55d75df91ca91c522727ac" category="inline-link-macro-rx"></block>。</block>
+  <block id="4e4a6277c9744cd4cca07da9aa9ccae0" category="list-text">在 Gloverance 儀表板中，找出儲存的搜尋方塊。選取儲存的搜尋名稱，以在「調查」頁面中顯示結果。</block>
+  <block id="315e89aa08d31a5d6e5b7e5ee124e27f" category="list-text">選取 * 檢視全部 * 以檢視所有可用的儲存搜尋清單。在 _ 儲存的搜尋 _ 區域中，搜尋結果數量最多的搜尋會顯示在清單頂端。</block>
+  <block id="b3d4fb955e1630fd4184c8964a1f4fdb" category="inline-link-macro">建立自訂分類</block>
+  <block id="4b760cb0a54b4c608b7deaa08d52f3c3" category="paragraph">您也可以建立自訂搜尋字詞，以識別組織特有的個人資料。如需更多資訊、請參閱 <block ref="702fa1a9e503f253a2dc3aea49d5216d" category="inline-link-macro-rx"></block>。</block>
+  <block id="8158b41ed99f0be207895156b4fd03bd" category="summary">BlueXP  分類可讓您自訂敏感資訊的搜尋，根據與組織相關的個別模式和關鍵字來量身打造服務。</block>
+  <block id="926b3e1d2d3aa955040f8e96a0925024" category="doc">在 BlueXP  分類中建立自訂分類</block>
+  <block id="af7f216eaafef04c270699dedfe55516" category="paragraph">使用 BlueXP  分類，您可以建立自訂的敏感資訊搜尋。搜尋範圍可以是規則運算式或一組特殊關鍵字。</block>
+  <block id="166182078c23275fb3140bd76772894f" category="paragraph">自訂分類僅適用於地圖和分類掃描，不適用於僅對應的掃描。此功能目前正在預覽中。</block>
+  <block id="b89901231bd925d9935358eec83c9df7" category="list-text">選擇「 ** 自訂分類 ** 」標籤。</block>
+  <block id="5d432ccfd60759dfe3a05c1d88a50e46" category="list-text">選擇 ** 新增分類器 ** 。</block>
+  <block id="ea013d14af755e66761c80272239aa1e" category="list-text">新增新類別器的名稱和說明。</block>
+  <block id="325f2f8229424a3bb88f7fe6dd21f8b4" category="list-text">要將自定義添加爲正則表達式，請選擇 ** 自定義正則表達式 ** ，然後選擇 ** 下一步 ** 。</block>
+  <block id="ddd5fb759ffdfbba04862c2c259765f4" category="list-text">若要使用規則運算式，請新增模式來偵測資料的特定資訊。例如，以 201 開頭的 12 位數 ID 為 \b201\f\d(9)b. 選擇 ** 驗證 ** 以確認您輸入的語法。</block>
+  <block id="92dbbe7b48f44c4348b9a878f60f182e" category="paragraph">新的自訂功能會在下一次排程掃描中擷取。若要檢視結果，請參閱<block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block>。</block>
+  <block id="e7f93c0af13ca637e6c3fbeb56fe4b0e" category="section-title">依標記，標籤，指派的使用者及儲存的搜尋來篩選資料</block>
+  <block id="aee7ea78cb12c6ff572cb9b321122abb" category="paragraph">使用下列篩選條件，依標記， AIP 標籤，指派的使用者或儲存的搜尋來檢視資料。</block>
+  <block id="fd853c5dbcb2e016325507bb9c17e98d" category="cell">選取一或多個儲存的搜尋。前往<block ref="578f763d599897de23ba32ec116d6451" category="inline-link-macro-rx"></block>檢視現有搜尋清單，或建立新的搜尋清單。</block>
+  <block id="e1022cbccc3b15345c155a6a38bad6a8" category="paragraph">* 依儲存的搜尋來篩選資料 *</block>
+  <block id="32a458cdfb998f0db54c4e4f42f4dbfa" category="paragraph">使用下列篩選條件，以儲存的搜尋方式檢視資料。</block>
+  <block id="b7758f20982aa452a9724c32f034dccd" category="cell">儲存的搜尋</block>
+  <block id="e43b31fd42478b64143ed2d6ade8317f" category="inline-link-macro">儲存的搜尋索引標籤</block>
+  <block id="da44bb3119708f27655d4d058f465d00" category="cell">選取一個儲存的搜尋或多個搜尋。移至<block ref="fbc8a675a3cef48a8a5a04b84f6b3b22" category="inline-link-macro-rx"></block>以檢視現有已儲存搜尋的清單，並建立新的搜尋。</block>
+  <block id="98c6270eede2fc9afab11bef62e63c1d" category="inline-link-macro">建立儲存的搜尋</block>
+  <block id="708e6da2377236d5fdba15f26dc3eadf" category="paragraph">除了顯示檔案所在的工作環境和磁碟區之外、中繼資料還會顯示更多資訊、包括檔案權限、檔案擁有者、以及此檔案是否有重複的項目。如果您計畫使用此資訊，這項資訊非常實用<block ref="e31c67e4781eca01921238806a0e651d" category="inline-link-macro-rx"></block>，因為您可以看到篩選資料所需的所有資訊。</block>
+  <block id="67737d68864b72c63e2f74e27992ac71" category="admonition">您可以使用本頁提供的「檔案雜湊」值，並直接在「調查」頁面中輸入，隨時搜尋特定的重複檔案，或是在儲存的搜尋中使用該檔案。</block>
+  <block id="15d6f274b3e2c9c50fee5297805bd7d0" category="section-title">根據選取的篩選條件建立儲存的搜尋</block>
+  <block id="51586951624f32f69f3b928cba0173d0" category="paragraph">您可以在「資料調查」頁面中建立常用搜尋篩選的儲存搜尋，以便輕鬆複寫這些搜尋查詢。</block>
+  <block id="064f3515d1ddd57fc2fa8a2f4ef91909" category="list-text">在「資料調查」頁面上，選取您要用來建立儲存搜尋的篩選條件。</block>
+  <block id="5eb846a7b1e1d54f3b18d4bd4573326a" category="list-text">在「篩選」窗格底部，選取 * 從此搜尋建立儲存的搜尋 * 。</block>
+  <block id="8537255c641557154572c329fc69cdf8" category="list-text">輸入儲存搜尋的名稱和說明。</block>
+  <block id="3fa4e71b6c9c6e7df1000aba4aac222f" category="list-text">選取 * 建立儲存的搜尋 * 。</block>
+  <block id="375745e627783aeb215c99a31a08813f" category="admonition">結果可能需要 15 分鐘才能顯示在「儲存的搜尋」頁面上。</block>
+  <block id="88fc2a8ac10191e5b98a67bc9886a8bf" category="admonition">若要在 1.43 版及更新版本中建立自訂分類，請參閱<block ref="a756d19e50a3a2b56dcc07bcc3dd1be2" category="inline-xref-macro-rx"></block>。</block>
+  <block id="f308766a5fb2a6b060e24d82fd98f8a4" category="paragraph">_Data Fusion 可讓您掃描組織的資料，以識別資料庫中的唯一識別碼是否位於任何其他資料來源中。您可以選取資料庫表格中的特定欄或欄，以選擇 BlueXP  分類在其掃描中尋找的其他識別碼。例如、下圖顯示 Fusion 如何使用資料功能來掃描您的磁碟區、儲存庫和資料庫、找出 Oracle 資料庫中所有客戶 ID 的出現情形。</block>
+  <block id="7d6398cfd29c80719b420b6d5a303f4d" category="paragraph">您可以排定最重要的純對映掃描的優先順序，或是對掃描進行對應與分類，以確保先完成高優先順序掃描。</block>
+  <block id="29c15ffcc2bccc722e71606daa052e48" category="list-text">如果您已訂閱分類及保護檔案，則<block ref="2366c206354427dcda3be6923339236d" category="inline-link-macro-rx"></block>可以使用 BlueXP  分類來管理 AIP 標籤。</block>
+  <block id="0959b79de30b89504431013e0aece077" category="list-text">使用儲存的搜尋功能，您可以建立自己的自訂搜尋查詢，只要按一下按鈕，就能輕鬆查看結果。</block>
+  <block id="cc567bbc742f39d182a6b82ce016f5fa" category="inline-link-macro">儲存的搜尋</block>
+  <block id="af1b68eec0a5b97f0bf7b522de5c3fd0" category="cell">建立<block ref="9937a648cd09b9880b5d850846c6a6cc" category="inline-link-macro-rx"></block>可提供自訂搜尋結果的項目</block>
+  <block id="d3c2ae407b41f887c6ec43d35c6d5d1d" category="cell">預先定義的儲存搜尋</block>
+  <block id="7034142182abbd946a14064d9a115c26" category="cell">預設儲存的搜尋</block>
+  <block id="29b76c227002fe0d59cb97d33a0faeb2" category="summary">儲存的搜尋是自訂篩選器，可在「調查」頁面中提供一般要求的規範查詢搜尋結果。BlueXP  分類根據一般要求提供一組預設的儲存搜尋，您也可以自行建立。</block>
+  <block id="bd3a41529bc49b592df10902c99718df" category="doc">使用 BlueXP  分類管理儲存的搜尋</block>
+  <block id="3b330f91942905fd9358ccf088010a7b" category="paragraph">BlueXP  分類支援儲存搜尋查詢。使用儲存的搜尋功能，您可以建立自訂篩選條件，以排序資料調查頁面的常用查詢。BlueXP  分類也包含根據一般要求預先定義的儲存搜尋。</block>
+  <block id="cab50bfa3c1b0c473d5a06102b369f65" category="admonition">在早於 1.43 的 BlueXP  分類版本中，已保存的搜索被稱爲<block ref="d181d1e4d544a4211066b470d1020a95" category="inline-xref-macro-rx"></block>。</block>
+  <block id="4d6dee7b2501600c4b2689bc1cebdb78" category="paragraph">規範儀表板中的 * 儲存搜尋 * 索引標籤會列出此 BlueXP  分類執行個體上所有可用的預先定義和自訂儲存搜尋。</block>
+  <block id="1dc48068205abd4498c6b51623ce236a" category="paragraph">已儲存的搜尋也會顯示在「調查」頁面的篩選清單中。</block>
+  <block id="fe486103d58cea4a39fc7665524d91e6" category="inline-image-macro">BlueXP  分類儀表板中「已儲存的搜尋」索引標籤的螢幕擷取畫面。</block>
+  <block id="dd41d48f516ceca9030eb4c406ca3b2e" category="paragraph"><block ref="dd41d48f516ceca9030eb4c406ca3b2e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c11c94eebf65aa39aa6d92e551d37495" category="section-title">在「調查」頁面中檢視儲存的搜尋結果</block>
+  <block id="4b6b79df55f75139d5245dc368dd69d7" category="paragraph">若要在「調查」頁面中顯示已儲存搜尋的結果，請選取<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定搜尋的按鈕，然後選取 * 調查結果 * 。</block>
+  <block id="01ce7df905c02100d7e171845d5a1d11" category="inline-image-macro">從「神聖搜尋」索引標籤中選取特定搜尋的調查結果的螢幕擷取畫面。</block>
+  <block id="e664b44f91d2913f94b75e8da606bb74" category="paragraph"><block ref="e664b44f91d2913f94b75e8da606bb74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3d060dc50372bab90fa0b80c2aadbfc5" category="section-title">建立自訂儲存的搜尋</block>
+  <block id="2dea09c1d3d4ee9b98ba67f3ee736c6a" category="paragraph">您可以建立自己的自訂儲存搜尋，以提供組織特定查詢的結果。會傳回符合搜尋條件的所有檔案和目錄（共享區和資料夾）結果。</block>
+  <block id="edb2c0af042dce0faebc0fd23a6ea82a" category="list-text">將所有篩選條件設定為您喜歡的特性後，請選取 * 建立儲存的搜尋 * 。</block>
+  <block id="18485bc3e0b2a31412421f44a7d13cd5" category="inline-image-macro">顯示如何將篩選查詢儲存為儲存搜尋的螢幕擷取畫面。</block>
+  <block id="06295084cb3f7c9942a8ae945182ab11" category="paragraph"><block ref="06295084cb3f7c9942a8ae945182ab11" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2b24c965e18291acdf6309cabec1d801" category="list-text">命名儲存的搜尋並新增說明。名稱必須是唯一的。</block>
+  <block id="acc1c25043aba44082aef8a6ae1f7bb7" category="inline-image-macro">螢幕擷取畫面，顯示如何設定儲存的搜尋並加以儲存。</block>
+  <block id="781917d30539d353b2392b65ccd962ee" category="paragraph"><block ref="781917d30539d353b2392b65ccd962ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dcc0446437d20a68ade85cece45a944d" category="paragraph">新儲存的搜尋會出現在儲存的搜尋標籤中。</block>
+  <block id="3abded291c3a14b09750019f607a5b6a" category="section-title">編輯儲存的搜尋</block>
+  <block id="25ab9ca41b65162f7d35a80b0fc2b62f" category="paragraph">您可以修改自訂建立的儲存搜尋條件，以變更查詢（使用篩選器定義的項目）以新增或移除特定參數。</block>
+  <block id="f2fb75e2f90578baaf8bd1c45bde6750" category="paragraph">您無法修改預設的儲存搜尋。</block>
+  <block id="8d5758ea88aa628e96b2a9850a9a3e84" category="list-text">從「儲存的搜尋」頁面中，選取 * 編輯儲存的搜尋 * 以取得您要變更的搜尋。</block>
+  <block id="58fd62d6cd14d93ae1f32c61f323f99b" category="inline-image-macro">顯示「編輯儲存的搜尋」的螢幕擷取畫面。</block>
+  <block id="800f72354e7a5ac3462a802bf4f659e0" category="paragraph"><block ref="800f72354e7a5ac3462a802bf4f659e0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b8c30944f6cac36547bcb3821964aeb1" category="list-text">變更名稱和說明欄位。若要僅變更這些欄位，請選取 * 儲存 * 。</block>
+  <block id="78b0d515ab4a6a13088dd6bd09b0146e" category="inline-image-macro">選取「編輯儲存的搜尋」頁面上的「編輯查詢」按鈕的螢幕擷取畫面。</block>
+  <block id="e25b5282c5072b0a5171d238083a696e" category="paragraph"><block ref="e25b5282c5072b0a5171d238083a696e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="60f69955f740d1c69cb05d0a389fa16f" category="section-title">刪除儲存的搜尋</block>
+  <block id="c3f66c3ed396df4f45cc4a2247c6ff1a" category="paragraph">如果您不再需要任何自訂儲存的搜尋，您可以將其刪除。您無法刪除預設的儲存搜尋</block>
+  <block id="0fa5b5589241b6543c9b17d2f21e75ca" category="paragraph">若要刪除儲存的搜尋，請選取<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定搜尋的按鈕，選取 * 刪除儲存的搜尋 * ，然後在確認對話方塊中再次選取 * 刪除搜尋 * 。</block>
+  <block id="c073cb4c943cd12dd3dc252f8b94f4f4" category="section-title">預設搜尋</block>
+  <block id="408f496a5a85521adc16cc6b351cc71a" category="paragraph">BlueXP  分類提供下列系統定義的搜尋查詢：</block>
+  <block id="e2824fba3c46b207f277094775a6de03" category="list-text">** 資料主旨名稱 - 高風險 **</block>
+  <block id="2c2426ec28fe38c5a3d7589069fe8265" category="paragraph">資料主旨名稱超過 50 個的檔案</block>
+  <block id="98082caf654b3a87faa12c97d6e5fef0" category="list-text">** 電子郵件地址 - 高風險 **</block>
+  <block id="195ca90a6bdb7a590918ea6359e71f01" category="paragraph">超過 50 個電子郵件地址或資料庫欄的檔案，其列中有 50% 以上包含電子郵件地址</block>
+  <block id="0e7fbf33b52073f6bc8f18d55796a211" category="list-text">** 個人資料 - 高風險 **</block>
+  <block id="5197b44c8d7d1e69dc7e95558ebe5b62" category="paragraph">超過 20 個個人資料識別碼或資料庫欄位的檔案，其列中超過 50% 包含個人資料識別碼</block>
+  <block id="a89e4564535d2510e52bd6e6d1c99ac0" category="list-text">** 私有資料 - 7 年內過期 **</block>
+  <block id="f7eca6ddef457d0fdf1335d5c4ada293" category="paragraph">包含個人或敏感個人資訊的檔案，上次修改時間超過 7 年</block>
+  <block id="967750771e3d93ad96804feaaa489729" category="list-text">** 保護 - 高 **</block>
+  <block id="53532655a36720e6e89d0ee34a4b6bb5" category="paragraph">包含密碼，信用卡資訊， IBAN 號碼或社會安全號碼的檔案或資料庫欄</block>
+  <block id="c5bcbe698a08e29f3a73f73b33178fe7" category="list-text">** 保護 - 低 **</block>
+  <block id="8942b8664e055291e5e39d816e5d46e7" category="paragraph">超過 3 年未存取的檔案</block>
+  <block id="7b67d7b1e7fb500aff7c6f34e99b281b" category="list-text">** 保護 - 中 **</block>
+  <block id="6c15cae74da0ae1c51b06ea41b437e7d" category="paragraph">包含具有個人資料識別碼的檔案或資料庫欄，包括 ID 號碼，稅務識別碼，駕照號碼，藥用 ID 或護照號碼</block>
+  <block id="67b38a87fd423cd16109e7aa22a63937" category="list-text">** 敏感個人資料 - 高風險 **</block>
+  <block id="375ac9949171e44e5a3bcb3367e9d309" category="paragraph">超過 20 個敏感個人資料識別碼或資料庫欄位的檔案，其列中含有敏感個人資料的資料超過 50%</block>
+  <block id="e48502083eb8949c8f65b2ccddd5adec" category="section-title">2025 年 12 月 5 日</block>
+  <block id="60be04fe141df250bce893e57d19600d" category="sidebar">建立儲存的搜尋</block>
+  <block id="cbace44a9d78dedfcb62fa58fee0378f" category="sidebar">建立自訂掃描</block>
 </blocks>

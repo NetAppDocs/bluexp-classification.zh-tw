@@ -1,0 +1,41 @@
+= 版本 1.43
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.43
+
+此 BlueXP  分類版本包括：
+
+.排定分類掃描的優先順序
+BlueXP  分類現在可讓您在僅對應掃描之外，設定地圖和分類掃描的優先順序，讓您選擇先完成哪些掃描。在掃描開始期間和之前，都支援排列地圖和分類掃描的優先順序。如果您選擇在掃描進行期間排定優先順序，則對應和分類掃描都會排定優先順序。
+
+如需更多資訊、請參閱 link:task-managing-repo-scanning.html#prioritize-scans["排定掃描的優先順序"]。
+
+.支援加拿大個人識別資訊（ PII ）資料類別
+BlueXP  分類掃描現在可識別加拿大 PII 資料類別，以取得所有省 / 地區的銀行資訊，護照號碼，社會保險號碼，以及駕照號碼和健康卡號碼。
+
+如需更多詳細資訊xref:reference-private-data-categories.adoc#types-of-personal-data[個人資料類別]，請參閱。
+
+.自訂分類（預覽）
+BlueXP  分類現在支援自訂地圖分類和分類掃描。使用自訂分類，您可以量身打造 BlueXP  掃描，以擷取組織專屬的資料，確保符合規則運算式。此功能目前正在預覽中。
+
+如需更多資訊、請參閱 xref:task-custom-classification.adoc[新增自訂分類]。
+
+.儲存的搜尋索引標籤
+**Policies ** 選項卡已重命名xref:task-using-policies.html[** 儲存的搜尋 **]。功能相同。
+
+.傳送掃描事件至稽核記錄
+BlueXP  掃描事件現在可以傳送至xref:task-audit-data-sense-actions.html[稽核日誌]。BlueXP  分類也支援傳送分類事件（當掃描開始及結束時）至link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["BlueXP  時間表"^]。只有工作環境才支援將分類掃描事件傳送至 BlueXP  時間表。
+
+.安全性更新
+* Keras 套件已更新，可減輕資訊安全風險（ BDSA-2025-0107 和 BDSA-2025-1984 ）。
+* Docker Container 組態已更新。容器不再能夠存取主機的網路介面來連接原始網路封包。透過減少不必要的存取，此更新可降低潛在的安全風險。
+
+
+.效能增強
+已實作程式碼增強功能，以減少 RAM 使用量，並改善 BlueXP  分類的整體效能。
+
+.錯誤修正
+導致 StorageGRID 掃描失敗的錯誤，無法載入調查頁面篩選選項，以及無法下載大量評估的資料探索評估已修正。
