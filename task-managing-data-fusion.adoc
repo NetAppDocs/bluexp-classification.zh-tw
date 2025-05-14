@@ -144,7 +144,7 @@ image:screenshot_add_keywords_result.png["在「調查結果」窗格中顯示�
 如果您需要建置規則運算式的協助，請參閱 https://regex101.com/["規則運算式 101."^]。選擇 *Python* 以查看結果類型 BlueXP 分類將與規則運算式相符。也可以 https://pythonium.net/regex["Python Regex 測試器頁面"^]透過顯示圖樣的圖形表示方式來使用。
 
 
-NOTE: 目前我們不允許在建立 regex 時使用模式旗標、這表示您不應該使用「 / 」。
+NOTE: BlueXP  分類在建立 regex 時不支援模式旗標。這表示您不應使用「 / 」。
 
 .步驟
 . 從「_Classification settings」（_分類設定_）索引標籤中、按一下「* Add New Classifier*」（*新增分類器*）以啟動「_Add Custom Classifier.

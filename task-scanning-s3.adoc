@@ -218,8 +218,8 @@ image:screenshot_iam_create_role.gif["用來建立IAM角色的AWS頁面快照。
 
 . 移至 BlueXP 分類執行個體所在的來源 AWS 帳戶、然後選取附加至執行個體的 IAM 角色。
 +
-.. 將 * 最大 CLI/API 工作階段持續時間 * 從 1 小時變更為 12 小時、並儲存變更。
-.. 按一下「 * 附加原則 * 」、然後按一下「 * 建立原則 * 」。
+.. 將 * 最長 CLI/API 工作階段持續時間 * 從 1 小時變更為 12 小時。儲存變更。
+.. 選擇 * 附加原則 * ，然後 * 建立原則 * 。
 .. 建立包含「STS:AssumeRole」動作的原則、並指定您在目標帳戶中所建立角色的ARN。
 +
 [source, json]
@@ -248,11 +248,11 @@ image:screenshot_iam_create_role.gif["用來建立IAM角色的AWS頁面快照。
 }
 ----
 +
-BlueXP 分類執行個體設定檔帳戶現在可以存取額外的 AWS 帳戶。
+BlueXP  分類執行個體設定檔帳戶可存取額外的 AWS 帳戶。
 
 
 
-. 移至「* Amazon S3 Configuration *」頁面、隨即顯示新的AWS帳戶。請注意、 BlueXP 分類可能需要幾分鐘的時間、才能同步新帳戶的工作環境並顯示此資訊。
+. 瀏覽至 * Amazon S3 組態 * 頁面，隨即顯示新的 AWS 帳戶。請注意、 BlueXP 分類可能需要幾分鐘的時間、才能同步新帳戶的工作環境並顯示此資訊。
 +
 image:screenshot_activate_and_select_buckets.png["顯示如何啟動 BlueXP 分類的螢幕擷取畫面。"]
 

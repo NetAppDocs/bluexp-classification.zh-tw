@@ -47,7 +47,6 @@
   <block id="dfd993077bb353282906702dc3143ec7" category="list-text">* NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP Connector 系統之間同步時間。</block>
   <block id="2808185c0a48de3cd5dcc0d92f453531" category="doc">版本 1.35</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="paragraph-title">掃描 StorageGRID 資料</block>
-  <block id="83bceb987dd495cde1a148944580e473" category="paragraph">BlueXP  分類現在可以掃描 StorageGRID 中的資料。</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">如需詳細資訊、請 <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>參閱。</block>
   <block id="5413a43995a4a97a249b7b24fbf3e785" category="doc">版本 1.36</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="paragraph-title">支援 RHEL 9.4</block>
@@ -105,10 +104,7 @@
   <block id="bc2de28feb42e568f3e122df8d001559" category="summary">BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
   <block id="a686d5fa6b6925450f1b7fa2b4245d28" category="doc">瞭解 BlueXP 分類</block>
   <block id="87fce6273ae6270f06beebf56898bc70" category="paragraph">BlueXP 分類（ Cloud Data Sense ）是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。</block>
-  <block id="279ac5dd73c3a5783ebeb10e172c4f38" category="paragraph">重要</block>
   <block id="9b17860ccc87d28d839931769a5af6ee" category="inline-link-macro">請參閱過時功能的清單</block>
-  <block id="e8f4baffb4918527d8701a12a84b8d92" category="paragraph"><block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>。</block>
-  <block id="705e8077ff3af41dc9b8a84050d869d1" category="paragraph">使用舊版 1.30 或更早版本的使用者將繼續使用該版本、直到其訂閱到期為止。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
   <block id="71e39030d4b3b241d51a6ce6c9ce8bd7" category="paragraph">BlueXP 分類使用人工智慧（ AI ）、自然語言處理（ NLP ）和機器學習（ ML ）來瞭解它所掃描的內容、以便擷取實體並據此分類內容。這可讓 BlueXP 分類提供下列功能領域。</block>
   <block id="84869a8fd0e55b1142c336faf2aa6794" category="inline-link">深入瞭解 BlueXP 分類的使用案例</block>
@@ -150,7 +146,6 @@
   <block id="0db2daf3d07a81feeb571f78c0af87fa" category="list-text">SQL Server （ MSSQL ）</block>
   <block id="33131c83033941e511576a90476300a6" category="paragraph">BlueXP 分類支援 NFS 3.x 、 4.0 和 4.1 版、以及 CIFS 1.x 、 2.0 、 2.1 和 3.0 版。</block>
   <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
-  <block id="1d4f5c4d2298eeba0567ba65029151d4" category="paragraph">BlueXP 分類現在可以免費使用。不需要分類授權或付費訂閱。</block>
   <block id="bcf2e25b0a67b74f2ef04fa33cb52b61" category="section-title">基礎架構成本</block>
   <block id="73e82d6326f541ace82886b5c0cd44eb" category="inline-xref">為每個雲端供應商部署的執行個體類型</block>
   <block id="79de69a9c27339b7e2c0888ade6a7ff9" category="list-text">在雲端中安裝 BlueXP 分類需要部署雲端執行個體、這會導致部署雲端的雲端供應商收取費用。請參閱。 <block ref="a640e98c8584c0b162d717c76dd083cd" category="inline-xref-macro-rx"></block>如果您在內部部署系統上安裝 BlueXP 分類、則不需支付任何費用。</block>
@@ -1212,7 +1207,6 @@
   <block id="3080c7bbf6707274907b8ec2e97fb7a8" category="list-text">如果您使用Proxy存取網際網路：</block>
   <block id="872a9ee7c158e8dd5094c5c93dcffc57" category="list-text">您需要Proxy伺服器資訊（IP位址或主機名稱、連線連接埠、連線配置：HTTPS或http、使用者名稱和密碼）。</block>
   <block id="60e3e1e8b520c28183ebe86bd433deda" category="list-text">如果 Proxy 正在執行 TLS 攔截、您必須知道儲存 TLS CA 憑證的 BlueXP 分類 Linux 系統路徑。</block>
-  <block id="48439ae905464923337d7464952d3315" category="list-text">Proxy 必須是非透明的、我們目前不支援透明的 Proxy 。</block>
   <block id="b9a11b90960ff803269429887ab4cff3" category="list-text">使用者必須是本機使用者。不支援網域使用者。</block>
   <block id="d66d1b16789175829b23ed7e745d66dd" category="list-text">驗證您的離線環境是否符合所需的<block ref="9eb48ce3a280aa134b4c3aab7ed78a68" category="inline-xref-macro-rx"></block>。</block>
   <block id="2fdc544d6ce29e3a29dd3b9cb532c792" category="list-text">從下載 BlueXP  分類軟體<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。您應該選取的檔案名稱為* datASENSE-installer-ze.tar.gz*&lt;version&gt; 。</block>
@@ -1749,7 +1743,6 @@
   <block id="d4da00138f887427e0760f21c97fa0cf" category="inline-link">規則運算式 101.</block>
   <block id="f535e41ec22971f3dc912b4a0c3e1502" category="inline-link">Python Regex 測試器頁面</block>
   <block id="2858913580d22c83f2ed3c5bf98afa04" category="paragraph">如果您需要建置規則運算式的協助，請參閱<block ref="44042c0043421e388aa50c9206936192" category="inline-link-rx"></block>。選擇 *Python* 以查看結果類型 BlueXP 分類將與規則運算式相符。也可以<block ref="16efc9dbee1da4ffa610197a33616f3b" category="inline-link-rx"></block>透過顯示圖樣的圖形表示方式來使用。</block>
-  <block id="c010468930979e106d9f7ed3eb1af1fb" category="admonition">目前我們不允許在建立 regex 時使用模式旗標、這表示您不應該使用「 / 」。</block>
   <block id="e847e3f6aa6025fb9b99c6a029827fc3" category="paragraph">您輸入的名稱會顯示在 BlueXP 分類 UI 中、做為符合分類器需求的掃描檔案標題、並顯示為「調查」頁面中的篩選名稱。您也可以勾選「遮罩系統中偵測到的結果」方塊、使完整結果不會出現在UI中。例如、您可能想要隱藏完整的信用卡號碼或類似的個人資料。</block>
   <block id="0931f142421f2e217723300078e3b8b7" category="paragraph"><block ref="0931f142421f2e217723300078e3b8b7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dfc0ae4804b6b33aec281efa7221c9f8" category="list-text">在「選取資料分析工具」頁面中、選取*自訂規則運算式*做為定義類別器的方法、然後按一下*下一步*。</block>
@@ -1952,7 +1945,6 @@
   <block id="209f3dabc722accc7b4db77a133ef209" category="list-text">* 初始化 * （淺藍色點）：地圖或分類組態已啟動。這會在開始「擱置佇列」狀態之前顯示數秒。</block>
   <block id="fbbc6bcf9c53aaad4b5476065f315bb1" category="list-text">* 擱置佇列 * （橘色點）：掃描工作正在等待列在掃描佇列中。</block>
   <block id="ea7971f9c02e5fa9234d7af5cd0b34c7" category="list-text">* 佇列 * （橘色點）：工作已成功新增至掃描佇列。當磁碟區在佇列中的轉彎到達時、系統會開始對其進行對應或分類。</block>
-  <block id="863f25b6c394057a4286fa671cfd048b" category="list-text">* 執行中 * （綠點）：目前正在選取的儲存儲存儲存庫上執行佇列中的掃描工作。</block>
   <block id="1110cfca2e7c6a5f3e560597c03abeab" category="list-text">* 完成 * （綠點）：儲存儲存儲存庫的掃描已完成。</block>
   <block id="da30b4408b5e1540ac02763204c943ad" category="list-text">* 暫停 * （灰點）：您選擇了「暫停」選項來暫停掃描。雖然系統中不會顯示 Volume 的變更、但仍會顯示掃描的深入資訊。</block>
   <block id="7eac8ad7bb67a204924dcc6a4113f103" category="list-text">* 錯誤 * （紅點）：掃描無法完成、因為發生問題。如果您需要完成某項動作、錯誤會出現在工具提示的「必要動作」欄下方。否則、系統會顯示「錯誤」狀態並嘗試恢復。完成時、狀態會變更。</block>
@@ -2252,7 +2244,6 @@
   <block id="8263235be1a4b9bb6cc92b057406f2e5" category="inline-link-macro">從 BlueXP 分類中刪除 Google Drive 帳戶</block>
   <block id="3ef1f7ef6e40406c6da9ebbf30881295" category="paragraph">由於只有單一使用者的 Google 雲端硬碟檔案屬於單一 Google 雲端硬碟帳戶的一部分，因此如果您想要停止從使用者的 Google 雲端硬碟帳戶掃描檔案<block ref="5f8a68577631fb4846e68096e5a718cb" category="inline-link-macro-rx"></block>，您應該。</block>
   <block id="3cdb36967a02a71e0d639c6d71d16ac3" category="summary">請完成幾個步驟、以 BlueXP 分類直接開始掃描物件儲存區內的資料。BlueXP 分類可以掃描使用簡易儲存服務（ S3 ）傳輸協定的任何物件儲存服務的資料。其中包括 NetApp StorageGRID 、 IBM Cloud Object Store 、 Linode 、 B2 Cloud Storage 、 Amazon S3 等。</block>
-  <block id="fec0b5d2f5737f21e60a6e49ddb4e55f" category="paragraph">* 注意 * 使用核心 BlueXP  的 BlueXP  分類、您現在可以掃描 StorageGRID 資料。請參閱<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。此處的其餘資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。</block>
   <block id="9c2468c732c2a3c37f5718ed3927f188" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>檢閱物件儲存必要條件</block>
   <block id="fd28e251418a49d4390ec8a9b6592efc" category="paragraph">您需要有端點URL才能連線至物件儲存服務。</block>
   <block id="ab799d9194a97ef175cc77104273ab42" category="paragraph">您需要物件儲存供應商提供的存取金鑰和秘密金鑰、以便 BlueXP 分類能夠存取這些庫位。</block>
@@ -2260,11 +2251,9 @@
   <block id="53ab1a83968fb0e47aaf2604fd097f22" category="paragraph">將物件儲存服務新增至 BlueXP 分類。</block>
   <block id="0cf30da5b3284b65f1bd1464a838ef7e" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block>選取要掃描的貯體</block>
   <block id="52f14d27aed58bd63ec13b8bfc948c58" category="paragraph">選擇您要掃描的貯體、 BlueXP 分類將開始掃描它們。</block>
-  <block id="763a21e3ec238bca68eb25847cf75843" category="section-title">檢閱物件儲存需求</block>
   <block id="bb0a1704cdb3aa4652bac58b0632ab23" category="section-title">部署 BlueXP 分類執行個體</block>
   <block id="a9dd30151c7008ee5251686104cfa16e" category="paragraph">如果您要掃描可透過網際網路存取的 S3 物件儲存設備中的資料，您可以<block ref="8faa540c15177bc62b151869f0948a64" category="inline-link-macro-rx"></block>或<block ref="15df3adeb2abcc06430d6dc64cee819e" category="inline-link-macro-rx"></block>。</block>
   <block id="4375ee40e1ca16fdfd2b33b0cda0950b" category="paragraph">如果您正在掃描安裝在沒有網際網路存取的黑暗網站上的 S3 物件儲存設備中的資料，則需要執行<block ref="3beeea1c5d12940092999048e1c30313" category="inline-link-macro-rx"></block>。這也需要在同一個內部部署位置部署BlueXP Connector。</block>
-  <block id="56ae4518d3461ca7113dcd16c3bba1b2" category="section-title">將物件儲存服務新增至 BlueXP 分類</block>
   <block id="0065ab04ebf28ab82ddb160d51d486e6" category="paragraph">新增物件儲存服務。</block>
   <block id="58dc807771e7cb80307d5179257d8cf5" category="list-text">在「工作環境組態」頁面中、按一下「*新增資料來源*」&gt;「*新增物件儲存服務*」。</block>
   <block id="2ae3db9ae42d46e9ee88cc1d2d220b4c" category="paragraph"><block ref="2ae3db9ae42d46e9ee88cc1d2d220b4c" category="inline-image-macro-rx" type="image"></block></block>
@@ -2275,7 +2264,6 @@
   <block id="0c4f4678d993733c2bd7d96ae60765f7" category="inline-image-macro">對話方塊的快照、您可在其中輸入值以存取物件儲存服務。</block>
   <block id="03f9825aedaceb15d936539d5826b1bc" category="paragraph"><block ref="03f9825aedaceb15d936539d5826b1bc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b759adaed99740d09f74e6100b8e27ba" category="paragraph">新的物件儲存服務會新增至工作環境清單。</block>
-  <block id="eee95a219b81e97bc6cd4730c01adbe3" category="section-title">啟用及停用物件儲存桶上的法規遵循掃描</block>
   <block id="5f7d2531317684863a8928345cd2c72a" category="paragraph">在物件儲存服務上啟用 BlueXP 分類之後、下一步是設定您要掃描的儲存區。BlueXP 分類會探索這些貯體、並在您建立的工作環境中顯示這些貯體。</block>
   <block id="dd5853b89ec447e9d731b556d5117bd6" category="list-text">在「組態」頁面中、按一下「物件儲存服務」工作環境中的*組態*。</block>
   <block id="3a1e5c5f142364cc7ce3c01995fb5473" category="inline-image-macro">按一下工作環境的「組態」以選擇您要掃描的儲存區的快照。</block>
@@ -2388,10 +2376,7 @@
   <block id="4d73a075dbf1c56303ccda451f26cc3a" category="list-text">將 * 最大 CLI/API 工作階段持續時間 * 從 1 小時變更為 12 小時、並儲存變更。</block>
   <block id="bf900745b27a9974d0ab2716c4bd344b" category="list-text">附加 BlueXP 分類 IAM 原則。請確定它擁有所需的權限。</block>
   <block id="4597627cb1a7d2c232d7dccad558ecc5" category="list-text">移至 BlueXP 分類執行個體所在的來源 AWS 帳戶、然後選取附加至執行個體的 IAM 角色。</block>
-  <block id="d7bd77c61ee265322fab9869a5ec2219" category="list-text">按一下「 * 附加原則 * 」、然後按一下「 * 建立原則 * 」。</block>
   <block id="fa35ffe79ce8cfa3c54cab66d30042aa" category="list-text">建立包含「STS:AssumeRole」動作的原則、並指定您在目標帳戶中所建立角色的ARN。</block>
-  <block id="610a92d28e43a9b9b43a80355ed30a91" category="paragraph">BlueXP 分類執行個體設定檔帳戶現在可以存取額外的 AWS 帳戶。</block>
-  <block id="e69e174193783e78e5a975c45a55a239" category="list-text">移至「* Amazon S3 Configuration *」頁面、隨即顯示新的AWS帳戶。請注意、 BlueXP 分類可能需要幾分鐘的時間、才能同步新帳戶的工作環境並顯示此資訊。</block>
   <block id="5ddf3d39694a5e23e1408c6a384f7690" category="inline-image-macro">顯示如何啟動 BlueXP 分類的螢幕擷取畫面。</block>
   <block id="1069eb13437b93173072d2dc7525f109" category="paragraph"><block ref="1069eb13437b93173072d2dc7525f109" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0a8fba705f708c47d0163310db2499dc" category="list-text">按一下 * 啟動 BlueXP 分類與選取庫位 * 、然後選取您要掃描的庫位。</block>
@@ -2597,7 +2582,6 @@
   <block id="f38e65de4ce9c990f949a6ec4d679e75" category="paragraph">BlueXP 分類可在某些關鍵原則傳回結果時、將電子郵件警示傳送給帳戶中的 BlueXP 使用者、讓您收到保護資料的通知。您可以選擇每天、每週或每月傳送電子郵件通知。您也可以選擇將電子郵件警示傳送至任何其他電子郵件地址（最多20個電子郵件地址）、而非在您的BlueXP帳戶中。</block>
   <block id="7b58cd26f9f4676d5e7fb384e4fd3990" category="paragraph">您可以在建立原則或編輯任何原則時設定此設定。</block>
   <block id="b1b39ff951119dbc880b7e58c9b4a20d" category="paragraph">請依照下列步驟、將電子郵件更新新增至現有原則。</block>
-  <block id="3c3de0aaf926f01f683c589f53bc3c61" category="list-text">在「原則清單」頁面中、按一下 * 編輯 * 以取得您要新增（或變更）電子郵件設定的原則。</block>
   <block id="f154ff37f26bd2fd659d7f91a7811456" category="inline-image-macro">顯示如何編輯現有原則的螢幕擷取畫面。</block>
   <block id="a5413bbfccb4a705e3449d1ed68885e6" category="paragraph"><block ref="a5413bbfccb4a705e3449d1ed68885e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0f45f5e9392cad0f6f0647364c3255a6" category="list-text">在「編輯原則」頁面中：</block>
@@ -2605,8 +2589,6 @@
   <block id="abf0f7e6ece371db4b19fea5e49a4de2" category="list-text">如果您想要將通知電子郵件傳送給其他使用者、請勾選「傳送電子郵件」方塊、選擇電子郵件傳送的時間間隔、然後輸入最多20個電子郵件地址。</block>
   <block id="ba7f20906bacf4fde87c14d7628aaec2" category="inline-image-macro">螢幕快照顯示如何選擇要傳送給原則的電子郵件條件。</block>
   <block id="9cc0943710c206f20a91720ffe09f7bf" category="paragraph"><block ref="9cc0943710c206f20a91720ffe09f7bf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c6c5f991e4c7c528d0820b49c9f25a83" category="list-text">按一下 * 儲存原則 * 、傳送電子郵件的時間間隔會顯示在原則說明中。</block>
-  <block id="43389b2e24ac398a192138fd526fdba4" category="paragraph">如果原則有任何結果、則會立即傳送第一封電子郵件、但只有在任何檔案符合原則條件時才會傳送。通知電子郵件中不會傳送任何個人資訊。電子郵件指出有符合原則條件的檔案、並提供原則結果的連結。</block>
   <block id="58471452eb2d1a8a501510aba48d9a3f" category="section-title">使用原則自動刪除來源檔案</block>
   <block id="9b1a6cef9d9c4c8a2827dbad6747aa84" category="paragraph">您可以建立自訂原則來刪除符合原則的檔案。例如、您可能想要刪除包含敏感資訊、並在過去 30 天內被 BlueXP 分類發現的檔案。</block>
   <block id="809f64202f1380bfa162de2b48ae05c0" category="paragraph">只有帳戶管理員可以建立原則來自動刪除檔案。</block>
@@ -2718,8 +2700,6 @@
   <block id="1b4f4b549e0860b1392190bfc2a23f81" category="paragraph"><block ref="1eef614f77c6908f78f84cb1847e2ab8" category="inline-link-rx"></block>。</block>
   <block id="c630754f942c555264fff115d6b5e9b2" category="section-title">2024 年 1 月 10 日</block>
   <block id="536149161458a7a77ae5b72258f34e48" category="section-title">版本 1.27</block>
-  <block id="be8658cdca9524eb49f00560785f3ab7" category="paragraph-title">調查頁面結果現在除了顯示項目總數之外、還會顯示總大小</block>
-  <block id="81b243d81f786faa99d42ef659adac3a" category="paragraph">「調查」頁面中的篩選結果現在除了顯示檔案總數之外、還會顯示項目的總大小。這有助於移動檔案、刪除檔案等。</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="paragraph-title">將其他群組 ID 設定為「開放給組織」</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link">新增其他群組 ID 為「開放給組織」</block>
   <block id="a6523313c047adabe12f8226b1c17a58" category="paragraph">現在您可以在 NFS 中設定群組 ID 、以便直接從 BlueXP 分類中將其視為「開放組織」、如果群組一開始沒有設定該權限。任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示為「開放給組織」。請參閱如何<block ref="1de46bddc056a512b561c93990312fff" category="inline-link-rx"></block>。</block>
@@ -2936,12 +2916,9 @@
   <block id="8e66898002589c26f968e6fd94a57988" category="list-text">若要重試所有失敗的掃描，請選取 * 重試所有掃描 * 。</block>
   <block id="a2cf857a70e312df7b376e0516470728" category="list-text">若要重試特定掃描，請選取資源，然後從「動作 ... 」選項中選取「 * 重試掃描 * 」。</block>
   <block id="e59c558837a0bee73ac15f544f275cae" category="paragraph">掃描會以與原始掃描相同的組態重試。如果掃描再次失敗，您可以視需要重試多次。</block>
-  <block id="03b61f1818fbb0c7e0a356c942abdc31" category="paragraph">依預設，掃描會根據其啟動順序排入佇列。現在您可以將掃描排定優先順序，將掃描移到佇列的最前面。可以優先處理多個掃描。優先順序是以先出的順序指定，也就是您優先處理的第一次掃描會移到佇列前方；您優先處理的第二次掃描會成為佇列中的第二次掃描，依此類推。</block>
   <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">優先順序是一次性授予。自動重新掃描對應資料會依預設順序進行。</block>
   <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">僅對應掃描</block>
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">重試所有掃描</block>
-  <block id="06243660aeb549bac73e7c160d2d2a70" category="paragraph">BlueXP  分類現在支援批次重試所有失敗掃描的功能。</block>
-  <block id="18dfe95c4c66dde6d275ff14f1c99ea9" category="paragraph">您現在可以使用「 ** 全部重試」功能，在批次作業中重新嘗試掃描。如果分類掃描因網路中斷等暫時性問題而失敗，您可以使用單一按鈕同時重試所有掃描，而無需個別重試。掃描可視需要重試多次。</block>
   <block id="c50aaae687f0c98cc88e1445aecee2d4" category="paragraph">若要重試所有掃描：</block>
   <block id="b12f5b59c684a779545a1b1213dd66bc" category="paragraph">您可以在 BlueXP  分類中執行兩種類型的掃描：</block>
   <block id="942a04054c6b1ae7f7628fd51272bc4f" category="cell">對應及分類掃描</block>
@@ -2994,7 +2971,6 @@
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="doc">版本 1.41</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">此 BlueXP  分類版本包含一般改良功能和錯誤修正。其中也包括：</block>
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">掃描狀態</block>
-  <block id="9f4be2ee88f8d600b3db6a9021b88d97" category="paragraph">BlueXP  分類現在會追蹤捲上 _initial_ 對應和分類掃描的即時進度。獨立的漸進式長條可追蹤對應和分類掃描，顯示掃描的檔案總數百分比。您也可以將游標暫留在進度列上，以檢視掃描的檔案數和檔案總數。追蹤掃描狀態可深入瞭解掃描進度，讓您更妥善地規劃掃描並瞭解資源分配。</block>
   <block id="dea24de819351c63f66685576d21ee25" category="paragraph">若要檢視掃描的狀態，請瀏覽至 BlueXP  分類中的「 ** 組態 ** 」，然後選取「 ** 工作環境組態 ** 」。每個磁碟區的進度會以行顯示。</block>
   <block id="126d0a183cd7ef5a42d98232cfc78c9e" category="admonition">您只能在「資料調查」頁面上檢視掃描的前 10 ， 000 個結果或 500 個頁面。</block>
   <block id="9fb67493aa2d989d001de2e7c4462b4e" category="paragraph">若要檢視可存取檔案或目錄的所有使用者或群組清單，以及其擁有的權限類型，請選取 * 檢視所有權限 * 。此按鈕僅適用於 CIFS 共用資料。</block>
@@ -3058,7 +3034,6 @@
   <block id="81aef4d88b3543fe7ce12740f599c026" category="paragraph">檔案會分割成具有固定列數或記錄數的檔案：</block>
   <block id="65c07610fb212d644f234075537bbc84" category="list-text">CSV - 200,000 筆記錄</block>
   <block id="8897cd6292ab12bb81d8704c400fca96" category="list-text">JSON - 100,000 筆記錄</block>
-  <block id="717dba055ce0e5275de4fbe6a15bb3f7" category="paragraph">從 2024 年 5 月開始、 BlueXP 分類為 BlueXP 的核心功能、無需額外付費。不需要分類授權或訂閱。我們已將 BlueXP  分類功能重點放在 NetApp 儲存系統上，因此部分未使用或未充分使用的功能已被淘汰。</block>
   <block id="781c4c76cc2b33e7ebecd0ec7ae9a2c7" category="section-title">BlueXP  分類掃描的運作方式</block>
   <block id="474cf46df0c1e9c8d98c2f529a0b080b" category="paragraph">在高層級的 BlueXP  分類掃描中，其運作方式如下：</block>
   <block id="20d2a2e8543925af69154c91d0f12b74" category="list-text">您可以在一或多個資料來源上啟用高階對應（稱為「僅對應」掃描）或深度層級掃描（稱為「地圖與分類」掃描）。</block>
@@ -3315,9 +3290,7 @@
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">版本 1.42</block>
   <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">此 BlueXP  分類版本包括：</block>
   <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">大量掃描工作環境</block>
-  <block id="57e954d06c81eea089fcb04e61b1c429" category="paragraph">BlueXP  分類現在支援工作環境的大量作業。您可以選擇啟用「對應掃描」，啟用「對應和分類掃描」，停用掃描，或在工作環境中跨磁碟區建立自訂組態。如果您為個別的 Volume 進行選擇，則會覆寫大量選擇。若要執行大量作業，請瀏覽至「 ** 組態 ** 」頁面並進行選擇。</block>
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">請在本機下載調查報告</block>
-  <block id="a8539b02096aea65d2e102c01a482c71" category="paragraph">BlueXP  分類現在支援從本機下載資料調查報告，以便在瀏覽器中檢視。如果您選擇本機選項，則資料調查只能以 CSV 格式進行，而且只會顯示前 10 ， 000 列的資料。</block>
   <block id="95403a677c140fea03f157c2edb41c85" category="paragraph">如需更多資訊、請參閱 <block ref="55ff936b35b23a6f6693627bfb444c62" category="inline-link-macro-rx"></block>。</block>
   <block id="84acc1c8e6e80bda04b6eac437f19154" category="admonition">您可以下載 CSV 檔案的版本，以在此瀏覽器中檢視。此版本的記錄上限為 10 ， 000 筆。</block>
   <block id="05035e3bc31af3e060bb6a5ed03e7988" category="list-text">輸入一個 ** 報告名稱 ** 。</block>
@@ -3375,13 +3348,10 @@
   <block id="422ba0edf6ed9e7533f09398a27021dc" category="admonition">此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">版本 1.43</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">排定分類掃描的優先順序</block>
-  <block id="0dc348cb820b479010800e3c6cddc127" category="paragraph">BlueXP  分類現在可讓您在僅對應掃描之外，設定地圖和分類掃描的優先順序，讓您選擇先完成哪些掃描。在掃描開始期間和之前，都支援排列地圖和分類掃描的優先順序。如果您選擇在掃描進行期間排定優先順序，則對應和分類掃描都會排定優先順序。</block>
   <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">支援加拿大個人識別資訊（ PII ）資料類別</block>
-  <block id="25afe4e8f395663d2442297e33aa8a20" category="paragraph">BlueXP  分類掃描現在可識別加拿大 PII 資料類別，以取得所有省 / 地區的銀行資訊，護照號碼，社會保險號碼，以及駕照號碼和健康卡號碼。</block>
   <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">個人資料類別</block>
   <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">如需更多詳細資訊<block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>，請參閱。</block>
   <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">自訂分類（預覽）</block>
-  <block id="e43dc9231ca750651c1b2d09176b0bc3" category="paragraph">BlueXP  分類現在支援自訂地圖分類和分類掃描。使用自訂分類，您可以量身打造 BlueXP  掃描，以擷取組織專屬的資料，確保符合規則運算式。此功能目前正在預覽中。</block>
   <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">新增自訂分類</block>
   <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">如需更多資訊、請參閱 <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>。</block>
   <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">儲存的搜尋索引標籤</block>
@@ -3504,5 +3474,37 @@
   <block id="60be04fe141df250bce893e57d19600d" category="sidebar">建立儲存的搜尋</block>
   <block id="cbace44a9d78dedfcb62fa58fee0378f" category="sidebar">建立自訂掃描</block>
   <block id="17fd2e7ebeeede6a03f9340d8abb7cb1" category="paragraph-title">將掃描事件傳送至 BlueXP  時間表</block>
-  <block id="2fb6ac863fbf4be01901268bf08e147f" category="paragraph">BlueXP  分類現在支援傳送分類事件（當掃描開始及結束時）至<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
+  <block id="3c857514c210414567713ffec9077aff" category="paragraph">BlueXP  分類支援在 StorageGRID 中掃描資料。</block>
+  <block id="cb79cf2c786ed3992ebf9c4489793af5" category="paragraph">依預設，掃描會根據其啟動順序排入佇列。有了優先處理掃描的能力，您就可以將掃描移到佇列的前方。可以優先處理多個掃描。優先順序是以先出的順序指定，也就是您優先處理的第一次掃描會移到佇列前方；您優先處理的第二次掃描會成為佇列中的第二次掃描，依此類推。</block>
+  <block id="fc758db0d443b9a8e3de231c43de89d5" category="paragraph">BlueXP  分類支援批次重試所有失敗掃描的功能。</block>
+  <block id="ce19c0b7b750b810547f423b2290cfd8" category="paragraph">您可以使用「 ** 全部重試」功能，在批次作業中重新嘗試掃描。如果分類掃描因網路中斷等暫時性問題而失敗，您可以使用單一按鈕同時重試所有掃描，而無需個別重試。掃描可視需要重試多次。</block>
+  <block id="6a5c0bfd72f9b6c51f4f17f0d32a0bf5" category="paragraph">BlueXP  分類可追蹤捲上 _initial_ 對應和分類掃描的即時進度。獨立的漸進式長條可追蹤對應和分類掃描，顯示掃描的檔案總數百分比。您也可以將游標暫留在進度列上，以檢視掃描的檔案數和檔案總數。追蹤掃描狀態可深入瞭解掃描進度，讓您更妥善地規劃掃描並瞭解資源分配。</block>
+  <block id="530bfca85ebf27593e2eac002245d941" category="paragraph">BlueXP  分類可支援工作環境的大量作業。您可以選擇啟用「對應掃描」，啟用「對應和分類掃描」，停用掃描，或在工作環境中跨磁碟區建立自訂組態。如果您為個別的 Volume 進行選擇，則會覆寫大量選擇。若要執行大量作業，請瀏覽至「 ** 組態 ** 」頁面並進行選擇。</block>
+  <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP  分類可支援從本機下載資料調查報告，以便在瀏覽器中檢視。如果您選擇本機選項，則資料調查只能以 CSV 格式進行，而且只會顯示前 10 ， 000 列的資料。</block>
+  <block id="36df48405a6f112e4df550bf1db8906b" category="paragraph">BlueXP  分類可讓您在僅對應掃描之外，設定地圖和分類掃描的優先順序，讓您選擇先完成哪些掃描。在掃描開始期間和之前，都支援排列地圖和分類掃描的優先順序。如果您選擇在掃描進行期間排定優先順序，則對應和分類掃描都會排定優先順序。</block>
+  <block id="ae255a27ba2651659f967ba73acaf7ff" category="paragraph">BlueXP  分類掃描可識別加拿大 PII 資料類別，以取得所有省 / 地區的銀行資訊，護照號碼，社群保險號碼，以及駕照號碼和健康卡號碼。</block>
+  <block id="99d324505a57bb8cfa4f2be38690da37" category="paragraph">BlueXP  分類可支援自訂的地圖分類和分類掃描。使用自訂分類，您可以量身打造 BlueXP  掃描，以擷取組織專屬的資料，確保符合規則運算式。此功能目前正在預覽中。</block>
+  <block id="ef37a49c1c224f5d438865198ffa4329" category="paragraph">BlueXP  分類可支援傳送分類事件（當掃描開始及結束時）至<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
+  <block id="c90892d942290d1e3f7e24962cdcf860" category="admonition">從 1.31 版開始， BlueXP  分類可作為 BlueXP  的核心功能。無需額外付費。不需要分類授權或訂閱。</block>
+  <block id="c75e25f64e8cd1943eed51ff64a1b8cf" category="paragraph">+ 如果您使用的是舊版 1.30 或更早版本，則該版本會在您的訂閱到期之前提供使用。<block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>。</block>
+  <block id="9688e61f362299cd1c72fb3dac40d459" category="paragraph">BlueXP  分類是免費使用的。不需要分類授權或付費訂閱。</block>
+  <block id="c9592ef6d87170043628925b775e21a9" category="list-text">Proxy 必須是非透明的。BlueXP  分類目前不支援透明 Proxy 。</block>
+  <block id="1baa4497e4f5fcbb6d939687ae9bf242" category="admonition">BlueXP  分類在建立 regex 時不支援模式旗標。這表示您不應使用「 / 」。</block>
+  <block id="478002532c0e9d87506035f8afb96c61" category="list-text">* 執行中 * （綠點）：位於佇列中的掃描工作正在選定儲存儲存庫上進行中。</block>
+  <block id="2d018dff61f63f937cfb5d226fca5491" category="admonition">下列資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。</block>
+  <block id="8410773aea4e8f5fda4e98ce13c101df" category="paragraph">+ 從 1.31 版開始， BlueXP  分類是核心 BlueXP  產品的一部分。如需更多資訊、請參閱 <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
+  <block id="247847c7f8a374d1ec15dd635dc10755" category="paragraph">= 快速入門</block>
+  <block id="f502c96b3152f0f8804a4a20142b8076" category="paragraph">= 審查物件儲存需求</block>
+  <block id="f8df4d0a70cf080f5c409b0c2484ccd3" category="paragraph">= 部署 BlueXP  分類執行個體</block>
+  <block id="587be5e803069c9a812c8a5d853e293f" category="paragraph">= 將物件儲存服務新增至 BlueXP  分類</block>
+  <block id="d84a69103d33679879ff8ef5b35b5b1e" category="paragraph">= 啟用及停用物件儲存貯體的法規遵循掃描</block>
+  <block id="cdde1a1bd8cf3465f2f0be76f0538e93" category="list-text">將 * 最長 CLI/API 工作階段持續時間 * 從 1 小時變更為 12 小時。儲存變更。</block>
+  <block id="21c270b5c383cf7064093b0641efa2a2" category="list-text">選擇 * 附加原則 * ，然後 * 建立原則 * 。</block>
+  <block id="5e4a3a973c4b69d34bc9fa0a170ac878" category="paragraph">BlueXP  分類執行個體設定檔帳戶可存取額外的 AWS 帳戶。</block>
+  <block id="e1e416906cce6cd47dad2d742e509440" category="list-text">瀏覽至 * Amazon S3 組態 * 頁面，隨即顯示新的 AWS 帳戶。請注意、 BlueXP 分類可能需要幾分鐘的時間、才能同步新帳戶的工作環境並顯示此資訊。</block>
+  <block id="23385cfa4aad421683dffdb4290709df" category="list-text">在「原則清單」頁面中，針對您要新增（或變更）電子郵件設定的原則，選取 * 編輯 * 。</block>
+  <block id="4d758655ac5ea7a312073b18e9cbcdff" category="list-text">選取 * 儲存原則 * ，傳送電子郵件的時間間隔會顯示在原則說明中。</block>
+  <block id="3c3eb995ad4feba61dadfbcae0576ca4" category="paragraph">如果有任何檔案符合原則條件，就會傳送電子郵件。通知電子郵件中不會傳送任何個人資訊。電子郵件指出有符合原則條件的檔案、並提供原則結果的連結。</block>
+  <block id="fe2063e5676e0308022c99eb2466140c" category="paragraph-title">調查頁面結果除了顯示項目總數之外，還會顯示總大小</block>
+  <block id="6cff48344cb111c0fcdb424ba18c6bcf" category="paragraph">「調查」頁面中的篩選結果除了顯示檔案總數之外，還會顯示項目的總大小。這有助於移動檔案、刪除檔案等。</block>
 </blocks>

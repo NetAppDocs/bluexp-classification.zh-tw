@@ -320,7 +320,7 @@ https://youtu.be/XiPLaJpfJEI["觀看此影片"^]以瞭解如何安裝 BlueXP  �
 +
 ** 您需要Proxy伺服器資訊（IP位址或主機名稱、連線連接埠、連線配置：HTTPS或http、使用者名稱和密碼）。
 ** 如果 Proxy 正在執行 TLS 攔截、您必須知道儲存 TLS CA 憑證的 BlueXP 分類 Linux 系統路徑。
-** Proxy 必須是非透明的、我們目前不支援透明的 Proxy 。
+** Proxy 必須是非透明的。BlueXP  分類目前不支援透明 Proxy 。
 ** 使用者必須是本機使用者。不支援網域使用者。
 
 
