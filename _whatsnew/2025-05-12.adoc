@@ -14,12 +14,12 @@ BlueXP  分類可讓您在僅對應掃描之外，設定地圖和分類掃描�
 如需更多資訊、請參閱 link:task-managing-repo-scanning.html#prioritize-scans["排定掃描的優先順序"]。
 
 .支援加拿大個人識別資訊（ PII ）資料類別
-BlueXP  分類掃描可識別加拿大 PII 資料類別，以取得所有省 / 地區的銀行資訊，護照號碼，社群保險號碼，以及駕照號碼和健康卡號碼。
+BlueXP  分類掃描可識別加拿大 PII 資料類別。這些類別包括銀行資訊，護照號碼，社群保險號碼，駕照號碼，以及所有加拿大省 / 地區的健康卡號碼。
 
-如需更多詳細資訊xref:reference-private-data-categories.adoc#types-of-personal-data[個人資料類別]，請參閱。
+如需更多資訊、請參閱 xref:reference-private-data-categories.adoc#types-of-personal-data[個人資料類別]。
 
 .自訂分類（預覽）
-BlueXP  分類可支援自訂的地圖分類和分類掃描。使用自訂分類，您可以量身打造 BlueXP  掃描，以擷取組織專屬的資料，確保符合規則運算式。此功能目前正在預覽中。
+BlueXP  分類可支援自訂的地圖分類和分類掃描。使用自訂分類，您可以量身打造 BlueXP  掃描，以使用規則運算式擷取組織特有的資料。此功能目前正在預覽中。
 
 如需更多資訊、請參閱 xref:task-custom-classification.adoc[新增自訂分類]。
 

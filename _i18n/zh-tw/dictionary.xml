@@ -797,7 +797,6 @@
   <block id="bbc0bef191e546654d479088a63463e8" category="section-title">管理 Active Directory 整合</block>
   <block id="ca3e2e8380ad6cedd810ec4fc49fa9e7" category="paragraph">如果您需要修改Active Directory整合中的任何值、請按一下*編輯*按鈕進行變更。</block>
   <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">更多按鈕</block>
-  <block id="e0beb155f64410441b0e76c0d0350422" category="paragraph">如果您不再需要整合功能，您也可以按一下按鈕，然後按一下 * 移除 Active Directory* 來刪除整合<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>功能。</block>
   <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。</block>
   <block id="54f4d6ea6929f3157249a7232005ba31" category="paragraph">當群組 ID （ GID ）附加至 NFS 檔案中的檔案或資料夾時、會定義檔案或資料夾的權限、例如它們是否「開放給組織」。如果某些群組 ID （ GID ）最初並未設定「開放組織」權限等級、您可以將該權限新增至 GID 、如此一來、任何附加有該 GID 的檔案和資料夾就會被視為「開放組織使用」。</block>
   <block id="85755c2c4a65adf46f4aed267e145acd" category="paragraph">進行此變更並重新掃描檔案和資料夾後、任何附加這些群組 ID 的檔案和資料夾、都會在「調查詳細資料」頁面中顯示此權限、而且這些權限也會出現在您顯示檔案權限的報告中。</block>
@@ -961,7 +960,6 @@
   <block id="5de07b40dee2a8b07f30a0fd66bd33fa" category="section-title">檢閱先決條件</block>
   <block id="78b65cf97b25c47011081025c212c7c0" category="paragraph">在雲端部署 BlueXP 分類之前、請先檢閱下列先決條件、確定您擁有支援的組態。當您在雲端部署 BlueXP 分類時、它與 Connector 位於相同的子網路中。</block>
   <block id="a3c7cd542dbae9813f2f591e1d616bf8" category="list-text">從 BlueXP 分類啟用輸出網際網路存取</block>
-  <block id="a215e2fc4fb56a1de009d0523096d557" category="list-text">BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路使用 Proxy 伺服器進行網際網路存取、請確定 BlueXP 分類執行個體具有傳出網際網路存取權、以聯絡下列端點。Proxy 必須是非透明的、我們目前不支援透明的 Proxy 。</block>
   <block id="6a942fef40095cafe3b15d4e4f2a1ab3" category="paragraph">根據您是在 AWS 、 Azure 或 GCP 中部署 BlueXP 分類、請檢閱下表。</block>
   <block id="4ea85be63fc1085d8a7d469d21ced42a" category="open-title">AWS 所需的端點</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
@@ -1652,7 +1650,6 @@
   <block id="4c119835311ae84a5afed96ff0102202" category="summary">如有需要、您可以停止 BlueXP 分類、不掃描一或多個工作環境、資料庫、檔案共用群組、 OneDrive 帳戶、 Google Drive 帳戶、 或 SharePoint 帳戶。</block>
   <block id="1b37870dae094b28860019e52e52b4ff" category="doc">從 BlueXP 分類中移除 OneDrive 、 SharePoint 或 Google Drive 帳戶</block>
   <block id="433023fd6c6c23d39387bf9b74dda504" category="paragraph">如果您不想再從特定 OneDrive 帳戶、特定 SharePoint 帳戶或 Google Drive 帳戶掃描使用者檔案、您可以從 BlueXP 分類介面刪除帳戶、並停止所有掃描。</block>
-  <block id="9d1c29dc777962e9fef8dd6f8f0fd186" category="list-text">在 _Configuration_ 頁面中，按一下 <block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>OneDrive ， SharePoint 或 Google Drive 帳戶列中的按鈕，然後按一下 * 移除 OneDrive 帳戶 * ， * 移除 SharePoint 帳戶 * 或 * 移除 Google Drive 帳戶 * 。</block>
   <block id="9a7ec6e6b57682d3f33ce7ea4bef0f5a" category="inline-image-macro">「掃描組態」頁面中「移除 OneDrive 」按鈕的快照。</block>
   <block id="1bd56f7fb7715259e9afebe5fa03e87f" category="paragraph"><block ref="1bd56f7fb7715259e9afebe5fa03e87f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94c6852fcc39c16d9167a10bb916b459" category="list-text">從確認對話方塊中按一下 * 刪除帳戶 * 。</block>
@@ -1660,18 +1657,15 @@
   <block id="d5df7f1adc0549d5d2d0ee68a72f9535" category="paragraph">如有需要、您可以停止 BlueXP 分類、不掃描一或多個工作環境、資料庫或檔案共用群組。</block>
   <block id="f2a38a886f233571decf9ce6bf113922" category="section-title">停用工作環境的法規遵循掃描</block>
   <block id="fc92855a6c0e88610803c1973a785908" category="paragraph">停用掃描時、 BlueXP 分類不再掃描工作環境中的資料、也會從 BlueXP 分類執行個體中移除索引化的法規遵循洞見（不會刪除工作環境本身的資料）。</block>
-  <block id="b23c9bc520892f0b32a5b14652f531a4" category="list-text">在 _Configuration_ 頁面中，按一下<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>工作環境列中的按鈕，然後按一下 * 停用 Data Sense * 。</block>
   <block id="a07772f300fa1187741adbb9b0ee2c93" category="inline-image-macro">動作圖示的螢幕擷取畫面、您可以在其中選取停用 BlueXP 分類。從「畫版」頁面選取工作環境之後、即可使用此選項。</block>
   <block id="10f0cbf4c3001c6cbff3244aad2777b0" category="paragraph"><block ref="10f0cbf4c3001c6cbff3244aad2777b0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="849e144b677eb32e7e98186935864d3b" category="admonition">您也可以在選取工作環境時、從「服務」面板停用工作環境的法規遵循掃描。</block>
   <block id="29c23a4578d5d41743894525117283bb" category="section-title">從 BlueXP 分類中移除資料庫</block>
   <block id="5f41cf1c2ac9e53c33bdb8764109a714" category="paragraph">如果您不想再掃描特定資料庫、可以從 BlueXP 分類介面刪除該資料庫、並停止所有掃描。</block>
-  <block id="c129bc0408ce8224fad586d944537ce4" category="list-text">在 _Configuration_ 頁面中，按一下<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>資料庫列中的按鈕，然後按一下 * 移除 DB 伺服器 * 。</block>
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">「掃描組態」頁面中「移除 DB 伺服器」按鈕的快照。</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2cc15b4049873c916d856924a44717cd" category="section-title">從 BlueXP 分類中移除一組檔案共用</block>
   <block id="a9d369d1761364753b450ab895adcd47" category="paragraph">如果您不想再掃描檔案共用群組中的使用者檔案、可以從 BlueXP 分類介面刪除檔案共用群組、並停止所有掃描。</block>
-  <block id="49fae8728abc8ffde6080b69c8a80552" category="list-text">在 _Configuration_ 頁面中，按一下<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>檔案共用群組列中的按鈕，然後按一下 * 移除檔案共用群組 * 。</block>
   <block id="899aa3cff4cde9f48d2fbceab4329349" category="inline-image-macro">「掃描組態」頁面中「移除檔案共用群組」按鈕的快照。</block>
   <block id="23785f6732c3c514916bbd8928a06972" category="paragraph"><block ref="23785f6732c3c514916bbd8928a06972" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4eeea4d2c00cd83e33db552c5d9445b2" category="list-text">按一下確認對話方塊中的*刪除共用群組*。</block>
@@ -2351,9 +2345,7 @@
   <block id="a9ec5ce178b0bf158cc0b058a75222be" category="list-text">出現提示時，請將 IAM 角色指派給具有<block ref="27b52f38738d689881a76b49c98ec7ec" category="inline-xref-macro-rx"></block>的BlueXP  分類執行個體。</block>
   <block id="9d71010686428b63401d21389a87983b" category="inline-image-macro">輸入 AWS IAM 角色進行 BlueXP 分類的螢幕快照</block>
   <block id="d6024ec0f0750e8f3ff480afef31e8a6" category="paragraph"><block ref="d6024ec0f0750e8f3ff480afef31e8a6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="909d8cdc7c100d1834d4de10094f43ca" category="list-text">按一下「*啟用*」。</block>
   <block id="0fe1279b28d533b32c08d839691ef653" category="inline-image-macro">三點</block>
-  <block id="e56ef2e2348492a4f0e1e9513b068cc4" category="admonition">您也可以從「組態」頁面中，按一下按鈕並選取 * 啟動 BlueXP  分類 * ，以啟用工作環境的規範掃描<block ref="a759a567ce9a72b21fd45f48f1f358c8" category="inline-image-macro-rx" type="image"></block>。</block>
   <block id="859a5985b2a5cefc45dc9f226a5d5ba7" category="paragraph">BlueXP會將IAM角色指派給執行個體。</block>
   <block id="e18a75263bcb68f3fcffe930704c1b61" category="section-title">啟用和停用 S3 儲存區的法規遵循掃描</block>
   <block id="a09f1d7b84a96466ba7bd8852ed92c89" category="paragraph">BlueXP 在 Amazon S3 上啟用 BlueXP 分類之後、下一步是設定您要掃描的儲存區。</block>
@@ -2568,10 +2560,8 @@
   <block id="f93e118724d27bde2efdff3938b9b6df" category="paragraph">您需要使用的步驟取決於您是在雲端或內部部署主機上部署 BlueXP 分類。</block>
   <block id="8d8f6d516c2b2976c4b330129843859b" category="section-title">從雲端部署解除安裝 BlueXP 分類</block>
   <block id="809de3d4b48cba202a3e92df9b5646ca" category="paragraph">如果您不想再使用 BlueXP 分類、可以從雲端供應商環境中解除安裝和刪除 BlueXP 分類執行個體。</block>
-  <block id="fb718f900bda591d59ded552d9f94de8" category="list-text">在 BlueXP  分類頁面頂端，按一下<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>，然後按一下 * 「解除安裝資料感知」 * 。</block>
   <block id="36c78ffc00f44e6669853141b4757135" category="inline-image-macro">用於解除安裝 BlueXP 分類軟體的按鈕螢幕擷取畫面。</block>
   <block id="f4b93d0f798b3e20a2411b62607f9933" category="paragraph"><block ref="f4b93d0f798b3e20a2411b62607f9933" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7b608a074398a486bc744655598680ea" category="list-text">在 _ 解除安裝 Data Sense _ 對話方塊中、輸入 * uninstall* 以確認您要中斷 BlueXP 分類執行個體與 BlueXP Connector 的連線、然後按一下 * 解除安裝 * 。</block>
   <block id="f10f83db534963d9efae7a297e100091" category="list-text">前往雲端供應商的主控台、刪除 BlueXP 分類執行個體。此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
   <block id="961ca08e58e9f85191f5707bc4dac07a" category="paragraph">這會刪除 BlueXP 分類所收集的執行個體和所有相關資料。</block>
   <block id="a3b42cd70d6e63a58b881566f7a8992b" category="section-title">從內部部署部署解除安裝 BlueXP 分類</block>
@@ -2627,7 +2617,6 @@
   <block id="a620f7ab4fc25849a31718c76e9d7fa1" category="list-text">按一下 * 儲存原則 * 、標籤就會出現在原則說明中。</block>
   <block id="bb59c9be972bc7568c57f54fdc257244" category="admonition">如果原則已設定標籤、但標籤已從 AIP 中移除、則標籤名稱會關閉、且標籤不會再指派。</block>
   <block id="7cbe4840b4a3a2fdf1f9286da7e2b284" category="inline-image-macro">顯示如何變更篩選設定來編輯查詢的快照。</block>
-  <block id="289758d7ef2e573a0ee7824d5814b945" category="paragraph"><block ref="289758d7ef2e573a0ee7824d5814b945" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe2e5277ceed073489ebfe172d4ae0e3" category="summary">當您從「調查結果」窗格對許多檔案執行動作時、例如刪除100個檔案、程序可能需要一些時間。您可以在「行動狀態」窗格中監控這些非同步動作的狀態、以便知道它何時已套用至所有檔案。</block>
   <block id="c06ccfe24df0bff683583f82911916e0" category="paragraph">當您從「調查結果」窗格對許多檔案執行非同步動作時、例如移動或刪除100個檔案、程序可能需要一些時間。您可以在「_Action Status」（動作狀態）窗格中監控這些動作的狀態、以便得知何時已將其套用至所有檔案。</block>
   <block id="81e4b26a6519cffe24195e5edc407992" category="paragraph">這可讓您查看已成功完成的動作、目前正在進行的動作、以及已失敗的動作、以便診斷及修正任何問題。請注意、快速完成的簡短作業（例如移動單一檔案）不會出現在「動作狀態」窗格中。</block>
@@ -3084,7 +3073,6 @@
   <block id="1f4e12eb3b2fcb4ce87b8ed675d3270c" category="list-text">將 PII 移至更安全的資料儲存區、以保護您擁有個人或敏感個人資訊的資料</block>
   <block id="51fa6e6a2210eb170b2beeb8f80f89c1" category="list-text">選取 * 資料探索評估報告 * 。</block>
   <block id="a4d3102e7150e95ee7150787c5049f47" category="list-text">選取 * 完整資料對應總覽報告 * 。</block>
-  <block id="163b2c36f19b004df4f67d322c1b39af" category="list-text">要自定義顯示在報告第一頁上的公司名稱，請從 BlueXP  分類頁的右上角選擇<block ref="205cf72ce215a0005a3d486daae4dd1a" category="inline-image-macro-rx" type="image"></block>。然後選擇 * 變更公司名稱 * 。下次產生報告時，報告會包含新名稱。</block>
   <block id="4cbb02ef6d1ee9902b65e08b42b83a08" category="list-text">若要查看每個類別的項目總數，請將游標放在列的每個區段上。</block>
   <block id="78e705dbea0d34c81ef33941cfdd7c20" category="list-text">若要查看每個類別中的檔案總數，請將游標放在每個方塊上。</block>
   <block id="d2bc42c21eb303e3f8120f5a184e4544" category="list-text">在資料存留期圖表中，若要查看資料存留期的詳細資料，請將游標放在圖表中的某個點上。</block>
@@ -3343,14 +3331,11 @@
   <block id="03624a0e3cf06ce697a55ae458b36245" category="cell">美國德州駕照</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">篩選「調查」頁面中的資料</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">在「調查」索引標籤中，選取您要使用的篩選條件以定義搜尋。如需詳細資訊、請參閱 <block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block> 。</block>
-  <block id="b661e4ea30af73a913aed1e7ae647f4a" category="paragraph">若要變更儲存查詢的篩選條件，請選取 * 編輯查詢 * 。</block>
-  <block id="1c76b2a61ae25c65703ed4c7e9a61c05" category="list-text">在定義該查詢的調查頁面中，通過添加，刪除或自定義篩選器來編輯查詢，然後選擇 *Save changes * （保存更改）。</block>
   <block id="422ba0edf6ed9e7533f09398a27021dc" category="admonition">此資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">版本 1.43</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">排定分類掃描的優先順序</block>
   <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">支援加拿大個人識別資訊（ PII ）資料類別</block>
   <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">個人資料類別</block>
-  <block id="8ac2e225945f40bbf038dd67449b1841" category="paragraph">如需更多詳細資訊<block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>，請參閱。</block>
   <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">自訂分類（預覽）</block>
   <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">新增自訂分類</block>
   <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">如需更多資訊、請參閱 <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>。</block>
@@ -3384,13 +3369,7 @@
   <block id="4b760cb0a54b4c608b7deaa08d52f3c3" category="paragraph">您也可以建立自訂搜尋字詞，以識別組織特有的個人資料。如需更多資訊、請參閱 <block ref="702fa1a9e503f253a2dc3aea49d5216d" category="inline-link-macro-rx"></block>。</block>
   <block id="8158b41ed99f0be207895156b4fd03bd" category="summary">BlueXP  分類可讓您自訂敏感資訊的搜尋，根據與組織相關的個別模式和關鍵字來量身打造服務。</block>
   <block id="926b3e1d2d3aa955040f8e96a0925024" category="doc">在 BlueXP  分類中建立自訂分類</block>
-  <block id="af7f216eaafef04c270699dedfe55516" category="paragraph">使用 BlueXP  分類，您可以建立自訂的敏感資訊搜尋。搜尋範圍可以是規則運算式或一組特殊關鍵字。</block>
   <block id="166182078c23275fb3140bd76772894f" category="paragraph">自訂分類僅適用於地圖和分類掃描，不適用於僅對應的掃描。此功能目前正在預覽中。</block>
-  <block id="b89901231bd925d9935358eec83c9df7" category="list-text">選擇「 ** 自訂分類 ** 」標籤。</block>
-  <block id="5d432ccfd60759dfe3a05c1d88a50e46" category="list-text">選擇 ** 新增分類器 ** 。</block>
-  <block id="ea013d14af755e66761c80272239aa1e" category="list-text">新增新類別器的名稱和說明。</block>
-  <block id="325f2f8229424a3bb88f7fe6dd21f8b4" category="list-text">要將自定義添加爲正則表達式，請選擇 ** 自定義正則表達式 ** ，然後選擇 ** 下一步 ** 。</block>
-  <block id="ddd5fb759ffdfbba04862c2c259765f4" category="list-text">若要使用規則運算式，請新增模式來偵測資料的特定資訊。例如，以 201 開頭的 12 位數 ID 為 \b201\f\d(9)b. 選擇 ** 驗證 ** 以確認您輸入的語法。</block>
   <block id="92dbbe7b48f44c4348b9a878f60f182e" category="paragraph">新的自訂功能會在下一次排程掃描中擷取。若要檢視結果，請參閱<block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block>。</block>
   <block id="e7f93c0af13ca637e6c3fbeb56fe4b0e" category="section-title">依標記，標籤，指派的使用者及儲存的搜尋來篩選資料</block>
   <block id="aee7ea78cb12c6ff572cb9b321122abb" category="paragraph">使用下列篩選條件，依標記， AIP 標籤，指派的使用者或儲存的搜尋來檢視資料。</block>
@@ -3428,9 +3407,6 @@
   <block id="fe486103d58cea4a39fc7665524d91e6" category="inline-image-macro">BlueXP  分類儀表板中「已儲存的搜尋」索引標籤的螢幕擷取畫面。</block>
   <block id="dd41d48f516ceca9030eb4c406ca3b2e" category="paragraph"><block ref="dd41d48f516ceca9030eb4c406ca3b2e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c11c94eebf65aa39aa6d92e551d37495" category="section-title">在「調查」頁面中檢視儲存的搜尋結果</block>
-  <block id="4b6b79df55f75139d5245dc368dd69d7" category="paragraph">若要在「調查」頁面中顯示已儲存搜尋的結果，請選取<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定搜尋的按鈕，然後選取 * 調查結果 * 。</block>
-  <block id="01ce7df905c02100d7e171845d5a1d11" category="inline-image-macro">從「神聖搜尋」索引標籤中選取特定搜尋的調查結果的螢幕擷取畫面。</block>
-  <block id="e664b44f91d2913f94b75e8da606bb74" category="paragraph"><block ref="e664b44f91d2913f94b75e8da606bb74" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3d060dc50372bab90fa0b80c2aadbfc5" category="section-title">建立自訂儲存的搜尋</block>
   <block id="2dea09c1d3d4ee9b98ba67f3ee736c6a" category="paragraph">您可以建立自己的自訂儲存搜尋，以提供組織特定查詢的結果。會傳回符合搜尋條件的所有檔案和目錄（共享區和資料夾）結果。</block>
   <block id="edb2c0af042dce0faebc0fd23a6ea82a" category="list-text">將所有篩選條件設定為您喜歡的特性後，請選取 * 建立儲存的搜尋 * 。</block>
@@ -3439,19 +3415,10 @@
   <block id="2b24c965e18291acdf6309cabec1d801" category="list-text">命名儲存的搜尋並新增說明。名稱必須是唯一的。</block>
   <block id="acc1c25043aba44082aef8a6ae1f7bb7" category="inline-image-macro">螢幕擷取畫面，顯示如何設定儲存的搜尋並加以儲存。</block>
   <block id="781917d30539d353b2392b65ccd962ee" category="paragraph"><block ref="781917d30539d353b2392b65ccd962ee" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dcc0446437d20a68ade85cece45a944d" category="paragraph">新儲存的搜尋會出現在儲存的搜尋標籤中。</block>
   <block id="3abded291c3a14b09750019f607a5b6a" category="section-title">編輯儲存的搜尋</block>
-  <block id="25ab9ca41b65162f7d35a80b0fc2b62f" category="paragraph">您可以修改自訂建立的儲存搜尋條件，以變更查詢（使用篩選器定義的項目）以新增或移除特定參數。</block>
   <block id="f2fb75e2f90578baaf8bd1c45bde6750" category="paragraph">您無法修改預設的儲存搜尋。</block>
-  <block id="8d5758ea88aa628e96b2a9850a9a3e84" category="list-text">從「儲存的搜尋」頁面中，選取 * 編輯儲存的搜尋 * 以取得您要變更的搜尋。</block>
   <block id="58fd62d6cd14d93ae1f32c61f323f99b" category="inline-image-macro">顯示「編輯儲存的搜尋」的螢幕擷取畫面。</block>
-  <block id="800f72354e7a5ac3462a802bf4f659e0" category="paragraph"><block ref="800f72354e7a5ac3462a802bf4f659e0" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b8c30944f6cac36547bcb3821964aeb1" category="list-text">變更名稱和說明欄位。若要僅變更這些欄位，請選取 * 儲存 * 。</block>
-  <block id="78b0d515ab4a6a13088dd6bd09b0146e" category="inline-image-macro">選取「編輯儲存的搜尋」頁面上的「編輯查詢」按鈕的螢幕擷取畫面。</block>
-  <block id="e25b5282c5072b0a5171d238083a696e" category="paragraph"><block ref="e25b5282c5072b0a5171d238083a696e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="60f69955f740d1c69cb05d0a389fa16f" category="section-title">刪除儲存的搜尋</block>
-  <block id="c3f66c3ed396df4f45cc4a2247c6ff1a" category="paragraph">如果您不再需要任何自訂儲存的搜尋，您可以將其刪除。您無法刪除預設的儲存搜尋</block>
-  <block id="0fa5b5589241b6543c9b17d2f21e75ca" category="paragraph">若要刪除儲存的搜尋，請選取<block ref="c01b692574fda287c7455bfbcec2709c" category="inline-image-macro-rx" type="image"></block>特定搜尋的按鈕，選取 * 刪除儲存的搜尋 * ，然後在確認對話方塊中再次選取 * 刪除搜尋 * 。</block>
   <block id="c073cb4c943cd12dd3dc252f8b94f4f4" category="section-title">預設搜尋</block>
   <block id="408f496a5a85521adc16cc6b351cc71a" category="paragraph">BlueXP  分類提供下列系統定義的搜尋查詢：</block>
   <block id="e2824fba3c46b207f277094775a6de03" category="list-text">** 資料主旨名稱 - 高風險 **</block>
@@ -3482,8 +3449,6 @@
   <block id="530bfca85ebf27593e2eac002245d941" category="paragraph">BlueXP  分類可支援工作環境的大量作業。您可以選擇啟用「對應掃描」，啟用「對應和分類掃描」，停用掃描，或在工作環境中跨磁碟區建立自訂組態。如果您為個別的 Volume 進行選擇，則會覆寫大量選擇。若要執行大量作業，請瀏覽至「 ** 組態 ** 」頁面並進行選擇。</block>
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP  分類可支援從本機下載資料調查報告，以便在瀏覽器中檢視。如果您選擇本機選項，則資料調查只能以 CSV 格式進行，而且只會顯示前 10 ， 000 列的資料。</block>
   <block id="36df48405a6f112e4df550bf1db8906b" category="paragraph">BlueXP  分類可讓您在僅對應掃描之外，設定地圖和分類掃描的優先順序，讓您選擇先完成哪些掃描。在掃描開始期間和之前，都支援排列地圖和分類掃描的優先順序。如果您選擇在掃描進行期間排定優先順序，則對應和分類掃描都會排定優先順序。</block>
-  <block id="ae255a27ba2651659f967ba73acaf7ff" category="paragraph">BlueXP  分類掃描可識別加拿大 PII 資料類別，以取得所有省 / 地區的銀行資訊，護照號碼，社群保險號碼，以及駕照號碼和健康卡號碼。</block>
-  <block id="99d324505a57bb8cfa4f2be38690da37" category="paragraph">BlueXP  分類可支援自訂的地圖分類和分類掃描。使用自訂分類，您可以量身打造 BlueXP  掃描，以擷取組織專屬的資料，確保符合規則運算式。此功能目前正在預覽中。</block>
   <block id="ef37a49c1c224f5d438865198ffa4329" category="paragraph">BlueXP  分類可支援傳送分類事件（當掃描開始及結束時）至<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
   <block id="c90892d942290d1e3f7e24962cdcf860" category="admonition">從 1.31 版開始， BlueXP  分類可作為 BlueXP  的核心功能。無需額外付費。不需要分類授權或訂閱。</block>
   <block id="c75e25f64e8cd1943eed51ff64a1b8cf" category="paragraph">+ 如果您使用的是舊版 1.30 或更早版本，則該版本會在您的訂閱到期之前提供使用。<block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>。</block>
@@ -3493,11 +3458,6 @@
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">* 執行中 * （綠點）：位於佇列中的掃描工作正在選定儲存儲存庫上進行中。</block>
   <block id="2d018dff61f63f937cfb5d226fca5491" category="admonition">下列資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。</block>
   <block id="8410773aea4e8f5fda4e98ce13c101df" category="paragraph">+ 從 1.31 版開始， BlueXP  分類是核心 BlueXP  產品的一部分。如需更多資訊、請參閱 <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
-  <block id="247847c7f8a374d1ec15dd635dc10755" category="paragraph">= 快速入門</block>
-  <block id="f502c96b3152f0f8804a4a20142b8076" category="paragraph">= 審查物件儲存需求</block>
-  <block id="f8df4d0a70cf080f5c409b0c2484ccd3" category="paragraph">= 部署 BlueXP  分類執行個體</block>
-  <block id="587be5e803069c9a812c8a5d853e293f" category="paragraph">= 將物件儲存服務新增至 BlueXP  分類</block>
-  <block id="d84a69103d33679879ff8ef5b35b5b1e" category="paragraph">= 啟用及停用物件儲存貯體的法規遵循掃描</block>
   <block id="cdde1a1bd8cf3465f2f0be76f0538e93" category="list-text">將 * 最長 CLI/API 工作階段持續時間 * 從 1 小時變更為 12 小時。儲存變更。</block>
   <block id="21c270b5c383cf7064093b0641efa2a2" category="list-text">選擇 * 附加原則 * ，然後 * 建立原則 * 。</block>
   <block id="5e4a3a973c4b69d34bc9fa0a170ac878" category="paragraph">BlueXP  分類執行個體設定檔帳戶可存取額外的 AWS 帳戶。</block>
@@ -3507,4 +3467,45 @@
   <block id="3c3eb995ad4feba61dadfbcae0576ca4" category="paragraph">如果有任何檔案符合原則條件，就會傳送電子郵件。通知電子郵件中不會傳送任何個人資訊。電子郵件指出有符合原則條件的檔案、並提供原則結果的連結。</block>
   <block id="fe2063e5676e0308022c99eb2466140c" category="paragraph-title">調查頁面結果除了顯示項目總數之外，還會顯示總大小</block>
   <block id="6cff48344cb111c0fcdb424ba18c6bcf" category="paragraph">「調查」頁面中的篩選結果除了顯示檔案總數之外，還會顯示項目的總大小。這有助於移動檔案、刪除檔案等。</block>
+  <block id="162e654adac435300128c485423d9e97" category="paragraph">BlueXP  分類掃描可識別加拿大 PII 資料類別。這些類別包括銀行資訊，護照號碼，社群保險號碼，駕照號碼，以及所有加拿大省 / 地區的健康卡號碼。</block>
+  <block id="24b795aa1c931b8beb71a1bad521912d" category="paragraph">如需更多資訊、請參閱 <block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
+  <block id="779a8744af84c09c0b82c029307690b7" category="paragraph">BlueXP  分類可支援自訂的地圖分類和分類掃描。使用自訂分類，您可以量身打造 BlueXP  掃描，以使用規則運算式擷取組織特有的資料。此功能目前正在預覽中。</block>
+  <block id="59cb665cd7462a904eefb54d13262d58" category="paragraph">您也可以刪除整合，然後選擇<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>按鈕 * 移除 Active Directory* 。</block>
+  <block id="b26c3f06a8206b488da4691050c7d97f" category="list-text">要自定義顯示在報告第一頁上的公司名稱，請從 BlueXP  分類頁的右上角選擇<block ref="b7ac54c4d55d285685809fbae424a873" category="inline-image-macro-rx" type="image"></block>。然後選擇 * 變更公司名稱 * 。下次產生報告時，報告會包含新名稱。</block>
+  <block id="cf137e3eb496726834d6c8c1ea2a0bb9" category="paragraph">使用 BlueXP  分類，您可以建立自訂的敏感資訊搜尋。搜尋範圍可指定為規則運算式（ regex ）。</block>
+  <block id="a5b2ff1ba11a4724aa08a612d83a1fa8" category="inline-image-macro">自訂分類頁面的螢幕擷取畫面。</block>
+  <block id="78a1ca571ea767a4e4a68bf118e05ad9" category="list-text">選擇「 ** 自訂分類 ** 」標籤。<block ref="a4efbe791c666e4d565530b58bfb78eb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="75397441bf4c14c2afae2e04e7cd5571" category="list-text">選取「 ** 新增分類器 ** 」按鈕。</block>
+  <block id="5b43c46ad3b2d1720177cf5a7002d748" category="list-text">新增類別器的名稱和說明。</block>
+  <block id="0290a20bef89a572b708f13b5de6010d" category="list-text">要將自定義添加爲正則表達式，請選擇 ** 自定義正則表達式 ** ，然後選擇 ** 下一步 ** 。</block>
+  <block id="ce6c93af63d5a72eb3c15bc99afe14ec" category="inline-image-macro">用於建立規則運算式的對話方塊螢幕擷取畫面。</block>
+  <block id="2fbc1bcaba732168404159c46526458c" category="list-text">新增模式以偵測資料的特定資訊。選擇 ** 驗證 ** 以確認輸入的語法。<block ref="931af7ddfc52cb7655deb8b332ab2e24" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6d7ee64f46753faf45fb70361a3d7659" category="list-text">選擇 ** 完成 ** 以建立自訂分類。</block>
+  <block id="9f1c60681d04ca50a08671f2b8c80137" category="list-text">BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路使用 Proxy 伺服器進行網際網路存取、請確定 BlueXP 分類執行個體具有傳出網際網路存取權、以聯絡下列端點。Proxy 必須是非透明的。目前不支援透明 Proxy 。</block>
+  <block id="00529b4fa5e7b481a817fc96cf13bc09" category="list-text">從 _Configuration_ 頁面中，選取 <block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>OneDrive ， SharePoint 或 Google Drive 帳戶列中的按鈕，然後選取 * 移除 OneDrive 帳戶 * ， * 移除 SharePoint 帳戶 * 或 * 移除 Google Drive 帳戶 * 。</block>
+  <block id="ff4b8a9404d87f321503ee453d569c7d" category="list-text">從 _Configuration_ 頁面中，選取<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>工作環境列中的按鈕，然後 * 停用 Data Sense * 。</block>
+  <block id="33a74c27f54695807d7c17126606dd9b" category="list-text">在 _Configuration_ 頁面中，選取<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>資料庫列中的按鈕，然後 * 移除 DB Server* 。</block>
+  <block id="c16ad793ec0335438d151ae80a49d06f" category="list-text">在 _Configuration_ 頁面中，選取<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>檔案共用群組列中的按鈕，然後 * 移除檔案共用群組 * 。</block>
+  <block id="763a21e3ec238bca68eb25847cf75843" category="section-title">檢閱物件儲存需求</block>
+  <block id="56ae4518d3461ca7113dcd16c3bba1b2" category="section-title">將物件儲存服務新增至 BlueXP 分類</block>
+  <block id="eee95a219b81e97bc6cd4730c01adbe3" category="section-title">啟用及停用物件儲存桶上的法規遵循掃描</block>
+  <block id="71377237946a16cc4981e8007b83be9b" category="list-text">選取 * 啟用 * 。</block>
+  <block id="70d6b08c88906fcec4b2b02cb10b8c51" category="admonition">您也可以從「組態」頁面中選取按鈕，然後按一下「 * 啟動 BlueXP  分類 * 」，來啟用工作環境的規範掃描<block ref="31135726bc5ec70729152e8a36c2ff64" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="5c90cc26dd42f9d3c2debeeef6f5b7cf" category="list-text">在 BlueXP  分類頁面頂端，選取「 <block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>* 解除安裝資料感知 * 」。</block>
+  <block id="3455f1fb9a5d72859b5d3a372dc8f0fa" category="list-text">在 _ 解除安裝資料感測 _ 對話方塊中，輸入 * 解除安裝 * 以確認您要中斷 BlueXP  分類執行個體與 BlueXP  Connector 的連線，然後選取 * 解除安裝 * 。</block>
+  <block id="6cf3fc600b47594541f48cafd63826ff" category="paragraph">若要在「調查」頁面中顯示已儲存搜尋的結果，請選取<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>特定搜尋的按鈕，然後選取 * 調查結果 * 。</block>
+  <block id="9038bf96038481d40955e45169d29a59" category="inline-image-macro">從「已儲存的搜尋」索引標籤中選取特定搜尋的調查結果的螢幕擷取畫面。</block>
+  <block id="fddc772362fed7ea80a47e67e7402818" category="paragraph"><block ref="fddc772362fed7ea80a47e67e7402818" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b138d8858b38a706ce0767ce149141a0" category="paragraph">建立搜尋之後，您可以在「 ** 儲存的搜尋 ** 」標籤中檢視搜尋結果。</block>
+  <block id="a587a9446f42488cf1642071d4869a8c" category="paragraph">您可以修改已儲存搜尋的查詢條件（即已定義的篩選條件），以新增或移除特定參數。</block>
+  <block id="1f365f0c7b9035143441d12790522996" category="list-text">從「已儲存的搜尋」頁面中，選取 * 編輯搜尋 * 以取得您要變更的搜尋。</block>
+  <block id="b8cea04bdaadb30a2fd83edd55a654bc" category="paragraph"><block ref="b8cea04bdaadb30a2fd83edd55a654bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="477f1d0a65eedc4c654d176f7d5a42ac" category="list-text">變更名稱和說明欄位。若要僅變更名稱和說明欄位，請選取 * 儲存搜尋 * 。</block>
+  <block id="fc109e463007a1ca000c686897a1b120" category="paragraph">若要變更儲存搜尋的篩選條件，請選取 * 編輯查詢 * 。</block>
+  <block id="80adc8081e510902a4fced484a4b4e31" category="inline-image-macro">「編輯儲存的搜尋」頁面上「編輯查詢」按鈕的螢幕擷取畫面。</block>
+  <block id="6d6f7ce4f444057f277e9b33ee68299e" category="paragraph"><block ref="6d6f7ce4f444057f277e9b33ee68299e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c2b73796ac55b3236efc8e54183ebf12" category="list-text">在「調查」頁面中，編輯查詢。您可以新增，移除或修改篩選條件。若要完成變更，請選取 * 儲存此搜尋的查詢 * 。</block>
+  <block id="ddbd2f5304c626fb501329931a8611ab" category="paragraph"><block ref="ddbd2f5304c626fb501329931a8611ab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6fd5e575afc5674cda5e381f7413c374" category="paragraph">如果您不再需要任何自訂儲存的搜尋，您可以將其刪除。您無法刪除預設的儲存搜尋。</block>
+  <block id="400d8a42346f426cc27b0acd4383c48b" category="paragraph">若要刪除儲存的搜尋，請選取<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>特定搜尋的按鈕，選取 * 刪除搜尋 * ，然後在確認對話方塊中再次選取 * 刪除搜尋 * 。</block>
 </blocks>

@@ -130,11 +130,11 @@ image:screenshot_s3_enable_compliance.png["從「服務」面板啟用 BlueXP �
 +
 image:screenshot_s3_compliance_iam_role.png["輸入 AWS IAM 角色進行 BlueXP 分類的螢幕快照"]
 
-. 按一下「*啟用*」。
+. 選取 * 啟用 * 。
 
 
 
-TIP: 您也可以從「組態」頁面中，按一下按鈕並選取 * 啟動 BlueXP  分類 * ，以啟用工作環境的規範掃描image:screenshot_gallery_options.gif["三點"]。
+TIP: 您也可以從「組態」頁面中選取按鈕，然後按一下「 * 啟動 BlueXP  分類 * 」，來啟用工作環境的規範掃描image:button-gallery-options.gif["三點"]。
 
 .結果
 BlueXP會將IAM角色指派給執行個體。

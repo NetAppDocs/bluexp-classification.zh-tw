@@ -76,7 +76,7 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.ht
 
 在雲端部署 BlueXP 分類之前、請先檢閱下列先決條件、確定您擁有支援的組態。當您在雲端部署 BlueXP 分類時、它與 Connector 位於相同的子網路中。
 
-從 BlueXP 分類啟用輸出網際網路存取:: BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路使用 Proxy 伺服器進行網際網路存取、請確定 BlueXP 分類執行個體具有傳出網際網路存取權、以聯絡下列端點。Proxy 必須是非透明的、我們目前不支援透明的 Proxy 。
+從 BlueXP 分類啟用輸出網際網路存取:: BlueXP 分類需要外傳網際網路存取。如果您的虛擬或實體網路使用 Proxy 伺服器進行網際網路存取、請確定 BlueXP 分類執行個體具有傳出網際網路存取權、以聯絡下列端點。Proxy 必須是非透明的。目前不支援透明 Proxy 。
 +
 --
 根據您是在 AWS 、 Azure 或 GCP 中部署 BlueXP 分類、請檢閱下表。

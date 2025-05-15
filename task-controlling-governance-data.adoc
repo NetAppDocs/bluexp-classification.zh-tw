@@ -149,7 +149,7 @@ BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他�
 +
 image:screenshot-compliance-report-buttons.png["「管理儀表板」的快照、顯示如何啟動資料對應報告。"]
 
-. 要自定義顯示在報告第一頁上的公司名稱，請從 BlueXP  分類頁的右上角選擇image:screenshot_gallery_options.gif["「更多」按鈕"]。然後選擇 * 變更公司名稱 * 。下次產生報告時，報告會包含新名稱。
+. 要自定義顯示在報告第一頁上的公司名稱，請從 BlueXP  分類頁的右上角選擇image:button-gallery-options.gif["「更多」按鈕"]。然後選擇 * 變更公司名稱 * 。下次產生報告時，報告會包含新名稱。
 
 
 .結果

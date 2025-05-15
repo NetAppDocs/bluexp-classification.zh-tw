@@ -22,7 +22,7 @@ summary: 如有需要、您可以停止 BlueXP 分類、不掃描一或多個工
 
 停用掃描時、 BlueXP 分類不再掃描工作環境中的資料、也會從 BlueXP 分類執行個體中移除索引化的法規遵循洞見（不會刪除工作環境本身的資料）。
 
-. 在 _Configuration_ 頁面中，按一下image:screenshot_gallery_options.gif["更多按鈕"]工作環境列中的按鈕，然後按一下 * 停用 Data Sense * 。
+. 從 _Configuration_ 頁面中，選取image:button-gallery-options.gif["更多按鈕"]工作環境列中的按鈕，然後 * 停用 Data Sense * 。
 
 
 image:screenshot_deactivate_compliance_scan.png["動作圖示的螢幕擷取畫面、您可以在其中選取停用 BlueXP 分類。從「畫版」頁面選取工作環境之後、即可使用此選項。"]
@@ -36,7 +36,7 @@ TIP: 您也可以在選取工作環境時、從「服務」面板停用工作環
 
 如果您不想再掃描特定資料庫、可以從 BlueXP 分類介面刪除該資料庫、並停止所有掃描。
 
-. 在 _Configuration_ 頁面中，按一下image:screenshot_gallery_options.gif["更多按鈕"]資料庫列中的按鈕，然後按一下 * 移除 DB 伺服器 * 。
+. 在 _Configuration_ 頁面中，選取image:button-gallery-options.gif["更多按鈕"]資料庫列中的按鈕，然後 * 移除 DB Server* 。
 
 
 image:screenshot_compliance_remove_db.png["「掃描組態」頁面中「移除 DB 伺服器」按鈕的快照。"]
@@ -48,7 +48,7 @@ image:screenshot_compliance_remove_db.png["「掃描組態」頁面中「移除 
 如果您不想再掃描檔案共用群組中的使用者檔案、可以從 BlueXP 分類介面刪除檔案共用群組、並停止所有掃描。
 
 .步驟
-. 在 _Configuration_ 頁面中，按一下image:screenshot_gallery_options.gif["更多按鈕"]檔案共用群組列中的按鈕，然後按一下 * 移除檔案共用群組 * 。
+. 在 _Configuration_ 頁面中，選取image:button-gallery-options.gif["更多按鈕"]檔案共用群組列中的按鈕，然後 * 移除檔案共用群組 * 。
 +
 image:screenshot_compliance_remove_fileshare_group.png["「掃描組態」頁面中「移除檔案共用群組」按鈕的快照。"]
 

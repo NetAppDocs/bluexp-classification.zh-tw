@@ -116,4 +116,4 @@ image:screenshot_compliance_active_directory_added.png["顯示 BlueXP 分類中�
 
 如果您需要修改Active Directory整合中的任何值、請按一下*編輯*按鈕進行變更。
 
-如果您不再需要整合功能，您也可以按一下按鈕，然後按一下 * 移除 Active Directory* 來刪除整合image:screenshot_gallery_options.gif["更多按鈕"]功能。
+您也可以刪除整合，然後選擇image:button-gallery-options.gif["更多按鈕"]按鈕 * 移除 Active Directory* 。
