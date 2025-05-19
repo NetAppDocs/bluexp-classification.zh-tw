@@ -2555,13 +2555,10 @@
   <block id="b61f313d2258b7ad36db1c60e210745f" category="paragraph">如果所有先決條件測試都成功執行、您可以在準備就緒時、在主機上安裝 BlueXP 分類。</block>
   <block id="878e6c42479d1f6a6495aba58949d3c5" category="paragraph">如果發現任何問題、則會將其歸類為「建議」或「必要」以進行修正。建議的問題通常是讓 BlueXP 分類掃描和分類工作執行速度變慢的項目。這些項目不需要修正、但您可能想解決這些問題。</block>
   <block id="b6aefc1f5bf5d61908d5d40fe783f3c9" category="paragraph">如果您有任何「必要」問題、您應該修正這些問題、然後再次執行 Prerequisites 測試指令碼。</block>
-  <block id="1fd880d67ad7d5a9e1ce56b61569fe92" category="summary">您可以解除安裝 BlueXP 分類軟體來疑難排解問題、或從主機中永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟、所有已掃描的資訊 BlueXP 分類都會永久刪除。</block>
-  <block id="ae2fd70b5fccf0d18c6c0a33a953aa3b" category="doc">解除安裝 BlueXP 分類</block>
   <block id="f93e118724d27bde2efdff3938b9b6df" category="paragraph">您需要使用的步驟取決於您是在雲端或內部部署主機上部署 BlueXP 分類。</block>
   <block id="8d8f6d516c2b2976c4b330129843859b" category="section-title">從雲端部署解除安裝 BlueXP 分類</block>
   <block id="809de3d4b48cba202a3e92df9b5646ca" category="paragraph">如果您不想再使用 BlueXP 分類、可以從雲端供應商環境中解除安裝和刪除 BlueXP 分類執行個體。</block>
   <block id="36c78ffc00f44e6669853141b4757135" category="inline-image-macro">用於解除安裝 BlueXP 分類軟體的按鈕螢幕擷取畫面。</block>
-  <block id="f4b93d0f798b3e20a2411b62607f9933" category="paragraph"><block ref="f4b93d0f798b3e20a2411b62607f9933" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f10f83db534963d9efae7a297e100091" category="list-text">前往雲端供應商的主控台、刪除 BlueXP 分類執行個體。此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
   <block id="961ca08e58e9f85191f5707bc4dac07a" category="paragraph">這會刪除 BlueXP 分類所收集的執行個體和所有相關資料。</block>
   <block id="a3b42cd70d6e63a58b881566f7a8992b" category="section-title">從內部部署部署解除安裝 BlueXP 分類</block>
@@ -2881,7 +2878,6 @@
   <block id="f9cb03d21a26b2f64053d2e527396790" category="paragraph">如果您偏好使用內部部署的 BlueXP  分類執行個體來掃描內部部署 ONTAP 系統，則內部部署安裝可能是一個很好的選擇，但這不是一項要求。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。</block>
   <block id="ee8870d1e0595ddae329cf8ef1ee89fa" category="paragraph">您可以篩選調查頁面的內容、只顯示您要查看的結果。</block>
   <block id="260af28d48ba051bd7cdd887380f9ece" category="paragraph">在 Linux 主機上手動安裝 BlueXP  分類之前，請選擇性地在主機上執行指令碼，以確認安裝 BlueXP  分類的所有必要條件均已就緒。您可以在網路中的 Linux 主機或雲端中的 Linux 主機上執行此指令碼。主機可以連線至網際網路、或主機可以位於無法存取網際網路的站台（暗站台）。</block>
-  <block id="b64eea97fe56778b0e28c568854873ed" category="paragraph">解除安裝 BlueXP  分類軟體以疑難排解問題，或從主機中永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟、所有已掃描的資訊 BlueXP 分類都會永久刪除。</block>
   <block id="6b9d9a04ff593ff427731819f0c3618f" category="doc">版本 1.40</block>
   <block id="dc4b47101650865122105745fe8d0a2c" category="paragraph-title">支援 RHEL 9.5</block>
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">除了先前支援的版本之外、此版本還支援 Red Hat Enterprise Linux v9.5 。這適用於任何手動內部部署的 BlueXP  分類安裝、包括暗點部署。</block>
@@ -3491,8 +3487,6 @@
   <block id="eee95a219b81e97bc6cd4730c01adbe3" category="section-title">啟用及停用物件儲存桶上的法規遵循掃描</block>
   <block id="71377237946a16cc4981e8007b83be9b" category="list-text">選取 * 啟用 * 。</block>
   <block id="70d6b08c88906fcec4b2b02cb10b8c51" category="admonition">您也可以從「組態」頁面中選取按鈕，然後按一下「 * 啟動 BlueXP  分類 * 」，來啟用工作環境的規範掃描<block ref="31135726bc5ec70729152e8a36c2ff64" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="5c90cc26dd42f9d3c2debeeef6f5b7cf" category="list-text">在 BlueXP  分類頁面頂端，選取「 <block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>* 解除安裝資料感知 * 」。</block>
-  <block id="3455f1fb9a5d72859b5d3a372dc8f0fa" category="list-text">在 _ 解除安裝資料感測 _ 對話方塊中，輸入 * 解除安裝 * 以確認您要中斷 BlueXP  分類執行個體與 BlueXP  Connector 的連線，然後選取 * 解除安裝 * 。</block>
   <block id="6cf3fc600b47594541f48cafd63826ff" category="paragraph">若要在「調查」頁面中顯示已儲存搜尋的結果，請選取<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>特定搜尋的按鈕，然後選取 * 調查結果 * 。</block>
   <block id="9038bf96038481d40955e45169d29a59" category="inline-image-macro">從「已儲存的搜尋」索引標籤中選取特定搜尋的調查結果的螢幕擷取畫面。</block>
   <block id="fddc772362fed7ea80a47e67e7402818" category="paragraph"><block ref="fddc772362fed7ea80a47e67e7402818" category="inline-image-macro-rx" type="image"></block></block>
@@ -3508,4 +3502,9 @@
   <block id="ddbd2f5304c626fb501329931a8611ab" category="paragraph"><block ref="ddbd2f5304c626fb501329931a8611ab" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6fd5e575afc5674cda5e381f7413c374" category="paragraph">如果您不再需要任何自訂儲存的搜尋，您可以將其刪除。您無法刪除預設的儲存搜尋。</block>
   <block id="400d8a42346f426cc27b0acd4383c48b" category="paragraph">若要刪除儲存的搜尋，請選取<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>特定搜尋的按鈕，選取 * 刪除搜尋 * ，然後在確認對話方塊中再次選取 * 刪除搜尋 * 。</block>
+  <block id="0f7a903ff3355d4ce99a771fa2712107" category="summary">您可以解除安裝 BlueXP 分類軟體來疑難排解問題、或從主機中永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟。所有已掃描的 BlueXP  分類資訊都將永久刪除。</block>
+  <block id="0d5f6e7ce707545204c3452bc32c2c33" category="paragraph">您可以解除安裝 BlueXP  分類，以疑難排解問題，或從主機中永久移除軟體。刪除執行個體也會刪除索引資料所在的相關磁碟，這表示 BlueXP  已掃描的所有資訊都將永久刪除。</block>
+  <block id="4e256f8808c26162477f8001f045469e" category="list-text">在「 BlueXP  分類」頁面頂端，選取<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>「 * 解除安裝分類 * 」。</block>
+  <block id="af7b04d89717e4fa9eec9f8310536047" category="paragraph"><block ref="af7b04d89717e4fa9eec9f8310536047" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="87cb261b2c6248958390f5e6c3919b1c" category="list-text">在 _ 解除安裝分類 _ 對話方塊中，輸入 * 解除安裝 * 以確認您要中斷 BlueXP  分類執行個體與 BlueXP  Connector 的連線，然後選取 * 解除安裝 * 。</block>
 </blocks>
