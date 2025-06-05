@@ -281,7 +281,7 @@ image:diagram_deploy_onprem_single_host_no_internet.png["圖表顯示在內部�
 
 請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它寫在 `/opt/netapp/install_logs/`。link:task-audit-data-sense-actions.html["請參閱此處的更多詳細資料"]。
 
-.您需要的產品
+.開始之前
 * 驗證您的 Linux 系統是否符合<<準備Linux主機系統,主機需求>>。
 * 確認您已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。
 * 請確定您擁有Linux系統的root權限。

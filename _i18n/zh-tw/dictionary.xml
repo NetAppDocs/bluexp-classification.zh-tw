@@ -1106,7 +1106,6 @@
   <block id="c4c8ed9ed1210b4b825ecd4522c73de9" category="paragraph">在離線環境中的單一內部部署主機上安裝 BlueXP 分類軟體時、請遵循下列步驟。</block>
   <block id="5c2d28b4f3a99b0fe3968b98ea7d88e5" category="inline-link-macro">請參閱此處的更多詳細資料</block>
   <block id="f221652320e994dc66aab1d5d6da5fb7" category="paragraph">請注意、安裝 BlueXP 分類時會記錄所有安裝活動。如果您在安裝期間遇到任何問題、您可以檢視安裝稽核記錄的內容。它寫在<block ref="fd35ff247277f8b2076573900f968fde" prefix=" " category="inline-code"></block>。<block ref="c7911c51adef419f386feff4cec8acf6" category="inline-link-macro-rx"></block>。</block>
-  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
   <block id="d709c500efa2b07b31dad2acb1fc7b92" category="list-text">驗證您的 Linux 系統是否符合<block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>。</block>
   <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">確認您已安裝兩個必要的軟體套件（ Docker Engine 或 Podman 和 Python 3 ）。</block>
   <block id="7e1fecc0c3cbd38b434a0a6232a69c06" category="list-text">請確定您擁有Linux系統的root權限。</block>
@@ -3446,14 +3445,11 @@
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP  分類可支援從本機下載資料調查報告，以便在瀏覽器中檢視。如果您選擇本機選項，則資料調查只能以 CSV 格式進行，而且只會顯示前 10 ， 000 列的資料。</block>
   <block id="36df48405a6f112e4df550bf1db8906b" category="paragraph">BlueXP  分類可讓您在僅對應掃描之外，設定地圖和分類掃描的優先順序，讓您選擇先完成哪些掃描。在掃描開始期間和之前，都支援排列地圖和分類掃描的優先順序。如果您選擇在掃描進行期間排定優先順序，則對應和分類掃描都會排定優先順序。</block>
   <block id="ef37a49c1c224f5d438865198ffa4329" category="paragraph">BlueXP  分類可支援傳送分類事件（當掃描開始及結束時）至<block ref="bf2e0502217ecef5db4e8e3a077fc733" category="inline-link-macro-rx"></block>。</block>
-  <block id="c90892d942290d1e3f7e24962cdcf860" category="admonition">從 1.31 版開始， BlueXP  分類可作為 BlueXP  的核心功能。無需額外付費。不需要分類授權或訂閱。</block>
-  <block id="c75e25f64e8cd1943eed51ff64a1b8cf" category="paragraph">+ 如果您使用的是舊版 1.30 或更早版本，則該版本會在您的訂閱到期之前提供使用。<block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>。</block>
   <block id="9688e61f362299cd1c72fb3dac40d459" category="paragraph">BlueXP  分類是免費使用的。不需要分類授權或付費訂閱。</block>
   <block id="c9592ef6d87170043628925b775e21a9" category="list-text">Proxy 必須是非透明的。BlueXP  分類目前不支援透明 Proxy 。</block>
   <block id="1baa4497e4f5fcbb6d939687ae9bf242" category="admonition">BlueXP  分類在建立 regex 時不支援模式旗標。這表示您不應使用「 / 」。</block>
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">* 執行中 * （綠點）：位於佇列中的掃描工作正在選定儲存儲存庫上進行中。</block>
   <block id="2d018dff61f63f937cfb5d226fca5491" category="admonition">下列資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。</block>
-  <block id="8410773aea4e8f5fda4e98ce13c101df" category="paragraph">+ 從 1.31 版開始， BlueXP  分類是核心 BlueXP  產品的一部分。如需更多資訊、請參閱 <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
   <block id="cdde1a1bd8cf3465f2f0be76f0538e93" category="list-text">將 * 最長 CLI/API 工作階段持續時間 * 從 1 小時變更為 12 小時。儲存變更。</block>
   <block id="21c270b5c383cf7064093b0641efa2a2" category="list-text">選擇 * 附加原則 * ，然後 * 建立原則 * 。</block>
   <block id="5e4a3a973c4b69d34bc9fa0a170ac878" category="paragraph">BlueXP  分類執行個體設定檔帳戶可存取額外的 AWS 帳戶。</block>
@@ -3507,4 +3503,6 @@
   <block id="4e256f8808c26162477f8001f045469e" category="list-text">在「 BlueXP  分類」頁面頂端，選取<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>「 * 解除安裝分類 * 」。</block>
   <block id="af7b04d89717e4fa9eec9f8310536047" category="paragraph"><block ref="af7b04d89717e4fa9eec9f8310536047" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87cb261b2c6248958390f5e6c3919b1c" category="list-text">在 _ 解除安裝分類 _ 對話方塊中，輸入 * 解除安裝 * 以確認您要中斷 BlueXP  分類執行個體與 BlueXP  Connector 的連線，然後選取 * 解除安裝 * 。</block>
+  <block id="699184717a21749f96a420118357783a" category="admonition">從 1.31 版開始， BlueXP  分類可作為 BlueXP  的核心功能。無需額外付費。不需要分類授權或訂閱。+ 如果您使用的是舊版 1.30 或更早版本，則該版本會在您的訂閱到期之前提供使用。<block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>。</block>
+  <block id="6dfc47fd75f488d4315e13098508d320" category="admonition">下列資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。+ 從 1.31 版開始， BlueXP  分類是核心 BlueXP  產品的一部分。如需更多資訊、請參閱 <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -5,8 +5,8 @@ keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, perso
 summary: BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。 
 ---
 = 瞭解 BlueXP 分類
-:hardbreaks:
 :allow-uri-read: 
+:no-hardbreaks: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -17,9 +17,7 @@ summary: BlueXP 分類是 BlueXP 的資料治理服務、可掃描企業內部�
 BlueXP 分類（ Cloud Data Sense ）是 BlueXP 的資料治理服務、可掃描企業內部部署和雲端資料來源、以對應和分類資料、並識別私有資訊。這有助於降低安全性與法規遵循風險、降低儲存成本、並協助您執行資料移轉專案。
 
 
-IMPORTANT: 從 1.31 版開始， BlueXP  分類可作為 BlueXP  的核心功能。無需額外付費。不需要分類授權或訂閱。
-
-+ 如果您使用的是舊版 1.30 或更早版本，則該版本會在您的訂閱到期之前提供使用。link:reference-free-paid.html["請參閱過時功能的清單"]。
+IMPORTANT: 從 1.31 版開始， BlueXP  分類可作為 BlueXP  的核心功能。無需額外付費。不需要分類授權或訂閱。+ 如果您使用的是舊版 1.30 或更早版本，則該版本會在您的訂閱到期之前提供使用。link:reference-free-paid.html["請參閱過時功能的清單"]。
 
 
 

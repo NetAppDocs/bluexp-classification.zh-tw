@@ -192,7 +192,7 @@ BlueXP 分類會將它掃描的資料分成不同類型的類別。類別是以�
 
 更新自訂類別之後、 BlueXP 分類將重新開始掃描所有資料來源。掃描完成後、新結果將會顯示在 BlueXP 分類規範儀表板的「類別」區段下方、以及「類別」篩選器的「調查」頁面中。link:task-controlling-private-data.html#view-files-by-categories["瞭解如何依類別檢視檔案"]。
 
-.您需要的產品
+.開始之前
 您至少需要建立 25 個訓練檔案、其中包含您希望 BlueXP 分類識別的資料類別範例。支援下列檔案類型：
 
 `+.CSV, .DOC, .DOCX, .GZ, .JSON, .PDF, .PPTX, .RTF, .TXT, .XLS, .XLSX, Docs, Sheets, and Slides+`
