@@ -881,7 +881,6 @@
   <block id="e22f9909ed0cc14af3ae41c9e280cf13" category="cell">列出工作環境中特定大小範圍內的檔案數量。</block>
   <block id="f12b42eece54a56ffab836a42eb37488" category="cell">檔案類型</block>
   <block id="7d8121f1bc518fb0e6e184fba09d6b2b" category="cell">列出儲存在工作環境中的每種檔案類型的檔案總數和使用容量。</block>
-  <block id="97f34c43cfd5abbd752382f17f44c9a2" category="list-text">在BlueXP功能表中、按一下*管理&gt;分類*。</block>
   <block id="fb5cbffc5e8f979523247654de6b0102" category="inline-image-macro">「管理儀表板」的快照、顯示如何啟動資料對應報告。</block>
   <block id="9fdf01a1261d4a4e788383c1af9adaf2" category="paragraph">BlueXP 分類會產生 .pdf 報告、您可以視需要檢閱並傳送給其他群組。</block>
   <block id="46bd1bd2277d77e6f044cdb7a6983fc6" category="inline-image-macro">「更多」按鈕</block>
@@ -2994,20 +2993,15 @@
   <block id="2cb533e4202a16a29d8a35f975b18546" category="list-text">選擇 * 治理 * 。</block>
   <block id="59fb9b8d21a1200f68a3255348e5aad7" category="paragraph">此時會出現 Governance 儀表板。</block>
   <block id="cd44aff9043f042044d20fa9200a9168" category="section-title">檢視儲蓄商機</block>
-  <block id="64d5cdb36e33cae106a6b70c95fdc6de" category="paragraph">您可能想要調查「_儲存商機_」區域中的項目、看看是否有任何您應該刪除的資料、或是將資料分層到較便宜的物件儲存設備。</block>
   <block id="d7fc3a438d308cfbcbd8fa3231391419" category="list-text">從 BlueXP  分類功能表中，選取 * 治理 * 。</block>
   <block id="9da3158754790a2bd5d492ff265be3c4" category="section-title">建立資料探索評估報告</block>
   <block id="310db9cf8ba2482b63b9ab1efe7fe48c" category="paragraph">「資料探索評估報告」提供對掃描環境的高層級分析，以顯示相關領域和可能的補救步驟。結果是根據資料的對應和分類而定。本報告的目標是提高對資料集三個重要層面的認知度：</block>
   <block id="ba8c35e924f949589fd6e14b916db6fc" category="paragraph">使用此報告，您可以採取下列行動：</block>
   <block id="b1d35e9ba32779b24fcef34132e15f8c" category="paragraph"><block ref="b1d35e9ba32779b24fcef34132e15f8c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96929b0f4dead0308876154107c4bcb8" category="section-title">建立資料對應總覽報告</block>
-  <block id="bfb48ff12b1469d0b2731ba4b39d8082" category="paragraph">資料對應總覽報告提供儲存在企業資料來源中的資料總覽，協助您做出移轉，備份，安全性及法規遵循程序的決策。報告會先列出概述、總結您所有的工作環境和資料來源、然後針對每個工作環境提供分析。</block>
   <block id="a1fe048fbf4d3c352f8807ca8e61a815" category="paragraph"><block ref="a1fe048fbf4d3c352f8807ca8e61a815" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6374c84804cec753d099290142ab1465" category="section-title">檢閱依資料敏感度列出的最上層資料儲存庫</block>
-  <block id="6a0a0aa77d6678b0ac42141cf2b473bc" category="list-text">若要篩選將出現在「調查」頁面的結果，請選取每個區域 IB 列，然後進一步調查。</block>
   <block id="b2c12a3831282ab991643e16075afb77" category="section-title">檢閱機密資料及廣泛權限</block>
-  <block id="dd0ba7576314f49b14e69d557e1760b4" category="list-text">從最嚴格的權限到最嚴格的水平 axix 限制。</block>
-  <block id="115db9a4d58348c93542384adcf071b0" category="list-text">從最不敏感的資料到垂直軸上最敏感的資料。</block>
   <block id="a72b82c1583cb44d3bde15fd3b45db0a" category="list-text">若要篩選將出現在「調查」頁面的結果，請選取一個方塊，然後進一步調查。</block>
   <block id="912072af1bc9d9c75e7bd16ebc45d2eb" category="section-title">檢閱依開啟權限類型列出的資料</block>
   <block id="aba1ea5ecac0b70b83e6fef3deec34cf" category="section-title">檢閱資料的年齡和大小</block>
@@ -3061,7 +3055,6 @@
   <block id="d39106ddc0b9af9f51dbea48d0d9dfca" category="list-text">對於內部部署 ONTAP 系統：連接器為內部部署。</block>
   <block id="04bf12fbff5cef799199f1d030acd3aa" category="paragraph">如果這些位置有資料，您可能需要使用<block ref="bc298eaca29e4bff3f0d222b24813861" category="inline-link-rx"></block>。</block>
   <block id="47f5b0791caa2598c4559bb5afa675a9" category="paragraph">這是您應該開始研究的地方。您可以從 Governance 儀表板選取一個區域以供進一步調查。</block>
-  <block id="56bcd47afb74823d33fc490b9ced87a3" category="list-text">在 Governance 儀表板的每個「節約機會」方塊中，選取 * 最佳化 Storage* ，即可在「調查」頁面中檢視篩選的結果。您可能想要調查「_儲存商機_」區域中的項目、看看是否有任何您應該刪除的資料、或是將資料分層到較便宜的物件儲存設備。</block>
   <block id="dfd23906ba391609b608a93fdd40fdb2" category="admonition">如果您的任何資料來源都實作資料分層，則已位於物件儲存區的舊資料可在 _ 過時資料 _ 類別中識別。</block>
   <block id="483d6c5447c876cec7c9f20a2f16d52e" category="list-text">變更保留原則、或移動或刪除特定資料（過時、重複或非業務資料）、以降低儲存成本</block>
   <block id="5672e2463aa066853c9eb4cf4b3e3fa8" category="list-text">修改全域群組管理原則、以保護具有廣泛權限的資料</block>
@@ -3071,7 +3064,6 @@
   <block id="4cbb02ef6d1ee9902b65e08b42b83a08" category="list-text">若要查看每個類別的項目總數，請將游標放在列的每個區段上。</block>
   <block id="78e705dbea0d34c81ef33941cfdd7c20" category="list-text">若要查看每個類別中的檔案總數，請將游標放在每個方塊上。</block>
   <block id="d2bc42c21eb303e3f8120f5a184e4544" category="list-text">在資料存留期圖表中，若要查看資料存留期的詳細資料，請將游標放在圖表中的某個點上。</block>
-  <block id="1848496efeb9b0561b54c93d4ca7403e" category="list-text">按一下 * 治理 * 、然後按一下 * 資料探索評估報告 * 按鈕。</block>
   <block id="9566c25add5b83fcc4806bd8bb57a21a" category="paragraph">根據預設、 BlueXP 分類儀表板會顯示所有工作環境、資料庫和資料來源的法規遵循與治理資料。如果您只想檢視某些工作環境中包含資料的報告，您可以篩選以查看這些報告。</block>
   <block id="2f426ddd581281bfd34e83b37e971e66" category="paragraph">以下報告可供 BlueXP 分類使用：</block>
   <block id="46e3b95cc12c4fba5a55ddd543dff215" category="list-text">* 資料探索評估報告 * ：提供對掃描環境的高層級分析，以強調系統的發現，並顯示關切領域和可能的補救步驟。</block>
@@ -3180,7 +3172,6 @@
   <block id="8596fbd0d6e4b9782a36919493e0f086" category="paragraph"><block ref="2d2ba3511c6805480e0a015c44902c12" category="inline-link-rx"></block>以瞭解如何安裝 BlueXP  分類。</block>
   <block id="e3dd4dfda4973beedb5de6104236142b" category="paragraph">請注意，安裝程式會執行預先檢查，確保您的系統和網路需求已就緒，以便順利安裝。<block ref="dea23cd1830b75045583053d44b9aee3" category="inline-link-rx"></block>瞭解預先檢查的訊息和影響。</block>
   <block id="7ec81e7bd855030d276d5e61de219e52" category="paragraph"><block ref="c0e59dce73248da1782dbe9a4a61e5dc" category="inline-link-rx"></block>以瞭解如何執行 Prerequisites 指令碼並解譯結果。</block>
-  <block id="f408cd0243ef931fdcfb337c2ad2d6f0" category="paragraph">如果報告大於 1 MB 、 .pdf 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 .pdf 檔案。當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體、才能下載 .pdf 檔案。</block>
   <block id="5d438f8104cebc11a4ee47fcd2dd6a70" category="paragraph">Data Mapping Overview （資料對應概述）報告的 _Top Data Repositories by Sensitivity Level_ （依敏感度層級區分的最上層資料儲存庫）區域列出了包含最敏感項目的前四個資料儲存庫（工作環境和資料來源）。每個工作環境的長條圖分為：</block>
   <block id="2f2ce99b32f61c21863fbe7701f9ad08" category="paragraph">「資料對應概觀」報告的「 _ 敏感資料和整體權限 _ 」區域會顯示包含敏感資料且具有廣泛權限的檔案百分比。此圖表顯示下列權限類型：</block>
   <block id="5464eb098727418ca8f11c507edc4361" category="paragraph">「資料對應概觀」報告的「 _ 開放權限 _ 」區域會顯示所有掃描檔案的每種權限類型百分比。此圖表顯示下列權限類型：</block>
@@ -3355,10 +3346,8 @@
   <block id="16e486f23dded8263d11848df3764b93" category="list-text">動作類型（刪除，複製，移動，建立儲存的搜尋，更新儲存的搜尋，重新掃描檔案，下載 JSON 報告等）</block>
   <block id="3c60fc446538a7e633556a56c0270a7b" category="list-text">儲存的搜尋名稱</block>
   <block id="3d8e42b0b0efcc9caab1fb0b9309b99c" category="section-title">檢閱儲存的搜尋結果數量最多</block>
-  <block id="32362fe63acb7ffc63175566121ad596" category="paragraph">在 _ 儲存的搜尋 _ 標籤中，搜尋結果數量最多的搜尋會顯示在清單頂端。</block>
   <block id="1a2cb7ec85630ab674f28989b04d5180" category="inline-link-macro">建立儲存的搜尋</block>
   <block id="bb3af25bd7c0b9f324e3747796764e22" category="paragraph">如需已儲存搜尋的詳細資訊，請參閱<block ref="c97fce4c2b55d75df91ca91c522727ac" category="inline-link-macro-rx"></block>。</block>
-  <block id="4e4a6277c9744cd4cca07da9aa9ccae0" category="list-text">在 Gloverance 儀表板中，找出儲存的搜尋方塊。選取儲存的搜尋名稱，以在「調查」頁面中顯示結果。</block>
   <block id="315e89aa08d31a5d6e5b7e5ee124e27f" category="list-text">選取 * 檢視全部 * 以檢視所有可用的儲存搜尋清單。在 _ 儲存的搜尋 _ 區域中，搜尋結果數量最多的搜尋會顯示在清單頂端。</block>
   <block id="b3d4fb955e1630fd4184c8964a1f4fdb" category="inline-link-macro">建立自訂分類</block>
   <block id="4b760cb0a54b4c608b7deaa08d52f3c3" category="paragraph">您也可以建立自訂搜尋字詞，以識別組織特有的個人資料。如需更多資訊、請參閱 <block ref="702fa1a9e503f253a2dc3aea49d5216d" category="inline-link-macro-rx"></block>。</block>
@@ -3505,4 +3494,37 @@
   <block id="87cb261b2c6248958390f5e6c3919b1c" category="list-text">在 _ 解除安裝分類 _ 對話方塊中，輸入 * 解除安裝 * 以確認您要中斷 BlueXP  分類執行個體與 BlueXP  Connector 的連線，然後選取 * 解除安裝 * 。</block>
   <block id="699184717a21749f96a420118357783a" category="admonition">從 1.31 版開始， BlueXP  分類可作為 BlueXP  的核心功能。無需額外付費。不需要分類授權或訂閱。+ 如果您使用的是舊版 1.30 或更早版本，則該版本會在您的訂閱到期之前提供使用。<block ref="95fdf30a79e4e089c8e09026a1472ebd" category="inline-link-macro-rx"></block>。</block>
   <block id="6dfc47fd75f488d4315e13098508d320" category="admonition">下列資訊僅適用於 BlueXP  分類舊版 1.30 及更早版本。+ 從 1.31 版開始， BlueXP  分類是核心 BlueXP  產品的一部分。如需更多資訊、請參閱 <block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
+  <block id="1c4322a2b157ac1326426ebdbd680c74" category="doc">版本 1.44</block>
+  <block id="c7ea7ba68a180dd7fffb65d260820bdf" category="paragraph-title">改進了治理儀表板的更新時間</block>
+  <block id="4a225b50559fc3e5c91e7a224bca4f82" category="paragraph">治理儀表板各個組件的更新時間已改進。下表顯示了每個組件的更新頻率。</block>
+  <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">元件</block>
+  <block id="b5c592ebd16824471b1dac54611da0f9" category="cell">更新時間</block>
+  <block id="e1f57d0c474bedaae9c88fad138dcfd0" category="cell">24小時</block>
+  <block id="b70528883a2d1dce278c3b16e0f8c608" category="cell">資料總覽</block>
+  <block id="4adcc26418f545df76ab44c53fc55702" category="cell">5 分鐘</block>
+  <block id="6db4df856c2ad3b66b59b98767190ee4" category="cell">重複文件</block>
+  <block id="6619a70f8ab8877e4131643fb8ded723" category="cell">2小時</block>
+  <block id="8c8fee331e9f3e5231bff4fd3c702b79" category="cell">非業務數據</block>
+  <block id="e804ac99d8e193e9d3e3437979ce7bdf" category="cell">已儲存的搜尋</block>
+  <block id="8b15c77295fd06496b4e5497d3038948" category="cell">敏感資料和廣泛權限</block>
+  <block id="3c321d8be960cf9c4e3de3feeb79454d" category="cell">陳舊數據</block>
+  <block id="66f1eb6a68ea177f7b25f4befa2afcb5" category="cell">按敏感度等級劃分的頂層資料儲存庫</block>
+  <block id="b97835ec7267635dbdb6a030bb594b9b" category="inline-xref-macro">檢視組織中儲存資料的治理詳細資料</block>
+  <block id="af67ad5f0d1d3f928958a66c7475e1df" category="paragraph">您可以查看上次更新時間，並手動更新「重複檔案」、「非業務資料」、「已儲存的搜尋」、「過時資料」和「按敏感度等級排名靠前的資料儲存庫」元件。有關“治理”儀表板的更多信息，請參閱<block ref="e2440d776a494477c2f83bc685289508" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">性能和安全改進</block>
+  <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">我們已經進行了增強以提高 BlueXP 分類的效能、記憶體消耗和安全性。</block>
+  <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis 已升級，以提高 BlueXP 分類的可靠性。 BlueXP分類現在使用 Elasticsearch 來提高掃描期間文件數量報告的準確性。</block>
+  <block id="4ce11cec26d762df6394f69d055da8f3" category="paragraph">控制與組織儲存資源上的資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。</block>
+  <block id="85e39e757382e56d6d92190ad9864b64" category="paragraph">「節省機會」元件顯示您可以刪除或分層到更便宜的物件儲存的資料。「節省機會」中的資料每 2 小時更新一次，您可以手動更新。</block>
+  <block id="70de9418b6d77c7f4c2d4632b262c0df" category="list-text">在 Governance 儀表板的每個「節約機會」方塊中，選取 * 最佳化 Storage* ，即可在「調查」頁面中檢視篩選的結果。要發現您應該刪除或分層到較便宜的存儲的任何數據，請調查_節省機會_。</block>
+  <block id="cc3d8cff4beaca4e220fce51a1bf5a47" category="paragraph">在 _ 儲存的搜尋 _ 標籤中，搜尋結果數量最多的搜尋會顯示在清單頂端。該數據每兩小時更新一次。</block>
+  <block id="4fc6cd03aea7b0463c849034a115a4ed" category="list-text">在治理儀表板中，找到「已儲存的搜尋」圖塊。選取儲存的搜尋名稱，以在「調查」頁面中顯示結果。</block>
+  <block id="9ba59392053c707a2008110979a1d5d3" category="paragraph">資料對應總覽報告提供儲存在企業資料來源中的資料總覽，協助您做出移轉，備份，安全性及法規遵循程序的決策。該報告總結了所有工作環境和數據來源，並對每個工作環境進行了分析。</block>
+  <block id="9e8b7662071d4d301b9e642a55a32479" category="paragraph">如果報告大於 1 MB 、 .pdf 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 .pdf 檔案。當 BlueXP 分類部署在雲端時，您需要透過 SSH 連線到 BlueXP 分類實例來下載 .pdf 檔案。</block>
+  <block id="5a95c74f5018b079fee6514d5db4aaf2" category="paragraph">數據每兩小時刷新一次，可以手動刷新。</block>
+  <block id="6407e93c650ddb85c8f2aa5be83f216b" category="list-text">若要過濾調查頁面中顯示的結果，請選擇欄中的每個區域並進一步調查。</block>
+  <block id="a68d116e41811f0ca6fb6aefa908afd9" category="list-text">從橫軸上最嚴格的權限到最寬鬆的限制。</block>
+  <block id="c0ff25971ba3c6cce0ab70a7e99e54ad" category="list-text">縱軸上從最不敏感的資料到最敏感的資料。</block>
+  <block id="77a197972f7313e7a09a6a077fc9f4c2" category="list-text">選擇*治理*，然後選擇*資料發現評估報告*按鈕。</block>
+  <block id="791d05d0e9072626d0316ef0a7cf21bc" category="section-title">2025 年 6 月 09 日</block>
 </blocks>

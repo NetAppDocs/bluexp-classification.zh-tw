@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
-keywords: savings, stale data, non-business data, duplicate data, age or data, size of data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
+keywords: savings, stale data, non-business data, duplicate data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, categories, file types, costs of data 
 summary: 控制與組織儲存資源資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。 
 ---
 = 使用 BlueXP  分類檢視組織中儲存資料的治理詳細資料
@@ -14,7 +14,7 @@ summary: 控制與組織儲存資源資料相關的成本。BlueXP 分類可識�
 
 
 [role="lead"]
-控制與組織儲存資源資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。
+控制與組織儲存資源上的資料相關的成本。BlueXP 分類可識別系統中的過時資料、非商業資料、重複檔案和非常大型檔案數量、讓您決定是要移除某些檔案、還是要將某些檔案分層儲存至較便宜的物件儲存設備。
 
 這是您應該開始研究的地方。您可以從 Governance 儀表板選取一個區域以供進一步調查。
 
@@ -40,11 +40,11 @@ image:screenshot_compliance_governance_dashboard.png["BlueXP 分類治理儀表�
 
 === 檢視儲蓄商機
 
-您可能想要調查「_儲存商機_」區域中的項目、看看是否有任何您應該刪除的資料、或是將資料分層到較便宜的物件儲存設備。
+「節省機會」元件顯示您可以刪除或分層到更便宜的物件儲存的資料。「節省機會」中的資料每 2 小時更新一次，您可以手動更新。
 
 .步驟
 . 從 BlueXP  分類功能表中，選取 * 治理 * 。
-. 在 Governance 儀表板的每個「節約機會」方塊中，選取 * 最佳化 Storage* ，即可在「調查」頁面中檢視篩選的結果。您可能想要調查「_儲存商機_」區域中的項目、看看是否有任何您應該刪除的資料、或是將資料分層到較便宜的物件儲存設備。
+. 在 Governance 儀表板的每個「節約機會」方塊中，選取 * 最佳化 Storage* ，即可在「調查」頁面中檢視篩選的結果。要發現您應該刪除或分層到較便宜的存儲的任何數據，請調查_節省機會_。
 +
 ** *過時資料*：3年前上次修改的資料。
 ** *非商業資料*：根據類別或檔案類型、被視為與商業無關的資料。這包括：
@@ -70,13 +70,13 @@ NOTE: 如果您的任何資料來源都實作資料分層，則已位於物件�
 
 === 檢閱儲存的搜尋結果數量最多
 
-在 _ 儲存的搜尋 _ 標籤中，搜尋結果數量最多的搜尋會顯示在清單頂端。
+在 _ 儲存的搜尋 _ 標籤中，搜尋結果數量最多的搜尋會顯示在清單頂端。該數據每兩小時更新一次。
 
 如需已儲存搜尋的詳細資訊，請參閱link:task-using-policies.html["建立儲存的搜尋"]。
 
 .步驟
 . 從 BlueXP  分類功能表中，選取 * 治理 * 。
-. 在 Gloverance 儀表板中，找出儲存的搜尋方塊。選取儲存的搜尋名稱，以在「調查」頁面中顯示結果。
+. 在治理儀表板中，找到「已儲存的搜尋」圖塊。選取儲存的搜尋名稱，以在「調查」頁面中顯示結果。
 . 選取 * 檢視全部 * 以檢視所有可用的儲存搜尋清單。在 _ 儲存的搜尋 _ 區域中，搜尋結果數量最多的搜尋會顯示在清單頂端。
 
 
@@ -122,7 +122,7 @@ BlueXP 分類會產生 PDF 報告、您可以視需要檢閱並傳送給其他�
 
 == 建立資料對應總覽報告
 
-資料對應總覽報告提供儲存在企業資料來源中的資料總覽，協助您做出移轉，備份，安全性及法規遵循程序的決策。報告會先列出概述、總結您所有的工作環境和資料來源、然後針對每個工作環境提供分析。
+資料對應總覽報告提供儲存在企業資料來源中的資料總覽，協助您做出移轉，備份，安全性及法規遵循程序的決策。該報告總結了所有工作環境和數據來源，並對每個工作環境進行了分析。
 
 報告包含下列資訊：
 
@@ -155,7 +155,7 @@ image:screenshot-compliance-report-buttons.png["「管理儀表板」的快照�
 .結果
 BlueXP 分類會產生 .pdf 報告、您可以視需要檢閱並傳送給其他群組。
 
-如果報告大於 1 MB 、 .pdf 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 .pdf 檔案。當 BlueXP 分類部署在雲端時、您需要 SSH 至 BlueXP 分類執行個體、才能下載 .pdf 檔案。
+如果報告大於 1 MB 、 .pdf 檔案會保留在 BlueXP 分類執行個體上、您會看到關於確切位置的快顯訊息。當 BlueXP 分類安裝在內部部署的 Linux 機器上、或部署在雲端的 Linux 機器上時、您可以直接瀏覽至 .pdf 檔案。當 BlueXP 分類部署在雲端時，您需要透過 SSH 連線到 BlueXP 分類實例來下載 .pdf 檔案。
 
 
 
@@ -168,9 +168,11 @@ Data Mapping Overview （資料對應概述）報告的 _Top Data Repositories b
 * 敏感的個人資料
 
 
+數據每兩小時刷新一次，可以手動刷新。
+
 .步驟
 . 若要查看每個類別的項目總數，請將游標放在列的每個區段上。
-. 若要篩選將出現在「調查」頁面的結果，請選取每個區域 IB 列，然後進一步調查。
+. 若要過濾調查頁面中顯示的結果，請選擇欄中的每個區域並進一步調查。
 
 
 
@@ -179,8 +181,8 @@ Data Mapping Overview （資料對應概述）報告的 _Top Data Repositories b
 
 「資料對應概觀」報告的「 _ 敏感資料和整體權限 _ 」區域會顯示包含敏感資料且具有廣泛權限的檔案百分比。此圖表顯示下列權限類型：
 
-* 從最嚴格的權限到最嚴格的水平 axix 限制。
-* 從最不敏感的資料到垂直軸上最敏感的資料。
+* 從橫軸上最嚴格的權限到最寬鬆的限制。
+* 縱軸上從最不敏感的資料到最敏感的資料。
 
 
 .步驟
@@ -235,8 +237,8 @@ NOTE: 如果您的任何資料來源都實作資料分層，則物件儲存區�
 如需詳細資訊、請參閱 link:task-controlling-private-data.html["依類別檢視檔案"] 。
 
 .步驟
-. 在BlueXP功能表中、按一下*管理>分類*。
-. 按一下 * 治理 * 、然後按一下 * 資料探索評估報告 * 按鈕。
+. 從 BlueXP  功能表中，選取 * 治理 > 分類 * 。
+. 選擇*治理*，然後選擇*資料發現評估報告*按鈕。
 
 
 .結果
