@@ -115,7 +115,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 *** Red Hat Enterprise Linux 版本 8.8 ， 8.10 ， 9.0 ， 9.1 ， 9.2 ， 9.3 ， 9.4 和 9.5
 
 
-** 必須在主機系統上啟用進階向量擴充指令集（ AVX ）。
+** 必須在主機系統上啟用進階向量擴充 (AVX2)。
 
 
 * * Red Hat Subscription Management* ：主機必須向 Red Hat Subscription Management 註冊。如果系統尚未註冊、則無法在安裝期間存取儲存庫以更新所需的協力廠商軟體。

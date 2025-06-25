@@ -532,30 +532,23 @@
   <block id="04857641e7994338feb506f5b60ebeb0" category="section-title">GCP 執行個體類型</block>
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="inline-link">n2-Standard-16</block>
   <block id="dd654e120269d83d0f32a6f695b8bab9" category="cell"><block ref="fc953708959f6784e56436278d753426" category="inline-link-rx"></block>（預設） n2d-standard-16 n1-Standard-16</block>
-  <block id="5d8aef9555e5438ddeff623786db2956" category="summary">已知限制指出本產品版本不支援的功能、或是無法與產品正確互通的功能。請仔細檢閱這些限制。</block>
   <block id="482723983a4f2af954e36ff41e567451" category="doc">已知限制</block>
-  <block id="c1625cb64a88ae7881c639831171f44b" category="section-title">BlueXP 分類版本移除選項</block>
   <block id="01bd3cbe95ecfc71aaa7abc34ae52e07" category="paragraph">2023 年 12 月（版本 1.26.6 ）版本移除下列選項：</block>
   <block id="bd387dbe20d15a2a0ff5e7602549388e" category="list-text">啟用稽核記錄集合的選項已停用。</block>
-  <block id="a8a28cc44c1c782e3e832f304d4dfbd7" category="list-text">在目錄調查期間，無法使用依目錄計算個人識別資訊（ PII ）資料數量的選項。</block>
   <block id="6b1b1c56d9e50ead02cb1c15240f6672" category="list-text">已停用使用 Azure Information Protection （ AIP ）標籤整合資料的選項。</block>
-  <block id="b36af7206dcf373bd9775c24677a5fc3" category="section-title">BlueXP 分類掃描限制</block>
   <block id="38e601196e9a43492efa5f85f3672de2" category="section-title">BlueXP 分類只會掃描一個磁碟區下的一個共用區</block>
   <block id="831362c8f190190a797ae86ca7a487e2" category="paragraph">如果單一磁碟區下有多個檔案共用、 BlueXP 分類會以最高階層掃描共用。例如、如果您有類似下列的共用：</block>
   <block id="e62fb7061d96488f28377b9b7c87a5f3" category="list-text">/a</block>
   <block id="dad5a0a365c61f8a86cad9dfc25f8b3a" category="list-text">/A/B</block>
   <block id="d5343bbc43034721eddff6ba04503653" category="list-text">/C</block>
   <block id="597702d739dab1871c93af7fab02812e" category="list-text">/D/E</block>
-  <block id="fcd814b0d6047e85c49b02424cb204bc" category="paragraph">然後將掃描 /a 中的資料。/C 和 /D 中的資料將不會被掃描。</block>
   <block id="7aebfa1e2291377e040de92d7f7f335f" category="paragraph-title">因應措施</block>
   <block id="14776bef68fe86f58d1665f68b865288" category="paragraph">有一種因應措施可確保您掃描的資料來自 Volume 中的所有共用區。請遵循下列步驟：</block>
   <block id="07ac6c7be4fcc2c3e85390641ca1f547" category="list-text">在工作環境中、新增要掃描的 Volume 。</block>
   <block id="4246bf7edec387ea5212cff7b1dbe300" category="list-text">BlueXP 分類完成掃描磁碟區後、請前往 _Data Investigation 頁面並建立篩選器、查看要掃描的共用區：</block>
-  <block id="460ff5a5e64ec3903817c107c3cb45f7" category="paragraph">您將依「工作環境名稱」和「目錄類型 = 共用」篩選資料、以查看要掃描的共用。</block>
   <block id="2094d1ac9663a79b428d9e79aedd0f59" category="list-text">取得 Volume 中存在的完整共用清單、以便查看哪些共用未被掃描。</block>
   <block id="316879df6c55d2fcb2fbb99ae1421271" category="inline-link-macro">將剩餘的共用新增至共用群組</block>
   <block id="6365c8ecbac772805c308b501098968e" category="list-text"><block ref="3c14a300450508449fa4ac656dc2d2d2" category="inline-link-macro-rx"></block>。</block>
-  <block id="312913ed4c4493306983760e524a18bf" category="paragraph">您需要個別新增所有共用、例如：</block>
   <block id="5bf592857864b6327e9f9e7ac8b12e7e" category="list-text">針對工作環境中具有多個共用區的每個磁碟區執行這些步驟。</block>
   <block id="31af9dbc59d95015ad9e14c7d979d66b" category="summary">有時候您可能需要登入 BlueXP 分類系統、以便存取記錄檔或編輯組態檔。</block>
   <block id="c079e3a087379d135bc6228cdbf4538d" category="doc">登入 BlueXP 分類系統</block>
@@ -2948,7 +2941,6 @@
   <block id="da912e25717291a31093b36e55bb8641" category="list-text">若要停用貯體上的掃描，請選取 * 關閉 * 。</block>
   <block id="79043fd5ff3b61216207b60882cd72cd" category="section-title">2025 年 19 月 2 日</block>
   <block id="84ea0db5b42f134872fbf35016e39cf9" category="list-text">Red Hat Enterprise Linux 版本 8.8 ， 8.10 ， 9.0 ， 9.1 ， 9.2 ， 9.3 ， 9.4 和 9.5</block>
-  <block id="e69d7b651771ff110228ddae78e71631" category="list-text">必須在主機系統上啟用進階向量擴充指令集（ AVX ）。</block>
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">改善分類模型準確度</block>
   <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">的機器學習模型準確度<block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block>已提升 11% 。</block>
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="doc">版本 1.41</block>
@@ -3527,4 +3519,16 @@
   <block id="c0ff25971ba3c6cce0ab70a7e99e54ad" category="list-text">縱軸上從最不敏感的資料到最敏感的資料。</block>
   <block id="77a197972f7313e7a09a6a077fc9f4c2" category="list-text">選擇*治理*，然後選擇*資料發現評估報告*按鈕。</block>
   <block id="791d05d0e9072626d0316ef0a7cf21bc" category="section-title">2025 年 6 月 09 日</block>
+  <block id="d4113e36e86a18cdd4a4813e9e66b30e" category="list-text">必須在主機系統上啟用進階向量擴充 (AVX2)。</block>
+  <block id="e07933db8e0e899d5b0b2536a835fbbe" category="summary">已知限制標識了此版本產品不支援的功能或無法與其正確互通的功能。請仔細檢閱這些限制。</block>
+  <block id="74541a5ab63d560e7b65e9ce0447a3ab" category="paragraph">已知限制標識了此版本中不受支援或無法正確互通的功能。請仔細檢閱這些限制。</block>
+  <block id="e382ea6fac43656c8a7e81cfe409b1b6" category="section-title">BlueXP 分類停用選項</block>
+  <block id="26bd123fab8351108bdebb31f296711d" category="list-text">在目錄調查期間，無法使用目錄計算個人識別資訊 (PII) 資料數量的選項。</block>
+  <block id="259d623d79dc59a6e00d957b305ff81e" category="section-title">BlueXP分類掃描</block>
+  <block id="00adfecaef292fa2ffd7212bdcb5ad50" category="paragraph">BlueXP 分類掃描有以下限制。</block>
+  <block id="3c3575798e25d7752d9a8983b437fdcc" category="paragraph">在此配置中，僅掃描 /A 中的資料。不掃描 /C 和 /D 中的資料。</block>
+  <block id="b48a7f1f3b627d536d2fde26516f5e38" category="paragraph">透過「工作環境名稱」和「目錄類型 = 共享」過濾數據，以查看正在掃描哪個共享。</block>
+  <block id="13bb1a0d5dd0d8923eac81793d8de810" category="paragraph">單獨新增所有共享，例如：</block>
+  <block id="5215d51f00cbd59bd4f5379564dd2607" category="section-title">上次訪問的時間戳</block>
+  <block id="ba9f5402880018fda0707ce102d53b4e" category="paragraph">當 BlueXP 分類對目錄進行掃描時，該掃描會影響目錄的「上次存取時間」欄位。當您查看「上次造訪時間」欄位時，該元資料會反映掃描的日期和時間，或使用者上次造訪該目錄的時間。</block>
 </blocks>
