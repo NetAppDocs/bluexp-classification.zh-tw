@@ -687,7 +687,6 @@
   <block id="cf270e40d273f9e7fd7c3061729060c3" category="cell">訓練</block>
   <block id="db5eb84117d06047c97c9a0191b5fffe" category="cell">支援</block>
   <block id="1cdcde584710eee44415045aa08434f5" category="cell">投訴與門票</block>
-  <block id="fd23f2a479ed0b74592359ca0f2e8fc1" category="paragraph">下列中繼資料也會分類、並以相同的支援語言識別：</block>
   <block id="01ff99864c73c43a845fe1b26d70c372" category="list-text">應用程式資料</block>
   <block id="0fa5a9c40f7f4a1f5dc486811f7a9a68" category="list-text">歸檔檔案</block>
   <block id="b22f0418e8ac915eb66f829d262d14a2" category="list-text">音訊</block>
@@ -713,8 +712,6 @@
   <block id="554cfab3938e21d9270bd6b75931f96f" category="list-text">影片</block>
   <block id="6acc6b028214373f8cc2b2f2cd1be70c" category="list-text">零位元組檔案</block>
   <block id="ba2688508d4961c3340fa3a979e0a164" category="section-title">檔案類型</block>
-  <block id="e28941ad3ee4450d4e082c1ed4ac7223" category="paragraph">BlueXP 分類會掃描所有檔案、以取得類別和中繼資料的洞見、並在儀表板的檔案類型區段中顯示所有檔案類型。</block>
-  <block id="e4ef3ccfa363c6ab883bef97f62feda4" category="paragraph">但是當 BlueXP 分類偵測到個人識別資訊（ PII ）、或執行 DSAR 搜尋時、僅支援下列檔案格式：</block>
   <block id="80890af19007fc709ba59342ca8b0385" category="section-title">找到資訊的準確度</block>
   <block id="28fda5ce8d3d029d75bd23c4faaf51cb" category="paragraph">NetApp 無法保證 BlueXP 分類所識別的個人資料和敏感個人資料的 100% 準確度。您應該一律檢閱資料來驗證資訊。</block>
   <block id="9d203da310dab1f086a98748da39c625" category="paragraph">根據我們的測試結果、下表顯示 BlueXP 分類所找到資訊的準確度。我們將其細分為 _精密度 _ 和 _Recall _ ：</block>
@@ -2627,14 +2624,12 @@
   <block id="8339f3b73dd5a0afa74d7cfbebd1b2c2" category="section-title">2024 年 4 月 11 日</block>
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024 年 10 月 10 日</block>
   <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2024 年 9 月 2 日</block>
-  <block id="dd6b8bf5a56c8beb81b173991906c83e" category="section-title">2024 年 8 月 5 日</block>
   <block id="3b506912c9fbc6e924c90fcd67f9e81d" category="section-title">版本 1.34</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">此 BlueXP  分類版本包含下列更新。</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="paragraph-title">從 CentOS 變更為 Ubuntu</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP  分類已將適用於 Microsoft Azure 和 Google Cloud Platform （ GCP ）的 Linux 作業系統從 CentOS 7.9 更新至 Ubuntu 22.04 。</block>
   <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">在可存取網際網路的 Linux 主機上安裝、並準備 Linux 主機系統</block>
   <block id="e6b6c1b590b016ecf7556d1571a4309e" category="paragraph">如需部署詳細資料、請參閱<block ref="ba79134a77255d2e97755d6f7b772847" category="inline-link-rx"></block>。</block>
-  <block id="16ec862fdbc31bf15f7d944ad60dd33f" category="section-title">2024 年 7 月 1 日</block>
   <block id="29ca6f4adc7aee37872328bb347b7543" category="section-title">版本 1.33</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="paragraph-title">支援 Ubuntu</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">此版本支援 Ubuntu 24.04 Linux 平台。</block>
@@ -2643,7 +2638,6 @@
   <block id="240625d3ff2ba7b1a3949f7ddfb468d3" category="paragraph-title">儀表板中的其他資料</block>
   <block id="43ac3190fe70b3bdb1f5d5b7083f374a" category="paragraph">此版本會在地圖繪製掃描期間、更新 Governance 、 Compliance 和 Investigation 儀表板中顯示的資料。</block>
   <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link">對應和分類掃描之間有何差異</block>
-  <block id="4497f9fd188a9629ea47d91a3f025c8c" category="section-title">2024 年 5 月 6 日</block>
   <block id="decdab3311a7d521fe764d5d580ddd35" category="section-title">版本 1.32</block>
   <block id="7910c8307cac3d62eca8ac0d42301b38" category="paragraph-title">「組態」頁面中的「新對應」狀態欄</block>
   <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">此版本現在會在「組態」頁面中顯示新的「對應」狀態欄。新欄可協助您識別對應是否正在執行、佇列中、暫停或更多。</block>
@@ -2655,7 +2649,6 @@
   <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">BlueXP 分類現在可在 BlueXP 中作為核心功能使用、最多可免費取得 500 TiB 的掃描資料。不需要分類授權或付費訂閱。由於 BlueXP 分類功能著重於使用此新版本掃描 NetApp 儲存系統、因此部分舊版功能僅適用於先前已支付授權費用的客戶。這些舊版功能的使用將在已支付合約到期時到期。</block>
   <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">深入瞭解過時的功能</block>
   <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>。</block>
-  <block id="4434c8a49854e6484f6c158999be4e10" category="section-title">2024 年 4 月 1 日</block>
   <block id="e6a70634d4a42783e6d5918eff0a0ab6" category="section-title">版本 1.30</block>
   <block id="1f2986b833ebc6f322deb045aeee0ad8" category="paragraph-title">新增 RHEL v8.8 和 v9.3 BlueXP 分類支援</block>
   <block id="bed0a63060826a7b1ed8cba91cb12ba6" category="paragraph">此版本除了先前支援的 9.x 以外、也支援 Red Hat Enterprise Linux v8.8 和 v9.3 、這需要 Podman 、而非 Docker 引擎。這適用於 BlueXP 分類的任何內部部署手動安裝。</block>
@@ -2667,7 +2660,6 @@
   <block id="747585a36be1e14a4dd3ff25c4bf1e48" category="paragraph-title">自動升級</block>
   <block id="5908128f01988745be85a67845195980" category="paragraph">如果您在可存取網際網路的系統上部署 BlueXP 分類、系統會自動升級。之前、升級是在上次使用者活動之後經過一段特定時間之後進行。在此版本中，如果當地時間介於上午 1 ： 00 至上午 5 ： 00 之間， BlueXP  分類會自動升級。如果本地時間超出這些時間、則升級會在上次使用者活動之後經過一段特定時間後進行。如需詳細資訊、請<block ref="ec7f7d5f354f2c39e4e863a85c31a7f9" category="inline-link-rx"></block>參閱。</block>
   <block id="7adcca7abf8ead9407a9511a195904c3" category="paragraph">如果您部署的 BlueXP 分類沒有網際網路存取、則需要手動升級。如需詳細資訊、請<block ref="9aedc51770264f0d93a81417a0d08768" category="inline-link-rx"></block>參閱。</block>
-  <block id="9ee51d75827fcf6a985ed40e7418fea6" category="section-title">2024 年 3 月 4 日</block>
   <block id="512d4a337ec357edd106a616e83b1a1f" category="section-title">版本 1.29</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="paragraph-title">現在您可以排除位於特定資料來源目錄中的掃描資料</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">如果您想要 BlueXP 分類排除位於特定資料來源目錄中的掃描資料、您可以將這些目錄名稱新增至 BlueXP 分類處理的組態檔。此功能可讓您避免掃描不必要的目錄、或是導致傳回誤判的個人資料結果。</block>
@@ -2685,17 +2677,14 @@
   <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">此版本包含一些小的增強功能。</block>
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">此版本也移除下列選項：</block>
   <block id="95f502d77f0f99fc7fc8414116a3b796" category="list-text">已停用使用 Azure Information Protection （ AIP ）標籤整合資料的選項。請參閱 <block ref="1f3e517a67b0b53387aa4b447bd4c674" category="inline-link-macro-rx"></block>。</block>
-  <block id="c8684cf4ccd502e49d1d79ff9936bc98" category="section-title">2023 年 6 月 11 日</block>
   <block id="0778a32085af8830c408efb93cb7239f" category="section-title">版本 1.26.3</block>
   <block id="e25bae53fb1951841531279fa78ee63a" category="paragraph">本版本已修正下列問題</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">修正在儀表板中顯示系統掃描的檔案數量時出現不一致的情況。</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">處理和報告名稱和中繼資料中含有特殊字元的檔案和目錄、以改善掃描行為。</block>
-  <block id="e5899cce271b544ee6441231f3c8cb3f" category="section-title">2023 年 4 月 10 日</block>
   <block id="a7dfa38887a337aec315ca23d79dc622" category="section-title">版本 1.26</block>
   <block id="74246010013353726bd9ff99866fa7d4" category="paragraph-title">支援在 RHEL 第 9 版上內部部署安裝 BlueXP 分類</block>
   <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linux 第 8 版和第 9 版不支援 Docker 引擎、這是 BlueXP 分類安裝所需的。我們現在支援在 RHEL 9.0 、 9.1 和 9.2 上安裝 BlueXP 分類、並使用 Podman 版本 4 或更新版本做為容器基礎架構。如果您的環境需要使用最新版本的 RHEL 、現在您可以在使用 Podman 時安裝 BlueXP 分類（ 1.26 版或更新版本）。</block>
   <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">目前、我們不支援使用 RHEL 9.x 進行暗點安裝或分散式掃描環境（使用主要和遠端掃描器節點）</block>
-  <block id="133c04bb5f03e7d4a910bcf2f7193ebd" category="section-title">2023 年 9 月 5 日</block>
   <block id="3f1982a78707e6a0e0433cad5b5a037d" category="section-title">版本 1.25</block>
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="paragraph-title">中小企業部署暫時無法使用</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">當您在 AWS 中部署 BlueXP 分類執行個體時、目前無法使用選擇 * 部署 &gt; 組態 * 並選擇中小型執行個體的選項。您仍然可以使用大型執行個體來部署執行個體、方法是選取 * 部署 &gt; 部署 * 。</block>
@@ -2719,7 +2708,6 @@
   <block id="95eaa41c2e7025ac80bcfafd1710ff57" category="paragraph">BlueXP 分類 API 可讓您執行動作、建立查詢、以及匯出所掃描資料的相關資訊。可使用 Swagger 取得互動式文件。文件分為多個類別、包括調查、法規遵循、治理和組態。每個類別都是 BlueXP 分類 UI 中標籤的參考資料。</block>
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link">深入瞭解 BlueXP 分類 API</block>
   <block id="67a7c5f0403c8f58fe4ae70a6f761ae5" category="paragraph"><block ref="6c685f385b4749ef1d91fb7e0577272e" category="inline-link-rx"></block>。</block>
-  <block id="6a7140fd5370f297d9a834d30e26ffde" category="section-title">2023 年 6 月 6 日</block>
   <block id="5a78709b3e68f78b25a72a31cfcaa8f0" category="section-title">版本 1.23</block>
   <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="paragraph-title">搜尋資料主體名稱時、現在支援日文</block>
   <block id="931c126009c96d8f8ce9770df003478d" category="inline-link">「資料調查」頁面中的「資料主旨」篩選器</block>
@@ -2731,7 +2719,6 @@
   <block id="b5ba343fa4469021dbdf64181a67e909" category="paragraph-title">BlueXP 分類可設定為 FPolicy 收集器、以從 ONTAP 系統接收 FPolicy 事件</block>
   <block id="cf39647f74e2ee71e92d2dcb020dab2d" category="paragraph">您可以啟用在 BlueXP 分類系統上收集檔案存取稽核記錄、以便在工作環境中的磁碟區上偵測到檔案存取事件。BlueXP 分類可擷取下列類型的 FPolicy 事件、以及對檔案執行動作的使用者：建立、讀取、寫入、刪除、重新命名、 變更擁有者 / 權限、並變更 SACL/DACL 。</block>
   <block id="e1161f065b10936afc930fd3d9d0c76f" category="paragraph-title">Data Sense BYOL 授權現在支援 Dark 站台</block>
-  <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023 年 4 月 3 日</block>
   <block id="288d139ea0d21561e65bec74c2f7c646" category="section-title">版本 1.22</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="paragraph-title">新的資料探索評估報告</block>
   <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">瞭解如何產生及使用資料探索評估報告</block>
@@ -2739,7 +2726,6 @@
   <block id="3d81ce02b62771b2627fbe04a96419a1" category="inline-link">請參閱可用的執行個體類型和限制</block>
   <block id="cb608d54d750eeb9d266241b5a1d63c7" category="paragraph-title">獨立指令碼現已推出、可在安裝 BlueXP 分類之前驗證您的 Linux 系統</block>
   <block id="46b0a8862a90d05f4f40bbcda2473af4" category="paragraph">如果您想驗證 Linux 系統是否符合所有先決條件，而不需執行 BlueXP  分類安裝，您可以下載一個獨立的指令碼，只測試先決條件。<block ref="f7ad1b05082bb59227795c56a02d9b78" category="inline-link-rx"></block>。</block>
-  <block id="4b10c384bd11c38afbbe24f979f5519d" category="section-title">2023 年 3 月 7 日</block>
   <block id="321553493f3e3f76105c5f5c5633b4c1" category="section-title">版本 1.21</block>
   <block id="b4602fb47c1d6ee0427e2682d3a0ca06" category="paragraph-title">新功能可從 BlueXP 分類 UI 新增您自己的自訂類別</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link">預先定義的類別</block>
@@ -2757,7 +2743,6 @@
   <block id="013efea19f002683e016d90789038d6e" category="list-title">安裝增強功能</block>
   <block id="27bfd524829d2f58c611b9380403face" category="list-text">對於無法存取網際網路的網站（黑暗網站）、 BlueXP 分類安裝程式現在會執行預先檢查、以確保您的系統和網路需求已就緒、以便順利安裝。</block>
   <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">安裝稽核記錄檔會立即儲存；這些檔案會寫入<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block>。</block>
-  <block id="e1bc7b26155063f1ce71b76f655669ef" category="section-title">2023 年 2 月 5 日</block>
   <block id="4d892f9a0cb70711d12ffb41d4d77d8b" category="section-title">版本 1.20</block>
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="paragraph-title">能夠將原則型通知電子郵件傳送至任何電子郵件地址</block>
   <block id="af415967f6e10a35f69e4fdddc729da2" category="paragraph">在 BlueXP 分類的舊版中、當某些關鍵原則傳回結果時、您可以傳送電子郵件警示給帳戶中的 BlueXP 使用者。此功能可讓您取得通知、在您不在線上時保護資料。現在、您也可以將原則的電子郵件警示傳送給任何其他使用者（最多20個電子郵件地址）、而這些使用者不在您的BlueXP帳戶中。</block>
@@ -2772,7 +2757,6 @@
   <block id="cab6c5a0928827eecbe652fb21944075" category="paragraph-title">新的「部分成功」狀態已新增至「行動狀態」面板</block>
   <block id="d889002fb629aff0cd2d82543e5f378b" category="inline-link">請參閱如何檢視「動作狀態」面板</block>
   <block id="451e723f277a39328c39e790b3d47ebc" category="paragraph">新的「部分成功」狀態表示 BlueXP 分類動作已完成、有些項目失敗、有些項目成功、例如當您移動或刪除 100 個檔案時。此外、「已完成」狀態已重新命名為「成功」。過去、「已完成」狀態可能會列出成功及失敗的動作。現在「成功」狀態表示所有項目的所有動作都成功。<block ref="81392bd70242cc4257015d9eb2f1d43a" category="inline-link-rx"></block>。</block>
-  <block id="88a11892e7418e1eee8c952df9545b46" category="section-title">2023 年 1 月 9 日</block>
   <block id="58080b77f4121259ffde5ce32650fff6" category="section-title">版本 1.19</block>
   <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="paragraph-title">能夠檢視含有敏感資料且過於許可的檔案圖表</block>
   <block id="738f7059231d5fe5c1e22879f52682fd" category="paragraph-title">「資料調查」頁面提供三種新篩選條件</block>
@@ -3518,7 +3502,6 @@
   <block id="a68d116e41811f0ca6fb6aefa908afd9" category="list-text">從橫軸上最嚴格的權限到最寬鬆的限制。</block>
   <block id="c0ff25971ba3c6cce0ab70a7e99e54ad" category="list-text">縱軸上從最不敏感的資料到最敏感的資料。</block>
   <block id="77a197972f7313e7a09a6a077fc9f4c2" category="list-text">選擇*治理*，然後選擇*資料發現評估報告*按鈕。</block>
-  <block id="791d05d0e9072626d0316ef0a7cf21bc" category="section-title">2025 年 6 月 09 日</block>
   <block id="d4113e36e86a18cdd4a4813e9e66b30e" category="list-text">必須在主機系統上啟用進階向量擴充 (AVX2)。</block>
   <block id="e07933db8e0e899d5b0b2536a835fbbe" category="summary">已知限制標識了此版本產品不支援的功能或無法與其正確互通的功能。請仔細檢閱這些限制。</block>
   <block id="74541a5ab63d560e7b65e9ce0447a3ab" category="paragraph">已知限制標識了此版本中不受支援或無法正確互通的功能。請仔細檢閱這些限制。</block>
@@ -3531,4 +3514,20 @@
   <block id="13bb1a0d5dd0d8923eac81793d8de810" category="paragraph">單獨新增所有共享，例如：</block>
   <block id="5215d51f00cbd59bd4f5379564dd2607" category="section-title">上次訪問的時間戳</block>
   <block id="ba9f5402880018fda0707ce102d53b4e" category="paragraph">當 BlueXP 分類對目錄進行掃描時，該掃描會影響目錄的「上次存取時間」欄位。當您查看「上次造訪時間」欄位時，該元資料會反映掃描的日期和時間，或使用者上次造訪該目錄的時間。</block>
+  <block id="f8479f3d69c2063127c42c5c37486b19" category="paragraph">以下元資料也使用相同的支援語言進行分類和識別：</block>
+  <block id="efb48152c99d5498d08b6785efe95423" category="paragraph">BlueXP 分類會掃描所有檔案、以取得類別和中繼資料的洞見、並在儀表板的檔案類型區段中顯示所有檔案類型。當 BlueXP 分類偵測到個人識別資訊 (PII) 或執行 DSAR 搜尋時，僅支援以下文件格式：</block>
+  <block id="0e42c2b565849349fc544a0196ef1b6a" category="section-title">2025 年 6 月 10 日</block>
+  <block id="d7cf77b2e56bc33512915804de4711b6" category="section-title">2024 年 05 月 8 日</block>
+  <block id="65f1f74c15350fb3342360320ff8c717" category="section-title">2024 年 01 月 7 日</block>
+  <block id="e4aecca06323b10cc72f8605553dacea" category="section-title">2024 年 6 月 05 日</block>
+  <block id="9c0269454c5c35ffc377aed6baf6d638" category="section-title">2024 年 4 月 01 日</block>
+  <block id="b8a98fcc40c83e855fb31eabe2a4360d" category="section-title">2024 年 3 月 04 日</block>
+  <block id="544cac1ecf4d7d5eb4b8b563c0d90c5a" category="section-title">2023 年 06 月 11 日</block>
+  <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">2023 年 10 月 4 日</block>
+  <block id="b9d5019337501d72be4adcf007f7d84c" category="section-title">2023 年 05 月 9 日</block>
+  <block id="40d3210136139f5fa0cdf31aed565820" category="section-title">2023 年 6 月 06 日</block>
+  <block id="70c95406986fbb3626df1a393daf99ce" category="section-title">2023 年 4 月 03 日</block>
+  <block id="d673bedebce5131101d3c3583efe3e40" category="section-title">2023 年 3 月 07 日</block>
+  <block id="7d04cce0092e695d038c8ac0c2c6c212" category="section-title">2023 年 05 月 2 日</block>
+  <block id="98dafe2aa2310496897ef8155a1d9413" category="section-title">2023 年 1 月 09 日</block>
 </blocks>
