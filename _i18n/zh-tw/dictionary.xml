@@ -175,10 +175,8 @@
   <block id="555b1e52bb127041158dea54f3685aaf" category="list-text">在無法使用預設執行個體的地區、 BlueXP 分類會在替代執行個體上執行。<block ref="e3d4e40a766f2ed64294b1dd26c6e095" category="inline-link-macro-rx"></block>。</block>
   <block id="005b996ef864c5e5d692c055b435643b" category="list-text">此執行個體的名稱為 _CloudCompliance _ 、並以產生的雜湊（ UUID ）串聯在其中。例如： _CloudCompliance -16bb6564-38ad-4080-9a92-36f5fd2f71c7_</block>
   <block id="d05dbd72313077420069ae49fe175de1" category="list-text">每個 Connector 只部署一個 BlueXP 分類執行個體。</block>
-  <block id="b9542475929b3c8ff209e88bb948446b" category="paragraph">您也可以在內部部署的 Linux 主機或偏好的雲端供應商的主機上部署 BlueXP 分類。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。只要執行個體能夠存取網際網路、就會自動升級 BlueXP 分類軟體。</block>
   <block id="5509f198213f653cadd8f4de67a143bf" category="admonition">由於 BlueXP 分類會持續掃描資料、因此執行個體應該隨時保持執行狀態。</block>
   <block id="6b58a1f82ed5bb7a99f52822509a4519" category="paragraph">* 部署在不同的執行個體類型 *</block>
-  <block id="df08805f9a68769e5aca6dccacac7494" category="paragraph">您可以在 CPU 較少且 RAM 較少的系統上部署 BlueXP  分類。</block>
   <block id="360d214e899b88b8fe54a260668c2f48" category="cell">規格</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="cell">限制</block>
   <block id="5d4d8771b47d6c5166952822e552f082" category="cell">超大</block>
@@ -3530,4 +3528,8 @@
   <block id="d673bedebce5131101d3c3583efe3e40" category="section-title">2023 年 3 月 07 日</block>
   <block id="7d04cce0092e695d038c8ac0c2c6c212" category="section-title">2023 年 05 月 2 日</block>
   <block id="98dafe2aa2310496897ef8155a1d9413" category="section-title">2023 年 1 月 09 日</block>
+  <block id="5545319db9091a71ae7b48d6f230c126" category="paragraph">您也可以在內部部署的 Linux 主機或偏好的雲端供應商的主機上部署 BlueXP 分類。無論您選擇哪種安裝方法、軟體的運作方式都完全相同。只要實例可以存取互聯網，BlueXP 分類軟體的升級就會自動進行。</block>
+  <block id="16d42e00c386e70a3a7df4333dbd3a1d" category="paragraph">查看實例類型的以下規範：</block>
+  <block id="b6312fd76a50f60b989ce722e432d447" category="paragraph">您可以在磁碟區層級或資料庫模式層級啟用和停用掃描。</block>
+  <block id="5ef007aec2cc80b49f082c5ae4dba4dc" category="list-text">** 僅對應掃描 ** 僅提供資料的高層級總覽，並在選定的資料來源上執行。僅映射掃描比映射和分類掃描花費的時間更少，因為它們不存取文件來查看其中的資料。您可能會想要先找出研究領域，然後在這些領域上執行地圖和分類掃描。</block>
 </blocks>
