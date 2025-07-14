@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
-  <block id="9997b2ae11cbffd6fe1a6e9f683ed24a" category="paragraph">+ 如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、我們建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="264b044bf416a5337d28443921b46791" category="list-text">與其他應用程式共用的主機不支援 BlueXP 分類、主機必須是專用主機。</block>
   <block id="914179b3d4545ce8b8e8ba122c53f4d9" category="list-text">在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從這些系統大小中進行選擇。</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">系統大小</block>
@@ -1490,7 +1489,6 @@
   <block id="ede9a6fd89b6e139fff80209cdd2ea8d" category="list-text">如果您使用 CIFS 、請提供 Active Directory 認證的 BlueXP 分類、以便掃描 CIFS 磁碟區。</block>
   <block id="2d680ca666fd821f3c51a507d41a26cb" category="inline-image-macro">「符合性」索引標籤的快照、顯示內容窗格右上角可用的「掃描狀態」按鈕。</block>
   <block id="6057fa1a60f3ec92856060b18a0cc112" category="paragraph">認證可以是唯讀的、但提供管理認證可確保 BlueXP 分類能夠讀取任何需要提高權限的資料。認證會儲存在 BlueXP 分類執行個體上。</block>
-  <block id="a1c4e88cdf8e157dbb344fe556f58d28" category="paragraph">如果您想要確保 BlueXP 分類掃描不會變更您的檔案「上次存取時間」、建議使用者在 CIFS 中擁有寫入屬性權限、或在 NFS 中擁有寫入權限。如果可能、我們建議將Active Directory設定的使用者納入組織中對所有檔案具有權限的父群組。</block>
   <block id="b401c479fc7a1b8aa216a7173ee8782f" category="paragraph">輸入認證之後、您應該會看到一則訊息、指出所有 CIFS 磁碟區都已成功驗證。</block>
   <block id="87c4bf333272894340d4edac3e344ef9" category="inline-image-macro">顯示組態頁面的快照、以及Cloud Volumes ONTAP 成功提供CIFS認證的一個更新系統。</block>
   <block id="f7a83214cccc2107033915c49ad94424" category="paragraph"><block ref="f7a83214cccc2107033915c49ad94424" category="inline-image-macro-rx" type="image"></block></block>
@@ -1606,8 +1604,6 @@
   <block id="47b3f14316e807b37aaa42895464d283" category="inline-image-macro">顯示詳細檔案權限的快照。</block>
   <block id="33b3bef30743bda1b0909a4417b45583" category="paragraph"><block ref="33b3bef30743bda1b0909a4417b45583" category="inline-image-macro-rx" type="image"></block></block>
   <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">檢查儲存系統中是否有重複的檔案</block>
-  <block id="5180c6809f41234a64af29e1a7ad708c" category="paragraph">您可以檢視儲存系統中是否儲存了重複的檔案。如果您想要找出可節省儲存空間的區域、此功能非常實用。此外、確保儲存系統中不會不必要地複製具有特定權限或敏感資訊的特定檔案、也很有幫助。</block>
-  <block id="bcd3dc09170e331762d1f098247c3974" category="paragraph">BlueXP 分類使用雜湊技術來判斷重複的檔案。如果任何檔案的雜湊代碼與其他檔案相同、我們可以100%確定檔案確實重複、即使檔案名稱不同。</block>
   <block id="fc9033d933e9132cc23bfe396744d214" category="inline-link-macro">刪除檔案</block>
   <block id="68309bcfd455803ffbae49714037b789" category="inline-image-macro">顯示如何檢視重複檔案所在位置的快照。</block>
   <block id="0dc6d718adece3621c4a40fa3b4b2a82" category="paragraph"><block ref="0dc6d718adece3621c4a40fa3b4b2a82" category="inline-image-macro-rx" type="image"></block></block>
@@ -1623,7 +1619,6 @@
   <block id="8d41341b04800c9b0f9269d35caefe50" category="list-text">檔案大小（ MB ）</block>
   <block id="12863c4f3d21d132902517901137f0ce" category="list-text">掃描分析錯誤</block>
   <block id="a73443e5b5980c135e04b4b123ccd99f" category="list-text">刪除偵測日期</block>
-  <block id="e81282c4a2e1620d17b120b1420664da" category="paragraph">刪除偵測日期可識別檔案刪除或移動的日期。這可讓您識別敏感檔案的移動時間。刪除的檔案不屬於儀表板或「調查」頁面上顯示的檔案編號數。這些檔案只會出現在 CSV 報告中。</block>
   <block id="8cb8a6e0c4d4366f74cd4f0b6f61a0f6" category="paragraph">*非結構化目錄資料報告*包含下列資料夾與檔案共用的相關資訊：</block>
   <block id="c0796e6eb525f9f4fe2a9d96a28d314a" category="list-text">目錄名稱</block>
   <block id="76cbd87b5322b897c255d541785ad658" category="list-text">儲存儲存庫（例如資料夾或檔案共用）</block>
@@ -2135,27 +2130,13 @@
   <block id="46e57bba2892a9df10ae0b7ae9e43f45" category="paragraph"><block ref="46e57bba2892a9df10ae0b7ae9e43f45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4758ec8f4163fa99b08557425a59f56" category="summary">請完成幾個步驟、開始直接掃描非 NetApp NFS 或 CIFS 檔案與 BlueXP 分類共用。這些檔案共用區可位於內部部署或雲端。</block>
   <block id="b5e00ff2b7559dfa6fc6fe96058ede54" category="doc">掃描檔案與 BlueXP  分類共用</block>
-  <block id="12a96925a3b6ebd1419915c8b0bfada9" category="paragraph">請完成幾個步驟、從 Google Cloud NetApp Volumes 和舊版 NetApp 7-mode 系統開始掃描 NFS 或 CIFS 檔案共用。這些檔案共用區可位於內部部署或雲端。</block>
   <block id="f146ec0537a829117da7d3ce3e588d3b" category="admonition">BlueXP 分類核心版本不支援從非 NetApp 檔案共用掃描資料。</block>
   <block id="d809bb142c0a96aef201dfc891e977e3" category="list-text">共享區可在任何地方代管、包括雲端或內部部署。舊版 NetApp 7-Mode 儲存系統的 CIFS 共用可掃描為檔案共用。</block>
-  <block id="061d9924baf4222bf79058b2beddbe21" category="paragraph">請注意、 BlueXP 分類無法從 7-Mode 系統擷取權限或「上次存取時間」。此外、由於某些 Linux 版本與 7-Mode 系統上的 CIFS 共用存在已知問題、因此您必須將共用設定為僅使用啟用了 NTLM 驗證的 SMB v1 。</block>
   <block id="bd069242cf8eda4643c1e3d125af30e2" category="list-text">BlueXP 分類執行個體與共用區之間需要有網路連線。</block>
-  <block id="90ca6bd84833f8a6659f7ea02a7649ba" category="list-text">您可以將 DFS （分散式檔案系統）共用新增為一般 CIFS 共用。然而、由於 BlueXP 分類並不知道共享區是以多個伺服器 / 磁碟區合併為單一 CIFS 共用而建置、因此當訊息只適用於位於不同伺服器 / 磁碟區的其中一個資料夾 / 共用時、您可能會收到有關共用區的權限或連線錯誤。</block>
   <block id="7adf75f8aca26c6ef58c5ad60b1edba5" category="list-text">若為CIFS（SMB）共用、請確定您擁有Active Directory認證、以提供共用的讀取存取權。如果 BlueXP 分類需要掃描任何需要提高權限的資料、則建議使用管理認證。</block>
-  <block id="8e4ba18b85274d135925d3a46f8bbe8f" category="list-text">您需要以格式新增的共用清單<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block>。您可以個別輸入共用、也可以提供要掃描之檔案共用的行分隔清單。</block>
   <block id="8324f4d6c5b9d56205261e30363b597f" category="paragraph">只要執行個體具有網際網路連線、就會自動升級至 BlueXP  分類軟體。</block>
-  <block id="763e254befdcc246f3e8569877b63340" category="section-title">建立檔案共用的群組</block>
-  <block id="60d7a85c8e73898b7ffc998f747e0883" category="paragraph">您必須先新增共用「群組」的檔案、才能新增檔案共用。此群組是您要掃描之檔案共用的容器、群組名稱會做為這些檔案共用的工作環境名稱。</block>
   <block id="28a37c29073d01b41af962aa45f11615" category="inline-image-macro">「掃描組態」頁面的快照、您可在其中按一下「新增檔案共用群組」按鈕。</block>
-  <block id="69438cb2e4a059b421af50a7d06c8f93" category="paragraph">新的「檔案共用群組」會新增至工作環境清單。</block>
-  <block id="8c7259d7b7f8962c22537c08f66b5e09" category="section-title">新增檔案共用至群組</block>
-  <block id="a5847332edc397d8726675e5b89d4f7a" category="paragraph">您可以將檔案共用新增至「檔案共用群組」、以便這些共用中的檔案會由 BlueXP 分類進行掃描。您可以使用格式新增共用<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block>。</block>
-  <block id="7f36799e4767f2e3733ee3f582eeec9d" category="paragraph">您可以新增個別檔案共用、也可以提供要掃描之檔案共用的行分隔清單。一次最多可新增100個共用。</block>
-  <block id="c9ce688a21fc0a13e7a592a39d9b66de" category="paragraph">在單一群組中同時新增NFS和CIFS共用時、您需要執行兩次程序、一次新增NFS共用、然後再次新增CIFS共用。</block>
-  <block id="e12f851045a5dd03b63ec08942496b87" category="inline-image-macro">顯示「Add Your First Shares（新增第一個共用）」按鈕的快照、可將初始共用新增至群組。</block>
-  <block id="eb78bc82dacf7ba8a0b44a1fcffc4ddf" category="paragraph">新增CIFS（SMB）共用時、您必須輸入Active Directory認證、以提供共用的讀取存取權。首選管理認證。</block>
   <block id="17ac351ddbea073b035b83b540983f6f" category="paragraph">確認對話方塊會顯示已新增的共用數。</block>
-  <block id="87dced2b98ff65890acdcbfd5902920a" category="paragraph">如果對話方塊列出任何無法新增的共用、請擷取此資訊、以便您解決問題。在某些情況下、您可以使用修正後的主機名稱或共用名稱重新新增共用區。</block>
   <block id="ae70ae1b93c56367429b7d2bb0ece139" category="cell">按一下*地圖*</block>
   <block id="c8f32db0b52a7b7e31ee04bd02eddbb6" category="cell">按一下*地圖與分類*</block>
   <block id="a988b0977fb89f6574cfc55d252b1cf9" category="cell">按一下「*關*」</block>
@@ -2832,7 +2813,6 @@
   <block id="e771ad044e30754f4af0addbc217531d" category="paragraph">如需資料調查與報告的詳細資訊，請參閱<block ref="5490a248bca38f18b55b559976dbad47" category="inline-link-rx"></block>。</block>
   <block id="251452e49ab5b88b5d8545e58cd46509" category="admonition">如果您需要 BlueXP  分類來識別其他私人資料類型，例如額外的國家 ID 號碼或醫療識別碼，請聯絡您的客戶經理。</block>
   <block id="ee27fa3e6dfe09f89a9d57742c167aa9" category="paragraph">* 如果有重複的特定檔案，請檢視 *</block>
-  <block id="47b72e580332bb9da872607466b406bc" category="paragraph">此報告以 .CSV 或 .JSON 檔案形式提供，您可以將其儲存至本機機器。</block>
   <block id="f257e5460f3ab87ec47290dc11518fc8" category="paragraph">* 資料調查報告 * 包含哪些內容</block>
   <block id="f3f4c1edbf92907aa9051152a36ae4cc" category="list-title">產生報告的步驟</block>
   <block id="8b93cae59bfdd9d1f5373c4f243f1891" category="paragraph"><block ref="8b93cae59bfdd9d1f5373c4f243f1891" category="inline-image-macro-rx" type="image"></block></block>
@@ -2901,14 +2881,9 @@
   <block id="64f99cdcf52c853ffbb49b495c84036b" category="list-text">在「組態」頁面中，針對您要設定的資料庫選取 * 組態 * 按鈕。</block>
   <block id="b068bd6072b65d7af1c49c844084245e" category="paragraph">BlueXP  分類每天掃描一次資料庫，不會像其他資料來源一樣持續掃描資料庫。</block>
   <block id="063de98df490e1963f70c3177e6360fb" category="list-text">從「組態」頁面中，選取 * 新增工作環境 * &gt; * 新增檔案共用群組 * 。</block>
-  <block id="e88a3447811c9aed002c31e544c9189c" category="list-text">在「新增檔案共用群組」對話方塊中，輸入共用群組的名稱，然後選取 * 繼續 * 。</block>
-  <block id="3cbbc2871603074b8a3d479fe12b1dc4" category="list-text">從「組態」頁面的「工作環境」磚中，選取「檔案共用群組」的 * 組態 * 按鈕。</block>
-  <block id="b24f1e5ca1e698decbe4352557abec98" category="list-text">如果這是第一次新增此檔案共用群組的檔案共用，請選取 * 新增您的第一個共用 * 。</block>
-  <block id="c1caffc666c49e212352548248fb6e42" category="list-text">執行下列其中一項以啟用或停用掃描：</block>
   <block id="c33a545f4674eb3c362c25d231db29f7" category="list-text">若要在檔案共用上啟用僅對應掃描，請選取 * 地圖 * 。</block>
   <block id="e80b5dfbb6519cb4346daba78481ae2e" category="list-text">若要啟用檔案共用的完整掃描，請選取 * 地圖與分類 * 。</block>
   <block id="6bfd17d888fc4197713ca925797fb9c5" category="list-text">若要停用檔案共用的掃描功能，請選取 * 關閉 * 。</block>
-  <block id="05383cbb22b67f6ba641527f070ae7e9" category="paragraph">如果不再需要掃描特定檔案共用、您可以隨時將個別檔案共用區移除、使其檔案不再掃描。</block>
   <block id="26df3c05a484f6dafaf2085e9f725f92" category="list-text">在「組態」頁面上，選取 * 檢視詳細資料 * 以檢閱狀態並修正任何錯誤。</block>
   <block id="4d9ba07ef41ab1650dd0b2fb24f34e06" category="list-text">在「組態」頁面中，找到您要掃描的磁碟區所在的工作環境。</block>
   <block id="82fdcf8611938284b66932937e4f812f" category="list-text">選取頁面頂端的 * 啟用對 DP Volume 的存取 * 。</block>
@@ -3096,25 +3071,11 @@
   <block id="dc2ddec9ec4ed327adbcf0621afd634e" category="list-text">針對您要變更的工作環境選取 * 組態 * 按鈕。</block>
   <block id="a9ee13c2bd1bbf8024db5dca75abc71c" category="list-text">若要停用磁碟區上的掃描功能，請在「 Volume 」（體積）區域中選取 * 關閉 * 。</block>
   <block id="8fdad01ebf5555cab54cc02a6d72d532" category="list-text">若要停用所有磁碟區的掃描功能，請在標題區域中選取 * 關閉 * 。</block>
-  <block id="5f609f01b5a759f8bf288618cc1185a2" category="paragraph">您可以在同一個群組中混合使用 NFS 和 CIFS 共用，但群組中的所有 CIFS 檔案共用都必須使用相同的 Active Directory 認證。如果您打算新增使用不同認證的CIFS共用、則必須針對每組獨特的認證建立個別的群組。</block>
-  <block id="465cf4db3a5f4c4c7ae515fa816fec5f" category="inline-image-macro">顯示檔案共用群組組組態按鈕的螢幕擷取畫面。</block>
-  <block id="d31d3cba28e5d0da4c24219240aa58d9" category="paragraph"><block ref="d31d3cba28e5d0da4c24219240aa58d9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7433ee38f26b7a6e7c836170328187b2" category="paragraph"><block ref="7433ee38f26b7a6e7c836170328187b2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8d84ddfe7fc317b3b022bbcbd57a3021" category="paragraph">如果您要將檔案共用新增至現有群組，請選取該群組，選取 * 組態 * ，然後選取 * 新增共用 * 。</block>
   <block id="39d368b640988db0e678824b6dd5a384" category="list-text">選取您要新增檔案共用的傳輸協定。</block>
-  <block id="d5c8aa30f8266592630eb79640daa226" category="inline-image-macro">螢幕擷取畫面顯示可將 NFS 或 CIFS 共用新增至群組的選項</block>
-  <block id="10b736be42493e387282cc76e61e80da" category="paragraph"><block ref="10b736be42493e387282cc76e61e80da" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dd306b6bfc7ce1886680d63b65c9ad50" category="list-text">新增您要掃描的檔案共用（每行一個檔案共用區）。</block>
-  <block id="136dc09835924029e4299fa28f17233d" category="list-text">選擇*繼續*。</block>
-  <block id="dffd4318dc569fa26cadb25c7679caec" category="paragraph">預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這表示如果 BlueXP 分類在 CIFS 中沒有寫入屬性權限、或是在 NFS 中寫入權限、系統就不會掃描檔案、因為 BlueXP 分類無法將「上次存取時間」還原為原始時間戳記。<block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>。</block>
-  <block id="07ada1e73188e64ef4fd43b06b4a2a48" category="paragraph">BlueXP 分類會開始掃描您新增檔案共用中的檔案、結果會顯示在儀表板和其他位置。</block>
   <block id="6fd2d8d813fca5453b27470ce0140b6e" category="section-title">追蹤掃描進度</block>
   <block id="5eedca777865af1a2fcf409e03c6b8fc" category="paragraph">您可以追蹤初始掃描的進度。</block>
-  <block id="b42abfd3e20a7657c224539a4e7b67a2" category="list-text">選擇 ** 組態 ** 功能表。</block>
-  <block id="b6baa59814bd6b55374230c7eb6e433d" category="list-text">選擇 ** 工作環境組態 ** 。</block>
   <block id="720123585ecf47cb95618257761a059d" category="paragraph">每次掃描的進度會顯示為進度列。</block>
   <block id="e377dc690fcbcaba0a113b80ac735dbc" category="list-text">將游標移至進度列上方，即可查看相對於磁碟區中檔案總數所掃描的檔案數。</block>
-  <block id="5ff63883dd1765c0e66ae3a76cd759c4" category="list-text">選取工作環境。</block>
   <block id="f76618a8e4af059632c87ab1f949bbe1" category="list-text">選擇*組態*。</block>
   <block id="5ad3e303fff11348579be9fa7186a3bf" category="inline-image-macro">動作圖示</block>
   <block id="7ce65bddfd6fa76c1434a83bb91b5c59" category="list-text">從「組態」頁面中，選取您要移除之檔案共用的「動作<block ref="9599256bd913e17dd34fce684015b2f9" category="inline-image-macro-rx" type="image"></block>」。</block>
@@ -3199,7 +3160,6 @@
   <block id="262bd6cb4081a4bb1d5b7bb69c91cf84" category="list-text">在 [ 資料調查 ] 頁面上，執行下列任何一項：</block>
   <block id="112a92421a821122ddfd7d3b0735b4ec" category="list-text">若要檢視檔案（非結構化資料），目錄（資料夾和檔案共用）或資料庫（結構化資料）的資料，請選取頂端的其中一個索引標籤。</block>
   <block id="de1f3a62aada6a5e03bde4ce908b4d24" category="list-text">若要依數字或字母順序排序結果，請選取每一欄頂端的控制項。</block>
-  <block id="3575ec00f80ae9ff26cf47ff8300221a" category="list-text">若要進一步精簡結果，請在左側篩選窗格中選取多個篩選器之一。</block>
   <block id="a8d1bb5ba95108ab3a2f0fd87ebd3b07" category="paragraph">* 依敏感度和內容篩選資料 *</block>
   <block id="33399d32771439fb4356bebcb3641046" category="cell">選擇。<block ref="cbf64d77e33a53f16ad429da7b163a2e" category="inline-link-macro-rx"></block></block>
   <block id="529289f3a4b107ecb94c76e23fe0459f" category="cell">選取每個檔案偵測到的敏感識別碼範圍。包括個人資料和敏感的個人資料。在目錄中篩選時、 BlueXP 分類會將每個資料夾（和子資料夾）中所有檔案的相符項目總計。附註： 2023 年 12 月（ 1.26.6 版）版本移除了依目錄計算個人識別資訊（ PII ）資料數量的選項。</block>
@@ -3215,7 +3175,6 @@
   <block id="6926f90beadfdb901f306772787c7f05" category="paragraph">* 依分析狀態篩選資料 *</block>
   <block id="0fdacc8c067979a1926a265cd399f05a" category="paragraph"><block ref="d865d9e7da9a534ddb8c0b18eca2435c" category="inline-link-macro-rx"></block>如需使用掃描分析事件篩選時出現在「調查」頁面中項目的詳細資訊。</block>
   <block id="c2d41b84903ff9433b055cd311767824" category="paragraph">* 依重複項目篩選資料 *</block>
-  <block id="1f54ce0e770f5c76ff9e305bb20ea41a" category="paragraph">並非所有資料來源都能取得所有資訊，只有適合該資料來源的資訊才行。例如、磁碟區名稱和權限與資料庫檔案無關。</block>
   <block id="efcf64fabaf1cd0d5d0c35cfea3e25d9" category="list-text">在右側的「資料調查」清單中，選取右側的下移插入記號<block ref="3cc4b517e471a9470762ff8efb27bddb" category="inline-image-macro-rx" type="image"></block>，讓任何單一檔案都能檢視檔案中繼資料。</block>
   <block id="887f8cc0eb69a50c3835261bb514ecb7" category="section-title">檢視使用者對檔案和目錄的權限</block>
   <block id="50f624bdefacfa8c1da9ed79642cacaa" category="list-text">若要檢視可存取檔案或目錄的所有使用者或群組清單，以及其擁有的權限類型，請在「開放權限」欄位中選取 * 檢視所有權限 * 。</block>
@@ -3532,4 +3491,65 @@
   <block id="16d42e00c386e70a3a7df4333dbd3a1d" category="paragraph">查看實例類型的以下規範：</block>
   <block id="b6312fd76a50f60b989ce722e432d447" category="paragraph">您可以在磁碟區層級或資料庫模式層級啟用和停用掃描。</block>
   <block id="5ef007aec2cc80b49f082c5ae4dba4dc" category="list-text">** 僅對應掃描 ** 僅提供資料的高層級總覽，並在選定的資料來源上執行。僅映射掃描比映射和分類掃描花費的時間更少，因為它們不存取文件來查看其中的資料。您可能會想要先找出研究領域，然後在這些領域上執行地圖和分類掃描。</block>
+  <block id="71653fb5163aa99d8613874ef0398606" category="paragraph">+ 如果您想確保檔案的「上次存取時間」在BlueXP classification掃描後保持不變，建議使用者在 CIFS 中擁有寫入屬性權限或在 NFS 中擁有寫入權限。如果可能，請將 Active Directory 使用者設定為組織中擁有所有檔案權限的父群組的一部分。</block>
+  <block id="d0169e5c24cd4c5e05dcb7edb4ca10d7" category="doc">版本 1.45</block>
+  <block id="8321b9867214f5caa9d5a37197549cfb" category="paragraph">此BlueXP classification版本包括優化資源利用率的程式碼變更以及：</block>
+  <block id="8f993d1847870bf5334f9e8a709029c8" category="paragraph-title">改進了新增文件共用進行掃描的工作流程</block>
+  <block id="7363f98210e80281886d9b88b644899c" category="paragraph">將文件共用新增至文件共用組的工作流程已簡化。該流程現在還根據身份驗證類型（Kerberos 或 NTLM）區分 CIFS 協定支援。</block>
+  <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="inline-xref-macro">掃描檔案共用</block>
+  <block id="1ac63d916d77b3c107f8a8cfa12fb2bb" category="paragraph">如需更多資訊、請參閱 <block ref="828b8ad7e27c62fe81ed86d552495069" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2cc1f0459a8aa18da26c0c17c08edd37" category="paragraph-title">增強文件所有者信息</block>
+  <block id="11960942a6824585cdbadbb9ccfaa7b2" category="paragraph">現在，您可以查看“調查”標籤中捕獲文件的文件所有者的更多資訊。在「調查」標籤中檢視檔案的元資料時，找到檔案擁有者，然後選擇「檢視詳細資料」即可查看使用者名稱、電子郵件和 SAM 帳戶名稱。您也可以查看此使用者擁有的其他項目。此功能僅適用於具有 Active Directory 的工作環境。</block>
+  <block id="761b95894e65b7e84a1b42c7277548f8" category="paragraph">如需更多資訊、請參閱 <block ref="52346db20931f188e29e56e6e913f681" category="inline-xref-macro-rx"></block>。</block>
+  <block id="c6d521e93c659f52fc0150619d81cd0e" category="paragraph">您也可以查看更多關於檔案擁有者的詳細資訊：帳戶名稱、電子郵件地址和 SAM 帳戶名稱，或查看該使用者擁有的項目。</block>
+  <block id="8d1256ea20b6f3627b46e3916aa6a135" category="paragraph">如果您想要確保檔案的「上次存取時間」在BlueXP classification掃描後保持不變，建議使用者在 CIFS 中擁有寫入屬性權限，或在 NFS 中擁有寫入權限。如果可能，請將 Active Directory 使用者設定為組織中擁有所有檔案權限的父群組的一部分。</block>
+  <block id="06d20a71e8e976cfefed98d4f05b2dc1" category="list-text">若要進一步最佳化結果，請在「篩選器」窗格中選擇一個篩選器。</block>
+  <block id="07b57c9c0ed87759bcd88b15d5738118" category="paragraph">資訊的可用性取決於資料來源。例如，資料庫檔案的磁碟區名稱和權限不共用。</block>
+  <block id="d353221e429d4e01e167115856394ba7" category="paragraph">您可以檢查儲存系統中是否存在重複檔案。如果您想要找出可節省儲存空間的區域、此功能非常實用。此外，還應確保某些具有特定權限或敏感資訊的檔案不會在儲存系統中不必要地重複。</block>
+  <block id="ded9bcb8a780ccd0382b8b14fad910bd" category="paragraph">BlueXP 分類使用雜湊技術來判斷重複的檔案。如果任何檔案具有與另一個檔案相同的雜湊碼，那麼您可以 100% 確定這些檔案是完全重複的 - 即使檔案名稱不同。</block>
+  <block id="0e388091f60e0501a8deeffbcec8be11" category="paragraph">該報告以 CSV 或 JSON 檔案的形式提供，您可以儲存到本機。</block>
+  <block id="be8dd70bc3346c4b9e55da7be82fb393" category="list-text">設定 Active Directory 時，檔案擁有者資料包含帳戶名稱、SAM 帳戶名稱和電子郵件地址。</block>
+  <block id="e319a6c78434a89ca552a6d73fe71916" category="paragraph">刪除檢測日期標識了檔案被刪除或移動的日期。這可讓您識別敏感檔案的移動時間。已刪除的文件不會計入儀表板或調查頁面上顯示的文件數量計數。這些檔案只會出現在 CSV 報告中。</block>
+  <block id="6e8a045a245797779bb93dd3e4285c7c" category="paragraph">若要掃描檔案共享，您必須先在BlueXP classification中建立一個檔案共享群組。檔案共用群組適用於本機或雲端託管的 NFS 或 CIFS (SMB) 共用。</block>
+  <block id="9f7a7a7b646e0109061cec3b6e43fd7a" category="list-text">BlueXP classification無法從 7-模式系統中提取權限或「上次存取時間」。</block>
+  <block id="f167fbb6464f189d72ddba5508d2a1a2" category="list-text">由於某些 Linux 版本和 7-模式系統上的 CIFS 共用之間存在已知問題，因此您必須將共用配置為僅使用啟用了 NTLM 驗證的 SMBv1。</block>
+  <block id="febc725c8219d1f58a301fbb05f61925" category="list-text">您可以將 DFS （分散式檔案系統）共用新增為一般 CIFS 共用。由於BlueXP classification不知道共用是基於組合為單一 CIFS 共用的多個伺服器/磁碟區所建構的，因此當訊息實際上僅適用於位於不同伺服器/磁碟區上的一個資料夾/共用時，您可能會收到有關共用的權限或連線錯誤。</block>
+  <block id="41e1e7051086f2b383638790a305feef" category="list-text">群組中的所有 CIFS 檔案共用必須使用相同的 Active Directory 憑證。</block>
+  <block id="23335ae9e8a43f9a4bd3eeef48debd93" category="list-text">您可以混合使用 NFS 和 CIFS（使用 Kerberos 或 NTLM）共用。您必須將共用分別新增至群組。也就是說，您必須完成此過程兩次，每個協議一次。</block>
+  <block id="2306a764b0fbd2030a3253a01f4ef4e2" category="list-text">您無法建立混合 CIFS 驗證類型（Kerberos 和 NTLM）的檔案共用群組。</block>
+  <block id="01a7424020e7f3202ded11d5d1d85ea9" category="list-text">如果您使用具有 Kerberos 驗證的 CIFS，請確保提供的 IP 位址可供BlueXP classification服務存取。如果 IP 位址無法訪問，則無法新增檔案共用。</block>
+  <block id="66fd0cd482106809095f5b444f1ca7fb" category="section-title">建立文件共享組</block>
+  <block id="1d7cfdb45bf2c755c261c429273dcd5f" category="paragraph">將檔案共用新增至群組時，必須使用格式<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block> 。</block>
+  <block id="4920a2ca6c24b7d5c2b83a59cd5e5ac0" category="paragraph">+ 您可以單獨新增文件共享，也可以輸入要掃描的文件共享的行分隔清單。一次最多可新增100個共用。</block>
+  <block id="7aa8490f63ce3baa4f282b1e03af19e0" category="list-text">在新增檔案共享群組對話方塊中，輸入共享群組的名稱，然後選擇*繼續*。</block>
+  <block id="4ad53633a654d3c85aac7634b01f762d" category="inline-image-macro">新增共享模式的螢幕截圖，其中顯示了選擇協定和共享的選項</block>
+  <block id="fc972cc0c23a0647faaded513ebc358b" category="paragraph"><block ref="fc972cc0c23a0647faaded513ebc358b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5fa9a16544d72a9315d489ffc3c6e7a" category="list-title">如果您要新增使用 NTLM 驗證的 CIFS 共用，請輸入 Active Directory 憑證以存取 CIFS 磁碟區。雖然支援唯讀憑證，但建議您使用管理員憑證提供完全存取權限。選擇 ** 儲存 ** 。</block>
+  <block id="e0dc4d19036f796f0e69139cbaebd4dd" category="list-text">新增您要掃描的檔案共用（每行一個檔案共用區）。然後選擇**繼續**。</block>
+  <block id="7e24e4db93926b63a81a6e1234ed3b65" category="paragraph">如果對話方塊列出任何無法新增的共用、請擷取此資訊、以便您解決問題。如果問題與命名約定有關，您可以使用已修正的名稱重新新增共用。</block>
+  <block id="74b3b21bb9468e0e52fa3cb647774380" category="list-text">配置磁碟區上的掃描：</block>
+  <block id="31d79d719e53d91935c3441c3485a9a7" category="admonition">預設會停用頁面頂端的「當缺少「寫入屬性」權限時*掃描」切換參數。這意味著，如果BlueXP classification在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，系統將無法掃描文件，因為BlueXP classification無法將「上次存取時間」恢復為原始時間戳記。+ 如果您將“缺少“寫入屬性”權限時掃描”切換為“開啟”，則掃描將重置上次訪問時間，並掃描所有文件，無論其權限如何。+ 要了解有關上次訪問時間戳的更多信息，請參閱<block ref="a6ff75fb42fe2cf8b776f190f8130a5a" category="inline-link-macro-rx"></block> 。</block>
+  <block id="327dcd445646c6bc0cdac87af9e09cb1" category="paragraph">BlueXP classification開始掃描您新增的檔案共用中的檔案。您可以<block ref="49703064e6182ae52c2dba4f03d70acb" category="inline-xref-macro-rx"></block>並在**儀表板**中查看掃描結果。</block>
+  <block id="20a9fbab57f89c185c5017371353fc11" category="admonition">如果使用 Kerberos 驗證的 CIFS 設定的掃描未成功完成，請檢查「設定」標籤中是否有錯誤。</block>
+  <block id="e2d60b9b5e0846af58489521d58499d3" category="section-title">編輯檔案共享群組</block>
+  <block id="199ff00c8f3fbd1675f230538f44f442" category="paragraph">建立檔案共用群組後，您可以編輯 CIFS 協定或新增和刪除檔案共用。</block>
+  <block id="e8c465a01d8b36601f42e0459d8bda40" category="list-title">編輯 CIFS 協定配置</block>
+  <block id="7b4000ebfbede50ccc65de78a1bb053c" category="list-text">從設定頁面中，選擇要修改的檔案共用群組。</block>
+  <block id="2e48c8defee7160cc921ecda4965ed92" category="list-text">選擇**編輯 CIFS 憑證**。</block>
+  <block id="f6a365c71d64dfaee221626548f4470f" category="inline-image-macro">編輯 CIFS 憑證選單的螢幕截圖。</block>
+  <block id="465dddce879cdc5be5ad18a0321d8b08" category="paragraph"><block ref="465dddce879cdc5be5ad18a0321d8b08" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="37930ddda6375efa5dff13cff9b3134c" category="list-text">選擇身份驗證方法：**NTLM** 或 **Kerberos**。</block>
+  <block id="1fe8e9edee1eb819b2183f754c26e179" category="list-text">輸入 Active Directory **使用者名稱**和**密碼**。</block>
+  <block id="3a6b529abf055bb666a3d0f7b1f4056a" category="list-text">選擇**儲存**以完成該過程。</block>
+  <block id="f7066b9bcef508a56d9d043a9fb1fe1d" category="list-title">將文件共享新增至合規掃描</block>
+  <block id="ad0577638876c42601046d9f6255f464" category="list-text">選擇 **+ 新增共享**。</block>
+  <block id="3af4ae7b28ddfe38307ff8527d9da313" category="paragraph">如果您要將文件共用新增至已設定的協議，則無需進行任何變更。</block>
+  <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">先決條件</block>
+  <block id="61cfa51582cec46d576d45cd093d79ef" category="paragraph">如果您要使用第二個協定新增檔案共用，請確保您已正確設定身份驗證，如<block ref="aaf48cddad89107947ab6e7eca766e41" category="inline-link-macro-rx"></block> 。</block>
+  <block id="4459627c70285484d5cdd635a0dc2851" category="list-text">使用以下格式新增要掃描的檔案共用（每行一個檔案共用） <block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block> 。</block>
+  <block id="dadf1d57ce39c4b00e52377a9d1d4fd7" category="list-text">選擇**繼續**以完成新增檔案共用。</block>
+  <block id="d769fc4b1081db3d71ad7ef80f7353dc" category="list-text">選擇要從中刪除檔案共享的工作環境。</block>
+  <block id="b42fc0af753e0ff8c5de1ac5d8dfe183" category="list-text">選擇**配置**選單。</block>
+  <block id="790cba8a3b8c32c0870a5b1dd53d5a26" category="list-text">選擇**工作環境配置**。</block>
+  <block id="f2673d4a3fe0162a501d43f5168ae950" category="section-title">2025 年 14 月 7 日</block>
 </blocks>

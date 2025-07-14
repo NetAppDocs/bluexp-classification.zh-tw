@@ -21,6 +21,9 @@ summary: 您可以將全域 Active Directory 與 BlueXP 分類整合、以強化
 這項整合在 BlueXP 分類的下列位置提供其他資訊：
 
 * 您可以使用「檔案擁有者」link:task-investigate-data.html["篩選器"]，在「調查」窗格中查看檔案中繼資料的結果。與其包含SID（安全性識別碼）的檔案擁有者、會填入實際的使用者名稱。
++
+您也可以查看更多關於檔案擁有者的詳細資訊：帳戶名稱、電子郵件地址和 SAM 帳戶名稱，或查看該使用者擁有的項目。
+
 * 當您按一下「檢視所有權限」按鈕時，您可以看到link:task-investigate-data.html["完整檔案權限"]每個檔案和目錄。
 * 在link:task-controlling-governance-data.html["治理儀表板"]中，「開放權限」面板會顯示更詳細的資料。
 
