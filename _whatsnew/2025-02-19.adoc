@@ -20,9 +20,9 @@
 
 優先順序是一次性授予。自動重新掃描對應資料會依預設順序進行。
 
-優先順序僅限於link:concept-cloud-compliance.html["僅對應掃描"]；不適用於地圖和分類掃描。
+優先順序僅限於link:https://docs.netapp.com/us-en/bluexp-classification/concept-cloud-compliance.html["僅對應掃描"^]；不適用於地圖和分類掃描。
 
-如需更多資訊、請參閱 link:task-managing-repo-scanning.html#prioritize-scans["排定掃描的優先順序"]。
+如需更多資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["排定掃描的優先順序"^]。
 
 .重試所有掃描
 BlueXP  分類支援批次重試所有失敗掃描的功能。

@@ -2842,7 +2842,6 @@
   <block id="e5e1cbf6654ebd60cb667a224f96576b" category="list-text">* 地圖和分類 * 掃描可提供資料的深度掃描。</block>
   <block id="c124c4f02a2ca2f9d44b7fba00db37c1" category="paragraph">您可能會受益於使用純對應掃描來快速掃描資料，以識別需要更多研究的資料來源，然後再啟用地圖功能，並僅在這些必要的資料來源或磁碟區上分類掃描。</block>
   <block id="50c745bad209edbd34224bb42d16a2f2" category="paragraph">優先順序僅指派給僅對應掃描，而非對應和分類掃描。</block>
-  <block id="e6d9a832ce4714fadf7ccc119cafd52e" category="paragraph">依預設，優先順序設為 1 ，您可以將其變更為 1 到 10 之間的任何數字。數字越小，優先順序越高。如果您未設定優先順序，則會將掃描指派為 5 的優先順序。</block>
   <block id="6dc81f0ce39e2f29f7002163498374d6" category="paragraph">若要變更優先順序，請執行下列步驟：</block>
   <block id="09d7e52dfc68f84cd7ef45e3c26a0389" category="list-text">從 BlueXP  分類功能表中，選取 * 組態 * 。</block>
   <block id="9ad22d134d0b57050c5d4d4a8e861bf9" category="list-text">選取您要排定優先順序的資源。</block>
@@ -3084,7 +3083,6 @@
   <block id="87dda2e6b67eed182754a59416a10145" category="doc">使用 BlueXP  分類來掃描資料來源總覽</block>
   <block id="9ed967b138578dbb6c57d7b336d5c696" category="paragraph">BlueXP  分類會掃描儲存庫中您選擇用來識別個人和敏感資料的資料（磁碟區，資料庫架構或其他使用者資料）。然後 BlueXP  分類會對應您的組織資料，對每個檔案進行分類，並識別資料中預先定義的模式。掃描結果是個人資訊、敏感個人資訊、資料類別和檔案類型的索引。</block>
   <block id="3779db1fb21572df76305e5ede3efad1" category="sidebar">掃描資料來源總覽</block>
-  <block id="c00e1d18d877d030ee92aec3422b1aeb" category="paragraph">優先順序僅限於<block ref="377ae34afcc76614c5602798befc8a4b" category="inline-link-macro-rx"></block>；不適用於地圖和分類掃描。</block>
   <block id="fc9679220132eb8e0f499680bbe8909a" category="list-text">* 名稱實體辨識 * ： BlueXP  分類使用 AI 從文件中擷取人員的自然名稱。<block ref="8e814e02dddb19e3bb4166c15fc34470" category="inline-link-macro-rx"></block>。</block>
   <block id="e888dadabb0f55fe5c317b3b6754087e" category="paragraph">指派給每位使用者的角色在 BlueXP  和 BlueXP  分類中提供不同的功能。如需詳細資訊，請參閱<block ref="9e5b18f30859b96d93203df427b4bd3d" category="inline-link-rx"></block>（以標準模式使用 BlueXP  時）。</block>
   <block id="6f0ff027a4b5c5cccc90c166290d3013" category="cell">執行的能力<block ref="c2177dc55e01ee229f523014b3bacb31" category="inline-link-macro-rx"></block></block>
@@ -3193,12 +3191,10 @@
   <block id="b9cf7636c1458813ea2386a78b8774cd" category="list-text">選擇報告類型： CSV 或 JSON 。</block>
   <block id="aac46765e6c078c569d11a06fa32886b" category="list-text">請選擇下列任一選項：</block>
   <block id="bc19fc1fb9d36ac2eec32fb81f6e5cca" category="paragraph">執行僅對應掃描時，您可以優先處理最重要的掃描。當您有許多工作環境，且想要確保先完成高優先順序掃描時，此功能會有所幫助。</block>
-  <block id="2e41eb33226717a4730fa2131336dc5a" category="paragraph">如需更多資訊、請參閱 <block ref="9493b318b51f384796e93c6ba74f5935" category="inline-link-macro-rx"></block>。</block>
   <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">版本 1.42</block>
   <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">此 BlueXP  分類版本包括：</block>
   <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">大量掃描工作環境</block>
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">請在本機下載調查報告</block>
-  <block id="95403a677c140fea03f157c2edb41c85" category="paragraph">如需更多資訊、請參閱 <block ref="55ff936b35b23a6f6693627bfb444c62" category="inline-link-macro-rx"></block>。</block>
   <block id="84acc1c8e6e80bda04b6eac437f19154" category="admonition">您可以下載 CSV 檔案的版本，以在此瀏覽器中檢視。此版本的記錄上限為 10 ， 000 筆。</block>
   <block id="05035e3bc31af3e060bb6a5ed03e7988" category="list-text">輸入一個 ** 報告名稱 ** 。</block>
   <block id="634cb969225c406dc49fde5e0df02409" category="list-text">從「動作」選項中<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>，選取 * 優先掃描 * 。</block>
@@ -3257,10 +3253,8 @@
   <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-xref-macro">個人資料類別</block>
   <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">自訂分類（預覽）</block>
   <block id="68fcca37a232a8993c6b392c92803de3" category="inline-xref-macro">新增自訂分類</block>
-  <block id="293ef51708e6a5ff00afa3b03fc38173" category="paragraph">如需更多資訊、請參閱 <block ref="5c3ba05e723fa646f41c75d6d8a263d3" category="inline-xref-macro-rx"></block>。</block>
   <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">儲存的搜尋索引標籤</block>
   <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-xref-macro">** 儲存的搜尋 **</block>
-  <block id="619964fa6c4dc175f106697cd53cd93b" category="paragraph">**Policies ** 選項卡已重命名<block ref="57cf69bfb5ee6dec8716152c342ad94c" category="inline-xref-macro-rx"></block>。功能相同。</block>
   <block id="decaf26b476fc5aad56ba857036660b7" category="inline-link-macro">BlueXP  時間表</block>
   <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">安全性更新</block>
   <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Keras 套件已更新，可減輕資訊安全風險（ BDSA-2025-0107 和 BDSA-2025-1984 ）。</block>
@@ -3382,7 +3376,6 @@
   <block id="fe2063e5676e0308022c99eb2466140c" category="paragraph-title">調查頁面結果除了顯示項目總數之外，還會顯示總大小</block>
   <block id="6cff48344cb111c0fcdb424ba18c6bcf" category="paragraph">「調查」頁面中的篩選結果除了顯示檔案總數之外，還會顯示項目的總大小。這有助於移動檔案、刪除檔案等。</block>
   <block id="162e654adac435300128c485423d9e97" category="paragraph">BlueXP  分類掃描可識別加拿大 PII 資料類別。這些類別包括銀行資訊，護照號碼，社群保險號碼，駕照號碼，以及所有加拿大省 / 地區的健康卡號碼。</block>
-  <block id="24b795aa1c931b8beb71a1bad521912d" category="paragraph">如需更多資訊、請參閱 <block ref="918fde1c1c3c4433556923cc965488af" category="inline-xref-macro-rx"></block>。</block>
   <block id="779a8744af84c09c0b82c029307690b7" category="paragraph">BlueXP  分類可支援自訂的地圖分類和分類掃描。使用自訂分類，您可以量身打造 BlueXP  掃描，以使用規則運算式擷取組織特有的資料。此功能目前正在預覽中。</block>
   <block id="59cb665cd7462a904eefb54d13262d58" category="paragraph">您也可以刪除整合，然後選擇<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>按鈕 * 移除 Active Directory* 。</block>
   <block id="b26c3f06a8206b488da4691050c7d97f" category="list-text">要自定義顯示在報告第一頁上的公司名稱，請從 BlueXP  分類頁的右上角選擇<block ref="b7ac54c4d55d285685809fbae424a873" category="inline-image-macro-rx" type="image"></block>。然後選擇 * 變更公司名稱 * 。下次產生報告時，報告會包含新名稱。</block>
@@ -3443,7 +3436,6 @@
   <block id="3c321d8be960cf9c4e3de3feeb79454d" category="cell">陳舊數據</block>
   <block id="66f1eb6a68ea177f7b25f4befa2afcb5" category="cell">按敏感度等級劃分的頂層資料儲存庫</block>
   <block id="b97835ec7267635dbdb6a030bb594b9b" category="inline-xref-macro">檢視組織中儲存資料的治理詳細資料</block>
-  <block id="af67ad5f0d1d3f928958a66c7475e1df" category="paragraph">您可以查看上次更新時間，並手動更新「重複檔案」、「非業務資料」、「已儲存的搜尋」、「過時資料」和「按敏感度等級排名靠前的資料儲存庫」元件。有關“治理”儀表板的更多信息，請參閱<block ref="e2440d776a494477c2f83bc685289508" category="inline-xref-macro-rx"></block> 。</block>
   <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">性能和安全改進</block>
   <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">我們已經進行了增強以提高 BlueXP 分類的效能、記憶體消耗和安全性。</block>
   <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis 已升級，以提高 BlueXP 分類的可靠性。 BlueXP分類現在使用 Elasticsearch 來提高掃描期間文件數量報告的準確性。</block>
@@ -3497,10 +3489,7 @@
   <block id="8f993d1847870bf5334f9e8a709029c8" category="paragraph-title">改進了新增文件共用進行掃描的工作流程</block>
   <block id="7363f98210e80281886d9b88b644899c" category="paragraph">將文件共用新增至文件共用組的工作流程已簡化。該流程現在還根據身份驗證類型（Kerberos 或 NTLM）區分 CIFS 協定支援。</block>
   <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="inline-xref-macro">掃描檔案共用</block>
-  <block id="1ac63d916d77b3c107f8a8cfa12fb2bb" category="paragraph">如需更多資訊、請參閱 <block ref="828b8ad7e27c62fe81ed86d552495069" category="inline-xref-macro-rx"></block>。</block>
   <block id="2cc1f0459a8aa18da26c0c17c08edd37" category="paragraph-title">增強文件所有者信息</block>
-  <block id="11960942a6824585cdbadbb9ccfaa7b2" category="paragraph">現在，您可以查看“調查”標籤中捕獲文件的文件所有者的更多資訊。在「調查」標籤中檢視檔案的元資料時，找到檔案擁有者，然後選擇「檢視詳細資料」即可查看使用者名稱、電子郵件和 SAM 帳戶名稱。您也可以查看此使用者擁有的其他項目。此功能僅適用於具有 Active Directory 的工作環境。</block>
-  <block id="761b95894e65b7e84a1b42c7277548f8" category="paragraph">如需更多資訊、請參閱 <block ref="52346db20931f188e29e56e6e913f681" category="inline-xref-macro-rx"></block>。</block>
   <block id="c6d521e93c659f52fc0150619d81cd0e" category="paragraph">您也可以查看更多關於檔案擁有者的詳細資訊：帳戶名稱、電子郵件地址和 SAM 帳戶名稱，或查看該使用者擁有的項目。</block>
   <block id="8d1256ea20b6f3627b46e3916aa6a135" category="paragraph">如果您想要確保檔案的「上次存取時間」在BlueXP classification掃描後保持不變，建議使用者在 CIFS 中擁有寫入屬性權限，或在 NFS 中擁有寫入權限。如果可能，請將 Active Directory 使用者設定為組織中擁有所有檔案權限的父群組的一部分。</block>
   <block id="06d20a71e8e976cfefed98d4f05b2dc1" category="list-text">若要進一步最佳化結果，請在「篩選器」窗格中選擇一個篩選器。</block>
@@ -3552,4 +3541,16 @@
   <block id="b42fc0af753e0ff8c5de1ac5d8dfe183" category="list-text">選擇**配置**選單。</block>
   <block id="790cba8a3b8c32c0870a5b1dd53d5a26" category="list-text">選擇**工作環境配置**。</block>
   <block id="f2673d4a3fe0162a501d43f5168ae950" category="section-title">2025 年 14 月 7 日</block>
+  <block id="fb6e5e6a0aed1cea1619e3e2b53a4e5a" category="paragraph">依預設，優先順序設為 1 ，您可以將其變更為 1 到 10 之間的任何數字。數字越小，優先順序越高。如果您未設定優先級，則掃描的優先級為 5。</block>
+  <block id="0b17075b3e9565678240914f5e9706ac" category="paragraph">優先順序僅限於<block ref="afc1d39fdcd662d524f1ee8687a1f655" category="inline-link-macro-rx"></block>；不適用於地圖和分類掃描。</block>
+  <block id="65d0aa01e8cb73d7f5c3ed79051f78c8" category="paragraph">如需更多資訊、請參閱 <block ref="7906b79b56c525526a8be1ef38207fbe" category="inline-link-macro-rx"></block>。</block>
+  <block id="4b23e8e8b3c785425bb2f43c66b07bac" category="paragraph">如需更多資訊、請參閱 <block ref="7ebae31e4d4430330abc2c251fc33af0" category="inline-link-macro-rx"></block>。</block>
+  <block id="57d85b4f49f470b7d997c29f8429b5e7" category="paragraph">如需更多資訊、請參閱 <block ref="f531a90b2f521cc15b6c40a4fefd348c" category="inline-link-macro-rx"></block>。</block>
+  <block id="306edd7aeedf6507cc97939f9da0078d" category="paragraph">如需更多資訊、請參閱 <block ref="4bbd4987f0bfb0027f16d1ecbeb0ac2a" category="inline-link-macro-rx"></block>。</block>
+  <block id="99eed1f6672cc1f43b2df5c4804244c8" category="paragraph">如需更多資訊、請參閱 <block ref="dff0174af6dfcf02b13f904a99df6834" category="inline-link-macro-rx"></block>。</block>
+  <block id="9f05f559eebd2a533aa123c3408334d1" category="paragraph">**Policies ** 選項卡已重命名<block ref="914c4a7aebf4348f66dcbf2a8e8ad77e" category="inline-link-macro-rx"></block>。功能沒有改變。</block>
+  <block id="accdfd5d359347cb2c916567bd17bdd0" category="paragraph">您可以查看上次更新時間，並手動更新「重複檔案」、「非業務資料」、「已儲存的搜尋」、「過時資料」和「按敏感度等級排名靠前的資料儲存庫」元件。有關“治理”儀表板的更多信息，請參閱<block ref="1ce3f0a304b1b93276c322629a323f14" category="inline-link-macro-rx"></block> 。</block>
+  <block id="c10aaeed86973ee0f442f2e7b73b80b8" category="paragraph">如需更多資訊、請參閱 <block ref="c56cfb642e9d697265520a2d16e8cbad" category="inline-link-macro-rx"></block>。</block>
+  <block id="4c59149345d32f10d4c1edb221d77028" category="paragraph">現在，您可以查看“調查”標籤中捕獲文件的文件所有者的更多資訊。在「調查」標籤中查看文件的元資料時，找到文件擁有者，然後選擇「查看詳細資料」以查看使用者名稱、電子郵件和 SAM 帳戶名稱。您也可以查看此使用者擁有的其他項目。此功能僅適用於具有 Active Directory 的工作環境。</block>
+  <block id="476669d16044da6b8fccc04e3a65c887" category="paragraph">如需更多資訊、請參閱 <block ref="202490d1a2feeed942d0b33752539ffd" category="inline-link-macro-rx"></block>。</block>
 </blocks>

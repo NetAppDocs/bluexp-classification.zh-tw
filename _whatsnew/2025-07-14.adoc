@@ -11,9 +11,9 @@
 .改進了新增文件共用進行掃描的工作流程
 將文件共用新增至文件共用組的工作流程已簡化。該流程現在還根據身份驗證類型（Kerberos 或 NTLM）區分 CIFS 協定支援。
 
-如需更多資訊、請參閱 xref:task-scanning-file-shares.html[掃描檔案共用]。
+如需更多資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-classification/task-scanning-file-shares.html["掃描檔案共用"]。
 
 .增強文件所有者信息
-現在，您可以查看“調查”標籤中捕獲文件的文件所有者的更多資訊。在「調查」標籤中檢視檔案的元資料時，找到檔案擁有者，然後選擇「檢視詳細資料」即可查看使用者名稱、電子郵件和 SAM 帳戶名稱。您也可以查看此使用者擁有的其他項目。此功能僅適用於具有 Active Directory 的工作環境。
+現在，您可以查看“調查”標籤中捕獲文件的文件所有者的更多資訊。在「調查」標籤中查看文件的元資料時，找到文件擁有者，然後選擇「查看詳細資料」以查看使用者名稱、電子郵件和 SAM 帳戶名稱。您也可以查看此使用者擁有的其他項目。此功能僅適用於具有 Active Directory 的工作環境。
 
-如需更多資訊、請參閱 xref:task-investigate-data.html[調查組織中儲存的資料]。
+如需更多資訊、請參閱 link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["調查組織中儲存的資料"]。
