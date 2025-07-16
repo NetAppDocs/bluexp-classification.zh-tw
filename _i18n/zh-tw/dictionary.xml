@@ -202,7 +202,6 @@
   <block id="e22ac25b066b201473de7aa700ef5d92" category="cell">定價</block>
   <block id="b24ce0cd392a5b0b8dedc66c25213594" category="cell">免費</block>
   <block id="3b8f7696879f77dfc8c74aa8df8db24b" category="cell">容量</block>
-  <block id="1210ad5d6a7beaf8ab7fd7d0808a95ca" category="cell">限 500 TB</block>
   <block id="e897ea41d67b7f4324a05104cdb193d8" category="cell">檔案類型和已用容量的清單</block>
   <block id="93cba07454f06a4a960172bbd6e2a435" category="cell">是的</block>
   <block id="f70dc1570da6e051d772bf79c53fd19c" category="cell">檔案數量和已用容量</block>
@@ -2625,7 +2624,6 @@
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024 年 5 月 15 日</block>
   <block id="362a66c8caf141f86c11be1e2f936c77" category="section-title">版本 1.31</block>
   <block id="d1e72f4d21bb915d180e5f6d1e9d4264" category="paragraph-title">分類可在 BlueXP 中作為核心服務使用</block>
-  <block id="ac229efd3fa61c5457dcab252996be0b" category="paragraph">BlueXP 分類現在可在 BlueXP 中作為核心功能使用、最多可免費取得 500 TiB 的掃描資料。不需要分類授權或付費訂閱。由於 BlueXP 分類功能著重於使用此新版本掃描 NetApp 儲存系統、因此部分舊版功能僅適用於先前已支付授權費用的客戶。這些舊版功能的使用將在已支付合約到期時到期。</block>
   <block id="3607a722a9a09bb6d405f4d84609e858" category="inline-link-macro">深入瞭解過時的功能</block>
   <block id="1a50d9154328b370f6d9bbbab041964a" category="paragraph"><block ref="671322b9b43cc49264f86b21ef88a11d" category="inline-link-macro-rx"></block>。</block>
   <block id="e6a70634d4a42783e6d5918eff0a0ab6" category="section-title">版本 1.30</block>
@@ -3553,4 +3551,11 @@
   <block id="c10aaeed86973ee0f442f2e7b73b80b8" category="paragraph">如需更多資訊、請參閱 <block ref="c56cfb642e9d697265520a2d16e8cbad" category="inline-link-macro-rx"></block>。</block>
   <block id="4c59149345d32f10d4c1edb221d77028" category="paragraph">現在，您可以查看“調查”標籤中捕獲文件的文件所有者的更多資訊。在「調查」標籤中查看文件的元資料時，找到文件擁有者，然後選擇「查看詳細資料」以查看使用者名稱、電子郵件和 SAM 帳戶名稱。您也可以查看此使用者擁有的其他項目。此功能僅適用於具有 Active Directory 的工作環境。</block>
   <block id="476669d16044da6b8fccc04e3a65c887" category="paragraph">如需更多資訊、請參閱 <block ref="202490d1a2feeed942d0b33752539ffd" category="inline-link-macro-rx"></block>。</block>
+  <block id="ba0582c1a4216adac557c97d2f92f869" category="inline-link-macro">安裝另一個連接器</block>
+  <block id="bb421402dbabe6eec32567511e69bc2a" category="inline-link-macro">部署另一個分類實例</block>
+  <block id="7473cbb9b768b471bd45e7579b544a3a" category="inline-link-macro">使用多個連接器</block>
+  <block id="c430d0ad1a785912ff6e7f2d659d752f" category="paragraph">BlueXP classification不限制其可掃描的資料量。每個連接器支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據， <block ref="a34b864875c7f2ebc4a815c94a375e43" category="inline-link-macro-rx"></block>然後<block ref="a51ca3e7fcece55a05339015489757d6" category="inline-link-macro-rx"></block> +BlueXP UI 顯示來自單一連接器的資料。有關查看來自多個連接器的資料的提示，請參閱<block ref="5255e271b4118330c3aac09d32603a12" category="inline-link-macro-rx"></block> 。</block>
+  <block id="551fbc3b7472150a5293373b773972d7" category="cell">限制為 500 TiB*</block>
+  <block id="acdf9d63036f9706b8165f6f6a7117da" category="paragraph">{星號} 包括::_include/connector-limit.adoc[]</block>
+  <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">BlueXP classification現在作為BlueXP中的一項核心功能提供，每個連接器最多可免費掃描 500 TiB 的資料。不需要分類授權或付費訂閱。由於 BlueXP 分類功能著重於使用此新版本掃描 NetApp 儲存系統、因此部分舊版功能僅適用於先前已支付授權費用的客戶。這些舊版功能的使用將在已支付合約到期時到期。</block>
 </blocks>
