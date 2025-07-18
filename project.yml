@@ -55,8 +55,6 @@ sidebar:
         url: "/task-scanning-storagegrid.html"
     - title: 整合Active Directory
       url: "/task-add-active-directory-datasense.html"
-    - title: 常見問題集
-      url: "/faq-cloud-compliance.html"
   - title: 使用 BlueXP 分類
     entries:
     - title: 檢視資料的治理詳細資料
@@ -139,6 +137,8 @@ sidebar:
       url: "/task-support-registration.html"
     - title: 取得協助
       url: "/task-get-help.html"
+  - title: 常見問題集
+    url: "/faq-cloud-compliance.html"
   - title: 法律聲明
     url: "/legal-notices.html"
 product-family:

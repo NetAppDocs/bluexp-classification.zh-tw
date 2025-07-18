@@ -2971,7 +2971,6 @@
   <block id="a5e2d801acd4eba6ae154178a10ef60b" category="paragraph">BlueXP  分類可將另一層 AI 部署在您的 BlueXP  系統和儲存系統上。然後掃描磁碟區、儲存區、資料庫及其他儲存帳戶上的資料、並為找到的資料洞見建立索引。BlueXP 分類採用人工智慧和自然語言處理、而非一般運算式和模式比對的替代解決方案。</block>
   <block id="05f433c1debc0d95600d02d8fe22a000" category="paragraph"><block ref="c829fae802ee8a6cfaabb6949c6dbda2" category="inline-link-macro-rx"></block>。</block>
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link-macro">API 文件</block>
-  <block id="2f5a5a17121fb9d36eb3f88f8ea3cc54" category="paragraph">是的， BlueXP  分類具有 REST API ，可用於 BlueXP  核心平台的 BlueXP  分類版本中支援的功能。請參閱。 <block ref="66d6eeee3cdd1145e7194200ace05e36" category="inline-link-macro-rx"></block></block>
   <block id="5cc30ec93f0fd1add7230b4f102dac70" category="section-title">BlueXP  分類是否可透過雲端市場取得？</block>
   <block id="c121c2d1b519c88dba382cf2cad15a89" category="paragraph">BlueXP  分類是 BlueXP  核心功能的一部分，因此您不需要使用此服務的行銷地點。</block>
   <block id="5c724eb0add446b6c005e415e92957ed" category="paragraph">下列問題與 BlueXP  分類掃描效能和分析有關。</block>
@@ -3558,4 +3557,5 @@
   <block id="551fbc3b7472150a5293373b773972d7" category="cell">限制為 500 TiB*</block>
   <block id="acdf9d63036f9706b8165f6f6a7117da" category="paragraph">{星號} 包括::_include/connector-limit.adoc[]</block>
   <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">BlueXP classification現在作為BlueXP中的一項核心功能提供，每個連接器最多可免費掃描 500 TiB 的資料。不需要分類授權或付費訂閱。由於 BlueXP 分類功能著重於使用此新版本掃描 NetApp 儲存系統、因此部分舊版功能僅適用於先前已支付授權費用的客戶。這些舊版功能的使用將在已支付合約到期時到期。</block>
+  <block id="3c6bee2e144dcf57c21b516f9adcdfef" category="paragraph">是的， BlueXP  分類具有 REST API ，可用於 BlueXP  核心平台的 BlueXP  分類版本中支援的功能。請參閱。 <block ref="66d6eeee3cdd1145e7194200ace05e36" category="inline-link-macro-rx"></block></block>
 </blocks>
