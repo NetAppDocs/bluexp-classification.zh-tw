@@ -2950,8 +2950,6 @@
   <block id="d3057f8e098d72850d91f222796050a1" category="section-title">檢閱資料中識別最多的資料分類</block>
   <block id="93a41f9744586b4edf90898527b71531" category="cell">從調查中匯出資料至 NFS/CIFS</block>
   <block id="81aef4d88b3543fe7ce12740f599c026" category="paragraph">檔案會分割成具有固定列數或記錄數的檔案：</block>
-  <block id="65c07610fb212d644f234075537bbc84" category="list-text">CSV - 200,000 筆記錄</block>
-  <block id="8897cd6292ab12bb81d8704c400fca96" category="list-text">JSON - 100,000 筆記錄</block>
   <block id="781c4c76cc2b33e7ebecd0ec7ae9a2c7" category="section-title">BlueXP  分類掃描的運作方式</block>
   <block id="474cf46df0c1e9c8d98c2f529a0b080b" category="paragraph">在高層級的 BlueXP  分類掃描中，其運作方式如下：</block>
   <block id="20d2a2e8543925af69154c91d0f12b74" category="list-text">您可以在一或多個資料來源上啟用高階對應（稱為「僅對應」掃描）或深度層級掃描（稱為「地圖與分類」掃描）。</block>
@@ -3143,7 +3141,6 @@
   <block id="d7530ec47cb0f60bf26bff38cfcd4f1f" category="list-text">選取 * 暫停 * 以暫停掃描體積，或選取 * 恢復 * 以繼續掃描先前暫停的體積。</block>
   <block id="e28f00b8dd55b4a2626bbd4233f326a1" category="list-text">* 資料分類深度掃描（地圖與分類掃描） * ： BlueXP  分類掃描使用標準傳輸協定，並在整個環境中使用唯讀權限。針對敏感的業務相關資料、私有資訊及勒索軟體相關問題、會開啟並掃描選取的檔案。</block>
   <block id="e90444baa59788bd6471cf703b12a16e" category="summary">您可以在「資料調查」頁面中檢視詳細資料、以調查組織的資料。您可以在這裡查看 Governance 儀表板後繼續研究。</block>
-  <block id="43b0fcc067500dde9cd348cfb2a4fb95" category="paragraph">您可以在「資料調查」頁面中檢視詳細資料、以調查組織的資料。您可以在這裡查看 Governance 儀表板後繼續研究。在「調查」頁面上，您可以使用其中一個篩選器來篩選資料，只顯示您想要查看的結果。您也可以檢視檔案中繼資料，檔案和目錄的權限，以及檢查儲存系統中的重複檔案。</block>
   <block id="b7f6a3bebde141b211f7f03ea94b59a0" category="paragraph">您可以從 BlueXP  分類 UI 的許多區域瀏覽到此頁面，包括已在這些頁面上選取篩選器的監管與法規遵循儀表板。您可以將資料匯出至 CSV 或 JSON 檔案，以供進一步分析或與他人共用。</block>
   <block id="503f38415f575979b1abb29789cbda50" category="list-text">從 BlueXP  分類功能表中，選取 * 調查 * 。</block>
   <block id="262bd6cb4081a4bb1d5b7bb69c91cf84" category="list-text">在 [ 資料調查 ] 頁面上，執行下列任何一項：</block>
@@ -3577,4 +3574,7 @@
   <block id="6082f95d47d2b6cd46c38a484f2b2e4f" category="list-text">當實例部署完畢， BlueXP classification安裝完成後，選擇*繼續設定*進入_設定_頁面。</block>
   <block id="f08251ff59a66c2320f7263142413eac" category="list-text">選擇*部署*以啟動雲端部署精靈。</block>
   <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
+  <block id="3047d0f529bebd6bfe17922e0ca45403" category="paragraph">透過查看資料調查頁面中的詳細資訊來調查您組織的資料。您可以在這裡查看 Governance 儀表板後繼續研究。在「調查」頁面上，您可以使用其中一個篩選器來篩選資料，只顯示您想要查看的結果。您也可以檢視檔案中繼資料，檔案和目錄的權限，以及檢查儲存系統中的重複檔案。</block>
+  <block id="f93f654f18be890b72a6dc3853af2702" category="list-text">JSON - 每份報告 100,000 筆記錄，產生大約需要 5 分鐘</block>
+  <block id="1685dbc95abdf5db3fea70bcbed67efa" category="list-text">CSV - 每份報告 200,000 筆記錄，產生大約需要 4 分鐘</block>
 </blocks>

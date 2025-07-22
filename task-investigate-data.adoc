@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-investigate-data.html 
-keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies,json, csv, data investigation, data investigation report, download report, file metadata, file permissions, duplicate files, saved search 
 summary: 您可以在「資料調查」頁面中檢視詳細資料、以調查組織的資料。您可以在這裡查看 Governance 儀表板後繼續研究。 
 ---
 = 使用 BlueXP  分類來調查組織中儲存的資料
@@ -14,7 +14,7 @@ summary: 您可以在「資料調查」頁面中檢視詳細資料、以調查�
 
 
 [role="lead"]
-您可以在「資料調查」頁面中檢視詳細資料、以調查組織的資料。您可以在這裡查看 Governance 儀表板後繼續研究。在「調查」頁面上，您可以使用其中一個篩選器來篩選資料，只顯示您想要查看的結果。您也可以檢視檔案中繼資料，檔案和目錄的權限，以及檢查儲存系統中的重複檔案。
+透過查看資料調查頁面中的詳細資訊來調查您組織的資料。您可以在這裡查看 Governance 儀表板後繼續研究。在「調查」頁面上，您可以使用其中一個篩選器來篩選資料，只顯示您想要查看的結果。您也可以檢視檔案中繼資料，檔案和目錄的權限，以及檢查儲存系統中的重複檔案。
 
 您可以從 BlueXP  分類 UI 的許多區域瀏覽到此頁面，包括已在這些頁面上選取篩選器的監管與法規遵循儀表板。您可以將資料匯出至 CSV 或 JSON 檔案，以供進一步分析或與他人共用。
 
@@ -283,8 +283,8 @@ TIP: 您可以使用本頁提供的「檔案雜湊」值，並直接在「調查
 
 檔案會分割成具有固定列數或記錄數的檔案：
 
-* JSON - 100,000 筆記錄
-* CSV - 200,000 筆記錄
+* JSON - 每份報告 100,000 筆記錄，產生大約需要 5 分鐘
+* CSV - 每份報告 200,000 筆記錄，產生大約需要 4 分鐘
 +
 
 NOTE: 您可以下載 CSV 檔案的版本，以在此瀏覽器中檢視。此版本的記錄上限為 10 ， 000 筆。
