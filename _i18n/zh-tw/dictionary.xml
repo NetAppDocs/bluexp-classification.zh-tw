@@ -994,15 +994,10 @@
   <block id="7df445bf0c34cf36a966141745590030" category="open-title">在 AWS 中部署</block>
   <block id="23c0e03df230b1dfa0e16b9d275b80ea" category="list-text">在BlueXP左側導覽功能表中、按一下*管理&gt;分類*。</block>
   <block id="d33aba60d91a201fe7b4bce522f9deb7" category="inline-image-macro">選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。</block>
-  <block id="c48b9bad2a3a25d6dad223ab11c5a33e" category="paragraph"><block ref="c48b9bad2a3a25d6dad223ab11c5a33e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cce26d229722c6ca9257990a7091d9c0" category="list-text">按一下「*啟動資料感應*」。</block>
-  <block id="2cf7dbc159875140b6f5ecc68994fa13" category="list-text">從 _ 安裝 _ 頁面、按一下 * 部署 &gt; 部署 * 以使用「大型」執行個體大小、然後啟動雲端部署精靈。</block>
   <block id="125c9895b0de4086b75bd6de17240096" category="list-text">精靈會在執行部署步驟時顯示進度。如果發生任何問題、它會停止並提示輸入。</block>
   <block id="6ccd3462f51e144ba54924a76ff58ce8" category="inline-image-macro">BlueXP 分類精靈的螢幕擷取畫面、用於部署新執行個體。</block>
   <block id="f7b6e8ebd5557b7030e15d04046f60e7" category="paragraph"><block ref="f7b6e8ebd5557b7030e15d04046f60e7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="bdfca0a21ad4ec182fb0ff0fe7b8bc6b" category="list-text">部署執行個體並安裝 BlueXP 分類後、按一下 * 繼續至組態 * 以移至 _Configuration_ 頁面。</block>
   <block id="699be6723175322ef727a933c7b42bbd" category="open-title">在 Azure 中部署</block>
-  <block id="a09a5c1c3cb0d27dbac4cfa3c73c0ec8" category="list-text">按一下「*部署*」以啟動雲端部署精靈。</block>
   <block id="473b6ff5a1c62a3a028f4dc37b9cbd6c" category="inline-image-macro">選擇按鈕以在雲端部署 BlueXP 分類的螢幕擷取畫面。</block>
   <block id="1f61c6b070b23b20d4af173152567e3d" category="paragraph"><block ref="1f61c6b070b23b20d4af173152567e3d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="12714d8579e39a7357fefed194511b8a" category="open-title">在 Google Cloud 中部署</block>
@@ -3558,4 +3553,28 @@
   <block id="acdf9d63036f9706b8165f6f6a7117da" category="paragraph">{星號} 包括::_include/connector-limit.adoc[]</block>
   <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">BlueXP classification現在作為BlueXP中的一項核心功能提供，每個連接器最多可免費掃描 500 TiB 的資料。不需要分類授權或付費訂閱。由於 BlueXP 分類功能著重於使用此新版本掃描 NetApp 儲存系統、因此部分舊版功能僅適用於先前已支付授權費用的客戶。這些舊版功能的使用將在已支付合約到期時到期。</block>
   <block id="3c6bee2e144dcf57c21b516f9adcdfef" category="paragraph">是的， BlueXP  分類具有 REST API ，可用於 BlueXP  核心平台的 BlueXP  分類版本中支援的功能。請參閱。 <block ref="66d6eeee3cdd1145e7194200ace05e36" category="inline-link-macro-rx"></block></block>
+  <block id="b88a97dbbf0d94d8396d856054201821" category="summary">透過存取BlueXP中的服務開始使用BlueXP classification。</block>
+  <block id="5e2bda6842e62bee66b91379fc54ff14" category="doc">造訪BlueXP classification</block>
+  <block id="18ab5404b1c9c78cdbe1208355c612b8" category="paragraph">您可以透過NetApp BlueXP存取BlueXP classification服務。</block>
+  <block id="827ffaa4071f763fcf2f165bc506ac67" category="inline-link-macro">深入瞭解如何登入BlueXP</block>
+  <block id="e85f8055ef2f47366302b6cd1e438fd5" category="paragraph">若要登入BlueXP，您可以使用您的NetApp支援網站憑證，也可以使用您的電子郵件和密碼註冊NetApp雲端登入。<block ref="87311a7719bd09cd8d149ce0279338dd" category="inline-link-macro-rx"></block>。</block>
+  <block id="34397c830c77af93d96e3ed470658d45" category="inline-link-macro">了解所有服務的 BlueXP 存取角色</block>
+  <block id="0a52c97ea3cc5973c99346826ec696eb" category="paragraph">特定任務需要特定的BlueXP使用者角色。<block ref="8b4e96244237d791189f9a3329e43e34" category="inline-link-macro-rx"></block>。</block>
+  <block id="7b9aeeb99181b7bca6291c8ca1c3ec58" category="inline-link-macro">您應該添加一個BlueXP連接器。</block>
+  <block id="4d1ee80ad087cea271c22d352e5e16cf" category="list-text"><block ref="4d1ee80ad087cea271c22d352e5e16cf" category="inline-link-macro-rx"></block></block>
+  <block id="d5686972367b277b3384920923b26bb8" category="inline-link-macro">了解哪種BlueXP classification部署樣式適合您的工作負載。</block>
+  <block id="a7d2d849071dae06891079aa8c9ed283" category="list-text"><block ref="a7d2d849071dae06891079aa8c9ed283" category="inline-link-macro-rx"></block></block>
+  <block id="5975f7e9036c78e6217b16f295f0ca75" category="inline-link-macro">BlueXP主控台</block>
+  <block id="899f21c9bd67afec8f9f3be01a8edddc" category="list-text">在 Web 瀏覽器中，導覽至<block ref="046fd603b18837f482287e5ec741e5ed" category="inline-link-macro-rx"></block> 。</block>
+  <block id="753e3c2055278365db83b605f29d4860" category="paragraph">出現 NetApp BlueXP 登入頁面。</block>
+  <block id="ee852dbf3a138374521be3a3b6b5413d" category="list-text">Sign inBlueXP。</block>
+  <block id="94390442839b9d41b3d61bf8fbfa3412" category="list-text">從BlueXP左側導覽功能表中，選擇 *治理* &gt; *分類*。</block>
+  <block id="9b78feb8a8a40d46d2fb12391c043b8e" category="list-text">如果這是您第一次造訪BlueXP classification，則會出現登入頁面。</block>
+  <block id="3c5000aadb8f3b41a943ceff25d45f92" category="paragraph">選擇*在本機或雲端部署分類*以開始部署您的分類實例。如需詳細資訊、請參閱 <block ref="ac3bd67718326214ecb171be9412b196" category="inline-link-macro-rx"></block></block>
+  <block id="a65721c6a00f8c4af241338a11fd8f3f" category="paragraph"><block ref="a65721c6a00f8c4af241338a11fd8f3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e694fa91cc3969b00d0ae997752b6422" category="paragraph">否則，將出現BlueXP classification儀表板。</block>
+  <block id="e142a6f5dd7278bd87df979071f43ac7" category="list-text">選擇*在本機或雲端部署分類*。</block>
+  <block id="dcc769ed0ea98e366058422f08990e15" category="list-text">從「安裝」頁面中，選擇「部署」&gt;「部署」以使用「大型」執行個體大小並啟動雲端部署精靈。</block>
+  <block id="6082f95d47d2b6cd46c38a484f2b2e4f" category="list-text">當實例部署完畢， BlueXP classification安裝完成後，選擇*繼續設定*進入_設定_頁面。</block>
+  <block id="f08251ff59a66c2320f7263142413eac" category="list-text">選擇*部署*以啟動雲端部署精靈。</block>
 </blocks>

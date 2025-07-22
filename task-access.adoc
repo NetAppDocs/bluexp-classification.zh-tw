@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: task-access.html 
+keywords: log in, sign in 
+summary: 透過存取BlueXP中的服務開始使用BlueXP classification。 
+---
+= 造訪BlueXP classification
+:hardbreaks:
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/get-started/
+
+
+[role="lead"]
+您可以透過NetApp BlueXP存取BlueXP classification服務。
+
+若要登入BlueXP，您可以使用您的NetApp支援網站憑證，也可以使用您的電子郵件和密碼註冊NetApp雲端登入。link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["深入瞭解如何登入BlueXP"^]。
+
+特定任務需要特定的BlueXP使用者角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的 BlueXP 存取角色"^]。
+
+.開始之前
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["您應該添加一個BlueXP連接器。"^]
+* link:task-deploy-cloud-compliance.html["了解哪種BlueXP classification部署樣式適合您的工作負載。"]
+
+
+.步驟
+. 在 Web 瀏覽器中，導覽至link:https://console.bluexp.netapp.com/["BlueXP主控台"^] 。
++
+出現 NetApp BlueXP 登入頁面。
+
+. Sign inBlueXP。
+. 從BlueXP左側導覽功能表中，選擇 *治理* > *分類*。
+. 如果這是您第一次造訪BlueXP classification，則會出現登入頁面。
++
+選擇*在本機或雲端部署分類*以開始部署您的分類實例。如需詳細資訊、請參閱 link:task-deploy-cloud-compliance.html["您應該使用哪種 BlueXP 分類部署？"]
+
++
+image:screenshot-deploy-classification.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
+
++
+否則，將出現BlueXP classification儀表板。
+
+

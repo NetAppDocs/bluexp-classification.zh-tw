@@ -307,9 +307,9 @@ tar -xzf DataSense-offline-bundle-v1.25.0.tar.gz
 tar -xzf cc_onprem_installer.tar.gz
 ----
 . 啟動BlueXP、然後選取*管理>分類*。
-. 按一下「*啟動資料感應*」。
+. 選擇*在本機或雲端部署分類*。
 +
-image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
+image:screenshot-deploy-classification.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
 
 . 按一下「*部署*」開始內部安裝。
 +

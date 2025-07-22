@@ -192,29 +192,29 @@ BlueXP 分類執行個體使用私有 IP 位址來確保索引資料無法存取
 .在 AWS 中部署
 --
 .步驟
-. 在BlueXP左側導覽功能表中、按一下*管理>分類*。
+. 從 BlueXP  左側導覽功能表中，選取 * 治理 > 分類 * 。
+. 選擇*在本機或雲端部署分類*。
 +
-image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
+image:screenshot-deploy-classification.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
 
-. 按一下「*啟動資料感應*」。
-. 從 _ 安裝 _ 頁面、按一下 * 部署 > 部署 * 以使用「大型」執行個體大小、然後啟動雲端部署精靈。
+. 從「安裝」頁面中，選擇「部署」>「部署」以使用「大型」執行個體大小並啟動雲端部署精靈。
 . 精靈會在執行部署步驟時顯示進度。如果發生任何問題、它會停止並提示輸入。
 +
 image:screenshot_cloud_compliance_wizard_start.png["BlueXP 分類精靈的螢幕擷取畫面、用於部署新執行個體。"]
 
-. 部署執行個體並安裝 BlueXP 分類後、按一下 * 繼續至組態 * 以移至 _Configuration_ 頁面。
+. 當實例部署完畢， BlueXP classification安裝完成後，選擇*繼續設定*進入_設定_頁面。
 
 
 --
 .在 Azure 中部署
 --
 .步驟
-. 在BlueXP左側導覽功能表中、按一下*管理>分類*。
-. 按一下「*啟動資料感應*」。
+. 從 BlueXP  左側導覽功能表中，選取 * 治理 > 分類 * 。
+. 選擇*在本機或雲端部署分類*。
 +
-image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
+image:screenshot-deploy-classification.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
 
-. 按一下「*部署*」以啟動雲端部署精靈。
+. 選擇*部署*以啟動雲端部署精靈。
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["選擇按鈕以在雲端部署 BlueXP 分類的螢幕擷取畫面。"]
 
@@ -222,19 +222,19 @@ image:screenshot_cloud_compliance_deploy_cloud.png["選擇按鈕以在雲端部�
 +
 image:screenshot_cloud_compliance_wizard_start.png["BlueXP 分類精靈的螢幕擷取畫面、用於部署新執行個體。"]
 
-. 部署執行個體並安裝 BlueXP 分類後、按一下 * 繼續至組態 * 以移至 _Configuration_ 頁面。
+. 當實例部署完畢， BlueXP classification安裝完成後，選擇*繼續設定*進入_設定_頁面。
 
 
 --
 .在 Google Cloud 中部署
 --
 .步驟
-. 在BlueXP左側導覽功能表中、按一下*管理>分類*。
-. 按一下「*啟動資料感應*」。
+. 從 BlueXP  左側導覽功能表中，選取 * 治理 > 分類 * 。
+. 選擇*在本機或雲端部署分類*。
 +
-image:screenshot_cloud_compliance_deploy_start.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
+image:screenshot-deploy-classification.png["選取按鈕以啟動 BlueXP 分類的螢幕擷取畫面。"]
 
-. 按一下「*部署*」以啟動雲端部署精靈。
+. 選擇*部署*以啟動雲端部署精靈。
 +
 image:screenshot_cloud_compliance_deploy_cloud.png["選擇按鈕以在雲端部署 BlueXP 分類的螢幕擷取畫面。"]
 
@@ -242,7 +242,7 @@ image:screenshot_cloud_compliance_deploy_cloud.png["選擇按鈕以在雲端部�
 +
 image:screenshot_cloud_compliance_wizard_start.png["BlueXP 分類精靈的螢幕擷取畫面、用於部署新執行個體。"]
 
-. 部署執行個體並安裝 BlueXP 分類後、按一下 * 繼續至組態 * 以移至 _Configuration_ 頁面。
+. 當實例部署完畢， BlueXP classification安裝完成後，選擇*繼續設定*進入_設定_頁面。
 
 
 --
