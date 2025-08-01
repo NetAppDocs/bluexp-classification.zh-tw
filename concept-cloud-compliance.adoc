@@ -212,9 +212,3 @@ BlueXP 會使用安全性群組來部署 BlueXP 分類執行個體、以便從 C
 傳出規則已完全開啟。安裝和升級 BlueXP 分類軟體、以及傳送使用量指標、都需要網際網路存取。
 
 如果您有嚴格的網路需求，請參閱link:task-deploy-cloud-compliance.html#review-prerequisites["瞭解 BlueXP 分類所接觸的端點"^]。
-
-
-
-== BlueXP  分類中的使用者角色
-
-指派給每位使用者的角色在 BlueXP  和 BlueXP  分類中提供不同的功能。如需詳細資訊，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["BlueXP  IAM 角色"]（以標準模式使用 BlueXP  時）。

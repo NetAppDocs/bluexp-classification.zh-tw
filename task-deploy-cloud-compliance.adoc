@@ -150,7 +150,15 @@ https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.ht
 |===
 --
 ====
-確認BlueXP擁有必要的權限:: 確保 BlueXP 具有部署資源和建立 BlueXP 分類執行個體安全性群組的權限。您可以在中找到最新的 BlueXP  權限 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions.html["NetApp 提供的原則"^]。
+確認BlueXP擁有必要的權限:: 確保BlueXP有權部署資源並為BlueXP classification實例建立安全群組。
++
+--
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Google Cloud 權限"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#classification["AWS 權限"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#classification["Azure 權限"^]
+
+
+--
 確保 BlueXP Connector 能夠存取 BlueXP 分類:: 確保 Connector 與 BlueXP 分類執行個體之間的連線能力。Connector 的安全性群組必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。此連線可部署 BlueXP 分類執行個體、並可讓您在「法規遵循與治理」索引標籤中檢視資訊。AWS 和 Azure 中的政府地區均支援 BlueXP 分類。
 +
 --

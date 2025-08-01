@@ -285,8 +285,6 @@
   <block id="b7753345b24c98f72b73e9e641a456d7" category="paragraph">傳出規則已完全開啟。安裝和升級 BlueXP 分類軟體、以及傳送使用量指標、都需要網際網路存取。</block>
   <block id="def03cca1b6cd44fc1ef14e712a6c792" category="inline-link-macro">瞭解 BlueXP 分類所接觸的端點</block>
   <block id="80cef547cabd3e510ea56f58ec10a12e" category="paragraph">如果您有嚴格的網路需求，請參閱<block ref="a5023c570d3c1110eead6b3e84b02871" category="inline-link-macro-rx"></block>。</block>
-  <block id="1e81701a0a647214aeef7f6f5b09394b" category="section-title">BlueXP  分類中的使用者角色</block>
-  <block id="0fceee5053bfc73b3d9e3253ad7b8f0b" category="inline-link">BlueXP  IAM 角色</block>
   <block id="b1151aae9531d2f5e85d085e8878cea6" category="summary">如果您只是想要快速回答問題、這個常見問題集就能幫上忙。</block>
   <block id="aa2fb7dd454c7ccfa2e848f8e1ae91b3" category="doc">關於 BlueXP 分類的常見問題集</block>
   <block id="d114fb433bcf7d5f0818cbc8249575fd" category="section-title">BlueXP 分類服務</block>
@@ -965,7 +963,6 @@
   <block id="c35738c7864c7cbf5383db60bc7aceb3" category="open-title">GCP 所需的端點</block>
   <block id="396224b62257ab9727288876f0e89ef6" category="list-text">確認BlueXP擁有必要的權限</block>
   <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">NetApp 提供的原則</block>
-  <block id="8f1a8cf43aa444c46e29ecb0349384d2" category="list-text">確保 BlueXP 具有部署資源和建立 BlueXP 分類執行個體安全性群組的權限。您可以在中找到最新的 BlueXP  權限<block ref="12017b43c12237092f4f947467fd170e" category="inline-link-rx"></block>。</block>
   <block id="a8abb2cf85d3fffe4e0996a3ef7fdff4" category="list-text">確保 BlueXP Connector 能夠存取 BlueXP 分類</block>
   <block id="b3da390fe73676b135519aad2bb0ac8d" category="list-text">確保 Connector 與 BlueXP 分類執行個體之間的連線能力。Connector 的安全性群組必須允許透過連接埠 443 進出的流量進出 BlueXP 分類執行個體。此連線可部署 BlueXP 分類執行個體、並可讓您在「法規遵循與治理」索引標籤中檢視資訊。AWS 和 Azure 中的政府地區均支援 BlueXP 分類。</block>
   <block id="fd1958e5e74317f89c6c16bbca7d1446" category="inline-link">AWS 中的 Connector 規則</block>
@@ -1371,7 +1368,6 @@
   <block id="a3b67f96a0c9278d4984faae4a248582" category="inline-image-macro">選取您要執行之報告的工作環境的螢幕擷取畫面。</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">NetApp以多種方式提供對BlueXP的支援。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">取得協助</block>
-  <block id="7c5661ab6b39ee901cea00a6e7020a49" category="paragraph">NetApp以多種方式支援BlueXP及其雲端服務。我們全年無休提供豐富的免費自助支援選項、例如知識庫（KB）文章和社群論壇。您的支援註冊包括透過網路票證提供遠端技術支援。</block>
   <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">取得雲端供應商檔案服務的支援</block>
   <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">如需雲端供應商檔案服務、其基礎架構或任何使用服務的解決方案的相關技術支援、請參閱該產品的 BlueXP 文件中的「取得說明」。</block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
@@ -2427,8 +2423,6 @@
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">選取 * 新增 NSS 認證 * 、然後遵循 NetApp 支援網站 （ NSS ）驗證提示。</block>
   <block id="cfc5506589d5a4d055e721267d5f0732" category="list-text">若要確認註冊程序是否成功、請選取「說明」圖示、然後選取 * 「支援 * 」。</block>
   <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">「 * 資源 * 」頁面應顯示您的 BlueXP  組織已註冊取得支援。</block>
-  <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">螢幕擷取畫面會顯示帳戶序號和綠色核取方塊、以及註冊支援的文字。</block>
-  <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">請注意、如果其他 BlueXP 使用者尚未將 NetApp 支援網站 帳戶與 BlueXP 登入建立關聯、則不會看到此相同的支援登錄狀態。不過、這並不表示您的 BlueXP  組織尚未註冊取得支援。只要組織中有一位使用者遵循這些步驟、您的組織就已註冊。</block>
   <block id="1ff5aefce774ec72a211f2b3bb10b950" category="section-title">現有客戶、但無NSS.帳戶</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">如果您是現有的 NetApp 客戶、擁有現有的授權和序號、但沒有 NSS_ 帳戶、則需要建立一個 NSS 帳戶、並將其與您的 BlueXP 登入建立關聯。</block>
@@ -3073,7 +3067,6 @@
   <block id="9ed967b138578dbb6c57d7b336d5c696" category="paragraph">BlueXP  分類會掃描儲存庫中您選擇用來識別個人和敏感資料的資料（磁碟區，資料庫架構或其他使用者資料）。然後 BlueXP  分類會對應您的組織資料，對每個檔案進行分類，並識別資料中預先定義的模式。掃描結果是個人資訊、敏感個人資訊、資料類別和檔案類型的索引。</block>
   <block id="3779db1fb21572df76305e5ede3efad1" category="sidebar">掃描資料來源總覽</block>
   <block id="fc9679220132eb8e0f499680bbe8909a" category="list-text">* 名稱實體辨識 * ： BlueXP  分類使用 AI 從文件中擷取人員的自然名稱。<block ref="8e814e02dddb19e3bb4166c15fc34470" category="inline-link-macro-rx"></block>。</block>
-  <block id="e888dadabb0f55fe5c317b3b6754087e" category="paragraph">指派給每位使用者的角色在 BlueXP  和 BlueXP  分類中提供不同的功能。如需詳細資訊，請參閱<block ref="9e5b18f30859b96d93203df427b4bd3d" category="inline-link-rx"></block>（以標準模式使用 BlueXP  時）。</block>
   <block id="6f0ff027a4b5c5cccc90c166290d3013" category="cell">執行的能力<block ref="c2177dc55e01ee229f523014b3bacb31" category="inline-link-macro-rx"></block></block>
   <block id="a7e6da043e68990d1e9627e5da9319c2" category="paragraph">如需詳細資訊、請參閱 <block ref="8df90f52b87f57dd64f76114b6c4e6a8" category="inline-link-macro-rx"></block>。</block>
   <block id="3d0a52f701c42fc59411425fdc2a4746" category="paragraph">現在可以在搜尋受試者名稱以回應資料主體存取要求（ DSAR ）時輸入日文名稱。您可以使用產生的資訊來產生<block ref="413db830e9f14a03bda795e0ca85886f" category="inline-link-rx"></block>。您也可以在中輸入日文名稱<block ref="dc85c6bd448621c7d3e7987af7ac2483" category="inline-link-rx"></block>，以識別包含主旨名稱的檔案。</block>
@@ -3577,4 +3570,14 @@
   <block id="3047d0f529bebd6bfe17922e0ca45403" category="paragraph">透過查看資料調查頁面中的詳細資訊來調查您組織的資料。您可以在這裡查看 Governance 儀表板後繼續研究。在「調查」頁面上，您可以使用其中一個篩選器來篩選資料，只顯示您想要查看的結果。您也可以檢視檔案中繼資料，檔案和目錄的權限，以及檢查儲存系統中的重複檔案。</block>
   <block id="f93f654f18be890b72a6dc3853af2702" category="list-text">JSON - 每份報告 100,000 筆記錄，產生大約需要 5 分鐘</block>
   <block id="1685dbc95abdf5db3fea70bcbed67efa" category="list-text">CSV - 每份報告 200,000 筆記錄，產生大約需要 4 分鐘</block>
+  <block id="b1be31d5cf6b0567551065ae3533caf1" category="list-text">確保BlueXP有權部署資源並為BlueXP classification實例建立安全群組。</block>
+  <block id="d3846482b7a5f3467b05518965422219" category="inline-link-macro">Google Cloud 權限</block>
+  <block id="c46f60718e1e68e31a7a27b785a25a23" category="list-text"><block ref="c46f60718e1e68e31a7a27b785a25a23" category="inline-link-macro-rx"></block></block>
+  <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="inline-link-macro">AWS 權限</block>
+  <block id="b08bb744ad1ab6a2ee30e20e034859bc" category="list-text"><block ref="b08bb744ad1ab6a2ee30e20e034859bc" category="inline-link-macro-rx"></block></block>
+  <block id="bf689424a4d3a62d9c0d40a07107c3d2" category="inline-link-macro">Azure 權限</block>
+  <block id="ff27171010c4f698d0174fb8b8ce6b5d" category="list-text"><block ref="ff27171010c4f698d0174fb8b8ce6b5d" category="inline-link-macro-rx"></block></block>
+  <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp以多種方式為BlueXP及其雲端服務提供支援。我們提供全天候 (24/7) 的大量免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
+  <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和文字「已註冊支援」。</block>
+  <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
