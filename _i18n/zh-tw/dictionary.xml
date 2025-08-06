@@ -1781,7 +1781,6 @@
   <block id="4582ba30b2499066be90a4bcea5ec4b6" category="paragraph">您可以將 BlueXP 分類掃描的來源檔案複製到任何 NFS 共用。NFS 共用不需要與 BlueXP  分類整合，您只需要知道 NFS 共用的名稱，所有選取的檔案都會以格式複製<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block>。</block>
   <block id="6ca416dc347d5360ab86e69583f4b2b0" category="admonition">您無法複製位於資料庫中的檔案。</block>
   <block id="ab24d4e851f3db949095d520c7a20014" category="inline-link-macro">瞭解使用者存取法規遵循資訊的相關資訊</block>
-  <block id="626f686c5ceb0252f691c5ea070f437b" category="list-text">您必須具有複製檔案的權限。<block ref="755d8ea7a519899e64b990f74fdc72f2" category="inline-link-macro-rx"></block>。</block>
   <block id="1394fd88d929360313e8c80ec722b081" category="list-text">複製檔案時、目的地 NFS 共用區必須允許從 BlueXP 分類執行個體存取。</block>
   <block id="11f3580c4a3b779649df6d1a5c193fdf" category="list-text">您一次可以複製1到100、000個檔案。</block>
   <block id="07fc1f9bea8dc1060003a2fea5aa3598" category="list-text">在「資料調查結果」窗格中、選取您要複製的檔案、然後按一下「*複製*」。</block>
@@ -1827,7 +1826,6 @@
   <block id="ed404bde5dfd762dd0759dcedd71cdd7" category="paragraph">您可以將 BlueXP  分類正在掃描的來源檔案從任何支援的非結構化資料來源複製到特定目標目的地位置的目錄中<block ref="bd72f78a08f0a83b7e3fbbae64df2fed" category="inline-link-rx"></block>）。在初始複本之後、檔案中的任何變更資料都會根據您設定的排程進行同步處理。</block>
   <block id="e4186dd0c6123ee83f2ac799b88930b1" category="paragraph">當您要將資料從一個來源系統移轉至另一個來源系統時、這項功能非常實用。此動作會使用<block ref="d9f5c10edef42cff18580599262fd784" category="inline-link-rx"></block>功能，將資料從來源複製並同步到目標。</block>
   <block id="59a46e0ea7e3441d068ab93e14650d6e" category="admonition">您無法複製及同步位於資料庫、OneDrive帳戶或SharePoint帳戶中的檔案。</block>
-  <block id="2e23ab8075b914f073724aeeab7a7221" category="list-text">您必須具有複製和同步檔案的權限。<block ref="755d8ea7a519899e64b990f74fdc72f2" category="inline-link-macro-rx"></block>。</block>
   <block id="2e5ce55dec2ff1c76b2eb8662089db85" category="list-text">所有選取的檔案都必須來自相同的來源儲存庫（ONTAP 例如、SFC磁碟區、S3磁碟區、NFS或CIFS共用區等）。</block>
   <block id="5698905e8d060e455d19636040ff425c" category="inline-link">快速入門說明</block>
   <block id="9b9f495105111a0fa74c1500ac1b40e5" category="list-text">您需要啟動 BlueXP 複本與同步服務、並設定至少一個資料代理程式、以便在來源系統和目標系統之間傳輸檔案。從開始檢閱 BlueXP  複本與同步要求<block ref="33fe85ab0bf4bd63d137fd0932246743" category="inline-link-rx"></block>。</block>
@@ -1852,7 +1850,6 @@
   <block id="c82ffa722bb30ecf26aa93c8c1f6491b" category="paragraph">或者、您可以將階層連結檔案保留在移動檔案的位置。階層連結檔案可協助使用者瞭解為何要將檔案從原始位置移出。對於每個移動的檔案，系統會在名為的來源位置建立階層連結檔案<block ref="e5b81a76aedb2ddb1da7aba12de3e20b" prefix=" " category="inline-code"></block>。您可以在對話方塊中新增要新增至階層連結檔案的文字、以指出檔案的移動位置和移動檔案的使用者。</block>
   <block id="125161c62eedd013601db45d9716edf6" category="paragraph">請注意、當檔案移動時、來源檔案的子目錄結構會在目的地共用上重新建立、以便更容易瞭解檔案的移出位置。如果目的地位置存在名稱相同的檔案、則不會移動該檔案。</block>
   <block id="4ae80798b0ef194ea50cfe00aa1b363c" category="admonition">您無法移動位於資料庫中的檔案。</block>
-  <block id="7253808b56101588fe6b9f8e3310f2de" category="list-text">您必須具有移動檔案的權限。<block ref="755d8ea7a519899e64b990f74fdc72f2" category="inline-link-macro-rx"></block>。</block>
   <block id="3aa95927284ca0cd4e7737dd41a53153" category="list-text">來源檔案可在下列資料來源中找到：內部部署ONTAP 的地方使用、Cloud Volumes ONTAP 使用、不只是供參考Azure NetApp Files 、使用、還可選擇供參考、使用、或是使用SharePoint Online。</block>
   <block id="49bb7289b8abc33c271f634fc8149b1e" category="list-text">一次最多可移動1500萬個檔案。</block>
   <block id="71015deb6ac3269a57685acb827c23be" category="list-text">只會移動 50 MB 或更小的檔案。</block>
@@ -1877,7 +1874,6 @@
   <block id="2a500e3681b7e207d0d6c159ff2008ab" category="list-text">CIFS資料：CIFS認證需要具有寫入權限。</block>
   <block id="e9d85b8e3ea5257d3468eb6f787a1fcd" category="list-text">對於 S3 資料 - IAM 角色必須包含下列權限<block ref="ec68e11afcd3e390ebf5080e8af5b735" prefix=" " category="inline-code"></block>：。</block>
   <block id="d771d7d12660fbeb94c2343ab606b51d" category="section-title">手動刪除來源檔案</block>
-  <block id="b7f17bad276a0a849229c1ccd0d02ea8" category="list-text">您必須具有刪除檔案的權限。<block ref="755d8ea7a519899e64b990f74fdc72f2" category="inline-link-macro-rx"></block>。</block>
   <block id="982e0ea8ac129cb8e1614b1eb919a238" category="list-text">一次最多可刪除100、000個檔案。</block>
   <block id="d14aadac54b4954b4a906556c2e19bd5" category="list-text">在「資料調查結果」窗格中、選取您要刪除的檔案。</block>
   <block id="47a3f3156d581e80ad2e6dc38b57f4fd" category="inline-image-macro">顯示如何從「資料調查」頁面選取要刪除的檔案、以及「刪除」按鈕的快照。</block>
@@ -3580,4 +3576,8 @@
   <block id="bbbc9b55f08bfe80f146b5207bdb7728" category="paragraph">NetApp以多種方式為BlueXP及其雲端服務提供支援。我們提供全天候 (24/7) 的大量免費自助支援選項，例如知識庫 (KB) 文章和社群論壇。您的支援註冊包含透過網路工單取得的遠端技術支援。</block>
   <block id="759d32287efdf88cd8ac71dccc0ecf8d" category="inline-image-macro">螢幕截圖顯示了帳戶序號、綠色複選框和文字「已註冊支援」。</block>
   <block id="4c441b388bebcddf8c08fb782095b864" category="paragraph"><block ref="4c441b388bebcddf8c08fb782095b864" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="030c30fe65e7389b97e25493d1050cb5" category="list-text">您必須具有複製檔案的權限。<block ref="8ccbab5e2c8c15f4593085b049c7211e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="cabac526d4cf33ef9b02b0693cd1699c" category="list-text">您必須具有複製和同步檔案的權限。<block ref="8ccbab5e2c8c15f4593085b049c7211e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3e3cb2a1aa38db84e1a7fbd4e46dd21b" category="list-text">您必須具有移動檔案的權限。<block ref="8ccbab5e2c8c15f4593085b049c7211e" category="inline-link-macro-rx"></block> 。</block>
+  <block id="25dc0f9bf48b7d09b459240afbf36637" category="list-text">您必須具有刪除檔案的權限。<block ref="8ccbab5e2c8c15f4593085b049c7211e" category="inline-link-macro-rx"></block> 。</block>
 </blocks>
