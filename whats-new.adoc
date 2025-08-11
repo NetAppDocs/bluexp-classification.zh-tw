@@ -18,6 +18,26 @@ summary: 瞭解 BlueXP 分類的新功能。
 
 
 
+== 2025年8月11日
+
+
+
+=== 版本 1.46
+
+此BlueXP classification版本包括錯誤修復和以下更新：
+
+.BlueXP時間軸中增強的掃描事件洞察
+BlueXP時間軸現在支援增強對BlueXP classification的掃描事件的洞察。時間軸現在顯示工作環境掃描的開始時間、工作環境的狀態以及任何問題。共享和工作環境的狀態僅適用於映射掃描。
+
+有關BlueXP時間線的更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["監控BlueXP操作"^]。
+
+.支援 RHEL 9.6
+此版本增加了對 Red Hat Enterprise Linux v9.6 的支持，用於手動本地安裝BlueXP classification，包括暗站部署。
+
+下列作業系統需要使用 Podman Container 引擎，而且需要 BlueXP  分類 1.30 版或更新版本： Red Hat Enterprise Linux 8.8 ， 8.10 ， 9.0 ， 9.1 ， 9.2 ， 9.3 ， 9.4 和 9.5 版。
+
+
+
 == 2025 年 14 月 7 日
 
 
