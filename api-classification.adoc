@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: api-classification.html 
 keywords: api, apis, rest, restful, authorization, classification, data sense, swagger, body, header, list apis 
-summary: 透過 Web UI 提供的 BlueXP 分類功能也可透過 Swagger API 取得。 
+summary: 可透過 Web UI 使用的BlueXP classification功能也可透過 REST API 使用。 
 ---
 = BlueXP 分類 API
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 透過 Web UI 提供的 BlueXP 分類功能也可透過 Swagger API 取
 
 
 [role="lead"]
-透過 Web UI 提供的 BlueXP 分類功能也可透過 Swagger API 取得。
+透過 Web UI 提供的BlueXP classification功能也可透過 REST API 提供。
 
 BlueXP 分類中定義了四種類別、對應於 UI 中的標籤：
 
@@ -52,13 +52,13 @@ API 可讓您執行下列功能：
 
 
 
-API 是安全的、它使用與 UI 相同的驗證方法。您可以在下列位置找到驗證資訊： https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html[]
+API 是安全的，它使用與 UI 相同的身份驗證方法。您可以在link:https://docs.netapp.com/us-en/bluexp-automation/platform/get_identifiers.html["REST API 文檔"^]。
 
 
 
 == 存取 Swagger API 參考
 
-若要進入 Swagger 、您需要 BlueXP 分類執行個體的 IP 位址。在雲端部署中、您將使用公有 IP 位址。然後您需要進入這個端點：
+若要存取 API 參考，需要您的BlueXP classification實例的 IP 位址。如果您有雲端部署，請使用公用 ID 位址。例如：
 
 https ： <classification_ip> / 文件
 

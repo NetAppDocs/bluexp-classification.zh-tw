@@ -89,7 +89,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 
 確保您可以繼續執行 BlueXP 分類。BlueXP 分類機器必須持續運作、才能持續掃描您的資料。
 
-* 與其他應用程式共用的主機不支援 BlueXP 分類、主機必須是專用主機。
+* 與其他應用程式共享的主機不支援BlueXP classification。該主機必須是專用主機。
 * 在內部環境中建置主機系統時、您可以根據計畫執行 BlueXP 分類掃描的資料集大小、從這些系統大小中進行選擇。
 +
 [cols="17,17,27,31"]
@@ -101,7 +101,6 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 ** 1 個 TiB SSD on / ，或 100 GiB 可在 /opt 上取得
 ** /var/lib/泊 塢視窗上提供 895 GiB
 ** 5 GiB、位於/tmp
-** * 對於播客， 5 GB 位於 /tmp* 上
 ** * 對於播客， /var/tmp* 上有 30 GB
 
 
@@ -109,18 +108,17 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 
 | * 大 * | 16 個 CPU | 64 GB RAM  a| 
 ** 500 GiB SSD on / ，或 100 GiB 可在 /opt 上取得
-** 395 GiB 可在 /var/lib/泊 塢視窗或 Podcast man /var/lib/container 或 Podman /var/lib/container 上取得
+** /var/lib/docker 或 Podman /var/lib/containers 上可用 400 GiB
 ** 5 GiB、位於/tmp
-** * 對於播客， 5 GB 位於 /tmp* 上
 ** * 對於播客， /var/tmp* 上有 30 GB
 
 
 |===
-* 在雲端部署運算執行個體以進行 BlueXP 分類安裝時、我們建議系統符合上述「大型」系統需求：
+* 在雲端為BlueXP classification安裝部署運算實例時，請使用符合上述「大型」系統需求的系統：
 +
-** * Amazon Elastic Compute Cloud （ Amazon EC2 ）執行個體類型 * ：我們建議使用「 m6i.4xLarge 」。link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^]。
-** * Azure VM Size* ：我們建議使用「 Standard_D16s_v3 」。link:reference-instance-types.html#azure-instance-types["請參閱其他 Azure 執行個體類型"^]。
-** * GCP 機器類型 * ：我們建議使用「 n2-Standard-16 」。link:reference-instance-types.html#gcp-instance-types["請參閱其他 GCP 執行個體類型"^]。
+** *Amazon Elastic Compute Cloud (Amazon EC2) 執行個體類型*：「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["請參閱其他 AWS 執行個體類型"^] 。
+** *Azure VM 大小*：「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["請參閱其他 Azure 執行個體類型"^] 。
+** *GCP 機器類型*：「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["請參閱其他 GCP 執行個體類型"^] 。
 
 
 * * UNIX 資料夾權限 * ：需要下列最低 UNIX 權限：
@@ -173,7 +171,7 @@ BlueXP 分類軟體必須在符合特定作業系統需求、 RAM 需求、軟�
 
 * Python 3.6 版或更新版本。 https://www.python.org/downloads/["檢視安裝指示"^]。
 +
-** * NTP 考量 * ： NetApp 建議將 BlueXP 分類系統設定為使用網路時間傳輸協定（ NTP ）服務。必須在 BlueXP 分類系統和 BlueXP Connector 系統之間同步時間。
+** *NTP 注意事項*： NetApp建議設定BlueXP classification以使用網路時間協定 (NTP) 服務。  BlueXP classification系統和連接器之間的時間必須同步。
 
 
 

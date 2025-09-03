@@ -63,7 +63,7 @@ summary: 完成幾個步驟、在雲端中部署 BlueXP 分類。BlueXP 將在�
 如您所見，在某些情況下可能需要使用 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["多個連接器"]。
 
 
-TIP: BlueXP classification不限制其可掃描的資料量。每個連接器支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據， link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["安裝另一個連接器"^]然後link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["部署另一個分類實例"] +BlueXP UI 顯示來自單一連接器的資料。有關查看來自多個連接器的資料的提示，請參閱link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個連接器"^] 。
+TIP: BlueXP classification不會對其可掃描的資料量施加限制。每個連接器支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["安裝另一個連接器"^]然後link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["部署BlueXP classification的另一個實例"]。 BlueXP UI 顯示來自單一連接器的資料。有關查看來自多個連接器的資料的提示，請參閱link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個連接器"^]。
 
 
 
